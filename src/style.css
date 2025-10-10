@@ -1,2 +1,51 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+  --color-bg: #F9FAFB;
+  --color-primary: #D97706;
+  --color-secondary: #4B5563;
+  --color-text: #111827;
+  --color-card: #FFFFFF;
+  --color-border: #E5E7EB;
+
+  --color-line1: #F59E0B;
+  --color-line2: #EF4444;
+  --color-line3: #3B82F6;
+}
+
+/* 夜間模式（使用 data-theme="dark" 控制） */
+[data-theme="dark"] {
+  --color-bg: #000000;
+  --color-primary: #FACC15;
+  --color-secondary: #FDE68A;
+  --color-text: #E5E7EB;
+  --color-card: #111111;
+  --color-border: #27272A;
+
+  --color-line1: #FACC15;
+  --color-line2: #F87171;
+  --color-line3: #60A5FA;
+}
+
+
+@layer base {}
+
+@layer components {}
+
+@layer utilities {
+  .bg-theme {
+    background-color: var(--color-bg);
+  }
+  .text-theme {
+    color: var(--color-text);
+  }
+  .card-theme {
+    background-color: var(--color-card);
+    border-color: var(--color-border);
+  }
+  .border-theme {
+    border-color: var(--color-border);
+  }
+}
