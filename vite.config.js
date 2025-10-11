@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import path from "path";
 import vue from "@vitejs/plugin-vue";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -8,5 +9,10 @@ export default defineConfig({
     vue(),
     tailwindcss()
   ],
-  base: "/my-stock-map/"
+  base: "/my-stock-map/",
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src")  // 加這一行，引入@開頭的路徑就可以正常解析
+    }
+  }
 });
