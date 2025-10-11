@@ -1,0 +1,1 @@
+import{i as e,s as t,t as n}from"./index-IBg1_rhG.js";var r={},i={class:`text-7xl`};function a(n,r){return t(),e(`p`,i,`Reports Pages`)}var o=n(r,[[`render`,a]]);export{o as default};
