@@ -1,0 +1,104 @@
+<template>
+  <div class="p-6 space-y-6">
+    <!-- 頁首：股票名稱 + 基本資訊 -->
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between card-theme rounded-2xl shadow p-6">
+      <div>
+        <h1 class="text-2xl font-bold text-[color:var(--color-primary)]">台積電（2330.TW）</h1>
+        <p class="text-sm text-[color:var(--color-secondary)] mt-1">
+          半導體製造業｜上市｜權重股
+        </p>
+      </div>
+      <div class="mt-4 sm:mt-0 flex items-center space-x-4">
+        <div class="text-right">
+          <p class="text-sm text-[color:var(--color-secondary)]">現價</p>
+          <p class="text-2xl font-bold text-[color:var(--color-primary)]">$825.00</p>
+        </div>
+        <div class="text-right">
+          <p class="text-sm text-[color:var(--color-secondary)]">漲跌</p>
+          <p class="text-2xl font-bold text-[color:var(--color-line2)]">+2.15%</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="card-theme rounded-2xl shadow p-4 text-center">
+        <h3 class="text-sm text-[color:var(--color-secondary)]">持有股數</h3>
+        <p class="text-2xl font-bold mt-2 text-[color:var(--color-primary)]">2,000</p>
+      </div>
+      <div class="card-theme rounded-2xl shadow p-4 text-center">
+        <h3 class="text-sm text-[color:var(--color-secondary)]">持股成本</h3>
+        <p class="text-2xl font-bold mt-2 text-[color:var(--color-primary)]">$780.00</p>
+      </div>
+      <div class="card-theme rounded-2xl shadow p-4 text-center">
+        <h3 class="text-sm text-[color:var(--color-secondary)]">未實現損益</h3>
+        <p class="text-2xl font-bold mt-2 text-[color:var(--color-line2)]">+$90,000</p>
+      </div>
+      <div class="card-theme rounded-2xl shadow p-4 text-center">
+        <h3 class="text-sm text-[color:var(--color-secondary)]">報酬率</h3>
+        <p class="text-2xl font-bold mt-2 text-[color:var(--color-line2)]">+5.8%</p>
+      </div>
+    </div>
+
+    <!-- 中段：走勢圖 + 基本面資訊 -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <!-- 左側：股價走勢圖 -->
+      <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
+        <h3 class="font-medium mb-3">📈 價格趨勢（近 3 個月）</h3>
+        <div class="h-64 flex items-center justify-center text-[color:var(--color-secondary)] opacity-70">
+          [股價折線圖區域]
+        </div>
+      </div>
+
+      <!-- 右側：基本面數據 -->
+      <div class="card-theme rounded-2xl shadow p-4 space-y-3">
+        <h3 class="font-medium">🏢 基本面摘要</h3>
+        <ul class="text-sm space-y-1 text-[color:var(--color-text)]">
+          <li>本益比（PE）：<span class="font-medium text-[color:var(--color-primary)]">22.4</span></li>
+          <li>股價淨值比（PB）：<span class="font-medium text-[color:var(--color-primary)]">5.6</span></li>
+          <li>殖利率：<span class="font-medium text-[color:var(--color-primary)]">1.9%</span></li>
+          <li>股本：<span class="font-medium text-[color:var(--color-primary)]">2,590 億</span></li>
+          <li>EPS（近四季）：<span class="font-medium text-[color:var(--color-primary)]">36.8</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 下段：投資紀錄 -->
+    <div class="card-theme rounded-2xl shadow p-4">
+      <h3 class="font-medium mb-3">📜 交易紀錄</h3>
+      <table class="w-full text-sm">
+        <thead class="text-[color:var(--color-secondary)] border-b border-[color:var(--color-border)]">
+          <tr>
+            <th class="text-left py-2">日期</th>
+            <th class="text-left py-2">動作</th>
+            <th class="text-right py-2">價格</th>
+            <th class="text-right py-2">股數</th>
+            <th class="text-right py-2">金額</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="border-b border-[color:var(--color-border)]">
+            <td class="py-2">2025-10-07</td>
+            <td class="py-2 text-[color:var(--color-line2)]">買進</td>
+            <td class="py-2 text-right">$800.00</td>
+            <td class="py-2 text-right">1,000</td>
+            <td class="py-2 text-right">$800,000</td>
+          </tr>
+          <tr>
+            <td class="py-2">2025-09-12</td>
+            <td class="py-2 text-[color:var(--color-line3)]">賣出</td>
+            <td class="py-2 text-right">$830.00</td>
+            <td class="py-2 text-right">500</td>
+            <td class="py-2 text-right">$415,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</template>
+
+<script setup>
+// 暫時靜態資料，後續可綁定 store 或 router params
+</script>
+
+<style scoped></style>

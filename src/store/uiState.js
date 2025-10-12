@@ -12,6 +12,14 @@ export const useUIStateStore = defineStore("uiState", () => {
       )
     },
     {
+      id: "dashboardNew",
+      icon: "🏠",
+      title: "Dashboard (new)",
+      pages: defineAsyncComponent(() =>
+        import("@/components/Demo/DashboardNewDemo.vue")
+      )
+    },
+    {
       id: "portfolio",
       icon: "💼",
       title: "Portfolio",
@@ -20,11 +28,35 @@ export const useUIStateStore = defineStore("uiState", () => {
       )
     },
     {
+      id: "portfolionew",
+      icon: "💼",
+      title: "Portfolio (new) ❌",
+      pages: defineAsyncComponent(() =>
+        import("@/components/Demo/PortfolioNewDemo.vue")
+      )
+    },
+    {
+      id: "stockDetailOld",
+      icon: "📈",
+      title: "Stock Detail (old) ❌",
+      pages: defineAsyncComponent(() =>
+        import("@/components/Demo/StockDetailOldDemo.vue")
+      )
+    },
+    {
       id: "stockDetail",
       icon: "📈",
       title: "Stock Detail",
       pages: defineAsyncComponent(() =>
         import("@/pages/StockDetail.vue")
+      )
+    },
+    {
+      id: "backtestOld",
+      icon: "🔍",
+      title: "Backtest (old) ❌",
+      pages: defineAsyncComponent(() =>
+        import("@/components/Demo/BacktestOldDemo.vue")
       )
     },
     {
