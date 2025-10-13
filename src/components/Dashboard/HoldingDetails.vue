@@ -17,9 +17,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="border-t border-[color:var(--color-border)]">
+        <tr class="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-border)]/30 transition">
           <td class="py-3">
-            <div class="font-medium">TSM</div>
+            <div class="font-medium">2330.TW</div>
             <div class="text-xs text-[color:var(--color-secondary)]">台積電</div>
           </td>
           <td class="py-3 text-right">120</td>
@@ -29,6 +29,19 @@
             $4,800
           </td>
           <td class="py-3 text-right">85.4%</td>
+        </tr>
+        <tr class="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-border)]/30 transition">
+          <td class="py-3">
+            <div class="font-medium">TSM</div>
+            <div class="text-xs text-[color:var(--color-secondary)]">台積電ADR</div>
+          </td>
+          <td class="py-3 text-right">30</td>
+          <td class="py-3 text-right">$260</td>
+          <td class="py-3 text-right font-medium">$2,800</td>
+          <td class="py-3 text-right text-[color:var(--color-line2)]">
+            $4,800
+          </td>
+          <td class="py-3 text-right">5.4%</td>
         </tr>
       </tbody>
     </table>
