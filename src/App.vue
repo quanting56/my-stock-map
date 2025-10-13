@@ -20,7 +20,7 @@
           name="fade"
           mode="out-in"
         >
-          <div :key="uiState.activeTab" class="space-y-6">
+          <div :key="uiState.activeTab">
             <component
               :is="uiState.currentTab.pages"
             ></component>
@@ -28,7 +28,7 @@
         </transition>
       </main>
     </div>
-    
+
   </div>
 </template>
 

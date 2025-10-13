@@ -51,7 +51,10 @@
 
     <!-- Bottom Section: 持股明細表 -->
     <div class="card-theme rounded-2xl shadow p-4">
-      <h3 class="font-medium mb-3">📋 持股明細</h3>
+      <div class="flex items-center justify-between mb-3">
+        <h3 class="font-medium mb-3">📋 持股明細</h3>
+        <div class="text-xs text-[color:var(--color-secondary)]">編輯</div>
+      </div>
       <div class="overflow-x-auto">
         <table class="w-full text-sm border-collapse">
           <thead class="border-b border-[color:var(--color-border)] text-[color:var(--color-secondary)]">

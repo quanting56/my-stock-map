@@ -11,14 +11,22 @@ export const useUIStateStore = defineStore("uiState", () => {
         import("@/pages/Dashboard.vue")
       )
     },
-    {
-      id: "dashboardNew",
-      icon: "🏠",
-      title: "Dashboard (new)",
-      pages: defineAsyncComponent(() =>
-        import("@/components/Demo/DashboardNewDemo.vue")
-      )
-    },
+    // {
+    //   id: "dashboardOld",
+    //   icon: "🏠",
+    //   title: "Dashboard (old)",
+    //   pages: defineAsyncComponent(() =>
+    //     import("@/components/Demo/AppAndDashboardDemo.vue")
+    //   )
+    // },
+    // {
+    //   id: "dashboardNew",
+    //   icon: "🏠",
+    //   title: "Dashboard (new)",
+    //   pages: defineAsyncComponent(() =>
+    //     import("@/components/Demo/DashboardNewDemo.vue")
+    //   )
+    // },
     {
       id: "portfolio",
       icon: "💼",
@@ -27,14 +35,14 @@ export const useUIStateStore = defineStore("uiState", () => {
         import("@/pages/Portfolio.vue")
       )
     },
-    {
-      id: "portfolionew",
-      icon: "💼",
-      title: "Portfolio (new) ❌",
-      pages: defineAsyncComponent(() =>
-        import("@/components/Demo/PortfolioNewDemo.vue")
-      )
-    },
+    // {
+    //   id: "portfolionew",
+    //   icon: "💼",
+    //   title: "Portfolio (new) ❌",
+    //   pages: defineAsyncComponent(() =>
+    //     import("@/components/Demo/PortfolioNewDemo.vue")
+    //   )
+    // },
     {
       id: "stockDetailOld",
       icon: "📈",
