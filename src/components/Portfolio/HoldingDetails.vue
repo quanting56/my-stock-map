@@ -2,7 +2,7 @@
   <div class="card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium mb-3">📋 持股明細</h3>
-      <div class="text-xs text-[color:var(--color-secondary)]">編輯</div>
+      <!-- <div class="text-xs text-[color:var(--color-secondary)]">詳細數據</div> -->
     </div>
     <div class="overflow-x-auto">
       <table class="w-full text-sm border-collapse">
@@ -14,32 +14,38 @@
             <th class="text-right py-2 px-3">成本</th>
             <th class="text-right py-2 px-3">報酬率</th>
             <th class="text-right py-2 px-3">市值</th>
+            <th class="text-right py-2 px-3">操作</th>
           </tr>
         </thead>
         <tbody>
-          <tr class="hover:bg-[color:var(--color-border)]/30 transition">
-            <td class="py-2 px-3 font-medium">台積電 (2330)</td>
-            <td class="text-right py-2 px-3">41.5%</td>
-            <td class="text-right py-2 px-3">$890</td>
-            <td class="text-right py-2 px-3">$650</td>
-            <td class="text-right py-2 px-3 text-[color:var(--color-line2)]">+36.9%</td>
-            <td class="text-right py-2 px-3">$516,000</td>
-          </tr>
-          <tr class="hover:bg-[color:var(--color-border)]/30 transition">
-            <td class="py-2 px-3 font-medium">00675L 元大台灣50反1</td>
-            <td class="text-right py-2 px-3">31.4%</td>
-            <td class="text-right py-2 px-3">$21.5</td>
-            <td class="text-right py-2 px-3">$20.2</td>
-            <td class="text-right py-2 px-3 text-[color:var(--color-line2)]">+6.4%</td>
-            <td class="text-right py-2 px-3">$391,000</td>
-          </tr>
-          <tr class="hover:bg-[color:var(--color-border)]/30 transition">
-            <td class="py-2 px-3 font-medium">00926 中信電池及儲能</td>
-            <td class="text-right py-2 px-3">8.7%</td>
-            <td class="text-right py-2 px-3">$17.2</td>
-            <td class="text-right py-2 px-3">$16.4</td>
-            <td class="text-right py-2 px-3 text-[color:var(--color-line2)]">+4.9%</td>
-            <td class="text-right py-2 px-3">$108,000</td>
+          <tr
+            v-for="detail in details"
+            :id="detail.id"
+            class="hover:bg-[color:var(--color-border)]/30 transition"
+          >
+            <td class="py-2 px-3 font-medium">{{ detail.name }} ({{ detail.id }})</td>
+            <td class="text-right py-2 px-3">{{ (detail.ratio * 100).toFixed(2) }}%</td>
+            <td class="text-right py-2 px-3">${{ detail.price.toLocaleString() }}</td>
+            <td class="text-right py-2 px-3">${{ detail.cost.toLocaleString() }}</td>
+            <td
+              class="text-right py-2 px-3"
+              :class="[
+                detail.cost > detail.price
+                ? 'text-[color:var(--color-line3)]'
+                : 'text-[color:var(--color-line2)]'
+              ]"
+            >
+              {{ detail.cost > detail.price ? '' : '+' }}{{ ((detail.price - detail.cost) / detail.cost * 100).toFixed(2) }}%
+            </td>
+            <td class="text-right py-2 px-3">${{ detail.stockValue.toLocaleString() }}</td>
+            <td class="text-right py-2 px-3">
+              <button @click="$emit('edit-holding', detail)" class="px-2 py-1 mr-2 rounded border border-theme hover:border-[color:var(--color-primary)] cursor-pointer">
+                ✏️
+              </button>
+              <button @click="remove(detail.id)" class="px-2 py-1 rounded border border-theme hover:border-[color:var(--color-primary)] cursor-pointer">
+                🗑️
+              </button>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -47,6 +53,24 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import { usePortfolioStore } from "@/store/portfolio";
+
+const portfolioStore = usePortfolioStore();
+
+const details = computed(() => {
+  const totalValue = portfolioStore.totalValue || 1;
+  return portfolioStore.holdingDetailsData.map(d => ({
+    ...d,
+    ratio: totalValue ? d.stockValue / totalValue : 0
+  }));
+});
+
+function remove(id) {
+  if (!confirm("確定刪除")) return;
+  portfolioStore.removeHolding(id);
+};
+</script>
 
 <style scoped></style>

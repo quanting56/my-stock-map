@@ -1,5 +1,6 @@
 <template>
   <div class="p-6 space-y-6">
+    <!-- 頁面標題 -->
     <div class="flex items-center justify-between">
       <h2 class="text-2xl font-bold text-[color:var(--color-primary)]">🏠 大總覽</h2>
       <button

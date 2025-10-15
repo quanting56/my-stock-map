@@ -13,6 +13,12 @@
   --color-line1: #F59E0B;
   --color-line2: #EF4444;
   --color-line3: #14BBA6;
+
+  --color-pie1: #7C3AED;  /* 紫色 */
+  --color-pie2: #2563EB;  /* 藍色 */
+  --color-pie3: #14BBA6;  /* 藍綠色 */
+  --color-pie4: #F59E0B;  /* 橘黃色 */
+  --color-pie5: #EF4444;  /* 紅色 */
 }
 
 /* 夜間模式（使用 data-theme="dark" 控制） */
@@ -27,6 +33,12 @@
   --color-line1: #FACC15;
   --color-line2: #F87171;
   --color-line3: #2DD4BF;
+
+  --color-pie1: #A78BFA;  /* 柔和紫 */
+  --color-pie2: #60A5FA;  /* 亮藍偏霧面 */
+  --color-pie3: #2DD4BF;  /* 青綠偏亮 */
+  --color-pie4: #FBBF24;  /* 暖黃偏深 */
+  --color-pie5: #F87171;  /* 柔紅偏粉 */
 }
 
 

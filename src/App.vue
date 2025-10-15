@@ -1,6 +1,6 @@
 <template>
   <div
-    :data-theme="uiTheme.isDarkMode ? 'dark' : 'light'"
+    :data-theme="uiThemeStore.isDarkMode ? 'dark' : 'light'"
     class="min-h-screen bg-theme text-theme flex flex-col transition-colors duration-500"
   >
     <HeaderBar></HeaderBar>
@@ -20,9 +20,9 @@
           name="fade"
           mode="out-in"
         >
-          <div :key="uiState.activeTab">
+          <div :key="uiStateStore.activeTab">
             <component
-              :is="uiState.currentTab.pages"
+              :is="uiStateStore.currentTab.pages"
             ></component>
           </div>
         </transition>
@@ -38,8 +38,8 @@ import SideBarMenu from "./components/Common/SideBarMenu.vue";
 import { useUIThemeStore } from "@/store/theme";
 import { useUIStateStore } from "./store/uiState";
 
-const uiTheme = useUIThemeStore();
-const uiState = useUIStateStore();
+const uiThemeStore = useUIThemeStore();
+const uiStateStore = useUIStateStore();
 </script>
 
 <style scoped>
