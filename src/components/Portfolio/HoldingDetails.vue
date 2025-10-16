@@ -1,15 +1,15 @@
 <template>
   <div class="card-theme rounded-2xl shadow p-4">
-    <div class="flex items-center justify-between mb-3">
-      <h3 class="font-medium mb-3">📋 持股明細</h3>
+    <div class="flex items-center mb-3">
+      <h3 class="font-medium mb-3 text-[color:var(--color-secondary)]">持股明細</h3>
       <!-- <div class="text-xs text-[color:var(--color-secondary)]">詳細數據</div> -->
     </div>
     <div class="overflow-x-auto">
       <table class="w-full text-sm border-collapse">
         <thead class="border-b border-[color:var(--color-border)] text-[color:var(--color-secondary)]">
           <tr>
-            <th class="text-left py-2 px-3">股票名稱</th>
-            <th class="text-right py-2 px-3">持股比例</th>
+            <th class="text-left py-2 pr-3">股票名稱</th>
+            <th class="text-right py-2 px-3">資金比例</th>
             <th class="text-right py-2 px-3">現價</th>
             <th class="text-right py-2 px-3">成本</th>
             <th class="text-right py-2 px-3">報酬率</th>
@@ -23,7 +23,7 @@
             :id="detail.id"
             class="hover:bg-[color:var(--color-border)]/30 transition"
           >
-            <td class="py-2 px-3 font-medium">{{ detail.name }} ({{ detail.id }})</td>
+            <td class="py-2 pr-3 font-medium">{{ detail.name }} ({{ detail.id }})</td>
             <td class="text-right py-2 px-3">{{ (detail.ratio * 100).toFixed(2) }}%</td>
             <td class="text-right py-2 px-3">${{ detail.price.toLocaleString() }}</td>
             <td class="text-right py-2 px-3">${{ detail.cost.toLocaleString() }}</td>

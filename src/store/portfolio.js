@@ -9,11 +9,11 @@ const STORAGE_KEY = "myStockMap_holdings";
 // 若使用者第一次開啟、localStorage 沒有資料，就會使用這組 mock data
 const holdingDetailsMockData = [
   {
-    id: "0000.TW",
+    id: null,
     name: "現金",
     shares: 1,
-    price: 38000,
-    cost: 38000,
+    price: 35590,
+    cost: 35590,
   },
   {
     id: "2330.TW",  // 股號
@@ -35,6 +35,8 @@ export const usePortfolioStore = defineStore("portfolio", () => {
   // 確保每個項目都有值（若使用者只存 shares/price）
   function recalcValues() {
     holdingDetailsData.value.forEach(h => {
+      h.id = h.id || null;
+      h.name = h.name || h.id;
       h.shares = Number(h.shares) || 0;
       h.price = Number(h.price) || 0;
       h.cost = Number(h.cost) || 0;
@@ -93,8 +95,9 @@ export const usePortfolioStore = defineStore("portfolio", () => {
 
 
   // 計算屬性區域（Summary）---------
-  const totalValue = computed(() => holdingDetailsData.value.reduce((s, h) => s + (Number(h.stockValue) || 0), 0));
-  const totalCost = computed(() => holdingDetailsData.value.reduce((s, h) => s + (Number(h.cost) * Number(h.shares) || 0), 0));
+  const totalValue = computed(() => holdingDetailsData.value.reduce((s, h) => s + (Number(h.stockValue) || 0), 0));  // 總市值
+  const totalValueExCash = computed(() => holdingDetailsData.value.filter(h => h.id !== null).reduce((s, h) => s + (Number(h.stockValue) || 0), 0));  // 不含現金的總市值
+  const totalCost = computed(() => holdingDetailsData.value.reduce((s, h) => s + (Number(h.cost) * Number(h.shares) || 0), 0));  // 總成本
 
   const overallReturnPercent = computed(() => {
     if (!totalCost.value) return 0;  // 防止除以 0
@@ -123,6 +126,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     recalcValues,         // 重新計算數值（防止NaN）
     updatePrices,         // 從API更新價格
     totalValue,           // 總市值
+    totalValueExCash,     // 不含現金的總市值
     totalCost,            // 總成本
     overallReturnPercent  // 總報酬率
   };

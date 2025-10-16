@@ -5,49 +5,74 @@
       <div class="text-xs text-[color:var(--color-secondary)]">資料即時性取決於 API</div>
     </div>
 
-    <table class="w-full text-sm">
-      <thead class="text-[color:var(--color-secondary)]">
-        <tr>
-          <th class="text-left">股票</th>
-          <th class="text-right">數量</th>
-          <th class="text-right">現價</th>
-          <th class="text-right">市值</th>
-          <th class="text-right">今日損益</th>
-          <th class="text-right">權重</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-border)]/30 transition">
-          <td class="py-3">
-            <div class="font-medium">2330.TW</div>
-            <div class="text-xs text-[color:var(--color-secondary)]">台積電</div>
-          </td>
-          <td class="py-3 text-right">120</td>
-          <td class="py-3 text-right">$520</td>
-          <td class="py-3 text-right font-medium">$62,400</td>
-          <td class="py-3 text-right text-[color:var(--color-line2)]">
-            $4,800
-          </td>
-          <td class="py-3 text-right">85.4%</td>
-        </tr>
-        <tr class="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-border)]/30 transition">
-          <td class="py-3">
-            <div class="font-medium">TSM</div>
-            <div class="text-xs text-[color:var(--color-secondary)]">台積電ADR</div>
-          </td>
-          <td class="py-3 text-right">30</td>
-          <td class="py-3 text-right">$260</td>
-          <td class="py-3 text-right font-medium">$2,800</td>
-          <td class="py-3 text-right text-[color:var(--color-line2)]">
-            $4,800
-          </td>
-          <td class="py-3 text-right">5.4%</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead class="text-[color:var(--color-secondary)]">
+          <tr>
+            <th class="text-left pr-3">股票</th>
+            <th class="text-right px-3">數量</th>
+            <th class="text-right px-3">現價</th>
+            <th class="text-right px-3">市值</th>
+            <th class="text-right px-3">今日損益</th>
+            <th class="text-right px-3">權重</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr
+            v-for="detail in details"
+            :key="detail.id"
+            class="border-t border-[color:var(--color-border)] hover:bg-[color:var(--color-border)]/30 transition"
+          >
+            <td class="py-3 pr-3">
+              <div class="font-medium">{{ detail.id }}</div>
+              <div class="text-xs text-[color:var(--color-secondary)]">{{ detail.name }}</div>
+            </td>
+            <td class="text-right py-3 px-3">
+              {{ isTotalValueHidden ? "＊＊＊" : detail.shares.toLocaleString() }}
+            </td>
+            <td class="text-right py-3 px-3">${{ detail.price }}</td>
+            <td class="text-right py-3 px-3 font-medium">
+              ${{ isTotalValueHidden ? " ＊＊＊" : detail.stockValue.toLocaleString() }}
+            </td>
+            <td
+              class="text-right py-3 px-3"
+              :class="[
+                  detail.cost > detail.price
+                  ? 'text-[color:var(--color-line3)]'
+                  : 'text-[color:var(--color-line2)]'
+              ]"
+            >
+              {{ detail.cost > detail.price ? '' : '+' }}{{ isTotalValueHidden ? " ＊＊＊" : ((detail.price - detail.cost) * detail.shares).toLocaleString() }}
+            </td>
+            <td class="text-right py-3 px-3">{{ (detail.ratio * 100).toFixed(2) }}%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { computed } from "vue";
+import { usePortfolioStore } from "@/store/portfolio";
+
+defineProps({
+  isTotalValueHidden: {
+    type: Boolean,
+    default: false
+  }
+});
+
+const portfolioStore = usePortfolioStore();
+
+const details = computed(() => {
+  return portfolioStore.holdingDetailsData
+    .map((d) => ({
+      ...d,
+      ratio: portfolioStore.totalValueExCash ? d.stockValue / portfolioStore.totalValueExCash : 0
+    }))
+    .filter((d) => d.id !== null);  // 過濾掉「現金」
+});
+</script>
 
 <style scoped></style>

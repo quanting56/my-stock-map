@@ -86,8 +86,8 @@ import HoldingDetails from "@/components/Portfolio/HoldingDetails.vue";
 
 import { ref } from "vue";
 import { usePortfolioStore } from "@/store/portfolio";
-const portfolioStore = usePortfolioStore();
 
+const portfolioStore = usePortfolioStore();
 const editorOpen = ref(false);
 const editMode = ref("add");  // "add" | "edit"
 const form = ref({

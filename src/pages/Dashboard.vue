@@ -4,22 +4,23 @@
     <div class="flex items-center justify-between">
       <h2 class="text-2xl font-bold text-[color:var(--color-primary)]">🏠 大總覽</h2>
       <button
-        class="px-4 py-2 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] hover:bg-[color:var(--color-border)] transition text-sm"
+        @click="isHidden = !isHidden"
+        class="px-4 py-2 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] hover:bg-[color:var(--color-border)] active:ring-2 active:ring-offset-1 active:ring-[var(--color-line1)] transition text-sm cursor-pointer"
       >
-        🔧 隱藏總市值
+        🔧 {{ isHidden ? '顯示總市值' : '隱藏總市值' }}
       </button>
     </div>
   
   
     <!-- 一樓：Summary Cards -->
-    <SummaryCards></SummaryCards>
+    <SummaryCards :isTotalValueHidden="isHidden"></SummaryCards>
   
   
     <!-- 二樓：資產分布圖＋市值趨勢圖 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
   
       <!-- 左側：資產分布圖 -->
-      <ShareholdingRatioChart></ShareholdingRatioChart>
+      <ShareholdingRatioChart :isTotalValueHidden="isHidden"></ShareholdingRatioChart>
   
       <!-- 右側：市值趨勢圖 -->
       <PerformanceChart></PerformanceChart>
@@ -31,15 +32,17 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
   
       <!-- 左側：持倉明細 -->
-      <HoldingDetails></HoldingDetails>
+      <HoldingDetails :isTotalValueHidden="isHidden"></HoldingDetails>
   
       <!-- 右側：資產分布圖 -->
-      <MarketCapitalizationShareChart></MarketCapitalizationShareChart>
+      <MarketCapitalizationTreemap></MarketCapitalizationTreemap>
     </div>
   
   
     <!-- Bottom: Timeline / Notes -->
     <TimelineList></TimelineList>
+
+    <Test></Test>
   </div>
 </template>
 
@@ -48,8 +51,13 @@ import SummaryCards from "@/components/Dashboard/SummaryCards.vue";
 import ShareholdingRatioChart from "@/components/Dashboard/ShareholdingRatioChart.vue";
 import PerformanceChart from "@/components/Dashboard/PerformanceChart.vue";
 import HoldingDetails from "@/components/Dashboard/HoldingDetails.vue";
-import MarketCapitalizationShareChart from "@/components/Dashboard/MarketCapitalizationShareChart.vue";
+import MarketCapitalizationTreemap from "@/components/Dashboard/MarketCapitalizationTreemap.vue";
 import TimelineList from "@/components/Dashboard/TimelineList.vue";
+import Test from "../components/Dashboard/Test.vue";
+
+import { ref } from "vue";
+
+const isHidden = ref(false);
 </script>
 
 <style scoped></style>
