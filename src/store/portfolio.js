@@ -1,36 +1,18 @@
 import { defineStore } from "pinia";
 import { ref, computed, watch } from "vue";
 
+// 範例預設資料（開發與作為備援資料用）
+// 若使用者第一次開啟、localStorage 沒有資料，就會使用這組 mock data
+import { mockData } from "@/data/mock/portfolioData.js";
+
+
 // 設定 localStorage 的 key 名稱，方便存取與維護
 const STORAGE_KEY = "myStockMap_holdings";
-
-
-// 範例預設資料（開發用）
-// 若使用者第一次開啟、localStorage 沒有資料，就會使用這組 mock data
-const holdingDetailsMockData = [
-  {
-    id: null,
-    name: "現金",
-    shares: 1,
-    price: 35590,
-    cost: 35590,
-  },
-  {
-    id: "2330.TW",  // 股號
-    name: "台積電",  // 股票名稱
-    shares: 167,  // 持有股數
-    price: 1425,  // 現價
-    cost: 899,  // 成本
-  },
-  { id: "00757.TW", name: "統一FANG+", shares: 934, price: 117.9, cost: 100 },
-  { id: "00675L.TW", name: "富邦臺灣加權正二", shares: 5796, price: 125.5, cost: 77.83 }
-];
-
 
 export const usePortfolioStore = defineStore("portfolio", () => {
   // 從 localStorage 讀取使用者已儲存的資料（若沒資料，使用 mock data）
   const raw = localStorage.getItem(STORAGE_KEY);
-  const holdingDetailsData = ref(raw ? JSON.parse(raw) : holdingDetailsMockData);
+  const holdingDetailsData = ref(raw ? JSON.parse(raw) : mockData);
 
   // 確保每個項目都有值（若使用者只存 shares/price）
   function recalcValues() {
