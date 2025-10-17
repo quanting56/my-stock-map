@@ -10,7 +10,12 @@
     </div>
     <div class="card-theme rounded-2xl shadow p-4 text-center">
       <h3 class="text-sm text-[color:var(--color-secondary)]">總報酬率</h3>
-      <p class="text-2xl font-bold mt-2 text-[color:var(--color-line2)]">
+      <p class="text-2xl font-bold mt-2"
+        :class="[
+          totalROI < 0
+          ? 'text-[color:var(--color-line3)]'
+          : 'text-[color:var(--color-line2)]'
+        ]">
         {{ totalROI < 0 ? "" : "+" }}{{ (totalROI*100).toFixed(2) }}%
       </p>
     </div>

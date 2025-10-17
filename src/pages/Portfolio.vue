@@ -4,8 +4,8 @@
     <div class="flex items-center justify-between">
       <h2 class="text-2xl font-bold text-[color:var(--color-primary)]">💼 我的投資組合</h2>
       <button
-        @click="openEditor()"
-        class="px-4 py-2 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] hover:bg-[color:var(--color-border)] transition text-sm cursor-pointer"
+        @click="editorOpen = !editorOpen"
+        class="px-4 py-2 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] hover:bg-[color:var(--color-border)] active:ring-2 active:ring-offset-1 active:ring-[var(--color-line1)] transition text-sm cursor-pointer"
       >
         ➕ 編輯數據
       </button>
@@ -15,10 +15,7 @@
     <Teleport to="body">
       <EditHoldingModal
         v-if="editorOpen"
-        :editMode="editMode"
-        :form="form"
-        @close="closeEditor"
-        @save="save"
+        @close="editorOpen = !editorOpen"
       ></EditHoldingModal>
     </Teleport>
 
@@ -36,7 +33,7 @@
     </div>
 
     <!-- 三樓：持股明細表 -->
-    <HoldingDetails @edit-holding="openEditor"></HoldingDetails>
+    <HoldingDetails @edit-holding="editorOpen = !editorOpen"></HoldingDetails>
 
     <!-- Footer Notes -->
     <div class="text-xs text-[color:var(--color-secondary)] text-right">
@@ -54,43 +51,8 @@ import PropertyChart from "@/components/Portfolio/PropertyChart.vue";
 import HoldingDetails from "@/components/Portfolio/HoldingDetails.vue";
 
 import { ref } from "vue";
-import { usePortfolioStore } from "@/store/portfolio";
 
-const portfolioStore = usePortfolioStore();
 const editorOpen = ref(false);
-const editMode = ref("add");  // "add" | "edit"
-const form = ref({
-  id: "",
-  name: "",
-  shares: 0,
-  price: 0,
-  cost: 0
-});
-
-// 開啟編輯器Modal來"add"或"edit"，如果沒有holding，預先填滿
-function openEditor(holding) {
-  if (holding) {
-    editMode.value = "edit";
-    form.value = { ...holding };  // shallow copy
-  } else {
-    editMode.value = "add";
-    form.value = { id: "", name: "", shares: 0, price: 0, cost: 0 };
-  }
-  editorOpen.value = true;
-};
-
-function closeEditor() {
-  editorOpen.value = false;
-};
-
-// save -> addOrUpdate in store
-function save() {
-  if (!form.value.id) return;
-  portfolioStore.addOrUpdateHolding(form.value);
-  // recalc values (store automatically persists)
-  portfolioStore.recalcValues();
-  closeEditor();
-};
 </script>
 
 <style scoped></style>

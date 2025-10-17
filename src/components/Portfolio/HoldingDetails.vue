@@ -25,8 +25,8 @@
           >
             <td class="py-2 pr-3 font-medium">{{ detail.name }} ({{ detail.id }})</td>
             <td class="text-right py-2 px-3">{{ (detail.ratio * 100).toFixed(2) }}%</td>
-            <td class="text-right py-2 px-3">${{ detail.price.toLocaleString() }}</td>
-            <td class="text-right py-2 px-3">${{ detail.cost.toLocaleString() }}</td>
+            <td class="text-right py-2 px-3">${{ (detail.price || 0).toLocaleString() }}</td>
+            <td class="text-right py-2 px-3">${{ (detail.cost || 0).toLocaleString() }}</td>
             <td
               class="text-right py-2 px-3"
               :class="[
@@ -37,7 +37,7 @@
             >
               {{ detail.cost > detail.price ? '' : '+' }}{{ ((detail.price - detail.cost) / detail.cost * 100).toFixed(2) }}%
             </td>
-            <td class="text-right py-2 px-3">${{ detail.stockValue.toLocaleString() }}</td>
+            <td class="text-right py-2 px-3">${{ (detail.stockValue || 0).toLocaleString() }}</td>
             <td class="text-right py-2 px-3">
               <button @click="$emit('edit-holding', detail)" class="px-2 py-1 mr-2 rounded border border-theme hover:border-[color:var(--color-primary)] cursor-pointer">
                 ✏️

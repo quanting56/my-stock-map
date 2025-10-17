@@ -123,6 +123,7 @@ function drawTreemap(data) {
       .attr("fill", "#E5E7EB")
       .attr("font-size", "16px")
       .attr("font-weight", "bold")
+      .attr("pointer-events", "none")
       .text((d) => d.data.name)
       .filter((d) => d.x1 - d.x0 > 100 && d.y1 - d.y0 > 20);
 
@@ -134,6 +135,7 @@ function drawTreemap(data) {
       .attr("y", 35)
       .attr("fill", "var(--color-secondary)")
       .attr("font-size", "11px")
+      .attr("pointer-events", "none")
       .text(
         (d) =>
           `${(d.data.MarketCapitalizationAsAPercentageOfTheOverallMarket * 100).toFixed(4)}%`

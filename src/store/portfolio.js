@@ -54,7 +54,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
       price: Number(h.price) || 0,
       cost: Number(h.cost) || 0
     };
-    normalized.value = normalized.shares * normalized.price;
+    normalized.stockValue = normalized.shares * normalized.price;
 
     if (idx === -1) {
       // 若找不到，代表是新增股票
@@ -93,7 +93,7 @@ export const usePortfolioStore = defineStore("portfolio", () => {
     holdingDetailsData.value.forEach(h => {
       if (priceMap[h.id] != null) {        // 若 priceMap 有該股票
         h.price = Number(priceMap[h.id]);  // 更新現價
-        h.value = h.price * h.shares;      // 重新計算市值
+        h.stockValue = h.price * h.shares;      // 重新計算市值
         changed = true;
       };
     });
