@@ -4,7 +4,7 @@
       <h3 class="font-medium text-[color:var(--color-secondary)]">大盤市值佔比</h3>
       <div class="text-xs text-[color:var(--color-secondary)]">資料最後更新時間：{{ mockData.date }}</div>
     </div>
-    <div ref="chartContainer" class="w-full h-[500px] relative"></div>
+    <div ref="chartContainer" class="w-full h-full min-h-96 relative"></div>
   </div>
 </template>
 

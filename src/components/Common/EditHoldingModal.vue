@@ -8,7 +8,7 @@
       <h3 class="text-lg font-semibold mb-4">編輯持股資料</h3>
 
       <!-- 改成表格輸入形式 -->
-      <form @submit.prevent="saveAll">
+      <form>
         <div class="overflow-x-auto">
           <table class="w-full text-sm border-collapse">
             <thead class="border-b border-[color:var(--color-border)] text-[color:var(--color-secondary)]">
@@ -69,7 +69,9 @@
             取消
           </button>
           <button
-            type="submit"
+            type="button"
+            @click="saveAll"
+            @keyup.enter="saveAll"
             class="px-4 py-2 rounded border bg-[color:var(--color-primary)] text-white cursor-pointer hover:bg-[color:var(--color-line1)] active:ring-2 active:ring-offset-1 active:ring-[var(--color-line1)] transition"
           >
             儲存
@@ -105,20 +107,20 @@ function saveAll() {
 
   newRow.value = { id: "", name: "", shares: 0, price: 0, cost: 0 };
   emit("close");
-}
+};
 
 // 刪除列
 function removeRow(index) {
   editableData.value.splice(index, 1);
   portfolioStore.holdingDetailsData = editableData.value;
-}
+};
 
 // 新增列
 function addNewRow() {
   if (!newRow.value.id) return;
   editableData.value.push({ ...newRow.value });
   newRow.value = { id: "", name: "", shares: 0, price: 0, cost: 0 };
-}
+};
 </script>
 
 <style scoped></style>

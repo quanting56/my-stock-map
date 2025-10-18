@@ -1,0 +1,58223 @@
+export const mockData2330 = [
+  {
+    date: "2025/10/17",
+    open: 1455,
+    high: 1465,
+    low: 1450,
+    close: 1450,
+    adjClose: 1450,
+    volume: 38077331
+  },
+  {
+    date: "2025/10/16",
+    open: 1465,
+    high: 1495,
+    low: 1465,
+    close: 1485,
+    adjClose: 1485,
+    volume: 37737678
+  },
+  {
+    date: "2025/10/15",
+    open: 1435,
+    high: 1465,
+    low: 1425,
+    close: 1465,
+    adjClose: 1465,
+    volume: 41056405
+  },
+  {
+    date: "2025/10/14",
+    open: 1455,
+    high: 1460,
+    low: 1420,
+    close: 1425,
+    adjClose: 1425,
+    volume: 39889256
+  },
+  {
+    date: "2025/10/13",
+    open: 1390,
+    high: 1420,
+    low: 1390,
+    close: 1415,
+    adjClose: 1415,
+    volume: 53850992
+  },
+  {
+    date: "2025/10/9",
+    open: 1440,
+    high: 1455,
+    low: 1430,
+    close: 1440,
+    adjClose: 1440,
+    volume: 39052134
+  },
+  {
+    date: "2025/10/8",
+    open: 1410,
+    high: 1420,
+    low: 1405,
+    close: 1415,
+    adjClose: 1415,
+    volume: 23064494
+  },
+  {
+    date: "2025/10/7",
+    open: 1420,
+    high: 1445,
+    low: 1420,
+    close: 1435,
+    adjClose: 1435,
+    volume: 38395572
+  },
+  {
+    date: "2025/10/3",
+    open: 1365,
+    high: 1400,
+    low: 1365,
+    close: 1400,
+    adjClose: 1400,
+    volume: 31032341
+  },
+  {
+    date: "2025/10/2",
+    open: 1360,
+    high: 1370,
+    low: 1355,
+    close: 1365,
+    adjClose: 1365,
+    volume: 29593487
+  },
+  {
+    date: "2025/10/1",
+    open: 1325,
+    high: 1350,
+    low: 1325,
+    close: 1325,
+    adjClose: 1325,
+    volume: 33837323
+  },
+  {
+    date: "2025/9/30",
+    open: 1310,
+    high: 1320,
+    low: 1305,
+    close: 1305,
+    adjClose: 1305,
+    volume: 36642789
+  },
+  {
+    date: "2025/9/26",
+    open: 1310,
+    high: 1315,
+    low: 1295,
+    close: 1300,
+    adjClose: 1300,
+    volume: 25793295
+  },
+  {
+    date: "2025/9/25",
+    open: 1320,
+    high: 1330,
+    low: 1320,
+    close: 1320,
+    adjClose: 1320,
+    volume: 25861812
+  },
+  {
+    date: "2025/9/24",
+    open: 1350,
+    high: 1355,
+    low: 1325,
+    close: 1340,
+    adjClose: 1340,
+    volume: 44737182
+  },
+  {
+    date: "2025/9/23",
+    open: 1320,
+    high: 1340,
+    low: 1315,
+    close: 1340,
+    adjClose: 1340,
+    volume: 33953781
+  },
+  {
+    date: "2025/9/22",
+    open: 1270,
+    high: 1295,
+    low: 1270,
+    close: 1295,
+    adjClose: 1295,
+    volume: 28859955
+  },
+  {
+    date: "2025/9/19",
+    open: 1285,
+    high: 1290,
+    low: 1265,
+    close: 1265,
+    adjClose: 1265,
+    volume: 44913316
+  },
+  {
+    date: "2025/9/18",
+    open: 1275,
+    high: 1285,
+    low: 1265,
+    close: 1285,
+    adjClose: 1285,
+    volume: 24191307
+  },
+  {
+    date: "2025/9/17",
+    open: 1270,
+    high: 1275,
+    low: 1265,
+    close: 1265,
+    adjClose: 1265,
+    volume: 29283972
+  },
+  {
+    date: "2025/9/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2025/9/16",
+    open: 1265,
+    high: 1285,
+    low: 1260,
+    close: 1280,
+    adjClose: 1280,
+    volume: 40130070
+  },
+  {
+    date: "2025/9/15",
+    open: 1260,
+    high: 1260,
+    low: 1250,
+    close: 1255,
+    adjClose: 1250,
+    volume: 24589707
+  },
+  {
+    date: "2025/9/12",
+    open: 1255,
+    high: 1260,
+    low: 1250,
+    close: 1260,
+    adjClose: 1254.98,
+    volume: 26492972
+  },
+  {
+    date: "2025/9/11",
+    open: 1255,
+    high: 1260,
+    low: 1235,
+    close: 1240,
+    adjClose: 1235.06,
+    volume: 30345708
+  },
+  {
+    date: "2025/9/10",
+    open: 1220,
+    high: 1230,
+    low: 1215,
+    close: 1225,
+    adjClose: 1220.12,
+    volume: 39665156
+  },
+  {
+    date: "2025/9/9",
+    open: 1195,
+    high: 1200,
+    low: 1190,
+    close: 1200,
+    adjClose: 1195.22,
+    volume: 31329096
+  },
+  {
+    date: "2025/9/8",
+    open: 1195,
+    high: 1195,
+    low: 1180,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 27281959
+  },
+  {
+    date: "2025/9/5",
+    open: 1175,
+    high: 1180,
+    low: 1170,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 27133819
+  },
+  {
+    date: "2025/9/4",
+    open: 1170,
+    high: 1175,
+    low: 1160,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 24333323
+  },
+  {
+    date: "2025/9/3",
+    open: 1155,
+    high: 1160,
+    low: 1145,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 19511981
+  },
+  {
+    date: "2025/9/2",
+    open: 1170,
+    high: 1175,
+    low: 1155,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 14037411
+  },
+  {
+    date: "2025/9/1",
+    open: 1150,
+    high: 1165,
+    low: 1145,
+    close: 1165,
+    adjClose: 1160.36,
+    volume: 22018940
+  },
+  {
+    date: "2025/8/29",
+    open: 1180,
+    high: 1185,
+    low: 1160,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 19522740
+  },
+  {
+    date: "2025/8/28",
+    open: 1185,
+    high: 1185,
+    low: 1160,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 19975237
+  },
+  {
+    date: "2025/8/27",
+    open: 1190,
+    high: 1190,
+    low: 1180,
+    close: 1190,
+    adjClose: 1185.26,
+    volume: 21952558
+  },
+  {
+    date: "2025/8/26",
+    open: 1165,
+    high: 1185,
+    low: 1160,
+    close: 1175,
+    adjClose: 1170.32,
+    volume: 35508897
+  },
+  {
+    date: "2025/8/25",
+    open: 1165,
+    high: 1180,
+    low: 1160,
+    close: 1170,
+    adjClose: 1165.34,
+    volume: 25103514
+  },
+  {
+    date: "2025/8/22",
+    open: 1155,
+    high: 1155,
+    low: 1135,
+    close: 1135,
+    adjClose: 1130.48,
+    volume: 19205763
+  },
+  {
+    date: "2025/8/21",
+    open: 1140,
+    high: 1155,
+    low: 1140,
+    close: 1150,
+    adjClose: 1145.42,
+    volume: 23424804
+  },
+  {
+    date: "2025/8/20",
+    open: 1165,
+    high: 1165,
+    low: 1135,
+    close: 1135,
+    adjClose: 1130.48,
+    volume: 66982023
+  },
+  {
+    date: "2025/8/19",
+    open: 1180,
+    high: 1185,
+    low: 1175,
+    close: 1185,
+    adjClose: 1180.28,
+    volume: 17867547
+  },
+  {
+    date: "2025/8/18",
+    open: 1170,
+    high: 1185,
+    low: 1170,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 18219895
+  },
+  {
+    date: "2025/8/15",
+    open: 1175,
+    high: 1185,
+    low: 1170,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 22231552
+  },
+  {
+    date: "2025/8/14",
+    open: 1185,
+    high: 1190,
+    low: 1175,
+    close: 1175,
+    adjClose: 1170.32,
+    volume: 32991791
+  },
+  {
+    date: "2025/8/13",
+    open: 1185,
+    high: 1200,
+    low: 1185,
+    close: 1200,
+    adjClose: 1195.22,
+    volume: 37809952
+  },
+  {
+    date: "2025/8/12",
+    open: 1180,
+    high: 1190,
+    low: 1170,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 28917167
+  },
+  {
+    date: "2025/8/11",
+    open: 1170,
+    high: 1195,
+    low: 1165,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 35579367
+  },
+  {
+    date: "2025/8/8",
+    open: 1180,
+    high: 1185,
+    low: 1170,
+    close: 1175,
+    adjClose: 1170.32,
+    volume: 25958258
+  },
+  {
+    date: "2025/8/7",
+    open: 1160,
+    high: 1180,
+    low: 1155,
+    close: 1180,
+    adjClose: 1175.3,
+    volume: 61370031
+  },
+  {
+    date: "2025/8/6",
+    open: 1130,
+    high: 1135,
+    low: 1125,
+    close: 1125,
+    adjClose: 1120.52,
+    volume: 22023406
+  },
+  {
+    date: "2025/8/5",
+    open: 1145,
+    high: 1150,
+    low: 1140,
+    close: 1150,
+    adjClose: 1145.42,
+    volume: 17012960
+  },
+  {
+    date: "2025/8/4",
+    open: 1130,
+    high: 1135,
+    low: 1125,
+    close: 1135,
+    adjClose: 1130.48,
+    volume: 23939021
+  },
+  {
+    date: "2025/7/31",
+    open: 1160,
+    high: 1165,
+    low: 1155,
+    close: 1160,
+    adjClose: 1155.38,
+    volume: 33230751
+  },
+  {
+    date: "2025/7/30",
+    open: 1150,
+    high: 1160,
+    low: 1145,
+    close: 1155,
+    adjClose: 1150.4,
+    volume: 34182363
+  },
+  {
+    date: "2025/7/29",
+    open: 1145,
+    high: 1145,
+    low: 1125,
+    close: 1135,
+    adjClose: 1130.48,
+    volume: 31763255
+  },
+  {
+    date: "2025/7/28",
+    open: 1155,
+    high: 1160,
+    low: 1145,
+    close: 1145,
+    adjClose: 1140.44,
+    volume: 20606376
+  },
+  {
+    date: "2025/7/25",
+    open: 1150,
+    high: 1155,
+    low: 1140,
+    close: 1145,
+    adjClose: 1140.44,
+    volume: 22476546
+  },
+  {
+    date: "2025/7/24",
+    open: 1150,
+    high: 1155,
+    low: 1145,
+    close: 1145,
+    adjClose: 1140.44,
+    volume: 15055463
+  },
+  {
+    date: "2025/7/23",
+    open: 1140,
+    high: 1145,
+    low: 1135,
+    close: 1145,
+    adjClose: 1140.44,
+    volume: 29747757
+  },
+  {
+    date: "2025/7/22",
+    open: 1145,
+    high: 1160,
+    low: 1130,
+    close: 1130,
+    adjClose: 1125.5,
+    volume: 50457506
+  },
+  {
+    date: "2025/7/21",
+    open: 1145,
+    high: 1150,
+    low: 1135,
+    close: 1150,
+    adjClose: 1145.42,
+    volume: 26749324
+  },
+  {
+    date: "2025/7/18",
+    open: 1155,
+    high: 1160,
+    low: 1145,
+    close: 1155,
+    adjClose: 1150.4,
+    volume: 46645034
+  },
+  {
+    date: "2025/7/17",
+    open: 1130,
+    high: 1135,
+    low: 1115,
+    close: 1130,
+    adjClose: 1125.5,
+    volume: 30648595
+  },
+  {
+    date: "2025/7/16",
+    open: 1120,
+    high: 1130,
+    low: 1120,
+    close: 1130,
+    adjClose: 1125.5,
+    volume: 31013743
+  },
+  {
+    date: "2025/7/15",
+    open: 1095,
+    high: 1115,
+    low: 1090,
+    close: 1110,
+    adjClose: 1105.58,
+    volume: 45416390
+  },
+  {
+    date: "2025/7/14",
+    open: 1100,
+    high: 1100,
+    low: 1085,
+    close: 1095,
+    adjClose: 1090.64,
+    volume: 25760632
+  },
+  {
+    date: "2025/7/11",
+    open: 1095,
+    high: 1100,
+    low: 1090,
+    close: 1100,
+    adjClose: 1095.62,
+    volume: 28249780
+  },
+  {
+    date: "2025/7/10",
+    open: 1095,
+    high: 1100,
+    low: 1090,
+    close: 1100,
+    adjClose: 1095.62,
+    volume: 22350503
+  },
+  {
+    date: "2025/7/9",
+    open: 1070,
+    high: 1090,
+    low: 1065,
+    close: 1090,
+    adjClose: 1085.66,
+    volume: 23618216
+  },
+  {
+    date: "2025/7/8",
+    open: 1070,
+    high: 1080,
+    low: 1065,
+    close: 1080,
+    adjClose: 1075.7,
+    volume: 27461252
+  },
+  {
+    date: "2025/7/7",
+    open: 1080,
+    high: 1085,
+    low: 1070,
+    close: 1080,
+    adjClose: 1075.7,
+    volume: 18829372
+  },
+  {
+    date: "2025/7/4",
+    open: 1095,
+    high: 1100,
+    low: 1080,
+    close: 1085,
+    adjClose: 1080.68,
+    volume: 20363322
+  },
+  {
+    date: "2025/7/3",
+    open: 1105,
+    high: 1105,
+    low: 1090,
+    close: 1090,
+    adjClose: 1085.66,
+    volume: 36973556
+  },
+  {
+    date: "2025/7/2",
+    open: 1075,
+    high: 1085,
+    low: 1070,
+    close: 1085,
+    adjClose: 1080.68,
+    volume: 23822731
+  },
+  {
+    date: "2025/7/1",
+    open: 1080,
+    high: 1095,
+    low: 1075,
+    close: 1085,
+    adjClose: 1080.68,
+    volume: 44299887
+  },
+  {
+    date: "2025/6/30",
+    open: 1075,
+    high: 1080,
+    low: 1060,
+    close: 1060,
+    adjClose: 1055.78,
+    volume: 32413717
+  },
+  {
+    date: "2025/6/27",
+    open: 1070,
+    high: 1080,
+    low: 1060,
+    close: 1080,
+    adjClose: 1075.7,
+    volume: 32549027
+  },
+  {
+    date: "2025/6/26",
+    open: 1075,
+    high: 1080,
+    low: 1065,
+    close: 1075,
+    adjClose: 1070.72,
+    volume: 36056692
+  },
+  {
+    date: "2025/6/25",
+    open: 1060,
+    high: 1070,
+    low: 1055,
+    close: 1070,
+    adjClose: 1065.74,
+    volume: 38783736
+  },
+  {
+    date: "2025/6/24",
+    open: 1045,
+    high: 1050,
+    low: 1040,
+    close: 1050,
+    adjClose: 1045.82,
+    volume: 28163537
+  },
+  {
+    date: "2025/6/23",
+    open: 1025,
+    high: 1030,
+    low: 1015,
+    close: 1020,
+    adjClose: 1015.94,
+    volume: 32143872
+  },
+  {
+    date: "2025/6/20",
+    open: 1030,
+    high: 1055,
+    low: 1025,
+    close: 1055,
+    adjClose: 1050.8,
+    volume: 57831332
+  },
+  {
+    date: "2025/6/19",
+    open: 1045,
+    high: 1045,
+    low: 1030,
+    close: 1035,
+    adjClose: 1030.88,
+    volume: 24002557
+  },
+  {
+    date: "2025/6/18",
+    open: 1040,
+    high: 1055,
+    low: 1030,
+    close: 1055,
+    adjClose: 1050.8,
+    volume: 37931721
+  },
+  {
+    date: "2025/6/17",
+    open: 1040,
+    high: 1050,
+    low: 1035,
+    close: 1045,
+    adjClose: 1040.84,
+    volume: 26517379
+  },
+  {
+    date: "2025/6/16",
+    open: 1030,
+    high: 1030,
+    low: 1015,
+    close: 1025,
+    adjClose: 1020.92,
+    volume: 28580673
+  },
+  {
+    date: "2025/6/13",
+    open: 1040,
+    high: 1040,
+    low: 1025,
+    close: 1030,
+    adjClose: 1025.9,
+    volume: 28393455
+  },
+  {
+    date: "2025/6/12",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2025/6/12",
+    open: 1055,
+    high: 1060,
+    low: 1045,
+    close: 1045,
+    adjClose: 1040.84,
+    volume: 25221606
+  },
+  {
+    date: "2025/6/11",
+    open: 1065,
+    high: 1070,
+    low: 1055,
+    close: 1065,
+    adjClose: 1056.27,
+    volume: 37178498
+  },
+  {
+    date: "2025/6/10",
+    open: 1025,
+    high: 1050,
+    low: 1020,
+    close: 1045,
+    adjClose: 1036.44,
+    volume: 44877640
+  },
+  {
+    date: "2025/6/9",
+    open: 1005,
+    high: 1010,
+    low: 1000,
+    close: 1005,
+    adjClose: 996.77,
+    volume: 21674308
+  },
+  {
+    date: "2025/6/6",
+    open: 997,
+    high: 997,
+    low: 991,
+    close: 995,
+    adjClose: 986.85,
+    volume: 13670307
+  },
+  {
+    date: "2025/6/5",
+    open: 1000,
+    high: 1000,
+    low: 991,
+    close: 998,
+    adjClose: 989.82,
+    volume: 24414444
+  },
+  {
+    date: "2025/6/4",
+    open: 974,
+    high: 990,
+    low: 970,
+    close: 990,
+    adjClose: 981.89,
+    volume: 37233567
+  },
+  {
+    date: "2025/6/3",
+    open: 960,
+    high: 965,
+    low: 950,
+    close: 950,
+    adjClose: 942.22,
+    volume: 26020787
+  },
+  {
+    date: "2025/6/2",
+    open: 958,
+    high: 961,
+    low: 946,
+    close: 946,
+    adjClose: 938.25,
+    volume: 33676511
+  },
+  {
+    date: "2025/5/29",
+    open: 986,
+    high: 986,
+    low: 967,
+    close: 967,
+    adjClose: 959.08,
+    volume: 48602590
+  },
+  {
+    date: "2025/5/28",
+    open: 984,
+    high: 985,
+    low: 967,
+    close: 967,
+    adjClose: 959.08,
+    volume: 26471533
+  },
+  {
+    date: "2025/5/27",
+    open: 971,
+    high: 975,
+    low: 961,
+    close: 965,
+    adjClose: 957.09,
+    volume: 26355315
+  },
+  {
+    date: "2025/5/26",
+    open: 975,
+    high: 984,
+    low: 975,
+    close: 976,
+    adjClose: 968,
+    volume: 19329052
+  },
+  {
+    date: "2025/5/23",
+    open: 993,
+    high: 993,
+    low: 975,
+    close: 984,
+    adjClose: 975.94,
+    volume: 22213030
+  },
+  {
+    date: "2025/5/22",
+    open: 988,
+    high: 988,
+    low: 979,
+    close: 982,
+    adjClose: 973.95,
+    volume: 18747545
+  },
+  {
+    date: "2025/5/21",
+    open: 986,
+    high: 999,
+    low: 983,
+    close: 990,
+    adjClose: 981.89,
+    volume: 26248757
+  },
+  {
+    date: "2025/5/20",
+    open: 991,
+    high: 994,
+    low: 978,
+    close: 978,
+    adjClose: 969.99,
+    volume: 20897857
+  },
+  {
+    date: "2025/5/19",
+    open: 993,
+    high: 994,
+    low: 980,
+    close: 984,
+    adjClose: 975.94,
+    volume: 19906139
+  },
+  {
+    date: "2025/5/16",
+    open: 991,
+    high: 998,
+    low: 989,
+    close: 998,
+    adjClose: 989.82,
+    volume: 16878650
+  },
+  {
+    date: "2025/5/15",
+    open: 1000,
+    high: 1000,
+    low: 993,
+    close: 993,
+    adjClose: 984.86,
+    volume: 24662270
+  },
+  {
+    date: "2025/5/14",
+    open: 990,
+    high: 999,
+    low: 988,
+    close: 999,
+    adjClose: 990.82,
+    volume: 40475123
+  },
+  {
+    date: "2025/5/13",
+    open: 990,
+    high: 990,
+    low: 969,
+    close: 969,
+    adjClose: 961.06,
+    volume: 38047856
+  },
+  {
+    date: "2025/5/12",
+    open: 954,
+    high: 962,
+    low: 952,
+    close: 957,
+    adjClose: 949.16,
+    volume: 23402547
+  },
+  {
+    date: "2025/5/9",
+    open: 938,
+    high: 949,
+    low: 934,
+    close: 949,
+    adjClose: 941.23,
+    volume: 36383573
+  },
+  {
+    date: "2025/5/8",
+    open: 933,
+    high: 939,
+    low: 918,
+    close: 918,
+    adjClose: 910.48,
+    volume: 27985917
+  },
+  {
+    date: "2025/5/7",
+    open: 925,
+    high: 932,
+    low: 911,
+    close: 928,
+    adjClose: 920.4,
+    volume: 36907620
+  },
+  {
+    date: "2025/5/6",
+    open: 916,
+    high: 930,
+    low: 916,
+    close: 920,
+    adjClose: 912.46,
+    volume: 37538894
+  },
+  {
+    date: "2025/5/5",
+    open: 956,
+    high: 957,
+    low: 923,
+    close: 938,
+    adjClose: 930.32,
+    volume: 52770209
+  },
+  {
+    date: "2025/5/2",
+    open: 938,
+    high: 950,
+    low: 932,
+    close: 950,
+    adjClose: 942.22,
+    volume: 43873135
+  },
+  {
+    date: "2025/4/30",
+    open: 901,
+    high: 908,
+    low: 899,
+    close: 908,
+    adjClose: 900.56,
+    volume: 35405654
+  },
+  {
+    date: "2025/4/29",
+    open: 897,
+    high: 902,
+    low: 893,
+    close: 902,
+    adjClose: 894.61,
+    volume: 24362874
+  },
+  {
+    date: "2025/4/28",
+    open: 898,
+    high: 898,
+    low: 893,
+    close: 897,
+    adjClose: 889.65,
+    volume: 21830091
+  },
+  {
+    date: "2025/4/25",
+    open: 900,
+    high: 901,
+    low: 886,
+    close: 888,
+    adjClose: 880.72,
+    volume: 34640282
+  },
+  {
+    date: "2025/4/24",
+    open: 886,
+    high: 886,
+    low: 859,
+    close: 864,
+    adjClose: 856.92,
+    volume: 32238198
+  },
+  {
+    date: "2025/4/23",
+    open: 853,
+    high: 873,
+    low: 848,
+    close: 873,
+    adjClose: 865.85,
+    volume: 37863656
+  },
+  {
+    date: "2025/4/22",
+    open: 826,
+    high: 829,
+    low: 816,
+    close: 816,
+    adjClose: 809.31,
+    volume: 28888527
+  },
+  {
+    date: "2025/4/21",
+    open: 844,
+    high: 847,
+    low: 832,
+    close: 835,
+    adjClose: 828.16,
+    volume: 18415705
+  },
+  {
+    date: "2025/4/18",
+    open: 853,
+    high: 858,
+    low: 850,
+    close: 850,
+    adjClose: 843.04,
+    volume: 20101219
+  },
+  {
+    date: "2025/4/17",
+    open: 849,
+    high: 856,
+    low: 842,
+    close: 847,
+    adjClose: 840.06,
+    volume: 33684502
+  },
+  {
+    date: "2025/4/16",
+    open: 867,
+    high: 869,
+    low: 852,
+    close: 855,
+    adjClose: 848,
+    volume: 42128082
+  },
+  {
+    date: "2025/4/15",
+    open: 874,
+    high: 879,
+    low: 865,
+    close: 877,
+    adjClose: 869.82,
+    volume: 30562095
+  },
+  {
+    date: "2025/4/14",
+    open: 895,
+    high: 903,
+    low: 865,
+    close: 865,
+    adjClose: 857.91,
+    volume: 66326054
+  },
+  {
+    date: "2025/4/11",
+    open: 848,
+    high: 889,
+    low: 836,
+    close: 889,
+    adjClose: 881.72,
+    volume: 76103586
+  },
+  {
+    date: "2025/4/10",
+    open: 863,
+    high: 863,
+    low: 863,
+    close: 863,
+    adjClose: 855.93,
+    volume: 19416428
+  },
+  {
+    date: "2025/4/9",
+    open: 809,
+    high: 826,
+    low: 780,
+    close: 785,
+    adjClose: 778.57,
+    volume: 107582838
+  },
+  {
+    date: "2025/4/8",
+    open: 797,
+    high: 843,
+    low: 797,
+    close: 816,
+    adjClose: 809.31,
+    volume: 116648736
+  },
+  {
+    date: "2025/4/7",
+    open: 848,
+    high: 848,
+    low: 848,
+    close: 848,
+    adjClose: 841.05,
+    volume: 23820773
+  },
+  {
+    date: "2025/4/2",
+    open: 949,
+    high: 952,
+    low: 938,
+    close: 942,
+    adjClose: 934.28,
+    volume: 24849656
+  },
+  {
+    date: "2025/4/1",
+    open: 929,
+    high: 946,
+    low: 925,
+    close: 944,
+    adjClose: 936.27,
+    volume: 32197752
+  },
+  {
+    date: "2025/3/31",
+    open: 920,
+    high: 924,
+    low: 910,
+    close: 910,
+    adjClose: 902.54,
+    volume: 51064611
+  },
+  {
+    date: "2025/3/28",
+    open: 946,
+    high: 955,
+    low: 946,
+    close: 952,
+    adjClose: 944.2,
+    volume: 33101234
+  },
+  {
+    date: "2025/3/27",
+    open: 961,
+    high: 964,
+    low: 958,
+    close: 958,
+    adjClose: 950.15,
+    volume: 34563256
+  },
+  {
+    date: "2025/3/26",
+    open: 995,
+    high: 995,
+    low: 980,
+    close: 980,
+    adjClose: 971.97,
+    volume: 21735917
+  },
+  {
+    date: "2025/3/25",
+    open: 989,
+    high: 995,
+    low: 985,
+    close: 990,
+    adjClose: 981.89,
+    volume: 26167428
+  },
+  {
+    date: "2025/3/24",
+    open: 986,
+    high: 987,
+    low: 972,
+    close: 972,
+    adjClose: 964.04,
+    volume: 16121506
+  },
+  {
+    date: "2025/3/21",
+    open: 985,
+    high: 987,
+    low: 970,
+    close: 972,
+    adjClose: 964.04,
+    volume: 39214916
+  },
+  {
+    date: "2025/3/20",
+    open: 978,
+    high: 985,
+    low: 971,
+    close: 985,
+    adjClose: 976.93,
+    volume: 28715956
+  },
+  {
+    date: "2025/3/19",
+    open: 965,
+    high: 967,
+    low: 950,
+    close: 952,
+    adjClose: 944.2,
+    volume: 35245036
+  },
+  {
+    date: "2025/3/18",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2025/3/18",
+    open: 976,
+    high: 978,
+    low: 968,
+    close: 971,
+    adjClose: 963.04,
+    volume: 21575327
+  },
+  {
+    date: "2025/3/17",
+    open: 977,
+    high: 985,
+    low: 968,
+    close: 970,
+    adjClose: 957.59,
+    volume: 31491061
+  },
+  {
+    date: "2025/3/14",
+    open: 965,
+    high: 969,
+    low: 955,
+    close: 959,
+    adjClose: 946.73,
+    volume: 34333748
+  },
+  {
+    date: "2025/3/13",
+    open: 1000,
+    high: 1005,
+    low: 965,
+    close: 965,
+    adjClose: 952.65,
+    volume: 37035693
+  },
+  {
+    date: "2025/3/12",
+    open: 980,
+    high: 995,
+    low: 976,
+    close: 988,
+    adjClose: 975.36,
+    volume: 34184887
+  },
+  {
+    date: "2025/3/11",
+    open: 969,
+    high: 979,
+    low: 963,
+    close: 971,
+    adjClose: 958.58,
+    volume: 50204233
+  },
+  {
+    date: "2025/3/10",
+    open: 1005,
+    high: 1005,
+    low: 992,
+    close: 998,
+    adjClose: 985.23,
+    volume: 46849886
+  },
+  {
+    date: "2025/3/7",
+    open: 1005,
+    high: 1010,
+    low: 1000,
+    close: 1005,
+    adjClose: 992.14,
+    volume: 40822280
+  },
+  {
+    date: "2025/3/6",
+    open: 1020,
+    high: 1025,
+    low: 1005,
+    close: 1005,
+    adjClose: 992.14,
+    volume: 45187017
+  },
+  {
+    date: "2025/3/5",
+    open: 1020,
+    high: 1030,
+    low: 1015,
+    close: 1020,
+    adjClose: 1006.95,
+    volume: 41994320
+  },
+  {
+    date: "2025/3/4",
+    open: 996,
+    high: 1010,
+    low: 996,
+    close: 1000,
+    adjClose: 987.21,
+    volume: 64569262
+  },
+  {
+    date: "2025/3/3",
+    open: 1000,
+    high: 1020,
+    low: 1000,
+    close: 1020,
+    adjClose: 1006.95,
+    volume: 65621663
+  },
+  {
+    date: "2025/2/27",
+    open: 1065,
+    high: 1065,
+    low: 1040,
+    close: 1040,
+    adjClose: 1026.69,
+    volume: 55283596
+  },
+  {
+    date: "2025/2/26",
+    open: 1045,
+    high: 1060,
+    low: 1045,
+    close: 1060,
+    adjClose: 1046.44,
+    volume: 36768449
+  },
+  {
+    date: "2025/2/25",
+    open: 1055,
+    high: 1060,
+    low: 1050,
+    close: 1055,
+    adjClose: 1041.5,
+    volume: 45158522
+  },
+  {
+    date: "2025/2/24",
+    open: 1080,
+    high: 1085,
+    low: 1075,
+    close: 1075,
+    adjClose: 1061.25,
+    volume: 30822970
+  },
+  {
+    date: "2025/2/21",
+    open: 1085,
+    high: 1095,
+    low: 1080,
+    close: 1095,
+    adjClose: 1080.99,
+    volume: 28972910
+  },
+  {
+    date: "2025/2/20",
+    open: 1080,
+    high: 1085,
+    low: 1070,
+    close: 1080,
+    adjClose: 1066.18,
+    volume: 29643124
+  },
+  {
+    date: "2025/2/19",
+    open: 1090,
+    high: 1095,
+    low: 1085,
+    close: 1090,
+    adjClose: 1076.05,
+    volume: 26400293
+  },
+  {
+    date: "2025/2/18",
+    open: 1085,
+    high: 1100,
+    low: 1080,
+    close: 1100,
+    adjClose: 1085.93,
+    volume: 21616188
+  },
+  {
+    date: "2025/2/17",
+    open: 1065,
+    high: 1085,
+    low: 1065,
+    close: 1085,
+    adjClose: 1071.12,
+    volume: 35491271
+  },
+  {
+    date: "2025/2/14",
+    open: 1065,
+    high: 1070,
+    low: 1060,
+    close: 1060,
+    adjClose: 1046.44,
+    volume: 64486940
+  },
+  {
+    date: "2025/2/13",
+    open: 1090,
+    high: 1095,
+    low: 1080,
+    close: 1090,
+    adjClose: 1076.05,
+    volume: 33210403
+  },
+  {
+    date: "2025/2/12",
+    open: 1110,
+    high: 1115,
+    low: 1100,
+    close: 1100,
+    adjClose: 1085.93,
+    volume: 24172954
+  },
+  {
+    date: "2025/2/11",
+    open: 1110,
+    high: 1115,
+    low: 1100,
+    close: 1110,
+    adjClose: 1095.8,
+    volume: 18898928
+  },
+  {
+    date: "2025/2/10",
+    open: 1125,
+    high: 1125,
+    low: 1095,
+    close: 1105,
+    adjClose: 1090.86,
+    volume: 28527108
+  },
+  {
+    date: "2025/2/7",
+    open: 1110,
+    high: 1125,
+    low: 1105,
+    close: 1125,
+    adjClose: 1110.61,
+    volume: 27883220
+  },
+  {
+    date: "2025/2/6",
+    open: 1120,
+    high: 1120,
+    low: 1105,
+    close: 1115,
+    adjClose: 1100.73,
+    volume: 29971252
+  },
+  {
+    date: "2025/2/5",
+    open: 1110,
+    high: 1120,
+    low: 1105,
+    close: 1110,
+    adjClose: 1095.8,
+    volume: 40385340
+  },
+  {
+    date: "2025/2/4",
+    open: 1085,
+    high: 1100,
+    low: 1080,
+    close: 1095,
+    adjClose: 1080.99,
+    volume: 53308108
+  },
+  {
+    date: "2025/2/3",
+    open: 1065,
+    high: 1075,
+    low: 1060,
+    close: 1070,
+    adjClose: 1056.31,
+    volume: 97946226
+  },
+  {
+    date: "2025/1/22",
+    open: 1140,
+    high: 1150,
+    low: 1135,
+    close: 1135,
+    adjClose: 1120.48,
+    volume: 42960405
+  },
+  {
+    date: "2025/1/21",
+    open: 1115,
+    high: 1125,
+    low: 1110,
+    close: 1120,
+    adjClose: 1105.67,
+    volume: 21904213
+  },
+  {
+    date: "2025/1/20",
+    open: 1125,
+    high: 1135,
+    low: 1120,
+    close: 1120,
+    adjClose: 1105.67,
+    volume: 29834528
+  },
+  {
+    date: "2025/1/17",
+    open: 1125,
+    high: 1125,
+    low: 1095,
+    close: 1120,
+    adjClose: 1105.67,
+    volume: 59214050
+  },
+  {
+    date: "2025/1/16",
+    open: 1095,
+    high: 1115,
+    low: 1090,
+    close: 1105,
+    adjClose: 1090.86,
+    volume: 47542962
+  },
+  {
+    date: "2025/1/15",
+    open: 1085,
+    high: 1085,
+    low: 1065,
+    close: 1065,
+    adjClose: 1051.37,
+    volume: 35489482
+  },
+  {
+    date: "2025/1/14",
+    open: 1085,
+    high: 1090,
+    low: 1075,
+    close: 1090,
+    adjClose: 1076.05,
+    volume: 28695247
+  },
+  {
+    date: "2025/1/13",
+    open: 1110,
+    high: 1115,
+    low: 1070,
+    close: 1075,
+    adjClose: 1061.25,
+    volume: 56690300
+  },
+  {
+    date: "2025/1/10",
+    open: 1100,
+    high: 1110,
+    low: 1100,
+    close: 1100,
+    adjClose: 1085.93,
+    volume: 22021522
+  },
+  {
+    date: "2025/1/9",
+    open: 1100,
+    high: 1115,
+    low: 1100,
+    close: 1100,
+    adjClose: 1085.93,
+    volume: 27263215
+  },
+  {
+    date: "2025/1/8",
+    open: 1110,
+    high: 1130,
+    low: 1105,
+    close: 1105,
+    adjClose: 1090.86,
+    volume: 45211419
+  },
+  {
+    date: "2025/1/7",
+    open: 1150,
+    high: 1160,
+    low: 1130,
+    close: 1130,
+    adjClose: 1115.54,
+    volume: 48758688
+  },
+  {
+    date: "2025/1/6",
+    open: 1100,
+    high: 1125,
+    low: 1095,
+    close: 1125,
+    adjClose: 1110.61,
+    volume: 69289786
+  },
+  {
+    date: "2025/1/3",
+    open: 1080,
+    high: 1085,
+    low: 1075,
+    close: 1075,
+    adjClose: 1061.25,
+    volume: 30415096
+  },
+  {
+    date: "2025/1/2",
+    open: 1070,
+    high: 1075,
+    low: 1055,
+    close: 1065,
+    adjClose: 1051.37,
+    volume: 43177098
+  },
+  {
+    date: "2024/12/31",
+    open: 1080,
+    high: 1085,
+    low: 1075,
+    close: 1075,
+    adjClose: 1061.25,
+    volume: 28397820
+  },
+  {
+    date: "2024/12/30",
+    open: 1090,
+    high: 1095,
+    low: 1085,
+    close: 1090,
+    adjClose: 1076.05,
+    volume: 23954634
+  },
+  {
+    date: "2024/12/27",
+    open: 1080,
+    high: 1095,
+    low: 1080,
+    close: 1090,
+    adjClose: 1076.05,
+    volume: 24948385
+  },
+  {
+    date: "2024/12/26",
+    open: 1085,
+    high: 1090,
+    low: 1085,
+    close: 1085,
+    adjClose: 1071.12,
+    volume: 14374900
+  },
+  {
+    date: "2024/12/25",
+    open: 1090,
+    high: 1090,
+    low: 1080,
+    close: 1085,
+    adjClose: 1071.12,
+    volume: 15481622
+  },
+  {
+    date: "2024/12/24",
+    open: 1095,
+    high: 1095,
+    low: 1080,
+    close: 1080,
+    adjClose: 1066.18,
+    volume: 26461906
+  },
+  {
+    date: "2024/12/23",
+    open: 1065,
+    high: 1080,
+    low: 1060,
+    close: 1080,
+    adjClose: 1066.18,
+    volume: 30728473
+  },
+  {
+    date: "2024/12/20",
+    open: 1060,
+    high: 1060,
+    low: 1035,
+    close: 1035,
+    adjClose: 1021.76,
+    volume: 52030520
+  },
+  {
+    date: "2024/12/19",
+    open: 1065,
+    high: 1070,
+    low: 1055,
+    close: 1070,
+    adjClose: 1056.31,
+    volume: 42702851
+  },
+  {
+    date: "2024/12/18",
+    open: 1075,
+    high: 1090,
+    low: 1070,
+    close: 1085,
+    adjClose: 1071.12,
+    volume: 41863190
+  },
+  {
+    date: "2024/12/17",
+    open: 1090,
+    high: 1095,
+    low: 1075,
+    close: 1075,
+    adjClose: 1061.25,
+    volume: 37880707
+  },
+  {
+    date: "2024/12/16",
+    open: 1085,
+    high: 1085,
+    low: 1075,
+    close: 1085,
+    adjClose: 1071.12,
+    volume: 39722392
+  },
+  {
+    date: "2024/12/13",
+    open: 1060,
+    high: 1070,
+    low: 1055,
+    close: 1065,
+    adjClose: 1051.37,
+    volume: 20423659
+  },
+  {
+    date: "2024/12/12",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2024/12/12",
+    open: 1060,
+    high: 1065,
+    low: 1055,
+    close: 1060,
+    adjClose: 1046.44,
+    volume: 22791260
+  },
+  {
+    date: "2024/12/11",
+    open: 1045,
+    high: 1060,
+    low: 1045,
+    close: 1045,
+    adjClose: 1027.68,
+    volume: 25264194
+  },
+  {
+    date: "2024/12/10",
+    open: 1070,
+    high: 1075,
+    low: 1060,
+    close: 1065,
+    adjClose: 1047.35,
+    volume: 28506584
+  },
+  {
+    date: "2024/12/9",
+    open: 1070,
+    high: 1075,
+    low: 1065,
+    close: 1075,
+    adjClose: 1057.18,
+    volume: 22247131
+  },
+  {
+    date: "2024/12/6",
+    open: 1075,
+    high: 1080,
+    low: 1060,
+    close: 1065,
+    adjClose: 1047.35,
+    volume: 30765288
+  },
+  {
+    date: "2024/12/5",
+    open: 1070,
+    high: 1080,
+    low: 1070,
+    close: 1075,
+    adjClose: 1057.18,
+    volume: 31425359
+  },
+  {
+    date: "2024/12/4",
+    open: 1065,
+    high: 1070,
+    low: 1055,
+    close: 1070,
+    adjClose: 1052.27,
+    volume: 33466290
+  },
+  {
+    date: "2024/12/3",
+    open: 1060,
+    high: 1065,
+    low: 1055,
+    close: 1055,
+    adjClose: 1037.52,
+    volume: 43414538
+  },
+  {
+    date: "2024/12/2",
+    open: 1020,
+    high: 1040,
+    low: 1015,
+    close: 1035,
+    adjClose: 1017.85,
+    volume: 31168404
+  },
+  {
+    date: "2024/11/29",
+    open: 995,
+    high: 1010,
+    low: 994,
+    close: 996,
+    adjClose: 979.49,
+    volume: 40094983
+  },
+  {
+    date: "2024/11/28",
+    open: 1005,
+    high: 1005,
+    low: 992,
+    close: 1005,
+    adjClose: 988.34,
+    volume: 33689956
+  },
+  {
+    date: "2024/11/27",
+    open: 1010,
+    high: 1020,
+    low: 1000,
+    close: 1000,
+    adjClose: 983.43,
+    volume: 31276090
+  },
+  {
+    date: "2024/11/26",
+    open: 1015,
+    high: 1020,
+    low: 1010,
+    close: 1010,
+    adjClose: 993.26,
+    volume: 27312402
+  },
+  {
+    date: "2024/11/25",
+    open: 1045,
+    high: 1050,
+    low: 1030,
+    close: 1030,
+    adjClose: 1012.93,
+    volume: 49566674
+  },
+  {
+    date: "2024/11/22",
+    open: 1035,
+    high: 1050,
+    low: 1035,
+    close: 1040,
+    adjClose: 1022.76,
+    volume: 25187973
+  },
+  {
+    date: "2024/11/21",
+    open: 1020,
+    high: 1025,
+    low: 1010,
+    close: 1010,
+    adjClose: 993.26,
+    volume: 41429227
+  },
+  {
+    date: "2024/11/20",
+    open: 1025,
+    high: 1025,
+    low: 1025,
+    close: 1025,
+    adjClose: 1008.01,
+    volume: 40203197
+  },
+  {
+    date: "2024/11/19",
+    open: 1030,
+    high: 1045,
+    low: 1025,
+    close: 1040,
+    adjClose: 1022.76,
+    volume: 24349599
+  },
+  {
+    date: "2024/11/18",
+    open: 1030,
+    high: 1035,
+    low: 1020,
+    close: 1025,
+    adjClose: 1008.01,
+    volume: 31815076
+  },
+  {
+    date: "2024/11/15",
+    open: 1040,
+    high: 1045,
+    low: 1030,
+    close: 1035,
+    adjClose: 1017.85,
+    volume: 34791611
+  },
+  {
+    date: "2024/11/14",
+    open: 1030,
+    high: 1040,
+    low: 1025,
+    close: 1035,
+    adjClose: 1017.85,
+    volume: 44627940
+  },
+  {
+    date: "2024/11/13",
+    open: 1045,
+    high: 1050,
+    low: 1035,
+    close: 1035,
+    adjClose: 1017.85,
+    volume: 42331232
+  },
+  {
+    date: "2024/11/12",
+    open: 1060,
+    high: 1065,
+    low: 1050,
+    close: 1050,
+    adjClose: 1032.6,
+    volume: 51099848
+  },
+  {
+    date: "2024/11/11",
+    open: 1080,
+    high: 1090,
+    low: 1070,
+    close: 1085,
+    adjClose: 1067.02,
+    volume: 34690205
+  },
+  {
+    date: "2024/11/8",
+    open: 1085,
+    high: 1090,
+    low: 1080,
+    close: 1090,
+    adjClose: 1071.94,
+    volume: 37099479
+  },
+  {
+    date: "2024/11/7",
+    open: 1050,
+    high: 1075,
+    low: 1050,
+    close: 1065,
+    adjClose: 1047.35,
+    volume: 43975446
+  },
+  {
+    date: "2024/11/6",
+    open: 1050,
+    high: 1080,
+    low: 1040,
+    close: 1060,
+    adjClose: 1042.43,
+    volume: 55349259
+  },
+  {
+    date: "2024/11/5",
+    open: 1030,
+    high: 1055,
+    low: 1030,
+    close: 1050,
+    adjClose: 1032.6,
+    volume: 32385622
+  },
+  {
+    date: "2024/11/4",
+    open: 1030,
+    high: 1045,
+    low: 1025,
+    close: 1040,
+    adjClose: 1022.76,
+    volume: 26747978
+  },
+  {
+    date: "2024/11/1",
+    open: 996,
+    high: 1030,
+    low: 996,
+    close: 1025,
+    adjClose: 1008.01,
+    volume: 54480255
+  },
+  {
+    date: "2024/10/30",
+    open: 1040,
+    high: 1055,
+    low: 1030,
+    close: 1030,
+    adjClose: 1012.93,
+    volume: 38201984
+  },
+  {
+    date: "2024/10/29",
+    open: 1035,
+    high: 1040,
+    low: 1020,
+    close: 1040,
+    adjClose: 1022.76,
+    volume: 45415773
+  },
+  {
+    date: "2024/10/28",
+    open: 1075,
+    high: 1080,
+    low: 1050,
+    close: 1050,
+    adjClose: 1032.6,
+    volume: 40142324
+  },
+  {
+    date: "2024/10/25",
+    open: 1065,
+    high: 1070,
+    low: 1060,
+    close: 1065,
+    adjClose: 1047.35,
+    volume: 22009575
+  },
+  {
+    date: "2024/10/24",
+    open: 1070,
+    high: 1075,
+    low: 1055,
+    close: 1060,
+    adjClose: 1042.43,
+    volume: 38236996
+  },
+  {
+    date: "2024/10/23",
+    open: 1060,
+    high: 1070,
+    low: 1055,
+    close: 1060,
+    adjClose: 1042.43,
+    volume: 31423466
+  },
+  {
+    date: "2024/10/22",
+    open: 1065,
+    high: 1075,
+    low: 1060,
+    close: 1075,
+    adjClose: 1057.18,
+    volume: 41197877
+  },
+  {
+    date: "2024/10/21",
+    open: 1090,
+    high: 1095,
+    low: 1080,
+    close: 1085,
+    adjClose: 1067.02,
+    volume: 36491060
+  },
+  {
+    date: "2024/10/18",
+    open: 1095,
+    high: 1100,
+    low: 1075,
+    close: 1085,
+    adjClose: 1067.02,
+    volume: 85011961
+  },
+  {
+    date: "2024/10/17",
+    open: 1050,
+    high: 1055,
+    low: 1030,
+    close: 1035,
+    adjClose: 1017.85,
+    volume: 54173771
+  },
+  {
+    date: "2024/10/16",
+    open: 1040,
+    high: 1070,
+    low: 1035,
+    close: 1045,
+    adjClose: 1027.68,
+    volume: 52652149
+  },
+  {
+    date: "2024/10/15",
+    open: 1050,
+    high: 1075,
+    low: 1050,
+    close: 1070,
+    adjClose: 1052.27,
+    volume: 42850176
+  },
+  {
+    date: "2024/10/14",
+    open: 1045,
+    high: 1055,
+    low: 1035,
+    close: 1045,
+    adjClose: 1027.68,
+    volume: 36858874
+  },
+  {
+    date: "2024/10/11",
+    open: 1025,
+    high: 1050,
+    low: 1020,
+    close: 1045,
+    adjClose: 1027.68,
+    volume: 43058754
+  },
+  {
+    date: "2024/10/9",
+    open: 1030,
+    high: 1035,
+    low: 1020,
+    close: 1020,
+    adjClose: 1003.1,
+    volume: 46975717
+  },
+  {
+    date: "2024/10/8",
+    open: 1000,
+    high: 1010,
+    low: 997,
+    close: 1010,
+    adjClose: 993.26,
+    volume: 30845902
+  },
+  {
+    date: "2024/10/7",
+    open: 993,
+    high: 1010,
+    low: 989,
+    close: 1005,
+    adjClose: 988.34,
+    volume: 39667071
+  },
+  {
+    date: "2024/10/4",
+    open: 986,
+    high: 986,
+    low: 967,
+    close: 977,
+    adjClose: 960.81,
+    volume: 40934818
+  },
+  {
+    date: "2024/10/1",
+    open: 967,
+    high: 977,
+    low: 967,
+    close: 972,
+    adjClose: 955.89,
+    volume: 26760355
+  },
+  {
+    date: "2024/9/30",
+    open: 978,
+    high: 990,
+    low: 957,
+    close: 957,
+    adjClose: 941.14,
+    volume: 61603217
+  },
+  {
+    date: "2024/9/27",
+    open: 1020,
+    high: 1025,
+    low: 1000,
+    close: 1000,
+    adjClose: 983.43,
+    volume: 35783779
+  },
+  {
+    date: "2024/9/26",
+    open: 1010,
+    high: 1015,
+    low: 1005,
+    close: 1015,
+    adjClose: 998.18,
+    volume: 38321585
+  },
+  {
+    date: "2024/9/25",
+    open: 1000,
+    high: 1005,
+    low: 998,
+    close: 1005,
+    adjClose: 988.34,
+    volume: 39405222
+  },
+  {
+    date: "2024/9/24",
+    open: 976,
+    high: 987,
+    low: 971,
+    close: 987,
+    adjClose: 970.64,
+    volume: 26785975
+  },
+  {
+    date: "2024/9/23",
+    open: 971,
+    high: 977,
+    low: 971,
+    close: 977,
+    adjClose: 960.81,
+    volume: 14497067
+  },
+  {
+    date: "2024/9/20",
+    open: 981,
+    high: 982,
+    low: 971,
+    close: 973,
+    adjClose: 956.88,
+    volume: 60133709
+  },
+  {
+    date: "2024/9/19",
+    open: 940,
+    high: 960,
+    low: 936,
+    close: 960,
+    adjClose: 944.09,
+    volume: 32739630
+  },
+  {
+    date: "2024/9/18",
+    open: 945,
+    high: 948,
+    low: 933,
+    close: 941,
+    adjClose: 925.41,
+    volume: 28424324
+  },
+  {
+    date: "2024/9/16",
+    open: 952,
+    high: 952,
+    low: 943,
+    close: 947,
+    adjClose: 931.31,
+    volume: 13626239
+  },
+  {
+    date: "2024/9/13",
+    open: 955,
+    high: 955,
+    low: 939,
+    close: 947,
+    adjClose: 931.31,
+    volume: 25347586
+  },
+  {
+    date: "2024/9/12",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2024/9/12",
+    open: 936,
+    high: 944,
+    low: 928,
+    close: 940,
+    adjClose: 924.42,
+    volume: 39454846
+  },
+  {
+    date: "2024/9/11",
+    open: 906,
+    high: 906,
+    low: 900,
+    close: 901,
+    adjClose: 882.13,
+    volume: 18029342
+  },
+  {
+    date: "2024/9/10",
+    open: 907,
+    high: 911,
+    low: 901,
+    close: 904,
+    adjClose: 885.07,
+    volume: 33498628
+  },
+  {
+    date: "2024/9/9",
+    open: 892,
+    high: 900,
+    low: 891,
+    close: 899,
+    adjClose: 880.18,
+    volume: 35885268
+  },
+  {
+    date: "2024/9/6",
+    open: 909,
+    high: 918,
+    low: 903,
+    close: 918,
+    adjClose: 898.78,
+    volume: 24458336
+  },
+  {
+    date: "2024/9/5",
+    open: 907,
+    high: 915,
+    low: 900,
+    close: 902,
+    adjClose: 883.11,
+    volume: 30512026
+  },
+  {
+    date: "2024/9/4",
+    open: 894,
+    high: 905,
+    low: 888,
+    close: 889,
+    adjClose: 870.39,
+    volume: 79709021
+  },
+  {
+    date: "2024/9/3",
+    open: 948,
+    high: 952,
+    low: 939,
+    close: 940,
+    adjClose: 920.32,
+    volume: 19547575
+  },
+  {
+    date: "2024/9/2",
+    open: 950,
+    high: 955,
+    low: 943,
+    close: 948,
+    adjClose: 928.15,
+    volume: 18646835
+  },
+  {
+    date: "2024/8/30",
+    open: 944,
+    high: 952,
+    low: 941,
+    close: 944,
+    adjClose: 924.23,
+    volume: 63834981
+  },
+  {
+    date: "2024/8/29",
+    open: 942,
+    high: 947,
+    low: 937,
+    close: 943,
+    adjClose: 923.26,
+    volume: 43530708
+  },
+  {
+    date: "2024/8/28",
+    open: 945,
+    high: 964,
+    low: 943,
+    close: 964,
+    adjClose: 943.82,
+    volume: 31059233
+  },
+  {
+    date: "2024/8/27",
+    open: 945,
+    high: 946,
+    low: 940,
+    close: 942,
+    adjClose: 922.28,
+    volume: 18693037
+  },
+  {
+    date: "2024/8/26",
+    open: 957,
+    high: 961,
+    low: 945,
+    close: 950,
+    adjClose: 930.11,
+    volume: 25057581
+  },
+  {
+    date: "2024/8/23",
+    open: 944,
+    high: 952,
+    low: 939,
+    close: 949,
+    adjClose: 929.13,
+    volume: 27592153
+  },
+  {
+    date: "2024/8/22",
+    open: 958,
+    high: 964,
+    low: 948,
+    close: 951,
+    adjClose: 931.09,
+    volume: 24349754
+  },
+  {
+    date: "2024/8/21",
+    open: 961,
+    high: 964,
+    low: 956,
+    close: 958,
+    adjClose: 937.94,
+    volume: 29758188
+  },
+  {
+    date: "2024/8/20",
+    open: 977,
+    high: 977,
+    low: 968,
+    close: 973,
+    adjClose: 952.63,
+    volume: 24039959
+  },
+  {
+    date: "2024/8/19",
+    open: 969,
+    high: 975,
+    low: 964,
+    close: 973,
+    adjClose: 952.63,
+    volume: 21348863
+  },
+  {
+    date: "2024/8/16",
+    open: 963,
+    high: 969,
+    low: 958,
+    close: 969,
+    adjClose: 948.71,
+    volume: 44062316
+  },
+  {
+    date: "2024/8/15",
+    open: 945,
+    high: 950,
+    low: 941,
+    close: 943,
+    adjClose: 923.26,
+    volume: 19476402
+  },
+  {
+    date: "2024/8/14",
+    open: 951,
+    high: 955,
+    low: 945,
+    close: 948,
+    adjClose: 928.15,
+    volume: 36780856
+  },
+  {
+    date: "2024/8/13",
+    open: 945,
+    high: 945,
+    low: 937,
+    close: 941,
+    adjClose: 921.3,
+    volume: 25764381
+  },
+  {
+    date: "2024/8/12",
+    open: 942,
+    high: 948,
+    low: 931,
+    close: 940,
+    adjClose: 920.32,
+    volume: 38331663
+  },
+  {
+    date: "2024/8/9",
+    open: 927,
+    high: 934,
+    low: 922,
+    close: 934,
+    adjClose: 914.44,
+    volume: 49494621
+  },
+  {
+    date: "2024/8/8",
+    open: 901,
+    high: 905,
+    low: 887,
+    close: 896,
+    adjClose: 877.24,
+    volume: 38236391
+  },
+  {
+    date: "2024/8/7",
+    open: 901,
+    high: 920,
+    low: 893,
+    close: 920,
+    adjClose: 900.74,
+    volume: 59158704
+  },
+  {
+    date: "2024/8/6",
+    open: 868,
+    high: 895,
+    low: 840,
+    close: 880,
+    adjClose: 861.57,
+    volume: 102930842
+  },
+  {
+    date: "2024/8/5",
+    open: 852,
+    high: 857,
+    low: 813,
+    close: 815,
+    adjClose: 797.94,
+    volume: 144057989
+  },
+  {
+    date: "2024/8/2",
+    open: 918,
+    high: 928,
+    low: 903,
+    close: 903,
+    adjClose: 884.09,
+    volume: 76144485
+  },
+  {
+    date: "2024/8/1",
+    open: 969,
+    high: 969,
+    low: 948,
+    close: 960,
+    adjClose: 939.9,
+    volume: 47382270
+  },
+  {
+    date: "2024/7/31",
+    open: 929,
+    high: 940,
+    low: 928,
+    close: 934,
+    adjClose: 914.44,
+    volume: 39894991
+  },
+  {
+    date: "2024/7/30",
+    open: 930,
+    high: 949,
+    low: 926,
+    close: 940,
+    adjClose: 920.32,
+    volume: 41761392
+  },
+  {
+    date: "2024/7/29",
+    open: 942,
+    high: 948,
+    low: 936,
+    close: 944,
+    adjClose: 924.23,
+    volume: 40809258
+  },
+  {
+    date: "2024/7/26",
+    open: 915,
+    high: 930,
+    low: 915,
+    close: 924,
+    adjClose: 904.65,
+    volume: 82081735
+  },
+  {
+    date: "2024/7/23",
+    open: 963,
+    high: 979,
+    low: 956,
+    close: 979,
+    adjClose: 958.5,
+    volume: 47213266
+  },
+  {
+    date: "2024/7/22",
+    open: 964,
+    high: 965,
+    low: 938,
+    close: 939,
+    adjClose: 919.34,
+    volume: 83062356
+  },
+  {
+    date: "2024/7/19",
+    open: 988,
+    high: 995,
+    low: 970,
+    close: 970,
+    adjClose: 949.69,
+    volume: 92507621
+  },
+  {
+    date: "2024/7/18",
+    open: 988,
+    high: 1005,
+    low: 986,
+    close: 1005,
+    adjClose: 983.96,
+    volume: 81990095
+  },
+  {
+    date: "2024/7/17",
+    open: 1035,
+    high: 1045,
+    low: 1020,
+    close: 1030,
+    adjClose: 1008.43,
+    volume: 54022399
+  },
+  {
+    date: "2024/7/16",
+    open: 1040,
+    high: 1070,
+    low: 1035,
+    close: 1055,
+    adjClose: 1032.91,
+    volume: 32125609
+  },
+  {
+    date: "2024/7/15",
+    open: 1040,
+    high: 1045,
+    low: 1025,
+    close: 1040,
+    adjClose: 1018.22,
+    volume: 38393309
+  },
+  {
+    date: "2024/7/12",
+    open: 1030,
+    high: 1045,
+    low: 1025,
+    close: 1040,
+    adjClose: 1018.22,
+    volume: 68983062
+  },
+  {
+    date: "2024/7/11",
+    open: 1065,
+    high: 1080,
+    low: 1055,
+    close: 1080,
+    adjClose: 1057.39,
+    volume: 41724336
+  },
+  {
+    date: "2024/7/10",
+    open: 1020,
+    high: 1050,
+    low: 1015,
+    close: 1045,
+    adjClose: 1023.12,
+    volume: 46206302
+  },
+  {
+    date: "2024/7/9",
+    open: 1030,
+    high: 1055,
+    low: 1025,
+    close: 1040,
+    adjClose: 1018.22,
+    volume: 46373121
+  },
+  {
+    date: "2024/7/8",
+    open: 1005,
+    high: 1050,
+    low: 1000,
+    close: 1035,
+    adjClose: 1013.33,
+    volume: 40146763
+  },
+  {
+    date: "2024/7/5",
+    open: 1005,
+    high: 1010,
+    low: 1000,
+    close: 1005,
+    adjClose: 983.96,
+    volume: 19998094
+  },
+  {
+    date: "2024/7/4",
+    open: 1000,
+    high: 1010,
+    low: 997,
+    close: 1005,
+    adjClose: 983.96,
+    volume: 41893299
+  },
+  {
+    date: "2024/7/3",
+    open: 976,
+    high: 979,
+    low: 967,
+    close: 979,
+    adjClose: 958.5,
+    volume: 24070411
+  },
+  {
+    date: "2024/7/2",
+    open: 967,
+    high: 971,
+    low: 959,
+    close: 960,
+    adjClose: 939.9,
+    volume: 25427569
+  },
+  {
+    date: "2024/7/1",
+    open: 968,
+    high: 977,
+    low: 965,
+    close: 968,
+    adjClose: 947.73,
+    volume: 19935737
+  },
+  {
+    date: "2024/6/28",
+    open: 956,
+    high: 971,
+    low: 955,
+    close: 966,
+    adjClose: 945.77,
+    volume: 39138210
+  },
+  {
+    date: "2024/6/27",
+    open: 951,
+    high: 961,
+    low: 949,
+    close: 960,
+    adjClose: 939.9,
+    volume: 39729446
+  },
+  {
+    date: "2024/6/26",
+    open: 951,
+    high: 960,
+    low: 951,
+    close: 960,
+    adjClose: 939.9,
+    volume: 44967166
+  },
+  {
+    date: "2024/6/25",
+    open: 925,
+    high: 945,
+    low: 923,
+    close: 945,
+    adjClose: 925.21,
+    volume: 57368432
+  },
+  {
+    date: "2024/6/24",
+    open: 958,
+    high: 960,
+    low: 940,
+    close: 940,
+    adjClose: 920.32,
+    volume: 66391994
+  },
+  {
+    date: "2024/6/21",
+    open: 961,
+    high: 978,
+    low: 960,
+    close: 970,
+    adjClose: 949.69,
+    volume: 88376132
+  },
+  {
+    date: "2024/6/20",
+    open: 971,
+    high: 981,
+    low: 971,
+    close: 981,
+    adjClose: 960.46,
+    volume: 48225374
+  },
+  {
+    date: "2024/6/19",
+    open: 953,
+    high: 984,
+    low: 953,
+    close: 981,
+    adjClose: 960.46,
+    volume: 72228052
+  },
+  {
+    date: "2024/6/18",
+    open: 944,
+    high: 950,
+    low: 940,
+    close: 943,
+    adjClose: 923.26,
+    volume: 37876013
+  },
+  {
+    date: "2024/6/17",
+    open: 913,
+    high: 925,
+    low: 913,
+    close: 921,
+    adjClose: 901.72,
+    volume: 26292426
+  },
+  {
+    date: "2024/6/14",
+    open: 916,
+    high: 922,
+    low: 905,
+    close: 922,
+    adjClose: 902.69,
+    volume: 38408123
+  },
+  {
+    date: "2024/6/13",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2024/6/13",
+    open: 923,
+    high: 935,
+    low: 911,
+    close: 919,
+    adjClose: 899.76,
+    volume: 55857091
+  },
+  {
+    date: "2024/6/12",
+    open: 888,
+    high: 914,
+    low: 888,
+    close: 909,
+    adjClose: 886.54,
+    volume: 48106925
+  },
+  {
+    date: "2024/6/11",
+    open: 892,
+    high: 895,
+    low: 883,
+    close: 883,
+    adjClose: 861.18,
+    volume: 48228488
+  },
+  {
+    date: "2024/6/7",
+    open: 885,
+    high: 888,
+    low: 879,
+    close: 879,
+    adjClose: 857.28,
+    volume: 41075399
+  },
+  {
+    date: "2024/6/6",
+    open: 893,
+    high: 899,
+    low: 885,
+    close: 894,
+    adjClose: 871.91,
+    volume: 62925136
+  },
+  {
+    date: "2024/6/5",
+    open: 841,
+    high: 857,
+    low: 835,
+    close: 854,
+    adjClose: 832.9,
+    volume: 31975446
+  },
+  {
+    date: "2024/6/4",
+    open: 844,
+    high: 851,
+    low: 837,
+    close: 839,
+    adjClose: 818.27,
+    volume: 28223635
+  },
+  {
+    date: "2024/6/3",
+    open: 839,
+    high: 853,
+    low: 837,
+    close: 846,
+    adjClose: 825.1,
+    volume: 28345488
+  },
+  {
+    date: "2024/5/31",
+    open: 838,
+    high: 846,
+    low: 821,
+    close: 821,
+    adjClose: 800.71,
+    volume: 77438401
+  },
+  {
+    date: "2024/5/30",
+    open: 841,
+    high: 848,
+    low: 838,
+    close: 838,
+    adjClose: 817.29,
+    volume: 38065102
+  },
+  {
+    date: "2024/5/29",
+    open: 861,
+    high: 868,
+    low: 856,
+    close: 857,
+    adjClose: 835.83,
+    volume: 33436835
+  },
+  {
+    date: "2024/5/28",
+    open: 867,
+    high: 873,
+    low: 865,
+    close: 865,
+    adjClose: 843.63,
+    volume: 25329216
+  },
+  {
+    date: "2024/5/27",
+    open: 872,
+    high: 878,
+    low: 866,
+    close: 869,
+    adjClose: 847.53,
+    volume: 26726954
+  },
+  {
+    date: "2024/5/24",
+    open: 858,
+    high: 872,
+    low: 858,
+    close: 867,
+    adjClose: 845.58,
+    volume: 34136382
+  },
+  {
+    date: "2024/5/23",
+    open: 875,
+    high: 877,
+    low: 867,
+    close: 875,
+    adjClose: 853.38,
+    volume: 37266618
+  },
+  {
+    date: "2024/5/22",
+    open: 845,
+    high: 865,
+    low: 843,
+    close: 864,
+    adjClose: 842.65,
+    volume: 36628342
+  },
+  {
+    date: "2024/5/21",
+    open: 830,
+    high: 841,
+    low: 830,
+    close: 841,
+    adjClose: 820.22,
+    volume: 19705349
+  },
+  {
+    date: "2024/5/20",
+    open: 834,
+    high: 838,
+    low: 822,
+    close: 835,
+    adjClose: 814.37,
+    volume: 28808661
+  },
+  {
+    date: "2024/5/17",
+    open: 848,
+    high: 848,
+    low: 834,
+    close: 835,
+    adjClose: 814.37,
+    volume: 26207289
+  },
+  {
+    date: "2024/5/16",
+    open: 852,
+    high: 856,
+    low: 837,
+    close: 841,
+    adjClose: 820.22,
+    volume: 43927195
+  },
+  {
+    date: "2024/5/15",
+    open: 838,
+    high: 844,
+    low: 837,
+    close: 839,
+    adjClose: 818.27,
+    volume: 39467772
+  },
+  {
+    date: "2024/5/14",
+    open: 816,
+    high: 825,
+    low: 811,
+    close: 825,
+    adjClose: 804.62,
+    volume: 28691846
+  },
+  {
+    date: "2024/5/13",
+    open: 823,
+    high: 825,
+    low: 818,
+    close: 819,
+    adjClose: 798.76,
+    volume: 34812619
+  },
+  {
+    date: "2024/5/10",
+    open: 803,
+    high: 807,
+    low: 798,
+    close: 802,
+    adjClose: 782.18,
+    volume: 25101318
+  },
+  {
+    date: "2024/5/9",
+    open: 798,
+    high: 802,
+    low: 796,
+    close: 796,
+    adjClose: 776.33,
+    volume: 21923999
+  },
+  {
+    date: "2024/5/8",
+    open: 794,
+    high: 802,
+    low: 792,
+    close: 802,
+    adjClose: 782.18,
+    volume: 21757193
+  },
+  {
+    date: "2024/5/7",
+    open: 797,
+    high: 800,
+    low: 792,
+    close: 800,
+    adjClose: 780.23,
+    volume: 33890214
+  },
+  {
+    date: "2024/5/6",
+    open: 791,
+    high: 793,
+    low: 786,
+    close: 786,
+    adjClose: 766.58,
+    volume: 32599878
+  },
+  {
+    date: "2024/5/3",
+    open: 788,
+    high: 788,
+    low: 773,
+    close: 780,
+    adjClose: 760.73,
+    volume: 29901556
+  },
+  {
+    date: "2024/5/2",
+    open: 789,
+    high: 789,
+    low: 772,
+    close: 772,
+    adjClose: 752.93,
+    volume: 40527228
+  },
+  {
+    date: "2024/4/30",
+    open: 797,
+    high: 802,
+    low: 790,
+    close: 790,
+    adjClose: 770.48,
+    volume: 39051972
+  },
+  {
+    date: "2024/4/29",
+    open: 790,
+    high: 795,
+    low: 787,
+    close: 795,
+    adjClose: 775.36,
+    volume: 26765837
+  },
+  {
+    date: "2024/4/26",
+    open: 788,
+    high: 789,
+    low: 782,
+    close: 782,
+    adjClose: 762.68,
+    volume: 32571247
+  },
+  {
+    date: "2024/4/25",
+    open: 770,
+    high: 774,
+    low: 765,
+    close: 766,
+    adjClose: 747.07,
+    volume: 28534926
+  },
+  {
+    date: "2024/4/24",
+    open: 770,
+    high: 785,
+    low: 769,
+    close: 783,
+    adjClose: 763.65,
+    volume: 39457128
+  },
+  {
+    date: "2024/4/23",
+    open: 761,
+    high: 761,
+    low: 752,
+    close: 754,
+    adjClose: 735.37,
+    volume: 30423647
+  },
+  {
+    date: "2024/4/22",
+    open: 740,
+    high: 757,
+    low: 740,
+    close: 742,
+    adjClose: 723.67,
+    volume: 46540798
+  },
+  {
+    date: "2024/4/19",
+    open: 769,
+    high: 770,
+    low: 746,
+    close: 750,
+    adjClose: 731.47,
+    volume: 130968654
+  },
+  {
+    date: "2024/4/18",
+    open: 796,
+    high: 810,
+    low: 792,
+    close: 804,
+    adjClose: 784.13,
+    volume: 43598591
+  },
+  {
+    date: "2024/4/17",
+    open: 798,
+    high: 808,
+    low: 793,
+    close: 804,
+    adjClose: 784.13,
+    volume: 34472074
+  },
+  {
+    date: "2024/4/16",
+    open: 802,
+    high: 803,
+    low: 785,
+    close: 788,
+    adjClose: 768.53,
+    volume: 49508969
+  },
+  {
+    date: "2024/4/15",
+    open: 804,
+    high: 812,
+    low: 803,
+    close: 806,
+    adjClose: 786.09,
+    volume: 38913470
+  },
+  {
+    date: "2024/4/12",
+    open: 823,
+    high: 826,
+    low: 817,
+    close: 818,
+    adjClose: 797.79,
+    volume: 31508936
+  },
+  {
+    date: "2024/4/11",
+    open: 811,
+    high: 820,
+    low: 811,
+    close: 820,
+    adjClose: 799.74,
+    volume: 25200651
+  },
+  {
+    date: "2024/4/10",
+    open: 815,
+    high: 819,
+    low: 810,
+    close: 815,
+    adjClose: 794.86,
+    volume: 27480849
+  },
+  {
+    date: "2024/4/9",
+    open: 795,
+    high: 820,
+    low: 792,
+    close: 819,
+    adjClose: 798.76,
+    volume: 56857731
+  },
+  {
+    date: "2024/4/8",
+    open: 789,
+    high: 792,
+    low: 783,
+    close: 783,
+    adjClose: 763.65,
+    volume: 32202226
+  },
+  {
+    date: "2024/4/3",
+    open: 783,
+    high: 785,
+    low: 778,
+    close: 780,
+    adjClose: 760.73,
+    volume: 30890544
+  },
+  {
+    date: "2024/4/2",
+    open: 784,
+    high: 790,
+    low: 783,
+    close: 790,
+    adjClose: 770.48,
+    volume: 37974481
+  },
+  {
+    date: "2024/4/1",
+    open: 783,
+    high: 783,
+    low: 769,
+    close: 770,
+    adjClose: 750.97,
+    volume: 21041261
+  },
+  {
+    date: "2024/3/29",
+    open: 769,
+    high: 777,
+    low: 768,
+    close: 776,
+    adjClose: 756.83,
+    volume: 9802000
+  },
+  {
+    date: "2024/3/28",
+    open: 774,
+    high: 776,
+    low: 768,
+    close: 769,
+    adjClose: 750,
+    volume: 27190918
+  },
+  {
+    date: "2024/3/27",
+    open: 785,
+    high: 785,
+    low: 779,
+    close: 779,
+    adjClose: 759.75,
+    volume: 18794479
+  },
+  {
+    date: "2024/3/26",
+    open: 788,
+    high: 792,
+    low: 776,
+    close: 782,
+    adjClose: 762.68,
+    volume: 40990702
+  },
+  {
+    date: "2024/3/25",
+    open: 783,
+    high: 788,
+    low: 779,
+    close: 780,
+    adjClose: 760.73,
+    volume: 19877101
+  },
+  {
+    date: "2024/3/22",
+    open: 788,
+    high: 789,
+    low: 775,
+    close: 785,
+    adjClose: 765.6,
+    volume: 30660820
+  },
+  {
+    date: "2024/3/21",
+    open: 773,
+    high: 784,
+    low: 772,
+    close: 784,
+    adjClose: 764.63,
+    volume: 46026103
+  },
+  {
+    date: "2024/3/20",
+    open: 764,
+    high: 769,
+    low: 752,
+    close: 758,
+    adjClose: 739.27,
+    volume: 41280325
+  },
+  {
+    date: "2024/3/19",
+    open: 758,
+    high: 765,
+    low: 755,
+    close: 762,
+    adjClose: 743.17,
+    volume: 30152375
+  },
+  {
+    date: "2024/3/18",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2024/3/18",
+    open: 754,
+    high: 765,
+    low: 754,
+    close: 764,
+    adjClose: 745.12,
+    volume: 43589856
+  },
+  {
+    date: "2024/3/15",
+    open: 771,
+    high: 777,
+    low: 753,
+    close: 753,
+    adjClose: 730.98,
+    volume: 73316437
+  },
+  {
+    date: "2024/3/14",
+    open: 779,
+    high: 785,
+    low: 770,
+    close: 784,
+    adjClose: 761.08,
+    volume: 42010806
+  },
+  {
+    date: "2024/3/13",
+    open: 785,
+    high: 785,
+    low: 777,
+    close: 779,
+    adjClose: 756.22,
+    volume: 36754557
+  },
+  {
+    date: "2024/3/12",
+    open: 757,
+    high: 771,
+    low: 754,
+    close: 770,
+    adjClose: 747.48,
+    volume: 58110339
+  },
+  {
+    date: "2024/3/11",
+    open: 768,
+    high: 778,
+    low: 761,
+    close: 766,
+    adjClose: 743.6,
+    volume: 64759810
+  },
+  {
+    date: "2024/3/8",
+    open: 795,
+    high: 796,
+    low: 772,
+    close: 784,
+    adjClose: 761.08,
+    volume: 87139744
+  },
+  {
+    date: "2024/3/7",
+    open: 755,
+    high: 769,
+    low: 754,
+    close: 760,
+    adjClose: 737.78,
+    volume: 71817344
+  },
+  {
+    date: "2024/3/6",
+    open: 718,
+    high: 738,
+    low: 717,
+    close: 735,
+    adjClose: 713.51,
+    volume: 43687122
+  },
+  {
+    date: "2024/3/5",
+    open: 735,
+    high: 738,
+    low: 728,
+    close: 730,
+    adjClose: 708.65,
+    volume: 64403889
+  },
+  {
+    date: "2024/3/4",
+    open: 714,
+    high: 725,
+    low: 711,
+    close: 725,
+    adjClose: 703.8,
+    volume: 88861397
+  },
+  {
+    date: "2024/3/1",
+    open: 697,
+    high: 697,
+    low: 688,
+    close: 689,
+    adjClose: 668.85,
+    volume: 23390635
+  },
+  {
+    date: "2024/2/29",
+    open: 691,
+    high: 698,
+    low: 688,
+    close: 690,
+    adjClose: 669.82,
+    volume: 54368302
+  },
+  {
+    date: "2024/2/27",
+    open: 700,
+    high: 701,
+    low: 691,
+    close: 698,
+    adjClose: 677.59,
+    volume: 33006829
+  },
+  {
+    date: "2024/2/26",
+    open: 700,
+    high: 700,
+    low: 695,
+    close: 698,
+    adjClose: 677.59,
+    volume: 28798079
+  },
+  {
+    date: "2024/2/23",
+    open: 701,
+    high: 703,
+    low: 696,
+    close: 697,
+    adjClose: 676.62,
+    volume: 46448923
+  },
+  {
+    date: "2024/2/22",
+    open: 695,
+    high: 695,
+    low: 685,
+    close: 692,
+    adjClose: 671.77,
+    volume: 33145643
+  },
+  {
+    date: "2024/2/21",
+    open: 678,
+    high: 683,
+    low: 678,
+    close: 681,
+    adjClose: 661.09,
+    volume: 30564485
+  },
+  {
+    date: "2024/2/20",
+    open: 675,
+    high: 688,
+    low: 675,
+    close: 687,
+    adjClose: 666.91,
+    volume: 30166461
+  },
+  {
+    date: "2024/2/19",
+    open: 674,
+    high: 682,
+    low: 674,
+    close: 678,
+    adjClose: 658.17,
+    volume: 34408673
+  },
+  {
+    date: "2024/2/16",
+    open: 697,
+    high: 699,
+    low: 683,
+    close: 683,
+    adjClose: 663.03,
+    volume: 44232811
+  },
+  {
+    date: "2024/2/15",
+    open: 709,
+    high: 709,
+    low: 693,
+    close: 697,
+    adjClose: 676.62,
+    volume: 112945296
+  },
+  {
+    date: "2024/2/5",
+    open: 645,
+    high: 647,
+    low: 638,
+    close: 646,
+    adjClose: 627.11,
+    volume: 44017740
+  },
+  {
+    date: "2024/2/2",
+    open: 633,
+    high: 635,
+    low: 628,
+    close: 635,
+    adjClose: 616.43,
+    volume: 26334815
+  },
+  {
+    date: "2024/2/1",
+    open: 625,
+    high: 628,
+    low: 619,
+    close: 628,
+    adjClose: 609.64,
+    volume: 44946369
+  },
+  {
+    date: "2024/1/31",
+    open: 634,
+    high: 637,
+    low: 626,
+    close: 628,
+    adjClose: 609.64,
+    volume: 41277950
+  },
+  {
+    date: "2024/1/30",
+    open: 642,
+    high: 647,
+    low: 642,
+    close: 642,
+    adjClose: 623.23,
+    volume: 36161825
+  },
+  {
+    date: "2024/1/29",
+    open: 646,
+    high: 648,
+    low: 644,
+    close: 648,
+    adjClose: 629.05,
+    volume: 27825490
+  },
+  {
+    date: "2024/1/26",
+    open: 644,
+    high: 646,
+    low: 639,
+    close: 644,
+    adjClose: 625.17,
+    volume: 41153025
+  },
+  {
+    date: "2024/1/25",
+    open: 635,
+    high: 642,
+    low: 633,
+    close: 642,
+    adjClose: 623.23,
+    volume: 52243347
+  },
+  {
+    date: "2024/1/24",
+    open: 628,
+    high: 630,
+    low: 624,
+    close: 627,
+    adjClose: 608.67,
+    volume: 26635005
+  },
+  {
+    date: "2024/1/23",
+    open: 629,
+    high: 629,
+    low: 622,
+    close: 628,
+    adjClose: 609.64,
+    volume: 41072439
+  },
+  {
+    date: "2024/1/22",
+    open: 633,
+    high: 633,
+    low: 623,
+    close: 626,
+    adjClose: 607.7,
+    volume: 65168775
+  },
+  {
+    date: "2024/1/19",
+    open: 625,
+    high: 627,
+    low: 614,
+    close: 626,
+    adjClose: 607.7,
+    volume: 161106401
+  },
+  {
+    date: "2024/1/18",
+    open: 586,
+    high: 589,
+    low: 585,
+    close: 588,
+    adjClose: 570.81,
+    volume: 27209996
+  },
+  {
+    date: "2024/1/17",
+    open: 583,
+    high: 584,
+    low: 578,
+    close: 581,
+    adjClose: 564.01,
+    volume: 42592335
+  },
+  {
+    date: "2024/1/16",
+    open: 581,
+    high: 588,
+    low: 579,
+    close: 580,
+    adjClose: 563.04,
+    volume: 27223860
+  },
+  {
+    date: "2024/1/15",
+    open: 590,
+    high: 590,
+    low: 585,
+    close: 586,
+    adjClose: 568.86,
+    volume: 21143076
+  },
+  {
+    date: "2024/1/12",
+    open: 581,
+    high: 588,
+    low: 581,
+    close: 584,
+    adjClose: 566.92,
+    volume: 16496053
+  },
+  {
+    date: "2024/1/11",
+    open: 586,
+    high: 589,
+    low: 583,
+    close: 586,
+    adjClose: 568.86,
+    volume: 23997409
+  },
+  {
+    date: "2024/1/10",
+    open: 581,
+    high: 586,
+    low: 580,
+    close: 584,
+    adjClose: 566.92,
+    volume: 13037716
+  },
+  {
+    date: "2024/1/9",
+    open: 588,
+    high: 589,
+    low: 583,
+    close: 586,
+    adjClose: 568.86,
+    volume: 22501510
+  },
+  {
+    date: "2024/1/8",
+    open: 582,
+    high: 585,
+    low: 579,
+    close: 583,
+    adjClose: 565.95,
+    volume: 17761275
+  },
+  {
+    date: "2024/1/5",
+    open: 578,
+    high: 580,
+    low: 574,
+    close: 576,
+    adjClose: 559.16,
+    volume: 18158971
+  },
+  {
+    date: "2024/1/4",
+    open: 580,
+    high: 581,
+    low: 577,
+    close: 580,
+    adjClose: 563.04,
+    volume: 15309129
+  },
+  {
+    date: "2024/1/3",
+    open: 584,
+    high: 585,
+    low: 576,
+    close: 578,
+    adjClose: 561.1,
+    volume: 37106763
+  },
+  {
+    date: "2024/1/2",
+    open: 590,
+    high: 593,
+    low: 589,
+    close: 593,
+    adjClose: 575.66,
+    volume: 26059058
+  },
+  {
+    date: "2023/12/29",
+    open: 589,
+    high: 593,
+    low: 589,
+    close: 593,
+    adjClose: 575.66,
+    volume: 18416318
+  },
+  {
+    date: "2023/12/28",
+    open: 592,
+    high: 593,
+    low: 589,
+    close: 593,
+    adjClose: 575.66,
+    volume: 25514849
+  },
+  {
+    date: "2023/12/27",
+    open: 587,
+    high: 592,
+    low: 586,
+    close: 592,
+    adjClose: 574.69,
+    volume: 33401336
+  },
+  {
+    date: "2023/12/26",
+    open: 583,
+    high: 586,
+    low: 582,
+    close: 586,
+    adjClose: 568.86,
+    volume: 16094308
+  },
+  {
+    date: "2023/12/25",
+    open: 582,
+    high: 585,
+    low: 580,
+    close: 581,
+    adjClose: 564.01,
+    volume: 9548143
+  },
+  {
+    date: "2023/12/22",
+    open: 582,
+    high: 582,
+    low: 579,
+    close: 582,
+    adjClose: 564.98,
+    volume: 18690214
+  },
+  {
+    date: "2023/12/21",
+    open: 577,
+    high: 579,
+    low: 575,
+    close: 577,
+    adjClose: 560.13,
+    volume: 24923414
+  },
+  {
+    date: "2023/12/20",
+    open: 587,
+    high: 587,
+    low: 583,
+    close: 585,
+    adjClose: 567.89,
+    volume: 38121456
+  },
+  {
+    date: "2023/12/19",
+    open: 588,
+    high: 588,
+    low: 580,
+    close: 585,
+    adjClose: 567.89,
+    volume: 28254292
+  },
+  {
+    date: "2023/12/18",
+    open: 579,
+    high: 585,
+    low: 577,
+    close: 585,
+    adjClose: 567.89,
+    volume: 26122277
+  },
+  {
+    date: "2023/12/15",
+    open: 585,
+    high: 586,
+    low: 580,
+    close: 585,
+    adjClose: 567.89,
+    volume: 54323262
+  },
+  {
+    date: "2023/12/14",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2023/12/14",
+    open: 581,
+    high: 582,
+    low: 579,
+    close: 582,
+    adjClose: 564.98,
+    volume: 39409958
+  },
+  {
+    date: "2023/12/13",
+    open: 576,
+    high: 579,
+    low: 576,
+    close: 577,
+    adjClose: 557.22,
+    volume: 22977731
+  },
+  {
+    date: "2023/12/12",
+    open: 580,
+    high: 581,
+    low: 575,
+    close: 578,
+    adjClose: 558.18,
+    volume: 29403010
+  },
+  {
+    date: "2023/12/11",
+    open: 572,
+    high: 575,
+    low: 570,
+    close: 574,
+    adjClose: 554.32,
+    volume: 27378610
+  },
+  {
+    date: "2023/12/8",
+    open: 574,
+    high: 577,
+    low: 570,
+    close: 570,
+    adjClose: 550.46,
+    volume: 33507214
+  },
+  {
+    date: "2023/12/7",
+    open: 570,
+    high: 573,
+    low: 566,
+    close: 566,
+    adjClose: 546.59,
+    volume: 20840397
+  },
+  {
+    date: "2023/12/6",
+    open: 568,
+    high: 575,
+    low: 568,
+    close: 570,
+    adjClose: 550.46,
+    volume: 21518089
+  },
+  {
+    date: "2023/12/5",
+    open: 571,
+    high: 572,
+    low: 567,
+    close: 570,
+    adjClose: 550.46,
+    volume: 22229723
+  },
+  {
+    date: "2023/12/4",
+    open: 582,
+    high: 582,
+    low: 571,
+    close: 574,
+    adjClose: 554.32,
+    volume: 26847171
+  },
+  {
+    date: "2023/12/1",
+    open: 573,
+    high: 579,
+    low: 573,
+    close: 579,
+    adjClose: 559.15,
+    volume: 28051165
+  },
+  {
+    date: "2023/11/30",
+    open: 576,
+    high: 577,
+    low: 570,
+    close: 577,
+    adjClose: 557.22,
+    volume: 47192647
+  },
+  {
+    date: "2023/11/29",
+    open: 578,
+    high: 579,
+    low: 570,
+    close: 574,
+    adjClose: 554.32,
+    volume: 24868842
+  },
+  {
+    date: "2023/11/28",
+    open: 565,
+    high: 576,
+    low: 565,
+    close: 575,
+    adjClose: 555.28,
+    volume: 26343906
+  },
+  {
+    date: "2023/11/27",
+    open: 573,
+    high: 577,
+    low: 568,
+    close: 568,
+    adjClose: 548.52,
+    volume: 18528520
+  },
+  {
+    date: "2023/11/24",
+    open: 577,
+    high: 578,
+    low: 574,
+    close: 575,
+    adjClose: 555.28,
+    volume: 10058969
+  },
+  {
+    date: "2023/11/23",
+    open: 574,
+    high: 578,
+    low: 574,
+    close: 578,
+    adjClose: 558.18,
+    volume: 14486134
+  },
+  {
+    date: "2023/11/22",
+    open: 576,
+    high: 579,
+    low: 574,
+    close: 577,
+    adjClose: 557.22,
+    volume: 21969125
+  },
+  {
+    date: "2023/11/21",
+    open: 582,
+    high: 585,
+    low: 581,
+    close: 585,
+    adjClose: 564.94,
+    volume: 35921706
+  },
+  {
+    date: "2023/11/20",
+    open: 576,
+    high: 579,
+    low: 575,
+    close: 577,
+    adjClose: 557.22,
+    volume: 22010114
+  },
+  {
+    date: "2023/11/17",
+    open: 579,
+    high: 583,
+    low: 579,
+    close: 580,
+    adjClose: 560.11,
+    volume: 22031704
+  },
+  {
+    date: "2023/11/16",
+    open: 581,
+    high: 583,
+    low: 578,
+    close: 583,
+    adjClose: 563.01,
+    volume: 28291435
+  },
+  {
+    date: "2023/11/15",
+    open: 583,
+    high: 583,
+    low: 575,
+    close: 581,
+    adjClose: 561.08,
+    volume: 50305088
+  },
+  {
+    date: "2023/11/14",
+    open: 576,
+    high: 576,
+    low: 571,
+    close: 572,
+    adjClose: 552.39,
+    volume: 21568576
+  },
+  {
+    date: "2023/11/13",
+    open: 579,
+    high: 580,
+    low: 571,
+    close: 571,
+    adjClose: 551.42,
+    volume: 43866014
+  },
+  {
+    date: "2023/11/10",
+    open: 555,
+    high: 557,
+    low: 554,
+    close: 557,
+    adjClose: 537.9,
+    volume: 12994933
+  },
+  {
+    date: "2023/11/9",
+    open: 551,
+    high: 557,
+    low: 551,
+    close: 557,
+    adjClose: 537.9,
+    volume: 13165684
+  },
+  {
+    date: "2023/11/8",
+    open: 550,
+    high: 557,
+    low: 550,
+    close: 556,
+    adjClose: 536.94,
+    volume: 15314834
+  },
+  {
+    date: "2023/11/7",
+    open: 552,
+    high: 555,
+    low: 550,
+    close: 555,
+    adjClose: 535.97,
+    volume: 14777790
+  },
+  {
+    date: "2023/11/6",
+    open: 553,
+    high: 556,
+    low: 550,
+    close: 550,
+    adjClose: 531.14,
+    volume: 29215201
+  },
+  {
+    date: "2023/11/3",
+    open: 547,
+    high: 549,
+    low: 545,
+    close: 549,
+    adjClose: 530.18,
+    volume: 15426176
+  },
+  {
+    date: "2023/11/2",
+    open: 536,
+    high: 547,
+    low: 535,
+    close: 547,
+    adjClose: 528.24,
+    volume: 29401438
+  },
+  {
+    date: "2023/11/1",
+    open: 533,
+    high: 533,
+    low: 527,
+    close: 528,
+    adjClose: 509.9,
+    volume: 13603347
+  },
+  {
+    date: "2023/10/31",
+    open: 535,
+    high: 535,
+    low: 527,
+    close: 529,
+    adjClose: 510.86,
+    volume: 25667058
+  },
+  {
+    date: "2023/10/30",
+    open: 531,
+    high: 534,
+    low: 528,
+    close: 532,
+    adjClose: 513.76,
+    volume: 21404842
+  },
+  {
+    date: "2023/10/27",
+    open: 534,
+    high: 536,
+    low: 532,
+    close: 533,
+    adjClose: 514.72,
+    volume: 15679643
+  },
+  {
+    date: "2023/10/26",
+    open: 530,
+    high: 535,
+    low: 530,
+    close: 531,
+    adjClose: 512.79,
+    volume: 28188348
+  },
+  {
+    date: "2023/10/25",
+    open: 544,
+    high: 551,
+    low: 544,
+    close: 544,
+    adjClose: 525.35,
+    volume: 16526355
+  },
+  {
+    date: "2023/10/24",
+    open: 543,
+    high: 546,
+    low: 540,
+    close: 544,
+    adjClose: 525.35,
+    volume: 15007814
+  },
+  {
+    date: "2023/10/23",
+    open: 552,
+    high: 553,
+    low: 543,
+    close: 544,
+    adjClose: 525.35,
+    volume: 22747367
+  },
+  {
+    date: "2023/10/20",
+    open: 549,
+    high: 556,
+    low: 546,
+    close: 556,
+    adjClose: 536.94,
+    volume: 45984177
+  },
+  {
+    date: "2023/10/19",
+    open: 540,
+    high: 548,
+    low: 540,
+    close: 546,
+    adjClose: 527.28,
+    volume: 22881262
+  },
+  {
+    date: "2023/10/18",
+    open: 549,
+    high: 549,
+    low: 540,
+    close: 540,
+    adjClose: 521.48,
+    volume: 26418940
+  },
+  {
+    date: "2023/10/17",
+    open: 550,
+    high: 552,
+    low: 548,
+    close: 551,
+    adjClose: 532.11,
+    volume: 18364998
+  },
+  {
+    date: "2023/10/16",
+    open: 546,
+    high: 547,
+    low: 542,
+    close: 545,
+    adjClose: 526.31,
+    volume: 19875676
+  },
+  {
+    date: "2023/10/13",
+    open: 550,
+    high: 554,
+    low: 548,
+    close: 553,
+    adjClose: 534.04,
+    volume: 31123496
+  },
+  {
+    date: "2023/10/12",
+    open: 545,
+    high: 550,
+    low: 544,
+    close: 550,
+    adjClose: 531.14,
+    volume: 34161176
+  },
+  {
+    date: "2023/10/11",
+    open: 542,
+    high: 544,
+    low: 540,
+    close: 544,
+    adjClose: 525.35,
+    volume: 46639969
+  },
+  {
+    date: "2023/10/6",
+    open: 530,
+    high: 533,
+    low: 529,
+    close: 532,
+    adjClose: 513.76,
+    volume: 15336587
+  },
+  {
+    date: "2023/10/5",
+    open: 523,
+    high: 529,
+    low: 523,
+    close: 528,
+    adjClose: 509.9,
+    volume: 24945684
+  },
+  {
+    date: "2023/10/4",
+    open: 521,
+    high: 523,
+    low: 519,
+    close: 520,
+    adjClose: 502.17,
+    volume: 28358964
+  },
+  {
+    date: "2023/10/3",
+    open: 528,
+    high: 533,
+    low: 528,
+    close: 529,
+    adjClose: 510.86,
+    volume: 14490129
+  },
+  {
+    date: "2023/10/2",
+    open: 530,
+    high: 534,
+    low: 528,
+    close: 533,
+    adjClose: 514.72,
+    volume: 25427911
+  },
+  {
+    date: "2023/9/28",
+    open: 523,
+    high: 525,
+    low: 520,
+    close: 523,
+    adjClose: 505.07,
+    volume: 19733331
+  },
+  {
+    date: "2023/9/27",
+    open: 517,
+    high: 523,
+    low: 516,
+    close: 522,
+    adjClose: 504.1,
+    volume: 16846401
+  },
+  {
+    date: "2023/9/26",
+    open: 521,
+    high: 524,
+    low: 519,
+    close: 519,
+    adjClose: 501.2,
+    volume: 26392692
+  },
+  {
+    date: "2023/9/25",
+    open: 522,
+    high: 529,
+    low: 522,
+    close: 525,
+    adjClose: 507,
+    volume: 17116402
+  },
+  {
+    date: "2023/9/22",
+    open: 523,
+    high: 525,
+    low: 522,
+    close: 522,
+    adjClose: 504.1,
+    volume: 29049309
+  },
+  {
+    date: "2023/9/21",
+    open: 530,
+    high: 531,
+    low: 526,
+    close: 527,
+    adjClose: 508.93,
+    volume: 32012694
+  },
+  {
+    date: "2023/9/20",
+    open: 536,
+    high: 538,
+    low: 535,
+    close: 535,
+    adjClose: 516.66,
+    volume: 24635567
+  },
+  {
+    date: "2023/9/19",
+    open: 539,
+    high: 543,
+    low: 538,
+    close: 538,
+    adjClose: 519.55,
+    volume: 18901683
+  },
+  {
+    date: "2023/9/18",
+    open: 548,
+    high: 549,
+    low: 540,
+    close: 540,
+    adjClose: 521.48,
+    volume: 36684692
+  },
+  {
+    date: "2023/9/15",
+    open: 549,
+    high: 558,
+    low: 547,
+    close: 558,
+    adjClose: 538.87,
+    volume: 42517441
+  },
+  {
+    date: "2023/9/14",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2023/9/14",
+    open: 544,
+    high: 550,
+    low: 543,
+    close: 550,
+    adjClose: 531.14,
+    volume: 17144287
+  },
+  {
+    date: "2023/9/13",
+    open: 545,
+    high: 548,
+    low: 541,
+    close: 541,
+    adjClose: 519.55,
+    volume: 16191392
+  },
+  {
+    date: "2023/9/12",
+    open: 536,
+    high: 545,
+    low: 536,
+    close: 544,
+    adjClose: 522.43,
+    volume: 16028336
+  },
+  {
+    date: "2023/9/11",
+    open: 539,
+    high: 540,
+    low: 536,
+    close: 536,
+    adjClose: 514.75,
+    volume: 14631968
+  },
+  {
+    date: "2023/9/8",
+    open: 535,
+    high: 540,
+    low: 535,
+    close: 539,
+    adjClose: 517.63,
+    volume: 15283568
+  },
+  {
+    date: "2023/9/7",
+    open: 546,
+    high: 548,
+    low: 542,
+    close: 542,
+    adjClose: 520.51,
+    volume: 20717005
+  },
+  {
+    date: "2023/9/6",
+    open: 556,
+    high: 556,
+    low: 550,
+    close: 550,
+    adjClose: 528.2,
+    volume: 14067008
+  },
+  {
+    date: "2023/9/5",
+    open: 553,
+    high: 555,
+    low: 550,
+    close: 552,
+    adjClose: 530.12,
+    volume: 12220686
+  },
+  {
+    date: "2023/9/4",
+    open: 549,
+    high: 557,
+    low: 549,
+    close: 557,
+    adjClose: 534.92,
+    volume: 9531157
+  },
+  {
+    date: "2023/9/1",
+    open: 543,
+    high: 553,
+    low: 543,
+    close: 548,
+    adjClose: 526.28,
+    volume: 13669766
+  },
+  {
+    date: "2023/8/31",
+    open: 553,
+    high: 556,
+    low: 548,
+    close: 549,
+    adjClose: 527.24,
+    volume: 40431378
+  },
+  {
+    date: "2023/8/30",
+    open: 558,
+    high: 560,
+    low: 554,
+    close: 555,
+    adjClose: 533,
+    volume: 15117416
+  },
+  {
+    date: "2023/8/29",
+    open: 551,
+    high: 553,
+    low: 546,
+    close: 552,
+    adjClose: 530.12,
+    volume: 10516678
+  },
+  {
+    date: "2023/8/28",
+    open: 547,
+    high: 553,
+    low: 547,
+    close: 549,
+    adjClose: 527.24,
+    volume: 8991985
+  },
+  {
+    date: "2023/8/25",
+    open: 549,
+    high: 551,
+    low: 546,
+    close: 546,
+    adjClose: 524.35,
+    volume: 24144537
+  },
+  {
+    date: "2023/8/24",
+    open: 563,
+    high: 564,
+    low: 558,
+    close: 564,
+    adjClose: 541.64,
+    volume: 23280827
+  },
+  {
+    date: "2023/8/23",
+    open: 546,
+    high: 552,
+    low: 544,
+    close: 552,
+    adjClose: 530.12,
+    volume: 20636332
+  },
+  {
+    date: "2023/8/22",
+    open: 544,
+    high: 544,
+    low: 538,
+    close: 541,
+    adjClose: 519.55,
+    volume: 14594304
+  },
+  {
+    date: "2023/8/21",
+    open: 544,
+    high: 544,
+    low: 534,
+    close: 537,
+    adjClose: 515.71,
+    volume: 16633821
+  },
+  {
+    date: "2023/8/18",
+    open: 540,
+    high: 544,
+    low: 539,
+    close: 539,
+    adjClose: 517.63,
+    volume: 17592345
+  },
+  {
+    date: "2023/8/17",
+    open: 540,
+    high: 546,
+    low: 537,
+    close: 544,
+    adjClose: 522.43,
+    volume: 22843138
+  },
+  {
+    date: "2023/8/16",
+    open: 541,
+    high: 543,
+    low: 536,
+    close: 542,
+    adjClose: 520.51,
+    volume: 28269840
+  },
+  {
+    date: "2023/8/15",
+    open: 543,
+    high: 545,
+    low: 540,
+    close: 542,
+    adjClose: 520.51,
+    volume: 14066307
+  },
+  {
+    date: "2023/8/14",
+    open: 540,
+    high: 543,
+    low: 537,
+    close: 541,
+    adjClose: 519.55,
+    volume: 20939030
+  },
+  {
+    date: "2023/8/11",
+    open: 556,
+    high: 558,
+    low: 546,
+    close: 546,
+    adjClose: 524.35,
+    volume: 17608427
+  },
+  {
+    date: "2023/8/10",
+    open: 552,
+    high: 554,
+    low: 550,
+    close: 551,
+    adjClose: 529.16,
+    volume: 17892615
+  },
+  {
+    date: "2023/8/9",
+    open: 550,
+    high: 557,
+    low: 550,
+    close: 554,
+    adjClose: 532.04,
+    volume: 14389090
+  },
+  {
+    date: "2023/8/8",
+    open: 558,
+    high: 558,
+    low: 551,
+    close: 552,
+    adjClose: 530.12,
+    volume: 19010690
+  },
+  {
+    date: "2023/8/7",
+    open: 558,
+    high: 561,
+    low: 556,
+    close: 558,
+    adjClose: 535.88,
+    volume: 14369551
+  },
+  {
+    date: "2023/8/4",
+    open: 556,
+    high: 560,
+    low: 552,
+    close: 554,
+    adjClose: 532.04,
+    volume: 26279173
+  },
+  {
+    date: "2023/8/2",
+    open: 567,
+    high: 569,
+    low: 558,
+    close: 561,
+    adjClose: 538.76,
+    volume: 25583234
+  },
+  {
+    date: "2023/8/1",
+    open: 565,
+    high: 568,
+    low: 564,
+    close: 567,
+    adjClose: 544.52,
+    volume: 16259643
+  },
+  {
+    date: "2023/7/31",
+    open: 575,
+    high: 575,
+    low: 560,
+    close: 565,
+    adjClose: 542.6,
+    volume: 24208467
+  },
+  {
+    date: "2023/7/28",
+    open: 569,
+    high: 573,
+    low: 565,
+    close: 567,
+    adjClose: 544.52,
+    volume: 18540078
+  },
+  {
+    date: "2023/7/27",
+    open: 570,
+    high: 570,
+    low: 566,
+    close: 569,
+    adjClose: 546.44,
+    volume: 12200358
+  },
+  {
+    date: "2023/7/26",
+    open: 569,
+    high: 571,
+    low: 563,
+    close: 566,
+    adjClose: 543.56,
+    volume: 13314305
+  },
+  {
+    date: "2023/7/25",
+    open: 561,
+    high: 569,
+    low: 561,
+    close: 569,
+    adjClose: 546.44,
+    volume: 19590349
+  },
+  {
+    date: "2023/7/24",
+    open: 557,
+    high: 563,
+    low: 557,
+    close: 558,
+    adjClose: 535.88,
+    volume: 25268835
+  },
+  {
+    date: "2023/7/21",
+    open: 560,
+    high: 563,
+    low: 557,
+    close: 560,
+    adjClose: 537.8,
+    volume: 46711021
+  },
+  {
+    date: "2023/7/20",
+    open: 580,
+    high: 584,
+    low: 578,
+    close: 579,
+    adjClose: 556.05,
+    volume: 15108109
+  },
+  {
+    date: "2023/7/19",
+    open: 584,
+    high: 587,
+    low: 579,
+    close: 581,
+    adjClose: 557.97,
+    volume: 22499123
+  },
+  {
+    date: "2023/7/18",
+    open: 587,
+    high: 588,
+    low: 580,
+    close: 581,
+    adjClose: 557.97,
+    volume: 20932006
+  },
+  {
+    date: "2023/7/17",
+    open: 588,
+    high: 591,
+    low: 587,
+    close: 591,
+    adjClose: 567.57,
+    volume: 13807834
+  },
+  {
+    date: "2023/7/14",
+    open: 589,
+    high: 591,
+    low: 587,
+    close: 591,
+    adjClose: 567.57,
+    volume: 23121873
+  },
+  {
+    date: "2023/7/13",
+    open: 587,
+    high: 590,
+    low: 585,
+    close: 585,
+    adjClose: 561.81,
+    volume: 25442137
+  },
+  {
+    date: "2023/7/12",
+    open: 574,
+    high: 578,
+    low: 572,
+    close: 578,
+    adjClose: 555.09,
+    volume: 15588228
+  },
+  {
+    date: "2023/7/11",
+    open: 574,
+    high: 577,
+    low: 570,
+    close: 577,
+    adjClose: 554.13,
+    volume: 17850636
+  },
+  {
+    date: "2023/7/10",
+    open: 567,
+    high: 573,
+    low: 565,
+    close: 565,
+    adjClose: 542.6,
+    volume: 18454982
+  },
+  {
+    date: "2023/7/7",
+    open: 565,
+    high: 572,
+    low: 563,
+    close: 565,
+    adjClose: 542.6,
+    volume: 18796190
+  },
+  {
+    date: "2023/7/6",
+    open: 573,
+    high: 574,
+    low: 565,
+    close: 565,
+    adjClose: 542.6,
+    volume: 28564891
+  },
+  {
+    date: "2023/7/5",
+    open: 589,
+    high: 589,
+    low: 579,
+    close: 582,
+    adjClose: 558.93,
+    volume: 14913592
+  },
+  {
+    date: "2023/7/4",
+    open: 585,
+    high: 585,
+    low: 580,
+    close: 585,
+    adjClose: 561.81,
+    volume: 17219541
+  },
+  {
+    date: "2023/7/3",
+    open: 578,
+    high: 580,
+    low: 576,
+    close: 579,
+    adjClose: 556.05,
+    volume: 14785585
+  },
+  {
+    date: "2023/6/30",
+    open: 570,
+    high: 576,
+    low: 568,
+    close: 576,
+    adjClose: 553.17,
+    volume: 22654976
+  },
+  {
+    date: "2023/6/29",
+    open: 578,
+    high: 580,
+    low: 570,
+    close: 573,
+    adjClose: 550.28,
+    volume: 16937929
+  },
+  {
+    date: "2023/6/28",
+    open: 579,
+    high: 579,
+    low: 571,
+    close: 574,
+    adjClose: 551.24,
+    volume: 18175426
+  },
+  {
+    date: "2023/6/27",
+    open: 570,
+    high: 575,
+    low: 569,
+    close: 572,
+    adjClose: 549.32,
+    volume: 21501718
+  },
+  {
+    date: "2023/6/26",
+    open: 576,
+    high: 578,
+    low: 574,
+    close: 574,
+    adjClose: 551.24,
+    volume: 27142262
+  },
+  {
+    date: "2023/6/21",
+    open: 582,
+    high: 585,
+    low: 578,
+    close: 581,
+    adjClose: 557.97,
+    volume: 21703937
+  },
+  {
+    date: "2023/6/20",
+    open: 579,
+    high: 585,
+    low: 579,
+    close: 583,
+    adjClose: 559.89,
+    volume: 16221413
+  },
+  {
+    date: "2023/6/19",
+    open: 583,
+    high: 585,
+    low: 582,
+    close: 583,
+    adjClose: 559.89,
+    volume: 14346885
+  },
+  {
+    date: "2023/6/16",
+    open: 590,
+    high: 590,
+    low: 584,
+    close: 589,
+    adjClose: 565.65,
+    volume: 38128802
+  },
+  {
+    date: "2023/6/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2023/6/15",
+    open: 590,
+    high: 593,
+    low: 587,
+    close: 591,
+    adjClose: 567.57,
+    volume: 27392154
+  },
+  {
+    date: "2023/6/14",
+    open: 590,
+    high: 591,
+    low: 587,
+    close: 590,
+    adjClose: 563.97,
+    volume: 23583314
+  },
+  {
+    date: "2023/6/13",
+    open: 593,
+    high: 594,
+    low: 589,
+    close: 593,
+    adjClose: 566.84,
+    volume: 56174363
+  },
+  {
+    date: "2023/6/12",
+    open: 574,
+    high: 574,
+    low: 571,
+    close: 574,
+    adjClose: 548.68,
+    volume: 26392389
+  },
+  {
+    date: "2023/6/9",
+    open: 561,
+    high: 566,
+    low: 561,
+    close: 565,
+    adjClose: 540.07,
+    volume: 19091713
+  },
+  {
+    date: "2023/6/8",
+    open: 562,
+    high: 568,
+    low: 555,
+    close: 559,
+    adjClose: 534.34,
+    volume: 23080195
+  },
+  {
+    date: "2023/6/7",
+    open: 561,
+    high: 568,
+    low: 560,
+    close: 568,
+    adjClose: 542.94,
+    volume: 27604813
+  },
+  {
+    date: "2023/6/6",
+    open: 554,
+    high: 562,
+    low: 553,
+    close: 560,
+    adjClose: 535.29,
+    volume: 20228086
+  },
+  {
+    date: "2023/6/5",
+    open: 560,
+    high: 560,
+    low: 555,
+    close: 555,
+    adjClose: 530.51,
+    volume: 16827391
+  },
+  {
+    date: "2023/6/2",
+    open: 559,
+    high: 564,
+    low: 557,
+    close: 562,
+    adjClose: 537.21,
+    volume: 30206141
+  },
+  {
+    date: "2023/6/1",
+    open: 550,
+    high: 554,
+    low: 550,
+    close: 551,
+    adjClose: 526.69,
+    volume: 24477529
+  },
+  {
+    date: "2023/5/31",
+    open: 560,
+    high: 562,
+    low: 551,
+    close: 558,
+    adjClose: 533.38,
+    volume: 81176782
+  },
+  {
+    date: "2023/5/30",
+    open: 566,
+    high: 568,
+    low: 563,
+    close: 566,
+    adjClose: 541.03,
+    volume: 40136130
+  },
+  {
+    date: "2023/5/29",
+    open: 574,
+    high: 574,
+    low: 564,
+    close: 568,
+    adjClose: 542.94,
+    volume: 54657853
+  },
+  {
+    date: "2023/5/26",
+    open: 568,
+    high: 568,
+    low: 563,
+    close: 566,
+    adjClose: 541.03,
+    volume: 95808471
+  },
+  {
+    date: "2023/5/25",
+    open: 542,
+    high: 545,
+    low: 537,
+    close: 543,
+    adjClose: 519.04,
+    volume: 63827245
+  },
+  {
+    date: "2023/5/24",
+    open: 527,
+    high: 528,
+    low: 524,
+    close: 525,
+    adjClose: 501.84,
+    volume: 19086681
+  },
+  {
+    date: "2023/5/23",
+    open: 530,
+    high: 531,
+    low: 525,
+    close: 530,
+    adjClose: 506.62,
+    volume: 19588873
+  },
+  {
+    date: "2023/5/22",
+    open: 532,
+    high: 533,
+    low: 529,
+    close: 531,
+    adjClose: 507.57,
+    volume: 17208135
+  },
+  {
+    date: "2023/5/19",
+    open: 535,
+    high: 535,
+    low: 529,
+    close: 532,
+    adjClose: 508.53,
+    volume: 32099068
+  },
+  {
+    date: "2023/5/18",
+    open: 533,
+    high: 536,
+    low: 526,
+    close: 530,
+    adjClose: 506.62,
+    volume: 43096277
+  },
+  {
+    date: "2023/5/17",
+    open: 508,
+    high: 521,
+    low: 506,
+    close: 519,
+    adjClose: 496.1,
+    volume: 41406763
+  },
+  {
+    date: "2023/5/16",
+    open: 503,
+    high: 508,
+    low: 500,
+    close: 505,
+    adjClose: 482.72,
+    volume: 21140315
+  },
+  {
+    date: "2023/5/15",
+    open: 497,
+    high: 499.5,
+    low: 494.5,
+    close: 495.5,
+    adjClose: 473.64,
+    volume: 13315766
+  },
+  {
+    date: "2023/5/12",
+    open: 496,
+    high: 500,
+    low: 495,
+    close: 496,
+    adjClose: 474.12,
+    volume: 18465362
+  },
+  {
+    date: "2023/5/11",
+    open: 506,
+    high: 506,
+    low: 498.5,
+    close: 499,
+    adjClose: 476.98,
+    volume: 13382927
+  },
+  {
+    date: "2023/5/10",
+    open: 508,
+    high: 508,
+    low: 500,
+    close: 503,
+    adjClose: 480.81,
+    volume: 18859212
+  },
+  {
+    date: "2023/5/9",
+    open: 507,
+    high: 510,
+    low: 505,
+    close: 510,
+    adjClose: 487.5,
+    volume: 16197743
+  },
+  {
+    date: "2023/5/8",
+    open: 509,
+    high: 509,
+    low: 502,
+    close: 504,
+    adjClose: 481.76,
+    volume: 11243634
+  },
+  {
+    date: "2023/5/5",
+    open: 500,
+    high: 502,
+    low: 498.5,
+    close: 500,
+    adjClose: 477.94,
+    volume: 7488897
+  },
+  {
+    date: "2023/5/4",
+    open: 497,
+    high: 499.5,
+    low: 496,
+    close: 498,
+    adjClose: 476.03,
+    volume: 13140291
+  },
+  {
+    date: "2023/5/3",
+    open: 496,
+    high: 498,
+    low: 495,
+    close: 496,
+    adjClose: 474.12,
+    volume: 11369311
+  },
+  {
+    date: "2023/5/2",
+    open: 500,
+    high: 502,
+    low: 496.5,
+    close: 501,
+    adjClose: 478.9,
+    volume: 15325791
+  },
+  {
+    date: "2023/4/28",
+    open: 498.5,
+    high: 502,
+    low: 498,
+    close: 502,
+    adjClose: 479.85,
+    volume: 24824100
+  },
+  {
+    date: "2023/4/27",
+    open: 491,
+    high: 495,
+    low: 489,
+    close: 493.5,
+    adjClose: 471.73,
+    volume: 29537148
+  },
+  {
+    date: "2023/4/26",
+    open: 498,
+    high: 498.5,
+    low: 491,
+    close: 491.5,
+    adjClose: 469.82,
+    volume: 31269245
+  },
+  {
+    date: "2023/4/25",
+    open: 504,
+    high: 505,
+    low: 498,
+    close: 498,
+    adjClose: 476.03,
+    volume: 36898412
+  },
+  {
+    date: "2023/4/24",
+    open: 505,
+    high: 510,
+    low: 504,
+    close: 507,
+    adjClose: 484.63,
+    volume: 16886512
+  },
+  {
+    date: "2023/4/21",
+    open: 520,
+    high: 520,
+    low: 510,
+    close: 511,
+    adjClose: 488.46,
+    volume: 25016683
+  },
+  {
+    date: "2023/4/20",
+    open: 512,
+    high: 516,
+    low: 510,
+    close: 513,
+    adjClose: 490.37,
+    volume: 17221961
+  },
+  {
+    date: "2023/4/19",
+    open: 517,
+    high: 518,
+    low: 509,
+    close: 510,
+    adjClose: 487.5,
+    volume: 21123233
+  },
+  {
+    date: "2023/4/18",
+    open: 518,
+    high: 520,
+    low: 514,
+    close: 515,
+    adjClose: 492.28,
+    volume: 15168888
+  },
+  {
+    date: "2023/4/17",
+    open: 519,
+    high: 520,
+    low: 514,
+    close: 520,
+    adjClose: 497.06,
+    volume: 14634287
+  },
+  {
+    date: "2023/4/14",
+    open: 516,
+    high: 520,
+    low: 513,
+    close: 516,
+    adjClose: 493.23,
+    volume: 18072504
+  },
+  {
+    date: "2023/4/13",
+    open: 515,
+    high: 517,
+    low: 510,
+    close: 510,
+    adjClose: 487.5,
+    volume: 25536889
+  },
+  {
+    date: "2023/4/12",
+    open: 523,
+    high: 524,
+    low: 517,
+    close: 520,
+    adjClose: 497.06,
+    volume: 23816473
+  },
+  {
+    date: "2023/4/11",
+    open: 522,
+    high: 527,
+    low: 522,
+    close: 524,
+    adjClose: 500.88,
+    volume: 22675697
+  },
+  {
+    date: "2023/4/10",
+    open: 533,
+    high: 533,
+    low: 528,
+    close: 529,
+    adjClose: 505.66,
+    volume: 7435151
+  },
+  {
+    date: "2023/4/7",
+    open: 535,
+    high: 535,
+    low: 529,
+    close: 531,
+    adjClose: 507.57,
+    volume: 8557482
+  },
+  {
+    date: "2023/4/6",
+    open: 530,
+    high: 531,
+    low: 526,
+    close: 530,
+    adjClose: 506.62,
+    volume: 25423363
+  },
+  {
+    date: "2023/3/31",
+    open: 538,
+    high: 538,
+    low: 532,
+    close: 533,
+    adjClose: 509.48,
+    volume: 23558838
+  },
+  {
+    date: "2023/3/30",
+    open: 536,
+    high: 537,
+    low: 531,
+    close: 535,
+    adjClose: 511.4,
+    volume: 19201564
+  },
+  {
+    date: "2023/3/29",
+    open: 533,
+    high: 533,
+    low: 525,
+    close: 530,
+    adjClose: 506.62,
+    volume: 17280749
+  },
+  {
+    date: "2023/3/28",
+    open: 525,
+    high: 530,
+    low: 524,
+    close: 525,
+    adjClose: 501.84,
+    volume: 17234120
+  },
+  {
+    date: "2023/3/27",
+    open: 533,
+    high: 536,
+    low: 531,
+    close: 531,
+    adjClose: 507.57,
+    volume: 16111177
+  },
+  {
+    date: "2023/3/24",
+    open: 536,
+    high: 539,
+    low: 535,
+    close: 539,
+    adjClose: 515.22,
+    volume: 21926240
+  },
+  {
+    date: "2023/3/23",
+    open: 528,
+    high: 539,
+    low: 528,
+    close: 538,
+    adjClose: 514.26,
+    volume: 26728246
+  },
+  {
+    date: "2023/3/22",
+    open: 524,
+    high: 533,
+    low: 524,
+    close: 533,
+    adjClose: 509.48,
+    volume: 42385987
+  },
+  {
+    date: "2023/3/21",
+    open: 515,
+    high: 517,
+    low: 512,
+    close: 517,
+    adjClose: 494.19,
+    volume: 18284799
+  },
+  {
+    date: "2023/3/20",
+    open: 517,
+    high: 518,
+    low: 510,
+    close: 512,
+    adjClose: 489.41,
+    volume: 11837312
+  },
+  {
+    date: "2023/3/17",
+    open: 516,
+    high: 518,
+    low: 513,
+    close: 518,
+    adjClose: 495.15,
+    volume: 33118483
+  },
+  {
+    date: "2023/3/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2023/3/16",
+    open: 505,
+    high: 510,
+    low: 504,
+    close: 505,
+    adjClose: 482.72,
+    volume: 21965994
+  },
+  {
+    date: "2023/3/15",
+    open: 515,
+    high: 516,
+    low: 510,
+    close: 511,
+    adjClose: 485.83,
+    volume: 23208597
+  },
+  {
+    date: "2023/3/14",
+    open: 511,
+    high: 514,
+    low: 510,
+    close: 510,
+    adjClose: 484.88,
+    volume: 20474770
+  },
+  {
+    date: "2023/3/13",
+    open: 513,
+    high: 518,
+    low: 509,
+    close: 516,
+    adjClose: 490.58,
+    volume: 21466947
+  },
+  {
+    date: "2023/3/10",
+    open: 515,
+    high: 516,
+    low: 511,
+    close: 513,
+    adjClose: 487.73,
+    volume: 24045605
+  },
+  {
+    date: "2023/3/9",
+    open: 525,
+    high: 526,
+    low: 522,
+    close: 522,
+    adjClose: 496.28,
+    volume: 21557577
+  },
+  {
+    date: "2023/3/8",
+    open: 521,
+    high: 523,
+    low: 518,
+    close: 521,
+    adjClose: 495.33,
+    volume: 24512408
+  },
+  {
+    date: "2023/3/7",
+    open: 521,
+    high: 526,
+    low: 519,
+    close: 524,
+    adjClose: 498.19,
+    volume: 24861078
+  },
+  {
+    date: "2023/3/6",
+    open: 520,
+    high: 524,
+    low: 517,
+    close: 521,
+    adjClose: 495.33,
+    volume: 21922085
+  },
+  {
+    date: "2023/3/3",
+    open: 524,
+    high: 525,
+    low: 516,
+    close: 516,
+    adjClose: 490.58,
+    volume: 23253895
+  },
+  {
+    date: "2023/3/2",
+    open: 519,
+    high: 520,
+    low: 515,
+    close: 519,
+    adjClose: 493.43,
+    volume: 16558784
+  },
+  {
+    date: "2023/3/1",
+    open: 504,
+    high: 522,
+    low: 504,
+    close: 522,
+    adjClose: 496.28,
+    volume: 39560848
+  },
+  {
+    date: "2023/2/24",
+    open: 524,
+    high: 525,
+    low: 511,
+    close: 511,
+    adjClose: 485.83,
+    volume: 41692491
+  },
+  {
+    date: "2023/2/23",
+    open: 512,
+    high: 521,
+    low: 510,
+    close: 518,
+    adjClose: 492.48,
+    volume: 25376835
+  },
+  {
+    date: "2023/2/22",
+    open: 506,
+    high: 509,
+    low: 505,
+    close: 507,
+    adjClose: 482.02,
+    volume: 24575245
+  },
+  {
+    date: "2023/2/21",
+    open: 515,
+    high: 517,
+    low: 513,
+    close: 516,
+    adjClose: 490.58,
+    volume: 13504100
+  },
+  {
+    date: "2023/2/20",
+    open: 514,
+    high: 519,
+    low: 511,
+    close: 517,
+    adjClose: 491.53,
+    volume: 20065156
+  },
+  {
+    date: "2023/2/17",
+    open: 524,
+    high: 524,
+    low: 516,
+    close: 518,
+    adjClose: 492.48,
+    volume: 28121975
+  },
+  {
+    date: "2023/2/16",
+    open: 528,
+    high: 531,
+    low: 524,
+    close: 528,
+    adjClose: 501.99,
+    volume: 29975138
+  },
+  {
+    date: "2023/2/15",
+    open: 526,
+    high: 532,
+    low: 522,
+    close: 525,
+    adjClose: 499.14,
+    volume: 61796793
+  },
+  {
+    date: "2023/2/14",
+    open: 544,
+    high: 546,
+    low: 543,
+    close: 545,
+    adjClose: 518.15,
+    volume: 21883297
+  },
+  {
+    date: "2023/2/13",
+    open: 544,
+    high: 544,
+    low: 538,
+    close: 541,
+    adjClose: 514.35,
+    volume: 22768977
+  },
+  {
+    date: "2023/2/10",
+    open: 544,
+    high: 546,
+    low: 541,
+    close: 545,
+    adjClose: 518.15,
+    volume: 28495684
+  },
+  {
+    date: "2023/2/9",
+    open: 540,
+    high: 540,
+    low: 536,
+    close: 540,
+    adjClose: 513.4,
+    volume: 18861972
+  },
+  {
+    date: "2023/2/8",
+    open: 538,
+    high: 540,
+    low: 534,
+    close: 540,
+    adjClose: 513.4,
+    volume: 35096191
+  },
+  {
+    date: "2023/2/7",
+    open: 524,
+    high: 528,
+    low: 522,
+    close: 523,
+    adjClose: 497.24,
+    volume: 23481767
+  },
+  {
+    date: "2023/2/6",
+    open: 532,
+    high: 533,
+    low: 526,
+    close: 526,
+    adjClose: 500.09,
+    volume: 30870136
+  },
+  {
+    date: "2023/2/3",
+    open: 540,
+    high: 542,
+    low: 536,
+    close: 542,
+    adjClose: 515.3,
+    volume: 31635865
+  },
+  {
+    date: "2023/2/2",
+    open: 538,
+    high: 542,
+    low: 537,
+    close: 540,
+    adjClose: 513.4,
+    volume: 43077053
+  },
+  {
+    date: "2023/2/1",
+    open: 532,
+    high: 533,
+    low: 522,
+    close: 530,
+    adjClose: 503.89,
+    volume: 33710990
+  },
+  {
+    date: "2023/1/31",
+    open: 537,
+    high: 538,
+    low: 521,
+    close: 522,
+    adjClose: 496.28,
+    volume: 72530854
+  },
+  {
+    date: "2023/1/30",
+    open: 542,
+    high: 543,
+    low: 534,
+    close: 543,
+    adjClose: 516.25,
+    volume: 124428936
+  },
+  {
+    date: "2023/1/17",
+    open: 504,
+    high: 504,
+    low: 499.5,
+    close: 503,
+    adjClose: 478.22,
+    volume: 27770329
+  },
+  {
+    date: "2023/1/16",
+    open: 506,
+    high: 508,
+    low: 503,
+    close: 505,
+    adjClose: 480.12,
+    volume: 34373918
+  },
+  {
+    date: "2023/1/13",
+    open: 507,
+    high: 509,
+    low: 499,
+    close: 500,
+    adjClose: 475.37,
+    volume: 77606949
+  },
+  {
+    date: "2023/1/12",
+    open: 487.5,
+    high: 488,
+    low: 484,
+    close: 486.5,
+    adjClose: 462.53,
+    volume: 20963689
+  },
+  {
+    date: "2023/1/11",
+    open: 487,
+    high: 488,
+    low: 482,
+    close: 484.5,
+    adjClose: 460.63,
+    volume: 21051115
+  },
+  {
+    date: "2023/1/10",
+    open: 486,
+    high: 487,
+    low: 483,
+    close: 486,
+    adjClose: 462.06,
+    volume: 32646014
+  },
+  {
+    date: "2023/1/9",
+    open: 468,
+    high: 481,
+    low: 467.5,
+    close: 481,
+    adjClose: 457.3,
+    volume: 46666263
+  },
+  {
+    date: "2023/1/6",
+    open: 455,
+    high: 459.5,
+    low: 455,
+    close: 458.5,
+    adjClose: 435.91,
+    volume: 20886011
+  },
+  {
+    date: "2023/1/5",
+    open: 459,
+    high: 459.5,
+    low: 455,
+    close: 458.5,
+    adjClose: 435.91,
+    volume: 23549581
+  },
+  {
+    date: "2023/1/4",
+    open: 449.5,
+    high: 455,
+    low: 448.5,
+    close: 449.5,
+    adjClose: 427.36,
+    volume: 19188422
+  },
+  {
+    date: "2023/1/3",
+    open: 446,
+    high: 453.5,
+    low: 443,
+    close: 453,
+    adjClose: 430.68,
+    volume: 14885824
+  },
+  {
+    date: "2022/12/30",
+    open: 455,
+    high: 456.5,
+    low: 448.5,
+    close: 448.5,
+    adjClose: 426.41,
+    volume: 21683478
+  },
+  {
+    date: "2022/12/29",
+    open: 444,
+    high: 449.5,
+    low: 442.5,
+    close: 446,
+    adjClose: 424.03,
+    volume: 23020759
+  },
+  {
+    date: "2022/12/28",
+    open: 451,
+    high: 452,
+    low: 446,
+    close: 451,
+    adjClose: 428.78,
+    volume: 32578949
+  },
+  {
+    date: "2022/12/27",
+    open: 458,
+    high: 462.5,
+    low: 457,
+    close: 457,
+    adjClose: 434.49,
+    volume: 10264001
+  },
+  {
+    date: "2022/12/26",
+    open: 454,
+    high: 457,
+    low: 453.5,
+    close: 456.5,
+    adjClose: 434.01,
+    volume: 8793306
+  },
+  {
+    date: "2022/12/23",
+    open: 457.5,
+    high: 458.5,
+    low: 455,
+    close: 455,
+    adjClose: 432.59,
+    volume: 24927413
+  },
+  {
+    date: "2022/12/22",
+    open: 466.5,
+    high: 469,
+    low: 464,
+    close: 468,
+    adjClose: 444.94,
+    volume: 14047382
+  },
+  {
+    date: "2022/12/21",
+    open: 460,
+    high: 463,
+    low: 457,
+    close: 459,
+    adjClose: 436.39,
+    volume: 36182644
+  },
+  {
+    date: "2022/12/20",
+    open: 465,
+    high: 467,
+    low: 455,
+    close: 457.5,
+    adjClose: 434.96,
+    volume: 31139235
+  },
+  {
+    date: "2022/12/19",
+    open: 466.5,
+    high: 469.5,
+    low: 465,
+    close: 466.5,
+    adjClose: 443.52,
+    volume: 21075559
+  },
+  {
+    date: "2022/12/16",
+    open: 466.5,
+    high: 471,
+    low: 465.5,
+    close: 471,
+    adjClose: 447.8,
+    volume: 47601400
+  },
+  {
+    date: "2022/12/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2022/12/15",
+    open: 476,
+    high: 481.5,
+    low: 474.5,
+    close: 480.5,
+    adjClose: 456.83,
+    volume: 24222008
+  },
+  {
+    date: "2022/12/14",
+    open: 472,
+    high: 480.5,
+    low: 472,
+    close: 480.5,
+    adjClose: 454.21,
+    volume: 30636639
+  },
+  {
+    date: "2022/12/13",
+    open: 473,
+    high: 476,
+    low: 471,
+    close: 471.5,
+    adjClose: 445.71,
+    volume: 33272826
+  },
+  {
+    date: "2022/12/12",
+    open: 476.5,
+    high: 478,
+    low: 473.5,
+    close: 475,
+    adjClose: 449.02,
+    volume: 20973334
+  },
+  {
+    date: "2022/12/9",
+    open: 478,
+    high: 484.5,
+    low: 476,
+    close: 481.5,
+    adjClose: 455.16,
+    volume: 25915337
+  },
+  {
+    date: "2022/12/8",
+    open: 475,
+    high: 475,
+    low: 467,
+    close: 471.5,
+    adjClose: 445.71,
+    volume: 27238567
+  },
+  {
+    date: "2022/12/7",
+    open: 477,
+    high: 485.5,
+    low: 475,
+    close: 475,
+    adjClose: 449.02,
+    volume: 36563503
+  },
+  {
+    date: "2022/12/6",
+    open: 488,
+    high: 489,
+    low: 478,
+    close: 478,
+    adjClose: 451.85,
+    volume: 40561068
+  },
+  {
+    date: "2022/12/5",
+    open: 491.5,
+    high: 497.5,
+    low: 489,
+    close: 489,
+    adjClose: 462.25,
+    volume: 28360444
+  },
+  {
+    date: "2022/12/2",
+    open: 490,
+    high: 497,
+    low: 490,
+    close: 492.5,
+    adjClose: 465.56,
+    volume: 28319679
+  },
+  {
+    date: "2022/12/1",
+    open: 506,
+    high: 508,
+    low: 498.5,
+    close: 498.5,
+    adjClose: 471.23,
+    volume: 41746878
+  },
+  {
+    date: "2022/11/30",
+    open: 483,
+    high: 490,
+    low: 482.5,
+    close: 490,
+    adjClose: 463.19,
+    volume: 57111603
+  },
+  {
+    date: "2022/11/29",
+    open: 473.5,
+    high: 488,
+    low: 473,
+    close: 487,
+    adjClose: 460.36,
+    volume: 38182197
+  },
+  {
+    date: "2022/11/28",
+    open: 486,
+    high: 490,
+    low: 480.5,
+    close: 480.5,
+    adjClose: 454.21,
+    volume: 38926919
+  },
+  {
+    date: "2022/11/25",
+    open: 494,
+    high: 498,
+    low: 494,
+    close: 498,
+    adjClose: 470.76,
+    volume: 39949969
+  },
+  {
+    date: "2022/11/24",
+    open: 494,
+    high: 496,
+    low: 492,
+    close: 496,
+    adjClose: 468.87,
+    volume: 27396552
+  },
+  {
+    date: "2022/11/23",
+    open: 494.5,
+    high: 496,
+    low: 488.5,
+    close: 492,
+    adjClose: 465.09,
+    volume: 33475337
+  },
+  {
+    date: "2022/11/22",
+    open: 476,
+    high: 491,
+    low: 476,
+    close: 491,
+    adjClose: 464.14,
+    volume: 37343127
+  },
+  {
+    date: "2022/11/21",
+    open: 487.5,
+    high: 489.5,
+    low: 480.5,
+    close: 482,
+    adjClose: 455.63,
+    volume: 29710180
+  },
+  {
+    date: "2022/11/18",
+    open: 491.5,
+    high: 494,
+    low: 486,
+    close: 487,
+    adjClose: 460.36,
+    volume: 35859717
+  },
+  {
+    date: "2022/11/17",
+    open: 482.5,
+    high: 485,
+    low: 475,
+    close: 485,
+    adjClose: 458.47,
+    volume: 45144984
+  },
+  {
+    date: "2022/11/16",
+    open: 491.5,
+    high: 494,
+    low: 481.5,
+    close: 487,
+    adjClose: 460.36,
+    volume: 85726375
+  },
+  {
+    date: "2022/11/15",
+    open: 465,
+    high: 487,
+    low: 462,
+    close: 480,
+    adjClose: 453.74,
+    volume: 113379796
+  },
+  {
+    date: "2022/11/14",
+    open: 450,
+    high: 450,
+    low: 441.5,
+    close: 445,
+    adjClose: 420.66,
+    volume: 61933190
+  },
+  {
+    date: "2022/11/11",
+    open: 441.5,
+    high: 442,
+    low: 435,
+    close: 441.5,
+    adjClose: 417.35,
+    volume: 80016195
+  },
+  {
+    date: "2022/11/10",
+    open: 409,
+    high: 411.5,
+    low: 406,
+    close: 407.5,
+    adjClose: 385.21,
+    volume: 32044942
+  },
+  {
+    date: "2022/11/9",
+    open: 403.5,
+    high: 417,
+    low: 403.5,
+    close: 417,
+    adjClose: 394.19,
+    volume: 52260831
+  },
+  {
+    date: "2022/11/8",
+    open: 395,
+    high: 399.5,
+    low: 394,
+    close: 399,
+    adjClose: 377.17,
+    volume: 31838223
+  },
+  {
+    date: "2022/11/7",
+    open: 390,
+    high: 393,
+    low: 387,
+    close: 390,
+    adjClose: 368.67,
+    volume: 35387706
+  },
+  {
+    date: "2022/11/4",
+    open: 381,
+    high: 384.5,
+    low: 378.5,
+    close: 382,
+    adjClose: 361.1,
+    volume: 28397417
+  },
+  {
+    date: "2022/11/3",
+    open: 385,
+    high: 387,
+    low: 383.5,
+    close: 384,
+    adjClose: 362.99,
+    volume: 39731333
+  },
+  {
+    date: "2022/11/2",
+    open: 391,
+    high: 395,
+    low: 388.5,
+    close: 395,
+    adjClose: 373.39,
+    volume: 22535650
+  },
+  {
+    date: "2022/11/1",
+    open: 388.5,
+    high: 393,
+    low: 386,
+    close: 391.5,
+    adjClose: 370.08,
+    volume: 41426496
+  },
+  {
+    date: "2022/10/31",
+    open: 386,
+    high: 390,
+    low: 381,
+    close: 390,
+    adjClose: 368.67,
+    volume: 38409054
+  },
+  {
+    date: "2022/10/28",
+    open: 379.5,
+    high: 382,
+    low: 375,
+    close: 379.5,
+    adjClose: 358.74,
+    volume: 40184472
+  },
+  {
+    date: "2022/10/27",
+    open: 384.5,
+    high: 389,
+    low: 382.5,
+    close: 385.5,
+    adjClose: 364.41,
+    volume: 45684455
+  },
+  {
+    date: "2022/10/26",
+    open: 370.5,
+    high: 379,
+    low: 370,
+    close: 376,
+    adjClose: 355.43,
+    volume: 58850484
+  },
+  {
+    date: "2022/10/25",
+    open: 380,
+    high: 382.5,
+    low: 371,
+    close: 371,
+    adjClose: 350.7,
+    volume: 76416687
+  },
+  {
+    date: "2022/10/24",
+    open: 395,
+    high: 397.5,
+    low: 387,
+    close: 387,
+    adjClose: 365.83,
+    volume: 46714078
+  },
+  {
+    date: "2022/10/21",
+    open: 395.5,
+    high: 398.5,
+    low: 389.5,
+    close: 389.5,
+    adjClose: 368.19,
+    volume: 35923505
+  },
+  {
+    date: "2022/10/20",
+    open: 391,
+    high: 397.5,
+    low: 386,
+    close: 397.5,
+    adjClose: 375.76,
+    volume: 52938069
+  },
+  {
+    date: "2022/10/19",
+    open: 404,
+    high: 405,
+    low: 395.5,
+    close: 395.5,
+    adjClose: 373.86,
+    volume: 46385177
+  },
+  {
+    date: "2022/10/18",
+    open: 406.5,
+    high: 407,
+    low: 399.5,
+    close: 407,
+    adjClose: 384.74,
+    volume: 40093216
+  },
+  {
+    date: "2022/10/17",
+    open: 400,
+    high: 403.5,
+    low: 396,
+    close: 397,
+    adjClose: 375.28,
+    volume: 41512192
+  },
+  {
+    date: "2022/10/14",
+    open: 414.5,
+    high: 416,
+    low: 409,
+    close: 412,
+    adjClose: 389.46,
+    volume: 54504366
+  },
+  {
+    date: "2022/10/13",
+    open: 400.5,
+    high: 403,
+    low: 395,
+    close: 395,
+    adjClose: 373.39,
+    volume: 38046284
+  },
+  {
+    date: "2022/10/12",
+    open: 397,
+    high: 400,
+    low: 395.5,
+    close: 397.5,
+    adjClose: 375.76,
+    volume: 53570085
+  },
+  {
+    date: "2022/10/11",
+    open: 408,
+    high: 412.5,
+    low: 401,
+    close: 401.5,
+    adjClose: 379.54,
+    volume: 95793819
+  },
+  {
+    date: "2022/10/7",
+    open: 448.5,
+    high: 448.5,
+    low: 437,
+    close: 438,
+    adjClose: 414.04,
+    volume: 31941781
+  },
+  {
+    date: "2022/10/6",
+    open: 450.5,
+    high: 451,
+    low: 447,
+    close: 451,
+    adjClose: 426.33,
+    volume: 30331834
+  },
+  {
+    date: "2022/10/5",
+    open: 444.5,
+    high: 451,
+    low: 442,
+    close: 445,
+    adjClose: 420.66,
+    volume: 46496536
+  },
+  {
+    date: "2022/10/4",
+    open: 429.5,
+    high: 432,
+    low: 427,
+    close: 429,
+    adjClose: 405.53,
+    volume: 40375000
+  },
+  {
+    date: "2022/10/3",
+    open: 418.5,
+    high: 424.5,
+    low: 416.5,
+    close: 417,
+    adjClose: 394.19,
+    volume: 36044395
+  },
+  {
+    date: "2022/9/30",
+    open: 424.5,
+    high: 427.5,
+    low: 422,
+    close: 422,
+    adjClose: 398.91,
+    volume: 48266800
+  },
+  {
+    date: "2022/9/29",
+    open: 443,
+    high: 443.5,
+    low: 432,
+    close: 435,
+    adjClose: 411.2,
+    volume: 41094780
+  },
+  {
+    date: "2022/9/28",
+    open: 447,
+    high: 449,
+    low: 438,
+    close: 438,
+    adjClose: 414.04,
+    volume: 34402652
+  },
+  {
+    date: "2022/9/27",
+    open: 449,
+    high: 451.5,
+    low: 446,
+    close: 448,
+    adjClose: 423.49,
+    volume: 24961404
+  },
+  {
+    date: "2022/9/26",
+    open: 443,
+    high: 454,
+    low: 443,
+    close: 446.5,
+    adjClose: 422.07,
+    volume: 32342267
+  },
+  {
+    date: "2022/9/23",
+    open: 458.5,
+    high: 460.5,
+    low: 455,
+    close: 455,
+    adjClose: 430.11,
+    volume: 29757787
+  },
+  {
+    date: "2022/9/22",
+    open: 462,
+    high: 468,
+    low: 459,
+    close: 464.5,
+    adjClose: 439.09,
+    volume: 29702508
+  },
+  {
+    date: "2022/9/21",
+    open: 473.5,
+    high: 475.5,
+    low: 468.5,
+    close: 471,
+    adjClose: 445.23,
+    volume: 24154633
+  },
+  {
+    date: "2022/9/20",
+    open: 470.5,
+    high: 478,
+    low: 470,
+    close: 476.5,
+    adjClose: 450.43,
+    volume: 19842582
+  },
+  {
+    date: "2022/9/19",
+    open: 472,
+    high: 473,
+    low: 466.5,
+    close: 467,
+    adjClose: 441.45,
+    volume: 17182380
+  },
+  {
+    date: "2022/9/16",
+    open: 470.5,
+    high: 472,
+    low: 469,
+    close: 472,
+    adjClose: 446.18,
+    volume: 39087513
+  },
+  {
+    date: "2022/9/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2022/9/15",
+    open: 476,
+    high: 480,
+    low: 476,
+    close: 476.5,
+    adjClose: 450.43,
+    volume: 23104850
+  },
+  {
+    date: "2022/9/14",
+    open: 478.5,
+    high: 482.5,
+    low: 476,
+    close: 480,
+    adjClose: 451.14,
+    volume: 22645714
+  },
+  {
+    date: "2022/9/13",
+    open: 495,
+    high: 495,
+    low: 491,
+    close: 493,
+    adjClose: 463.36,
+    volume: 16507036
+  },
+  {
+    date: "2022/9/12",
+    open: 485,
+    high: 491,
+    low: 485,
+    close: 486.5,
+    adjClose: 457.25,
+    volume: 21597212
+  },
+  {
+    date: "2022/9/8",
+    open: 473,
+    high: 475,
+    low: 472,
+    close: 475,
+    adjClose: 446.44,
+    volume: 27931552
+  },
+  {
+    date: "2022/9/7",
+    open: 477,
+    high: 478,
+    low: 472,
+    close: 472.5,
+    adjClose: 444.09,
+    volume: 34678562
+  },
+  {
+    date: "2022/9/6",
+    open: 488.5,
+    high: 491.5,
+    low: 486.5,
+    close: 489,
+    adjClose: 459.6,
+    volume: 16700285
+  },
+  {
+    date: "2022/9/5",
+    open: 485,
+    high: 488,
+    low: 484,
+    close: 486,
+    adjClose: 456.78,
+    volume: 15903415
+  },
+  {
+    date: "2022/9/2",
+    open: 488,
+    high: 489.5,
+    low: 485,
+    close: 485,
+    adjClose: 455.84,
+    volume: 29982959
+  },
+  {
+    date: "2022/9/1",
+    open: 495,
+    high: 495.5,
+    low: 490,
+    close: 490.5,
+    adjClose: 461.01,
+    volume: 39168672
+  },
+  {
+    date: "2022/8/31",
+    open: 492,
+    high: 505,
+    low: 492,
+    close: 505,
+    adjClose: 474.64,
+    volume: 39357089
+  },
+  {
+    date: "2022/8/30",
+    open: 497.5,
+    high: 500,
+    low: 496,
+    close: 496,
+    adjClose: 466.18,
+    volume: 24214535
+  },
+  {
+    date: "2022/8/29",
+    open: 497,
+    high: 502,
+    low: 496,
+    close: 498.5,
+    adjClose: 468.53,
+    volume: 26590824
+  },
+  {
+    date: "2022/8/26",
+    open: 513,
+    high: 515,
+    low: 511,
+    close: 512,
+    adjClose: 481.22,
+    volume: 12914846
+  },
+  {
+    date: "2022/8/25",
+    open: 505,
+    high: 510,
+    low: 504,
+    close: 508,
+    adjClose: 477.46,
+    volume: 9357138
+  },
+  {
+    date: "2022/8/24",
+    open: 504,
+    high: 508,
+    low: 503,
+    close: 503,
+    adjClose: 472.76,
+    volume: 14363212
+  },
+  {
+    date: "2022/8/23",
+    open: 503,
+    high: 506,
+    low: 502,
+    close: 504,
+    adjClose: 473.7,
+    volume: 19191108
+  },
+  {
+    date: "2022/8/22",
+    open: 511,
+    high: 514,
+    low: 510,
+    close: 512,
+    adjClose: 481.22,
+    volume: 11494000
+  },
+  {
+    date: "2022/8/19",
+    open: 519,
+    high: 523,
+    low: 517,
+    close: 519,
+    adjClose: 487.8,
+    volume: 14022812
+  },
+  {
+    date: "2022/8/18",
+    open: 520,
+    high: 521,
+    low: 519,
+    close: 520,
+    adjClose: 488.74,
+    volume: 17831084
+  },
+  {
+    date: "2022/8/17",
+    open: 524,
+    high: 527,
+    low: 521,
+    close: 527,
+    adjClose: 495.32,
+    volume: 27143102
+  },
+  {
+    date: "2022/8/16",
+    open: 526,
+    high: 526,
+    low: 523,
+    close: 525,
+    adjClose: 493.44,
+    volume: 20720414
+  },
+  {
+    date: "2022/8/15",
+    open: 520,
+    high: 524,
+    low: 519,
+    close: 523,
+    adjClose: 491.56,
+    volume: 21273166
+  },
+  {
+    date: "2022/8/12",
+    open: 515,
+    high: 518,
+    low: 514,
+    close: 517,
+    adjClose: 485.92,
+    volume: 19535923
+  },
+  {
+    date: "2022/8/11",
+    open: 513,
+    high: 514,
+    low: 510,
+    close: 514,
+    adjClose: 483.1,
+    volume: 23740033
+  },
+  {
+    date: "2022/8/10",
+    open: 500,
+    high: 503,
+    low: 499.5,
+    close: 500,
+    adjClose: 469.94,
+    volume: 20861380
+  },
+  {
+    date: "2022/8/9",
+    open: 507,
+    high: 511,
+    low: 504,
+    close: 510,
+    adjClose: 479.34,
+    volume: 21164373
+  },
+  {
+    date: "2022/8/8",
+    open: 510,
+    high: 515,
+    low: 509,
+    close: 512,
+    adjClose: 481.22,
+    volume: 19333128
+  },
+  {
+    date: "2022/8/5",
+    open: 509,
+    high: 516,
+    low: 507,
+    close: 516,
+    adjClose: 484.98,
+    volume: 32784279
+  },
+  {
+    date: "2022/8/4",
+    open: 499,
+    high: 503,
+    low: 495,
+    close: 500,
+    adjClose: 469.94,
+    volume: 26027618
+  },
+  {
+    date: "2022/8/3",
+    open: 494,
+    high: 501,
+    low: 493,
+    close: 501,
+    adjClose: 470.88,
+    volume: 27603474
+  },
+  {
+    date: "2022/8/2",
+    open: 494,
+    high: 496,
+    low: 488.5,
+    close: 492,
+    adjClose: 462.42,
+    volume: 39838155
+  },
+  {
+    date: "2022/8/1",
+    open: 506,
+    high: 508,
+    low: 500,
+    close: 504,
+    adjClose: 473.7,
+    volume: 24117969
+  },
+  {
+    date: "2022/7/29",
+    open: 508,
+    high: 510,
+    low: 504,
+    close: 509,
+    adjClose: 478.4,
+    volume: 29045617
+  },
+  {
+    date: "2022/7/28",
+    open: 509,
+    high: 509,
+    low: 499,
+    close: 501,
+    adjClose: 470.88,
+    volume: 33844011
+  },
+  {
+    date: "2022/7/27",
+    open: 494,
+    high: 502,
+    low: 491,
+    close: 502,
+    adjClose: 471.82,
+    volume: 17166365
+  },
+  {
+    date: "2022/7/26",
+    open: 499.5,
+    high: 499.5,
+    low: 491,
+    close: 495,
+    adjClose: 465.24,
+    volume: 18024265
+  },
+  {
+    date: "2022/7/25",
+    open: 500,
+    high: 503,
+    low: 498,
+    close: 499.5,
+    adjClose: 469.47,
+    volume: 15245346
+  },
+  {
+    date: "2022/7/22",
+    open: 505,
+    high: 505,
+    low: 500,
+    close: 503,
+    adjClose: 472.76,
+    volume: 25216400
+  },
+  {
+    date: "2022/7/21",
+    open: 496,
+    high: 501,
+    low: 494,
+    close: 501,
+    adjClose: 470.88,
+    volume: 22285593
+  },
+  {
+    date: "2022/7/20",
+    open: 502,
+    high: 503,
+    low: 491.5,
+    close: 495,
+    adjClose: 465.24,
+    volume: 35436652
+  },
+  {
+    date: "2022/7/19",
+    open: 487.5,
+    high: 493,
+    low: 486.5,
+    close: 491,
+    adjClose: 461.48,
+    volume: 19874865
+  },
+  {
+    date: "2022/7/18",
+    open: 495.5,
+    high: 498.5,
+    low: 488.5,
+    close: 495.5,
+    adjClose: 465.71,
+    volume: 39179575
+  },
+  {
+    date: "2022/7/15",
+    open: 481,
+    high: 494,
+    low: 477,
+    close: 492.5,
+    adjClose: 462.89,
+    volume: 51846909
+  },
+  {
+    date: "2022/7/14",
+    open: 466,
+    high: 477.5,
+    low: 463,
+    close: 475,
+    adjClose: 446.44,
+    volume: 31936258
+  },
+  {
+    date: "2022/7/13",
+    open: 470.5,
+    high: 473,
+    low: 466,
+    close: 470.5,
+    adjClose: 442.21,
+    volume: 44035695
+  },
+  {
+    date: "2022/7/12",
+    open: 458,
+    high: 458,
+    low: 449.5,
+    close: 449.5,
+    adjClose: 422.48,
+    volume: 23036423
+  },
+  {
+    date: "2022/7/11",
+    open: 468,
+    high: 470.5,
+    low: 461,
+    close: 462,
+    adjClose: 434.22,
+    volume: 21941710
+  },
+  {
+    date: "2022/7/8",
+    open: 470,
+    high: 470.5,
+    low: 461.5,
+    close: 467,
+    adjClose: 438.92,
+    volume: 37897895
+  },
+  {
+    date: "2022/7/7",
+    open: 442,
+    high: 459,
+    low: 438.5,
+    close: 457.5,
+    adjClose: 430,
+    volume: 48151202
+  },
+  {
+    date: "2022/7/6",
+    open: 442,
+    high: 447.5,
+    low: 435,
+    close: 435.5,
+    adjClose: 409.32,
+    volume: 40549763
+  },
+  {
+    date: "2022/7/5",
+    open: 449.5,
+    high: 451.5,
+    low: 433,
+    close: 446,
+    adjClose: 419.19,
+    volume: 50084244
+  },
+  {
+    date: "2022/7/4",
+    open: 443,
+    high: 451.5,
+    low: 440,
+    close: 440,
+    adjClose: 413.55,
+    volume: 52445919
+  },
+  {
+    date: "2022/7/1",
+    open: 471.5,
+    high: 474,
+    low: 452.5,
+    close: 453.5,
+    adjClose: 426.24,
+    volume: 61744377
+  },
+  {
+    date: "2022/6/30",
+    open: 484.5,
+    high: 486.5,
+    low: 476,
+    close: 476,
+    adjClose: 447.38,
+    volume: 46311432
+  },
+  {
+    date: "2022/6/29",
+    open: 496,
+    high: 498.5,
+    low: 491,
+    close: 491,
+    adjClose: 461.48,
+    volume: 30533789
+  },
+  {
+    date: "2022/6/28",
+    open: 496,
+    high: 500,
+    low: 496,
+    close: 497.5,
+    adjClose: 467.59,
+    volume: 15274062
+  },
+  {
+    date: "2022/6/27",
+    open: 496,
+    high: 506,
+    low: 495.5,
+    close: 498.5,
+    adjClose: 468.53,
+    volume: 37909718
+  },
+  {
+    date: "2022/6/24",
+    open: 489.5,
+    high: 492.5,
+    low: 485.5,
+    close: 486.5,
+    adjClose: 457.25,
+    volume: 27911980
+  },
+  {
+    date: "2022/6/23",
+    open: 492,
+    high: 493.5,
+    low: 485,
+    close: 485.5,
+    adjClose: 456.31,
+    volume: 43548940
+  },
+  {
+    date: "2022/6/22",
+    open: 501,
+    high: 503,
+    low: 494.5,
+    close: 494.5,
+    adjClose: 464.77,
+    volume: 31034893
+  },
+  {
+    date: "2022/6/21",
+    open: 501,
+    high: 505,
+    low: 499,
+    close: 505,
+    adjClose: 474.64,
+    volume: 33223685
+  },
+  {
+    date: "2022/6/20",
+    open: 500,
+    high: 502,
+    low: 495,
+    close: 498,
+    adjClose: 468.06,
+    volume: 34209693
+  },
+  {
+    date: "2022/6/17",
+    open: 499.5,
+    high: 503,
+    low: 499,
+    close: 501,
+    adjClose: 470.88,
+    volume: 43566737
+  },
+  {
+    date: "2022/6/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2022/6/16",
+    open: 515,
+    high: 516,
+    low: 507,
+    close: 508,
+    adjClose: 477.46,
+    volume: 26909199
+  },
+  {
+    date: "2022/6/15",
+    open: 508,
+    high: 515,
+    low: 508,
+    close: 509,
+    adjClose: 475.81,
+    volume: 35680283
+  },
+  {
+    date: "2022/6/14",
+    open: 507,
+    high: 514,
+    low: 507,
+    close: 513,
+    adjClose: 479.55,
+    volume: 36304444
+  },
+  {
+    date: "2022/6/13",
+    open: 518,
+    high: 519,
+    low: 515,
+    close: 516,
+    adjClose: 482.36,
+    volume: 32854092
+  },
+  {
+    date: "2022/6/10",
+    open: 530,
+    high: 533,
+    low: 529,
+    close: 530,
+    adjClose: 495.45,
+    volume: 21357130
+  },
+  {
+    date: "2022/6/9",
+    open: 538,
+    high: 542,
+    low: 537,
+    close: 541,
+    adjClose: 505.73,
+    volume: 16338602
+  },
+  {
+    date: "2022/6/8",
+    open: 539,
+    high: 545,
+    low: 538,
+    close: 544,
+    adjClose: 508.53,
+    volume: 18835521
+  },
+  {
+    date: "2022/6/7",
+    open: 535,
+    high: 538,
+    low: 532,
+    close: 535,
+    adjClose: 500.12,
+    volume: 19497532
+  },
+  {
+    date: "2022/6/6",
+    open: 541,
+    high: 544,
+    low: 538,
+    close: 540,
+    adjClose: 504.79,
+    volume: 17615003
+  },
+  {
+    date: "2022/6/2",
+    open: 544,
+    high: 545,
+    low: 540,
+    close: 540,
+    adjClose: 504.79,
+    volume: 21420890
+  },
+  {
+    date: "2022/6/1",
+    open: 550,
+    high: 555,
+    low: 548,
+    close: 549,
+    adjClose: 513.21,
+    volume: 29155176
+  },
+  {
+    date: "2022/5/31",
+    open: 542,
+    high: 560,
+    low: 540,
+    close: 560,
+    adjClose: 523.49,
+    volume: 72405873
+  },
+  {
+    date: "2022/5/30",
+    open: 538,
+    high: 547,
+    low: 537,
+    close: 547,
+    adjClose: 511.34,
+    volume: 34476433
+  },
+  {
+    date: "2022/5/27",
+    open: 524,
+    high: 530,
+    low: 522,
+    close: 530,
+    adjClose: 495.45,
+    volume: 27866643
+  },
+  {
+    date: "2022/5/26",
+    open: 523,
+    high: 525,
+    low: 513,
+    close: 514,
+    adjClose: 480.49,
+    volume: 28327403
+  },
+  {
+    date: "2022/5/25",
+    open: 522,
+    high: 529,
+    low: 520,
+    close: 524,
+    adjClose: 489.84,
+    volume: 22176476
+  },
+  {
+    date: "2022/5/24",
+    open: 530,
+    high: 531,
+    low: 520,
+    close: 520,
+    adjClose: 486.1,
+    volume: 17802308
+  },
+  {
+    date: "2022/5/23",
+    open: 533,
+    high: 534,
+    low: 528,
+    close: 528,
+    adjClose: 493.58,
+    volume: 17054170
+  },
+  {
+    date: "2022/5/20",
+    open: 524,
+    high: 532,
+    low: 523,
+    close: 530,
+    adjClose: 495.45,
+    volume: 22651205
+  },
+  {
+    date: "2022/5/19",
+    open: 523,
+    high: 527,
+    low: 520,
+    close: 522,
+    adjClose: 487.97,
+    volume: 29019751
+  },
+  {
+    date: "2022/5/18",
+    open: 541,
+    high: 541,
+    low: 534,
+    close: 538,
+    adjClose: 502.92,
+    volume: 30568176
+  },
+  {
+    date: "2022/5/17",
+    open: 521,
+    high: 533,
+    low: 520,
+    close: 530,
+    adjClose: 495.45,
+    volume: 24496974
+  },
+  {
+    date: "2022/5/16",
+    open: 521,
+    high: 524,
+    low: 518,
+    close: 520,
+    adjClose: 486.1,
+    volume: 21163106
+  },
+  {
+    date: "2022/5/13",
+    open: 507,
+    high: 514,
+    low: 506,
+    close: 511,
+    adjClose: 477.68,
+    volume: 29074177
+  },
+  {
+    date: "2022/5/12",
+    open: 516,
+    high: 518,
+    low: 505,
+    close: 505,
+    adjClose: 472.08,
+    volume: 32532963
+  },
+  {
+    date: "2022/5/11",
+    open: 518,
+    high: 526,
+    low: 518,
+    close: 521,
+    adjClose: 487.03,
+    volume: 27157254
+  },
+  {
+    date: "2022/5/10",
+    open: 506,
+    high: 519,
+    low: 505,
+    close: 518,
+    adjClose: 484.23,
+    volume: 41679907
+  },
+  {
+    date: "2022/5/9",
+    open: 523,
+    high: 524,
+    low: 520,
+    close: 520,
+    adjClose: 486.1,
+    volume: 23709774
+  },
+  {
+    date: "2022/5/6",
+    open: 528,
+    high: 531,
+    low: 526,
+    close: 528,
+    adjClose: 493.58,
+    volume: 32467268
+  },
+  {
+    date: "2022/5/5",
+    open: 543,
+    high: 544,
+    low: 539,
+    close: 542,
+    adjClose: 506.66,
+    volume: 20374772
+  },
+  {
+    date: "2022/5/4",
+    open: 533,
+    high: 537,
+    low: 530,
+    close: 534,
+    adjClose: 499.18,
+    volume: 16569622
+  },
+  {
+    date: "2022/5/3",
+    open: 538,
+    high: 540,
+    low: 530,
+    close: 531,
+    adjClose: 496.38,
+    volume: 26317509
+  },
+  {
+    date: "2022/4/29",
+    open: 547,
+    high: 547,
+    low: 535,
+    close: 538,
+    adjClose: 502.92,
+    volume: 36664644
+  },
+  {
+    date: "2022/4/28",
+    open: 530,
+    high: 532,
+    low: 523,
+    close: 531,
+    adjClose: 496.38,
+    volume: 45380836
+  },
+  {
+    date: "2022/4/27",
+    open: 530,
+    high: 532,
+    low: 526,
+    close: 526,
+    adjClose: 491.71,
+    volume: 55941533
+  },
+  {
+    date: "2022/4/26",
+    open: 550,
+    high: 551,
+    low: 544,
+    close: 546,
+    adjClose: 510.4,
+    volume: 35825421
+  },
+  {
+    date: "2022/4/25",
+    open: 550,
+    high: 552,
+    low: 546,
+    close: 547,
+    adjClose: 511.34,
+    volume: 43389591
+  },
+  {
+    date: "2022/4/22",
+    open: 558,
+    high: 559,
+    low: 557,
+    close: 558,
+    adjClose: 521.62,
+    volume: 29283846
+  },
+  {
+    date: "2022/4/21",
+    open: 571,
+    high: 571,
+    low: 565,
+    close: 565,
+    adjClose: 528.16,
+    volume: 18383650
+  },
+  {
+    date: "2022/4/20",
+    open: 570,
+    high: 570,
+    low: 562,
+    close: 570,
+    adjClose: 532.84,
+    volume: 27606307
+  },
+  {
+    date: "2022/4/19",
+    open: 566,
+    high: 569,
+    low: 563,
+    close: 565,
+    adjClose: 528.16,
+    volume: 16614705
+  },
+  {
+    date: "2022/4/18",
+    open: 559,
+    high: 566,
+    low: 558,
+    close: 561,
+    adjClose: 524.42,
+    volume: 15800959
+  },
+  {
+    date: "2022/4/15",
+    open: 562,
+    high: 566,
+    low: 561,
+    close: 562,
+    adjClose: 525.36,
+    volume: 28253360
+  },
+  {
+    date: "2022/4/14",
+    open: 577,
+    high: 578,
+    low: 573,
+    close: 573,
+    adjClose: 535.64,
+    volume: 19056590
+  },
+  {
+    date: "2022/4/13",
+    open: 564,
+    high: 576,
+    low: 563,
+    close: 573,
+    adjClose: 535.64,
+    volume: 35865970
+  },
+  {
+    date: "2022/4/12",
+    open: 554,
+    high: 564,
+    low: 552,
+    close: 557,
+    adjClose: 520.68,
+    volume: 30671407
+  },
+  {
+    date: "2022/4/11",
+    open: 563,
+    high: 566,
+    low: 558,
+    close: 558,
+    adjClose: 521.62,
+    volume: 36820094
+  },
+  {
+    date: "2022/4/8",
+    open: 567,
+    high: 570,
+    low: 566,
+    close: 567,
+    adjClose: 530.03,
+    volume: 28024587
+  },
+  {
+    date: "2022/4/7",
+    open: 571,
+    high: 573,
+    low: 566,
+    close: 566,
+    adjClose: 529.1,
+    volume: 42904743
+  },
+  {
+    date: "2022/4/6",
+    open: 578,
+    high: 580,
+    low: 575,
+    close: 578,
+    adjClose: 540.32,
+    volume: 37645873
+  },
+  {
+    date: "2022/4/1",
+    open: 585,
+    high: 589,
+    low: 584,
+    close: 589,
+    adjClose: 550.6,
+    volume: 29732696
+  },
+  {
+    date: "2022/3/31",
+    open: 602,
+    high: 602,
+    low: 594,
+    close: 597,
+    adjClose: 558.08,
+    volume: 22700114
+  },
+  {
+    date: "2022/3/30",
+    open: 599,
+    high: 600,
+    low: 597,
+    close: 600,
+    adjClose: 560.88,
+    volume: 41230239
+  },
+  {
+    date: "2022/3/29",
+    open: 586,
+    high: 589,
+    low: 584,
+    close: 589,
+    adjClose: 550.6,
+    volume: 14892032
+  },
+  {
+    date: "2022/3/28",
+    open: 581,
+    high: 586,
+    low: 580,
+    close: 584,
+    adjClose: 545.92,
+    volume: 26391576
+  },
+  {
+    date: "2022/3/25",
+    open: 597,
+    high: 598,
+    low: 595,
+    close: 598,
+    adjClose: 559.01,
+    volume: 26122381
+  },
+  {
+    date: "2022/3/24",
+    open: 587,
+    high: 592,
+    low: 585,
+    close: 591,
+    adjClose: 552.47,
+    volume: 20060758
+  },
+  {
+    date: "2022/3/23",
+    open: 590,
+    high: 590,
+    low: 586,
+    close: 590,
+    adjClose: 551.53,
+    volume: 25902069
+  },
+  {
+    date: "2022/3/22",
+    open: 577,
+    high: 586,
+    low: 577,
+    close: 583,
+    adjClose: 544.99,
+    volume: 20246949
+  },
+  {
+    date: "2022/3/21",
+    open: 583,
+    high: 589,
+    low: 583,
+    close: 586,
+    adjClose: 547.79,
+    volume: 21400273
+  },
+  {
+    date: "2022/3/18",
+    open: 582,
+    high: 582,
+    low: 576,
+    close: 581,
+    adjClose: 543.12,
+    volume: 46242430
+  },
+  {
+    date: "2022/3/17",
+    open: 578,
+    high: 583,
+    low: 575,
+    close: 582,
+    adjClose: 544.05,
+    volume: 60959900
+  },
+  {
+    date: "2022/3/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2022/3/16",
+    open: 564,
+    high: 565,
+    low: 555,
+    close: 558,
+    adjClose: 521.62,
+    volume: 43438327
+  },
+  {
+    date: "2022/3/15",
+    open: 562,
+    high: 563,
+    low: 558,
+    close: 558,
+    adjClose: 519.05,
+    volume: 74092231
+  },
+  {
+    date: "2022/3/14",
+    open: 574,
+    high: 577,
+    low: 572,
+    close: 572,
+    adjClose: 532.07,
+    volume: 33919577
+  },
+  {
+    date: "2022/3/11",
+    open: 581,
+    high: 582,
+    low: 574,
+    close: 575,
+    adjClose: 534.86,
+    volume: 38943098
+  },
+  {
+    date: "2022/3/10",
+    open: 585,
+    high: 589,
+    low: 582,
+    close: 587,
+    adjClose: 546.02,
+    volume: 45630467
+  },
+  {
+    date: "2022/3/9",
+    open: 567,
+    high: 573,
+    low: 567,
+    close: 568,
+    adjClose: 528.35,
+    volume: 52155415
+  },
+  {
+    date: "2022/3/8",
+    open: 561,
+    high: 570,
+    low: 561,
+    close: 563,
+    adjClose: 523.7,
+    volume: 79029914
+  },
+  {
+    date: "2022/3/7",
+    open: 580,
+    high: 581,
+    low: 575,
+    close: 576,
+    adjClose: 535.79,
+    volume: 86496560
+  },
+  {
+    date: "2022/3/4",
+    open: 595,
+    high: 597,
+    low: 592,
+    close: 595,
+    adjClose: 553.47,
+    volume: 55917115
+  },
+  {
+    date: "2022/3/3",
+    open: 603,
+    high: 607,
+    low: 601,
+    close: 602,
+    adjClose: 559.98,
+    volume: 33792420
+  },
+  {
+    date: "2022/3/2",
+    open: 601,
+    high: 605,
+    low: 600,
+    close: 601,
+    adjClose: 559.05,
+    volume: 40693457
+  },
+  {
+    date: "2022/3/1",
+    open: 599,
+    high: 610,
+    low: 599,
+    close: 604,
+    adjClose: 561.84,
+    volume: 66720867
+  },
+  {
+    date: "2022/2/25",
+    open: 600,
+    high: 609,
+    low: 600,
+    close: 604,
+    adjClose: 561.84,
+    volume: 89012516
+  },
+  {
+    date: "2022/2/24",
+    open: 618,
+    high: 619,
+    low: 604,
+    close: 604,
+    adjClose: 561.84,
+    volume: 73663161
+  },
+  {
+    date: "2022/2/23",
+    open: 624,
+    high: 629,
+    low: 623,
+    close: 625,
+    adjClose: 581.37,
+    volume: 31953054
+  },
+  {
+    date: "2022/2/22",
+    open: 628,
+    high: 630,
+    low: 625,
+    close: 627,
+    adjClose: 583.23,
+    volume: 34086593
+  },
+  {
+    date: "2022/2/21",
+    open: 633,
+    high: 636,
+    low: 632,
+    close: 632,
+    adjClose: 587.88,
+    volume: 23797502
+  },
+  {
+    date: "2022/2/18",
+    open: 638,
+    high: 639,
+    low: 636,
+    close: 637,
+    adjClose: 592.53,
+    volume: 20804191
+  },
+  {
+    date: "2022/2/17",
+    open: 644,
+    high: 646,
+    low: 641,
+    close: 645,
+    adjClose: 599.98,
+    volume: 18135080
+  },
+  {
+    date: "2022/2/16",
+    open: 645,
+    high: 646,
+    low: 640,
+    close: 646,
+    adjClose: 600.91,
+    volume: 25191741
+  },
+  {
+    date: "2022/2/15",
+    open: 633,
+    high: 639,
+    low: 633,
+    close: 633,
+    adjClose: 588.81,
+    volume: 21970460
+  },
+  {
+    date: "2022/2/14",
+    open: 640,
+    high: 641,
+    low: 635,
+    close: 637,
+    adjClose: 592.53,
+    volume: 27826382
+  },
+  {
+    date: "2022/2/11",
+    open: 646,
+    high: 650,
+    low: 642,
+    close: 650,
+    adjClose: 604.63,
+    volume: 26723278
+  },
+  {
+    date: "2022/2/10",
+    open: 639,
+    high: 649,
+    low: 637,
+    close: 649,
+    adjClose: 603.7,
+    volume: 34587133
+  },
+  {
+    date: "2022/2/9",
+    open: 635,
+    high: 637,
+    low: 630,
+    close: 633,
+    adjClose: 588.81,
+    volume: 30048791
+  },
+  {
+    date: "2022/2/8",
+    open: 645,
+    high: 645,
+    low: 628,
+    close: 628,
+    adjClose: 584.16,
+    volume: 39718217
+  },
+  {
+    date: "2022/2/7",
+    open: 644,
+    high: 644,
+    low: 631,
+    close: 635,
+    adjClose: 590.67,
+    volume: 56836469
+  },
+  {
+    date: "2022/1/26",
+    open: 635,
+    high: 641,
+    low: 635,
+    close: 636,
+    adjClose: 591.6,
+    volume: 29957189
+  },
+  {
+    date: "2022/1/25",
+    open: 643,
+    high: 645,
+    low: 638,
+    close: 641,
+    adjClose: 596.26,
+    volume: 52318736
+  },
+  {
+    date: "2022/1/24",
+    open: 639,
+    high: 655,
+    low: 637,
+    close: 653,
+    adjClose: 607.42,
+    volume: 47134502
+  },
+  {
+    date: "2022/1/21",
+    open: 644,
+    high: 646,
+    low: 637,
+    close: 641,
+    adjClose: 596.26,
+    volume: 49577684
+  },
+  {
+    date: "2022/1/20",
+    open: 650,
+    high: 657,
+    low: 646,
+    close: 651,
+    adjClose: 605.56,
+    volume: 46474584
+  },
+  {
+    date: "2022/1/19",
+    open: 652,
+    high: 660,
+    low: 651,
+    close: 654,
+    adjClose: 608.35,
+    volume: 40381333
+  },
+  {
+    date: "2022/1/18",
+    open: 678,
+    high: 681,
+    low: 662,
+    close: 662,
+    adjClose: 615.79,
+    volume: 43593330
+  },
+  {
+    date: "2022/1/17",
+    open: 685,
+    high: 688,
+    low: 678,
+    close: 683,
+    adjClose: 635.32,
+    volume: 59614236
+  },
+  {
+    date: "2022/1/14",
+    open: 673,
+    high: 673,
+    low: 661,
+    close: 672,
+    adjClose: 625.09,
+    volume: 95200777
+  },
+  {
+    date: "2022/1/13",
+    open: 658,
+    high: 662,
+    low: 655,
+    close: 661,
+    adjClose: 614.86,
+    volume: 38137411
+  },
+  {
+    date: "2022/1/12",
+    open: 657,
+    high: 660,
+    low: 650,
+    close: 660,
+    adjClose: 613.93,
+    volume: 38860063
+  },
+  {
+    date: "2022/1/11",
+    open: 646,
+    high: 651,
+    low: 639,
+    close: 651,
+    adjClose: 605.56,
+    volume: 33196585
+  },
+  {
+    date: "2022/1/10",
+    open: 628,
+    high: 645,
+    low: 627,
+    close: 643,
+    adjClose: 598.12,
+    volume: 38289770
+  },
+  {
+    date: "2022/1/7",
+    open: 643,
+    high: 646,
+    low: 632,
+    close: 634,
+    adjClose: 589.74,
+    volume: 38249908
+  },
+  {
+    date: "2022/1/6",
+    open: 638,
+    high: 646,
+    low: 636,
+    close: 644,
+    adjClose: 599.05,
+    volume: 53210211
+  },
+  {
+    date: "2022/1/5",
+    open: 669,
+    high: 669,
+    low: 646,
+    close: 650,
+    adjClose: 604.63,
+    volume: 69593809
+  },
+  {
+    date: "2022/1/4",
+    open: 645,
+    high: 656,
+    low: 644,
+    close: 656,
+    adjClose: 610.21,
+    volume: 79434666
+  },
+  {
+    date: "2022/1/3",
+    open: 619,
+    high: 632,
+    low: 618,
+    close: 631,
+    adjClose: 586.95,
+    volume: 69089158
+  },
+  {
+    date: "2021/12/30",
+    open: 619,
+    high: 620,
+    low: 615,
+    close: 615,
+    adjClose: 572.07,
+    volume: 19681276
+  },
+  {
+    date: "2021/12/29",
+    open: 615,
+    high: 619,
+    low: 614,
+    close: 616,
+    adjClose: 573,
+    volume: 24518766
+  },
+  {
+    date: "2021/12/28",
+    open: 610,
+    high: 615,
+    low: 610,
+    close: 615,
+    adjClose: 572.07,
+    volume: 33892718
+  },
+  {
+    date: "2021/12/27",
+    open: 604,
+    high: 610,
+    low: 604,
+    close: 606,
+    adjClose: 563.7,
+    volume: 16259872
+  },
+  {
+    date: "2021/12/24",
+    open: 606,
+    high: 609,
+    low: 604,
+    close: 604,
+    adjClose: 561.84,
+    volume: 11059689
+  },
+  {
+    date: "2021/12/23",
+    open: 607,
+    high: 608,
+    low: 602,
+    close: 606,
+    adjClose: 563.7,
+    volume: 16654439
+  },
+  {
+    date: "2021/12/22",
+    open: 598,
+    high: 601,
+    low: 598,
+    close: 600,
+    adjClose: 558.12,
+    volume: 9831802
+  },
+  {
+    date: "2021/12/21",
+    open: 597,
+    high: 600,
+    low: 595,
+    close: 597,
+    adjClose: 555.33,
+    volume: 17001461
+  },
+  {
+    date: "2021/12/20",
+    open: 607,
+    high: 607,
+    low: 598,
+    close: 598,
+    adjClose: 556.26,
+    volume: 21381070
+  },
+  {
+    date: "2021/12/17",
+    open: 601,
+    high: 607,
+    low: 599,
+    close: 607,
+    adjClose: 564.63,
+    volume: 24105733
+  },
+  {
+    date: "2021/12/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2021/12/16",
+    open: 605,
+    high: 605,
+    low: 601,
+    close: 605,
+    adjClose: 562.77,
+    volume: 21809022
+  },
+  {
+    date: "2021/12/15",
+    open: 597,
+    high: 601,
+    low: 596,
+    close: 600,
+    adjClose: 555.56,
+    volume: 21827730
+  },
+  {
+    date: "2021/12/14",
+    open: 598,
+    high: 600,
+    low: 597,
+    close: 599,
+    adjClose: 554.63,
+    volume: 22579034
+  },
+  {
+    date: "2021/12/13",
+    open: 609,
+    high: 610,
+    low: 601,
+    close: 601,
+    adjClose: 556.48,
+    volume: 17711657
+  },
+  {
+    date: "2021/12/10",
+    open: 605,
+    high: 608,
+    low: 602,
+    close: 605,
+    adjClose: 560.19,
+    volume: 10497451
+  },
+  {
+    date: "2021/12/9",
+    open: 606,
+    high: 608,
+    low: 602,
+    close: 608,
+    adjClose: 562.97,
+    volume: 11039070
+  },
+  {
+    date: "2021/12/8",
+    open: 614,
+    high: 614,
+    low: 602,
+    close: 602,
+    adjClose: 557.41,
+    volume: 20801543
+  },
+  {
+    date: "2021/12/7",
+    open: 602,
+    high: 607,
+    low: 597,
+    close: 607,
+    adjClose: 562.04,
+    volume: 18606530
+  },
+  {
+    date: "2021/12/6",
+    open: 603,
+    high: 609,
+    low: 600,
+    close: 600,
+    adjClose: 555.56,
+    volume: 23589363
+  },
+  {
+    date: "2021/12/3",
+    open: 614,
+    high: 614,
+    low: 606,
+    close: 608,
+    adjClose: 562.97,
+    volume: 23045832
+  },
+  {
+    date: "2021/12/2",
+    open: 605,
+    high: 615,
+    low: 602,
+    close: 615,
+    adjClose: 569.45,
+    volume: 45125742
+  },
+  {
+    date: "2021/12/1",
+    open: 596,
+    high: 603,
+    low: 594,
+    close: 600,
+    adjClose: 555.56,
+    volume: 21403404
+  },
+  {
+    date: "2021/11/30",
+    open: 597,
+    high: 600,
+    low: 591,
+    close: 596,
+    adjClose: 551.86,
+    volume: 62021697
+  },
+  {
+    date: "2021/11/29",
+    open: 594,
+    high: 598,
+    low: 591,
+    close: 593,
+    adjClose: 549.08,
+    volume: 23379558
+  },
+  {
+    date: "2021/11/26",
+    open: 598,
+    high: 601,
+    low: 592,
+    close: 596,
+    adjClose: 551.86,
+    volume: 26588102
+  },
+  {
+    date: "2021/11/25",
+    open: 605,
+    high: 607,
+    low: 601,
+    close: 603,
+    adjClose: 558.34,
+    volume: 11888265
+  },
+  {
+    date: "2021/11/24",
+    open: 612,
+    high: 612,
+    low: 602,
+    close: 603,
+    adjClose: 558.34,
+    volume: 20391940
+  },
+  {
+    date: "2021/11/23",
+    open: 615,
+    high: 615,
+    low: 611,
+    close: 612,
+    adjClose: 566.67,
+    volume: 19431694
+  },
+  {
+    date: "2021/11/22",
+    open: 618,
+    high: 618,
+    low: 615,
+    close: 615,
+    adjClose: 569.45,
+    volume: 20312168
+  },
+  {
+    date: "2021/11/19",
+    open: 622,
+    high: 623,
+    low: 617,
+    close: 618,
+    adjClose: 572.23,
+    volume: 35554348
+  },
+  {
+    date: "2021/11/18",
+    open: 613,
+    high: 614,
+    low: 607,
+    close: 613,
+    adjClose: 567.6,
+    volume: 20030651
+  },
+  {
+    date: "2021/11/17",
+    open: 615,
+    high: 615,
+    low: 608,
+    close: 610,
+    adjClose: 564.82,
+    volume: 19717852
+  },
+  {
+    date: "2021/11/16",
+    open: 612,
+    high: 612,
+    low: 608,
+    close: 610,
+    adjClose: 564.82,
+    volume: 20917108
+  },
+  {
+    date: "2021/11/15",
+    open: 609,
+    high: 611,
+    low: 607,
+    close: 608,
+    adjClose: 562.97,
+    volume: 15551452
+  },
+  {
+    date: "2021/11/12",
+    open: 610,
+    high: 611,
+    low: 602,
+    close: 604,
+    adjClose: 559.26,
+    volume: 15821327
+  },
+  {
+    date: "2021/11/11",
+    open: 600,
+    high: 606,
+    low: 600,
+    close: 606,
+    adjClose: 561.11,
+    volume: 18463848
+  },
+  {
+    date: "2021/11/10",
+    open: 611,
+    high: 612,
+    low: 608,
+    close: 612,
+    adjClose: 566.67,
+    volume: 16027674
+  },
+  {
+    date: "2021/11/9",
+    open: 611,
+    high: 617,
+    low: 610,
+    close: 611,
+    adjClose: 565.74,
+    volume: 39538660
+  },
+  {
+    date: "2021/11/8",
+    open: 600,
+    high: 602,
+    low: 598,
+    close: 602,
+    adjClose: 557.41,
+    volume: 19752355
+  },
+  {
+    date: "2021/11/5",
+    open: 598,
+    high: 600,
+    low: 595,
+    close: 600,
+    adjClose: 555.56,
+    volume: 33270827
+  },
+  {
+    date: "2021/11/4",
+    open: 592,
+    high: 594,
+    low: 585,
+    close: 587,
+    adjClose: 543.52,
+    volume: 17932145
+  },
+  {
+    date: "2021/11/3",
+    open: 597,
+    high: 597,
+    low: 592,
+    close: 592,
+    adjClose: 548.15,
+    volume: 10224009
+  },
+  {
+    date: "2021/11/2",
+    open: 594,
+    high: 597,
+    low: 590,
+    close: 592,
+    adjClose: 548.15,
+    volume: 15192404
+  },
+  {
+    date: "2021/11/1",
+    open: 591,
+    high: 593,
+    low: 590,
+    close: 590,
+    adjClose: 546.3,
+    volume: 16089351
+  },
+  {
+    date: "2021/10/29",
+    open: 595,
+    high: 596,
+    low: 589,
+    close: 590,
+    adjClose: 546.3,
+    volume: 25763960
+  },
+  {
+    date: "2021/10/28",
+    open: 598,
+    high: 598,
+    low: 591,
+    close: 595,
+    adjClose: 550.93,
+    volume: 16570044
+  },
+  {
+    date: "2021/10/27",
+    open: 598,
+    high: 599,
+    low: 594,
+    close: 599,
+    adjClose: 554.63,
+    volume: 14961858
+  },
+  {
+    date: "2021/10/26",
+    open: 595,
+    high: 600,
+    low: 593,
+    close: 599,
+    adjClose: 554.63,
+    volume: 19998808
+  },
+  {
+    date: "2021/10/25",
+    open: 597,
+    high: 597,
+    low: 590,
+    close: 593,
+    adjClose: 549.08,
+    volume: 16785568
+  },
+  {
+    date: "2021/10/22",
+    open: 600,
+    high: 602,
+    low: 594,
+    close: 600,
+    adjClose: 555.56,
+    volume: 13995403
+  },
+  {
+    date: "2021/10/21",
+    open: 602,
+    high: 603,
+    low: 595,
+    close: 596,
+    adjClose: 551.86,
+    volume: 16169014
+  },
+  {
+    date: "2021/10/20",
+    open: 603,
+    high: 604,
+    low: 597,
+    close: 598,
+    adjClose: 553.71,
+    volume: 16372520
+  },
+  {
+    date: "2021/10/19",
+    open: 598,
+    high: 600,
+    low: 593,
+    close: 600,
+    adjClose: 555.56,
+    volume: 17386359
+  },
+  {
+    date: "2021/10/18",
+    open: 604,
+    high: 604,
+    low: 590,
+    close: 590,
+    adjClose: 546.3,
+    volume: 19158568
+  },
+  {
+    date: "2021/10/15",
+    open: 592,
+    high: 600,
+    low: 586,
+    close: 600,
+    adjClose: 555.56,
+    volume: 53150216
+  },
+  {
+    date: "2021/10/14",
+    open: 579,
+    high: 579,
+    low: 573,
+    close: 573,
+    adjClose: 530.56,
+    volume: 13916927
+  },
+  {
+    date: "2021/10/13",
+    open: 572,
+    high: 575,
+    low: 570,
+    close: 571,
+    adjClose: 528.71,
+    volume: 18914374
+  },
+  {
+    date: "2021/10/12",
+    open: 570,
+    high: 575,
+    low: 564,
+    close: 575,
+    adjClose: 532.41,
+    volume: 26522907
+  },
+  {
+    date: "2021/10/8",
+    open: 582,
+    high: 583,
+    low: 573,
+    close: 575,
+    adjClose: 532.41,
+    volume: 18279079
+  },
+  {
+    date: "2021/10/7",
+    open: 575,
+    high: 582,
+    low: 572,
+    close: 580,
+    adjClose: 537.04,
+    volume: 27933054
+  },
+  {
+    date: "2021/10/6",
+    open: 573,
+    high: 574,
+    low: 565,
+    close: 571,
+    adjClose: 528.71,
+    volume: 32508846
+  },
+  {
+    date: "2021/10/5",
+    open: 562,
+    high: 572,
+    low: 560,
+    close: 572,
+    adjClose: 529.63,
+    volume: 33824024
+  },
+  {
+    date: "2021/10/4",
+    open: 574,
+    high: 575,
+    low: 569,
+    close: 572,
+    adjClose: 529.63,
+    volume: 20957803
+  },
+  {
+    date: "2021/10/1",
+    open: 579,
+    high: 579,
+    low: 571,
+    close: 574,
+    adjClose: 531.48,
+    volume: 36704493
+  },
+  {
+    date: "2021/9/30",
+    open: 580,
+    high: 585,
+    low: 575,
+    close: 580,
+    adjClose: 537.04,
+    volume: 30465107
+  },
+  {
+    date: "2021/9/29",
+    open: 580,
+    high: 583,
+    low: 577,
+    close: 580,
+    adjClose: 537.04,
+    volume: 49310524
+  },
+  {
+    date: "2021/9/28",
+    open: 595,
+    high: 596,
+    low: 592,
+    close: 594,
+    adjClose: 550,
+    volume: 16707080
+  },
+  {
+    date: "2021/9/27",
+    open: 600,
+    high: 602,
+    low: 593,
+    close: 602,
+    adjClose: 557.41,
+    volume: 19464241
+  },
+  {
+    date: "2021/9/24",
+    open: 591,
+    high: 598,
+    low: 590,
+    close: 598,
+    adjClose: 553.71,
+    volume: 16736973
+  },
+  {
+    date: "2021/9/23",
+    open: 588,
+    high: 593,
+    low: 588,
+    close: 588,
+    adjClose: 544.45,
+    volume: 21696296
+  },
+  {
+    date: "2021/9/22",
+    open: 586,
+    high: 589,
+    low: 583,
+    close: 586,
+    adjClose: 542.6,
+    volume: 40642293
+  },
+  {
+    date: "2021/9/17",
+    open: 600,
+    high: 610,
+    low: 599,
+    close: 600,
+    adjClose: 555.56,
+    volume: 40717715
+  },
+  {
+    date: "2021/9/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2021/9/16",
+    open: 603,
+    high: 607,
+    low: 599,
+    close: 600,
+    adjClose: 555.56,
+    volume: 22467022
+  },
+  {
+    date: "2021/9/15",
+    open: 610,
+    high: 613,
+    low: 607,
+    close: 607,
+    adjClose: 559.49,
+    volume: 23433501
+  },
+  {
+    date: "2021/9/14",
+    open: 618,
+    high: 618,
+    low: 612,
+    close: 613,
+    adjClose: 565.02,
+    volume: 14441901
+  },
+  {
+    date: "2021/9/13",
+    open: 619,
+    high: 620,
+    low: 613,
+    close: 615,
+    adjClose: 566.87,
+    volume: 15198774
+  },
+  {
+    date: "2021/9/10",
+    open: 615,
+    high: 623,
+    low: 614,
+    close: 622,
+    adjClose: 573.32,
+    volume: 16304725
+  },
+  {
+    date: "2021/9/9",
+    open: 612,
+    high: 620,
+    low: 610,
+    close: 619,
+    adjClose: 570.56,
+    volume: 18735512
+  },
+  {
+    date: "2021/9/8",
+    open: 622,
+    high: 627,
+    low: 612,
+    close: 619,
+    adjClose: 570.56,
+    volume: 37817737
+  },
+  {
+    date: "2021/9/7",
+    open: 634,
+    high: 634,
+    low: 623,
+    close: 623,
+    adjClose: 574.24,
+    volume: 26526056
+  },
+  {
+    date: "2021/9/6",
+    open: 623,
+    high: 638,
+    low: 621,
+    close: 631,
+    adjClose: 581.62,
+    volume: 55589014
+  },
+  {
+    date: "2021/9/3",
+    open: 610,
+    high: 620,
+    low: 610,
+    close: 620,
+    adjClose: 571.48,
+    volume: 51562454
+  },
+  {
+    date: "2021/9/2",
+    open: 613,
+    high: 615,
+    low: 607,
+    close: 607,
+    adjClose: 559.49,
+    volume: 24112463
+  },
+  {
+    date: "2021/9/1",
+    open: 614,
+    high: 614,
+    low: 608,
+    close: 613,
+    adjClose: 565.02,
+    volume: 30092045
+  },
+  {
+    date: "2021/8/31",
+    open: 604,
+    high: 614,
+    low: 598,
+    close: 614,
+    adjClose: 565.95,
+    volume: 52721470
+  },
+  {
+    date: "2021/8/30",
+    open: 602,
+    high: 605,
+    low: 599,
+    close: 605,
+    adjClose: 557.65,
+    volume: 36575609
+  },
+  {
+    date: "2021/8/27",
+    open: 596,
+    high: 600,
+    low: 593,
+    close: 599,
+    adjClose: 552.12,
+    volume: 27105651
+  },
+  {
+    date: "2021/8/26",
+    open: 601,
+    high: 603,
+    low: 591,
+    close: 594,
+    adjClose: 547.51,
+    volume: 43822008
+  },
+  {
+    date: "2021/8/25",
+    open: 579,
+    high: 585,
+    low: 574,
+    close: 585,
+    adjClose: 539.22,
+    volume: 27504657
+  },
+  {
+    date: "2021/8/24",
+    open: 574,
+    high: 575,
+    low: 571,
+    close: 572,
+    adjClose: 527.23,
+    volume: 24844800
+  },
+  {
+    date: "2021/8/23",
+    open: 560,
+    high: 572,
+    low: 559,
+    close: 566,
+    adjClose: 521.7,
+    volume: 33685159
+  },
+  {
+    date: "2021/8/20",
+    open: 560,
+    high: 563,
+    low: 551,
+    close: 552,
+    adjClose: 508.8,
+    volume: 45614061
+  },
+  {
+    date: "2021/8/19",
+    open: 573,
+    high: 573,
+    low: 559,
+    close: 559,
+    adjClose: 515.25,
+    volume: 38868947
+  },
+  {
+    date: "2021/8/18",
+    open: 568,
+    high: 575,
+    low: 566,
+    close: 574,
+    adjClose: 529.08,
+    volume: 43716164
+  },
+  {
+    date: "2021/8/17",
+    open: 584,
+    high: 584,
+    low: 584,
+    close: 584,
+    adjClose: 538.29,
+    volume: null
+  },
+  {
+    date: "2021/8/16",
+    open: 582,
+    high: 586,
+    low: 578,
+    close: 584,
+    adjClose: 538.29,
+    volume: 19315705
+  },
+  {
+    date: "2021/8/13",
+    open: 585,
+    high: 585,
+    low: 579,
+    close: 581,
+    adjClose: 535.53,
+    volume: 22524428
+  },
+  {
+    date: "2021/8/12",
+    open: 586,
+    high: 588,
+    low: 584,
+    close: 586,
+    adjClose: 540.14,
+    volume: 15444622
+  },
+  {
+    date: "2021/8/11",
+    open: 590,
+    high: 590,
+    low: 585,
+    close: 590,
+    adjClose: 543.82,
+    volume: 19969687
+  },
+  {
+    date: "2021/8/10",
+    open: 596,
+    high: 596,
+    low: 589,
+    close: 591,
+    adjClose: 544.75,
+    volume: 17190865
+  },
+  {
+    date: "2021/8/9",
+    open: 590,
+    high: 595,
+    low: 583,
+    close: 595,
+    adjClose: 548.43,
+    volume: 17390951
+  },
+  {
+    date: "2021/8/6",
+    open: 596,
+    high: 596,
+    low: 588,
+    close: 591,
+    adjClose: 544.75,
+    volume: 13687213
+  },
+  {
+    date: "2021/8/5",
+    open: 598,
+    high: 598,
+    low: 593,
+    close: 596,
+    adjClose: 549.36,
+    volume: 15116242
+  },
+  {
+    date: "2021/8/4",
+    open: 598,
+    high: 598,
+    low: 594,
+    close: 596,
+    adjClose: 549.36,
+    volume: 20313271
+  },
+  {
+    date: "2021/8/3",
+    open: 594,
+    high: 594,
+    low: 590,
+    close: 594,
+    adjClose: 547.51,
+    volume: 22747702
+  },
+  {
+    date: "2021/8/2",
+    open: 583,
+    high: 590,
+    low: 580,
+    close: 590,
+    adjClose: 543.82,
+    volume: 23482491
+  },
+  {
+    date: "2021/7/30",
+    open: 581,
+    high: 582,
+    low: 578,
+    close: 580,
+    adjClose: 534.61,
+    volume: 18999281
+  },
+  {
+    date: "2021/7/29",
+    open: 585,
+    high: 585,
+    low: 577,
+    close: 583,
+    adjClose: 537.37,
+    volume: 23224896
+  },
+  {
+    date: "2021/7/28",
+    open: 576,
+    high: 579,
+    low: 573,
+    close: 579,
+    adjClose: 533.69,
+    volume: 36158305
+  },
+  {
+    date: "2021/7/27",
+    open: 581,
+    high: 584,
+    low: 580,
+    close: 580,
+    adjClose: 534.61,
+    volume: 17785992
+  },
+  {
+    date: "2021/7/26",
+    open: 591,
+    high: 591,
+    low: 580,
+    close: 580,
+    adjClose: 534.61,
+    volume: 21619179
+  },
+  {
+    date: "2021/7/23",
+    open: 592,
+    high: 592,
+    low: 583,
+    close: 585,
+    adjClose: 539.22,
+    volume: 15271451
+  },
+  {
+    date: "2021/7/22",
+    open: 589,
+    high: 594,
+    low: 587,
+    close: 591,
+    adjClose: 544.75,
+    volume: 26058172
+  },
+  {
+    date: "2021/7/21",
+    open: 586,
+    high: 586,
+    low: 580,
+    close: 585,
+    adjClose: 539.22,
+    volume: 25828732
+  },
+  {
+    date: "2021/7/20",
+    open: 579,
+    high: 584,
+    low: 579,
+    close: 581,
+    adjClose: 535.53,
+    volume: 15354333
+  },
+  {
+    date: "2021/7/19",
+    open: 583,
+    high: 584,
+    low: 578,
+    close: 582,
+    adjClose: 536.45,
+    volume: 40644341
+  },
+  {
+    date: "2021/7/16",
+    open: 591,
+    high: 595,
+    low: 588,
+    close: 589,
+    adjClose: 542.9,
+    volume: 57970545
+  },
+  {
+    date: "2021/7/15",
+    open: 613,
+    high: 614,
+    low: 608,
+    close: 614,
+    adjClose: 565.95,
+    volume: 22012834
+  },
+  {
+    date: "2021/7/14",
+    open: 613,
+    high: 615,
+    low: 608,
+    close: 613,
+    adjClose: 565.02,
+    volume: 38418875
+  },
+  {
+    date: "2021/7/13",
+    open: 600,
+    high: 608,
+    low: 599,
+    close: 607,
+    adjClose: 559.49,
+    volume: 52540315
+  },
+  {
+    date: "2021/7/12",
+    open: 595,
+    high: 597,
+    low: 590,
+    close: 593,
+    adjClose: 546.59,
+    volume: 31304547
+  },
+  {
+    date: "2021/7/9",
+    open: 582,
+    high: 585,
+    low: 580,
+    close: 584,
+    adjClose: 538.29,
+    volume: 29029415
+  },
+  {
+    date: "2021/7/8",
+    open: 595,
+    high: 595,
+    low: 588,
+    close: 588,
+    adjClose: 541.98,
+    volume: 21140426
+  },
+  {
+    date: "2021/7/7",
+    open: 590,
+    high: 594,
+    low: 588,
+    close: 594,
+    adjClose: 547.51,
+    volume: 16966158
+  },
+  {
+    date: "2021/7/6",
+    open: 595,
+    high: 596,
+    low: 589,
+    close: 592,
+    adjClose: 545.67,
+    volume: 12997112
+  },
+  {
+    date: "2021/7/5",
+    open: 588,
+    high: 597,
+    low: 588,
+    close: 591,
+    adjClose: 544.75,
+    volume: 28836816
+  },
+  {
+    date: "2021/7/2",
+    open: 590,
+    high: 593,
+    low: 587,
+    close: 588,
+    adjClose: 541.98,
+    volume: 18322419
+  },
+  {
+    date: "2021/7/1",
+    open: 596,
+    high: 597,
+    low: 591,
+    close: 593,
+    adjClose: 546.59,
+    volume: 18250994
+  },
+  {
+    date: "2021/6/30",
+    open: 599,
+    high: 599,
+    low: 595,
+    close: 595,
+    adjClose: 548.43,
+    volume: 24883853
+  },
+  {
+    date: "2021/6/29",
+    open: 598,
+    high: 598,
+    low: 591,
+    close: 595,
+    adjClose: 548.43,
+    volume: 28659610
+  },
+  {
+    date: "2021/6/28",
+    open: 590,
+    high: 590,
+    low: 586,
+    close: 590,
+    adjClose: 543.82,
+    volume: 15028407
+  },
+  {
+    date: "2021/6/25",
+    open: 598,
+    high: 598,
+    low: 589,
+    close: 591,
+    adjClose: 544.75,
+    volume: 18841696
+  },
+  {
+    date: "2021/6/24",
+    open: 598,
+    high: 598,
+    low: 588,
+    close: 590,
+    adjClose: 543.82,
+    volume: 16524230
+  },
+  {
+    date: "2021/6/23",
+    open: 583,
+    high: 598,
+    low: 581,
+    close: 595,
+    adjClose: 548.43,
+    volume: 34392376
+  },
+  {
+    date: "2021/6/22",
+    open: 585,
+    high: 588,
+    low: 578,
+    close: 578,
+    adjClose: 532.76,
+    volume: 27823974
+  },
+  {
+    date: "2021/6/21",
+    open: 590,
+    high: 594,
+    low: 583,
+    close: 583,
+    adjClose: 537.37,
+    volume: 44279632
+  },
+  {
+    date: "2021/6/18",
+    open: 608,
+    high: 608,
+    low: 601,
+    close: 603,
+    adjClose: 555.81,
+    volume: 32652017
+  },
+  {
+    date: "2021/6/17",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2021/6/17",
+    open: 601,
+    high: 606,
+    low: 598,
+    close: 606,
+    adjClose: 558.57,
+    volume: 22872361
+  },
+  {
+    date: "2021/6/16",
+    open: 608,
+    high: 608,
+    low: 605,
+    close: 605,
+    adjClose: 555.35,
+    volume: 25856919
+  },
+  {
+    date: "2021/6/15",
+    open: 607,
+    high: 609,
+    low: 606,
+    close: 609,
+    adjClose: 559.02,
+    volume: 26012250
+  },
+  {
+    date: "2021/6/11",
+    open: 602,
+    high: 603,
+    low: 600,
+    close: 602,
+    adjClose: 552.59,
+    volume: 24227710
+  },
+  {
+    date: "2021/6/10",
+    open: 591,
+    high: 599,
+    low: 587,
+    close: 599,
+    adjClose: 549.84,
+    volume: 28527745
+  },
+  {
+    date: "2021/6/9",
+    open: 586,
+    high: 588,
+    low: 583,
+    close: 586,
+    adjClose: 537.91,
+    volume: 20023490
+  },
+  {
+    date: "2021/6/8",
+    open: 590,
+    high: 595,
+    low: 588,
+    close: 589,
+    adjClose: 540.66,
+    volume: 13396324
+  },
+  {
+    date: "2021/6/7",
+    open: 594,
+    high: 595,
+    low: 583,
+    close: 592,
+    adjClose: 543.41,
+    volume: 17077625
+  },
+  {
+    date: "2021/6/4",
+    open: 591,
+    high: 595,
+    low: 590,
+    close: 595,
+    adjClose: 546.17,
+    volume: 15756180
+  },
+  {
+    date: "2021/6/3",
+    open: 600,
+    high: 600,
+    low: 596,
+    close: 596,
+    adjClose: 547.09,
+    volume: 21077164
+  },
+  {
+    date: "2021/6/2",
+    open: 600,
+    high: 600,
+    low: 593,
+    close: 595,
+    adjClose: 546.17,
+    volume: 21872755
+  },
+  {
+    date: "2021/6/1",
+    open: 598,
+    high: 599,
+    low: 595,
+    close: 598,
+    adjClose: 548.92,
+    volume: 17818326
+  },
+  {
+    date: "2021/5/31",
+    open: 595,
+    high: 597,
+    low: 590,
+    close: 597,
+    adjClose: 548,
+    volume: 30657474
+  },
+  {
+    date: "2021/5/28",
+    open: 587,
+    high: 592,
+    low: 582,
+    close: 590,
+    adjClose: 541.58,
+    volume: 29086873
+  },
+  {
+    date: "2021/5/27",
+    open: 580,
+    high: 582,
+    low: 573,
+    close: 582,
+    adjClose: 534.23,
+    volume: 62169719
+  },
+  {
+    date: "2021/5/26",
+    open: 587,
+    high: 588,
+    low: 581,
+    close: 585,
+    adjClose: 536.99,
+    volume: 18703987
+  },
+  {
+    date: "2021/5/25",
+    open: 576,
+    high: 584,
+    low: 573,
+    close: 583,
+    adjClose: 535.15,
+    volume: 33039911
+  },
+  {
+    date: "2021/5/24",
+    open: 570,
+    high: 572,
+    low: 566,
+    close: 568,
+    adjClose: 521.38,
+    volume: 15629736
+  },
+  {
+    date: "2021/5/21",
+    open: 572,
+    high: 577,
+    low: 568,
+    close: 573,
+    adjClose: 525.97,
+    volume: 27376731
+  },
+  {
+    date: "2021/5/20",
+    open: 567,
+    high: 571,
+    low: 560,
+    close: 567,
+    adjClose: 520.47,
+    volume: 29709287
+  },
+  {
+    date: "2021/5/19",
+    open: 571,
+    high: 572,
+    low: 565,
+    close: 567,
+    adjClose: 520.47,
+    volume: 28908777
+  },
+  {
+    date: "2021/5/18",
+    open: 563,
+    high: 573,
+    low: 555,
+    close: 572,
+    adjClose: 525.05,
+    volume: 43689316
+  },
+  {
+    date: "2021/5/17",
+    open: 544,
+    high: 558,
+    low: 541,
+    close: 549,
+    adjClose: 503.94,
+    volume: 56270958
+  },
+  {
+    date: "2021/5/14",
+    open: 556,
+    high: 562,
+    low: 552,
+    close: 557,
+    adjClose: 511.29,
+    volume: 37533726
+  },
+  {
+    date: "2021/5/13",
+    open: 547,
+    high: 563,
+    low: 541,
+    close: 547,
+    adjClose: 502.11,
+    volume: 66765627
+  },
+  {
+    date: "2021/5/12",
+    open: 567,
+    high: 571,
+    low: 518,
+    close: 560,
+    adjClose: 514.04,
+    volume: 131741482
+  },
+  {
+    date: "2021/5/11",
+    open: 579,
+    high: 580,
+    low: 570,
+    close: 571,
+    adjClose: 524.14,
+    volume: 59349193
+  },
+  {
+    date: "2021/5/10",
+    open: 596,
+    high: 597,
+    low: 588,
+    close: 589,
+    adjClose: 540.66,
+    volume: 20434079
+  },
+  {
+    date: "2021/5/7",
+    open: 594,
+    high: 600,
+    low: 589,
+    close: 599,
+    adjClose: 549.84,
+    volume: 28075722
+  },
+  {
+    date: "2021/5/6",
+    open: 590,
+    high: 590,
+    low: 580,
+    close: 587,
+    adjClose: 538.82,
+    volume: 30725590
+  },
+  {
+    date: "2021/5/5",
+    open: 594,
+    high: 594,
+    low: 585,
+    close: 585,
+    adjClose: 536.99,
+    volume: 29254785
+  },
+  {
+    date: "2021/5/4",
+    open: 588,
+    high: 594,
+    low: 582,
+    close: 591,
+    adjClose: 542.5,
+    volume: 40273595
+  },
+  {
+    date: "2021/5/3",
+    open: 595,
+    high: 597,
+    low: 588,
+    close: 588,
+    adjClose: 539.74,
+    volume: 41762441
+  },
+  {
+    date: "2021/4/29",
+    open: 609,
+    high: 609,
+    low: 600,
+    close: 600,
+    adjClose: 550.76,
+    volume: 31828333
+  },
+  {
+    date: "2021/4/28",
+    open: 606,
+    high: 608,
+    low: 601,
+    close: 602,
+    adjClose: 552.59,
+    volume: 24024054
+  },
+  {
+    date: "2021/4/27",
+    open: 608,
+    high: 611,
+    low: 605,
+    close: 610,
+    adjClose: 559.94,
+    volume: 26317481
+  },
+  {
+    date: "2021/4/26",
+    open: 605,
+    high: 610,
+    low: 603,
+    close: 610,
+    adjClose: 559.94,
+    volume: 30887664
+  },
+  {
+    date: "2021/4/23",
+    open: 592,
+    high: 602,
+    low: 590,
+    close: 602,
+    adjClose: 552.59,
+    volume: 27754511
+  },
+  {
+    date: "2021/4/22",
+    open: 596,
+    high: 598,
+    low: 591,
+    close: 591,
+    adjClose: 542.5,
+    volume: 33868521
+  },
+  {
+    date: "2021/4/21",
+    open: 599,
+    high: 599,
+    low: 592,
+    close: 592,
+    adjClose: 543.41,
+    volume: 38458220
+  },
+  {
+    date: "2021/4/20",
+    open: 598,
+    high: 602,
+    low: 595,
+    close: 602,
+    adjClose: 552.59,
+    volume: 34771635
+  },
+  {
+    date: "2021/4/19",
+    open: 605,
+    high: 607,
+    low: 601,
+    close: 603,
+    adjClose: 553.51,
+    volume: 24231637
+  },
+  {
+    date: "2021/4/16",
+    open: 610,
+    high: 611,
+    low: 603,
+    close: 610,
+    adjClose: 559.94,
+    volume: 48507383
+  },
+  {
+    date: "2021/4/15",
+    open: 612,
+    high: 619,
+    low: 607,
+    close: 619,
+    adjClose: 568.2,
+    volume: 33530942
+  },
+  {
+    date: "2021/4/14",
+    open: 608,
+    high: 612,
+    low: 600,
+    close: 612,
+    adjClose: 561.77,
+    volume: 30077913
+  },
+  {
+    date: "2021/4/13",
+    open: 604,
+    high: 613,
+    low: 604,
+    close: 605,
+    adjClose: 555.35,
+    volume: 25971622
+  },
+  {
+    date: "2021/4/12",
+    open: 612,
+    high: 613,
+    low: 603,
+    close: 605,
+    adjClose: 555.35,
+    volume: 22606128
+  },
+  {
+    date: "2021/4/9",
+    open: 618,
+    high: 618,
+    low: 609,
+    close: 610,
+    adjClose: 559.94,
+    volume: 27303862
+  },
+  {
+    date: "2021/4/8",
+    open: 606,
+    high: 613,
+    low: 603,
+    close: 613,
+    adjClose: 562.69,
+    volume: 23976625
+  },
+  {
+    date: "2021/4/7",
+    open: 614,
+    high: 614,
+    low: 608,
+    close: 610,
+    adjClose: 559.94,
+    volume: 24603109
+  },
+  {
+    date: "2021/4/1",
+    open: 598,
+    high: 602,
+    low: 594,
+    close: 602,
+    adjClose: 552.59,
+    volume: 43091157
+  },
+  {
+    date: "2021/3/31",
+    open: 596,
+    high: 597,
+    low: 587,
+    close: 587,
+    adjClose: 538.82,
+    volume: 38790886
+  },
+  {
+    date: "2021/3/30",
+    open: 600,
+    high: 600,
+    low: 592,
+    close: 597,
+    adjClose: 548,
+    volume: 33099123
+  },
+  {
+    date: "2021/3/29",
+    open: 599,
+    high: 602,
+    low: 596,
+    close: 599,
+    adjClose: 549.84,
+    volume: 37884733
+  },
+  {
+    date: "2021/3/26",
+    open: 582,
+    high: 592,
+    low: 580,
+    close: 590,
+    adjClose: 541.58,
+    volume: 36829858
+  },
+  {
+    date: "2021/3/25",
+    open: 572,
+    high: 581,
+    low: 570,
+    close: 575,
+    adjClose: 527.81,
+    volume: 67833354
+  },
+  {
+    date: "2021/3/24",
+    open: 571,
+    high: 582,
+    low: 571,
+    close: 576,
+    adjClose: 528.73,
+    volume: 107253959
+  },
+  {
+    date: "2021/3/23",
+    open: 597,
+    high: 603,
+    low: 593,
+    close: 594,
+    adjClose: 545.25,
+    volume: 29374037
+  },
+  {
+    date: "2021/3/22",
+    open: 588,
+    high: 598,
+    low: 586,
+    close: 593,
+    adjClose: 544.33,
+    volume: 34089033
+  },
+  {
+    date: "2021/3/19",
+    open: 594,
+    high: 598,
+    low: 591,
+    close: 591,
+    adjClose: 542.5,
+    volume: 70866028
+  },
+  {
+    date: "2021/3/18",
+    open: 606,
+    high: 609,
+    low: 602,
+    close: 602,
+    adjClose: 552.59,
+    volume: 29415526
+  },
+  {
+    date: "2021/3/17",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2021/3/17",
+    open: 612,
+    high: 612,
+    low: 602,
+    close: 604,
+    adjClose: 554.43,
+    volume: 39517807
+  },
+  {
+    date: "2021/3/16",
+    open: 610,
+    high: 613,
+    low: 607,
+    close: 613,
+    adjClose: 560.4,
+    volume: 36949425
+  },
+  {
+    date: "2021/3/15",
+    open: 614,
+    high: 614,
+    low: 609,
+    close: 611,
+    adjClose: 558.57,
+    volume: 27416758
+  },
+  {
+    date: "2021/3/12",
+    open: 615,
+    high: 618,
+    low: 609,
+    close: 614,
+    adjClose: 561.31,
+    volume: 33168846
+  },
+  {
+    date: "2021/3/11",
+    open: 596,
+    high: 612,
+    low: 595,
+    close: 609,
+    adjClose: 556.74,
+    volume: 54416046
+  },
+  {
+    date: "2021/3/10",
+    open: 601,
+    high: 601,
+    low: 593,
+    close: 597,
+    adjClose: 545.77,
+    volume: 40146301
+  },
+  {
+    date: "2021/3/9",
+    open: 585,
+    high: 595,
+    low: 585,
+    close: 595,
+    adjClose: 543.94,
+    volume: 68768861
+  },
+  {
+    date: "2021/3/8",
+    open: 608,
+    high: 610,
+    low: 598,
+    close: 598,
+    adjClose: 546.68,
+    volume: 43219772
+  },
+  {
+    date: "2021/3/5",
+    open: 588,
+    high: 605,
+    low: 584,
+    close: 601,
+    adjClose: 549.42,
+    volume: 79918467
+  },
+  {
+    date: "2021/3/4",
+    open: 609,
+    high: 611,
+    low: 601,
+    close: 601,
+    adjClose: 549.42,
+    volume: 67711962
+  },
+  {
+    date: "2021/3/3",
+    open: 609,
+    high: 622,
+    low: 601,
+    close: 622,
+    adjClose: 568.62,
+    volume: 48252965
+  },
+  {
+    date: "2021/3/2",
+    open: 621,
+    high: 622,
+    low: 609,
+    close: 609,
+    adjClose: 556.74,
+    volume: 54041533
+  },
+  {
+    date: "2021/2/26",
+    open: 611,
+    high: 618,
+    low: 606,
+    close: 606,
+    adjClose: 554,
+    volume: 111861175
+  },
+  {
+    date: "2021/2/25",
+    open: 636,
+    high: 636,
+    low: 628,
+    close: 635,
+    adjClose: 580.51,
+    volume: 43231417
+  },
+  {
+    date: "2021/2/24",
+    open: 627,
+    high: 636,
+    low: 625,
+    close: 625,
+    adjClose: 571.37,
+    volume: 66206750
+  },
+  {
+    date: "2021/2/23",
+    open: 641,
+    high: 643,
+    low: 633,
+    close: 641,
+    adjClose: 585.99,
+    volume: 50076333
+  },
+  {
+    date: "2021/2/22",
+    open: 660,
+    high: 662,
+    low: 650,
+    close: 650,
+    adjClose: 594.22,
+    volume: 36474610
+  },
+  {
+    date: "2021/2/19",
+    open: 656,
+    high: 657,
+    low: 647,
+    close: 652,
+    adjClose: 596.05,
+    volume: 50279585
+  },
+  {
+    date: "2021/2/18",
+    open: 664,
+    high: 665,
+    low: 656,
+    close: 660,
+    adjClose: 603.36,
+    volume: 53109010
+  },
+  {
+    date: "2021/2/17",
+    open: 663,
+    high: 668,
+    low: 660,
+    close: 663,
+    adjClose: 606.1,
+    volume: 107614290
+  },
+  {
+    date: "2021/2/5",
+    open: 638,
+    high: 641,
+    low: 631,
+    close: 632,
+    adjClose: 577.76,
+    volume: 53267273
+  },
+  {
+    date: "2021/2/4",
+    open: 626,
+    high: 632,
+    low: 620,
+    close: 627,
+    adjClose: 573.19,
+    volume: 46371900
+  },
+  {
+    date: "2021/2/3",
+    open: 638,
+    high: 642,
+    low: 630,
+    close: 630,
+    adjClose: 575.94,
+    volume: 48738970
+  },
+  {
+    date: "2021/2/2",
+    open: 629,
+    high: 638,
+    low: 622,
+    close: 632,
+    adjClose: 577.76,
+    volume: 78429188
+  },
+  {
+    date: "2021/2/1",
+    open: 595,
+    high: 612,
+    low: 587,
+    close: 611,
+    adjClose: 558.57,
+    volume: 67462398
+  },
+  {
+    date: "2021/1/29",
+    open: 619,
+    high: 619,
+    low: 591,
+    close: 591,
+    adjClose: 540.28,
+    volume: 90745237
+  },
+  {
+    date: "2021/1/28",
+    open: 600,
+    high: 608,
+    low: 598,
+    close: 601,
+    adjClose: 549.42,
+    volume: 96447533
+  },
+  {
+    date: "2021/1/27",
+    open: 618,
+    high: 625,
+    low: 611,
+    close: 615,
+    adjClose: 562.22,
+    volume: 59985191
+  },
+  {
+    date: "2021/1/26",
+    open: 632,
+    high: 640,
+    low: 610,
+    close: 617,
+    adjClose: 564.05,
+    volume: 100153482
+  },
+  {
+    date: "2021/1/25",
+    open: 642,
+    high: 646,
+    low: 626,
+    close: 633,
+    adjClose: 578.68,
+    volume: 93050133
+  },
+  {
+    date: "2021/1/22",
+    open: 649,
+    high: 665,
+    low: 649,
+    close: 649,
+    adjClose: 593.31,
+    volume: 125179403
+  },
+  {
+    date: "2021/1/21",
+    open: 640,
+    high: 679,
+    low: 640,
+    close: 673,
+    adjClose: 615.25,
+    volume: 89019137
+  },
+  {
+    date: "2021/1/20",
+    open: 633,
+    high: 650,
+    low: 631,
+    close: 647,
+    adjClose: 591.48,
+    volume: 82066422
+  },
+  {
+    date: "2021/1/19",
+    open: 618,
+    high: 632,
+    low: 613,
+    close: 627,
+    adjClose: 573.19,
+    volume: 50672866
+  },
+  {
+    date: "2021/1/18",
+    open: 608,
+    high: 608,
+    low: 594,
+    close: 607,
+    adjClose: 554.91,
+    volume: 45726476
+  },
+  {
+    date: "2021/1/15",
+    open: 621,
+    high: 625,
+    low: 601,
+    close: 601,
+    adjClose: 549.42,
+    volume: 92010500
+  },
+  {
+    date: "2021/1/14",
+    open: 587,
+    high: 597,
+    low: 587,
+    close: 592,
+    adjClose: 541.2,
+    volume: 75288477
+  },
+  {
+    date: "2021/1/13",
+    open: 595,
+    high: 605,
+    low: 593,
+    close: 605,
+    adjClose: 553.08,
+    volume: 62662393
+  },
+  {
+    date: "2021/1/12",
+    open: 583,
+    high: 597,
+    low: 582,
+    close: 591,
+    adjClose: 540.28,
+    volume: 50232426
+  },
+  {
+    date: "2021/1/11",
+    open: 577,
+    high: 584,
+    low: 574,
+    close: 584,
+    adjClose: 533.88,
+    volume: 48810990
+  },
+  {
+    date: "2021/1/8",
+    open: 580,
+    high: 580,
+    low: 571,
+    close: 580,
+    adjClose: 530.23,
+    volume: 59563555
+  },
+  {
+    date: "2021/1/7",
+    open: 554,
+    high: 570,
+    low: 553,
+    close: 565,
+    adjClose: 516.51,
+    volume: 51166782
+  },
+  {
+    date: "2021/1/6",
+    open: 555,
+    high: 555,
+    low: 541,
+    close: 549,
+    adjClose: 501.89,
+    volume: 53030554
+  },
+  {
+    date: "2021/1/5",
+    open: 536,
+    high: 542,
+    low: 535,
+    close: 542,
+    adjClose: 495.49,
+    volume: 34411866
+  },
+  {
+    date: "2021/1/4",
+    open: 530,
+    high: 540,
+    low: 528,
+    close: 536,
+    adjClose: 490,
+    volume: 38770328
+  },
+  {
+    date: "2020/12/31",
+    open: 526,
+    high: 530,
+    low: 524,
+    close: 530,
+    adjClose: 484.52,
+    volume: 29970398
+  },
+  {
+    date: "2020/12/30",
+    open: 516,
+    high: 525,
+    low: 514,
+    close: 525,
+    adjClose: 479.95,
+    volume: 46292401
+  },
+  {
+    date: "2020/12/29",
+    open: 515,
+    high: 517,
+    low: 513,
+    close: 515,
+    adjClose: 470.8,
+    volume: 19907528
+  },
+  {
+    date: "2020/12/28",
+    open: 512,
+    high: 515,
+    low: 509,
+    close: 515,
+    adjClose: 470.8,
+    volume: 19087382
+  },
+  {
+    date: "2020/12/25",
+    open: 514,
+    high: 515,
+    low: 510,
+    close: 511,
+    adjClose: 467.15,
+    volume: 12327895
+  },
+  {
+    date: "2020/12/24",
+    open: 511,
+    high: 512,
+    low: 508,
+    close: 510,
+    adjClose: 466.23,
+    volume: 14950143
+  },
+  {
+    date: "2020/12/23",
+    open: 508,
+    high: 511,
+    low: 506,
+    close: 509,
+    adjClose: 465.32,
+    volume: 18086715
+  },
+  {
+    date: "2020/12/22",
+    open: 512,
+    high: 516,
+    low: 509,
+    close: 509,
+    adjClose: 465.32,
+    volume: 22454277
+  },
+  {
+    date: "2020/12/21",
+    open: 512,
+    high: 517,
+    low: 508,
+    close: 516,
+    adjClose: 471.72,
+    volume: 34813281
+  },
+  {
+    date: "2020/12/18",
+    open: 508,
+    high: 512,
+    low: 507,
+    close: 510,
+    adjClose: 466.23,
+    volume: 39924864
+  },
+  {
+    date: "2020/12/17",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2020/12/17",
+    open: 515,
+    high: 515,
+    low: 508,
+    close: 508,
+    adjClose: 464.41,
+    volume: 38215179
+  },
+  {
+    date: "2020/12/16",
+    open: 509,
+    high: 515,
+    low: 507,
+    close: 512,
+    adjClose: 465.78,
+    volume: 52012348
+  },
+  {
+    date: "2020/12/15",
+    open: 507,
+    high: 510,
+    low: 504,
+    close: 504,
+    adjClose: 458.5,
+    volume: 39852366
+  },
+  {
+    date: "2020/12/14",
+    open: 512,
+    high: 513,
+    low: 508,
+    close: 508,
+    adjClose: 462.14,
+    volume: 30260485
+  },
+  {
+    date: "2020/12/11",
+    open: 517,
+    high: 517,
+    low: 505,
+    close: 516,
+    adjClose: 469.42,
+    volume: 45660960
+  },
+  {
+    date: "2020/12/10",
+    open: 511,
+    high: 515,
+    low: 510,
+    close: 512,
+    adjClose: 465.78,
+    volume: 42556926
+  },
+  {
+    date: "2020/12/9",
+    open: 521,
+    high: 524,
+    low: 520,
+    close: 520,
+    adjClose: 473.05,
+    volume: 43314115
+  },
+  {
+    date: "2020/12/8",
+    open: 514,
+    high: 525,
+    low: 509,
+    close: 524,
+    adjClose: 476.69,
+    volume: 40771761
+  },
+  {
+    date: "2020/12/7",
+    open: 512,
+    high: 515,
+    low: 506,
+    close: 514,
+    adjClose: 467.6,
+    volume: 44271244
+  },
+  {
+    date: "2020/12/4",
+    open: 498.5,
+    high: 505,
+    low: 497.5,
+    close: 503,
+    adjClose: 457.59,
+    volume: 51172005
+  },
+  {
+    date: "2020/12/3",
+    open: 499.5,
+    high: 499.5,
+    low: 495,
+    close: 497,
+    adjClose: 452.13,
+    volume: 35651379
+  },
+  {
+    date: "2020/12/2",
+    open: 499.5,
+    high: 500,
+    low: 493.5,
+    close: 499,
+    adjClose: 453.95,
+    volume: 50621339
+  },
+  {
+    date: "2020/12/1",
+    open: 489.5,
+    high: 490,
+    low: 483.5,
+    close: 490,
+    adjClose: 445.76,
+    volume: 37018651
+  },
+  {
+    date: "2020/11/30",
+    open: 493,
+    high: 493.5,
+    low: 480.5,
+    close: 480.5,
+    adjClose: 437.12,
+    volume: 119895176
+  },
+  {
+    date: "2020/11/27",
+    open: 487.5,
+    high: 492,
+    low: 486.5,
+    close: 489,
+    adjClose: 444.85,
+    volume: 32960189
+  },
+  {
+    date: "2020/11/26",
+    open: 489,
+    high: 493.5,
+    low: 488,
+    close: 489,
+    adjClose: 444.85,
+    volume: 28893033
+  },
+  {
+    date: "2020/11/25",
+    open: 495,
+    high: 495.5,
+    low: 487,
+    close: 487,
+    adjClose: 443.03,
+    volume: 41419632
+  },
+  {
+    date: "2020/11/24",
+    open: 499.5,
+    high: 500,
+    low: 491.5,
+    close: 492,
+    adjClose: 447.58,
+    volume: 35479226
+  },
+  {
+    date: "2020/11/23",
+    open: 494.5,
+    high: 498.5,
+    low: 492,
+    close: 496.5,
+    adjClose: 451.68,
+    volume: 38084006
+  },
+  {
+    date: "2020/11/20",
+    open: 486,
+    high: 490,
+    low: 486,
+    close: 488,
+    adjClose: 443.94,
+    volume: 32281453
+  },
+  {
+    date: "2020/11/19",
+    open: 499,
+    high: 499,
+    low: 490,
+    close: 490,
+    adjClose: 445.76,
+    volume: 44220053
+  },
+  {
+    date: "2020/11/18",
+    open: 490,
+    high: 497,
+    low: 486.5,
+    close: 497,
+    adjClose: 452.13,
+    volume: 50387727
+  },
+  {
+    date: "2020/11/17",
+    open: 502,
+    high: 506,
+    low: 485.5,
+    close: 485.5,
+    adjClose: 441.67,
+    volume: 72413868
+  },
+  {
+    date: "2020/11/16",
+    open: 470,
+    high: 484.5,
+    low: 469,
+    close: 484,
+    adjClose: 440.3,
+    volume: 81994937
+  },
+  {
+    date: "2020/11/13",
+    open: 459,
+    high: 462,
+    low: 456.5,
+    close: 462,
+    adjClose: 420.29,
+    volume: 31037438
+  },
+  {
+    date: "2020/11/12",
+    open: 463,
+    high: 463.5,
+    low: 457.5,
+    close: 458,
+    adjClose: 416.65,
+    volume: 40100880
+  },
+  {
+    date: "2020/11/11",
+    open: 448.5,
+    high: 457,
+    low: 448.5,
+    close: 457,
+    adjClose: 415.74,
+    volume: 36765561
+  },
+  {
+    date: "2020/11/10",
+    open: 452,
+    high: 454.5,
+    low: 448.5,
+    close: 451,
+    adjClose: 410.28,
+    volume: 34820499
+  },
+  {
+    date: "2020/11/9",
+    open: 458,
+    high: 460,
+    low: 454,
+    close: 458.5,
+    adjClose: 417.11,
+    volume: 39245881
+  },
+  {
+    date: "2020/11/6",
+    open: 455,
+    high: 455.5,
+    low: 450,
+    close: 452.5,
+    adjClose: 411.65,
+    volume: 30154140
+  },
+  {
+    date: "2020/11/5",
+    open: 451.5,
+    high: 451.5,
+    low: 445.5,
+    close: 451,
+    adjClose: 410.28,
+    volume: 34886108
+  },
+  {
+    date: "2020/11/4",
+    open: 444.5,
+    high: 451.5,
+    low: 443,
+    close: 450,
+    adjClose: 409.37,
+    volume: 37512790
+  },
+  {
+    date: "2020/11/3",
+    open: 439.5,
+    high: 443,
+    low: 438,
+    close: 441,
+    adjClose: 401.19,
+    volume: 30328495
+  },
+  {
+    date: "2020/11/2",
+    open: 433,
+    high: 435.5,
+    low: 428,
+    close: 435.5,
+    adjClose: 396.18,
+    volume: 33477443
+  },
+  {
+    date: "2020/10/30",
+    open: 437,
+    high: 437,
+    low: 432,
+    close: 432,
+    adjClose: 393,
+    volume: 47668895
+  },
+  {
+    date: "2020/10/29",
+    open: 436.5,
+    high: 439.5,
+    low: 435.5,
+    close: 437,
+    adjClose: 397.55,
+    volume: 41285612
+  },
+  {
+    date: "2020/10/28",
+    open: 445,
+    high: 447,
+    low: 443,
+    close: 444,
+    adjClose: 403.92,
+    volume: 24710230
+  },
+  {
+    date: "2020/10/27",
+    open: 447.5,
+    high: 448.5,
+    low: 445.5,
+    close: 447,
+    adjClose: 406.65,
+    volume: 20117660
+  },
+  {
+    date: "2020/10/26",
+    open: 455,
+    high: 455,
+    low: 450,
+    close: 450,
+    adjClose: 409.37,
+    volume: 15059581
+  },
+  {
+    date: "2020/10/23",
+    open: 458,
+    high: 458,
+    low: 451.5,
+    close: 452,
+    adjClose: 411.19,
+    volume: 18777385
+  },
+  {
+    date: "2020/10/22",
+    open: 450,
+    high: 455,
+    low: 449.5,
+    close: 455,
+    adjClose: 413.92,
+    volume: 23438547
+  },
+  {
+    date: "2020/10/21",
+    open: 453.5,
+    high: 456,
+    low: 451,
+    close: 453,
+    adjClose: 412.1,
+    volume: 28058921
+  },
+  {
+    date: "2020/10/20",
+    open: 455.5,
+    high: 457,
+    low: 451,
+    close: 451,
+    adjClose: 410.28,
+    volume: 25205638
+  },
+  {
+    date: "2020/10/19",
+    open: 453,
+    high: 457.5,
+    low: 451,
+    close: 457.5,
+    adjClose: 416.2,
+    volume: 34470906
+  },
+  {
+    date: "2020/10/16",
+    open: 451,
+    high: 456,
+    low: 448.5,
+    close: 449,
+    adjClose: 408.46,
+    volume: 46876801
+  },
+  {
+    date: "2020/10/15",
+    open: 456,
+    high: 456.5,
+    low: 450,
+    close: 453,
+    adjClose: 412.1,
+    volume: 47775028
+  },
+  {
+    date: "2020/10/14",
+    open: 460.5,
+    high: 461,
+    low: 457,
+    close: 459,
+    adjClose: 417.56,
+    volume: 40809241
+  },
+  {
+    date: "2020/10/13",
+    open: 465,
+    high: 465,
+    low: 456.5,
+    close: 462,
+    adjClose: 420.29,
+    volume: 45750738
+  },
+  {
+    date: "2020/10/12",
+    open: 458,
+    high: 462,
+    low: 457.5,
+    close: 460,
+    adjClose: 418.47,
+    volume: 64719223
+  },
+  {
+    date: "2020/10/8",
+    open: 450,
+    high: 454,
+    low: 448.5,
+    close: 453,
+    adjClose: 412.1,
+    volume: 60853811
+  },
+  {
+    date: "2020/10/7",
+    open: 435,
+    high: 445,
+    low: 435,
+    close: 443,
+    adjClose: 403.01,
+    volume: 42926239
+  },
+  {
+    date: "2020/10/6",
+    open: 441.5,
+    high: 442,
+    low: 437.5,
+    close: 439.5,
+    adjClose: 399.82,
+    volume: 35775395
+  },
+  {
+    date: "2020/10/5",
+    open: 438,
+    high: 438,
+    low: 431.5,
+    close: 432.5,
+    adjClose: 393.45,
+    volume: 32945832
+  },
+  {
+    date: "2020/9/30",
+    open: 430.5,
+    high: 435,
+    low: 430.5,
+    close: 433,
+    adjClose: 393.91,
+    volume: 27334204
+  },
+  {
+    date: "2020/9/29",
+    open: 432.5,
+    high: 435,
+    low: 428,
+    close: 431,
+    adjClose: 392.09,
+    volume: 32230502
+  },
+  {
+    date: "2020/9/28",
+    open: 427,
+    high: 431.5,
+    low: 424.5,
+    close: 431.5,
+    adjClose: 392.54,
+    volume: 34156973
+  },
+  {
+    date: "2020/9/25",
+    open: 427,
+    high: 428,
+    low: 421,
+    close: 424,
+    adjClose: 385.72,
+    volume: 38775269
+  },
+  {
+    date: "2020/9/24",
+    open: 425.5,
+    high: 429,
+    low: 423,
+    close: 423,
+    adjClose: 384.81,
+    volume: 79806381
+  },
+  {
+    date: "2020/9/23",
+    open: 436,
+    high: 438.5,
+    low: 432,
+    close: 433.5,
+    adjClose: 394.36,
+    volume: 45710963
+  },
+  {
+    date: "2020/9/22",
+    open: 440,
+    high: 441,
+    low: 436,
+    close: 437,
+    adjClose: 397.55,
+    volume: 36130639
+  },
+  {
+    date: "2020/9/21",
+    open: 443.5,
+    high: 450,
+    low: 440,
+    close: 440,
+    adjClose: 400.28,
+    volume: 39463920
+  },
+  {
+    date: "2020/9/18",
+    open: 447,
+    high: 449.5,
+    low: 443,
+    close: 444,
+    adjClose: 403.92,
+    volume: 52454922
+  },
+  {
+    date: "2020/9/17",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2020/9/17",
+    open: 453,
+    high: 455,
+    low: 446.5,
+    close: 448.5,
+    adjClose: 408.01,
+    volume: 42058506
+  },
+  {
+    date: "2020/9/16",
+    open: 460,
+    high: 462,
+    low: 455.5,
+    close: 458,
+    adjClose: 414.38,
+    volume: 64261238
+  },
+  {
+    date: "2020/9/15",
+    open: 440.5,
+    high: 447,
+    low: 439.5,
+    close: 445,
+    adjClose: 402.62,
+    volume: 39061449
+  },
+  {
+    date: "2020/9/14",
+    open: 436,
+    high: 442,
+    low: 435.5,
+    close: 441,
+    adjClose: 399,
+    volume: 39085833
+  },
+  {
+    date: "2020/9/11",
+    open: 435.5,
+    high: 436.5,
+    low: 432.5,
+    close: 436.5,
+    adjClose: 394.93,
+    volume: 34298469
+  },
+  {
+    date: "2020/9/10",
+    open: 432.5,
+    high: 435,
+    low: 430.5,
+    close: 435,
+    adjClose: 393.57,
+    volume: 35098921
+  },
+  {
+    date: "2020/9/9",
+    open: 425,
+    high: 428,
+    low: 423,
+    close: 427,
+    adjClose: 386.33,
+    volume: 40551362
+  },
+  {
+    date: "2020/9/8",
+    open: 428,
+    high: 433,
+    low: 427.5,
+    close: 431,
+    adjClose: 389.95,
+    volume: 23714670
+  },
+  {
+    date: "2020/9/7",
+    open: 428,
+    high: 432.5,
+    low: 425,
+    close: 426,
+    adjClose: 385.43,
+    volume: 32019312
+  },
+  {
+    date: "2020/9/4",
+    open: 427,
+    high: 432.5,
+    low: 427,
+    close: 429,
+    adjClose: 388.14,
+    volume: 46119911
+  },
+  {
+    date: "2020/9/3",
+    open: 439.5,
+    high: 439.5,
+    low: 433.5,
+    close: 436,
+    adjClose: 394.47,
+    volume: 34951617
+  },
+  {
+    date: "2020/9/2",
+    open: 441,
+    high: 441,
+    low: 430.5,
+    close: 433,
+    adjClose: 391.76,
+    volume: 34871407
+  },
+  {
+    date: "2020/9/1",
+    open: 430,
+    high: 435,
+    low: 428,
+    close: 435,
+    adjClose: 393.57,
+    volume: 37429577
+  },
+  {
+    date: "2020/8/31",
+    open: 437,
+    high: 439.5,
+    low: 426.5,
+    close: 426.5,
+    adjClose: 385.88,
+    volume: 81480538
+  },
+  {
+    date: "2020/8/28",
+    open: 440,
+    high: 440.5,
+    low: 431,
+    close: 435,
+    adjClose: 393.57,
+    volume: 56842210
+  },
+  {
+    date: "2020/8/27",
+    open: 448,
+    high: 453.5,
+    low: 444,
+    close: 444,
+    adjClose: 401.71,
+    volume: 53072712
+  },
+  {
+    date: "2020/8/26",
+    open: 435.5,
+    high: 442,
+    low: 435,
+    close: 442,
+    adjClose: 399.9,
+    volume: 39243340
+  },
+  {
+    date: "2020/8/25",
+    open: 433.5,
+    high: 436,
+    low: 430.5,
+    close: 434.5,
+    adjClose: 393.12,
+    volume: 35977899
+  },
+  {
+    date: "2020/8/24",
+    open: 427.5,
+    high: 434.5,
+    low: 425,
+    close: 428,
+    adjClose: 387.24,
+    volume: 48375406
+  },
+  {
+    date: "2020/8/21",
+    open: 421.5,
+    high: 427,
+    low: 420,
+    close: 424.5,
+    adjClose: 384.07,
+    volume: 41609467
+  },
+  {
+    date: "2020/8/20",
+    open: 427,
+    high: 427.5,
+    low: 401,
+    close: 415,
+    adjClose: 375.47,
+    volume: 75097235
+  },
+  {
+    date: "2020/8/19",
+    open: 436,
+    high: 436.5,
+    low: 427.5,
+    close: 427.5,
+    adjClose: 386.78,
+    volume: 31486800
+  },
+  {
+    date: "2020/8/18",
+    open: 440,
+    high: 440.5,
+    low: 432,
+    close: 433,
+    adjClose: 391.76,
+    volume: 41643160
+  },
+  {
+    date: "2020/8/17",
+    open: 427,
+    high: 435,
+    low: 425.5,
+    close: 435,
+    adjClose: 393.57,
+    volume: 34137731
+  },
+  {
+    date: "2020/8/14",
+    open: 424,
+    high: 428,
+    low: 423,
+    close: 427,
+    adjClose: 386.33,
+    volume: 23419955
+  },
+  {
+    date: "2020/8/13",
+    open: 428,
+    high: 429,
+    low: 424.5,
+    close: 429,
+    adjClose: 388.14,
+    volume: 44352335
+  },
+  {
+    date: "2020/8/12",
+    open: 422,
+    high: 423.5,
+    low: 419,
+    close: 419,
+    adjClose: 379.09,
+    volume: 52143474
+  },
+  {
+    date: "2020/8/11",
+    open: 432,
+    high: 435,
+    low: 429,
+    close: 429,
+    adjClose: 388.14,
+    volume: 34545313
+  },
+  {
+    date: "2020/8/10",
+    open: 427.5,
+    high: 437.5,
+    low: 427.5,
+    close: 435.5,
+    adjClose: 394.02,
+    volume: 36067500
+  },
+  {
+    date: "2020/8/7",
+    open: 433.5,
+    high: 434,
+    low: 428,
+    close: 433,
+    adjClose: 391.76,
+    volume: 36589460
+  },
+  {
+    date: "2020/8/6",
+    open: 437.5,
+    high: 438,
+    low: 431,
+    close: 435,
+    adjClose: 393.57,
+    volume: 41029627
+  },
+  {
+    date: "2020/8/5",
+    open: 430.5,
+    high: 433.5,
+    low: 426,
+    close: 429,
+    adjClose: 388.14,
+    volume: 47223834
+  },
+  {
+    date: "2020/8/4",
+    open: 421.5,
+    high: 425.5,
+    low: 418.5,
+    close: 425.5,
+    adjClose: 384.97,
+    volume: 41223445
+  },
+  {
+    date: "2020/8/3",
+    open: 420.5,
+    high: 424,
+    low: 415,
+    close: 416,
+    adjClose: 376.38,
+    volume: 76429571
+  },
+  {
+    date: "2020/7/31",
+    open: 426,
+    high: 432,
+    low: 425.5,
+    close: 425.5,
+    adjClose: 384.97,
+    volume: 49897674
+  },
+  {
+    date: "2020/7/30",
+    open: 436.5,
+    high: 441,
+    low: 428.5,
+    close: 434,
+    adjClose: 392.66,
+    volume: 69293949
+  },
+  {
+    date: "2020/7/29",
+    open: 428,
+    high: 431.5,
+    low: 419.5,
+    close: 422,
+    adjClose: 381.81,
+    volume: 85663166
+  },
+  {
+    date: "2020/7/28",
+    open: 464,
+    high: 466.5,
+    low: 428.5,
+    close: 435,
+    adjClose: 393.57,
+    volume: 166307746
+  },
+  {
+    date: "2020/7/27",
+    open: 420.5,
+    high: 424.5,
+    low: 416.5,
+    close: 424.5,
+    adjClose: 384.07,
+    volume: 99333798
+  },
+  {
+    date: "2020/7/24",
+    open: 390,
+    high: 395,
+    low: 382,
+    close: 386,
+    adjClose: 349.24,
+    volume: 86682734
+  },
+  {
+    date: "2020/7/23",
+    open: 382,
+    high: 383,
+    low: 379,
+    close: 381.5,
+    adjClose: 345.16,
+    volume: 45209282
+  },
+  {
+    date: "2020/7/22",
+    open: 381,
+    high: 386,
+    low: 379,
+    close: 384,
+    adjClose: 347.43,
+    volume: 43759670
+  },
+  {
+    date: "2020/7/21",
+    open: 372.5,
+    high: 387,
+    low: 371.5,
+    close: 383,
+    adjClose: 346.52,
+    volume: 64219128
+  },
+  {
+    date: "2020/7/20",
+    open: 370,
+    high: 370,
+    low: 362.5,
+    close: 366,
+    adjClose: 331.14,
+    volume: 42769238
+  },
+  {
+    date: "2020/7/17",
+    open: 361,
+    high: 369,
+    low: 360,
+    close: 367,
+    adjClose: 332.05,
+    volume: 65727485
+  },
+  {
+    date: "2020/7/16",
+    open: 359,
+    high: 361,
+    low: 353.5,
+    close: 357.5,
+    adjClose: 323.45,
+    volume: 68220512
+  },
+  {
+    date: "2020/7/15",
+    open: 366,
+    high: 370,
+    low: 361,
+    close: 363,
+    adjClose: 328.43,
+    volume: 73438362
+  },
+  {
+    date: "2020/7/14",
+    open: 355,
+    high: 364,
+    low: 354.5,
+    close: 363.5,
+    adjClose: 328.88,
+    volume: 61764150
+  },
+  {
+    date: "2020/7/13",
+    open: 351,
+    high: 354.5,
+    low: 350.5,
+    close: 354.5,
+    adjClose: 320.74,
+    volume: 48069523
+  },
+  {
+    date: "2020/7/10",
+    open: 352.5,
+    high: 353,
+    low: 345.5,
+    close: 348.5,
+    adjClose: 315.31,
+    volume: 60902108
+  },
+  {
+    date: "2020/7/9",
+    open: 346,
+    high: 347,
+    low: 343,
+    close: 345,
+    adjClose: 312.14,
+    volume: 35522376
+  },
+  {
+    date: "2020/7/8",
+    open: 337.5,
+    high: 342.5,
+    low: 337.5,
+    close: 341,
+    adjClose: 308.52,
+    volume: 30720218
+  },
+  {
+    date: "2020/7/7",
+    open: 343.5,
+    high: 346,
+    low: 338,
+    close: 338.5,
+    adjClose: 306.26,
+    volume: 59046323
+  },
+  {
+    date: "2020/7/6",
+    open: 332.5,
+    high: 338,
+    low: 332,
+    close: 338,
+    adjClose: 305.81,
+    volume: 57256220
+  },
+  {
+    date: "2020/7/3",
+    open: 327,
+    high: 330.5,
+    low: 326.5,
+    close: 329.5,
+    adjClose: 298.12,
+    volume: 53341987
+  },
+  {
+    date: "2020/7/2",
+    open: 319,
+    high: 322,
+    low: 318,
+    close: 322,
+    adjClose: 291.33,
+    volume: 34526178
+  },
+  {
+    date: "2020/7/1",
+    open: 315,
+    high: 318,
+    low: 314,
+    close: 317.5,
+    adjClose: 287.26,
+    volume: 29532342
+  },
+  {
+    date: "2020/6/30",
+    open: 313.5,
+    high: 314,
+    low: 311,
+    close: 313,
+    adjClose: 283.19,
+    volume: 48991860
+  },
+  {
+    date: "2020/6/29",
+    open: 314,
+    high: 315,
+    low: 310,
+    close: 312,
+    adjClose: 282.28,
+    volume: 56580892
+  },
+  {
+    date: "2020/6/24",
+    open: 319,
+    high: 320,
+    low: 316,
+    close: 317.5,
+    adjClose: 287.26,
+    volume: 54147024
+  },
+  {
+    date: "2020/6/23",
+    open: 316,
+    high: 316.5,
+    low: 312.5,
+    close: 315,
+    adjClose: 285,
+    volume: 41300084
+  },
+  {
+    date: "2020/6/22",
+    open: 314.5,
+    high: 316.5,
+    low: 312,
+    close: 312,
+    adjClose: 282.28,
+    volume: 37374616
+  },
+  {
+    date: "2020/6/19",
+    open: 314,
+    high: 314.5,
+    low: 312,
+    close: 314.5,
+    adjClose: 284.55,
+    volume: 48130280
+  },
+  {
+    date: "2020/6/18",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2020/6/18",
+    open: 314.5,
+    high: 315,
+    low: 313,
+    close: 314.5,
+    adjClose: 284.55,
+    volume: 29044474
+  },
+  {
+    date: "2020/6/17",
+    open: 316.5,
+    high: 317,
+    low: 313.5,
+    close: 315,
+    adjClose: 282.74,
+    volume: 34522968
+  },
+  {
+    date: "2020/6/16",
+    open: 317,
+    high: 317,
+    low: 314,
+    close: 315,
+    adjClose: 282.74,
+    volume: 36608216
+  },
+  {
+    date: "2020/6/15",
+    open: 316,
+    high: 317.5,
+    low: 308.5,
+    close: 309.5,
+    adjClose: 277.8,
+    volume: 51032404
+  },
+  {
+    date: "2020/6/12",
+    open: 313,
+    high: 317.5,
+    low: 312.5,
+    close: 316,
+    adjClose: 283.63,
+    volume: 45992918
+  },
+  {
+    date: "2020/6/11",
+    open: 325.5,
+    high: 327,
+    low: 318.5,
+    close: 320.5,
+    adjClose: 287.67,
+    volume: 50104255
+  },
+  {
+    date: "2020/6/10",
+    open: 319,
+    high: 324,
+    low: 318,
+    close: 322.5,
+    adjClose: 289.47,
+    volume: 39984259
+  },
+  {
+    date: "2020/6/9",
+    open: 316.5,
+    high: 319,
+    low: 314,
+    close: 319,
+    adjClose: 286.33,
+    volume: 36417082
+  },
+  {
+    date: "2020/6/8",
+    open: 316,
+    high: 319,
+    low: 315,
+    close: 318,
+    adjClose: 285.43,
+    volume: 50302921
+  },
+  {
+    date: "2020/6/5",
+    open: 308.5,
+    high: 312,
+    low: 308,
+    close: 311.5,
+    adjClose: 279.59,
+    volume: 42981262
+  },
+  {
+    date: "2020/6/4",
+    open: 305,
+    high: 306,
+    low: 304,
+    close: 306,
+    adjClose: 274.66,
+    volume: 46572451
+  },
+  {
+    date: "2020/6/3",
+    open: 300,
+    high: 301,
+    low: 298,
+    close: 301,
+    adjClose: 270.17,
+    volume: 65176337
+  },
+  {
+    date: "2020/6/2",
+    open: 296,
+    high: 297.5,
+    low: 296,
+    close: 296.5,
+    adjClose: 266.13,
+    volume: 24771587
+  },
+  {
+    date: "2020/6/1",
+    open: 294,
+    high: 296.5,
+    low: 293.5,
+    close: 295.5,
+    adjClose: 265.23,
+    volume: 35811214
+  },
+  {
+    date: "2020/5/29",
+    open: 292,
+    high: 292.5,
+    low: 290,
+    close: 292,
+    adjClose: 262.09,
+    volume: 79774181
+  },
+  {
+    date: "2020/5/28",
+    open: 298.5,
+    high: 298.5,
+    low: 293,
+    close: 294,
+    adjClose: 263.89,
+    volume: 28444568
+  },
+  {
+    date: "2020/5/27",
+    open: 297,
+    high: 298,
+    low: 295.5,
+    close: 296.5,
+    adjClose: 266.13,
+    volume: 23375959
+  },
+  {
+    date: "2020/5/26",
+    open: 295,
+    high: 297.5,
+    low: 293.5,
+    close: 295.5,
+    adjClose: 265.23,
+    volume: 33856481
+  },
+  {
+    date: "2020/5/25",
+    open: 290.5,
+    high: 293,
+    low: 288.5,
+    close: 292,
+    adjClose: 262.09,
+    volume: 26803223
+  },
+  {
+    date: "2020/5/22",
+    open: 294.5,
+    high: 295,
+    low: 291,
+    close: 292,
+    adjClose: 262.09,
+    volume: 40192923
+  },
+  {
+    date: "2020/5/21",
+    open: 296,
+    high: 298,
+    low: 295,
+    close: 297.5,
+    adjClose: 267.03,
+    volume: 30997468
+  },
+  {
+    date: "2020/5/20",
+    open: 293,
+    high: 294,
+    low: 291,
+    close: 294,
+    adjClose: 263.89,
+    volume: 32677994
+  },
+  {
+    date: "2020/5/19",
+    open: 294,
+    high: 294,
+    low: 291.5,
+    close: 291.5,
+    adjClose: 261.64,
+    volume: 51250214
+  },
+  {
+    date: "2020/5/18",
+    open: 291,
+    high: 293.5,
+    low: 290,
+    close: 290,
+    adjClose: 260.3,
+    volume: 84986065
+  },
+  {
+    date: "2020/5/15",
+    open: 297.5,
+    high: 298.5,
+    low: 294.5,
+    close: 298,
+    adjClose: 267.48,
+    volume: 42494804
+  },
+  {
+    date: "2020/5/14",
+    open: 293,
+    high: 295,
+    low: 292.5,
+    close: 293,
+    adjClose: 262.99,
+    volume: 34315948
+  },
+  {
+    date: "2020/5/13",
+    open: 293,
+    high: 297,
+    low: 292.5,
+    close: 297,
+    adjClose: 266.58,
+    volume: 26156418
+  },
+  {
+    date: "2020/5/12",
+    open: 297.5,
+    high: 298.5,
+    low: 295,
+    close: 295,
+    adjClose: 264.78,
+    volume: 52089788
+  },
+  {
+    date: "2020/5/11",
+    open: 300,
+    high: 301.5,
+    low: 298.5,
+    close: 301,
+    adjClose: 270.17,
+    volume: 28727019
+  },
+  {
+    date: "2020/5/8",
+    open: 300,
+    high: 300,
+    low: 296,
+    close: 297.5,
+    adjClose: 267.03,
+    volume: 32295893
+  },
+  {
+    date: "2020/5/7",
+    open: 294.5,
+    high: 299,
+    low: 294.5,
+    close: 297.5,
+    adjClose: 267.03,
+    volume: 27621198
+  },
+  {
+    date: "2020/5/6",
+    open: 294.5,
+    high: 296,
+    low: 292.5,
+    close: 296,
+    adjClose: 265.68,
+    volume: 34240479
+  },
+  {
+    date: "2020/5/5",
+    open: 296.5,
+    high: 298,
+    low: 295,
+    close: 295.5,
+    adjClose: 265.23,
+    volume: 23547405
+  },
+  {
+    date: "2020/5/4",
+    open: 294.5,
+    high: 296.5,
+    low: 294,
+    close: 295,
+    adjClose: 264.78,
+    volume: 71581861
+  },
+  {
+    date: "2020/4/30",
+    open: 302,
+    high: 305,
+    low: 301.5,
+    close: 304.5,
+    adjClose: 273.31,
+    volume: 55126085
+  },
+  {
+    date: "2020/4/29",
+    open: 299,
+    high: 301.5,
+    low: 298,
+    close: 299,
+    adjClose: 268.37,
+    volume: 44059301
+  },
+  {
+    date: "2020/4/28",
+    open: 298.5,
+    high: 298.5,
+    low: 294.5,
+    close: 296.5,
+    adjClose: 266.13,
+    volume: 37395165
+  },
+  {
+    date: "2020/4/27",
+    open: 298,
+    high: 298.5,
+    low: 296,
+    close: 298,
+    adjClose: 267.48,
+    volume: 38493406
+  },
+  {
+    date: "2020/4/24",
+    open: 295.5,
+    high: 297,
+    low: 294,
+    close: 294,
+    adjClose: 263.89,
+    volume: 26008090
+  },
+  {
+    date: "2020/4/23",
+    open: 300,
+    high: 300,
+    low: 294,
+    close: 295.5,
+    adjClose: 265.23,
+    volume: 39474478
+  },
+  {
+    date: "2020/4/22",
+    open: 294.5,
+    high: 295,
+    low: 290.5,
+    close: 294,
+    adjClose: 263.89,
+    volume: 42192580
+  },
+  {
+    date: "2020/4/21",
+    open: 300.5,
+    high: 301.5,
+    low: 293.5,
+    close: 295,
+    adjClose: 264.78,
+    volume: 61479357
+  },
+  {
+    date: "2020/4/20",
+    open: 308,
+    high: 309,
+    low: 302.5,
+    close: 304,
+    adjClose: 272.86,
+    volume: 41381669
+  },
+  {
+    date: "2020/4/17",
+    open: 303.5,
+    high: 308.5,
+    low: 300.5,
+    close: 306.5,
+    adjClose: 275.11,
+    volume: 116368201
+  },
+  {
+    date: "2020/4/16",
+    open: 283,
+    high: 288.5,
+    low: 283,
+    close: 286.5,
+    adjClose: 257.15,
+    volume: 47815280
+  },
+  {
+    date: "2020/4/15",
+    open: 287,
+    high: 288.5,
+    low: 286,
+    close: 287.5,
+    adjClose: 258.05,
+    volume: 55216434
+  },
+  {
+    date: "2020/4/14",
+    open: 281,
+    high: 285.5,
+    low: 280,
+    close: 285,
+    adjClose: 255.81,
+    volume: 48809688
+  },
+  {
+    date: "2020/4/13",
+    open: 278.5,
+    high: 281.5,
+    low: 278.5,
+    close: 278.5,
+    adjClose: 249.97,
+    volume: 22196596
+  },
+  {
+    date: "2020/4/10",
+    open: 280,
+    high: 282,
+    low: 279,
+    close: 279.5,
+    adjClose: 250.87,
+    volume: 27252858
+  },
+  {
+    date: "2020/4/9",
+    open: 287.5,
+    high: 288,
+    low: 282.5,
+    close: 283,
+    adjClose: 254.01,
+    volume: 27620430
+  },
+  {
+    date: "2020/4/8",
+    open: 285,
+    high: 285.5,
+    low: 283,
+    close: 285,
+    adjClose: 255.81,
+    volume: 37912826
+  },
+  {
+    date: "2020/4/7",
+    open: 283.5,
+    high: 284,
+    low: 280.5,
+    close: 283,
+    adjClose: 254.01,
+    volume: 48787346
+  },
+  {
+    date: "2020/4/6",
+    open: 273,
+    high: 275.5,
+    low: 270,
+    close: 275.5,
+    adjClose: 247.28,
+    volume: 56392754
+  },
+  {
+    date: "2020/4/1",
+    open: 276.5,
+    high: 276.5,
+    low: 271.5,
+    close: 271.5,
+    adjClose: 243.69,
+    volume: 44515034
+  },
+  {
+    date: "2020/3/31",
+    open: 273,
+    high: 274,
+    low: 269.5,
+    close: 274,
+    adjClose: 245.94,
+    volume: 48837923
+  },
+  {
+    date: "2020/3/30",
+    open: 263.5,
+    high: 269,
+    low: 262.5,
+    close: 267.5,
+    adjClose: 240.1,
+    volume: 49159956
+  },
+  {
+    date: "2020/3/27",
+    open: 284,
+    high: 286,
+    low: 273,
+    close: 273,
+    adjClose: 245.04,
+    volume: 68752306
+  },
+  {
+    date: "2020/3/26",
+    open: 279.5,
+    high: 280,
+    low: 275.5,
+    close: 280,
+    adjClose: 251.32,
+    volume: 52845633
+  },
+  {
+    date: "2020/3/25",
+    open: 276.5,
+    high: 280,
+    low: 274,
+    close: 277,
+    adjClose: 248.63,
+    volume: 79447199
+  },
+  {
+    date: "2020/3/24",
+    open: 268,
+    high: 274,
+    low: 266,
+    close: 267.5,
+    adjClose: 240.1,
+    volume: 81952933
+  },
+  {
+    date: "2020/3/23",
+    open: 257,
+    high: 262.5,
+    low: 252,
+    close: 255,
+    adjClose: 228.88,
+    volume: 76466709
+  },
+  {
+    date: "2020/3/20",
+    open: 258.5,
+    high: 270,
+    low: 256,
+    close: 270,
+    adjClose: 242.35,
+    volume: 157664726
+  },
+  {
+    date: "2020/3/19",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2020/3/19",
+    open: 252,
+    high: 253,
+    low: 235.5,
+    close: 248,
+    adjClose: 222.6,
+    volume: 160811697
+  },
+  {
+    date: "2020/3/18",
+    open: 269.5,
+    high: 272.5,
+    low: 260,
+    close: 260,
+    adjClose: 231.13,
+    volume: 117437643
+  },
+  {
+    date: "2020/3/17",
+    open: 265,
+    high: 276.5,
+    low: 265,
+    close: 268,
+    adjClose: 238.24,
+    volume: 121323651
+  },
+  {
+    date: "2020/3/16",
+    open: 285,
+    high: 291,
+    low: 275.5,
+    close: 276.5,
+    adjClose: 245.79,
+    volume: 103873228
+  },
+  {
+    date: "2020/3/13",
+    open: 275,
+    high: 294,
+    low: 272.5,
+    close: 290,
+    adjClose: 257.79,
+    volume: 149995148
+  },
+  {
+    date: "2020/3/12",
+    open: 299,
+    high: 299,
+    low: 287,
+    close: 294,
+    adjClose: 261.35,
+    volume: 113527351
+  },
+  {
+    date: "2020/3/11",
+    open: 309,
+    high: 310.5,
+    low: 302,
+    close: 302,
+    adjClose: 268.46,
+    volume: 62216710
+  },
+  {
+    date: "2020/3/10",
+    open: 301.5,
+    high: 309,
+    low: 301,
+    close: 307,
+    adjClose: 272.91,
+    volume: 71950130
+  },
+  {
+    date: "2020/3/9",
+    open: 307.5,
+    high: 310,
+    low: 305.5,
+    close: 305.5,
+    adjClose: 271.57,
+    volume: 87871277
+  },
+  {
+    date: "2020/3/6",
+    open: 320,
+    high: 320.5,
+    low: 315,
+    close: 315,
+    adjClose: 280.02,
+    volume: 51546760
+  },
+  {
+    date: "2020/3/5",
+    open: 325,
+    high: 326,
+    low: 323,
+    close: 323,
+    adjClose: 287.13,
+    volume: 37861525
+  },
+  {
+    date: "2020/3/4",
+    open: 322,
+    high: 322,
+    low: 317,
+    close: 320.5,
+    adjClose: 284.91,
+    volume: 42941146
+  },
+  {
+    date: "2020/3/3",
+    open: 318.5,
+    high: 320,
+    low: 316,
+    close: 317.5,
+    adjClose: 282.24,
+    volume: 49679411
+  },
+  {
+    date: "2020/3/2",
+    open: 308,
+    high: 317,
+    low: 308,
+    close: 311,
+    adjClose: 276.46,
+    volume: 79912942
+  },
+  {
+    date: "2020/2/27",
+    open: 319,
+    high: 320,
+    low: 315,
+    close: 316,
+    adjClose: 280.91,
+    volume: 61250927
+  },
+  {
+    date: "2020/2/26",
+    open: 317,
+    high: 320.5,
+    low: 316.5,
+    close: 318.5,
+    adjClose: 283.13,
+    volume: 60479362
+  },
+  {
+    date: "2020/2/25",
+    open: 320,
+    high: 323.5,
+    low: 317.5,
+    close: 322,
+    adjClose: 286.24,
+    volume: 36195011
+  },
+  {
+    date: "2020/2/24",
+    open: 319.5,
+    high: 321.5,
+    low: 319.5,
+    close: 320,
+    adjClose: 284.46,
+    volume: 41693680
+  },
+  {
+    date: "2020/2/21",
+    open: 325.5,
+    high: 326.5,
+    low: 323,
+    close: 325,
+    adjClose: 288.91,
+    volume: 22813534
+  },
+  {
+    date: "2020/2/20",
+    open: 328,
+    high: 329,
+    low: 325,
+    close: 325.5,
+    adjClose: 289.35,
+    volume: 27011736
+  },
+  {
+    date: "2020/2/19",
+    open: 322.5,
+    high: 327,
+    low: 322,
+    close: 326.5,
+    adjClose: 290.24,
+    volume: 38781218
+  },
+  {
+    date: "2020/2/18",
+    open: 324.5,
+    high: 326.5,
+    low: 322,
+    close: 322,
+    adjClose: 286.24,
+    volume: 61825604
+  },
+  {
+    date: "2020/2/17",
+    open: 331.5,
+    high: 333,
+    low: 330.5,
+    close: 331.5,
+    adjClose: 294.68,
+    volume: 15937079
+  },
+  {
+    date: "2020/2/14",
+    open: 337,
+    high: 337,
+    low: 334.5,
+    close: 335,
+    adjClose: 297.8,
+    volume: 16933683
+  },
+  {
+    date: "2020/2/13",
+    open: 338,
+    high: 338,
+    low: 335,
+    close: 335,
+    adjClose: 297.8,
+    volume: 22757021
+  },
+  {
+    date: "2020/2/12",
+    open: 333.5,
+    high: 336,
+    low: 333,
+    close: 335,
+    adjClose: 297.8,
+    volume: 37612639
+  },
+  {
+    date: "2020/2/11",
+    open: 330.5,
+    high: 332.5,
+    low: 330,
+    close: 331.5,
+    adjClose: 294.68,
+    volume: 27524935
+  },
+  {
+    date: "2020/2/10",
+    open: 321.5,
+    high: 328,
+    low: 321,
+    close: 327.5,
+    adjClose: 291.13,
+    volume: 30632424
+  },
+  {
+    date: "2020/2/7",
+    open: 330,
+    high: 330.5,
+    low: 326,
+    close: 328,
+    adjClose: 291.57,
+    volume: 28798327
+  },
+  {
+    date: "2020/2/6",
+    open: 329.5,
+    high: 332.5,
+    low: 329,
+    close: 332.5,
+    adjClose: 295.57,
+    volume: 29267094
+  },
+  {
+    date: "2020/2/5",
+    open: 329,
+    high: 329.5,
+    low: 324.5,
+    close: 327.5,
+    adjClose: 291.13,
+    volume: 36601453
+  },
+  {
+    date: "2020/2/4",
+    open: 336.5,
+    high: 337,
+    low: 325,
+    close: 325,
+    adjClose: 288.91,
+    volume: 51890496
+  },
+  {
+    date: "2020/2/3",
+    open: 315,
+    high: 316.5,
+    low: 312,
+    close: 315,
+    adjClose: 280.02,
+    volume: 59560849
+  },
+  {
+    date: "2020/1/31",
+    open: 323,
+    high: 323.5,
+    low: 319,
+    close: 320,
+    adjClose: 284.46,
+    volume: 62526055
+  },
+  {
+    date: "2020/1/30",
+    open: 326,
+    high: 326,
+    low: 316.5,
+    close: 316.5,
+    adjClose: 281.35,
+    volume: 125451049
+  },
+  {
+    date: "2020/1/20",
+    open: 334,
+    high: 335.5,
+    low: 333,
+    close: 333,
+    adjClose: 296.02,
+    volume: 32658203
+  },
+  {
+    date: "2020/1/17",
+    open: 334,
+    high: 335.5,
+    low: 332,
+    close: 333,
+    adjClose: 296.02,
+    volume: 52060097
+  },
+  {
+    date: "2020/1/16",
+    open: 330,
+    high: 336.5,
+    low: 330,
+    close: 334.5,
+    adjClose: 297.35,
+    volume: 55211420
+  },
+  {
+    date: "2020/1/15",
+    open: 345,
+    high: 345,
+    low: 337.5,
+    close: 340,
+    adjClose: 302.24,
+    volume: 47434274
+  },
+  {
+    date: "2020/1/14",
+    open: 345.5,
+    high: 346,
+    low: 344.5,
+    close: 346,
+    adjClose: 307.57,
+    volume: 30223993
+  },
+  {
+    date: "2020/1/13",
+    open: 342,
+    high: 342,
+    low: 339,
+    close: 341.5,
+    adjClose: 303.57,
+    volume: 30663332
+  },
+  {
+    date: "2020/1/10",
+    open: 340.5,
+    high: 341,
+    low: 336,
+    close: 339.5,
+    adjClose: 301.8,
+    volume: 27032115
+  },
+  {
+    date: "2020/1/9",
+    open: 335,
+    high: 337.5,
+    low: 333.5,
+    close: 337.5,
+    adjClose: 300.02,
+    volume: 31481504
+  },
+  {
+    date: "2020/1/8",
+    open: 325,
+    high: 333,
+    low: 325,
+    close: 329.5,
+    adjClose: 292.91,
+    volume: 37567748
+  },
+  {
+    date: "2020/1/7",
+    open: 332.5,
+    high: 333,
+    low: 326.5,
+    close: 329.5,
+    adjClose: 292.91,
+    volume: 50879181
+  },
+  {
+    date: "2020/1/6",
+    open: 333,
+    high: 334.5,
+    low: 332,
+    close: 332,
+    adjClose: 295.13,
+    volume: 45343057
+  },
+  {
+    date: "2020/1/3",
+    open: 344,
+    high: 345,
+    low: 335.5,
+    close: 339.5,
+    adjClose: 301.8,
+    volume: 41811268
+  },
+  {
+    date: "2020/1/2",
+    open: 332.5,
+    high: 339,
+    low: 332.5,
+    close: 339,
+    adjClose: 301.35,
+    volume: 31754120
+  },
+  {
+    date: "2019/12/31",
+    open: 331,
+    high: 333.5,
+    low: 331,
+    close: 331,
+    adjClose: 294.24,
+    volume: 22890517
+  },
+  {
+    date: "2019/12/30",
+    open: 338,
+    high: 339,
+    low: 334,
+    close: 334.5,
+    adjClose: 297.35,
+    volume: 21531263
+  },
+  {
+    date: "2019/12/27",
+    open: 335,
+    high: 338,
+    low: 335,
+    close: 338,
+    adjClose: 300.46,
+    volume: 16677806
+  },
+  {
+    date: "2019/12/26",
+    open: 333,
+    high: 334,
+    low: 331.5,
+    close: 333,
+    adjClose: 296.02,
+    volume: 11427884
+  },
+  {
+    date: "2019/12/25",
+    open: 332,
+    high: 334.5,
+    low: 331,
+    close: 333,
+    adjClose: 296.02,
+    volume: 12262954
+  },
+  {
+    date: "2019/12/24",
+    open: 334,
+    high: 334.5,
+    low: 332,
+    close: 332,
+    adjClose: 295.13,
+    volume: 13488907
+  },
+  {
+    date: "2019/12/23",
+    open: 329.5,
+    high: 334,
+    low: 329.5,
+    close: 334,
+    adjClose: 296.91,
+    volume: 26639340
+  },
+  {
+    date: "2019/12/20",
+    open: 332,
+    high: 333,
+    low: 328.5,
+    close: 329,
+    adjClose: 292.46,
+    volume: 86280459
+  },
+  {
+    date: "2019/12/19",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2019/12/19",
+    open: 340,
+    high: 342,
+    low: 335,
+    close: 335,
+    adjClose: 297.8,
+    volume: 54888012
+  },
+  {
+    date: "2019/12/18",
+    open: 341.5,
+    high: 345,
+    low: 341.5,
+    close: 344.5,
+    adjClose: 304.02,
+    volume: 39682841
+  },
+  {
+    date: "2019/12/17",
+    open: 335,
+    high: 345,
+    low: 335,
+    close: 345,
+    adjClose: 304.46,
+    volume: 40813458
+  },
+  {
+    date: "2019/12/16",
+    open: 336.5,
+    high: 338.5,
+    low: 336,
+    close: 336,
+    adjClose: 296.52,
+    volume: 102188
+  },
+  {
+    date: "2019/12/13",
+    open: 340,
+    high: 343,
+    low: 338,
+    close: 339,
+    adjClose: 299.16,
+    volume: 58198939
+  },
+  {
+    date: "2019/12/12",
+    open: 325,
+    high: 334.5,
+    low: 324,
+    close: 331.5,
+    adjClose: 292.55,
+    volume: 52742851
+  },
+  {
+    date: "2019/12/11",
+    open: 314,
+    high: 319,
+    low: 313,
+    close: 319,
+    adjClose: 281.52,
+    volume: 31223148
+  },
+  {
+    date: "2019/12/10",
+    open: 315,
+    high: 315.5,
+    low: 312.5,
+    close: 313.5,
+    adjClose: 276.66,
+    volume: 20570594
+  },
+  {
+    date: "2019/12/9",
+    open: 314,
+    high: 316.5,
+    low: 314,
+    close: 316,
+    adjClose: 278.87,
+    volume: 23256081
+  },
+  {
+    date: "2019/12/6",
+    open: 315,
+    high: 316,
+    low: 311,
+    close: 313,
+    adjClose: 276.22,
+    volume: 17695703
+  },
+  {
+    date: "2019/12/5",
+    open: 309,
+    high: 312,
+    low: 309,
+    close: 312,
+    adjClose: 275.34,
+    volume: 34521842
+  },
+  {
+    date: "2019/12/4",
+    open: 305,
+    high: 306,
+    low: 304,
+    close: 306,
+    adjClose: 270.04,
+    volume: 25492686
+  },
+  {
+    date: "2019/12/3",
+    open: 305,
+    high: 307,
+    low: 305,
+    close: 307,
+    adjClose: 270.93,
+    volume: 24690319
+  },
+  {
+    date: "2019/12/2",
+    open: 307,
+    high: 308,
+    low: 306.5,
+    close: 307.5,
+    adjClose: 271.37,
+    volume: 24016807
+  },
+  {
+    date: "2019/11/29",
+    open: 309,
+    high: 309.5,
+    low: 305,
+    close: 305,
+    adjClose: 269.16,
+    volume: 30963561
+  },
+  {
+    date: "2019/11/28",
+    open: 310,
+    high: 312,
+    low: 308.5,
+    close: 309.5,
+    adjClose: 273.13,
+    volume: 19077982
+  },
+  {
+    date: "2019/11/27",
+    open: 307.5,
+    high: 311.5,
+    low: 307.5,
+    close: 311,
+    adjClose: 274.46,
+    volume: 18467648
+  },
+  {
+    date: "2019/11/26",
+    open: 310,
+    high: 310.5,
+    low: 307,
+    close: 307,
+    adjClose: 270.93,
+    volume: 101224622
+  },
+  {
+    date: "2019/11/25",
+    open: 310.5,
+    high: 310.5,
+    low: 307,
+    close: 307,
+    adjClose: 270.93,
+    volume: 19530177
+  },
+  {
+    date: "2019/11/22",
+    open: 310,
+    high: 310.5,
+    low: 308,
+    close: 309,
+    adjClose: 272.69,
+    volume: 24737984
+  },
+  {
+    date: "2019/11/21",
+    open: 309.5,
+    high: 311,
+    low: 307,
+    close: 311,
+    adjClose: 274.46,
+    volume: 28108833
+  },
+  {
+    date: "2019/11/20",
+    open: 314,
+    high: 314,
+    low: 312,
+    close: 313.5,
+    adjClose: 276.66,
+    volume: 22387973
+  },
+  {
+    date: "2019/11/19",
+    open: 312.5,
+    high: 315,
+    low: 311,
+    close: 315,
+    adjClose: 277.99,
+    volume: 31634197
+  },
+  {
+    date: "2019/11/18",
+    open: 308.5,
+    high: 311,
+    low: 307,
+    close: 311,
+    adjClose: 274.46,
+    volume: 18691325
+  },
+  {
+    date: "2019/11/15",
+    open: 305.5,
+    high: 307.5,
+    low: 304.5,
+    close: 307,
+    adjClose: 270.93,
+    volume: 28848445
+  },
+  {
+    date: "2019/11/14",
+    open: 304.5,
+    high: 305,
+    low: 302,
+    close: 303.5,
+    adjClose: 267.84,
+    volume: 15734835
+  },
+  {
+    date: "2019/11/13",
+    open: 303,
+    high: 304,
+    low: 301.5,
+    close: 304,
+    adjClose: 268.28,
+    volume: 18172438
+  },
+  {
+    date: "2019/11/12",
+    open: 302.5,
+    high: 305,
+    low: 302,
+    close: 305,
+    adjClose: 269.16,
+    volume: 17540708
+  },
+  {
+    date: "2019/11/11",
+    open: 305,
+    high: 305,
+    low: 300,
+    close: 301,
+    adjClose: 265.63,
+    volume: 35165583
+  },
+  {
+    date: "2019/11/8",
+    open: 308.5,
+    high: 309,
+    low: 305.5,
+    close: 305.5,
+    adjClose: 269.6,
+    volume: 25651542
+  },
+  {
+    date: "2019/11/7",
+    open: 310,
+    high: 310,
+    low: 306.5,
+    close: 309,
+    adjClose: 272.69,
+    volume: 28291659
+  },
+  {
+    date: "2019/11/6",
+    open: 309,
+    high: 311.5,
+    low: 308,
+    close: 311,
+    adjClose: 274.46,
+    volume: 22149743
+  },
+  {
+    date: "2019/11/5",
+    open: 307.5,
+    high: 310.5,
+    low: 307,
+    close: 310.5,
+    adjClose: 274.01,
+    volume: 32201184
+  },
+  {
+    date: "2019/11/4",
+    open: 302.5,
+    high: 308,
+    low: 301,
+    close: 307,
+    adjClose: 270.93,
+    volume: 44899671
+  },
+  {
+    date: "2019/11/1",
+    open: 299.5,
+    high: 299.5,
+    low: 296.5,
+    close: 299,
+    adjClose: 263.87,
+    volume: 30121678
+  },
+  {
+    date: "2019/10/31",
+    open: 300,
+    high: 301.5,
+    low: 298.5,
+    close: 298.5,
+    adjClose: 263.42,
+    volume: 40944514
+  },
+  {
+    date: "2019/10/30",
+    open: 298.5,
+    high: 299.5,
+    low: 296.5,
+    close: 299.5,
+    adjClose: 264.31,
+    volume: 32370342
+  },
+  {
+    date: "2019/10/29",
+    open: 297,
+    high: 298.5,
+    low: 296.5,
+    close: 298.5,
+    adjClose: 263.42,
+    volume: 36682131
+  },
+  {
+    date: "2019/10/28",
+    open: 295,
+    high: 295.5,
+    low: 294,
+    close: 294.5,
+    adjClose: 259.89,
+    volume: 20076561
+  },
+  {
+    date: "2019/10/25",
+    open: 294.5,
+    high: 294.5,
+    low: 292.5,
+    close: 293.5,
+    adjClose: 259.01,
+    volume: 22682711
+  },
+  {
+    date: "2019/10/24",
+    open: 294.5,
+    high: 294.5,
+    low: 291,
+    close: 293,
+    adjClose: 258.57,
+    volume: 29040827
+  },
+  {
+    date: "2019/10/23",
+    open: 293.5,
+    high: 293.5,
+    low: 290.5,
+    close: 293,
+    adjClose: 258.57,
+    volume: 28675408
+  },
+  {
+    date: "2019/10/22",
+    open: 292.5,
+    high: 294,
+    low: 291.5,
+    close: 294,
+    adjClose: 259.45,
+    volume: 26005020
+  },
+  {
+    date: "2019/10/21",
+    open: 291,
+    high: 291,
+    low: 288.5,
+    close: 290,
+    adjClose: 255.92,
+    volume: 34634365
+  },
+  {
+    date: "2019/10/18",
+    open: 293,
+    high: 295.5,
+    low: 291,
+    close: 293,
+    adjClose: 258.57,
+    volume: 45102984
+  },
+  {
+    date: "2019/10/17",
+    open: 295,
+    high: 295.5,
+    low: 292,
+    close: 293.5,
+    adjClose: 259.01,
+    volume: 40271938
+  },
+  {
+    date: "2019/10/16",
+    open: 298,
+    high: 298,
+    low: 293.5,
+    close: 296.5,
+    adjClose: 261.66,
+    volume: 40297144
+  },
+  {
+    date: "2019/10/15",
+    open: 293.5,
+    high: 296,
+    low: 292,
+    close: 293.5,
+    adjClose: 259.01,
+    volume: 38018567
+  },
+  {
+    date: "2019/10/14",
+    open: 291.5,
+    high: 291.5,
+    low: 288.5,
+    close: 290,
+    adjClose: 255.92,
+    volume: 46683517
+  },
+  {
+    date: "2019/10/9",
+    open: 283.5,
+    high: 286,
+    low: 282,
+    close: 282,
+    adjClose: 248.86,
+    volume: 34777456
+  },
+  {
+    date: "2019/10/8",
+    open: 283.5,
+    high: 286.5,
+    low: 282.5,
+    close: 286.5,
+    adjClose: 252.83,
+    volume: 35278551
+  },
+  {
+    date: "2019/10/7",
+    open: 279,
+    high: 279.5,
+    low: 277.5,
+    close: 278,
+    adjClose: 245.33,
+    volume: 17510230
+  },
+  {
+    date: "2019/10/4",
+    open: 279.5,
+    high: 280,
+    low: 275,
+    close: 276.5,
+    adjClose: 244.01,
+    volume: 35169613
+  },
+  {
+    date: "2019/10/3",
+    open: 274,
+    high: 277.5,
+    low: 274,
+    close: 276.5,
+    adjClose: 244.01,
+    volume: 31890864
+  },
+  {
+    date: "2019/10/2",
+    open: 280,
+    high: 281,
+    low: 279,
+    close: 279.5,
+    adjClose: 246.66,
+    volume: 29295953
+  },
+  {
+    date: "2019/10/1",
+    open: 273,
+    high: 280.5,
+    low: 273,
+    close: 280,
+    adjClose: 247.1,
+    volume: 71743890
+  },
+  {
+    date: "2019/9/27",
+    open: 271.5,
+    high: 272.5,
+    low: 271,
+    close: 272,
+    adjClose: 240.04,
+    volume: 41235817
+  },
+  {
+    date: "2019/9/26",
+    open: 269,
+    high: 269.5,
+    low: 266.5,
+    close: 268,
+    adjClose: 236.51,
+    volume: 29940103
+  },
+  {
+    date: "2019/9/25",
+    open: 262.5,
+    high: 266,
+    low: 262,
+    close: 266,
+    adjClose: 234.74,
+    volume: 21003163
+  },
+  {
+    date: "2019/9/24",
+    open: 263.5,
+    high: 265.5,
+    low: 262,
+    close: 265,
+    adjClose: 233.86,
+    volume: 24244943
+  },
+  {
+    date: "2019/9/23",
+    open: 264,
+    high: 264,
+    low: 263,
+    close: 264,
+    adjClose: 232.98,
+    volume: 13093208
+  },
+  {
+    date: "2019/9/20",
+    open: 266,
+    high: 266.5,
+    low: 264,
+    close: 264,
+    adjClose: 232.98,
+    volume: 43868865
+  },
+  {
+    date: "2019/9/19",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2019/9/19",
+    open: 268,
+    high: 268,
+    low: 264,
+    close: 265,
+    adjClose: 233.86,
+    volume: 25233567
+  },
+  {
+    date: "2019/9/18",
+    open: 267,
+    high: 269.5,
+    low: 266.5,
+    close: 267,
+    adjClose: 233.86,
+    volume: 47684759
+  },
+  {
+    date: "2019/9/17",
+    open: 266.5,
+    high: 266.5,
+    low: 264.5,
+    close: 265,
+    adjClose: 232.11,
+    volume: 27600844
+  },
+  {
+    date: "2019/9/16",
+    open: 262,
+    high: 265.5,
+    low: 261.5,
+    close: 265.5,
+    adjClose: 232.55,
+    volume: 32573966
+  },
+  {
+    date: "2019/9/12",
+    open: 265,
+    high: 265,
+    low: 261.5,
+    close: 262.5,
+    adjClose: 229.92,
+    volume: 26017293
+  },
+  {
+    date: "2019/9/11",
+    open: 264,
+    high: 264.5,
+    low: 260.5,
+    close: 263,
+    adjClose: 230.36,
+    volume: 36196015
+  },
+  {
+    date: "2019/9/10",
+    open: 263.5,
+    high: 264,
+    low: 260.5,
+    close: 261.5,
+    adjClose: 229.04,
+    volume: 29308866
+  },
+  {
+    date: "2019/9/6",
+    open: 265,
+    high: 265,
+    low: 263,
+    close: 263.5,
+    adjClose: 230.79,
+    volume: 25408515
+  },
+  {
+    date: "2019/9/5",
+    open: 263,
+    high: 263,
+    low: 260.5,
+    close: 263,
+    adjClose: 230.36,
+    volume: 48791728
+  },
+  {
+    date: "2019/9/4",
+    open: 254,
+    high: 258,
+    low: 254,
+    close: 257.5,
+    adjClose: 225.54,
+    volume: 22540733
+  },
+  {
+    date: "2019/9/3",
+    open: 256.5,
+    high: 258,
+    low: 253,
+    close: 254,
+    adjClose: 222.47,
+    volume: 25762495
+  },
+  {
+    date: "2019/9/2",
+    open: 258,
+    high: 258,
+    low: 256,
+    close: 257.5,
+    adjClose: 225.54,
+    volume: 14614854
+  },
+  {
+    date: "2019/8/30",
+    open: 256.5,
+    high: 259,
+    low: 256,
+    close: 259,
+    adjClose: 226.85,
+    volume: 35184201
+  },
+  {
+    date: "2019/8/29",
+    open: 253,
+    high: 254,
+    low: 251,
+    close: 254,
+    adjClose: 222.47,
+    volume: 19587767
+  },
+  {
+    date: "2019/8/28",
+    open: 250.5,
+    high: 253,
+    low: 250.5,
+    close: 252,
+    adjClose: 220.72,
+    volume: 15132882
+  },
+  {
+    date: "2019/8/27",
+    open: 250.5,
+    high: 251,
+    low: 248.5,
+    close: 250,
+    adjClose: 218.97,
+    volume: 50234951
+  },
+  {
+    date: "2019/8/26",
+    open: 249,
+    high: 250.5,
+    low: 248.5,
+    close: 248.5,
+    adjClose: 217.66,
+    volume: 31678620
+  },
+  {
+    date: "2019/8/23",
+    open: 253.5,
+    high: 254.5,
+    low: 253,
+    close: 254,
+    adjClose: 222.47,
+    volume: 14166877
+  },
+  {
+    date: "2019/8/22",
+    open: 257,
+    high: 257.5,
+    low: 254,
+    close: 254,
+    adjClose: 222.47,
+    volume: 21900840
+  },
+  {
+    date: "2019/8/21",
+    open: 254.5,
+    high: 255,
+    low: 253,
+    close: 254.5,
+    adjClose: 222.91,
+    volume: 20269296
+  },
+  {
+    date: "2019/8/20",
+    open: 254,
+    high: 254.5,
+    low: 252.5,
+    close: 254.5,
+    adjClose: 222.91,
+    volume: 19960494
+  },
+  {
+    date: "2019/8/19",
+    open: 251.5,
+    high: 253,
+    low: 250.5,
+    close: 252,
+    adjClose: 220.72,
+    volume: 24060514
+  },
+  {
+    date: "2019/8/16",
+    open: 249.5,
+    high: 252,
+    low: 248,
+    close: 250,
+    adjClose: 218.97,
+    volume: 25370715
+  },
+  {
+    date: "2019/8/15",
+    open: 247,
+    high: 248.5,
+    low: 246,
+    close: 248,
+    adjClose: 217.22,
+    volume: 27624412
+  },
+  {
+    date: "2019/8/14",
+    open: 252.5,
+    high: 254,
+    low: 249.5,
+    close: 249.5,
+    adjClose: 218.53,
+    volume: 35216703
+  },
+  {
+    date: "2019/8/13",
+    open: 249,
+    high: 249.5,
+    low: 246.5,
+    close: 246.5,
+    adjClose: 215.9,
+    volume: 23121107
+  },
+  {
+    date: "2019/8/12",
+    open: 254.5,
+    high: 254.5,
+    low: 251,
+    close: 251,
+    adjClose: 219.85,
+    volume: 21794603
+  },
+  {
+    date: "2019/8/8",
+    open: 248,
+    high: 254,
+    low: 248,
+    close: 253.5,
+    adjClose: 222.04,
+    volume: 29725266
+  },
+  {
+    date: "2019/8/7",
+    open: 250,
+    high: 250.5,
+    low: 246.5,
+    close: 248,
+    adjClose: 217.22,
+    volume: 29435460
+  },
+  {
+    date: "2019/8/6",
+    open: 240,
+    high: 250,
+    low: 240,
+    close: 248.5,
+    adjClose: 217.66,
+    volume: 58625879
+  },
+  {
+    date: "2019/8/5",
+    open: 251,
+    high: 252,
+    low: 245.5,
+    close: 246.5,
+    adjClose: 215.9,
+    volume: 51535721
+  },
+  {
+    date: "2019/8/2",
+    open: 252,
+    high: 253.5,
+    low: 250.5,
+    close: 251.5,
+    adjClose: 220.28,
+    volume: 54021644
+  },
+  {
+    date: "2019/8/1",
+    open: 257.5,
+    high: 257.5,
+    low: 255.5,
+    close: 256.5,
+    adjClose: 224.66,
+    volume: 30017526
+  },
+  {
+    date: "2019/7/31",
+    open: 260,
+    high: 260,
+    low: 257,
+    close: 259.5,
+    adjClose: 227.29,
+    volume: 31635601
+  },
+  {
+    date: "2019/7/30",
+    open: 262.5,
+    high: 263,
+    low: 260,
+    close: 260,
+    adjClose: 227.73,
+    volume: 22670612
+  },
+  {
+    date: "2019/7/29",
+    open: 260,
+    high: 262,
+    low: 259.5,
+    close: 261,
+    adjClose: 228.61,
+    volume: 17509320
+  },
+  {
+    date: "2019/7/26",
+    open: 261,
+    high: 262.5,
+    low: 261,
+    close: 261,
+    adjClose: 228.61,
+    volume: 20438071
+  },
+  {
+    date: "2019/7/25",
+    open: 264,
+    high: 265,
+    low: 261.5,
+    close: 265,
+    adjClose: 232.11,
+    volume: 30433545
+  },
+  {
+    date: "2019/7/24",
+    open: 266.5,
+    high: 266.5,
+    low: 263,
+    close: 265,
+    adjClose: 232.11,
+    volume: 23734039
+  },
+  {
+    date: "2019/7/23",
+    open: 265.5,
+    high: 266.5,
+    low: 262.5,
+    close: 264,
+    adjClose: 231.23,
+    volume: 29273223
+  },
+  {
+    date: "2019/7/22",
+    open: 263,
+    high: 264,
+    low: 262,
+    close: 264,
+    adjClose: 231.23,
+    volume: 31522639
+  },
+  {
+    date: "2019/7/19",
+    open: 259.5,
+    high: 261,
+    low: 259,
+    close: 259,
+    adjClose: 226.85,
+    volume: 59709798
+  },
+  {
+    date: "2019/7/18",
+    open: 252,
+    high: 254.5,
+    low: 251.5,
+    close: 254,
+    adjClose: 222.47,
+    volume: 20842575
+  },
+  {
+    date: "2019/7/17",
+    open: 254,
+    high: 254,
+    low: 251,
+    close: 252,
+    adjClose: 220.72,
+    volume: 25573648
+  },
+  {
+    date: "2019/7/16",
+    open: 254,
+    high: 256.5,
+    low: 253.5,
+    close: 256,
+    adjClose: 224.23,
+    volume: 21361249
+  },
+  {
+    date: "2019/7/15",
+    open: 251,
+    high: 254.5,
+    low: 249.5,
+    close: 254.5,
+    adjClose: 222.91,
+    volume: 29727300
+  },
+  {
+    date: "2019/7/12",
+    open: 252,
+    high: 252,
+    low: 249.5,
+    close: 250.5,
+    adjClose: 219.41,
+    volume: 23479432
+  },
+  {
+    date: "2019/7/11",
+    open: 250,
+    high: 250,
+    low: 247.5,
+    close: 250,
+    adjClose: 218.97,
+    volume: 31160289
+  },
+  {
+    date: "2019/7/10",
+    open: 243,
+    high: 247,
+    low: 243,
+    close: 247,
+    adjClose: 216.34,
+    volume: 23812131
+  },
+  {
+    date: "2019/7/9",
+    open: 241.5,
+    high: 243,
+    low: 240.5,
+    close: 242,
+    adjClose: 211.96,
+    volume: 16418987
+  },
+  {
+    date: "2019/7/8",
+    open: 240,
+    high: 244.5,
+    low: 240,
+    close: 242.5,
+    adjClose: 212.4,
+    volume: 27787909
+  },
+  {
+    date: "2019/7/5",
+    open: 244.5,
+    high: 245,
+    low: 241.5,
+    close: 243,
+    adjClose: 212.84,
+    volume: 22867074
+  },
+  {
+    date: "2019/7/4",
+    open: 244.5,
+    high: 245,
+    low: 242.5,
+    close: 244,
+    adjClose: 213.72,
+    volume: 17481240
+  },
+  {
+    date: "2019/7/3",
+    open: 244,
+    high: 245,
+    low: 242,
+    close: 242.5,
+    adjClose: 212.4,
+    volume: 29449774
+  },
+  {
+    date: "2019/7/2",
+    open: 249.5,
+    high: 250,
+    low: 247.5,
+    close: 249,
+    adjClose: 218.09,
+    volume: 24181202
+  },
+  {
+    date: "2019/7/1",
+    open: 245.5,
+    high: 250,
+    low: 245,
+    close: 248.5,
+    adjClose: 217.66,
+    volume: 66307875
+  },
+  {
+    date: "2019/6/28",
+    open: 241.5,
+    high: 241.5,
+    low: 238,
+    close: 239,
+    adjClose: 209.34,
+    volume: 25962203
+  },
+  {
+    date: "2019/6/27",
+    open: 236,
+    high: 241.5,
+    low: 236,
+    close: 240.5,
+    adjClose: 210.65,
+    volume: 42007834
+  },
+  {
+    date: "2019/6/26",
+    open: 235,
+    high: 236.5,
+    low: 234,
+    close: 234.5,
+    adjClose: 205.39,
+    volume: 27607041
+  },
+  {
+    date: "2019/6/25",
+    open: 241,
+    high: 241.5,
+    low: 237,
+    close: 238.5,
+    adjClose: 208.9,
+    volume: 28559283
+  },
+  {
+    date: "2019/6/24",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2019/6/24",
+    open: 241,
+    high: 242,
+    low: 240,
+    close: 241,
+    adjClose: 211.09,
+    volume: 43300507
+  },
+  {
+    date: "2019/6/21",
+    open: 248,
+    high: 248.5,
+    low: 246,
+    close: 248.5,
+    adjClose: 210.65,
+    volume: 61164304
+  },
+  {
+    date: "2019/6/20",
+    open: 242,
+    high: 245.5,
+    low: 241,
+    close: 245,
+    adjClose: 207.68,
+    volume: 37836291
+  },
+  {
+    date: "2019/6/19",
+    open: 242.5,
+    high: 244,
+    low: 240.5,
+    close: 244,
+    adjClose: 206.84,
+    volume: 50164372
+  },
+  {
+    date: "2019/6/18",
+    open: 234,
+    high: 235.5,
+    low: 233,
+    close: 235.5,
+    adjClose: 199.63,
+    volume: 28578087
+  },
+  {
+    date: "2019/6/17",
+    open: 231.5,
+    high: 235,
+    low: 230.5,
+    close: 233,
+    adjClose: 197.51,
+    volume: 51017012
+  },
+  {
+    date: "2019/6/14",
+    open: 238.5,
+    high: 239.5,
+    low: 236,
+    close: 236,
+    adjClose: 200.05,
+    volume: 31951556
+  },
+  {
+    date: "2019/6/13",
+    open: 242.5,
+    high: 244,
+    low: 240,
+    close: 240,
+    adjClose: 203.44,
+    volume: 32981724
+  },
+  {
+    date: "2019/6/12",
+    open: 244.5,
+    high: 247.5,
+    low: 243,
+    close: 246,
+    adjClose: 208.53,
+    volume: 29675556
+  },
+  {
+    date: "2019/6/11",
+    open: 240,
+    high: 246,
+    low: 239,
+    close: 244.5,
+    adjClose: 207.26,
+    volume: 31965670
+  },
+  {
+    date: "2019/6/10",
+    open: 237.5,
+    high: 240,
+    low: 234.5,
+    close: 240,
+    adjClose: 203.44,
+    volume: 35373888
+  },
+  {
+    date: "2019/6/6",
+    open: 231.5,
+    high: 232,
+    low: 229.5,
+    close: 232,
+    adjClose: 196.66,
+    volume: 34651731
+  },
+  {
+    date: "2019/6/5",
+    open: 238,
+    high: 238,
+    low: 234,
+    close: 235,
+    adjClose: 199.21,
+    volume: 29139584
+  },
+  {
+    date: "2019/6/4",
+    open: 237.5,
+    high: 238,
+    low: 233,
+    close: 233,
+    adjClose: 197.51,
+    volume: 24443428
+  },
+  {
+    date: "2019/6/3",
+    open: 235.5,
+    high: 238.5,
+    low: 232,
+    close: 238,
+    adjClose: 201.75,
+    volume: 31054092
+  },
+  {
+    date: "2019/5/31",
+    open: 232,
+    high: 237.5,
+    low: 231,
+    close: 235.5,
+    adjClose: 199.63,
+    volume: 46070338
+  },
+  {
+    date: "2019/5/30",
+    open: 230,
+    high: 231.5,
+    low: 229,
+    close: 231,
+    adjClose: 195.82,
+    volume: 28500328
+  },
+  {
+    date: "2019/5/29",
+    open: 228,
+    high: 230.5,
+    low: 227,
+    close: 229.5,
+    adjClose: 194.54,
+    volume: 26533236
+  },
+  {
+    date: "2019/5/28",
+    open: 232,
+    high: 232,
+    low: 230.5,
+    close: 230.5,
+    adjClose: 195.39,
+    volume: 95240033
+  },
+  {
+    date: "2019/5/27",
+    open: 234,
+    high: 235,
+    low: 231,
+    close: 231,
+    adjClose: 195.82,
+    volume: 35562033
+  },
+  {
+    date: "2019/5/24",
+    open: 230,
+    high: 234,
+    low: 230,
+    close: 233,
+    adjClose: 197.51,
+    volume: 36000789
+  },
+  {
+    date: "2019/5/23",
+    open: 233.5,
+    high: 233.5,
+    low: 230,
+    close: 230,
+    adjClose: 194.97,
+    volume: 58752627
+  },
+  {
+    date: "2019/5/22",
+    open: 236.5,
+    high: 240.5,
+    low: 235.5,
+    close: 238,
+    adjClose: 201.75,
+    volume: 34622034
+  },
+  {
+    date: "2019/5/21",
+    open: 233.5,
+    high: 236,
+    low: 232.5,
+    close: 234,
+    adjClose: 198.36,
+    volume: 80042775
+  },
+  {
+    date: "2019/5/20",
+    open: 242.5,
+    high: 243,
+    low: 238,
+    close: 238,
+    adjClose: 201.75,
+    volume: 39157661
+  },
+  {
+    date: "2019/5/17",
+    open: 249,
+    high: 249,
+    low: 241.5,
+    close: 241.5,
+    adjClose: 204.72,
+    volume: 38647856
+  },
+  {
+    date: "2019/5/16",
+    open: 248.5,
+    high: 249.5,
+    low: 246,
+    close: 247,
+    adjClose: 209.38,
+    volume: 29713519
+  },
+  {
+    date: "2019/5/15",
+    open: 251,
+    high: 252,
+    low: 249,
+    close: 249,
+    adjClose: 211.07,
+    volume: 36825479
+  },
+  {
+    date: "2019/5/14",
+    open: 247.5,
+    high: 251,
+    low: 245,
+    close: 248.5,
+    adjClose: 210.65,
+    volume: 45055708
+  },
+  {
+    date: "2019/5/13",
+    open: 253,
+    high: 254,
+    low: 249.5,
+    close: 250.5,
+    adjClose: 212.35,
+    volume: 28284535
+  },
+  {
+    date: "2019/5/10",
+    open: 257,
+    high: 259,
+    low: 255,
+    close: 256,
+    adjClose: 217.01,
+    volume: 18617212
+  },
+  {
+    date: "2019/5/9",
+    open: 259.5,
+    high: 259.5,
+    low: 256,
+    close: 256.5,
+    adjClose: 217.43,
+    volume: 33587574
+  },
+  {
+    date: "2019/5/8",
+    open: 260,
+    high: 261.5,
+    low: 259.5,
+    close: 260,
+    adjClose: 220.4,
+    volume: 25542364
+  },
+  {
+    date: "2019/5/7",
+    open: 259.5,
+    high: 263,
+    low: 259,
+    close: 262.5,
+    adjClose: 222.52,
+    volume: 25686126
+  },
+  {
+    date: "2019/5/6",
+    open: 260,
+    high: 260,
+    low: 258,
+    close: 259,
+    adjClose: 219.55,
+    volume: 32823187
+  },
+  {
+    date: "2019/5/3",
+    open: 262,
+    high: 265,
+    low: 260.5,
+    close: 265,
+    adjClose: 224.64,
+    volume: 29840246
+  },
+  {
+    date: "2019/5/2",
+    open: 261.5,
+    high: 262.5,
+    low: 258.5,
+    close: 259,
+    adjClose: 219.55,
+    volume: 27091394
+  },
+  {
+    date: "2019/4/30",
+    open: 260,
+    high: 260.5,
+    low: 258,
+    close: 259,
+    adjClose: 219.55,
+    volume: 33799419
+  },
+  {
+    date: "2019/4/29",
+    open: 260,
+    high: 262,
+    low: 258.5,
+    close: 259.5,
+    adjClose: 219.97,
+    volume: 31126618
+  },
+  {
+    date: "2019/4/26",
+    open: 262,
+    high: 263,
+    low: 257.5,
+    close: 260,
+    adjClose: 220.4,
+    volume: 47518804
+  },
+  {
+    date: "2019/4/25",
+    open: 268.5,
+    high: 269,
+    low: 267,
+    close: 267.5,
+    adjClose: 226.76,
+    volume: 32386724
+  },
+  {
+    date: "2019/4/24",
+    open: 270,
+    high: 270,
+    low: 267.5,
+    close: 269,
+    adjClose: 228.03,
+    volume: 26449755
+  },
+  {
+    date: "2019/4/23",
+    open: 266.5,
+    high: 268,
+    low: 266,
+    close: 268,
+    adjClose: 227.18,
+    volume: 25336847
+  },
+  {
+    date: "2019/4/22",
+    open: 266.5,
+    high: 267.5,
+    low: 265,
+    close: 266,
+    adjClose: 225.48,
+    volume: 24967393
+  },
+  {
+    date: "2019/4/19",
+    open: 269,
+    high: 269.5,
+    low: 263.5,
+    close: 264.5,
+    adjClose: 224.21,
+    volume: 44658699
+  },
+  {
+    date: "2019/4/18",
+    open: 264,
+    high: 266,
+    low: 263.5,
+    close: 264.5,
+    adjClose: 224.21,
+    volume: 38006795
+  },
+  {
+    date: "2019/4/17",
+    open: 260,
+    high: 263,
+    low: 259.5,
+    close: 261.5,
+    adjClose: 221.67,
+    volume: 37864191
+  },
+  {
+    date: "2019/4/16",
+    open: 257,
+    high: 257,
+    low: 255.5,
+    close: 257,
+    adjClose: 217.85,
+    volume: 19652648
+  },
+  {
+    date: "2019/4/15",
+    open: 255,
+    high: 256,
+    low: 254,
+    close: 255.5,
+    adjClose: 216.58,
+    volume: 17192002
+  },
+  {
+    date: "2019/4/12",
+    open: 251.5,
+    high: 253,
+    low: 251,
+    close: 252,
+    adjClose: 213.62,
+    volume: 13548148
+  },
+  {
+    date: "2019/4/11",
+    open: 253,
+    high: 254,
+    low: 251.5,
+    close: 252,
+    adjClose: 213.62,
+    volume: 24896840
+  },
+  {
+    date: "2019/4/10",
+    open: 253,
+    high: 254.5,
+    low: 252,
+    close: 254,
+    adjClose: 215.31,
+    volume: 25849934
+  },
+  {
+    date: "2019/4/9",
+    open: 253,
+    high: 254,
+    low: 252,
+    close: 254,
+    adjClose: 215.31,
+    volume: 22355674
+  },
+  {
+    date: "2019/4/8",
+    open: 251,
+    high: 253,
+    low: 250.5,
+    close: 253,
+    adjClose: 214.46,
+    volume: 45184821
+  },
+  {
+    date: "2019/4/3",
+    open: 249,
+    high: 249,
+    low: 246.5,
+    close: 246.5,
+    adjClose: 208.95,
+    volume: 24945323
+  },
+  {
+    date: "2019/4/2",
+    open: 249.5,
+    high: 249.5,
+    low: 246,
+    close: 246,
+    adjClose: 208.53,
+    volume: 24105053
+  },
+  {
+    date: "2019/4/1",
+    open: 251,
+    high: 251,
+    low: 245,
+    close: 245.5,
+    adjClose: 208.11,
+    volume: 35330656
+  },
+  {
+    date: "2019/3/29",
+    open: 243,
+    high: 245.5,
+    low: 240.5,
+    close: 245.5,
+    adjClose: 208.11,
+    volume: 28220810
+  },
+  {
+    date: "2019/3/28",
+    open: 240.5,
+    high: 242.5,
+    low: 240,
+    close: 242,
+    adjClose: 205.14,
+    volume: 13933054
+  },
+  {
+    date: "2019/3/27",
+    open: 242,
+    high: 242.5,
+    low: 240.5,
+    close: 241.5,
+    adjClose: 204.72,
+    volume: 22590089
+  },
+  {
+    date: "2019/3/26",
+    open: 243,
+    high: 244,
+    low: 241,
+    close: 244,
+    adjClose: 206.84,
+    volume: 19920170
+  },
+  {
+    date: "2019/3/25",
+    open: 240.5,
+    high: 243.5,
+    low: 240.5,
+    close: 241.5,
+    adjClose: 204.72,
+    volume: 19211254
+  },
+  {
+    date: "2019/3/22",
+    open: 248,
+    high: 248.5,
+    low: 244.5,
+    close: 248.5,
+    adjClose: 210.65,
+    volume: 22931467
+  },
+  {
+    date: "2019/3/21",
+    open: 242.5,
+    high: 245.5,
+    low: 241,
+    close: 245.5,
+    adjClose: 208.11,
+    volume: 26179502
+  },
+  {
+    date: "2019/3/20",
+    open: 242,
+    high: 242,
+    low: 239.5,
+    close: 242,
+    adjClose: 205.14,
+    volume: 22975971
+  },
+  {
+    date: "2019/3/19",
+    open: 239,
+    high: 240.5,
+    low: 238,
+    close: 240.5,
+    adjClose: 203.87,
+    volume: 14479009
+  },
+  {
+    date: "2019/3/18",
+    open: 239.5,
+    high: 241,
+    low: 239,
+    close: 241,
+    adjClose: 204.29,
+    volume: 26856532
+  },
+  {
+    date: "2019/3/15",
+    open: 237,
+    high: 239.5,
+    low: 235.5,
+    close: 239,
+    adjClose: 202.6,
+    volume: 33649729
+  },
+  {
+    date: "2019/3/14",
+    open: 239,
+    high: 239,
+    low: 234,
+    close: 234.5,
+    adjClose: 198.78,
+    volume: 17175356
+  },
+  {
+    date: "2019/3/13",
+    open: 234,
+    high: 237,
+    low: 234,
+    close: 237,
+    adjClose: 200.9,
+    volume: 20500195
+  },
+  {
+    date: "2019/3/12",
+    open: 233,
+    high: 237,
+    low: 232.5,
+    close: 235.5,
+    adjClose: 199.63,
+    volume: 23588085
+  },
+  {
+    date: "2019/3/11",
+    open: 228,
+    high: 230.5,
+    low: 227.5,
+    close: 230.5,
+    adjClose: 195.39,
+    volume: 23200793
+  },
+  {
+    date: "2019/3/8",
+    open: 231,
+    high: 231.5,
+    low: 229,
+    close: 230,
+    adjClose: 194.97,
+    volume: 22190659
+  },
+  {
+    date: "2019/3/7",
+    open: 235,
+    high: 235,
+    low: 233,
+    close: 234,
+    adjClose: 198.36,
+    volume: 17126192
+  },
+  {
+    date: "2019/3/6",
+    open: 235,
+    high: 235.5,
+    low: 233.5,
+    close: 234,
+    adjClose: 198.36,
+    volume: 20433226
+  },
+  {
+    date: "2019/3/5",
+    open: 234,
+    high: 234.5,
+    low: 232.5,
+    close: 233,
+    adjClose: 197.51,
+    volume: 22641407
+  },
+  {
+    date: "2019/3/4",
+    open: 239.5,
+    high: 239.5,
+    low: 234.5,
+    close: 235.5,
+    adjClose: 199.63,
+    volume: 39655513
+  },
+  {
+    date: "2019/2/27",
+    open: 238.5,
+    high: 239.5,
+    low: 237,
+    close: 239,
+    adjClose: 202.6,
+    volume: 35240889
+  },
+  {
+    date: "2019/2/26",
+    open: 239,
+    high: 240,
+    low: 236.5,
+    close: 239.5,
+    adjClose: 203.02,
+    volume: 24522789
+  },
+  {
+    date: "2019/2/25",
+    open: 237.5,
+    high: 239,
+    low: 236,
+    close: 238,
+    adjClose: 201.75,
+    volume: 24105138
+  },
+  {
+    date: "2019/2/22",
+    open: 235.5,
+    high: 236.5,
+    low: 234,
+    close: 236.5,
+    adjClose: 200.48,
+    volume: 22032163
+  },
+  {
+    date: "2019/2/21",
+    open: 235.5,
+    high: 236.5,
+    low: 234.5,
+    close: 236.5,
+    adjClose: 200.48,
+    volume: 33764489
+  },
+  {
+    date: "2019/2/20",
+    open: 231.5,
+    high: 234.5,
+    low: 231,
+    close: 234.5,
+    adjClose: 198.78,
+    volume: 30479710
+  },
+  {
+    date: "2019/2/19",
+    open: 230,
+    high: 230.5,
+    low: 229,
+    close: 229,
+    adjClose: 194.12,
+    volume: 16577023
+  },
+  {
+    date: "2019/2/18",
+    open: 229,
+    high: 230.5,
+    low: 228.5,
+    close: 230,
+    adjClose: 194.97,
+    volume: 16978916
+  },
+  {
+    date: "2019/2/15",
+    open: 229,
+    high: 229,
+    low: 226.5,
+    close: 227,
+    adjClose: 192.42,
+    volume: 22369799
+  },
+  {
+    date: "2019/2/14",
+    open: 229.5,
+    high: 230,
+    low: 226,
+    close: 227,
+    adjClose: 192.42,
+    volume: 23647751
+  },
+  {
+    date: "2019/2/13",
+    open: 232,
+    high: 232,
+    low: 228.5,
+    close: 229,
+    adjClose: 194.12,
+    volume: 28634925
+  },
+  {
+    date: "2019/2/12",
+    open: 230,
+    high: 230,
+    low: 229,
+    close: 230,
+    adjClose: 194.97,
+    volume: 29406670
+  },
+  {
+    date: "2019/2/11",
+    open: 228,
+    high: 229,
+    low: 226.5,
+    close: 228,
+    adjClose: 193.27,
+    volume: 78307106
+  },
+  {
+    date: "2019/1/30",
+    open: 220.5,
+    high: 221.5,
+    low: 220,
+    close: 221,
+    adjClose: 187.34,
+    volume: 44755945
+  },
+  {
+    date: "2019/1/29",
+    open: 222.5,
+    high: 225,
+    low: 222,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 41122520
+  },
+  {
+    date: "2019/1/28",
+    open: 229.5,
+    high: 229.5,
+    low: 228,
+    close: 229,
+    adjClose: 194.12,
+    volume: 26026257
+  },
+  {
+    date: "2019/1/25",
+    open: 226.5,
+    high: 227,
+    low: 225,
+    close: 226,
+    adjClose: 191.58,
+    volume: 46692764
+  },
+  {
+    date: "2019/1/24",
+    open: 222.5,
+    high: 222.5,
+    low: 220.5,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 26417924
+  },
+  {
+    date: "2019/1/23",
+    open: 221.5,
+    high: 222,
+    low: 220,
+    close: 220.5,
+    adjClose: 186.91,
+    volume: 16671213
+  },
+  {
+    date: "2019/1/22",
+    open: 220,
+    high: 223,
+    low: 219,
+    close: 223,
+    adjClose: 189.03,
+    volume: 28926483
+  },
+  {
+    date: "2019/1/21",
+    open: 220,
+    high: 223,
+    low: 220,
+    close: 221,
+    adjClose: 187.34,
+    volume: 29384866
+  },
+  {
+    date: "2019/1/18",
+    open: 219,
+    high: 220,
+    low: 217.5,
+    close: 218.5,
+    adjClose: 185.22,
+    volume: 49627569
+  },
+  {
+    date: "2019/1/17",
+    open: 218,
+    high: 221,
+    low: 218,
+    close: 220.5,
+    adjClose: 186.91,
+    volume: 21163986
+  },
+  {
+    date: "2019/1/16",
+    open: 218.5,
+    high: 220,
+    low: 217.5,
+    close: 217.5,
+    adjClose: 184.37,
+    volume: 28978282
+  },
+  {
+    date: "2019/1/15",
+    open: 216.5,
+    high: 221,
+    low: 215.5,
+    close: 221,
+    adjClose: 187.34,
+    volume: 38882923
+  },
+  {
+    date: "2019/1/14",
+    open: 218.5,
+    high: 220,
+    low: 217,
+    close: 218.5,
+    adjClose: 185.22,
+    volume: 17612296
+  },
+  {
+    date: "2019/1/11",
+    open: 219,
+    high: 220.5,
+    low: 218,
+    close: 220.5,
+    adjClose: 186.91,
+    volume: 28102288
+  },
+  {
+    date: "2019/1/10",
+    open: 216,
+    high: 216.5,
+    low: 214.5,
+    close: 216,
+    adjClose: 183.1,
+    volume: 20754593
+  },
+  {
+    date: "2019/1/9",
+    open: 212,
+    high: 216.5,
+    low: 211,
+    close: 215.5,
+    adjClose: 182.68,
+    volume: 46295446
+  },
+  {
+    date: "2019/1/8",
+    open: 212,
+    high: 212.5,
+    low: 210,
+    close: 211,
+    adjClose: 178.86,
+    volume: 22694481
+  },
+  {
+    date: "2019/1/7",
+    open: 212,
+    high: 214,
+    low: 211,
+    close: 213,
+    adjClose: 180.56,
+    volume: 35442176
+  },
+  {
+    date: "2019/1/4",
+    open: 211.5,
+    high: 211.5,
+    low: 206.5,
+    close: 208,
+    adjClose: 176.32,
+    volume: 65943521
+  },
+  {
+    date: "2019/1/3",
+    open: 214,
+    high: 218,
+    low: 214,
+    close: 215.5,
+    adjClose: 182.68,
+    volume: 34087620
+  },
+  {
+    date: "2019/1/2",
+    open: 226.5,
+    high: 226.5,
+    low: 219,
+    close: 219.5,
+    adjClose: 186.07,
+    volume: 32900482
+  },
+  {
+    date: "2018/12/28",
+    open: 223.5,
+    high: 225.5,
+    low: 222.5,
+    close: 225.5,
+    adjClose: 191.15,
+    volume: 29456773
+  },
+  {
+    date: "2018/12/27",
+    open: 222,
+    high: 224,
+    low: 220.5,
+    close: 223,
+    adjClose: 189.03,
+    volume: 21491484
+  },
+  {
+    date: "2018/12/26",
+    open: 218.5,
+    high: 219.5,
+    low: 216,
+    close: 216.5,
+    adjClose: 183.52,
+    volume: 16463259
+  },
+  {
+    date: "2018/12/25",
+    open: 215.5,
+    high: 218,
+    low: 215,
+    close: 217.5,
+    adjClose: 184.37,
+    volume: 19402777
+  },
+  {
+    date: "2018/12/24",
+    open: 221.5,
+    high: 221.5,
+    low: 219.5,
+    close: 220,
+    adjClose: 186.49,
+    volume: 22976100
+  },
+  {
+    date: "2018/12/21",
+    open: 219,
+    high: 224,
+    low: 219,
+    close: 223.5,
+    adjClose: 189.46,
+    volume: 43507532
+  },
+  {
+    date: "2018/12/20",
+    open: 221,
+    high: 222.5,
+    low: 221,
+    close: 221,
+    adjClose: 187.34,
+    volume: 35027116
+  },
+  {
+    date: "2018/12/19",
+    open: 222,
+    high: 225.5,
+    low: 222,
+    close: 225.5,
+    adjClose: 191.15,
+    volume: 23390082
+  },
+  {
+    date: "2018/12/18",
+    open: 221,
+    high: 223,
+    low: 220.5,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 30203541
+  },
+  {
+    date: "2018/12/17",
+    open: 221,
+    high: 225,
+    low: 220,
+    close: 223.5,
+    adjClose: 189.46,
+    volume: 18938952
+  },
+  {
+    date: "2018/12/14",
+    open: 223,
+    high: 223.5,
+    low: 220.5,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 38646159
+  },
+  {
+    date: "2018/12/13",
+    open: 227,
+    high: 227.5,
+    low: 225,
+    close: 226,
+    adjClose: 191.58,
+    volume: 32087141
+  },
+  {
+    date: "2018/12/12",
+    open: 223.5,
+    high: 227,
+    low: 222.5,
+    close: 226.5,
+    adjClose: 192,
+    volume: 26433846
+  },
+  {
+    date: "2018/12/11",
+    open: 220,
+    high: 223,
+    low: 219,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 27375220
+  },
+  {
+    date: "2018/12/10",
+    open: 219.5,
+    high: 220,
+    low: 218.5,
+    close: 219,
+    adjClose: 185.64,
+    volume: 19433461
+  },
+  {
+    date: "2018/12/7",
+    open: 222.5,
+    high: 223.5,
+    low: 220.5,
+    close: 221,
+    adjClose: 187.34,
+    volume: 25063568
+  },
+  {
+    date: "2018/12/6",
+    open: 220,
+    high: 222,
+    low: 219.5,
+    close: 220,
+    adjClose: 186.49,
+    volume: 40149112
+  },
+  {
+    date: "2018/12/5",
+    open: 226.5,
+    high: 227.5,
+    low: 225,
+    close: 226,
+    adjClose: 191.58,
+    volume: 42835576
+  },
+  {
+    date: "2018/12/4",
+    open: 233,
+    high: 234.5,
+    low: 231,
+    close: 234,
+    adjClose: 198.36,
+    volume: 39746162
+  },
+  {
+    date: "2018/12/3",
+    open: 231,
+    high: 235,
+    low: 231,
+    close: 235,
+    adjClose: 199.21,
+    volume: 45333986
+  },
+  {
+    date: "2018/11/30",
+    open: 229.5,
+    high: 231,
+    low: 225.5,
+    close: 225.5,
+    adjClose: 191.15,
+    volume: 55827957
+  },
+  {
+    date: "2018/11/29",
+    open: 231.5,
+    high: 231.5,
+    low: 229,
+    close: 229,
+    adjClose: 194.12,
+    volume: 44383207
+  },
+  {
+    date: "2018/11/28",
+    open: 222.5,
+    high: 227,
+    low: 222,
+    close: 226.5,
+    adjClose: 192,
+    volume: 24429026
+  },
+  {
+    date: "2018/11/27",
+    open: 220,
+    high: 224.5,
+    low: 219,
+    close: 224,
+    adjClose: 189.88,
+    volume: 26584349
+  },
+  {
+    date: "2018/11/26",
+    open: 219,
+    high: 224,
+    low: 218.5,
+    close: 223,
+    adjClose: 189.03,
+    volume: 30599804
+  },
+  {
+    date: "2018/11/23",
+    open: 220.5,
+    high: 220.5,
+    low: 217,
+    close: 218.5,
+    adjClose: 185.22,
+    volume: 14883334
+  },
+  {
+    date: "2018/11/22",
+    open: 221.5,
+    high: 222,
+    low: 219,
+    close: 219,
+    adjClose: 185.64,
+    volume: 21929610
+  },
+  {
+    date: "2018/11/21",
+    open: 214.5,
+    high: 220,
+    low: 214,
+    close: 219,
+    adjClose: 185.64,
+    volume: 35206343
+  },
+  {
+    date: "2018/11/20",
+    open: 219,
+    high: 220.5,
+    low: 218,
+    close: 218,
+    adjClose: 184.8,
+    volume: 41569756
+  },
+  {
+    date: "2018/11/19",
+    open: 225,
+    high: 225,
+    low: 221,
+    close: 222,
+    adjClose: 188.19,
+    volume: 48944754
+  },
+  {
+    date: "2018/11/16",
+    open: 229,
+    high: 229,
+    low: 225,
+    close: 226,
+    adjClose: 191.58,
+    volume: 46738909
+  },
+  {
+    date: "2018/11/15",
+    open: 229.5,
+    high: 232,
+    low: 228.5,
+    close: 231,
+    adjClose: 195.82,
+    volume: 22072228
+  },
+  {
+    date: "2018/11/14",
+    open: 230,
+    high: 231,
+    low: 228.5,
+    close: 228.5,
+    adjClose: 193.7,
+    volume: 20028279
+  },
+  {
+    date: "2018/11/13",
+    open: 224.5,
+    high: 228,
+    low: 224.5,
+    close: 227.5,
+    adjClose: 192.85,
+    volume: 36104127
+  },
+  {
+    date: "2018/11/12",
+    open: 230,
+    high: 234.5,
+    low: 230,
+    close: 231.5,
+    adjClose: 196.24,
+    volume: 23228445
+  },
+  {
+    date: "2018/11/9",
+    open: 234.5,
+    high: 234.5,
+    low: 231,
+    close: 231,
+    adjClose: 195.82,
+    volume: 23219081
+  },
+  {
+    date: "2018/11/8",
+    open: 237.5,
+    high: 237.5,
+    low: 236,
+    close: 236.5,
+    adjClose: 200.48,
+    volume: 24739146
+  },
+  {
+    date: "2018/11/7",
+    open: 233,
+    high: 236,
+    low: 232.5,
+    close: 234,
+    adjClose: 198.36,
+    volume: 34424652
+  },
+  {
+    date: "2018/11/6",
+    open: 234,
+    high: 235.5,
+    low: 232.5,
+    close: 234.5,
+    adjClose: 198.78,
+    volume: 30468176
+  },
+  {
+    date: "2018/11/5",
+    open: 233,
+    high: 235.5,
+    low: 232,
+    close: 235,
+    adjClose: 199.21,
+    volume: 25452065
+  },
+  {
+    date: "2018/11/2",
+    open: 236.5,
+    high: 236.5,
+    low: 233.5,
+    close: 236.5,
+    adjClose: 200.48,
+    volume: 30722361
+  },
+  {
+    date: "2018/11/1",
+    open: 236,
+    high: 237,
+    low: 233,
+    close: 235.5,
+    adjClose: 199.63,
+    volume: 41974797
+  },
+  {
+    date: "2018/10/31",
+    open: 228,
+    high: 234,
+    low: 228,
+    close: 234,
+    adjClose: 198.36,
+    volume: 57283201
+  },
+  {
+    date: "2018/10/30",
+    open: 221,
+    high: 225,
+    low: 220.5,
+    close: 223,
+    adjClose: 189.03,
+    volume: 28877931
+  },
+  {
+    date: "2018/10/29",
+    open: 223,
+    high: 224,
+    low: 221,
+    close: 222.5,
+    adjClose: 188.61,
+    volume: 18463792
+  },
+  {
+    date: "2018/10/26",
+    open: 223,
+    high: 224,
+    low: 217,
+    close: 221,
+    adjClose: 187.34,
+    volume: 38439644
+  },
+  {
+    date: "2018/10/25",
+    open: 220.5,
+    high: 222,
+    low: 219.5,
+    close: 219.5,
+    adjClose: 186.07,
+    volume: 75524118
+  },
+  {
+    date: "2018/10/24",
+    open: 230,
+    high: 231,
+    low: 227,
+    close: 229.5,
+    adjClose: 194.54,
+    volume: 44321950
+  },
+  {
+    date: "2018/10/23",
+    open: 232,
+    high: 234,
+    low: 230,
+    close: 230,
+    adjClose: 194.97,
+    volume: 32827745
+  },
+  {
+    date: "2018/10/22",
+    open: 232.5,
+    high: 238,
+    low: 231.5,
+    close: 237,
+    adjClose: 200.9,
+    volume: 29275777
+  },
+  {
+    date: "2018/10/19",
+    open: 231,
+    high: 236.5,
+    low: 230,
+    close: 236,
+    adjClose: 200.05,
+    volume: 28358460
+  },
+  {
+    date: "2018/10/18",
+    open: 238,
+    high: 239,
+    low: 235.5,
+    close: 236.5,
+    adjClose: 200.48,
+    volume: 25676430
+  },
+  {
+    date: "2018/10/17",
+    open: 241.5,
+    high: 243,
+    low: 238,
+    close: 238.5,
+    adjClose: 202.17,
+    volume: 42494858
+  },
+  {
+    date: "2018/10/16",
+    open: 229.5,
+    high: 237,
+    low: 229,
+    close: 237,
+    adjClose: 200.9,
+    volume: 37818077
+  },
+  {
+    date: "2018/10/15",
+    open: 234,
+    high: 234,
+    low: 230.5,
+    close: 230.5,
+    adjClose: 195.39,
+    volume: 42168280
+  },
+  {
+    date: "2018/10/12",
+    open: 231,
+    high: 237,
+    low: 229,
+    close: 237,
+    adjClose: 200.9,
+    volume: 47175769
+  },
+  {
+    date: "2018/10/11",
+    open: 233.5,
+    high: 233.5,
+    low: 227,
+    close: 227.5,
+    adjClose: 192.85,
+    volume: 94589657
+  },
+  {
+    date: "2018/10/9",
+    open: 243.5,
+    high: 245,
+    low: 242,
+    close: 244,
+    adjClose: 206.84,
+    volume: 28905345
+  },
+  {
+    date: "2018/10/8",
+    open: 245.5,
+    high: 246.5,
+    low: 241,
+    close: 243.5,
+    adjClose: 206.41,
+    volume: 50876958
+  },
+  {
+    date: "2018/10/5",
+    open: 250,
+    high: 253,
+    low: 248.5,
+    close: 250,
+    adjClose: 211.92,
+    volume: 40204660
+  },
+  {
+    date: "2018/10/4",
+    open: 257,
+    high: 257.5,
+    low: 254,
+    close: 254,
+    adjClose: 215.31,
+    volume: 36408727
+  },
+  {
+    date: "2018/10/3",
+    open: 257.5,
+    high: 260,
+    low: 257,
+    close: 260,
+    adjClose: 220.4,
+    volume: 25228536
+  },
+  {
+    date: "2018/10/2",
+    open: 262,
+    high: 263,
+    low: 257,
+    close: 257.5,
+    adjClose: 218.28,
+    volume: 38391491
+  },
+  {
+    date: "2018/10/1",
+    open: 262,
+    high: 264,
+    low: 261,
+    close: 263,
+    adjClose: 222.94,
+    volume: 22254380
+  },
+  {
+    date: "2018/9/28",
+    open: 266,
+    high: 266,
+    low: 260,
+    close: 262.5,
+    adjClose: 222.52,
+    volume: 39626486
+  },
+  {
+    date: "2018/9/27",
+    open: 264,
+    high: 266,
+    low: 262,
+    close: 265,
+    adjClose: 224.64,
+    volume: 38495371
+  },
+  {
+    date: "2018/9/26",
+    open: 263,
+    high: 263.5,
+    low: 261,
+    close: 263.5,
+    adjClose: 223.36,
+    volume: 24859115
+  },
+  {
+    date: "2018/9/25",
+    open: 261.5,
+    high: 264,
+    low: 260.5,
+    close: 263.5,
+    adjClose: 223.36,
+    volume: 24397062
+  },
+  {
+    date: "2018/9/21",
+    open: 261.5,
+    high: 261.5,
+    low: 258,
+    close: 261.5,
+    adjClose: 221.67,
+    volume: 35012974
+  },
+  {
+    date: "2018/9/20",
+    open: 261.5,
+    high: 261.5,
+    low: 257.5,
+    close: 260,
+    adjClose: 220.4,
+    volume: 29649071
+  },
+  {
+    date: "2018/9/19",
+    open: 258,
+    high: 260,
+    low: 257,
+    close: 258,
+    adjClose: 218.7,
+    volume: 59227711
+  },
+  {
+    date: "2018/9/18",
+    open: 256.5,
+    high: 257,
+    low: 254,
+    close: 254.5,
+    adjClose: 215.74,
+    volume: 33960152
+  },
+  {
+    date: "2018/9/17",
+    open: 262.5,
+    high: 262.5,
+    low: 257,
+    close: 258,
+    adjClose: 218.7,
+    volume: 24765758
+  },
+  {
+    date: "2018/9/14",
+    open: 257,
+    high: 261.5,
+    low: 257,
+    close: 261,
+    adjClose: 221.25,
+    volume: 37903219
+  },
+  {
+    date: "2018/9/13",
+    open: 260,
+    high: 260,
+    low: 253.5,
+    close: 255,
+    adjClose: 216.16,
+    volume: 37576180
+  },
+  {
+    date: "2018/9/12",
+    open: 261,
+    high: 262,
+    low: 258,
+    close: 260.5,
+    adjClose: 220.82,
+    volume: 37885965
+  },
+  {
+    date: "2018/9/11",
+    open: 263,
+    high: 263.5,
+    low: 258,
+    close: 260,
+    adjClose: 220.4,
+    volume: 34350276
+  },
+  {
+    date: "2018/9/10",
+    open: 266.5,
+    high: 266.5,
+    low: 262.5,
+    close: 264.5,
+    adjClose: 224.21,
+    volume: 41659795
+  },
+  {
+    date: "2018/9/7",
+    open: 263,
+    high: 264,
+    low: 260.5,
+    close: 264,
+    adjClose: 223.79,
+    volume: 38663728
+  },
+  {
+    date: "2018/9/6",
+    open: 268,
+    high: 268,
+    low: 261,
+    close: 261,
+    adjClose: 221.25,
+    volume: 35698488
+  },
+  {
+    date: "2018/9/5",
+    open: 260,
+    high: 264.5,
+    low: 259,
+    close: 264,
+    adjClose: 223.79,
+    volume: 44864459
+  },
+  {
+    date: "2018/9/4",
+    open: 258.5,
+    high: 259.5,
+    low: 255.5,
+    close: 257.5,
+    adjClose: 218.28,
+    volume: 34304615
+  },
+  {
+    date: "2018/9/3",
+    open: 259,
+    high: 260,
+    low: 256.5,
+    close: 257,
+    adjClose: 217.85,
+    volume: 26720905
+  },
+  {
+    date: "2018/8/31",
+    open: 257.5,
+    high: 259,
+    low: 254,
+    close: 256,
+    adjClose: 217.01,
+    volume: 69069506
+  },
+  {
+    date: "2018/8/30",
+    open: 264.5,
+    high: 268,
+    low: 262.5,
+    close: 263.5,
+    adjClose: 223.36,
+    volume: 48957808
+  },
+  {
+    date: "2018/8/29",
+    open: 253.5,
+    high: 259,
+    low: 253.5,
+    close: 259,
+    adjClose: 219.55,
+    volume: 56993182
+  },
+  {
+    date: "2018/8/28",
+    open: 248.5,
+    high: 250,
+    low: 248,
+    close: 249.5,
+    adjClose: 211.5,
+    volume: 36792531
+  },
+  {
+    date: "2018/8/27",
+    open: 246,
+    high: 246.5,
+    low: 244.5,
+    close: 245,
+    adjClose: 207.68,
+    volume: 15152299
+  },
+  {
+    date: "2018/8/24",
+    open: 245.5,
+    high: 246,
+    low: 243,
+    close: 243.5,
+    adjClose: 206.41,
+    volume: 14355943
+  },
+  {
+    date: "2018/8/23",
+    open: 243,
+    high: 244.5,
+    low: 243,
+    close: 244.5,
+    adjClose: 207.26,
+    volume: 14839240
+  },
+  {
+    date: "2018/8/22",
+    open: 241.5,
+    high: 242.5,
+    low: 240.5,
+    close: 242,
+    adjClose: 205.14,
+    volume: 12614240
+  },
+  {
+    date: "2018/8/21",
+    open: 239,
+    high: 241,
+    low: 238.5,
+    close: 241,
+    adjClose: 204.29,
+    volume: 12014127
+  },
+  {
+    date: "2018/8/20",
+    open: 239.5,
+    high: 240,
+    low: 238,
+    close: 239.5,
+    adjClose: 203.02,
+    volume: 16933437
+  },
+  {
+    date: "2018/8/17",
+    open: 239.5,
+    high: 241,
+    low: 239,
+    close: 239.5,
+    adjClose: 203.02,
+    volume: 18324474
+  },
+  {
+    date: "2018/8/16",
+    open: 238,
+    high: 241.5,
+    low: 238,
+    close: 239,
+    adjClose: 202.6,
+    volume: 19155966
+  },
+  {
+    date: "2018/8/15",
+    open: 244.5,
+    high: 244.5,
+    low: 239.5,
+    close: 241.5,
+    adjClose: 204.72,
+    volume: 18473321
+  },
+  {
+    date: "2018/8/14",
+    open: 245,
+    high: 245,
+    low: 242.5,
+    close: 243.5,
+    adjClose: 206.41,
+    volume: 17358913
+  },
+  {
+    date: "2018/8/13",
+    open: 241.5,
+    high: 243,
+    low: 239,
+    close: 240.5,
+    adjClose: 203.87,
+    volume: 17881194
+  },
+  {
+    date: "2018/8/10",
+    open: 246.5,
+    high: 247,
+    low: 244.5,
+    close: 245,
+    adjClose: 207.68,
+    volume: 15890492
+  },
+  {
+    date: "2018/8/9",
+    open: 247,
+    high: 248,
+    low: 246,
+    close: 247,
+    adjClose: 209.38,
+    volume: 15128655
+  },
+  {
+    date: "2018/8/8",
+    open: 245,
+    high: 247.5,
+    low: 244.5,
+    close: 247.5,
+    adjClose: 209.8,
+    volume: 24382432
+  },
+  {
+    date: "2018/8/7",
+    open: 245,
+    high: 245.5,
+    low: 241.5,
+    close: 241.5,
+    adjClose: 204.72,
+    volume: 23992418
+  },
+  {
+    date: "2018/8/6",
+    open: 245,
+    high: 247,
+    low: 244,
+    close: 245.5,
+    adjClose: 208.11,
+    volume: 22364568
+  },
+  {
+    date: "2018/8/3",
+    open: 246,
+    high: 248,
+    low: 245,
+    close: 247,
+    adjClose: 209.38,
+    volume: 24719097
+  },
+  {
+    date: "2018/8/2",
+    open: 249,
+    high: 249.5,
+    low: 243.5,
+    close: 244.5,
+    adjClose: 207.26,
+    volume: 22402110
+  },
+  {
+    date: "2018/8/1",
+    open: 247,
+    high: 248,
+    low: 246.5,
+    close: 248,
+    adjClose: 210.23,
+    volume: 29136161
+  },
+  {
+    date: "2018/7/31",
+    open: 243.5,
+    high: 246,
+    low: 242,
+    close: 246,
+    adjClose: 208.53,
+    volume: 27059442
+  },
+  {
+    date: "2018/7/30",
+    open: 244.5,
+    high: 245.5,
+    low: 244,
+    close: 245.5,
+    adjClose: 208.11,
+    volume: 22788730
+  },
+  {
+    date: "2018/7/27",
+    open: 242,
+    high: 244.5,
+    low: 241,
+    close: 244.5,
+    adjClose: 207.26,
+    volume: 27129646
+  },
+  {
+    date: "2018/7/26",
+    open: 241,
+    high: 242.5,
+    low: 239.5,
+    close: 241,
+    adjClose: 204.29,
+    volume: 30606388
+  },
+  {
+    date: "2018/7/25",
+    open: 239,
+    high: 241,
+    low: 239,
+    close: 240.5,
+    adjClose: 203.87,
+    volume: 20962512
+  },
+  {
+    date: "2018/7/24",
+    open: 240,
+    high: 241.5,
+    low: 238.5,
+    close: 241,
+    adjClose: 204.29,
+    volume: 27239267
+  },
+  {
+    date: "2018/7/23",
+    open: 239,
+    high: 245,
+    low: 238.5,
+    close: 241,
+    adjClose: 204.29,
+    volume: 52256877
+  },
+  {
+    date: "2018/7/20",
+    open: 235,
+    high: 237.5,
+    low: 233,
+    close: 237.5,
+    adjClose: 201.33,
+    volume: 97969023
+  },
+  {
+    date: "2018/7/19",
+    open: 225.5,
+    high: 227,
+    low: 224.5,
+    close: 224.5,
+    adjClose: 190.31,
+    volume: 39661216
+  },
+  {
+    date: "2018/7/18",
+    open: 223,
+    high: 224,
+    low: 222,
+    close: 223,
+    adjClose: 189.03,
+    volume: 39898658
+  },
+  {
+    date: "2018/7/17",
+    open: 222.5,
+    high: 223.5,
+    low: 221,
+    close: 221.5,
+    adjClose: 187.76,
+    volume: 21548436
+  },
+  {
+    date: "2018/7/16",
+    open: 224.5,
+    high: 225,
+    low: 223.5,
+    close: 223.5,
+    adjClose: 189.46,
+    volume: 15819254
+  },
+  {
+    date: "2018/7/13",
+    open: 222.5,
+    high: 224.5,
+    low: 222.5,
+    close: 224.5,
+    adjClose: 190.31,
+    volume: 29716311
+  },
+  {
+    date: "2018/7/12",
+    open: 218,
+    high: 222,
+    low: 218,
+    close: 220.5,
+    adjClose: 186.91,
+    volume: 23666051
+  },
+  {
+    date: "2018/7/11",
+    open: 220,
+    high: 220,
+    low: 218,
+    close: 220,
+    adjClose: 186.49,
+    volume: 19854690
+  },
+  {
+    date: "2018/7/10",
+    open: 223,
+    high: 224,
+    low: 222,
+    close: 222,
+    adjClose: 188.19,
+    volume: 20118957
+  },
+  {
+    date: "2018/7/9",
+    open: 219.5,
+    high: 223,
+    low: 218.5,
+    close: 221.5,
+    adjClose: 187.76,
+    volume: 38734793
+  },
+  {
+    date: "2018/7/6",
+    open: 217.5,
+    high: 217.5,
+    low: 215,
+    close: 217,
+    adjClose: 183.95,
+    volume: 29033762
+  },
+  {
+    date: "2018/7/5",
+    open: 214,
+    high: 215,
+    low: 213,
+    close: 214.5,
+    adjClose: 181.83,
+    volume: 18225416
+  },
+  {
+    date: "2018/7/4",
+    open: 217,
+    high: 217.5,
+    low: 215.5,
+    close: 216,
+    adjClose: 183.1,
+    volume: 15212295
+  },
+  {
+    date: "2018/7/3",
+    open: 215.5,
+    high: 218,
+    low: 213.5,
+    close: 214.5,
+    adjClose: 181.83,
+    volume: 28323220
+  },
+  {
+    date: "2018/7/2",
+    open: 218.5,
+    high: 219,
+    low: 214,
+    close: 214,
+    adjClose: 181.4,
+    volume: 32449442
+  },
+  {
+    date: "2018/6/29",
+    open: 212,
+    high: 217,
+    low: 212,
+    close: 216.5,
+    adjClose: 183.52,
+    volume: 34313680
+  },
+  {
+    date: "2018/6/28",
+    open: 211,
+    high: 214.5,
+    low: 210,
+    close: 212,
+    adjClose: 179.71,
+    volume: 37940780
+  },
+  {
+    date: "2018/6/27",
+    open: 216,
+    high: 216,
+    low: 212.5,
+    close: 213,
+    adjClose: 180.56,
+    volume: 39888414
+  },
+  {
+    date: "2018/6/26",
+    open: 215.5,
+    high: 216,
+    low: 212.5,
+    close: 214.5,
+    adjClose: 181.83,
+    volume: 38446346
+  },
+  {
+    date: "2018/6/25",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2018/6/25",
+    open: 220,
+    high: 220.5,
+    low: 218,
+    close: 218,
+    adjClose: 184.8,
+    volume: 45025211
+  },
+  {
+    date: "2018/6/22",
+    open: 224.5,
+    high: 227.5,
+    low: 224,
+    close: 227.5,
+    adjClose: 186.07,
+    volume: 43581409
+  },
+  {
+    date: "2018/6/21",
+    open: 227.5,
+    high: 228,
+    low: 226,
+    close: 226.5,
+    adjClose: 185.25,
+    volume: 31242557
+  },
+  {
+    date: "2018/6/20",
+    open: 224.5,
+    high: 227.5,
+    low: 223.5,
+    close: 226,
+    adjClose: 184.84,
+    volume: 40708701
+  },
+  {
+    date: "2018/6/19",
+    open: 225.5,
+    high: 226,
+    low: 224,
+    close: 225,
+    adjClose: 184.02,
+    volume: 56889624
+  },
+  {
+    date: "2018/6/15",
+    open: 225,
+    high: 231,
+    low: 224,
+    close: 231,
+    adjClose: 188.93,
+    volume: 48059679
+  },
+  {
+    date: "2018/6/14",
+    open: 230,
+    high: 230,
+    low: 226.5,
+    close: 226.5,
+    adjClose: 185.25,
+    volume: 33408041
+  },
+  {
+    date: "2018/6/13",
+    open: 229,
+    high: 232,
+    low: 228,
+    close: 232,
+    adjClose: 189.75,
+    volume: 28944970
+  },
+  {
+    date: "2018/6/12",
+    open: 225,
+    high: 229,
+    low: 224,
+    close: 229,
+    adjClose: 187.29,
+    volume: 29501260
+  },
+  {
+    date: "2018/6/11",
+    open: 226.5,
+    high: 227,
+    low: 225,
+    close: 226,
+    adjClose: 184.84,
+    volume: 21696933
+  },
+  {
+    date: "2018/6/8",
+    open: 229,
+    high: 229,
+    low: 226,
+    close: 227,
+    adjClose: 185.66,
+    volume: 23548851
+  },
+  {
+    date: "2018/6/7",
+    open: 231,
+    high: 231.5,
+    low: 228,
+    close: 230,
+    adjClose: 188.11,
+    volume: 24958266
+  },
+  {
+    date: "2018/6/6",
+    open: 229,
+    high: 230,
+    low: 227,
+    close: 230,
+    adjClose: 188.11,
+    volume: 24767441
+  },
+  {
+    date: "2018/6/5",
+    open: 230,
+    high: 230,
+    low: 226.5,
+    close: 229,
+    adjClose: 187.29,
+    volume: 26534884
+  },
+  {
+    date: "2018/6/4",
+    open: 227.5,
+    high: 229,
+    low: 227,
+    close: 229,
+    adjClose: 187.29,
+    volume: 25959480
+  },
+  {
+    date: "2018/6/1",
+    open: 224.5,
+    high: 226.5,
+    low: 224,
+    close: 224,
+    adjClose: 183.2,
+    volume: 27617994
+  },
+  {
+    date: "2018/5/31",
+    open: 221.5,
+    high: 224,
+    low: 220.5,
+    close: 224,
+    adjClose: 183.2,
+    volume: 96069458
+  },
+  {
+    date: "2018/5/30",
+    open: 224,
+    high: 224,
+    low: 220.5,
+    close: 221,
+    adjClose: 180.75,
+    volume: 49163788
+  },
+  {
+    date: "2018/5/29",
+    open: 226.5,
+    high: 226.5,
+    low: 223.5,
+    close: 225,
+    adjClose: 184.02,
+    volume: 23764776
+  },
+  {
+    date: "2018/5/28",
+    open: 229.5,
+    high: 230,
+    low: 226.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 16373270
+  },
+  {
+    date: "2018/5/25",
+    open: 228.5,
+    high: 229.5,
+    low: 228,
+    close: 228.5,
+    adjClose: 186.88,
+    volume: 15971294
+  },
+  {
+    date: "2018/5/24",
+    open: 229.5,
+    high: 230,
+    low: 228.5,
+    close: 229,
+    adjClose: 187.29,
+    volume: 12996610
+  },
+  {
+    date: "2018/5/23",
+    open: 231.5,
+    high: 231.5,
+    low: 228.5,
+    close: 228.5,
+    adjClose: 186.88,
+    volume: 23062899
+  },
+  {
+    date: "2018/5/22",
+    open: 230,
+    high: 233.5,
+    low: 229,
+    close: 229,
+    adjClose: 187.29,
+    volume: 22355097
+  },
+  {
+    date: "2018/5/21",
+    open: 225,
+    high: 230,
+    low: 225,
+    close: 229,
+    adjClose: 187.29,
+    volume: 16127815
+  },
+  {
+    date: "2018/5/18",
+    open: 225.5,
+    high: 227.5,
+    low: 223.5,
+    close: 223.5,
+    adjClose: 182.8,
+    volume: 27664541
+  },
+  {
+    date: "2018/5/17",
+    open: 231,
+    high: 231.5,
+    low: 226.5,
+    close: 226.5,
+    adjClose: 185.25,
+    volume: 26852737
+  },
+  {
+    date: "2018/5/16",
+    open: 229.5,
+    high: 230.5,
+    low: 228.5,
+    close: 230.5,
+    adjClose: 188.52,
+    volume: 14409556
+  },
+  {
+    date: "2018/5/15",
+    open: 233.5,
+    high: 234,
+    low: 229.5,
+    close: 230.5,
+    adjClose: 188.52,
+    volume: 23771769
+  },
+  {
+    date: "2018/5/14",
+    open: 234.5,
+    high: 234.5,
+    low: 232.5,
+    close: 233,
+    adjClose: 190.57,
+    volume: 19921437
+  },
+  {
+    date: "2018/5/11",
+    open: 232,
+    high: 234,
+    low: 230.5,
+    close: 233,
+    adjClose: 190.57,
+    volume: 30693910
+  },
+  {
+    date: "2018/5/10",
+    open: 231,
+    high: 231.5,
+    low: 229,
+    close: 229.5,
+    adjClose: 187.7,
+    volume: 27530377
+  },
+  {
+    date: "2018/5/9",
+    open: 228.5,
+    high: 232,
+    low: 228.5,
+    close: 229.5,
+    adjClose: 187.7,
+    volume: 33778934
+  },
+  {
+    date: "2018/5/8",
+    open: 224,
+    high: 228.5,
+    low: 223.5,
+    close: 228,
+    adjClose: 186.48,
+    volume: 40324763
+  },
+  {
+    date: "2018/5/7",
+    open: 225,
+    high: 225.5,
+    low: 221.5,
+    close: 223.5,
+    adjClose: 182.8,
+    volume: 23268759
+  },
+  {
+    date: "2018/5/4",
+    open: 221,
+    high: 224,
+    low: 220.5,
+    close: 223,
+    adjClose: 182.39,
+    volume: 27208722
+  },
+  {
+    date: "2018/5/3",
+    open: 221,
+    high: 222.5,
+    low: 220,
+    close: 220.5,
+    adjClose: 180.34,
+    volume: 31690731
+  },
+  {
+    date: "2018/5/2",
+    open: 227,
+    high: 227.5,
+    low: 222.5,
+    close: 223,
+    adjClose: 182.39,
+    volume: 38167942
+  },
+  {
+    date: "2018/4/30",
+    open: 224.5,
+    high: 228,
+    low: 222.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 28500789
+  },
+  {
+    date: "2018/4/27",
+    open: 225,
+    high: 225.5,
+    low: 221,
+    close: 223.5,
+    adjClose: 182.8,
+    volume: 34174459
+  },
+  {
+    date: "2018/4/26",
+    open: 225,
+    high: 225.5,
+    low: 221,
+    close: 222,
+    adjClose: 181.57,
+    volume: 48023557
+  },
+  {
+    date: "2018/4/25",
+    open: 225.5,
+    high: 226,
+    low: 224,
+    close: 225,
+    adjClose: 184.02,
+    volume: 46771110
+  },
+  {
+    date: "2018/4/24",
+    open: 225,
+    high: 227.5,
+    low: 225,
+    close: 227,
+    adjClose: 185.66,
+    volume: 40967892
+  },
+  {
+    date: "2018/4/23",
+    open: 226.5,
+    high: 227.5,
+    low: 225,
+    close: 226.5,
+    adjClose: 185.25,
+    volume: 71009975
+  },
+  {
+    date: "2018/4/20",
+    open: 228,
+    high: 231.5,
+    low: 228,
+    close: 229,
+    adjClose: 187.29,
+    volume: 128452087
+  },
+  {
+    date: "2018/4/19",
+    open: 242,
+    high: 244.5,
+    low: 241,
+    close: 244.5,
+    adjClose: 199.97,
+    volume: 31901989
+  },
+  {
+    date: "2018/4/18",
+    open: 239.5,
+    high: 241.5,
+    low: 236.5,
+    close: 238,
+    adjClose: 194.65,
+    volume: 42500048
+  },
+  {
+    date: "2018/4/17",
+    open: 243,
+    high: 243.5,
+    low: 237.5,
+    close: 238,
+    adjClose: 194.65,
+    volume: 42756389
+  },
+  {
+    date: "2018/4/16",
+    open: 243,
+    high: 244,
+    low: 242,
+    close: 243.5,
+    adjClose: 199.15,
+    volume: 18350139
+  },
+  {
+    date: "2018/4/13",
+    open: 246,
+    high: 246,
+    low: 244,
+    close: 244.5,
+    adjClose: 199.97,
+    volume: 19742548
+  },
+  {
+    date: "2018/4/12",
+    open: 248.5,
+    high: 248.5,
+    low: 244,
+    close: 245,
+    adjClose: 200.38,
+    volume: 20409657
+  },
+  {
+    date: "2018/4/11",
+    open: 246.5,
+    high: 248.5,
+    low: 246.5,
+    close: 248,
+    adjClose: 202.83,
+    volume: 21607935
+  },
+  {
+    date: "2018/4/10",
+    open: 244.5,
+    high: 249,
+    low: 243.5,
+    close: 245.5,
+    adjClose: 200.79,
+    volume: 25156994
+  },
+  {
+    date: "2018/4/9",
+    open: 248,
+    high: 248,
+    low: 243.5,
+    close: 245,
+    adjClose: 200.38,
+    volume: 34694824
+  },
+  {
+    date: "2018/4/3",
+    open: 243,
+    high: 244.5,
+    low: 242,
+    close: 244,
+    adjClose: 199.56,
+    volume: 35813944
+  },
+  {
+    date: "2018/4/2",
+    open: 248.5,
+    high: 249,
+    low: 245,
+    close: 246.5,
+    adjClose: 201.61,
+    volume: 17696003
+  },
+  {
+    date: "2018/3/30",
+    open: 247.5,
+    high: 249.5,
+    low: 246,
+    close: 246,
+    adjClose: 201.2,
+    volume: 16996346
+  },
+  {
+    date: "2018/3/29",
+    open: 243,
+    high: 247,
+    low: 242.5,
+    close: 244,
+    adjClose: 199.56,
+    volume: 36165345
+  },
+  {
+    date: "2018/3/28",
+    open: 247.5,
+    high: 248,
+    low: 244,
+    close: 245,
+    adjClose: 200.38,
+    volume: 29637411
+  },
+  {
+    date: "2018/3/27",
+    open: 248,
+    high: 251,
+    low: 247,
+    close: 251,
+    adjClose: 205.29,
+    volume: 31008260
+  },
+  {
+    date: "2018/3/26",
+    open: 241.5,
+    high: 244.5,
+    low: 241.5,
+    close: 243.5,
+    adjClose: 199.15,
+    volume: 36987945
+  },
+  {
+    date: "2018/3/23",
+    open: 245,
+    high: 247,
+    low: 244,
+    close: 245,
+    adjClose: 200.38,
+    volume: 52498390
+  },
+  {
+    date: "2018/3/22",
+    open: 254.5,
+    high: 254.5,
+    low: 249.5,
+    close: 251.5,
+    adjClose: 205.7,
+    volume: 27000668
+  },
+  {
+    date: "2018/3/21",
+    open: 255,
+    high: 255,
+    low: 251,
+    close: 252.5,
+    adjClose: 206.51,
+    volume: 28976737
+  },
+  {
+    date: "2018/3/20",
+    open: 253,
+    high: 254,
+    low: 251.5,
+    close: 253,
+    adjClose: 206.92,
+    volume: 21840151
+  },
+  {
+    date: "2018/3/19",
+    open: 252.5,
+    high: 255.5,
+    low: 251,
+    close: 255,
+    adjClose: 208.56,
+    volume: 21440766
+  },
+  {
+    date: "2018/3/16",
+    open: 253,
+    high: 256,
+    low: 249.5,
+    close: 255,
+    adjClose: 208.56,
+    volume: 62929326
+  },
+  {
+    date: "2018/3/15",
+    open: 258,
+    high: 258,
+    low: 255,
+    close: 255,
+    adjClose: 208.56,
+    volume: 19396493
+  },
+  {
+    date: "2018/3/14",
+    open: 256.5,
+    high: 257.5,
+    low: 255.5,
+    close: 257,
+    adjClose: 210.19,
+    volume: 23772838
+  },
+  {
+    date: "2018/3/13",
+    open: 255.5,
+    high: 259,
+    low: 255,
+    close: 259,
+    adjClose: 211.83,
+    volume: 33756883
+  },
+  {
+    date: "2018/3/12",
+    open: 252,
+    high: 255,
+    low: 251.5,
+    close: 254,
+    adjClose: 207.74,
+    volume: 24492615
+  },
+  {
+    date: "2018/3/9",
+    open: 250,
+    high: 251,
+    low: 248.5,
+    close: 250.5,
+    adjClose: 204.88,
+    volume: 19831063
+  },
+  {
+    date: "2018/3/8",
+    open: 249.5,
+    high: 251.5,
+    low: 249,
+    close: 249.5,
+    adjClose: 204.06,
+    volume: 20645694
+  },
+  {
+    date: "2018/3/7",
+    open: 248,
+    high: 248.5,
+    low: 246,
+    close: 247,
+    adjClose: 202.02,
+    volume: 30391219
+  },
+  {
+    date: "2018/3/6",
+    open: 245.5,
+    high: 250,
+    low: 245.5,
+    close: 250,
+    adjClose: 204.47,
+    volume: 34890780
+  },
+  {
+    date: "2018/3/5",
+    open: 242.5,
+    high: 243,
+    low: 240.5,
+    close: 241.5,
+    adjClose: 197.52,
+    volume: 27337846
+  },
+  {
+    date: "2018/3/2",
+    open: 240,
+    high: 241,
+    low: 238.5,
+    close: 240,
+    adjClose: 196.29,
+    volume: 35139170
+  },
+  {
+    date: "2018/3/1",
+    open: 244,
+    high: 245,
+    low: 242,
+    close: 243,
+    adjClose: 198.74,
+    volume: 39719984
+  },
+  {
+    date: "2018/2/27",
+    open: 250.5,
+    high: 250.5,
+    low: 246,
+    close: 246,
+    adjClose: 201.2,
+    volume: 40818119
+  },
+  {
+    date: "2018/2/26",
+    open: 247,
+    high: 247.5,
+    low: 245,
+    close: 246.5,
+    adjClose: 201.61,
+    volume: 35901810
+  },
+  {
+    date: "2018/2/23",
+    open: 241,
+    high: 245,
+    low: 241,
+    close: 245,
+    adjClose: 200.38,
+    volume: 26985776
+  },
+  {
+    date: "2018/2/22",
+    open: 244,
+    high: 244,
+    low: 239,
+    close: 239.5,
+    adjClose: 195.88,
+    volume: 39239993
+  },
+  {
+    date: "2018/2/21",
+    open: 244.5,
+    high: 244.5,
+    low: 242,
+    close: 242.5,
+    adjClose: 198.33,
+    volume: 71504174
+  },
+  {
+    date: "2018/2/12",
+    open: 235.5,
+    high: 237.5,
+    low: 235,
+    close: 236.5,
+    adjClose: 193.43,
+    volume: 35635236
+  },
+  {
+    date: "2018/2/9",
+    open: 230,
+    high: 233,
+    low: 228.5,
+    close: 232.5,
+    adjClose: 190.16,
+    volume: 65735265
+  },
+  {
+    date: "2018/2/8",
+    open: 239.5,
+    high: 242,
+    low: 238,
+    close: 238.5,
+    adjClose: 195.06,
+    volume: 30989550
+  },
+  {
+    date: "2018/2/7",
+    open: 245,
+    high: 245.5,
+    low: 239.5,
+    close: 240,
+    adjClose: 196.29,
+    volume: 80063178
+  },
+  {
+    date: "2018/2/6",
+    open: 242.5,
+    high: 243.5,
+    low: 234,
+    close: 239,
+    adjClose: 195.47,
+    volume: 102409048
+  },
+  {
+    date: "2018/2/5",
+    open: 251,
+    high: 254.5,
+    low: 250.5,
+    close: 253,
+    adjClose: 206.92,
+    volume: 45594379
+  },
+  {
+    date: "2018/2/2",
+    open: 259,
+    high: 260,
+    low: 255,
+    close: 259.5,
+    adjClose: 212.24,
+    volume: 25707560
+  },
+  {
+    date: "2018/2/1",
+    open: 257.5,
+    high: 261,
+    low: 257,
+    close: 259.5,
+    adjClose: 212.24,
+    volume: 30559457
+  },
+  {
+    date: "2018/1/31",
+    open: 253,
+    high: 257.5,
+    low: 252,
+    close: 255,
+    adjClose: 208.56,
+    volume: 44136808
+  },
+  {
+    date: "2018/1/30",
+    open: 256,
+    high: 257.5,
+    low: 252.5,
+    close: 253,
+    adjClose: 206.92,
+    volume: 36860591
+  },
+  {
+    date: "2018/1/29",
+    open: 259,
+    high: 261.5,
+    low: 255,
+    close: 258.5,
+    adjClose: 211.42,
+    volume: 30071234
+  },
+  {
+    date: "2018/1/26",
+    open: 256.5,
+    high: 257.5,
+    low: 253.5,
+    close: 255,
+    adjClose: 208.56,
+    volume: 39555523
+  },
+  {
+    date: "2018/1/25",
+    open: 258,
+    high: 264,
+    low: 256.5,
+    close: 258,
+    adjClose: 211.01,
+    volume: 44643756
+  },
+  {
+    date: "2018/1/24",
+    open: 263,
+    high: 263,
+    low: 256.5,
+    close: 258,
+    adjClose: 211.01,
+    volume: 41874813
+  },
+  {
+    date: "2018/1/23",
+    open: 262.5,
+    high: 266,
+    low: 262.5,
+    close: 266,
+    adjClose: 217.56,
+    volume: 33527444
+  },
+  {
+    date: "2018/1/22",
+    open: 257.5,
+    high: 262,
+    low: 257,
+    close: 261.5,
+    adjClose: 213.87,
+    volume: 43400509
+  },
+  {
+    date: "2018/1/19",
+    open: 253.5,
+    high: 255.5,
+    low: 251.5,
+    close: 255.5,
+    adjClose: 208.97,
+    volume: 50549292
+  },
+  {
+    date: "2018/1/18",
+    open: 245,
+    high: 250,
+    low: 245,
+    close: 248.5,
+    adjClose: 203.24,
+    volume: 49896952
+  },
+  {
+    date: "2018/1/17",
+    open: 240.5,
+    high: 243,
+    low: 239,
+    close: 242,
+    adjClose: 197.93,
+    volume: 38046119
+  },
+  {
+    date: "2018/1/16",
+    open: 240,
+    high: 240.5,
+    low: 238,
+    close: 240.5,
+    adjClose: 196.7,
+    volume: 21691632
+  },
+  {
+    date: "2018/1/15",
+    open: 240,
+    high: 240,
+    low: 238,
+    close: 240,
+    adjClose: 196.29,
+    volume: 27476533
+  },
+  {
+    date: "2018/1/12",
+    open: 234.5,
+    high: 238,
+    low: 233.5,
+    close: 237,
+    adjClose: 193.84,
+    volume: 21513291
+  },
+  {
+    date: "2018/1/11",
+    open: 235,
+    high: 236,
+    low: 232.5,
+    close: 235,
+    adjClose: 192.2,
+    volume: 30446338
+  },
+  {
+    date: "2018/1/10",
+    open: 241.5,
+    high: 242,
+    low: 236,
+    close: 236.5,
+    adjClose: 193.43,
+    volume: 23631220
+  },
+  {
+    date: "2018/1/9",
+    open: 242,
+    high: 242,
+    low: 239.5,
+    close: 242,
+    adjClose: 197.93,
+    volume: 19043123
+  },
+  {
+    date: "2018/1/8",
+    open: 242,
+    high: 242.5,
+    low: 240.5,
+    close: 242,
+    adjClose: 197.93,
+    volume: 20233692
+  },
+  {
+    date: "2018/1/5",
+    open: 240,
+    high: 240,
+    low: 238,
+    close: 240,
+    adjClose: 196.29,
+    volume: 22438255
+  },
+  {
+    date: "2018/1/4",
+    open: 240,
+    high: 240,
+    low: 236.5,
+    close: 239.5,
+    adjClose: 195.88,
+    volume: 29096613
+  },
+  {
+    date: "2018/1/3",
+    open: 236,
+    high: 238,
+    low: 235.5,
+    close: 237,
+    adjClose: 193.84,
+    volume: 29308091
+  },
+  {
+    date: "2018/1/2",
+    open: 231.5,
+    high: 232.5,
+    low: 231,
+    close: 232.5,
+    adjClose: 190.16,
+    volume: 18055269
+  },
+  {
+    date: "2017/12/29",
+    open: 227.5,
+    high: 230,
+    low: 226.5,
+    close: 229.5,
+    adjClose: 187.7,
+    volume: 25007443
+  },
+  {
+    date: "2017/12/28",
+    open: 226.5,
+    high: 228,
+    low: 225,
+    close: 226,
+    adjClose: 184.84,
+    volume: 24304371
+  },
+  {
+    date: "2017/12/27",
+    open: 225,
+    high: 226,
+    low: 225,
+    close: 225,
+    adjClose: 184.02,
+    volume: 12515245
+  },
+  {
+    date: "2017/12/26",
+    open: 229,
+    high: 229,
+    low: 225,
+    close: 226,
+    adjClose: 184.84,
+    volume: 13755843
+  },
+  {
+    date: "2017/12/25",
+    open: 228,
+    high: 229.5,
+    low: 226.5,
+    close: 228.5,
+    adjClose: 186.88,
+    volume: 4579675
+  },
+  {
+    date: "2017/12/22",
+    open: 225,
+    high: 227.5,
+    low: 224,
+    close: 227.5,
+    adjClose: 186.07,
+    volume: 19036483
+  },
+  {
+    date: "2017/12/21",
+    open: 226.5,
+    high: 227,
+    low: 224.5,
+    close: 225,
+    adjClose: 184.02,
+    volume: 18558164
+  },
+  {
+    date: "2017/12/20",
+    open: 225,
+    high: 225.5,
+    low: 223.5,
+    close: 224.5,
+    adjClose: 183.61,
+    volume: 26289333
+  },
+  {
+    date: "2017/12/19",
+    open: 226.5,
+    high: 228.5,
+    low: 224,
+    close: 225,
+    adjClose: 184.02,
+    volume: 25714129
+  },
+  {
+    date: "2017/12/18",
+    open: 227,
+    high: 228,
+    low: 226.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 14564664
+  },
+  {
+    date: "2017/12/15",
+    open: 228.5,
+    high: 230,
+    low: 226.5,
+    close: 230,
+    adjClose: 188.11,
+    volume: 42625779
+  },
+  {
+    date: "2017/12/14",
+    open: 228,
+    high: 230.5,
+    low: 227.5,
+    close: 230.5,
+    adjClose: 188.52,
+    volume: 17193313
+  },
+  {
+    date: "2017/12/13",
+    open: 227.5,
+    high: 228,
+    low: 226.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 17920331
+  },
+  {
+    date: "2017/12/12",
+    open: 229.5,
+    high: 229.5,
+    low: 225,
+    close: 227.5,
+    adjClose: 186.07,
+    volume: 21796584
+  },
+  {
+    date: "2017/12/11",
+    open: 228.5,
+    high: 229,
+    low: 227,
+    close: 227.5,
+    adjClose: 186.07,
+    volume: 20649609
+  },
+  {
+    date: "2017/12/8",
+    open: 231,
+    high: 231,
+    low: 224.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 37959260
+  },
+  {
+    date: "2017/12/7",
+    open: 226.5,
+    high: 226.5,
+    low: 222.5,
+    close: 226.5,
+    adjClose: 185.25,
+    volume: 41343903
+  },
+  {
+    date: "2017/12/6",
+    open: 228,
+    high: 229.5,
+    low: 226.5,
+    close: 227,
+    adjClose: 185.66,
+    volume: 32371690
+  },
+  {
+    date: "2017/12/5",
+    open: 231,
+    high: 231,
+    low: 228.5,
+    close: 229.5,
+    adjClose: 187.7,
+    volume: 29664765
+  },
+  {
+    date: "2017/12/4",
+    open: 232.5,
+    high: 234.5,
+    low: 231,
+    close: 234,
+    adjClose: 191.38,
+    volume: 21635032
+  },
+  {
+    date: "2017/12/1",
+    open: 228.5,
+    high: 233.5,
+    low: 227.5,
+    close: 231,
+    adjClose: 188.93,
+    volume: 37446265
+  },
+  {
+    date: "2017/11/30",
+    open: 226.5,
+    high: 230.5,
+    low: 226,
+    close: 226,
+    adjClose: 184.84,
+    volume: 109231770
+  },
+  {
+    date: "2017/11/29",
+    open: 235,
+    high: 236,
+    low: 234.5,
+    close: 234.5,
+    adjClose: 191.79,
+    volume: 25762797
+  },
+  {
+    date: "2017/11/28",
+    open: 234.5,
+    high: 235,
+    low: 233,
+    close: 234,
+    adjClose: 191.38,
+    volume: 44803178
+  },
+  {
+    date: "2017/11/27",
+    open: 240,
+    high: 240,
+    low: 237,
+    close: 237,
+    adjClose: 193.84,
+    volume: 32247324
+  },
+  {
+    date: "2017/11/24",
+    open: 242,
+    high: 244.5,
+    low: 241.5,
+    close: 244,
+    adjClose: 199.56,
+    volume: 11154453
+  },
+  {
+    date: "2017/11/23",
+    open: 242,
+    high: 243.5,
+    low: 241.5,
+    close: 242.5,
+    adjClose: 198.33,
+    volume: 9346763
+  },
+  {
+    date: "2017/11/22",
+    open: 244.5,
+    high: 244.5,
+    low: 242,
+    close: 242,
+    adjClose: 197.93,
+    volume: 26626431
+  },
+  {
+    date: "2017/11/21",
+    open: 240,
+    high: 243,
+    low: 239.5,
+    close: 243,
+    adjClose: 198.74,
+    volume: 20513024
+  },
+  {
+    date: "2017/11/20",
+    open: 241,
+    high: 241.5,
+    low: 238,
+    close: 238.5,
+    adjClose: 195.06,
+    volume: 16265271
+  },
+  {
+    date: "2017/11/17",
+    open: 240.5,
+    high: 242.5,
+    low: 240.5,
+    close: 241.5,
+    adjClose: 197.52,
+    volume: 18676825
+  },
+  {
+    date: "2017/11/16",
+    open: 238,
+    high: 240,
+    low: 237.5,
+    close: 238,
+    adjClose: 194.65,
+    volume: 16487172
+  },
+  {
+    date: "2017/11/15",
+    open: 239,
+    high: 239.5,
+    low: 236,
+    close: 237.5,
+    adjClose: 194.25,
+    volume: 28720308
+  },
+  {
+    date: "2017/11/14",
+    open: 241,
+    high: 241,
+    low: 239,
+    close: 240,
+    adjClose: 196.29,
+    volume: 16880176
+  },
+  {
+    date: "2017/11/13",
+    open: 240,
+    high: 241.5,
+    low: 239.5,
+    close: 239.5,
+    adjClose: 195.88,
+    volume: 12087858
+  },
+  {
+    date: "2017/11/10",
+    open: 240,
+    high: 242,
+    low: 239.5,
+    close: 240.5,
+    adjClose: 196.7,
+    volume: 14121296
+  },
+  {
+    date: "2017/11/9",
+    open: 240.5,
+    high: 243,
+    low: 240,
+    close: 241,
+    adjClose: 197.11,
+    volume: 20313949
+  },
+  {
+    date: "2017/11/8",
+    open: 243,
+    high: 243.5,
+    low: 242,
+    close: 242.5,
+    adjClose: 198.33,
+    volume: 14129103
+  },
+  {
+    date: "2017/11/7",
+    open: 242,
+    high: 244,
+    low: 241.5,
+    close: 244,
+    adjClose: 199.56,
+    volume: 20200261
+  },
+  {
+    date: "2017/11/6",
+    open: 243.5,
+    high: 244,
+    low: 239,
+    close: 239.5,
+    adjClose: 195.88,
+    volume: 21029415
+  },
+  {
+    date: "2017/11/3",
+    open: 240.5,
+    high: 241,
+    low: 238.5,
+    close: 239,
+    adjClose: 195.47,
+    volume: 16528682
+  },
+  {
+    date: "2017/11/2",
+    open: 242,
+    high: 242.5,
+    low: 240.5,
+    close: 241,
+    adjClose: 197.11,
+    volume: 15810342
+  },
+  {
+    date: "2017/11/1",
+    open: 243.5,
+    high: 245,
+    low: 241.5,
+    close: 242.5,
+    adjClose: 198.33,
+    volume: 20389054
+  },
+  {
+    date: "2017/10/31",
+    open: 243.5,
+    high: 245,
+    low: 241.5,
+    close: 243,
+    adjClose: 198.74,
+    volume: 22582013
+  },
+  {
+    date: "2017/10/30",
+    open: 242,
+    high: 245,
+    low: 241.5,
+    close: 243,
+    adjClose: 198.74,
+    volume: 27784990
+  },
+  {
+    date: "2017/10/27",
+    open: 237.5,
+    high: 240,
+    low: 237.5,
+    close: 239,
+    adjClose: 195.47,
+    volume: 17773541
+  },
+  {
+    date: "2017/10/26",
+    open: 237,
+    high: 238,
+    low: 236,
+    close: 236,
+    adjClose: 193.02,
+    volume: 12959717
+  },
+  {
+    date: "2017/10/25",
+    open: 238.5,
+    high: 239,
+    low: 237.5,
+    close: 238,
+    adjClose: 194.65,
+    volume: 16880187
+  },
+  {
+    date: "2017/10/24",
+    open: 240,
+    high: 240,
+    low: 238,
+    close: 238,
+    adjClose: 194.65,
+    volume: 14975093
+  },
+  {
+    date: "2017/10/23",
+    open: 239,
+    high: 240,
+    low: 238.5,
+    close: 239,
+    adjClose: 195.47,
+    volume: 15772559
+  },
+  {
+    date: "2017/10/20",
+    open: 238,
+    high: 239.5,
+    low: 237.5,
+    close: 237.5,
+    adjClose: 194.25,
+    volume: 24722035
+  },
+  {
+    date: "2017/10/19",
+    open: 239.5,
+    high: 241.5,
+    low: 239,
+    close: 239,
+    adjClose: 195.47,
+    volume: 23481776
+  },
+  {
+    date: "2017/10/18",
+    open: 239.5,
+    high: 239.5,
+    low: 237,
+    close: 237.5,
+    adjClose: 194.25,
+    volume: 28886850
+  },
+  {
+    date: "2017/10/17",
+    open: 238,
+    high: 238,
+    low: 235,
+    close: 235.5,
+    adjClose: 192.61,
+    volume: 17652304
+  },
+  {
+    date: "2017/10/16",
+    open: 237.5,
+    high: 238,
+    low: 236,
+    close: 238,
+    adjClose: 194.65,
+    volume: 19964072
+  },
+  {
+    date: "2017/10/13",
+    open: 237.5,
+    high: 237.5,
+    low: 234.5,
+    close: 237.5,
+    adjClose: 194.25,
+    volume: 23145071
+  },
+  {
+    date: "2017/10/12",
+    open: 235,
+    high: 237.5,
+    low: 234.5,
+    close: 237.5,
+    adjClose: 194.25,
+    volume: 42390186
+  },
+  {
+    date: "2017/10/11",
+    open: 226.5,
+    high: 233.5,
+    low: 226.5,
+    close: 233,
+    adjClose: 190.57,
+    volume: 63667562
+  },
+  {
+    date: "2017/10/6",
+    open: 225,
+    high: 225.5,
+    low: 223.5,
+    close: 224.5,
+    adjClose: 183.61,
+    volume: 15642516
+  },
+  {
+    date: "2017/10/5",
+    open: 222,
+    high: 225.5,
+    low: 222,
+    close: 224.5,
+    adjClose: 183.61,
+    volume: 23349939
+  },
+  {
+    date: "2017/10/3",
+    open: 219,
+    high: 223,
+    low: 219,
+    close: 222.5,
+    adjClose: 181.98,
+    volume: 36679938
+  },
+  {
+    date: "2017/10/2",
+    open: 219.5,
+    high: 220.5,
+    low: 218.5,
+    close: 220.5,
+    adjClose: 180.34,
+    volume: 27983551
+  },
+  {
+    date: "2017/9/29",
+    open: 216,
+    high: 217.5,
+    low: 215.5,
+    close: 216.5,
+    adjClose: 177.07,
+    volume: 21380708
+  },
+  {
+    date: "2017/9/28",
+    open: 215,
+    high: 216,
+    low: 213.5,
+    close: 214,
+    adjClose: 175.03,
+    volume: 31616062
+  },
+  {
+    date: "2017/9/27",
+    open: 217.5,
+    high: 217.5,
+    low: 215,
+    close: 215,
+    adjClose: 175.84,
+    volume: 22590510
+  },
+  {
+    date: "2017/9/26",
+    open: 217.5,
+    high: 218,
+    low: 214,
+    close: 214,
+    adjClose: 175.03,
+    volume: 23070901
+  },
+  {
+    date: "2017/9/25",
+    open: 217.5,
+    high: 218.5,
+    low: 217,
+    close: 217,
+    adjClose: 177.48,
+    volume: 16876286
+  },
+  {
+    date: "2017/9/22",
+    open: 221.5,
+    high: 222,
+    low: 218.5,
+    close: 218.5,
+    adjClose: 178.71,
+    volume: 21557370
+  },
+  {
+    date: "2017/9/21",
+    open: 221,
+    high: 223,
+    low: 220,
+    close: 221,
+    adjClose: 180.75,
+    volume: 18645565
+  },
+  {
+    date: "2017/9/20",
+    open: 221,
+    high: 222,
+    low: 220,
+    close: 221.5,
+    adjClose: 181.16,
+    volume: 20320237
+  },
+  {
+    date: "2017/9/19",
+    open: 221.5,
+    high: 221.5,
+    low: 220,
+    close: 221.5,
+    adjClose: 181.16,
+    volume: 23410233
+  },
+  {
+    date: "2017/9/18",
+    open: 219,
+    high: 220,
+    low: 218,
+    close: 219.5,
+    adjClose: 179.52,
+    volume: 17654705
+  },
+  {
+    date: "2017/9/15",
+    open: 218.5,
+    high: 219,
+    low: 217,
+    close: 218.5,
+    adjClose: 178.71,
+    volume: 44551103
+  },
+  {
+    date: "2017/9/14",
+    open: 218.5,
+    high: 219,
+    low: 217.5,
+    close: 218.5,
+    adjClose: 178.71,
+    volume: 18315567
+  },
+  {
+    date: "2017/9/13",
+    open: 217.5,
+    high: 219,
+    low: 217.5,
+    close: 218,
+    adjClose: 178.3,
+    volume: 17555541
+  },
+  {
+    date: "2017/9/12",
+    open: 219,
+    high: 219.5,
+    low: 217.5,
+    close: 219,
+    adjClose: 179.11,
+    volume: 21588321
+  },
+  {
+    date: "2017/9/11",
+    open: 219,
+    high: 219.5,
+    low: 216.5,
+    close: 217,
+    adjClose: 177.48,
+    volume: 19026886
+  },
+  {
+    date: "2017/9/8",
+    open: 217,
+    high: 218,
+    low: 216.5,
+    close: 218,
+    adjClose: 178.3,
+    volume: 25512045
+  },
+  {
+    date: "2017/9/7",
+    open: 218,
+    high: 218.5,
+    low: 216,
+    close: 217,
+    adjClose: 177.48,
+    volume: 19135540
+  },
+  {
+    date: "2017/9/6",
+    open: 216.5,
+    high: 218,
+    low: 216,
+    close: 217,
+    adjClose: 177.48,
+    volume: 16012662
+  },
+  {
+    date: "2017/9/5",
+    open: 218,
+    high: 218,
+    low: 216.5,
+    close: 218,
+    adjClose: 178.3,
+    volume: 17357347
+  },
+  {
+    date: "2017/9/4",
+    open: 216.5,
+    high: 218,
+    low: 215.5,
+    close: 217.5,
+    adjClose: 177.89,
+    volume: 15023185
+  },
+  {
+    date: "2017/9/1",
+    open: 215,
+    high: 217.5,
+    low: 215,
+    close: 216.5,
+    adjClose: 177.07,
+    volume: 17805405
+  },
+  {
+    date: "2017/8/31",
+    open: 217.5,
+    high: 218,
+    low: 215.5,
+    close: 216.5,
+    adjClose: 177.07,
+    volume: 26434202
+  },
+  {
+    date: "2017/8/30",
+    open: 216,
+    high: 218,
+    low: 216,
+    close: 217.5,
+    adjClose: 177.89,
+    volume: 19674310
+  },
+  {
+    date: "2017/8/29",
+    open: 216,
+    high: 216,
+    low: 215,
+    close: 216,
+    adjClose: 176.66,
+    volume: 16160161
+  },
+  {
+    date: "2017/8/28",
+    open: 215,
+    high: 216.5,
+    low: 215,
+    close: 216,
+    adjClose: 176.66,
+    volume: 15236159
+  },
+  {
+    date: "2017/8/25",
+    open: 217.5,
+    high: 217.5,
+    low: 216,
+    close: 217.5,
+    adjClose: 177.89,
+    volume: 10125387
+  },
+  {
+    date: "2017/8/24",
+    open: 216,
+    high: 217,
+    low: 215.5,
+    close: 217,
+    adjClose: 177.48,
+    volume: 15224842
+  },
+  {
+    date: "2017/8/23",
+    open: 215.5,
+    high: 216,
+    low: 214,
+    close: 215.5,
+    adjClose: 176.25,
+    volume: 11589917
+  },
+  {
+    date: "2017/8/22",
+    open: 213.5,
+    high: 214.5,
+    low: 213,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 14211415
+  },
+  {
+    date: "2017/8/21",
+    open: 212.5,
+    high: 213,
+    low: 211.5,
+    close: 211.5,
+    adjClose: 172.98,
+    volume: 11882499
+  },
+  {
+    date: "2017/8/18",
+    open: 212,
+    high: 213,
+    low: 211,
+    close: 212.5,
+    adjClose: 173.8,
+    volume: 13711000
+  },
+  {
+    date: "2017/8/17",
+    open: 213.5,
+    high: 214,
+    low: 213,
+    close: 214,
+    adjClose: 175.03,
+    volume: 8334000
+  },
+  {
+    date: "2017/8/16",
+    open: 214.5,
+    high: 214.5,
+    low: 211,
+    close: 213,
+    adjClose: 174.21,
+    volume: 25176000
+  },
+  {
+    date: "2017/8/15",
+    open: 213,
+    high: 214.5,
+    low: 213,
+    close: 214,
+    adjClose: 175.03,
+    volume: 13512000
+  },
+  {
+    date: "2017/8/14",
+    open: 213.5,
+    high: 214,
+    low: 210,
+    close: 211,
+    adjClose: 172.57,
+    volume: 29299000
+  },
+  {
+    date: "2017/8/11",
+    open: 211,
+    high: 213.5,
+    low: 210.5,
+    close: 212.5,
+    adjClose: 173.8,
+    volume: 41417000
+  },
+  {
+    date: "2017/8/10",
+    open: 215.5,
+    high: 215.5,
+    low: 212.5,
+    close: 214,
+    adjClose: 175.03,
+    volume: 26273000
+  },
+  {
+    date: "2017/8/9",
+    open: 215,
+    high: 215.5,
+    low: 213.5,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 28050000
+  },
+  {
+    date: "2017/8/8",
+    open: 217.5,
+    high: 219,
+    low: 216,
+    close: 217.5,
+    adjClose: 177.89,
+    volume: 25122000
+  },
+  {
+    date: "2017/8/7",
+    open: 213.5,
+    high: 216.5,
+    low: 213.5,
+    close: 216,
+    adjClose: 176.66,
+    volume: 21564000
+  },
+  {
+    date: "2017/8/4",
+    open: 213.5,
+    high: 214,
+    low: 212.5,
+    close: 213,
+    adjClose: 174.21,
+    volume: 21831000
+  },
+  {
+    date: "2017/8/3",
+    open: 213,
+    high: 214,
+    low: 212.5,
+    close: 213.5,
+    adjClose: 174.62,
+    volume: 25694000
+  },
+  {
+    date: "2017/8/2",
+    open: 214,
+    high: 216,
+    low: 214,
+    close: 216,
+    adjClose: 176.66,
+    volume: 27320000
+  },
+  {
+    date: "2017/8/1",
+    open: 212.5,
+    high: 214,
+    low: 212,
+    close: 212,
+    adjClose: 173.39,
+    volume: 19704000
+  },
+  {
+    date: "2017/7/31",
+    open: 211.5,
+    high: 214.5,
+    low: 211.5,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 19993000
+  },
+  {
+    date: "2017/7/28",
+    open: 213,
+    high: 214,
+    low: 212.5,
+    close: 213,
+    adjClose: 174.21,
+    volume: 19724000
+  },
+  {
+    date: "2017/7/27",
+    open: 213.5,
+    high: 216,
+    low: 213.5,
+    close: 215.5,
+    adjClose: 176.25,
+    volume: 23013000
+  },
+  {
+    date: "2017/7/26",
+    open: 215,
+    high: 215,
+    low: 212.5,
+    close: 213,
+    adjClose: 174.21,
+    volume: 14684000
+  },
+  {
+    date: "2017/7/25",
+    open: 214,
+    high: 214.5,
+    low: 213.5,
+    close: 214,
+    adjClose: 175.03,
+    volume: 13344000
+  },
+  {
+    date: "2017/7/24",
+    open: 213.5,
+    high: 214.5,
+    low: 213,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 19972000
+  },
+  {
+    date: "2017/7/21",
+    open: 214,
+    high: 215,
+    low: 213.5,
+    close: 214,
+    adjClose: 175.03,
+    volume: 15032000
+  },
+  {
+    date: "2017/7/20",
+    open: 215,
+    high: 215.5,
+    low: 214,
+    close: 215.5,
+    adjClose: 176.25,
+    volume: 20770000
+  },
+  {
+    date: "2017/7/19",
+    open: 212.5,
+    high: 215,
+    low: 212.5,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 20637000
+  },
+  {
+    date: "2017/7/18",
+    open: 213,
+    high: 214,
+    low: 212,
+    close: 214,
+    adjClose: 175.03,
+    volume: 18613000
+  },
+  {
+    date: "2017/7/17",
+    open: 215,
+    high: 215.5,
+    low: 211.5,
+    close: 213,
+    adjClose: 174.21,
+    volume: 21372000
+  },
+  {
+    date: "2017/7/14",
+    open: 213,
+    high: 214.5,
+    low: 212,
+    close: 213,
+    adjClose: 174.21,
+    volume: 22335000
+  },
+  {
+    date: "2017/7/13",
+    open: 212,
+    high: 216,
+    low: 211.5,
+    close: 214.5,
+    adjClose: 175.43,
+    volume: 50090000
+  },
+  {
+    date: "2017/7/12",
+    open: 211,
+    high: 212.5,
+    low: 210.5,
+    close: 210.5,
+    adjClose: 172.16,
+    volume: 26426000
+  },
+  {
+    date: "2017/7/11",
+    open: 208,
+    high: 212,
+    low: 207.5,
+    close: 212,
+    adjClose: 173.39,
+    volume: 33265000
+  },
+  {
+    date: "2017/7/10",
+    open: 206.5,
+    high: 207,
+    low: 206,
+    close: 206,
+    adjClose: 168.48,
+    volume: 13292000
+  },
+  {
+    date: "2017/7/7",
+    open: 207,
+    high: 207.5,
+    low: 205.5,
+    close: 206,
+    adjClose: 168.48,
+    volume: 20655000
+  },
+  {
+    date: "2017/7/6",
+    open: 208,
+    high: 208.5,
+    low: 207,
+    close: 207.5,
+    adjClose: 169.71,
+    volume: 15242000
+  },
+  {
+    date: "2017/7/5",
+    open: 207,
+    high: 208.5,
+    low: 206.5,
+    close: 208.5,
+    adjClose: 170.53,
+    volume: 23276000
+  },
+  {
+    date: "2017/7/4",
+    open: 208,
+    high: 208.5,
+    low: 207,
+    close: 207,
+    adjClose: 169.3,
+    volume: 21132000
+  },
+  {
+    date: "2017/7/3",
+    open: 207.5,
+    high: 209,
+    low: 207,
+    close: 209,
+    adjClose: 170.94,
+    volume: 19027000
+  },
+  {
+    date: "2017/6/30",
+    open: 206.5,
+    high: 208.5,
+    low: 206.5,
+    close: 208.5,
+    adjClose: 170.53,
+    volume: 30867000
+  },
+  {
+    date: "2017/6/29",
+    open: 210.5,
+    high: 210.5,
+    low: 208.5,
+    close: 210,
+    adjClose: 171.75,
+    volume: 26019000
+  },
+  {
+    date: "2017/6/28",
+    open: 209.5,
+    high: 210,
+    low: 208,
+    close: 208.5,
+    adjClose: 170.53,
+    volume: 48568000
+  },
+  {
+    date: "2017/6/27",
+    open: 214,
+    high: 214,
+    low: 211,
+    close: 211.5,
+    adjClose: 172.98,
+    volume: 43269000
+  },
+  {
+    date: "2017/6/26",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2017/6/26",
+    open: 212,
+    high: 215,
+    low: 212,
+    close: 215,
+    adjClose: 175.84,
+    volume: 58686000
+  },
+  {
+    date: "2017/6/23",
+    open: 218,
+    high: 218.5,
+    low: 217,
+    close: 217,
+    adjClose: 171.75,
+    volume: 39621000
+  },
+  {
+    date: "2017/6/22",
+    open: 217,
+    high: 218,
+    low: 216.5,
+    close: 218,
+    adjClose: 172.55,
+    volume: 24139000
+  },
+  {
+    date: "2017/6/21",
+    open: 216,
+    high: 217,
+    low: 214.5,
+    close: 215.5,
+    adjClose: 170.57,
+    volume: 44789000
+  },
+  {
+    date: "2017/6/20",
+    open: 215,
+    high: 218,
+    low: 214.5,
+    close: 216.5,
+    adjClose: 171.36,
+    volume: 28630000
+  },
+  {
+    date: "2017/6/19",
+    open: 211,
+    high: 213,
+    low: 210.5,
+    close: 213,
+    adjClose: 168.59,
+    volume: 15632000
+  },
+  {
+    date: "2017/6/16",
+    open: 207.5,
+    high: 212,
+    low: 207,
+    close: 211.5,
+    adjClose: 167.4,
+    volume: 32816000
+  },
+  {
+    date: "2017/6/15",
+    open: 207.5,
+    high: 208,
+    low: 207,
+    close: 208,
+    adjClose: 164.63,
+    volume: 17748000
+  },
+  {
+    date: "2017/6/14",
+    open: 208.5,
+    high: 209.5,
+    low: 206,
+    close: 207,
+    adjClose: 163.84,
+    volume: 36293000
+  },
+  {
+    date: "2017/6/13",
+    open: 207,
+    high: 208.5,
+    low: 206.5,
+    close: 208,
+    adjClose: 164.63,
+    volume: 43566000
+  },
+  {
+    date: "2017/6/12",
+    open: 207,
+    high: 210,
+    low: 207,
+    close: 207.5,
+    adjClose: 164.23,
+    volume: 58256000
+  },
+  {
+    date: "2017/6/9",
+    open: 214.5,
+    high: 215,
+    low: 212,
+    close: 212,
+    adjClose: 167.8,
+    volume: 31774000
+  },
+  {
+    date: "2017/6/8",
+    open: 212,
+    high: 213,
+    low: 211.5,
+    close: 213,
+    adjClose: 168.59,
+    volume: 18437000
+  },
+  {
+    date: "2017/6/7",
+    open: 212,
+    high: 212.5,
+    low: 210,
+    close: 211.5,
+    adjClose: 167.4,
+    volume: 29514000
+  },
+  {
+    date: "2017/6/6",
+    open: 210.5,
+    high: 211.5,
+    low: 210.5,
+    close: 210.5,
+    adjClose: 166.61,
+    volume: 14912000
+  },
+  {
+    date: "2017/6/5",
+    open: 209.5,
+    high: 212,
+    low: 209,
+    close: 212,
+    adjClose: 167.8,
+    volume: 21457000
+  },
+  {
+    date: "2017/6/2",
+    open: 208.5,
+    high: 209,
+    low: 207.5,
+    close: 209,
+    adjClose: 165.42,
+    volume: 22573000
+  },
+  {
+    date: "2017/6/1",
+    open: 205,
+    high: 207,
+    low: 204.5,
+    close: 207,
+    adjClose: 163.84,
+    volume: 27589000
+  },
+  {
+    date: "2017/5/31",
+    open: 206.5,
+    high: 207,
+    low: 203,
+    close: 203,
+    adjClose: 160.67,
+    volume: 67475000
+  },
+  {
+    date: "2017/5/26",
+    open: 205,
+    high: 207,
+    low: 205,
+    close: 207,
+    adjClose: 163.84,
+    volume: 32514000
+  },
+  {
+    date: "2017/5/25",
+    open: 206,
+    high: 207,
+    low: 205.5,
+    close: 207,
+    adjClose: 163.84,
+    volume: 22328000
+  },
+  {
+    date: "2017/5/24",
+    open: 205,
+    high: 206,
+    low: 205,
+    close: 205.5,
+    adjClose: 162.65,
+    volume: 13380000
+  },
+  {
+    date: "2017/5/23",
+    open: 205,
+    high: 207,
+    low: 204.5,
+    close: 205,
+    adjClose: 162.26,
+    volume: 19991000
+  },
+  {
+    date: "2017/5/22",
+    open: 203.5,
+    high: 205,
+    low: 203,
+    close: 205,
+    adjClose: 162.26,
+    volume: 13726000
+  },
+  {
+    date: "2017/5/19",
+    open: 203.5,
+    high: 204.5,
+    low: 202.5,
+    close: 203,
+    adjClose: 160.67,
+    volume: 16492000
+  },
+  {
+    date: "2017/5/18",
+    open: 202.5,
+    high: 204,
+    low: 201.5,
+    close: 203.5,
+    adjClose: 161.07,
+    volume: 22461000
+  },
+  {
+    date: "2017/5/17",
+    open: 203,
+    high: 204,
+    low: 203,
+    close: 204,
+    adjClose: 161.46,
+    volume: 21567000
+  },
+  {
+    date: "2017/5/16",
+    open: 205,
+    high: 205,
+    low: 203.5,
+    close: 204.5,
+    adjClose: 161.86,
+    volume: 33224000
+  },
+  {
+    date: "2017/5/15",
+    open: 204,
+    high: 206,
+    low: 204,
+    close: 206,
+    adjClose: 163.05,
+    volume: 25666000
+  },
+  {
+    date: "2017/5/12",
+    open: 205,
+    high: 207,
+    low: 205,
+    close: 206,
+    adjClose: 163.05,
+    volume: 25009000
+  },
+  {
+    date: "2017/5/11",
+    open: 204.5,
+    high: 208.5,
+    low: 204,
+    close: 207.5,
+    adjClose: 164.23,
+    volume: 43718000
+  },
+  {
+    date: "2017/5/10",
+    open: 204,
+    high: 206,
+    low: 204,
+    close: 205.5,
+    adjClose: 162.65,
+    volume: 28312000
+  },
+  {
+    date: "2017/5/9",
+    open: 205.5,
+    high: 207,
+    low: 203.5,
+    close: 203.5,
+    adjClose: 161.07,
+    volume: 48077000
+  },
+  {
+    date: "2017/5/8",
+    open: 199,
+    high: 202.5,
+    low: 199,
+    close: 202.5,
+    adjClose: 160.28,
+    volume: 36538000
+  },
+  {
+    date: "2017/5/5",
+    open: 197,
+    high: 198.5,
+    low: 197,
+    close: 197.5,
+    adjClose: 156.32,
+    volume: 17036000
+  },
+  {
+    date: "2017/5/4",
+    open: 198.5,
+    high: 199,
+    low: 197,
+    close: 198,
+    adjClose: 156.72,
+    volume: 22088000
+  },
+  {
+    date: "2017/5/3",
+    open: 198,
+    high: 198.5,
+    low: 197,
+    close: 198,
+    adjClose: 156.72,
+    volume: 25723000
+  },
+  {
+    date: "2017/5/2",
+    open: 198.5,
+    high: 199,
+    low: 195.5,
+    close: 196.5,
+    adjClose: 155.53,
+    volume: 44119000
+  },
+  {
+    date: "2017/4/28",
+    open: 193.5,
+    high: 194.5,
+    low: 193,
+    close: 194.5,
+    adjClose: 153.95,
+    volume: 34852000
+  },
+  {
+    date: "2017/4/27",
+    open: 192,
+    high: 193,
+    low: 190.5,
+    close: 193,
+    adjClose: 152.76,
+    volume: 27940000
+  },
+  {
+    date: "2017/4/26",
+    open: 192,
+    high: 192,
+    low: 190.5,
+    close: 191,
+    adjClose: 151.18,
+    volume: 29909000
+  },
+  {
+    date: "2017/4/25",
+    open: 190.5,
+    high: 192,
+    low: 189.5,
+    close: 192,
+    adjClose: 151.97,
+    volume: 31932000
+  },
+  {
+    date: "2017/4/24",
+    open: 191,
+    high: 191.5,
+    low: 188.5,
+    close: 190,
+    adjClose: 150.38,
+    volume: 19317000
+  },
+  {
+    date: "2017/4/21",
+    open: 187.5,
+    high: 190,
+    low: 187.5,
+    close: 190,
+    adjClose: 150.38,
+    volume: 17373000
+  },
+  {
+    date: "2017/4/20",
+    open: 186.5,
+    high: 188,
+    low: 186.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 21488000
+  },
+  {
+    date: "2017/4/19",
+    open: 187.5,
+    high: 187.5,
+    low: 186.5,
+    close: 186.5,
+    adjClose: 147.61,
+    volume: 30477000
+  },
+  {
+    date: "2017/4/18",
+    open: 188,
+    high: 189.5,
+    low: 187.5,
+    close: 188,
+    adjClose: 148.8,
+    volume: 25063000
+  },
+  {
+    date: "2017/4/17",
+    open: 189,
+    high: 189,
+    low: 187.5,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 17096000
+  },
+  {
+    date: "2017/4/14",
+    open: 189.5,
+    high: 189.5,
+    low: 188,
+    close: 189,
+    adjClose: 149.59,
+    volume: 30701000
+  },
+  {
+    date: "2017/4/13",
+    open: 189.5,
+    high: 192,
+    low: 189.5,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 14771000
+  },
+  {
+    date: "2017/4/12",
+    open: 190.5,
+    high: 191.5,
+    low: 190,
+    close: 191,
+    adjClose: 151.18,
+    volume: 17283000
+  },
+  {
+    date: "2017/4/11",
+    open: 190,
+    high: 191,
+    low: 189,
+    close: 191,
+    adjClose: 151.18,
+    volume: 8441000
+  },
+  {
+    date: "2017/4/10",
+    open: 191,
+    high: 191.5,
+    low: 189.5,
+    close: 190,
+    adjClose: 150.38,
+    volume: 17024000
+  },
+  {
+    date: "2017/4/7",
+    open: 192,
+    high: 192,
+    low: 188.5,
+    close: 191,
+    adjClose: 151.18,
+    volume: 18911000
+  },
+  {
+    date: "2017/4/6",
+    open: 193,
+    high: 193,
+    low: 191,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 16173000
+  },
+  {
+    date: "2017/4/5",
+    open: 189.5,
+    high: 193,
+    low: 189.5,
+    close: 193,
+    adjClose: 152.76,
+    volume: 43748000
+  },
+  {
+    date: "2017/3/31",
+    open: 191,
+    high: 192,
+    low: 189,
+    close: 189,
+    adjClose: 149.59,
+    volume: 33635000
+  },
+  {
+    date: "2017/3/30",
+    open: 192.5,
+    high: 193,
+    low: 190.5,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 28302000
+  },
+  {
+    date: "2017/3/29",
+    open: 194.5,
+    high: 194.5,
+    low: 191,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 33374000
+  },
+  {
+    date: "2017/3/28",
+    open: 195,
+    high: 195,
+    low: 192.5,
+    close: 194.5,
+    adjClose: 153.95,
+    volume: 38259000
+  },
+  {
+    date: "2017/3/27",
+    open: 194.5,
+    high: 194.5,
+    low: 192,
+    close: 193,
+    adjClose: 152.76,
+    volume: 29251000
+  },
+  {
+    date: "2017/3/24",
+    open: 192,
+    high: 193,
+    low: 192,
+    close: 192.5,
+    adjClose: 152.36,
+    volume: 17541000
+  },
+  {
+    date: "2017/3/23",
+    open: 192,
+    high: 193.5,
+    low: 192,
+    close: 193.5,
+    adjClose: 153.15,
+    volume: 18472000
+  },
+  {
+    date: "2017/3/22",
+    open: 192.5,
+    high: 193.5,
+    low: 191.5,
+    close: 193.5,
+    adjClose: 153.15,
+    volume: 27396000
+  },
+  {
+    date: "2017/3/21",
+    open: 192,
+    high: 195,
+    low: 191.5,
+    close: 195,
+    adjClose: 154.34,
+    volume: 32246000
+  },
+  {
+    date: "2017/3/20",
+    open: 191.5,
+    high: 191.5,
+    low: 189.5,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 16215000
+  },
+  {
+    date: "2017/3/17",
+    open: 189.5,
+    high: 191.5,
+    low: 189,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 33764000
+  },
+  {
+    date: "2017/3/16",
+    open: 188,
+    high: 190,
+    low: 188,
+    close: 190,
+    adjClose: 150.38,
+    volume: 31507000
+  },
+  {
+    date: "2017/3/15",
+    open: 185.5,
+    high: 187,
+    low: 185.5,
+    close: 186.5,
+    adjClose: 147.61,
+    volume: 14131000
+  },
+  {
+    date: "2017/3/14",
+    open: 188,
+    high: 188,
+    low: 186,
+    close: 186,
+    adjClose: 147.22,
+    volume: 22245000
+  },
+  {
+    date: "2017/3/13",
+    open: 185,
+    high: 186.5,
+    low: 185,
+    close: 186.5,
+    adjClose: 147.61,
+    volume: 10487000
+  },
+  {
+    date: "2017/3/10",
+    open: 184,
+    high: 184.5,
+    low: 183,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 20053000
+  },
+  {
+    date: "2017/3/9",
+    open: 185.5,
+    high: 186,
+    low: 184,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 28489000
+  },
+  {
+    date: "2017/3/8",
+    open: 186,
+    high: 188,
+    low: 185.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 31791000
+  },
+  {
+    date: "2017/3/7",
+    open: 184,
+    high: 185.5,
+    low: 184,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 18812000
+  },
+  {
+    date: "2017/3/6",
+    open: 184,
+    high: 184.5,
+    low: 183.5,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 12531000
+  },
+  {
+    date: "2017/3/3",
+    open: 184.5,
+    high: 185,
+    low: 184,
+    close: 184,
+    adjClose: 145.63,
+    volume: 28197000
+  },
+  {
+    date: "2017/3/2",
+    open: 188,
+    high: 188.5,
+    low: 185,
+    close: 186,
+    adjClose: 147.22,
+    volume: 39980000
+  },
+  {
+    date: "2017/3/1",
+    open: 188.5,
+    high: 188.5,
+    low: 186,
+    close: 186,
+    adjClose: 147.22,
+    volume: 46186000
+  },
+  {
+    date: "2017/2/24",
+    open: 187.5,
+    high: 190.5,
+    low: 187.5,
+    close: 189,
+    adjClose: 149.59,
+    volume: 22766000
+  },
+  {
+    date: "2017/2/23",
+    open: 188,
+    high: 189.5,
+    low: 187,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 35725000
+  },
+  {
+    date: "2017/2/22",
+    open: 190.5,
+    high: 191,
+    low: 188.5,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 25677000
+  },
+  {
+    date: "2017/2/21",
+    open: 190,
+    high: 190,
+    low: 188.5,
+    close: 190,
+    adjClose: 150.38,
+    volume: 31159000
+  },
+  {
+    date: "2017/2/20",
+    open: 190,
+    high: 190.5,
+    low: 189.5,
+    close: 190,
+    adjClose: 150.38,
+    volume: 13254000
+  },
+  {
+    date: "2017/2/17",
+    open: 190,
+    high: 190.5,
+    low: 189,
+    close: 189.5,
+    adjClose: 149.99,
+    volume: 20389000
+  },
+  {
+    date: "2017/2/16",
+    open: 190,
+    high: 190.5,
+    low: 188,
+    close: 189,
+    adjClose: 149.59,
+    volume: 27018000
+  },
+  {
+    date: "2017/2/15",
+    open: 187,
+    high: 189.5,
+    low: 186.5,
+    close: 189,
+    adjClose: 149.59,
+    volume: 39347000
+  },
+  {
+    date: "2017/2/14",
+    open: 189,
+    high: 190,
+    low: 187.5,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 45696000
+  },
+  {
+    date: "2017/2/13",
+    open: 186.5,
+    high: 188,
+    low: 186.5,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 25124000
+  },
+  {
+    date: "2017/2/10",
+    open: 184.5,
+    high: 185.5,
+    low: 184,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 34747000
+  },
+  {
+    date: "2017/2/9",
+    open: 184,
+    high: 185.5,
+    low: 183.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 18967000
+  },
+  {
+    date: "2017/2/8",
+    open: 183.5,
+    high: 184.5,
+    low: 183,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 29168000
+  },
+  {
+    date: "2017/2/7",
+    open: 183.5,
+    high: 185,
+    low: 183,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 23616000
+  },
+  {
+    date: "2017/2/6",
+    open: 184.5,
+    high: 185.5,
+    low: 184,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 24779000
+  },
+  {
+    date: "2017/2/3",
+    open: 186,
+    high: 186,
+    low: 183.5,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 29518000
+  },
+  {
+    date: "2017/2/2",
+    open: 188,
+    high: 188.5,
+    low: 184,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 94089000
+  },
+  {
+    date: "2017/1/24",
+    open: 185,
+    high: 186.5,
+    low: 184.5,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 55022000
+  },
+  {
+    date: "2017/1/23",
+    open: 182.5,
+    high: 185,
+    low: 182.5,
+    close: 185,
+    adjClose: 146.43,
+    volume: 36992000
+  },
+  {
+    date: "2017/1/20",
+    open: 181,
+    high: 181.5,
+    low: 180.5,
+    close: 181,
+    adjClose: 143.26,
+    volume: 23429000
+  },
+  {
+    date: "2017/1/19",
+    open: 179.5,
+    high: 181,
+    low: 179.5,
+    close: 180.5,
+    adjClose: 142.86,
+    volume: 24627000
+  },
+  {
+    date: "2017/1/18",
+    open: 180.5,
+    high: 181,
+    low: 179.5,
+    close: 181,
+    adjClose: 143.26,
+    volume: 23693000
+  },
+  {
+    date: "2017/1/17",
+    open: 180.5,
+    high: 181,
+    low: 179.5,
+    close: 181,
+    adjClose: 143.26,
+    volume: 13159000
+  },
+  {
+    date: "2017/1/16",
+    open: 180,
+    high: 180.5,
+    low: 179,
+    close: 179.5,
+    adjClose: 142.07,
+    volume: 30756000
+  },
+  {
+    date: "2017/1/13",
+    open: 180.5,
+    high: 182.5,
+    low: 180.5,
+    close: 181.5,
+    adjClose: 143.66,
+    volume: 52352000
+  },
+  {
+    date: "2017/1/12",
+    open: 182.5,
+    high: 185.5,
+    low: 182.5,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 41130000
+  },
+  {
+    date: "2017/1/11",
+    open: 185,
+    high: 185,
+    low: 181.5,
+    close: 182,
+    adjClose: 144.05,
+    volume: 29107000
+  },
+  {
+    date: "2017/1/10",
+    open: 184.5,
+    high: 185.5,
+    low: 183.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 20198000
+  },
+  {
+    date: "2017/1/9",
+    open: 184,
+    high: 185,
+    low: 183,
+    close: 184,
+    adjClose: 145.63,
+    volume: 18569000
+  },
+  {
+    date: "2017/1/6",
+    open: 184,
+    high: 184.5,
+    low: 183.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 22443000
+  },
+  {
+    date: "2017/1/5",
+    open: 182,
+    high: 183.5,
+    low: 181.5,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 20979000
+  },
+  {
+    date: "2017/1/4",
+    open: 183,
+    high: 184,
+    low: 181.5,
+    close: 183,
+    adjClose: 144.84,
+    volume: 24369000
+  },
+  {
+    date: "2017/1/3",
+    open: 181.5,
+    high: 183.5,
+    low: 181,
+    close: 183,
+    adjClose: 144.84,
+    volume: 22630000
+  },
+  {
+    date: "2016/12/30",
+    open: 181,
+    high: 182.5,
+    low: 180,
+    close: 181.5,
+    adjClose: 143.66,
+    volume: 36610000
+  },
+  {
+    date: "2016/12/29",
+    open: 180,
+    high: 181.5,
+    low: 180,
+    close: 180,
+    adjClose: 142.47,
+    volume: 30200000
+  },
+  {
+    date: "2016/12/28",
+    open: 181,
+    high: 182,
+    low: 180.5,
+    close: 182,
+    adjClose: 144.05,
+    volume: 21226000
+  },
+  {
+    date: "2016/12/27",
+    open: 180,
+    high: 180.5,
+    low: 179.5,
+    close: 180,
+    adjClose: 142.47,
+    volume: 8252000
+  },
+  {
+    date: "2016/12/26",
+    open: 179,
+    high: 180,
+    low: 179,
+    close: 179.5,
+    adjClose: 142.07,
+    volume: 5675000
+  },
+  {
+    date: "2016/12/23",
+    open: 179,
+    high: 180,
+    low: 178.5,
+    close: 178.5,
+    adjClose: 141.28,
+    volume: 22961000
+  },
+  {
+    date: "2016/12/22",
+    open: 180,
+    high: 180.5,
+    low: 179,
+    close: 179,
+    adjClose: 141.68,
+    volume: 26269000
+  },
+  {
+    date: "2016/12/21",
+    open: 181,
+    high: 182,
+    low: 180,
+    close: 180,
+    adjClose: 142.47,
+    volume: 29690000
+  },
+  {
+    date: "2016/12/20",
+    open: 181,
+    high: 182.5,
+    low: 180,
+    close: 182.5,
+    adjClose: 144.45,
+    volume: 24139000
+  },
+  {
+    date: "2016/12/19",
+    open: 184,
+    high: 184.5,
+    low: 182.5,
+    close: 182.5,
+    adjClose: 144.45,
+    volume: 20535000
+  },
+  {
+    date: "2016/12/16",
+    open: 185.5,
+    high: 187,
+    low: 185,
+    close: 185,
+    adjClose: 146.43,
+    volume: 35985000
+  },
+  {
+    date: "2016/12/15",
+    open: 185,
+    high: 187.5,
+    low: 184.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 22803000
+  },
+  {
+    date: "2016/12/14",
+    open: 186.5,
+    high: 187.5,
+    low: 185.5,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 16571000
+  },
+  {
+    date: "2016/12/13",
+    open: 186.5,
+    high: 186.5,
+    low: 184.5,
+    close: 186,
+    adjClose: 147.22,
+    volume: 23591000
+  },
+  {
+    date: "2016/12/12",
+    open: 186,
+    high: 187,
+    low: 184,
+    close: 185,
+    adjClose: 146.43,
+    volume: 18796000
+  },
+  {
+    date: "2016/12/9",
+    open: 186,
+    high: 186,
+    low: 184.5,
+    close: 186,
+    adjClose: 147.22,
+    volume: 24867000
+  },
+  {
+    date: "2016/12/8",
+    open: 184,
+    high: 185.5,
+    low: 183,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 27257000
+  },
+  {
+    date: "2016/12/7",
+    open: 183,
+    high: 183.5,
+    low: 181.5,
+    close: 181.5,
+    adjClose: 143.66,
+    volume: 14110000
+  },
+  {
+    date: "2016/12/6",
+    open: 181,
+    high: 183,
+    low: 180.5,
+    close: 182,
+    adjClose: 144.05,
+    volume: 27309000
+  },
+  {
+    date: "2016/12/5",
+    open: 178,
+    high: 180,
+    low: 178,
+    close: 179,
+    adjClose: 141.68,
+    volume: 29191000
+  },
+  {
+    date: "2016/12/2",
+    open: 179,
+    high: 179.5,
+    low: 178,
+    close: 178,
+    adjClose: 140.89,
+    volume: 53836000
+  },
+  {
+    date: "2016/12/1",
+    open: 182,
+    high: 183,
+    low: 181.5,
+    close: 183,
+    adjClose: 144.84,
+    volume: 13908000
+  },
+  {
+    date: "2016/11/30",
+    open: 181.5,
+    high: 183,
+    low: 181.5,
+    close: 183,
+    adjClose: 144.84,
+    volume: 39671000
+  },
+  {
+    date: "2016/11/29",
+    open: 183.5,
+    high: 185,
+    low: 182,
+    close: 182,
+    adjClose: 144.05,
+    volume: 24408000
+  },
+  {
+    date: "2016/11/28",
+    open: 181.5,
+    high: 184,
+    low: 181.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 19096000
+  },
+  {
+    date: "2016/11/25",
+    open: 182.5,
+    high: 183.5,
+    low: 182,
+    close: 182,
+    adjClose: 144.05,
+    volume: 10116000
+  },
+  {
+    date: "2016/11/24",
+    open: 184,
+    high: 185,
+    low: 183,
+    close: 183,
+    adjClose: 144.84,
+    volume: 14980000
+  },
+  {
+    date: "2016/11/23",
+    open: 184.5,
+    high: 186.5,
+    low: 184,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 22128000
+  },
+  {
+    date: "2016/11/22",
+    open: 182,
+    high: 185,
+    low: 181.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 27599000
+  },
+  {
+    date: "2016/11/21",
+    open: 180.5,
+    high: 181.5,
+    low: 180,
+    close: 181,
+    adjClose: 143.26,
+    volume: 15600000
+  },
+  {
+    date: "2016/11/18",
+    open: 181.5,
+    high: 181.5,
+    low: 180,
+    close: 181,
+    adjClose: 143.26,
+    volume: 22474000
+  },
+  {
+    date: "2016/11/17",
+    open: 182,
+    high: 182.5,
+    low: 180.5,
+    close: 181.5,
+    adjClose: 143.66,
+    volume: 22434000
+  },
+  {
+    date: "2016/11/16",
+    open: 180.5,
+    high: 183,
+    low: 180,
+    close: 180,
+    adjClose: 142.47,
+    volume: 34833000
+  },
+  {
+    date: "2016/11/15",
+    open: 179.5,
+    high: 182,
+    low: 179,
+    close: 180,
+    adjClose: 142.47,
+    volume: 33505000
+  },
+  {
+    date: "2016/11/14",
+    open: 181,
+    high: 182,
+    low: 180,
+    close: 180.5,
+    adjClose: 142.86,
+    volume: 47989000
+  },
+  {
+    date: "2016/11/11",
+    open: 181.5,
+    high: 183,
+    low: 181,
+    close: 181.5,
+    adjClose: 143.66,
+    volume: 67603000
+  },
+  {
+    date: "2016/11/10",
+    open: 187,
+    high: 188,
+    low: 185.5,
+    close: 185.5,
+    adjClose: 146.82,
+    volume: 38234000
+  },
+  {
+    date: "2016/11/9",
+    open: 190,
+    high: 190.5,
+    low: 182,
+    close: 182,
+    adjClose: 144.05,
+    volume: 55541000
+  },
+  {
+    date: "2016/11/8",
+    open: 190,
+    high: 190,
+    low: 188,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 15437000
+  },
+  {
+    date: "2016/11/7",
+    open: 186.5,
+    high: 189,
+    low: 186,
+    close: 189,
+    adjClose: 149.59,
+    volume: 21332000
+  },
+  {
+    date: "2016/11/4",
+    open: 184.5,
+    high: 186,
+    low: 184,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 14860000
+  },
+  {
+    date: "2016/11/3",
+    open: 185.5,
+    high: 186.5,
+    low: 184.5,
+    close: 184.5,
+    adjClose: 146.03,
+    volume: 25038000
+  },
+  {
+    date: "2016/11/2",
+    open: 187.5,
+    high: 188,
+    low: 186,
+    close: 186,
+    adjClose: 147.22,
+    volume: 16488000
+  },
+  {
+    date: "2016/11/1",
+    open: 188.5,
+    high: 189.5,
+    low: 187.5,
+    close: 189.5,
+    adjClose: 149.99,
+    volume: 14290000
+  },
+  {
+    date: "2016/10/31",
+    open: 189,
+    high: 190.5,
+    low: 186.5,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 25330000
+  },
+  {
+    date: "2016/10/28",
+    open: 189.5,
+    high: 190,
+    low: 188.5,
+    close: 189.5,
+    adjClose: 149.99,
+    volume: 24348000
+  },
+  {
+    date: "2016/10/27",
+    open: 191.5,
+    high: 191.5,
+    low: 188.5,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 26231000
+  },
+  {
+    date: "2016/10/26",
+    open: 190.5,
+    high: 192.5,
+    low: 190.5,
+    close: 191.5,
+    adjClose: 151.57,
+    volume: 21043000
+  },
+  {
+    date: "2016/10/25",
+    open: 192,
+    high: 193,
+    low: 191,
+    close: 193,
+    adjClose: 152.76,
+    volume: 18878000
+  },
+  {
+    date: "2016/10/24",
+    open: 191,
+    high: 191,
+    low: 189.5,
+    close: 191,
+    adjClose: 151.18,
+    volume: 13459000
+  },
+  {
+    date: "2016/10/21",
+    open: 191,
+    high: 192,
+    low: 188.5,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 21936000
+  },
+  {
+    date: "2016/10/20",
+    open: 189.5,
+    high: 190.5,
+    low: 189,
+    close: 190.5,
+    adjClose: 150.78,
+    volume: 13226000
+  },
+  {
+    date: "2016/10/19",
+    open: 187.5,
+    high: 189.5,
+    low: 187.5,
+    close: 189.5,
+    adjClose: 149.99,
+    volume: 33272000
+  },
+  {
+    date: "2016/10/18",
+    open: 186.5,
+    high: 187,
+    low: 185.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 38150000
+  },
+  {
+    date: "2016/10/17",
+    open: 186.5,
+    high: 187.5,
+    low: 185,
+    close: 186.5,
+    adjClose: 147.61,
+    volume: 37340000
+  },
+  {
+    date: "2016/10/14",
+    open: 187,
+    high: 189,
+    low: 186.5,
+    close: 188,
+    adjClose: 148.8,
+    volume: 33248000
+  },
+  {
+    date: "2016/10/13",
+    open: 190.5,
+    high: 191,
+    low: 187,
+    close: 188.5,
+    adjClose: 149.2,
+    volume: 37642000
+  },
+  {
+    date: "2016/10/12",
+    open: 186.5,
+    high: 190,
+    low: 186,
+    close: 189.5,
+    adjClose: 149.99,
+    volume: 22604000
+  },
+  {
+    date: "2016/10/11",
+    open: 191,
+    high: 191,
+    low: 186,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 30294000
+  },
+  {
+    date: "2016/10/7",
+    open: 188,
+    high: 188,
+    low: 186,
+    close: 188,
+    adjClose: 148.8,
+    volume: 15380000
+  },
+  {
+    date: "2016/10/6",
+    open: 185,
+    high: 187.5,
+    low: 185,
+    close: 187.5,
+    adjClose: 148.4,
+    volume: 15524000
+  },
+  {
+    date: "2016/10/5",
+    open: 186,
+    high: 186,
+    low: 184.5,
+    close: 186,
+    adjClose: 147.22,
+    volume: 19148000
+  },
+  {
+    date: "2016/10/4",
+    open: 185,
+    high: 187,
+    low: 185,
+    close: 187,
+    adjClose: 148.01,
+    volume: 16859000
+  },
+  {
+    date: "2016/10/3",
+    open: 186,
+    high: 186.5,
+    low: 184.5,
+    close: 186,
+    adjClose: 147.22,
+    volume: 17742000
+  },
+  {
+    date: "2016/9/30",
+    open: 185.5,
+    high: 186.5,
+    low: 182.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 42592000
+  },
+  {
+    date: "2016/9/29",
+    open: 185.5,
+    high: 187.5,
+    low: 185.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 54272000
+  },
+  {
+    date: "2016/9/28",
+    open: 183.5,
+    high: 183.5,
+    low: 183.5,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: null
+  },
+  {
+    date: "2016/9/27",
+    open: 183.5,
+    high: 183.5,
+    low: 183.5,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: null
+  },
+  {
+    date: "2016/9/26",
+    open: 183.5,
+    high: 185,
+    low: 183,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 24225000
+  },
+  {
+    date: "2016/9/23",
+    open: 185,
+    high: 187.5,
+    low: 184.5,
+    close: 187,
+    adjClose: 148.01,
+    volume: 23213000
+  },
+  {
+    date: "2016/9/22",
+    open: 185,
+    high: 185.5,
+    low: 183.5,
+    close: 185,
+    adjClose: 146.43,
+    volume: 20980000
+  },
+  {
+    date: "2016/9/21",
+    open: 181,
+    high: 184,
+    low: 180.5,
+    close: 184,
+    adjClose: 145.63,
+    volume: 25008000
+  },
+  {
+    date: "2016/9/20",
+    open: 182,
+    high: 183.5,
+    low: 181.5,
+    close: 183.5,
+    adjClose: 145.24,
+    volume: 23641000
+  },
+  {
+    date: "2016/9/19",
+    open: 179.5,
+    high: 183,
+    low: 178.5,
+    close: 183,
+    adjClose: 144.84,
+    volume: 57055000
+  },
+  {
+    date: "2016/9/14",
+    open: 174,
+    high: 176,
+    low: 173.5,
+    close: 174,
+    adjClose: 137.72,
+    volume: 52877000
+  },
+  {
+    date: "2016/9/13",
+    open: 176.5,
+    high: 176.5,
+    low: 173.5,
+    close: 175.5,
+    adjClose: 138.91,
+    volume: 36834000
+  },
+  {
+    date: "2016/9/12",
+    open: 177.5,
+    high: 177.5,
+    low: 174,
+    close: 175.5,
+    adjClose: 138.91,
+    volume: 43036000
+  },
+  {
+    date: "2016/9/9",
+    open: 181,
+    high: 181,
+    low: 179.5,
+    close: 180.5,
+    adjClose: 142.86,
+    volume: 29793000
+  },
+  {
+    date: "2016/9/8",
+    open: 182.5,
+    high: 184.5,
+    low: 182.5,
+    close: 183,
+    adjClose: 144.84,
+    volume: 30204000
+  },
+  {
+    date: "2016/9/7",
+    open: 180.5,
+    high: 185,
+    low: 180,
+    close: 185,
+    adjClose: 146.43,
+    volume: 49761000
+  },
+  {
+    date: "2016/9/6",
+    open: 177,
+    high: 179,
+    low: 176.5,
+    close: 178,
+    adjClose: 140.89,
+    volume: 26024000
+  },
+  {
+    date: "2016/9/5",
+    open: 176.5,
+    high: 177.5,
+    low: 176.5,
+    close: 177,
+    adjClose: 140.09,
+    volume: 22381000
+  },
+  {
+    date: "2016/9/2",
+    open: 176.5,
+    high: 176.5,
+    low: 174,
+    close: 174,
+    adjClose: 137.72,
+    volume: 16999000
+  },
+  {
+    date: "2016/9/1",
+    open: 176,
+    high: 176,
+    low: 173,
+    close: 174,
+    adjClose: 137.72,
+    volume: 22692000
+  },
+  {
+    date: "2016/8/31",
+    open: 176.5,
+    high: 177,
+    low: 174.5,
+    close: 176.5,
+    adjClose: 139.7,
+    volume: 38524000
+  },
+  {
+    date: "2016/8/30",
+    open: 176,
+    high: 176.5,
+    low: 174,
+    close: 174,
+    adjClose: 137.72,
+    volume: 19471000
+  },
+  {
+    date: "2016/8/29",
+    open: 175,
+    high: 177,
+    low: 174,
+    close: 176,
+    adjClose: 139.3,
+    volume: 16975000
+  },
+  {
+    date: "2016/8/26",
+    open: 175,
+    high: 177,
+    low: 175,
+    close: 177,
+    adjClose: 140.09,
+    volume: 15076000
+  },
+  {
+    date: "2016/8/25",
+    open: 175,
+    high: 177,
+    low: 174.5,
+    close: 176.5,
+    adjClose: 139.7,
+    volume: 23892000
+  },
+  {
+    date: "2016/8/24",
+    open: 175,
+    high: 175.5,
+    low: 173.5,
+    close: 173.5,
+    adjClose: 137.32,
+    volume: 12092000
+  },
+  {
+    date: "2016/8/23",
+    open: 174,
+    high: 175,
+    low: 173.5,
+    close: 175,
+    adjClose: 138.51,
+    volume: 20888000
+  },
+  {
+    date: "2016/8/22",
+    open: 173,
+    high: 174,
+    low: 171.5,
+    close: 172.5,
+    adjClose: 136.53,
+    volume: 21337000
+  },
+  {
+    date: "2016/8/19",
+    open: 177,
+    high: 177.5,
+    low: 174,
+    close: 174.5,
+    adjClose: 138.12,
+    volume: 23470000
+  },
+  {
+    date: "2016/8/18",
+    open: 176,
+    high: 176.5,
+    low: 175,
+    close: 176,
+    adjClose: 139.3,
+    volume: 27253000
+  },
+  {
+    date: "2016/8/17",
+    open: 177,
+    high: 177.5,
+    low: 176,
+    close: 177,
+    adjClose: 140.09,
+    volume: 21487000
+  },
+  {
+    date: "2016/8/16",
+    open: 178,
+    high: 179,
+    low: 175,
+    close: 175.5,
+    adjClose: 138.91,
+    volume: 34260000
+  },
+  {
+    date: "2016/8/15",
+    open: 178.5,
+    high: 179,
+    low: 177.5,
+    close: 179,
+    adjClose: 141.68,
+    volume: 12020000
+  },
+  {
+    date: "2016/8/12",
+    open: 178.5,
+    high: 178.5,
+    low: 177,
+    close: 177.5,
+    adjClose: 140.49,
+    volume: 22947000
+  },
+  {
+    date: "2016/8/11",
+    open: 177.5,
+    high: 178,
+    low: 175.5,
+    close: 176.5,
+    adjClose: 139.7,
+    volume: 28180000
+  },
+  {
+    date: "2016/8/10",
+    open: 179,
+    high: 179.5,
+    low: 178,
+    close: 179.5,
+    adjClose: 142.07,
+    volume: 19279000
+  },
+  {
+    date: "2016/8/9",
+    open: 178.5,
+    high: 179.5,
+    low: 177,
+    close: 178.5,
+    adjClose: 141.28,
+    volume: 16413000
+  },
+  {
+    date: "2016/8/8",
+    open: 178,
+    high: 178,
+    low: 176.5,
+    close: 178,
+    adjClose: 140.89,
+    volume: 16200000
+  },
+  {
+    date: "2016/8/5",
+    open: 175,
+    high: 177.5,
+    low: 174,
+    close: 177,
+    adjClose: 140.09,
+    volume: 25759000
+  },
+  {
+    date: "2016/8/4",
+    open: 173,
+    high: 174.5,
+    low: 172.5,
+    close: 174.5,
+    adjClose: 138.12,
+    volume: 13612000
+  },
+  {
+    date: "2016/8/3",
+    open: 172.5,
+    high: 174,
+    low: 172,
+    close: 172.5,
+    adjClose: 136.53,
+    volume: 21627000
+  },
+  {
+    date: "2016/8/2",
+    open: 177.5,
+    high: 177.5,
+    low: 175.5,
+    close: 176,
+    adjClose: 139.3,
+    volume: 15250000
+  },
+  {
+    date: "2016/8/1",
+    open: 175,
+    high: 177,
+    low: 174.5,
+    close: 177,
+    adjClose: 140.09,
+    volume: 34188000
+  },
+  {
+    date: "2016/7/29",
+    open: 177,
+    high: 177,
+    low: 172.5,
+    close: 172.5,
+    adjClose: 136.53,
+    volume: 29795000
+  },
+  {
+    date: "2016/7/28",
+    open: 175,
+    high: 176.5,
+    low: 173,
+    close: 176.5,
+    adjClose: 139.7,
+    volume: 31071000
+  },
+  {
+    date: "2016/7/27",
+    open: 175,
+    high: 176,
+    low: 174.5,
+    close: 175,
+    adjClose: 138.51,
+    volume: 34117000
+  },
+  {
+    date: "2016/7/26",
+    open: 172,
+    high: 173,
+    low: 171.5,
+    close: 173,
+    adjClose: 136.93,
+    volume: 32685000
+  },
+  {
+    date: "2016/7/25",
+    open: 172,
+    high: 173,
+    low: 169,
+    close: 171.5,
+    adjClose: 135.74,
+    volume: 27145000
+  },
+  {
+    date: "2016/7/22",
+    open: 172,
+    high: 172,
+    low: 170.5,
+    close: 171,
+    adjClose: 135.35,
+    volume: 28504000
+  },
+  {
+    date: "2016/7/21",
+    open: 171,
+    high: 172,
+    low: 170,
+    close: 172,
+    adjClose: 136.14,
+    volume: 33130000
+  },
+  {
+    date: "2016/7/20",
+    open: 170,
+    high: 170.5,
+    low: 169,
+    close: 170,
+    adjClose: 134.55,
+    volume: 38053000
+  },
+  {
+    date: "2016/7/19",
+    open: 170.5,
+    high: 170.5,
+    low: 169,
+    close: 170.5,
+    adjClose: 134.95,
+    volume: 42456000
+  },
+  {
+    date: "2016/7/18",
+    open: 168,
+    high: 170,
+    low: 168,
+    close: 169.5,
+    adjClose: 134.16,
+    volume: 24749000
+  },
+  {
+    date: "2016/7/15",
+    open: 168,
+    high: 169.5,
+    low: 166.5,
+    close: 169.5,
+    adjClose: 134.16,
+    volume: 41546000
+  },
+  {
+    date: "2016/7/14",
+    open: 167,
+    high: 170,
+    low: 167,
+    close: 169,
+    adjClose: 133.76,
+    volume: 34790000
+  },
+  {
+    date: "2016/7/13",
+    open: 169.5,
+    high: 170,
+    low: 167,
+    close: 168.5,
+    adjClose: 133.37,
+    volume: 50653000
+  },
+  {
+    date: "2016/7/12",
+    open: 171,
+    high: 171.5,
+    low: 169.5,
+    close: 171,
+    adjClose: 135.35,
+    volume: 41961000
+  },
+  {
+    date: "2016/7/11",
+    open: 170,
+    high: 170.5,
+    low: 168.5,
+    close: 170,
+    adjClose: 134.55,
+    volume: 50643000
+  },
+  {
+    date: "2016/7/8",
+    open: 164.5,
+    high: 164.5,
+    low: 164.5,
+    close: 164.5,
+    adjClose: 130.2,
+    volume: null
+  },
+  {
+    date: "2016/7/7",
+    open: 163.5,
+    high: 165,
+    low: 163,
+    close: 164.5,
+    adjClose: 130.2,
+    volume: 23769000
+  },
+  {
+    date: "2016/7/6",
+    open: 163,
+    high: 163,
+    low: 160.5,
+    close: 161.5,
+    adjClose: 127.83,
+    volume: 34803000
+  },
+  {
+    date: "2016/7/5",
+    open: 165,
+    high: 165.5,
+    low: 164,
+    close: 164,
+    adjClose: 129.8,
+    volume: 16346000
+  },
+  {
+    date: "2016/7/4",
+    open: 165.5,
+    high: 166.5,
+    low: 164.5,
+    close: 166,
+    adjClose: 131.39,
+    volume: 25724000
+  },
+  {
+    date: "2016/7/1",
+    open: 164.5,
+    high: 166,
+    low: 163.5,
+    close: 166,
+    adjClose: 131.39,
+    volume: 36212000
+  },
+  {
+    date: "2016/6/30",
+    open: 161,
+    high: 163,
+    low: 159.5,
+    close: 162.5,
+    adjClose: 128.62,
+    volume: 42398000
+  },
+  {
+    date: "2016/6/29",
+    open: 158.5,
+    high: 160,
+    low: 158,
+    close: 159,
+    adjClose: 125.85,
+    volume: 31514000
+  },
+  {
+    date: "2016/6/28",
+    open: 155.5,
+    high: 157.5,
+    low: 155,
+    close: 157,
+    adjClose: 124.26,
+    volume: 1327000
+  },
+  {
+    date: "2016/6/27",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2016/6/27",
+    open: 154.5,
+    high: 156,
+    low: 154,
+    close: 155.5,
+    adjClose: 123.08,
+    volume: 42874000
+  },
+  {
+    date: "2016/6/24",
+    open: 164,
+    high: 164,
+    low: 154.5,
+    close: 159,
+    adjClose: 121.1,
+    volume: 86547000
+  },
+  {
+    date: "2016/6/23",
+    open: 165.5,
+    high: 166,
+    low: 164,
+    close: 164,
+    adjClose: 124.91,
+    volume: 22494000
+  },
+  {
+    date: "2016/6/22",
+    open: 164.5,
+    high: 166,
+    low: 163.5,
+    close: 166,
+    adjClose: 126.43,
+    volume: 30359000
+  },
+  {
+    date: "2016/6/21",
+    open: 164,
+    high: 165.5,
+    low: 163.5,
+    close: 165.5,
+    adjClose: 126.05,
+    volume: 27970000
+  },
+  {
+    date: "2016/6/20",
+    open: 164.5,
+    high: 165,
+    low: 163,
+    close: 163,
+    adjClose: 124.14,
+    volume: 24911000
+  },
+  {
+    date: "2016/6/17",
+    open: 162.5,
+    high: 164.5,
+    low: 162,
+    close: 163,
+    adjClose: 124.14,
+    volume: 30633000
+  },
+  {
+    date: "2016/6/16",
+    open: 161.5,
+    high: 162.5,
+    low: 159.5,
+    close: 160.5,
+    adjClose: 122.24,
+    volume: 24408000
+  },
+  {
+    date: "2016/6/15",
+    open: 162,
+    high: 163,
+    low: 161,
+    close: 163,
+    adjClose: 124.14,
+    volume: 29270000
+  },
+  {
+    date: "2016/6/14",
+    open: 161,
+    high: 163,
+    low: 161,
+    close: 162,
+    adjClose: 123.38,
+    volume: 27509000
+  },
+  {
+    date: "2016/6/13",
+    open: 161,
+    high: 162.5,
+    low: 161,
+    close: 162,
+    adjClose: 123.38,
+    volume: 48750000
+  },
+  {
+    date: "2016/6/8",
+    open: 164,
+    high: 166,
+    low: 163.5,
+    close: 165.5,
+    adjClose: 126.05,
+    volume: 45214000
+  },
+  {
+    date: "2016/6/7",
+    open: 161.5,
+    high: 163.5,
+    low: 161,
+    close: 162,
+    adjClose: 123.38,
+    volume: 47046000
+  },
+  {
+    date: "2016/6/6",
+    open: 161,
+    high: 162,
+    low: 160,
+    close: 161,
+    adjClose: 122.62,
+    volume: 28757000
+  },
+  {
+    date: "2016/6/3",
+    open: 159,
+    high: 160.5,
+    low: 159,
+    close: 160.5,
+    adjClose: 122.24,
+    volume: 31853000
+  },
+  {
+    date: "2016/6/2",
+    open: 159,
+    high: 160,
+    low: 158,
+    close: 159,
+    adjClose: 121.1,
+    volume: 21977000
+  },
+  {
+    date: "2016/6/1",
+    open: 156,
+    high: 159,
+    low: 156,
+    close: 159,
+    adjClose: 121.1,
+    volume: 26926000
+  },
+  {
+    date: "2016/5/31",
+    open: 156.5,
+    high: 157.5,
+    low: 155,
+    close: 156.5,
+    adjClose: 119.19,
+    volume: 69656000
+  },
+  {
+    date: "2016/5/30",
+    open: 157,
+    high: 158,
+    low: 155,
+    close: 157,
+    adjClose: 119.58,
+    volume: 36339000
+  },
+  {
+    date: "2016/5/27",
+    open: 156,
+    high: 156.5,
+    low: 154.5,
+    close: 156.5,
+    adjClose: 119.19,
+    volume: 22992000
+  },
+  {
+    date: "2016/5/26",
+    open: 154.5,
+    high: 155,
+    low: 153.5,
+    close: 155,
+    adjClose: 118.05,
+    volume: 17196000
+  },
+  {
+    date: "2016/5/25",
+    open: 153.5,
+    high: 155,
+    low: 152.5,
+    close: 154.5,
+    adjClose: 117.67,
+    volume: 30719000
+  },
+  {
+    date: "2016/5/24",
+    open: 152.5,
+    high: 153.5,
+    low: 151,
+    close: 151,
+    adjClose: 115.01,
+    volume: 24470000
+  },
+  {
+    date: "2016/5/23",
+    open: 150.5,
+    high: 154.5,
+    low: 149.5,
+    close: 154,
+    adjClose: 117.29,
+    volume: 50127000
+  },
+  {
+    date: "2016/5/20",
+    open: 147.5,
+    high: 149.5,
+    low: 147,
+    close: 148.5,
+    adjClose: 113.1,
+    volume: 36306000
+  },
+  {
+    date: "2016/5/19",
+    open: 148,
+    high: 148.5,
+    low: 145.5,
+    close: 147,
+    adjClose: 111.96,
+    volume: 35132000
+  },
+  {
+    date: "2016/5/18",
+    open: 146,
+    high: 147,
+    low: 145,
+    close: 147,
+    adjClose: 111.96,
+    volume: 31057000
+  },
+  {
+    date: "2016/5/17",
+    open: 145.5,
+    high: 147,
+    low: 145,
+    close: 147,
+    adjClose: 111.96,
+    volume: 30277000
+  },
+  {
+    date: "2016/5/16",
+    open: 143,
+    high: 145.5,
+    low: 143,
+    close: 144.5,
+    adjClose: 110.05,
+    volume: 31133000
+  },
+  {
+    date: "2016/5/13",
+    open: 145,
+    high: 145.5,
+    low: 143,
+    close: 144,
+    adjClose: 109.67,
+    volume: 60038000
+  },
+  {
+    date: "2016/5/12",
+    open: 147,
+    high: 148,
+    low: 146,
+    close: 146,
+    adjClose: 111.2,
+    volume: 23749000
+  },
+  {
+    date: "2016/5/11",
+    open: 148.5,
+    high: 149,
+    low: 146.5,
+    close: 147,
+    adjClose: 111.96,
+    volume: 40057000
+  },
+  {
+    date: "2016/5/10",
+    open: 147,
+    high: 148,
+    low: 146.5,
+    close: 147,
+    adjClose: 111.96,
+    volume: 29785000
+  },
+  {
+    date: "2016/5/9",
+    open: 148.5,
+    high: 149,
+    low: 146.5,
+    close: 147.5,
+    adjClose: 112.34,
+    volume: 38478000
+  },
+  {
+    date: "2016/5/6",
+    open: 148.5,
+    high: 148.5,
+    low: 147,
+    close: 148,
+    adjClose: 112.72,
+    volume: 36510000
+  },
+  {
+    date: "2016/5/5",
+    open: 147.5,
+    high: 148.5,
+    low: 146,
+    close: 147.5,
+    adjClose: 112.34,
+    volume: 38269000
+  },
+  {
+    date: "2016/5/4",
+    open: 147,
+    high: 149,
+    low: 146.5,
+    close: 147,
+    adjClose: 111.96,
+    volume: 52973000
+  },
+  {
+    date: "2016/5/3",
+    open: 148,
+    high: 148.5,
+    low: 146.5,
+    close: 147.5,
+    adjClose: 112.34,
+    volume: 68550000
+  },
+  {
+    date: "2016/4/29",
+    open: 151,
+    high: 151,
+    low: 149,
+    close: 150,
+    adjClose: 114.24,
+    volume: 66445000
+  },
+  {
+    date: "2016/4/28",
+    open: 157.5,
+    high: 158,
+    low: 153,
+    close: 153,
+    adjClose: 116.53,
+    volume: 48915000
+  },
+  {
+    date: "2016/4/27",
+    open: 156,
+    high: 157.5,
+    low: 155.5,
+    close: 156.5,
+    adjClose: 119.19,
+    volume: 28845000
+  },
+  {
+    date: "2016/4/26",
+    open: 156.5,
+    high: 158.5,
+    low: 156.5,
+    close: 158,
+    adjClose: 120.34,
+    volume: 18119000
+  },
+  {
+    date: "2016/4/25",
+    open: 156.5,
+    high: 157.5,
+    low: 156,
+    close: 157.5,
+    adjClose: 119.96,
+    volume: 14306000
+  },
+  {
+    date: "2016/4/22",
+    open: 155.5,
+    high: 158,
+    low: 155,
+    close: 156.5,
+    adjClose: 119.19,
+    volume: 28990000
+  },
+  {
+    date: "2016/4/21",
+    open: 156,
+    high: 157,
+    low: 154,
+    close: 157,
+    adjClose: 119.58,
+    volume: 29723000
+  },
+  {
+    date: "2016/4/20",
+    open: 157.5,
+    high: 158,
+    low: 154,
+    close: 154,
+    adjClose: 117.29,
+    volume: 40996000
+  },
+  {
+    date: "2016/4/19",
+    open: 160,
+    high: 161,
+    low: 157,
+    close: 157.5,
+    adjClose: 119.96,
+    volume: 26577000
+  },
+  {
+    date: "2016/4/18",
+    open: 158,
+    high: 158.5,
+    low: 157.5,
+    close: 158,
+    adjClose: 120.34,
+    volume: 20279000
+  },
+  {
+    date: "2016/4/15",
+    open: 157,
+    high: 160,
+    low: 156,
+    close: 159.5,
+    adjClose: 121.48,
+    volume: 48779000
+  },
+  {
+    date: "2016/4/14",
+    open: 162,
+    high: 162.5,
+    low: 160,
+    close: 161.5,
+    adjClose: 123,
+    volume: 31338000
+  },
+  {
+    date: "2016/4/13",
+    open: 160,
+    high: 162,
+    low: 159.5,
+    close: 161.5,
+    adjClose: 123,
+    volume: 39611000
+  },
+  {
+    date: "2016/4/12",
+    open: 157.5,
+    high: 159.5,
+    low: 157.5,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 14859000
+  },
+  {
+    date: "2016/4/11",
+    open: 156,
+    high: 159,
+    low: 155.5,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 21758000
+  },
+  {
+    date: "2016/4/8",
+    open: 154,
+    high: 158,
+    low: 154,
+    close: 157.5,
+    adjClose: 119.96,
+    volume: 41032000
+  },
+  {
+    date: "2016/4/7",
+    open: 155,
+    high: 155,
+    low: 152.5,
+    close: 154.5,
+    adjClose: 117.67,
+    volume: 35238000
+  },
+  {
+    date: "2016/4/6",
+    open: 155.5,
+    high: 156,
+    low: 153.5,
+    close: 153.5,
+    adjClose: 116.91,
+    volume: 58134000
+  },
+  {
+    date: "2016/4/1",
+    open: 161,
+    high: 161,
+    low: 157.5,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 31564000
+  },
+  {
+    date: "2016/3/31",
+    open: 162,
+    high: 163,
+    low: 159,
+    close: 162,
+    adjClose: 123.38,
+    volume: 49433000
+  },
+  {
+    date: "2016/3/30",
+    open: 158.5,
+    high: 162,
+    low: 158.5,
+    close: 161.5,
+    adjClose: 123,
+    volume: 43616000
+  },
+  {
+    date: "2016/3/29",
+    open: 158.5,
+    high: 159.5,
+    low: 158,
+    close: 159,
+    adjClose: 121.1,
+    volume: 18977000
+  },
+  {
+    date: "2016/3/28",
+    open: 158,
+    high: 159,
+    low: 157,
+    close: 159,
+    adjClose: 121.1,
+    volume: 15268000
+  },
+  {
+    date: "2016/3/25",
+    open: 158.5,
+    high: 159,
+    low: 157,
+    close: 158,
+    adjClose: 120.34,
+    volume: 10175000
+  },
+  {
+    date: "2016/3/24",
+    open: 158,
+    high: 159,
+    low: 157,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 24853000
+  },
+  {
+    date: "2016/3/23",
+    open: 158.5,
+    high: 159.5,
+    low: 158,
+    close: 159.5,
+    adjClose: 121.48,
+    volume: 27478000
+  },
+  {
+    date: "2016/3/22",
+    open: 159.5,
+    high: 159.5,
+    low: 157,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 25809000
+  },
+  {
+    date: "2016/3/21",
+    open: 160,
+    high: 160,
+    low: 158,
+    close: 160,
+    adjClose: 121.86,
+    volume: 26100000
+  },
+  {
+    date: "2016/3/18",
+    open: 158.5,
+    high: 159.5,
+    low: 158.5,
+    close: 159.5,
+    adjClose: 121.48,
+    volume: 55975000
+  },
+  {
+    date: "2016/3/17",
+    open: 159.5,
+    high: 160,
+    low: 157.5,
+    close: 158.5,
+    adjClose: 120.72,
+    volume: 48193000
+  },
+  {
+    date: "2016/3/16",
+    open: 155.5,
+    high: 156,
+    low: 154,
+    close: 156,
+    adjClose: 118.81,
+    volume: 30962000
+  },
+  {
+    date: "2016/3/15",
+    open: 155,
+    high: 156.5,
+    low: 153,
+    close: 154.5,
+    adjClose: 117.67,
+    volume: 28689000
+  },
+  {
+    date: "2016/3/14",
+    open: 156.5,
+    high: 157.5,
+    low: 155.5,
+    close: 156,
+    adjClose: 118.81,
+    volume: 32751000
+  },
+  {
+    date: "2016/3/11",
+    open: 154.5,
+    high: 155,
+    low: 153,
+    close: 155,
+    adjClose: 118.05,
+    volume: 29566000
+  },
+  {
+    date: "2016/3/10",
+    open: 153,
+    high: 154.5,
+    low: 151.5,
+    close: 154.5,
+    adjClose: 117.67,
+    volume: 28302000
+  },
+  {
+    date: "2016/3/9",
+    open: 152,
+    high: 153,
+    low: 150.5,
+    close: 153,
+    adjClose: 116.53,
+    volume: 24004000
+  },
+  {
+    date: "2016/3/8",
+    open: 151,
+    high: 152,
+    low: 149.5,
+    close: 152,
+    adjClose: 115.77,
+    volume: 35683000
+  },
+  {
+    date: "2016/3/7",
+    open: 152.5,
+    high: 153.5,
+    low: 151,
+    close: 152,
+    adjClose: 115.77,
+    volume: 23906000
+  },
+  {
+    date: "2016/3/4",
+    open: 153,
+    high: 153.5,
+    low: 151.5,
+    close: 152.5,
+    adjClose: 116.15,
+    volume: 32794000
+  },
+  {
+    date: "2016/3/3",
+    open: 154,
+    high: 154.5,
+    low: 153,
+    close: 154,
+    adjClose: 117.29,
+    volume: 28822000
+  },
+  {
+    date: "2016/3/2",
+    open: 154,
+    high: 154.5,
+    low: 153,
+    close: 153,
+    adjClose: 116.53,
+    volume: 36010000
+  },
+  {
+    date: "2016/3/1",
+    open: 148.5,
+    high: 152,
+    low: 148.5,
+    close: 152,
+    adjClose: 115.77,
+    volume: 38629000
+  },
+  {
+    date: "2016/2/26",
+    open: 151,
+    high: 151.5,
+    low: 148,
+    close: 149,
+    adjClose: 113.48,
+    volume: 37655000
+  },
+  {
+    date: "2016/2/25",
+    open: 149,
+    high: 151,
+    low: 148.5,
+    close: 150.5,
+    adjClose: 114.62,
+    volume: 25202000
+  },
+  {
+    date: "2016/2/24",
+    open: 149.5,
+    high: 150.5,
+    low: 147,
+    close: 148,
+    adjClose: 112.72,
+    volume: 22026000
+  },
+  {
+    date: "2016/2/23",
+    open: 150.5,
+    high: 151,
+    low: 149,
+    close: 149.5,
+    adjClose: 113.86,
+    volume: 22302000
+  },
+  {
+    date: "2016/2/22",
+    open: 149.5,
+    high: 152.5,
+    low: 149.5,
+    close: 151,
+    adjClose: 115.01,
+    volume: 27003000
+  },
+  {
+    date: "2016/2/19",
+    open: 149,
+    high: 151,
+    low: 149,
+    close: 151,
+    adjClose: 115.01,
+    volume: 35668000
+  },
+  {
+    date: "2016/2/18",
+    open: 150,
+    high: 151,
+    low: 149.5,
+    close: 151,
+    adjClose: 115.01,
+    volume: 61657000
+  },
+  {
+    date: "2016/2/17",
+    open: 149,
+    high: 149,
+    low: 147,
+    close: 148,
+    adjClose: 112.72,
+    volume: 38453000
+  },
+  {
+    date: "2016/2/16",
+    open: 146,
+    high: 148,
+    low: 145.5,
+    close: 147.5,
+    adjClose: 112.34,
+    volume: 55006000
+  },
+  {
+    date: "2016/2/15",
+    open: 142,
+    high: 146.5,
+    low: 142,
+    close: 145,
+    adjClose: 110.44,
+    volume: 72875000
+  },
+  {
+    date: "2016/2/3",
+    open: 145,
+    high: 146,
+    low: 144.5,
+    close: 146,
+    adjClose: 111.2,
+    volume: 70465000
+  },
+  {
+    date: "2016/2/2",
+    open: 144,
+    high: 144.5,
+    low: 141.5,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 25380000
+  },
+  {
+    date: "2016/2/1",
+    open: 144,
+    high: 144,
+    low: 141.5,
+    close: 144,
+    adjClose: 109.67,
+    volume: 40943000
+  },
+  {
+    date: "2016/1/29",
+    open: 138.5,
+    high: 143,
+    low: 138,
+    close: 143,
+    adjClose: 108.91,
+    volume: 55616000
+  },
+  {
+    date: "2016/1/28",
+    open: 138,
+    high: 140.5,
+    low: 138,
+    close: 140,
+    adjClose: 106.63,
+    volume: 37867000
+  },
+  {
+    date: "2016/1/27",
+    open: 139,
+    high: 139.5,
+    low: 138.5,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 24029000
+  },
+  {
+    date: "2016/1/26",
+    open: 137.5,
+    high: 139,
+    low: 137,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 24049000
+  },
+  {
+    date: "2016/1/25",
+    open: 140,
+    high: 140,
+    low: 139,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 27184000
+  },
+  {
+    date: "2016/1/22",
+    open: 136.5,
+    high: 138.5,
+    low: 136,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 33889000
+  },
+  {
+    date: "2016/1/21",
+    open: 134,
+    high: 136.5,
+    low: 134,
+    close: 135,
+    adjClose: 102.82,
+    volume: 31933000
+  },
+  {
+    date: "2016/1/20",
+    open: 137.5,
+    high: 137.5,
+    low: 133.5,
+    close: 134.5,
+    adjClose: 102.44,
+    volume: 43839000
+  },
+  {
+    date: "2016/1/19",
+    open: 137.5,
+    high: 138,
+    low: 136,
+    close: 138,
+    adjClose: 105.1,
+    volume: 23737000
+  },
+  {
+    date: "2016/1/18",
+    open: 135,
+    high: 138,
+    low: 134.5,
+    close: 137,
+    adjClose: 104.34,
+    volume: 36757000
+  },
+  {
+    date: "2016/1/15",
+    open: 137.5,
+    high: 138,
+    low: 135.5,
+    close: 137,
+    adjClose: 104.34,
+    volume: 79464000
+  },
+  {
+    date: "2016/1/14",
+    open: 130.5,
+    high: 132,
+    low: 130.5,
+    close: 131.5,
+    adjClose: 100.15,
+    volume: 39253000
+  },
+  {
+    date: "2016/1/13",
+    open: 133.5,
+    high: 135.5,
+    low: 133,
+    close: 133.5,
+    adjClose: 101.68,
+    volume: 37717000
+  },
+  {
+    date: "2016/1/12",
+    open: 133,
+    high: 134,
+    low: 131.5,
+    close: 133,
+    adjClose: 101.3,
+    volume: 34688000
+  },
+  {
+    date: "2016/1/11",
+    open: 133,
+    high: 134.5,
+    low: 130.5,
+    close: 133,
+    adjClose: 101.3,
+    volume: 48345000
+  },
+  {
+    date: "2016/1/8",
+    open: 132,
+    high: 135,
+    low: 132,
+    close: 134,
+    adjClose: 102.06,
+    volume: 50123000
+  },
+  {
+    date: "2016/1/7",
+    open: 134.5,
+    high: 135,
+    low: 130.5,
+    close: 133,
+    adjClose: 101.3,
+    volume: 62539000
+  },
+  {
+    date: "2016/1/6",
+    open: 138,
+    high: 138,
+    low: 135,
+    close: 135.5,
+    adjClose: 103.2,
+    volume: 53617000
+  },
+  {
+    date: "2016/1/5",
+    open: 139,
+    high: 140,
+    low: 137,
+    close: 138,
+    adjClose: 105.1,
+    volume: 46381000
+  },
+  {
+    date: "2016/1/4",
+    open: 142.5,
+    high: 143.5,
+    low: 139,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 39169000
+  },
+  {
+    date: "2015/12/31",
+    open: 142,
+    high: 144,
+    low: 141,
+    close: 143,
+    adjClose: 108.91,
+    volume: 18336000
+  },
+  {
+    date: "2015/12/30",
+    open: 142.5,
+    high: 144,
+    low: 142,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 14578000
+  },
+  {
+    date: "2015/12/29",
+    open: 143.5,
+    high: 144,
+    low: 141.5,
+    close: 142,
+    adjClose: 108.15,
+    volume: 12801000
+  },
+  {
+    date: "2015/12/28",
+    open: 143.5,
+    high: 144,
+    low: 143,
+    close: 143.5,
+    adjClose: 109.29,
+    volume: 10797000
+  },
+  {
+    date: "2015/12/25",
+    open: 142,
+    high: 143.5,
+    low: 142,
+    close: 143,
+    adjClose: 108.91,
+    volume: 6126000
+  },
+  {
+    date: "2015/12/24",
+    open: 143,
+    high: 143.5,
+    low: 142,
+    close: 142,
+    adjClose: 108.15,
+    volume: 13471000
+  },
+  {
+    date: "2015/12/23",
+    open: 141,
+    high: 143,
+    low: 140.5,
+    close: 141.5,
+    adjClose: 107.77,
+    volume: 18064000
+  },
+  {
+    date: "2015/12/22",
+    open: 141,
+    high: 142,
+    low: 140.5,
+    close: 142,
+    adjClose: 108.15,
+    volume: 17085000
+  },
+  {
+    date: "2015/12/21",
+    open: 141.5,
+    high: 142.5,
+    low: 140.5,
+    close: 141.5,
+    adjClose: 107.77,
+    volume: 26847000
+  },
+  {
+    date: "2015/12/18",
+    open: 143,
+    high: 145,
+    low: 142,
+    close: 142,
+    adjClose: 108.15,
+    volume: 36298000
+  },
+  {
+    date: "2015/12/17",
+    open: 144.5,
+    high: 145,
+    low: 143,
+    close: 145,
+    adjClose: 110.44,
+    volume: 34462000
+  },
+  {
+    date: "2015/12/16",
+    open: 142,
+    high: 144,
+    low: 141,
+    close: 143.5,
+    adjClose: 109.29,
+    volume: 56401000
+  },
+  {
+    date: "2015/12/15",
+    open: 139.5,
+    high: 140.5,
+    low: 138,
+    close: 138,
+    adjClose: 105.1,
+    volume: 23558000
+  },
+  {
+    date: "2015/12/14",
+    open: 137.5,
+    high: 139.5,
+    low: 137.5,
+    close: 139,
+    adjClose: 105.87,
+    volume: 32656000
+  },
+  {
+    date: "2015/12/11",
+    open: 141,
+    high: 142,
+    low: 139,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 29914000
+  },
+  {
+    date: "2015/12/10",
+    open: 140.5,
+    high: 141.5,
+    low: 139,
+    close: 141,
+    adjClose: 107.39,
+    volume: 41414000
+  },
+  {
+    date: "2015/12/9",
+    open: 142,
+    high: 142,
+    low: 140.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 26751000
+  },
+  {
+    date: "2015/12/8",
+    open: 143.5,
+    high: 144,
+    low: 141,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 32173000
+  },
+  {
+    date: "2015/12/7",
+    open: 142,
+    high: 144.5,
+    low: 142,
+    close: 143.5,
+    adjClose: 109.29,
+    volume: 40284000
+  },
+  {
+    date: "2015/12/4",
+    open: 141,
+    high: 142.5,
+    low: 140.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 30869000
+  },
+  {
+    date: "2015/12/3",
+    open: 141.5,
+    high: 143,
+    low: 141.5,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 18825000
+  },
+  {
+    date: "2015/12/2",
+    open: 144,
+    high: 144,
+    low: 142,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 31609000
+  },
+  {
+    date: "2015/12/1",
+    open: 140.5,
+    high: 142.5,
+    low: 138.5,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 46117000
+  },
+  {
+    date: "2015/11/30",
+    open: 136.5,
+    high: 139,
+    low: 136,
+    close: 139,
+    adjClose: 105.87,
+    volume: 108490000
+  },
+  {
+    date: "2015/11/27",
+    open: 143,
+    high: 143,
+    low: 139,
+    close: 139,
+    adjClose: 105.87,
+    volume: 23135000
+  },
+  {
+    date: "2015/11/26",
+    open: 141,
+    high: 142.5,
+    low: 140,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 31976000
+  },
+  {
+    date: "2015/11/25",
+    open: 139.5,
+    high: 141,
+    low: 138.5,
+    close: 141,
+    adjClose: 107.39,
+    volume: 27099000
+  },
+  {
+    date: "2015/11/24",
+    open: 140,
+    high: 141.5,
+    low: 139.5,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 21843000
+  },
+  {
+    date: "2015/11/23",
+    open: 141,
+    high: 141.5,
+    low: 140,
+    close: 141,
+    adjClose: 107.39,
+    volume: 17170000
+  },
+  {
+    date: "2015/11/20",
+    open: 140.5,
+    high: 141,
+    low: 140,
+    close: 141,
+    adjClose: 107.39,
+    volume: 20271000
+  },
+  {
+    date: "2015/11/19",
+    open: 138.5,
+    high: 140.5,
+    low: 138,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 27426000
+  },
+  {
+    date: "2015/11/18",
+    open: 139.5,
+    high: 140,
+    low: 136.5,
+    close: 137,
+    adjClose: 104.34,
+    volume: 29074000
+  },
+  {
+    date: "2015/11/17",
+    open: 138,
+    high: 140,
+    low: 137.5,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 28188000
+  },
+  {
+    date: "2015/11/16",
+    open: 134,
+    high: 135.5,
+    low: 134,
+    close: 135,
+    adjClose: 102.82,
+    volume: 32110000
+  },
+  {
+    date: "2015/11/13",
+    open: 137.5,
+    high: 139,
+    low: 136,
+    close: 136,
+    adjClose: 103.58,
+    volume: 21639000
+  },
+  {
+    date: "2015/11/12",
+    open: 138.5,
+    high: 139,
+    low: 138,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 16474000
+  },
+  {
+    date: "2015/11/11",
+    open: 140.5,
+    high: 140.5,
+    low: 136.5,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 29412000
+  },
+  {
+    date: "2015/11/10",
+    open: 141.5,
+    high: 141.5,
+    low: 139,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 23307000
+  },
+  {
+    date: "2015/11/9",
+    open: 141,
+    high: 143,
+    low: 140.5,
+    close: 142,
+    adjClose: 108.15,
+    volume: 24833000
+  },
+  {
+    date: "2015/11/6",
+    open: 144,
+    high: 144,
+    low: 139,
+    close: 140,
+    adjClose: 106.63,
+    volume: 45683000
+  },
+  {
+    date: "2015/11/5",
+    open: 144,
+    high: 144.5,
+    low: 142.5,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 35773000
+  },
+  {
+    date: "2015/11/4",
+    open: 141.5,
+    high: 144.5,
+    low: 141,
+    close: 144.5,
+    adjClose: 110.05,
+    volume: 75144000
+  },
+  {
+    date: "2015/11/3",
+    open: 138.5,
+    high: 140,
+    low: 138,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 33082000
+  },
+  {
+    date: "2015/11/2",
+    open: 138.5,
+    high: 138.5,
+    low: 135.5,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 21663000
+  },
+  {
+    date: "2015/10/30",
+    open: 137,
+    high: 137.5,
+    low: 136,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 27844000
+  },
+  {
+    date: "2015/10/29",
+    open: 139,
+    high: 139.5,
+    low: 136.5,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 20428000
+  },
+  {
+    date: "2015/10/28",
+    open: 137,
+    high: 139,
+    low: 137,
+    close: 138,
+    adjClose: 105.1,
+    volume: 22522000
+  },
+  {
+    date: "2015/10/27",
+    open: 138.5,
+    high: 140,
+    low: 137.5,
+    close: 139,
+    adjClose: 105.87,
+    volume: 26012000
+  },
+  {
+    date: "2015/10/26",
+    open: 140.5,
+    high: 140.5,
+    low: 139,
+    close: 140,
+    adjClose: 106.63,
+    volume: 24382000
+  },
+  {
+    date: "2015/10/23",
+    open: 140,
+    high: 140.5,
+    low: 139,
+    close: 140,
+    adjClose: 106.63,
+    volume: 35644000
+  },
+  {
+    date: "2015/10/22",
+    open: 138,
+    high: 138.5,
+    low: 137,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 15149000
+  },
+  {
+    date: "2015/10/21",
+    open: 139.5,
+    high: 140,
+    low: 137.5,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 17976000
+  },
+  {
+    date: "2015/10/20",
+    open: 139,
+    high: 139,
+    low: 137.5,
+    close: 139,
+    adjClose: 105.87,
+    volume: 27462000
+  },
+  {
+    date: "2015/10/19",
+    open: 138.5,
+    high: 139,
+    low: 137,
+    close: 138,
+    adjClose: 105.1,
+    volume: 26150000
+  },
+  {
+    date: "2015/10/16",
+    open: 137,
+    high: 137.5,
+    low: 136,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 36196000
+  },
+  {
+    date: "2015/10/15",
+    open: 139,
+    high: 141,
+    low: 139,
+    close: 140,
+    adjClose: 106.63,
+    volume: 57142000
+  },
+  {
+    date: "2015/10/14",
+    open: 136.5,
+    high: 137.5,
+    low: 136,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 18007000
+  },
+  {
+    date: "2015/10/13",
+    open: 138.5,
+    high: 138.5,
+    low: 136,
+    close: 137.5,
+    adjClose: 104.72,
+    volume: 36108000
+  },
+  {
+    date: "2015/10/12",
+    open: 137,
+    high: 139,
+    low: 136.5,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 46971000
+  },
+  {
+    date: "2015/10/8",
+    open: 137,
+    high: 137,
+    low: 135,
+    close: 136,
+    adjClose: 103.58,
+    volume: 31144000
+  },
+  {
+    date: "2015/10/7",
+    open: 133.5,
+    high: 135,
+    low: 133,
+    close: 135,
+    adjClose: 102.82,
+    volume: 31784000
+  },
+  {
+    date: "2015/10/6",
+    open: 135,
+    high: 135.5,
+    low: 132.5,
+    close: 133,
+    adjClose: 101.3,
+    volume: 48613000
+  },
+  {
+    date: "2015/10/5",
+    open: 133,
+    high: 133.5,
+    low: 131.5,
+    close: 132.5,
+    adjClose: 100.92,
+    volume: 30276000
+  },
+  {
+    date: "2015/10/2",
+    open: 132.5,
+    high: 132.5,
+    low: 131.5,
+    close: 132,
+    adjClose: 100.53,
+    volume: 25216000
+  },
+  {
+    date: "2015/10/1",
+    open: 131,
+    high: 134,
+    low: 129.5,
+    close: 133.5,
+    adjClose: 101.68,
+    volume: 49600000
+  },
+  {
+    date: "2015/9/30",
+    open: 128,
+    high: 131,
+    low: 127,
+    close: 130,
+    adjClose: 99.01,
+    volume: 67112000
+  },
+  {
+    date: "2015/9/29",
+    open: 127,
+    high: 127,
+    low: 127,
+    close: 127,
+    adjClose: 96.73,
+    volume: null
+  },
+  {
+    date: "2015/9/25",
+    open: 127,
+    high: 127.5,
+    low: 125,
+    close: 127,
+    adjClose: 96.73,
+    volume: 24630000
+  },
+  {
+    date: "2015/9/24",
+    open: 127,
+    high: 128,
+    low: 125.5,
+    close: 127,
+    adjClose: 96.73,
+    volume: 43432000
+  },
+  {
+    date: "2015/9/23",
+    open: 127,
+    high: 127.5,
+    low: 124.5,
+    close: 124.5,
+    adjClose: 94.82,
+    volume: 32905000
+  },
+  {
+    date: "2015/9/22",
+    open: 130,
+    high: 130,
+    low: 128.5,
+    close: 129,
+    adjClose: 98.25,
+    volume: 17636000
+  },
+  {
+    date: "2015/9/21",
+    open: 130,
+    high: 130,
+    low: 128.5,
+    close: 129.5,
+    adjClose: 98.63,
+    volume: 29930000
+  },
+  {
+    date: "2015/9/18",
+    open: 129.5,
+    high: 131.5,
+    low: 129,
+    close: 131.5,
+    adjClose: 100.15,
+    volume: 31937000
+  },
+  {
+    date: "2015/9/17",
+    open: 130.5,
+    high: 131.5,
+    low: 130,
+    close: 131,
+    adjClose: 99.77,
+    volume: 49472000
+  },
+  {
+    date: "2015/9/16",
+    open: 128,
+    high: 130,
+    low: 127.5,
+    close: 129.5,
+    adjClose: 98.63,
+    volume: 39923000
+  },
+  {
+    date: "2015/9/15",
+    open: 127.5,
+    high: 128,
+    low: 125.5,
+    close: 126,
+    adjClose: 95.96,
+    volume: 21658000
+  },
+  {
+    date: "2015/9/14",
+    open: 128,
+    high: 129,
+    low: 126,
+    close: 127.5,
+    adjClose: 97.11,
+    volume: 25508000
+  },
+  {
+    date: "2015/9/11",
+    open: 125.5,
+    high: 127.5,
+    low: 124,
+    close: 127.5,
+    adjClose: 97.11,
+    volume: 20525000
+  },
+  {
+    date: "2015/9/10",
+    open: 127,
+    high: 128,
+    low: 125,
+    close: 125,
+    adjClose: 95.2,
+    volume: 32912000
+  },
+  {
+    date: "2015/9/9",
+    open: 126.5,
+    high: 129,
+    low: 126.5,
+    close: 129,
+    adjClose: 98.25,
+    volume: 53588000
+  },
+  {
+    date: "2015/9/8",
+    open: 122.5,
+    high: 123.5,
+    low: 122,
+    close: 123,
+    adjClose: 93.68,
+    volume: 15090000
+  },
+  {
+    date: "2015/9/7",
+    open: 124.5,
+    high: 126,
+    low: 122,
+    close: 122.5,
+    adjClose: 93.3,
+    volume: 25891000
+  },
+  {
+    date: "2015/9/4",
+    open: 126.5,
+    high: 127,
+    low: 123.5,
+    close: 125,
+    adjClose: 95.2,
+    volume: 22006000
+  },
+  {
+    date: "2015/9/3",
+    open: 127.5,
+    high: 127.5,
+    low: 125,
+    close: 127,
+    adjClose: 96.73,
+    volume: 24004000
+  },
+  {
+    date: "2015/9/2",
+    open: 123,
+    high: 127,
+    low: 123,
+    close: 125.5,
+    adjClose: 95.58,
+    volume: 36973000
+  },
+  {
+    date: "2015/9/1",
+    open: 127.5,
+    high: 127.5,
+    low: 124,
+    close: 124,
+    adjClose: 94.44,
+    volume: 42340000
+  },
+  {
+    date: "2015/8/31",
+    open: 126,
+    high: 129,
+    low: 123.5,
+    close: 129,
+    adjClose: 98.25,
+    volume: 56941000
+  },
+  {
+    date: "2015/8/28",
+    open: 127,
+    high: 127,
+    low: 124.5,
+    close: 125,
+    adjClose: 95.2,
+    volume: 41466000
+  },
+  {
+    date: "2015/8/27",
+    open: 125,
+    high: 125,
+    low: 122,
+    close: 124,
+    adjClose: 94.44,
+    volume: 53388000
+  },
+  {
+    date: "2015/8/26",
+    open: 121,
+    high: 124.5,
+    low: 119.5,
+    close: 122.5,
+    adjClose: 93.3,
+    volume: 64879000
+  },
+  {
+    date: "2015/8/25",
+    open: 118,
+    high: 124,
+    low: 117.5,
+    close: 123.5,
+    adjClose: 94.06,
+    volume: 94960000
+  },
+  {
+    date: "2015/8/24",
+    open: 120,
+    high: 121,
+    low: 112.5,
+    close: 115,
+    adjClose: 87.59,
+    volume: 116158000
+  },
+  {
+    date: "2015/8/21",
+    open: 123,
+    high: 124.5,
+    low: 121,
+    close: 121,
+    adjClose: 92.16,
+    volume: 59694000
+  },
+  {
+    date: "2015/8/20",
+    open: 124.5,
+    high: 126,
+    low: 123.5,
+    close: 126,
+    adjClose: 95.96,
+    volume: 38012000
+  },
+  {
+    date: "2015/8/19",
+    open: 127.5,
+    high: 127.5,
+    low: 124,
+    close: 125,
+    adjClose: 95.2,
+    volume: 41301000
+  },
+  {
+    date: "2015/8/18",
+    open: 125,
+    high: 126.5,
+    low: 125,
+    close: 126,
+    adjClose: 95.96,
+    volume: 40722000
+  },
+  {
+    date: "2015/8/17",
+    open: 125.5,
+    high: 125.5,
+    low: 123,
+    close: 124,
+    adjClose: 94.44,
+    volume: 37847000
+  },
+  {
+    date: "2015/8/14",
+    open: 128,
+    high: 128.5,
+    low: 125,
+    close: 126,
+    adjClose: 95.96,
+    volume: 39413000
+  },
+  {
+    date: "2015/8/13",
+    open: 129,
+    high: 130,
+    low: 127.5,
+    close: 128,
+    adjClose: 97.49,
+    volume: 35943000
+  },
+  {
+    date: "2015/8/12",
+    open: 129.5,
+    high: 130,
+    low: 127.5,
+    close: 128.5,
+    adjClose: 97.87,
+    volume: 41642000
+  },
+  {
+    date: "2015/8/11",
+    open: 133.5,
+    high: 133.5,
+    low: 130.5,
+    close: 130.5,
+    adjClose: 99.39,
+    volume: 64344000
+  },
+  {
+    date: "2015/8/10",
+    open: 131,
+    high: 131,
+    low: 125.5,
+    close: 129,
+    adjClose: 98.25,
+    volume: 63646000
+  },
+  {
+    date: "2015/8/7",
+    open: 133,
+    high: 133.5,
+    low: 131.5,
+    close: 133,
+    adjClose: 101.3,
+    volume: 30554000
+  },
+  {
+    date: "2015/8/6",
+    open: 136,
+    high: 136,
+    low: 132,
+    close: 134,
+    adjClose: 102.06,
+    volume: 38414000
+  },
+  {
+    date: "2015/8/5",
+    open: 135.5,
+    high: 135.5,
+    low: 134,
+    close: 134,
+    adjClose: 102.06,
+    volume: 28491000
+  },
+  {
+    date: "2015/8/4",
+    open: 135,
+    high: 136.5,
+    low: 134.5,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 26546000
+  },
+  {
+    date: "2015/8/3",
+    open: 138.5,
+    high: 138.5,
+    low: 134.5,
+    close: 134.5,
+    adjClose: 102.44,
+    volume: 33631000
+  },
+  {
+    date: "2015/7/31",
+    open: 140.5,
+    high: 140.5,
+    low: 137.5,
+    close: 139.5,
+    adjClose: 106.25,
+    volume: 39992000
+  },
+  {
+    date: "2015/7/30",
+    open: 136,
+    high: 139,
+    low: 136,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 36097000
+  },
+  {
+    date: "2015/7/29",
+    open: 135,
+    high: 136,
+    low: 134.5,
+    close: 135.5,
+    adjClose: 103.2,
+    volume: 29871000
+  },
+  {
+    date: "2015/7/28",
+    open: 135,
+    high: 136.5,
+    low: 134,
+    close: 134,
+    adjClose: 102.06,
+    volume: 34219000
+  },
+  {
+    date: "2015/7/27",
+    open: 135,
+    high: 135.5,
+    low: 134,
+    close: 134,
+    adjClose: 102.06,
+    volume: 43371000
+  },
+  {
+    date: "2015/7/24",
+    open: 138,
+    high: 138,
+    low: 136,
+    close: 137,
+    adjClose: 104.34,
+    volume: 38194000
+  },
+  {
+    date: "2015/7/23",
+    open: 137,
+    high: 137.5,
+    low: 136,
+    close: 136,
+    adjClose: 103.58,
+    volume: 36389000
+  },
+  {
+    date: "2015/7/22",
+    open: 139,
+    high: 139.5,
+    low: 138,
+    close: 139,
+    adjClose: 105.87,
+    volume: 24620000
+  },
+  {
+    date: "2015/7/21",
+    open: 141,
+    high: 141.5,
+    low: 139.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 19431000
+  },
+  {
+    date: "2015/7/20",
+    open: 141.5,
+    high: 142,
+    low: 138.5,
+    close: 139,
+    adjClose: 105.87,
+    volume: 27655000
+  },
+  {
+    date: "2015/7/17",
+    open: 138,
+    high: 140,
+    low: 138,
+    close: 140,
+    adjClose: 106.63,
+    volume: 55781000
+  },
+  {
+    date: "2015/7/16",
+    open: 140,
+    high: 140,
+    low: 135.5,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 36999000
+  },
+  {
+    date: "2015/7/15",
+    open: 139,
+    high: 139.5,
+    low: 138,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 23295000
+  },
+  {
+    date: "2015/7/14",
+    open: 139.5,
+    high: 140.5,
+    low: 138,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 27536000
+  },
+  {
+    date: "2015/7/13",
+    open: 137,
+    high: 139.5,
+    low: 137,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 34518000
+  },
+  {
+    date: "2015/7/10",
+    open: 136.5,
+    high: 136.5,
+    low: 136.5,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: null
+  },
+  {
+    date: "2015/7/9",
+    open: 134,
+    high: 138,
+    low: 134,
+    close: 136.5,
+    adjClose: 103.96,
+    volume: 53233000
+  },
+  {
+    date: "2015/7/8",
+    open: 140.5,
+    high: 141,
+    low: 138,
+    close: 138,
+    adjClose: 105.1,
+    volume: 51986000
+  },
+  {
+    date: "2015/7/7",
+    open: 141,
+    high: 142,
+    low: 140.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 26349000
+  },
+  {
+    date: "2015/7/6",
+    open: 141,
+    high: 141.5,
+    low: 140.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 20617000
+  },
+  {
+    date: "2015/7/3",
+    open: 141.5,
+    high: 142.5,
+    low: 140,
+    close: 142.5,
+    adjClose: 108.53,
+    volume: 16093000
+  },
+  {
+    date: "2015/7/2",
+    open: 140.5,
+    high: 142,
+    low: 140.5,
+    close: 141.5,
+    adjClose: 107.77,
+    volume: 23908000
+  },
+  {
+    date: "2015/7/1",
+    open: 140,
+    high: 142.5,
+    low: 139,
+    close: 141,
+    adjClose: 107.39,
+    volume: 32546000
+  },
+  {
+    date: "2015/6/30",
+    open: 139,
+    high: 140.5,
+    low: 138.5,
+    close: 140.5,
+    adjClose: 107.01,
+    volume: 45261000
+  },
+  {
+    date: "2015/6/29",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2015/6/29",
+    open: 140.5,
+    high: 141,
+    low: 138.5,
+    close: 138.5,
+    adjClose: 105.49,
+    volume: 53014000
+  },
+  {
+    date: "2015/6/26",
+    open: 147,
+    high: 147.5,
+    low: 145.5,
+    close: 146,
+    adjClose: 107.77,
+    volume: 33561000
+  },
+  {
+    date: "2015/6/25",
+    open: 145,
+    high: 147,
+    low: 145,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 43496000
+  },
+  {
+    date: "2015/6/24",
+    open: 144.5,
+    high: 145,
+    low: 143.5,
+    close: 145,
+    adjClose: 107.03,
+    volume: 18555000
+  },
+  {
+    date: "2015/6/23",
+    open: 143,
+    high: 145,
+    low: 142.5,
+    close: 144.5,
+    adjClose: 106.66,
+    volume: 37230000
+  },
+  {
+    date: "2015/6/22",
+    open: 142,
+    high: 143.5,
+    low: 142,
+    close: 142,
+    adjClose: 104.82,
+    volume: 28278000
+  },
+  {
+    date: "2015/6/18",
+    open: 142,
+    high: 143,
+    low: 142,
+    close: 142,
+    adjClose: 104.82,
+    volume: 28591000
+  },
+  {
+    date: "2015/6/17",
+    open: 143,
+    high: 143.5,
+    low: 142,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 31326000
+  },
+  {
+    date: "2015/6/16",
+    open: 143,
+    high: 143,
+    low: 141,
+    close: 142,
+    adjClose: 104.82,
+    volume: 27272000
+  },
+  {
+    date: "2015/6/15",
+    open: 144.5,
+    high: 144.5,
+    low: 142.5,
+    close: 143,
+    adjClose: 105.56,
+    volume: 23608000
+  },
+  {
+    date: "2015/6/12",
+    open: 144,
+    high: 144.5,
+    low: 142.5,
+    close: 144.5,
+    adjClose: 106.66,
+    volume: 31448000
+  },
+  {
+    date: "2015/6/11",
+    open: 141,
+    high: 144,
+    low: 141,
+    close: 143.5,
+    adjClose: 105.92,
+    volume: 44613000
+  },
+  {
+    date: "2015/6/10",
+    open: 141,
+    high: 141.5,
+    low: 139.5,
+    close: 139.5,
+    adjClose: 102.97,
+    volume: 37077000
+  },
+  {
+    date: "2015/6/9",
+    open: 138.5,
+    high: 140,
+    low: 138,
+    close: 139,
+    adjClose: 102.6,
+    volume: 31575000
+  },
+  {
+    date: "2015/6/8",
+    open: 139.5,
+    high: 140,
+    low: 138.5,
+    close: 138.5,
+    adjClose: 102.23,
+    volume: 45469000
+  },
+  {
+    date: "2015/6/5",
+    open: 139.5,
+    high: 140.5,
+    low: 139,
+    close: 140,
+    adjClose: 103.34,
+    volume: 42648000
+  },
+  {
+    date: "2015/6/4",
+    open: 142,
+    high: 142.5,
+    low: 140,
+    close: 141,
+    adjClose: 104.08,
+    volume: 58172000
+  },
+  {
+    date: "2015/6/3",
+    open: 143.5,
+    high: 144.5,
+    low: 143,
+    close: 143,
+    adjClose: 105.56,
+    volume: 29870000
+  },
+  {
+    date: "2015/6/2",
+    open: 144.5,
+    high: 144.5,
+    low: 143.5,
+    close: 144,
+    adjClose: 106.29,
+    volume: 33317000
+  },
+  {
+    date: "2015/6/1",
+    open: 145.5,
+    high: 146,
+    low: 144,
+    close: 145,
+    adjClose: 107.03,
+    volume: 31570000
+  },
+  {
+    date: "2015/5/29",
+    open: 147,
+    high: 147.5,
+    low: 145.5,
+    close: 146,
+    adjClose: 107.77,
+    volume: 56616000
+  },
+  {
+    date: "2015/5/28",
+    open: 147,
+    high: 147.5,
+    low: 146,
+    close: 147,
+    adjClose: 108.51,
+    volume: 35891000
+  },
+  {
+    date: "2015/5/27",
+    open: 145.5,
+    high: 147,
+    low: 145,
+    close: 145,
+    adjClose: 107.03,
+    volume: 23825000
+  },
+  {
+    date: "2015/5/26",
+    open: 148.5,
+    high: 148.5,
+    low: 146.5,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 15545000
+  },
+  {
+    date: "2015/5/25",
+    open: 146.5,
+    high: 147.5,
+    low: 145.5,
+    close: 147.5,
+    adjClose: 108.88,
+    volume: 16253000
+  },
+  {
+    date: "2015/5/22",
+    open: 146,
+    high: 147,
+    low: 145,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 22074000
+  },
+  {
+    date: "2015/5/21",
+    open: 146,
+    high: 146.5,
+    low: 144.5,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 40819000
+  },
+  {
+    date: "2015/5/20",
+    open: 146.5,
+    high: 147,
+    low: 146,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 26920000
+  },
+  {
+    date: "2015/5/19",
+    open: 145.5,
+    high: 147.5,
+    low: 145,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 26257000
+  },
+  {
+    date: "2015/5/18",
+    open: 147,
+    high: 147,
+    low: 145,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 22879000
+  },
+  {
+    date: "2015/5/15",
+    open: 147,
+    high: 147,
+    low: 145,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 24295000
+  },
+  {
+    date: "2015/5/14",
+    open: 148,
+    high: 148.5,
+    low: 146,
+    close: 146,
+    adjClose: 107.77,
+    volume: 38700000
+  },
+  {
+    date: "2015/5/13",
+    open: 147.5,
+    high: 149,
+    low: 147,
+    close: 148,
+    adjClose: 109.25,
+    volume: 18844000
+  },
+  {
+    date: "2015/5/12",
+    open: 147,
+    high: 148.5,
+    low: 147,
+    close: 147.5,
+    adjClose: 108.88,
+    volume: 20509000
+  },
+  {
+    date: "2015/5/11",
+    open: 149,
+    high: 149,
+    low: 147,
+    close: 148.5,
+    adjClose: 109.62,
+    volume: 20326000
+  },
+  {
+    date: "2015/5/8",
+    open: 146,
+    high: 147.5,
+    low: 146,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 19987000
+  },
+  {
+    date: "2015/5/7",
+    open: 146,
+    high: 147.5,
+    low: 146,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 21826000
+  },
+  {
+    date: "2015/5/6",
+    open: 145.5,
+    high: 148,
+    low: 145.5,
+    close: 147.5,
+    adjClose: 108.88,
+    volume: 18784000
+  },
+  {
+    date: "2015/5/5",
+    open: 147.5,
+    high: 148,
+    low: 146,
+    close: 147,
+    adjClose: 108.51,
+    volume: 27559000
+  },
+  {
+    date: "2015/5/4",
+    open: 148.5,
+    high: 148.5,
+    low: 146,
+    close: 147.5,
+    adjClose: 108.88,
+    volume: 30811000
+  },
+  {
+    date: "2015/4/30",
+    open: 147,
+    high: 148.5,
+    low: 146.5,
+    close: 147,
+    adjClose: 108.51,
+    volume: 48913000
+  },
+  {
+    date: "2015/4/29",
+    open: 150,
+    high: 151,
+    low: 148,
+    close: 148.5,
+    adjClose: 109.62,
+    volume: 37363000
+  },
+  {
+    date: "2015/4/28",
+    open: 153.5,
+    high: 153.5,
+    low: 150.5,
+    close: 151.5,
+    adjClose: 111.83,
+    volume: 43177000
+  },
+  {
+    date: "2015/4/27",
+    open: 153,
+    high: 153,
+    low: 150,
+    close: 151.5,
+    adjClose: 111.83,
+    volume: 57529000
+  },
+  {
+    date: "2015/4/24",
+    open: 149,
+    high: 152.5,
+    low: 148.5,
+    close: 152.5,
+    adjClose: 112.57,
+    volume: 122689000
+  },
+  {
+    date: "2015/4/23",
+    open: 145.5,
+    high: 147,
+    low: 145,
+    close: 147,
+    adjClose: 108.51,
+    volume: 46931000
+  },
+  {
+    date: "2015/4/22",
+    open: 143.5,
+    high: 145,
+    low: 143,
+    close: 143.5,
+    adjClose: 105.92,
+    volume: 40606000
+  },
+  {
+    date: "2015/4/21",
+    open: 142,
+    high: 143.5,
+    low: 141.5,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 36209000
+  },
+  {
+    date: "2015/4/20",
+    open: 142,
+    high: 144,
+    low: 141.5,
+    close: 143,
+    adjClose: 105.56,
+    volume: 34341000
+  },
+  {
+    date: "2015/4/17",
+    open: 143,
+    high: 144,
+    low: 142.5,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 76708000
+  },
+  {
+    date: "2015/4/16",
+    open: 145,
+    high: 147,
+    low: 144.5,
+    close: 147,
+    adjClose: 108.51,
+    volume: 54354000
+  },
+  {
+    date: "2015/4/15",
+    open: 143.5,
+    high: 144.5,
+    low: 141.5,
+    close: 143,
+    adjClose: 105.56,
+    volume: 71481000
+  },
+  {
+    date: "2015/4/14",
+    open: 145,
+    high: 145.5,
+    low: 143.5,
+    close: 144,
+    adjClose: 106.29,
+    volume: 41528000
+  },
+  {
+    date: "2015/4/13",
+    open: 146.5,
+    high: 147.5,
+    low: 146,
+    close: 147,
+    adjClose: 108.51,
+    volume: 23821000
+  },
+  {
+    date: "2015/4/10",
+    open: 146,
+    high: 147,
+    low: 145,
+    close: 147,
+    adjClose: 108.51,
+    volume: 33819000
+  },
+  {
+    date: "2015/4/9",
+    open: 144,
+    high: 145.5,
+    low: 143,
+    close: 143,
+    adjClose: 105.56,
+    volume: 46493000
+  },
+  {
+    date: "2015/4/8",
+    open: 145.5,
+    high: 146,
+    low: 143,
+    close: 143,
+    adjClose: 105.56,
+    volume: 47500000
+  },
+  {
+    date: "2015/4/7",
+    open: 146.5,
+    high: 147.5,
+    low: 145,
+    close: 146,
+    adjClose: 107.77,
+    volume: 33362000
+  },
+  {
+    date: "2015/4/2",
+    open: 145,
+    high: 148,
+    low: 144.5,
+    close: 147,
+    adjClose: 108.51,
+    volume: 49213000
+  },
+  {
+    date: "2015/4/1",
+    open: 145,
+    high: 145,
+    low: 143.5,
+    close: 144,
+    adjClose: 106.29,
+    volume: 38697000
+  },
+  {
+    date: "2015/3/31",
+    open: 144,
+    high: 145.5,
+    low: 143,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 56539000
+  },
+  {
+    date: "2015/3/30",
+    open: 142.5,
+    high: 144,
+    low: 142,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 59832000
+  },
+  {
+    date: "2015/3/27",
+    open: 144,
+    high: 145.5,
+    low: 142.5,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 106610000
+  },
+  {
+    date: "2015/3/26",
+    open: 145.5,
+    high: 147,
+    low: 144.5,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 157081000
+  },
+  {
+    date: "2015/3/25",
+    open: 152,
+    high: 152.5,
+    low: 150.5,
+    close: 151,
+    adjClose: 111.46,
+    volume: 44424000
+  },
+  {
+    date: "2015/3/24",
+    open: 153.5,
+    high: 153.5,
+    low: 151.5,
+    close: 151.5,
+    adjClose: 111.83,
+    volume: 36086000
+  },
+  {
+    date: "2015/3/23",
+    open: 154,
+    high: 154,
+    low: 152.5,
+    close: 153.5,
+    adjClose: 113.31,
+    volume: 26285000
+  },
+  {
+    date: "2015/3/20",
+    open: 151.5,
+    high: 154,
+    low: 151.5,
+    close: 154,
+    adjClose: 113.68,
+    volume: 37536000
+  },
+  {
+    date: "2015/3/19",
+    open: 152.5,
+    high: 155,
+    low: 152.5,
+    close: 154,
+    adjClose: 113.68,
+    volume: 43070000
+  },
+  {
+    date: "2015/3/18",
+    open: 151,
+    high: 154,
+    low: 150,
+    close: 153.5,
+    adjClose: 113.31,
+    volume: 70808000
+  },
+  {
+    date: "2015/3/17",
+    open: 148.5,
+    high: 150,
+    low: 148.5,
+    close: 149,
+    adjClose: 109.98,
+    volume: 55718000
+  },
+  {
+    date: "2015/3/16",
+    open: 149,
+    high: 149.5,
+    low: 146,
+    close: 146,
+    adjClose: 107.77,
+    volume: 36912000
+  },
+  {
+    date: "2015/3/13",
+    open: 148,
+    high: 149.5,
+    low: 147,
+    close: 149,
+    adjClose: 109.98,
+    volume: 45451000
+  },
+  {
+    date: "2015/3/12",
+    open: 147,
+    high: 148.5,
+    low: 146.5,
+    close: 148,
+    adjClose: 109.25,
+    volume: 32183000
+  },
+  {
+    date: "2015/3/11",
+    open: 143.5,
+    high: 148,
+    low: 143,
+    close: 146,
+    adjClose: 107.77,
+    volume: 51795000
+  },
+  {
+    date: "2015/3/10",
+    open: 145,
+    high: 145,
+    low: 144,
+    close: 144,
+    adjClose: 106.29,
+    volume: 46809000
+  },
+  {
+    date: "2015/3/9",
+    open: 147.5,
+    high: 147.5,
+    low: 145,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 67163000
+  },
+  {
+    date: "2015/3/6",
+    open: 149,
+    high: 149.5,
+    low: 148.5,
+    close: 149,
+    adjClose: 109.98,
+    volume: 31316000
+  },
+  {
+    date: "2015/3/5",
+    open: 150,
+    high: 151,
+    low: 148.5,
+    close: 150,
+    adjClose: 110.72,
+    volume: 28872000
+  },
+  {
+    date: "2015/3/4",
+    open: 150,
+    high: 151.5,
+    low: 149,
+    close: 150.5,
+    adjClose: 111.09,
+    volume: 32627000
+  },
+  {
+    date: "2015/3/3",
+    open: 150,
+    high: 151,
+    low: 148.5,
+    close: 150.5,
+    adjClose: 111.09,
+    volume: 29134000
+  },
+  {
+    date: "2015/3/2",
+    open: 151.5,
+    high: 153,
+    low: 148.5,
+    close: 149,
+    adjClose: 109.98,
+    volume: 41388000
+  },
+  {
+    date: "2015/2/26",
+    open: 153.5,
+    high: 154,
+    low: 150.5,
+    close: 150.5,
+    adjClose: 111.09,
+    volume: 55574000
+  },
+  {
+    date: "2015/2/25",
+    open: 152.5,
+    high: 154.5,
+    low: 152.5,
+    close: 154.5,
+    adjClose: 114.04,
+    volume: 48183000
+  },
+  {
+    date: "2015/2/24",
+    open: 149,
+    high: 152,
+    low: 148.5,
+    close: 151,
+    adjClose: 111.46,
+    volume: 72531000
+  },
+  {
+    date: "2015/2/13",
+    open: 148.5,
+    high: 150,
+    low: 148,
+    close: 148.5,
+    adjClose: 109.62,
+    volume: 37815000
+  },
+  {
+    date: "2015/2/12",
+    open: 149.5,
+    high: 149.5,
+    low: 147.5,
+    close: 148.5,
+    adjClose: 109.62,
+    volume: 33577000
+  },
+  {
+    date: "2015/2/11",
+    open: 146,
+    high: 149,
+    low: 146,
+    close: 148,
+    adjClose: 109.25,
+    volume: 71259000
+  },
+  {
+    date: "2015/2/10",
+    open: 142,
+    high: 143,
+    low: 141.5,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 33294000
+  },
+  {
+    date: "2015/2/9",
+    open: 143,
+    high: 143.5,
+    low: 141.5,
+    close: 142,
+    adjClose: 104.82,
+    volume: 26315000
+  },
+  {
+    date: "2015/2/6",
+    open: 145.5,
+    high: 145.5,
+    low: 143,
+    close: 143,
+    adjClose: 105.56,
+    volume: 27301000
+  },
+  {
+    date: "2015/2/5",
+    open: 145.5,
+    high: 146,
+    low: 143.5,
+    close: 145.5,
+    adjClose: 107.4,
+    volume: 23363000
+  },
+  {
+    date: "2015/2/4",
+    open: 144.5,
+    high: 146.5,
+    low: 144,
+    close: 146,
+    adjClose: 107.77,
+    volume: 40416000
+  },
+  {
+    date: "2015/2/3",
+    open: 143,
+    high: 144.5,
+    low: 142,
+    close: 144.5,
+    adjClose: 106.66,
+    volume: 27160000
+  },
+  {
+    date: "2015/2/2",
+    open: 140.5,
+    high: 143,
+    low: 140.5,
+    close: 142.5,
+    adjClose: 105.19,
+    volume: 29181000
+  },
+  {
+    date: "2015/1/30",
+    open: 145,
+    high: 145.5,
+    low: 141,
+    close: 141,
+    adjClose: 104.08,
+    volume: 43666000
+  },
+  {
+    date: "2015/1/29",
+    open: 144,
+    high: 145,
+    low: 143,
+    close: 143.5,
+    adjClose: 105.92,
+    volume: 34459000
+  },
+  {
+    date: "2015/1/28",
+    open: 146.5,
+    high: 147,
+    low: 145.5,
+    close: 146.5,
+    adjClose: 108.14,
+    volume: 45898000
+  },
+  {
+    date: "2015/1/27",
+    open: 145.5,
+    high: 147,
+    low: 144.5,
+    close: 147,
+    adjClose: 108.51,
+    volume: 52805000
+  },
+  {
+    date: "2015/1/26",
+    open: 145.5,
+    high: 145.5,
+    low: 143.5,
+    close: 145,
+    adjClose: 107.03,
+    volume: 46716000
+  },
+  {
+    date: "2015/1/23",
+    open: 142.5,
+    high: 145,
+    low: 142.5,
+    close: 145,
+    adjClose: 107.03,
+    volume: 82089000
+  },
+  {
+    date: "2015/1/22",
+    open: 141.5,
+    high: 142,
+    low: 139.5,
+    close: 140,
+    adjClose: 103.34,
+    volume: 43846000
+  },
+  {
+    date: "2015/1/21",
+    open: 139.5,
+    high: 141,
+    low: 139.5,
+    close: 141,
+    adjClose: 104.08,
+    volume: 70464000
+  },
+  {
+    date: "2015/1/20",
+    open: 139,
+    high: 139,
+    low: 137.5,
+    close: 138,
+    adjClose: 101.86,
+    volume: 32739000
+  },
+  {
+    date: "2015/1/19",
+    open: 138.5,
+    high: 139.5,
+    low: 137.5,
+    close: 139,
+    adjClose: 102.6,
+    volume: 49986000
+  },
+  {
+    date: "2015/1/16",
+    open: 140,
+    high: 140,
+    low: 136,
+    close: 137,
+    adjClose: 101.13,
+    volume: 124042000
+  },
+  {
+    date: "2015/1/15",
+    open: 131.5,
+    high: 133,
+    low: 131.5,
+    close: 131.5,
+    adjClose: 97.07,
+    volume: 40607000
+  },
+  {
+    date: "2015/1/14",
+    open: 132.5,
+    high: 133,
+    low: 130,
+    close: 130,
+    adjClose: 95.96,
+    volume: 48740000
+  },
+  {
+    date: "2015/1/13",
+    open: 131,
+    high: 133,
+    low: 130.5,
+    close: 132.5,
+    adjClose: 97.81,
+    volume: 37818000
+  },
+  {
+    date: "2015/1/12",
+    open: 132.5,
+    high: 133.5,
+    low: 132,
+    close: 132,
+    adjClose: 97.44,
+    volume: 30338000
+  },
+  {
+    date: "2015/1/9",
+    open: 135,
+    high: 135.5,
+    low: 133,
+    close: 134,
+    adjClose: 98.91,
+    volume: 61558000
+  },
+  {
+    date: "2015/1/8",
+    open: 136.5,
+    high: 138,
+    low: 136,
+    close: 138,
+    adjClose: 101.86,
+    volume: 42491000
+  },
+  {
+    date: "2015/1/7",
+    open: 133.5,
+    high: 135,
+    low: 133.5,
+    close: 134,
+    adjClose: 98.91,
+    volume: 43703000
+  },
+  {
+    date: "2015/1/6",
+    open: 137.5,
+    high: 137.5,
+    low: 133,
+    close: 133.5,
+    adjClose: 98.54,
+    volume: 66778000
+  },
+  {
+    date: "2015/1/5",
+    open: 140.5,
+    high: 140.5,
+    low: 137.5,
+    close: 139.5,
+    adjClose: 102.97,
+    volume: 32046000
+  },
+  {
+    date: "2014/12/31",
+    open: 139,
+    high: 141,
+    low: 139,
+    close: 141,
+    adjClose: 104.08,
+    volume: 18306000
+  },
+  {
+    date: "2014/12/30",
+    open: 141,
+    high: 141.5,
+    low: 139,
+    close: 140,
+    adjClose: 103.34,
+    volume: 21789000
+  },
+  {
+    date: "2014/12/29",
+    open: 138,
+    high: 141,
+    low: 138,
+    close: 141,
+    adjClose: 104.08,
+    volume: 34993000
+  },
+  {
+    date: "2014/12/26",
+    open: 138,
+    high: 139,
+    low: 137,
+    close: 139,
+    adjClose: 102.6,
+    volume: 13112000
+  },
+  {
+    date: "2014/12/25",
+    open: 137,
+    high: 138,
+    low: 137,
+    close: 137.5,
+    adjClose: 101.5,
+    volume: 7358000
+  },
+  {
+    date: "2014/12/24",
+    open: 136,
+    high: 138,
+    low: 136,
+    close: 138,
+    adjClose: 101.86,
+    volume: 16679000
+  },
+  {
+    date: "2014/12/23",
+    open: 139,
+    high: 140,
+    low: 137,
+    close: 137.5,
+    adjClose: 101.5,
+    volume: 19122000
+  },
+  {
+    date: "2014/12/22",
+    open: 137.5,
+    high: 140,
+    low: 137,
+    close: 138.5,
+    adjClose: 102.23,
+    volume: 34577000
+  },
+  {
+    date: "2014/12/19",
+    open: 134.5,
+    high: 138,
+    low: 134,
+    close: 138,
+    adjClose: 101.86,
+    volume: 44362000
+  },
+  {
+    date: "2014/12/18",
+    open: 132,
+    high: 133,
+    low: 131,
+    close: 131.5,
+    adjClose: 97.07,
+    volume: 50410000
+  },
+  {
+    date: "2014/12/17",
+    open: 133,
+    high: 133,
+    low: 130,
+    close: 130.5,
+    adjClose: 96.33,
+    volume: 70497000
+  },
+  {
+    date: "2014/12/16",
+    open: 134.5,
+    high: 135.5,
+    low: 133,
+    close: 133,
+    adjClose: 98.17,
+    volume: 41199000
+  },
+  {
+    date: "2014/12/15",
+    open: 134.5,
+    high: 136.5,
+    low: 134.5,
+    close: 136,
+    adjClose: 100.39,
+    volume: 44381000
+  },
+  {
+    date: "2014/12/12",
+    open: 135,
+    high: 136,
+    low: 134.5,
+    close: 135,
+    adjClose: 99.65,
+    volume: 31433000
+  },
+  {
+    date: "2014/12/11",
+    open: 135,
+    high: 136,
+    low: 134.5,
+    close: 134.5,
+    adjClose: 99.28,
+    volume: 32283000
+  },
+  {
+    date: "2014/12/10",
+    open: 138,
+    high: 139,
+    low: 136,
+    close: 136,
+    adjClose: 100.39,
+    volume: 39726000
+  },
+  {
+    date: "2014/12/9",
+    open: 138,
+    high: 139,
+    low: 137.5,
+    close: 138,
+    adjClose: 101.86,
+    volume: 31770000
+  },
+  {
+    date: "2014/12/8",
+    open: 138,
+    high: 138.5,
+    low: 137,
+    close: 138,
+    adjClose: 101.86,
+    volume: 19595000
+  },
+  {
+    date: "2014/12/5",
+    open: 138.5,
+    high: 139.5,
+    low: 137,
+    close: 137.5,
+    adjClose: 101.5,
+    volume: 27050000
+  },
+  {
+    date: "2014/12/4",
+    open: 139,
+    high: 140,
+    low: 138.5,
+    close: 139,
+    adjClose: 102.6,
+    volume: 28226000
+  },
+  {
+    date: "2014/12/3",
+    open: 137.5,
+    high: 139,
+    low: 136.5,
+    close: 138,
+    adjClose: 101.86,
+    volume: 38940000
+  },
+  {
+    date: "2014/12/2",
+    open: 139.5,
+    high: 139.5,
+    low: 137.5,
+    close: 137.5,
+    adjClose: 101.5,
+    volume: 45913000
+  },
+  {
+    date: "2014/12/1",
+    open: 139,
+    high: 142,
+    low: 138.5,
+    close: 140,
+    adjClose: 103.34,
+    volume: 41250000
+  },
+  {
+    date: "2014/11/28",
+    open: 139,
+    high: 141.5,
+    low: 139,
+    close: 141.5,
+    adjClose: 104.45,
+    volume: 35681000
+  },
+  {
+    date: "2014/11/27",
+    open: 140,
+    high: 142,
+    low: 140,
+    close: 140,
+    adjClose: 103.34,
+    volume: 26123000
+  },
+  {
+    date: "2014/11/26",
+    open: 138.5,
+    high: 139,
+    low: 138,
+    close: 139,
+    adjClose: 102.6,
+    volume: 23137000
+  },
+  {
+    date: "2014/11/25",
+    open: 138.5,
+    high: 140,
+    low: 138.5,
+    close: 139,
+    adjClose: 102.6,
+    volume: 42648000
+  },
+  {
+    date: "2014/11/24",
+    open: 140,
+    high: 140.5,
+    low: 138,
+    close: 138.5,
+    adjClose: 102.23,
+    volume: 33292000
+  },
+  {
+    date: "2014/11/21",
+    open: 139.5,
+    high: 139.5,
+    low: 137.5,
+    close: 138.5,
+    adjClose: 102.23,
+    volume: 30388000
+  },
+  {
+    date: "2014/11/20",
+    open: 137.5,
+    high: 139,
+    low: 137,
+    close: 139,
+    adjClose: 102.6,
+    volume: 44092000
+  },
+  {
+    date: "2014/11/19",
+    open: 133,
+    high: 136.5,
+    low: 132.5,
+    close: 136,
+    adjClose: 100.39,
+    volume: 70920000
+  },
+  {
+    date: "2014/11/18",
+    open: 134,
+    high: 134.5,
+    low: 131,
+    close: 131.5,
+    adjClose: 97.07,
+    volume: 42688000
+  },
+  {
+    date: "2014/11/17",
+    open: 135,
+    high: 135.5,
+    low: 132.5,
+    close: 133,
+    adjClose: 98.17,
+    volume: 23562000
+  },
+  {
+    date: "2014/11/14",
+    open: 134,
+    high: 135,
+    low: 133.5,
+    close: 135,
+    adjClose: 99.65,
+    volume: 23655000
+  },
+  {
+    date: "2014/11/13",
+    open: 133.5,
+    high: 134.5,
+    low: 132.5,
+    close: 134,
+    adjClose: 98.91,
+    volume: 24882000
+  },
+  {
+    date: "2014/11/12",
+    open: 134.5,
+    high: 134.5,
+    low: 131.5,
+    close: 132,
+    adjClose: 97.44,
+    volume: 27373000
+  },
+  {
+    date: "2014/11/11",
+    open: 135,
+    high: 135,
+    low: 133,
+    close: 134,
+    adjClose: 98.91,
+    volume: 20451000
+  },
+  {
+    date: "2014/11/10",
+    open: 132.5,
+    high: 134.5,
+    low: 132,
+    close: 134.5,
+    adjClose: 99.28,
+    volume: 42569000
+  },
+  {
+    date: "2014/11/7",
+    open: 131.5,
+    high: 131.5,
+    low: 130.5,
+    close: 131,
+    adjClose: 96.7,
+    volume: 16709000
+  },
+  {
+    date: "2014/11/6",
+    open: 132.5,
+    high: 132.5,
+    low: 131.5,
+    close: 132,
+    adjClose: 97.44,
+    volume: 28374000
+  },
+  {
+    date: "2014/11/5",
+    open: 131.5,
+    high: 132,
+    low: 131,
+    close: 132,
+    adjClose: 97.44,
+    volume: 22440000
+  },
+  {
+    date: "2014/11/4",
+    open: 132,
+    high: 132,
+    low: 131,
+    close: 132,
+    adjClose: 97.44,
+    volume: 32171000
+  },
+  {
+    date: "2014/11/3",
+    open: 132,
+    high: 132.5,
+    low: 130.5,
+    close: 131,
+    adjClose: 96.7,
+    volume: 44912000
+  },
+  {
+    date: "2014/10/31",
+    open: 128,
+    high: 130.5,
+    low: 127.5,
+    close: 130.5,
+    adjClose: 96.33,
+    volume: 41983000
+  },
+  {
+    date: "2014/10/30",
+    open: 128.5,
+    high: 129,
+    low: 127,
+    close: 128.5,
+    adjClose: 94.85,
+    volume: 35688000
+  },
+  {
+    date: "2014/10/29",
+    open: 129,
+    high: 129.5,
+    low: 128,
+    close: 129,
+    adjClose: 95.22,
+    volume: 34583000
+  },
+  {
+    date: "2014/10/28",
+    open: 129,
+    high: 129.5,
+    low: 127.5,
+    close: 128,
+    adjClose: 94.48,
+    volume: 34984000
+  },
+  {
+    date: "2014/10/27",
+    open: 126.5,
+    high: 128,
+    low: 126.5,
+    close: 128,
+    adjClose: 94.48,
+    volume: 25119000
+  },
+  {
+    date: "2014/10/24",
+    open: 127,
+    high: 127.5,
+    low: 125,
+    close: 125.5,
+    adjClose: 92.64,
+    volume: 42082000
+  },
+  {
+    date: "2014/10/23",
+    open: 128,
+    high: 128.5,
+    low: 127.5,
+    close: 127.5,
+    adjClose: 94.11,
+    volume: 26374000
+  },
+  {
+    date: "2014/10/22",
+    open: 127.5,
+    high: 129,
+    low: 127.5,
+    close: 129,
+    adjClose: 95.22,
+    volume: 64167000
+  },
+  {
+    date: "2014/10/21",
+    open: 126,
+    high: 126,
+    low: 124.5,
+    close: 125,
+    adjClose: 92.27,
+    volume: 25582000
+  },
+  {
+    date: "2014/10/20",
+    open: 125,
+    high: 126,
+    low: 124.5,
+    close: 126,
+    adjClose: 93.01,
+    volume: 38276000
+  },
+  {
+    date: "2014/10/17",
+    open: 125,
+    high: 125.5,
+    low: 123.5,
+    close: 123.5,
+    adjClose: 91.16,
+    volume: 91597000
+  },
+  {
+    date: "2014/10/16",
+    open: 121.5,
+    high: 124,
+    low: 120,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 45527000
+  },
+  {
+    date: "2014/10/15",
+    open: 121.5,
+    high: 123,
+    low: 121,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 43922000
+  },
+  {
+    date: "2014/10/14",
+    open: 120,
+    high: 121.5,
+    low: 119.5,
+    close: 121,
+    adjClose: 89.32,
+    volume: 31862000
+  },
+  {
+    date: "2014/10/13",
+    open: 119,
+    high: 121.5,
+    low: 118,
+    close: 120.5,
+    adjClose: 88.95,
+    volume: 69183000
+  },
+  {
+    date: "2014/10/9",
+    open: 124,
+    high: 125,
+    low: 123.5,
+    close: 125,
+    adjClose: 92.27,
+    volume: 35347000
+  },
+  {
+    date: "2014/10/8",
+    open: 123.5,
+    high: 125,
+    low: 122.5,
+    close: 122.5,
+    adjClose: 90.42,
+    volume: 29221000
+  },
+  {
+    date: "2014/10/7",
+    open: 125,
+    high: 125.5,
+    low: 123.5,
+    close: 125,
+    adjClose: 92.27,
+    volume: 39986000
+  },
+  {
+    date: "2014/10/6",
+    open: 125,
+    high: 126,
+    low: 124,
+    close: 126,
+    adjClose: 93.01,
+    volume: 37186000
+  },
+  {
+    date: "2014/10/3",
+    open: 122.5,
+    high: 125,
+    low: 122,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 52003000
+  },
+  {
+    date: "2014/10/2",
+    open: 121,
+    high: 122.5,
+    low: 120.5,
+    close: 121,
+    adjClose: 89.32,
+    volume: 30761000
+  },
+  {
+    date: "2014/10/1",
+    open: 120,
+    high: 122,
+    low: 120,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 42211000
+  },
+  {
+    date: "2014/9/30",
+    open: 120,
+    high: 121,
+    low: 119,
+    close: 120,
+    adjClose: 88.58,
+    volume: 44070000
+  },
+  {
+    date: "2014/9/29",
+    open: 122,
+    high: 122,
+    low: 120,
+    close: 120.5,
+    adjClose: 88.95,
+    volume: 54783000
+  },
+  {
+    date: "2014/9/26",
+    open: 121,
+    high: 121.5,
+    low: 120.5,
+    close: 121,
+    adjClose: 89.32,
+    volume: 23545000
+  },
+  {
+    date: "2014/9/25",
+    open: 123,
+    high: 124,
+    low: 121.5,
+    close: 122,
+    adjClose: 90.05,
+    volume: 23213000
+  },
+  {
+    date: "2014/9/24",
+    open: 122,
+    high: 124,
+    low: 122,
+    close: 123,
+    adjClose: 90.79,
+    volume: 27613000
+  },
+  {
+    date: "2014/9/23",
+    open: 123,
+    high: 123.5,
+    low: 122,
+    close: 122.5,
+    adjClose: 90.42,
+    volume: 15286000
+  },
+  {
+    date: "2014/9/22",
+    open: 124,
+    high: 124,
+    low: 122,
+    close: 122,
+    adjClose: 90.05,
+    volume: 39365000
+  },
+  {
+    date: "2014/9/19",
+    open: 125.5,
+    high: 126,
+    low: 125,
+    close: 125,
+    adjClose: 92.27,
+    volume: 30603000
+  },
+  {
+    date: "2014/9/18",
+    open: 124.5,
+    high: 125,
+    low: 123.5,
+    close: 125,
+    adjClose: 92.27,
+    volume: 14726000
+  },
+  {
+    date: "2014/9/17",
+    open: 123.5,
+    high: 125,
+    low: 123,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 23504000
+  },
+  {
+    date: "2014/9/16",
+    open: 123,
+    high: 123,
+    low: 122,
+    close: 122.5,
+    adjClose: 90.42,
+    volume: 19187000
+  },
+  {
+    date: "2014/9/15",
+    open: 122.5,
+    high: 123.5,
+    low: 122,
+    close: 123.5,
+    adjClose: 91.16,
+    volume: 19518000
+  },
+  {
+    date: "2014/9/12",
+    open: 124.5,
+    high: 125,
+    low: 123,
+    close: 123,
+    adjClose: 90.79,
+    volume: 19798000
+  },
+  {
+    date: "2014/9/11",
+    open: 126,
+    high: 126,
+    low: 125,
+    close: 125,
+    adjClose: 92.27,
+    volume: 22827000
+  },
+  {
+    date: "2014/9/10",
+    open: 126,
+    high: 126,
+    low: 124,
+    close: 125,
+    adjClose: 92.27,
+    volume: 29294000
+  },
+  {
+    date: "2014/9/9",
+    open: 127.5,
+    high: 127.5,
+    low: 126.5,
+    close: 127,
+    adjClose: 93.75,
+    volume: 22090000
+  },
+  {
+    date: "2014/9/5",
+    open: 128.5,
+    high: 128.5,
+    low: 125.5,
+    close: 127,
+    adjClose: 93.75,
+    volume: 20096000
+  },
+  {
+    date: "2014/9/4",
+    open: 128,
+    high: 128,
+    low: 126,
+    close: 127.5,
+    adjClose: 94.11,
+    volume: 21641000
+  },
+  {
+    date: "2014/9/3",
+    open: 127,
+    high: 128,
+    low: 125.5,
+    close: 128,
+    adjClose: 94.48,
+    volume: 24561000
+  },
+  {
+    date: "2014/9/2",
+    open: 128,
+    high: 128,
+    low: 125.5,
+    close: 126,
+    adjClose: 93.01,
+    volume: 19182000
+  },
+  {
+    date: "2014/9/1",
+    open: 125,
+    high: 128.5,
+    low: 125,
+    close: 128.5,
+    adjClose: 94.85,
+    volume: 36304000
+  },
+  {
+    date: "2014/8/29",
+    open: 124.5,
+    high: 125,
+    low: 124,
+    close: 124,
+    adjClose: 91.53,
+    volume: 28324000
+  },
+  {
+    date: "2014/8/28",
+    open: 126,
+    high: 126,
+    low: 124.5,
+    close: 125,
+    adjClose: 92.27,
+    volume: 21587000
+  },
+  {
+    date: "2014/8/27",
+    open: 125.5,
+    high: 126,
+    low: 124.5,
+    close: 125.5,
+    adjClose: 92.64,
+    volume: 36779000
+  },
+  {
+    date: "2014/8/26",
+    open: 125,
+    high: 125.5,
+    low: 124,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 28801000
+  },
+  {
+    date: "2014/8/25",
+    open: 125.5,
+    high: 126,
+    low: 125,
+    close: 125,
+    adjClose: 92.27,
+    volume: 20077000
+  },
+  {
+    date: "2014/8/22",
+    open: 124.5,
+    high: 126,
+    low: 123.5,
+    close: 125.5,
+    adjClose: 92.64,
+    volume: 42715000
+  },
+  {
+    date: "2014/8/21",
+    open: 126,
+    high: 126,
+    low: 124,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 22562000
+  },
+  {
+    date: "2014/8/20",
+    open: 125,
+    high: 125.5,
+    low: 124.5,
+    close: 125.5,
+    adjClose: 92.64,
+    volume: 28876000
+  },
+  {
+    date: "2014/8/19",
+    open: 124,
+    high: 125,
+    low: 123.5,
+    close: 124,
+    adjClose: 91.53,
+    volume: 31575000
+  },
+  {
+    date: "2014/8/18",
+    open: 124,
+    high: 124,
+    low: 122.5,
+    close: 123,
+    adjClose: 90.79,
+    volume: 14578000
+  },
+  {
+    date: "2014/8/15",
+    open: 124.5,
+    high: 125,
+    low: 123,
+    close: 124,
+    adjClose: 91.53,
+    volume: 19151000
+  },
+  {
+    date: "2014/8/14",
+    open: 123.5,
+    high: 124,
+    low: 123,
+    close: 124,
+    adjClose: 91.53,
+    volume: 32907000
+  },
+  {
+    date: "2014/8/13",
+    open: 121,
+    high: 123.5,
+    low: 120.5,
+    close: 122.5,
+    adjClose: 90.42,
+    volume: 39756000
+  },
+  {
+    date: "2014/8/12",
+    open: 121,
+    high: 122,
+    low: 120.5,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 32237000
+  },
+  {
+    date: "2014/8/11",
+    open: 120,
+    high: 121,
+    low: 119.5,
+    close: 120.5,
+    adjClose: 88.95,
+    volume: 42890000
+  },
+  {
+    date: "2014/8/8",
+    open: 120.5,
+    high: 121,
+    low: 119.5,
+    close: 120.5,
+    adjClose: 88.95,
+    volume: 35075000
+  },
+  {
+    date: "2014/8/7",
+    open: 120.5,
+    high: 121.5,
+    low: 119.5,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 29493000
+  },
+  {
+    date: "2014/8/6",
+    open: 119,
+    high: 121.5,
+    low: 119,
+    close: 120.5,
+    adjClose: 88.95,
+    volume: 34561000
+  },
+  {
+    date: "2014/8/5",
+    open: 122.5,
+    high: 122.5,
+    low: 119.5,
+    close: 119.5,
+    adjClose: 88.21,
+    volume: 61184000
+  },
+  {
+    date: "2014/8/4",
+    open: 120,
+    high: 123.5,
+    low: 120,
+    close: 123.5,
+    adjClose: 91.16,
+    volume: 39633000
+  },
+  {
+    date: "2014/8/1",
+    open: 120,
+    high: 121,
+    low: 119.5,
+    close: 120,
+    adjClose: 88.58,
+    volume: 52455000
+  },
+  {
+    date: "2014/7/31",
+    open: 124,
+    high: 124,
+    low: 121,
+    close: 121,
+    adjClose: 89.32,
+    volume: 44748000
+  },
+  {
+    date: "2014/7/30",
+    open: 123.5,
+    high: 125,
+    low: 123,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 32381000
+  },
+  {
+    date: "2014/7/29",
+    open: 122.5,
+    high: 124,
+    low: 122,
+    close: 124,
+    adjClose: 91.53,
+    volume: 37994000
+  },
+  {
+    date: "2014/7/28",
+    open: 122,
+    high: 122.5,
+    low: 121,
+    close: 121.5,
+    adjClose: 89.69,
+    volume: 43425000
+  },
+  {
+    date: "2014/7/25",
+    open: 124.5,
+    high: 125,
+    low: 122.5,
+    close: 123,
+    adjClose: 90.79,
+    volume: 31299000
+  },
+  {
+    date: "2014/7/24",
+    open: 124.5,
+    high: 125,
+    low: 124,
+    close: 125,
+    adjClose: 92.27,
+    volume: 65602000
+  },
+  {
+    date: "2014/7/23",
+    open: 124.5,
+    high: 124.5,
+    low: 124.5,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: null
+  },
+  {
+    date: "2014/7/22",
+    open: 123.5,
+    high: 125,
+    low: 122.5,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 53220000
+  },
+  {
+    date: "2014/7/21",
+    open: 124,
+    high: 124.5,
+    low: 122.5,
+    close: 123.5,
+    adjClose: 91.16,
+    volume: 56612000
+  },
+  {
+    date: "2014/7/18",
+    open: 121.5,
+    high: 124,
+    low: 121.5,
+    close: 123.5,
+    adjClose: 91.16,
+    volume: 95711000
+  },
+  {
+    date: "2014/7/17",
+    open: 125,
+    high: 125.5,
+    low: 123,
+    close: 124.5,
+    adjClose: 91.9,
+    volume: 136198000
+  },
+  {
+    date: "2014/7/16",
+    open: 133,
+    high: 133.5,
+    low: 130,
+    close: 130.5,
+    adjClose: 96.33,
+    volume: 39065000
+  },
+  {
+    date: "2014/7/15",
+    open: 133,
+    high: 134,
+    low: 132.5,
+    close: 133,
+    adjClose: 98.17,
+    volume: 36989000
+  },
+  {
+    date: "2014/7/14",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2014/7/14",
+    open: 134.5,
+    high: 134.5,
+    low: 132.5,
+    close: 132.5,
+    adjClose: 97.81,
+    volume: 46321000
+  },
+  {
+    date: "2014/7/11",
+    open: 136,
+    high: 138,
+    low: 135.5,
+    close: 136.5,
+    adjClose: 98.54,
+    volume: 43144000
+  },
+  {
+    date: "2014/7/10",
+    open: 134.5,
+    high: 136,
+    low: 134.5,
+    close: 134.5,
+    adjClose: 97.1,
+    volume: 47098000
+  },
+  {
+    date: "2014/7/9",
+    open: 133.5,
+    high: 135,
+    low: 133.5,
+    close: 134,
+    adjClose: 96.74,
+    volume: 39145000
+  },
+  {
+    date: "2014/7/8",
+    open: 135.5,
+    high: 136,
+    low: 134,
+    close: 134.5,
+    adjClose: 97.1,
+    volume: 36117000
+  },
+  {
+    date: "2014/7/7",
+    open: 134.5,
+    high: 136,
+    low: 132.5,
+    close: 136,
+    adjClose: 98.18,
+    volume: 32123000
+  },
+  {
+    date: "2014/7/4",
+    open: 133.5,
+    high: 136,
+    low: 132,
+    close: 135,
+    adjClose: 97.46,
+    volume: 44006000
+  },
+  {
+    date: "2014/7/3",
+    open: 131.5,
+    high: 135,
+    low: 130.5,
+    close: 134.5,
+    adjClose: 97.1,
+    volume: 40176000
+  },
+  {
+    date: "2014/7/2",
+    open: 129.5,
+    high: 132.5,
+    low: 129,
+    close: 132.5,
+    adjClose: 95.66,
+    volume: 51457000
+  },
+  {
+    date: "2014/7/1",
+    open: 126.5,
+    high: 128.5,
+    low: 126,
+    close: 128,
+    adjClose: 92.41,
+    volume: 32922000
+  },
+  {
+    date: "2014/6/30",
+    open: 126,
+    high: 127,
+    low: 125,
+    close: 126.5,
+    adjClose: 91.32,
+    volume: 33280000
+  },
+  {
+    date: "2014/6/27",
+    open: 125,
+    high: 126.5,
+    low: 124,
+    close: 125.5,
+    adjClose: 90.6,
+    volume: 44396000
+  },
+  {
+    date: "2014/6/26",
+    open: 124.5,
+    high: 125,
+    low: 123.5,
+    close: 124.5,
+    adjClose: 89.88,
+    volume: 30279000
+  },
+  {
+    date: "2014/6/25",
+    open: 123,
+    high: 124.5,
+    low: 123,
+    close: 123.5,
+    adjClose: 89.16,
+    volume: 30757000
+  },
+  {
+    date: "2014/6/24",
+    open: 123,
+    high: 123.5,
+    low: 122,
+    close: 123,
+    adjClose: 88.8,
+    volume: 33225000
+  },
+  {
+    date: "2014/6/23",
+    open: 125,
+    high: 125.5,
+    low: 123,
+    close: 123,
+    adjClose: 88.8,
+    volume: 25096000
+  },
+  {
+    date: "2014/6/20",
+    open: 126.5,
+    high: 127,
+    low: 124,
+    close: 124.5,
+    adjClose: 89.88,
+    volume: 30094000
+  },
+  {
+    date: "2014/6/19",
+    open: 124.5,
+    high: 126,
+    low: 124.5,
+    close: 126,
+    adjClose: 90.96,
+    volume: 17873000
+  },
+  {
+    date: "2014/6/18",
+    open: 125,
+    high: 126.5,
+    low: 124,
+    close: 125.5,
+    adjClose: 90.6,
+    volume: 37238000
+  },
+  {
+    date: "2014/6/17",
+    open: 124,
+    high: 125,
+    low: 123,
+    close: 125,
+    adjClose: 90.24,
+    volume: 19795000
+  },
+  {
+    date: "2014/6/16",
+    open: 122.5,
+    high: 124,
+    low: 122.5,
+    close: 124,
+    adjClose: 89.52,
+    volume: 13550000
+  },
+  {
+    date: "2014/6/13",
+    open: 123,
+    high: 123.5,
+    low: 122.5,
+    close: 123,
+    adjClose: 88.8,
+    volume: 17160000
+  },
+  {
+    date: "2014/6/12",
+    open: 124,
+    high: 124,
+    low: 123,
+    close: 123.5,
+    adjClose: 89.16,
+    volume: 22138000
+  },
+  {
+    date: "2014/6/11",
+    open: 124,
+    high: 125,
+    low: 123.5,
+    close: 125,
+    adjClose: 90.24,
+    volume: 27770000
+  },
+  {
+    date: "2014/6/10",
+    open: 123,
+    high: 124.5,
+    low: 122.5,
+    close: 124.5,
+    adjClose: 89.88,
+    volume: 25050000
+  },
+  {
+    date: "2014/6/9",
+    open: 122.5,
+    high: 123.5,
+    low: 122.5,
+    close: 123,
+    adjClose: 88.8,
+    volume: 19684000
+  },
+  {
+    date: "2014/6/6",
+    open: 123.5,
+    high: 123.5,
+    low: 122,
+    close: 122.5,
+    adjClose: 88.44,
+    volume: 19230000
+  },
+  {
+    date: "2014/6/5",
+    open: 123,
+    high: 123.5,
+    low: 121.5,
+    close: 123,
+    adjClose: 88.8,
+    volume: 19524000
+  },
+  {
+    date: "2014/6/4",
+    open: 123.5,
+    high: 124,
+    low: 123,
+    close: 123.5,
+    adjClose: 89.16,
+    volume: 33407000
+  },
+  {
+    date: "2014/6/3",
+    open: 120,
+    high: 122.5,
+    low: 120,
+    close: 122.5,
+    adjClose: 88.44,
+    volume: 37556000
+  },
+  {
+    date: "2014/5/30",
+    open: 122,
+    high: 122.5,
+    low: 119.5,
+    close: 119.5,
+    adjClose: 86.27,
+    volume: 69042000
+  },
+  {
+    date: "2014/5/29",
+    open: 123.5,
+    high: 124,
+    low: 121.5,
+    close: 122,
+    adjClose: 88.08,
+    volume: 43028000
+  },
+  {
+    date: "2014/5/28",
+    open: 124,
+    high: 124,
+    low: 122.5,
+    close: 124,
+    adjClose: 89.52,
+    volume: 36670000
+  },
+  {
+    date: "2014/5/27",
+    open: 122.5,
+    high: 124,
+    low: 122.5,
+    close: 123.5,
+    adjClose: 89.16,
+    volume: 18012000
+  },
+  {
+    date: "2014/5/26",
+    open: 123,
+    high: 123.5,
+    low: 122,
+    close: 123,
+    adjClose: 88.8,
+    volume: 19792000
+  },
+  {
+    date: "2014/5/23",
+    open: 121,
+    high: 122.5,
+    low: 121,
+    close: 122,
+    adjClose: 88.08,
+    volume: 31726000
+  },
+  {
+    date: "2014/5/22",
+    open: 121.5,
+    high: 122,
+    low: 121,
+    close: 122,
+    adjClose: 88.08,
+    volume: 26290000
+  },
+  {
+    date: "2014/5/21",
+    open: 122,
+    high: 122,
+    low: 120.5,
+    close: 120.5,
+    adjClose: 86.99,
+    volume: 24178000
+  },
+  {
+    date: "2014/5/20",
+    open: 122,
+    high: 122,
+    low: 121,
+    close: 121,
+    adjClose: 87.35,
+    volume: 25192000
+  },
+  {
+    date: "2014/5/19",
+    open: 122,
+    high: 122.5,
+    low: 121,
+    close: 121,
+    adjClose: 87.35,
+    volume: 18373000
+  },
+  {
+    date: "2014/5/16",
+    open: 122,
+    high: 123,
+    low: 121,
+    close: 122,
+    adjClose: 88.08,
+    volume: 28390000
+  },
+  {
+    date: "2014/5/15",
+    open: 121,
+    high: 122,
+    low: 120.5,
+    close: 122,
+    adjClose: 88.08,
+    volume: 16779000
+  },
+  {
+    date: "2014/5/14",
+    open: 121,
+    high: 122,
+    low: 120.5,
+    close: 122,
+    adjClose: 88.08,
+    volume: 32763000
+  },
+  {
+    date: "2014/5/13",
+    open: 120,
+    high: 121,
+    low: 119.5,
+    close: 120.5,
+    adjClose: 86.99,
+    volume: 24007000
+  },
+  {
+    date: "2014/5/12",
+    open: 119.5,
+    high: 120,
+    low: 117.5,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 35472000
+  },
+  {
+    date: "2014/5/9",
+    open: 120,
+    high: 120,
+    low: 119,
+    close: 120,
+    adjClose: 86.63,
+    volume: 22485000
+  },
+  {
+    date: "2014/5/8",
+    open: 119.5,
+    high: 120,
+    low: 119,
+    close: 119.5,
+    adjClose: 86.27,
+    volume: 27052000
+  },
+  {
+    date: "2014/5/7",
+    open: 118,
+    high: 119,
+    low: 117.5,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 33234000
+  },
+  {
+    date: "2014/5/6",
+    open: 117,
+    high: 119,
+    low: 116.5,
+    close: 118,
+    adjClose: 85.19,
+    volume: 27491000
+  },
+  {
+    date: "2014/5/5",
+    open: 117.5,
+    high: 118,
+    low: 116,
+    close: 117,
+    adjClose: 84.47,
+    volume: 28604000
+  },
+  {
+    date: "2014/5/2",
+    open: 119,
+    high: 119.5,
+    low: 117,
+    close: 118,
+    adjClose: 85.19,
+    volume: 42629000
+  },
+  {
+    date: "2014/4/30",
+    open: 120,
+    high: 120.5,
+    low: 117,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 43654000
+  },
+  {
+    date: "2014/4/29",
+    open: 120.5,
+    high: 121,
+    low: 119,
+    close: 120.5,
+    adjClose: 86.99,
+    volume: 21769000
+  },
+  {
+    date: "2014/4/28",
+    open: 118.5,
+    high: 120,
+    low: 117.5,
+    close: 119,
+    adjClose: 85.91,
+    volume: 28017000
+  },
+  {
+    date: "2014/4/25",
+    open: 121,
+    high: 121,
+    low: 118,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 49361000
+  },
+  {
+    date: "2014/4/24",
+    open: 121,
+    high: 121,
+    low: 120,
+    close: 121,
+    adjClose: 87.35,
+    volume: 24389000
+  },
+  {
+    date: "2014/4/23",
+    open: 123,
+    high: 123,
+    low: 120.5,
+    close: 121,
+    adjClose: 87.35,
+    volume: 31054000
+  },
+  {
+    date: "2014/4/22",
+    open: 121,
+    high: 122.5,
+    low: 120.5,
+    close: 121.5,
+    adjClose: 87.71,
+    volume: 22674000
+  },
+  {
+    date: "2014/4/21",
+    open: 122,
+    high: 122,
+    low: 121,
+    close: 121.5,
+    adjClose: 87.71,
+    volume: 21736000
+  },
+  {
+    date: "2014/4/18",
+    open: 122.5,
+    high: 123,
+    low: 121,
+    close: 123,
+    adjClose: 88.8,
+    volume: 32741000
+  },
+  {
+    date: "2014/4/17",
+    open: 120.5,
+    high: 121.5,
+    low: 119,
+    close: 120,
+    adjClose: 86.63,
+    volume: 35783000
+  },
+  {
+    date: "2014/4/16",
+    open: 121.5,
+    high: 122.5,
+    low: 121,
+    close: 121,
+    adjClose: 87.35,
+    volume: 49971000
+  },
+  {
+    date: "2014/4/15",
+    open: 121.5,
+    high: 122.5,
+    low: 121,
+    close: 122.5,
+    adjClose: 88.44,
+    volume: 28525000
+  },
+  {
+    date: "2014/4/14",
+    open: 120,
+    high: 121,
+    low: 120,
+    close: 120.5,
+    adjClose: 86.99,
+    volume: 30297000
+  },
+  {
+    date: "2014/4/11",
+    open: 118.5,
+    high: 120,
+    low: 118,
+    close: 120,
+    adjClose: 86.63,
+    volume: 34449000
+  },
+  {
+    date: "2014/4/10",
+    open: 119,
+    high: 119.5,
+    low: 118.5,
+    close: 119.5,
+    adjClose: 86.27,
+    volume: 25612000
+  },
+  {
+    date: "2014/4/9",
+    open: 119.5,
+    high: 120,
+    low: 119,
+    close: 119,
+    adjClose: 85.91,
+    volume: 28578000
+  },
+  {
+    date: "2014/4/8",
+    open: 117,
+    high: 119.5,
+    low: 117,
+    close: 119,
+    adjClose: 85.91,
+    volume: 39873000
+  },
+  {
+    date: "2014/4/7",
+    open: 117.5,
+    high: 118,
+    low: 116.5,
+    close: 117.5,
+    adjClose: 84.83,
+    volume: 45015000
+  },
+  {
+    date: "2014/4/3",
+    open: 118.5,
+    high: 119,
+    low: 117.5,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 36937000
+  },
+  {
+    date: "2014/4/2",
+    open: 120.5,
+    high: 121,
+    low: 119,
+    close: 120,
+    adjClose: 86.63,
+    volume: 43151000
+  },
+  {
+    date: "2014/4/1",
+    open: 119,
+    high: 119.5,
+    low: 118.5,
+    close: 119.5,
+    adjClose: 86.27,
+    volume: 40015000
+  },
+  {
+    date: "2014/3/31",
+    open: 118,
+    high: 118.5,
+    low: 116.5,
+    close: 118.5,
+    adjClose: 85.55,
+    volume: 46921000
+  },
+  {
+    date: "2014/3/28",
+    open: 116,
+    high: 117.5,
+    low: 115.5,
+    close: 117.5,
+    adjClose: 84.83,
+    volume: 43654000
+  },
+  {
+    date: "2014/3/27",
+    open: 114.5,
+    high: 116,
+    low: 114,
+    close: 116,
+    adjClose: 83.74,
+    volume: 30745000
+  },
+  {
+    date: "2014/3/26",
+    open: 115.5,
+    high: 116,
+    low: 114.5,
+    close: 115.5,
+    adjClose: 83.38,
+    volume: 43314000
+  },
+  {
+    date: "2014/3/25",
+    open: 111.5,
+    high: 113.5,
+    low: 111.5,
+    close: 113.5,
+    adjClose: 81.94,
+    volume: 38029000
+  },
+  {
+    date: "2014/3/24",
+    open: 111.5,
+    high: 112.5,
+    low: 111.5,
+    close: 112.5,
+    adjClose: 81.22,
+    volume: 28463000
+  },
+  {
+    date: "2014/3/21",
+    open: 114,
+    high: 114,
+    low: 112,
+    close: 112.5,
+    adjClose: 81.22,
+    volume: 60088000
+  },
+  {
+    date: "2014/3/20",
+    open: 113,
+    high: 113.5,
+    low: 112,
+    close: 112,
+    adjClose: 80.86,
+    volume: 45292000
+  },
+  {
+    date: "2014/3/19",
+    open: 114.5,
+    high: 115,
+    low: 113.5,
+    close: 114.5,
+    adjClose: 82.66,
+    volume: 32171000
+  },
+  {
+    date: "2014/3/18",
+    open: 114.5,
+    high: 115,
+    low: 113.5,
+    close: 114.5,
+    adjClose: 82.66,
+    volume: 37464000
+  },
+  {
+    date: "2014/3/17",
+    open: 114.5,
+    high: 115,
+    low: 113,
+    close: 114,
+    adjClose: 82.3,
+    volume: 33845000
+  },
+  {
+    date: "2014/3/14",
+    open: 115,
+    high: 115.5,
+    low: 114,
+    close: 115,
+    adjClose: 83.02,
+    volume: 44655000
+  },
+  {
+    date: "2014/3/13",
+    open: 116.5,
+    high: 117.5,
+    low: 115.5,
+    close: 116.5,
+    adjClose: 84.1,
+    volume: 56987000
+  },
+  {
+    date: "2014/3/12",
+    open: 112.5,
+    high: 113,
+    low: 112,
+    close: 113,
+    adjClose: 81.58,
+    volume: 18376000
+  },
+  {
+    date: "2014/3/11",
+    open: 113.5,
+    high: 114.5,
+    low: 113.5,
+    close: 114,
+    adjClose: 82.3,
+    volume: 28415000
+  },
+  {
+    date: "2014/3/10",
+    open: 114.5,
+    high: 114.5,
+    low: 112.5,
+    close: 113,
+    adjClose: 81.58,
+    volume: 37846000
+  },
+  {
+    date: "2014/3/7",
+    open: 114,
+    high: 115,
+    low: 113.5,
+    close: 114.5,
+    adjClose: 82.66,
+    volume: 65651000
+  },
+  {
+    date: "2014/3/6",
+    open: 110,
+    high: 113.5,
+    low: 110,
+    close: 113,
+    adjClose: 81.58,
+    volume: 69737000
+  },
+  {
+    date: "2014/3/5",
+    open: 108.5,
+    high: 110,
+    low: 108.5,
+    close: 110,
+    adjClose: 79.41,
+    volume: 54846000
+  },
+  {
+    date: "2014/3/4",
+    open: 108,
+    high: 108,
+    low: 107.5,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 47911000
+  },
+  {
+    date: "2014/3/3",
+    open: 108,
+    high: 108,
+    low: 106.5,
+    close: 108,
+    adjClose: 77.97,
+    volume: 51435000
+  },
+  {
+    date: "2014/2/27",
+    open: 107.5,
+    high: 108,
+    low: 107.5,
+    close: 108,
+    adjClose: 77.97,
+    volume: 48583000
+  },
+  {
+    date: "2014/2/26",
+    open: 107.5,
+    high: 108,
+    low: 107,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 34908000
+  },
+  {
+    date: "2014/2/25",
+    open: 107.5,
+    high: 108,
+    low: 106.5,
+    close: 108,
+    adjClose: 77.97,
+    volume: 31499000
+  },
+  {
+    date: "2014/2/24",
+    open: 107.5,
+    high: 108,
+    low: 106,
+    close: 107,
+    adjClose: 77.25,
+    volume: 32033000
+  },
+  {
+    date: "2014/2/21",
+    open: 107,
+    high: 107.5,
+    low: 107,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 31448000
+  },
+  {
+    date: "2014/2/20",
+    open: 106.5,
+    high: 107,
+    low: 106,
+    close: 106.5,
+    adjClose: 76.89,
+    volume: 28429000
+  },
+  {
+    date: "2014/2/19",
+    open: 108,
+    high: 108,
+    low: 107,
+    close: 108,
+    adjClose: 77.97,
+    volume: 26867000
+  },
+  {
+    date: "2014/2/18",
+    open: 108.5,
+    high: 108.5,
+    low: 107.5,
+    close: 108,
+    adjClose: 77.97,
+    volume: 22196000
+  },
+  {
+    date: "2014/2/17",
+    open: 108,
+    high: 108.5,
+    low: 107.5,
+    close: 108.5,
+    adjClose: 78.33,
+    volume: 33403000
+  },
+  {
+    date: "2014/2/14",
+    open: 106.5,
+    high: 107.5,
+    low: 106.5,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 42658000
+  },
+  {
+    date: "2014/2/13",
+    open: 105,
+    high: 106,
+    low: 105,
+    close: 105,
+    adjClose: 75.8,
+    volume: 19561000
+  },
+  {
+    date: "2014/2/12",
+    open: 105,
+    high: 105.5,
+    low: 104.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 22692000
+  },
+  {
+    date: "2014/2/11",
+    open: 104.5,
+    high: 105,
+    low: 104,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 21030000
+  },
+  {
+    date: "2014/2/10",
+    open: 104,
+    high: 104.5,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 26221000
+  },
+  {
+    date: "2014/2/7",
+    open: 103.5,
+    high: 104.5,
+    low: 103,
+    close: 104,
+    adjClose: 75.08,
+    volume: 54104000
+  },
+  {
+    date: "2014/2/6",
+    open: 101,
+    high: 103,
+    low: 101,
+    close: 102,
+    adjClose: 73.64,
+    volume: 71895000
+  },
+  {
+    date: "2014/2/5",
+    open: 102,
+    high: 102,
+    low: 100.5,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 145517000
+  },
+  {
+    date: "2014/1/27",
+    open: 106,
+    high: 106.5,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 64827000
+  },
+  {
+    date: "2014/1/24",
+    open: 107,
+    high: 108.5,
+    low: 107,
+    close: 108,
+    adjClose: 77.97,
+    volume: 33999000
+  },
+  {
+    date: "2014/1/23",
+    open: 108.5,
+    high: 108.5,
+    low: 107.5,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 27910000
+  },
+  {
+    date: "2014/1/22",
+    open: 106,
+    high: 107.5,
+    low: 106,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 28698000
+  },
+  {
+    date: "2014/1/21",
+    open: 108.5,
+    high: 108.5,
+    low: 106,
+    close: 106.5,
+    adjClose: 76.89,
+    volume: 24568000
+  },
+  {
+    date: "2014/1/20",
+    open: 107,
+    high: 108.5,
+    low: 107,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 24245000
+  },
+  {
+    date: "2014/1/17",
+    open: 108,
+    high: 108.5,
+    low: 107,
+    close: 107.5,
+    adjClose: 77.61,
+    volume: 53446000
+  },
+  {
+    date: "2014/1/16",
+    open: 106,
+    high: 107.5,
+    low: 106,
+    close: 107,
+    adjClose: 77.25,
+    volume: 49437000
+  },
+  {
+    date: "2014/1/15",
+    open: 104,
+    high: 106,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 54299000
+  },
+  {
+    date: "2014/1/14",
+    open: 102.5,
+    high: 103.5,
+    low: 102,
+    close: 103.5,
+    adjClose: 74.72,
+    volume: 21639000
+  },
+  {
+    date: "2014/1/13",
+    open: 103,
+    high: 103.5,
+    low: 102.5,
+    close: 103,
+    adjClose: 74.36,
+    volume: 19545000
+  },
+  {
+    date: "2014/1/10",
+    open: 102,
+    high: 102.5,
+    low: 101.5,
+    close: 102,
+    adjClose: 73.64,
+    volume: 33266000
+  },
+  {
+    date: "2014/1/9",
+    open: 102.5,
+    high: 103,
+    low: 100.5,
+    close: 101,
+    adjClose: 72.91,
+    volume: 63998000
+  },
+  {
+    date: "2014/1/8",
+    open: 103,
+    high: 104.5,
+    low: 102.5,
+    close: 104,
+    adjClose: 75.08,
+    volume: 30218000
+  },
+  {
+    date: "2014/1/7",
+    open: 102.5,
+    high: 103,
+    low: 102,
+    close: 102,
+    adjClose: 73.64,
+    volume: 15836000
+  },
+  {
+    date: "2014/1/6",
+    open: 102,
+    high: 103,
+    low: 102,
+    close: 102.5,
+    adjClose: 74,
+    volume: 23706000
+  },
+  {
+    date: "2014/1/3",
+    open: 103,
+    high: 103,
+    low: 102,
+    close: 102.5,
+    adjClose: 74,
+    volume: 38599000
+  },
+  {
+    date: "2014/1/2",
+    open: 105,
+    high: 105.5,
+    low: 103.5,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 15071000
+  },
+  {
+    date: "2013/12/31",
+    open: 105.5,
+    high: 106,
+    low: 105,
+    close: 105.5,
+    adjClose: 76.16,
+    volume: 24400000
+  },
+  {
+    date: "2013/12/30",
+    open: 104,
+    high: 106,
+    low: 104,
+    close: 106,
+    adjClose: 76.52,
+    volume: 44182000
+  },
+  {
+    date: "2013/12/27",
+    open: 103.5,
+    high: 104.5,
+    low: 103,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 24086000
+  },
+  {
+    date: "2013/12/26",
+    open: 103,
+    high: 104,
+    low: 103,
+    close: 104,
+    adjClose: 75.08,
+    volume: 6738000
+  },
+  {
+    date: "2013/12/25",
+    open: 102.5,
+    high: 103.5,
+    low: 102.5,
+    close: 103,
+    adjClose: 74.36,
+    volume: 9762000
+  },
+  {
+    date: "2013/12/24",
+    open: 104,
+    high: 104,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 13997000
+  },
+  {
+    date: "2013/12/23",
+    open: 103,
+    high: 104.5,
+    low: 103,
+    close: 104,
+    adjClose: 75.08,
+    volume: 28261000
+  },
+  {
+    date: "2013/12/20",
+    open: 101.5,
+    high: 103.5,
+    low: 101.5,
+    close: 102,
+    adjClose: 73.64,
+    volume: 37568000
+  },
+  {
+    date: "2013/12/19",
+    open: 102,
+    high: 103,
+    low: 101.5,
+    close: 102.5,
+    adjClose: 74,
+    volume: 27684000
+  },
+  {
+    date: "2013/12/18",
+    open: 102.5,
+    high: 103,
+    low: 101,
+    close: 101,
+    adjClose: 72.91,
+    volume: 55359000
+  },
+  {
+    date: "2013/12/17",
+    open: 103,
+    high: 104.5,
+    low: 103,
+    close: 103.5,
+    adjClose: 74.72,
+    volume: 26199000
+  },
+  {
+    date: "2013/12/16",
+    open: 102.5,
+    high: 103,
+    low: 102,
+    close: 102,
+    adjClose: 73.64,
+    volume: 18669000
+  },
+  {
+    date: "2013/12/13",
+    open: 102.5,
+    high: 103.5,
+    low: 102.5,
+    close: 102.5,
+    adjClose: 74,
+    volume: 28244000
+  },
+  {
+    date: "2013/12/12",
+    open: 104.5,
+    high: 104.5,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 18272000
+  },
+  {
+    date: "2013/12/11",
+    open: 103.5,
+    high: 105,
+    low: 103.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 24563000
+  },
+  {
+    date: "2013/12/10",
+    open: 104.5,
+    high: 105,
+    low: 104,
+    close: 104,
+    adjClose: 75.08,
+    volume: 22217000
+  },
+  {
+    date: "2013/12/9",
+    open: 104,
+    high: 105,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 23911000
+  },
+  {
+    date: "2013/12/6",
+    open: 103,
+    high: 104.5,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 25116000
+  },
+  {
+    date: "2013/12/5",
+    open: 105,
+    high: 105,
+    low: 103.5,
+    close: 104,
+    adjClose: 75.08,
+    volume: 25185000
+  },
+  {
+    date: "2013/12/4",
+    open: 103.5,
+    high: 105.5,
+    low: 103.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 23415000
+  },
+  {
+    date: "2013/12/3",
+    open: 104,
+    high: 105,
+    low: 103.5,
+    close: 104,
+    adjClose: 75.08,
+    volume: 21820000
+  },
+  {
+    date: "2013/12/2",
+    open: 105,
+    high: 105.5,
+    low: 104,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 18860000
+  },
+  {
+    date: "2013/11/29",
+    open: 104.5,
+    high: 105,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 34425000
+  },
+  {
+    date: "2013/11/28",
+    open: 105,
+    high: 105.5,
+    low: 104.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 22729000
+  },
+  {
+    date: "2013/11/27",
+    open: 105,
+    high: 105.5,
+    low: 104.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 21779000
+  },
+  {
+    date: "2013/11/26",
+    open: 102,
+    high: 105,
+    low: 101.5,
+    close: 103.5,
+    adjClose: 74.72,
+    volume: 44922000
+  },
+  {
+    date: "2013/11/25",
+    open: 101,
+    high: 102.5,
+    low: 101,
+    close: 101,
+    adjClose: 72.91,
+    volume: 30887000
+  },
+  {
+    date: "2013/11/22",
+    open: 100,
+    high: 101.5,
+    low: 100,
+    close: 100,
+    adjClose: 72.19,
+    volume: 56921000
+  },
+  {
+    date: "2013/11/21",
+    open: 102,
+    high: 103,
+    low: 100.5,
+    close: 101,
+    adjClose: 72.91,
+    volume: 56509000
+  },
+  {
+    date: "2013/11/20",
+    open: 104,
+    high: 104,
+    low: 102.5,
+    close: 103,
+    adjClose: 74.36,
+    volume: 45380000
+  },
+  {
+    date: "2013/11/19",
+    open: 104.5,
+    high: 105.5,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 34470000
+  },
+  {
+    date: "2013/11/18",
+    open: 104.5,
+    high: 105,
+    low: 104,
+    close: 104,
+    adjClose: 75.08,
+    volume: 25261000
+  },
+  {
+    date: "2013/11/15",
+    open: 103.5,
+    high: 104.5,
+    low: 103.5,
+    close: 104,
+    adjClose: 75.08,
+    volume: 19182000
+  },
+  {
+    date: "2013/11/14",
+    open: 104,
+    high: 104.5,
+    low: 103.5,
+    close: 103.5,
+    adjClose: 74.72,
+    volume: 29904000
+  },
+  {
+    date: "2013/11/13",
+    open: 105,
+    high: 105,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 26650000
+  },
+  {
+    date: "2013/11/12",
+    open: 106,
+    high: 106,
+    low: 104.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 31600000
+  },
+  {
+    date: "2013/11/11",
+    open: 105,
+    high: 106,
+    low: 104.5,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 21451000
+  },
+  {
+    date: "2013/11/8",
+    open: 105,
+    high: 106.5,
+    low: 105,
+    close: 106,
+    adjClose: 76.52,
+    volume: 30518000
+  },
+  {
+    date: "2013/11/7",
+    open: 107,
+    high: 107.5,
+    low: 106,
+    close: 107,
+    adjClose: 77.25,
+    volume: 15925000
+  },
+  {
+    date: "2013/11/6",
+    open: 106.5,
+    high: 107.5,
+    low: 106.5,
+    close: 107,
+    adjClose: 77.25,
+    volume: 16437000
+  },
+  {
+    date: "2013/11/5",
+    open: 108.5,
+    high: 109,
+    low: 106.5,
+    close: 106.5,
+    adjClose: 76.89,
+    volume: 20304000
+  },
+  {
+    date: "2013/11/4",
+    open: 108,
+    high: 109,
+    low: 108,
+    close: 109,
+    adjClose: 78.69,
+    volume: 9601000
+  },
+  {
+    date: "2013/11/1",
+    open: 110.5,
+    high: 110.5,
+    low: 108.5,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 10837000
+  },
+  {
+    date: "2013/10/31",
+    open: 108.5,
+    high: 109.5,
+    low: 108,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 22472000
+  },
+  {
+    date: "2013/10/30",
+    open: 109,
+    high: 110,
+    low: 109,
+    close: 110,
+    adjClose: 79.41,
+    volume: 16582000
+  },
+  {
+    date: "2013/10/29",
+    open: 108.5,
+    high: 109.5,
+    low: 108,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 21491000
+  },
+  {
+    date: "2013/10/28",
+    open: 108,
+    high: 109.5,
+    low: 107.5,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 21177000
+  },
+  {
+    date: "2013/10/25",
+    open: 108.5,
+    high: 109,
+    low: 106.5,
+    close: 107,
+    adjClose: 77.25,
+    volume: 36027000
+  },
+  {
+    date: "2013/10/24",
+    open: 109,
+    high: 110,
+    low: 108.5,
+    close: 110,
+    adjClose: 79.41,
+    volume: 21193000
+  },
+  {
+    date: "2013/10/23",
+    open: 111,
+    high: 111.5,
+    low: 110,
+    close: 111,
+    adjClose: 80.13,
+    volume: 21861000
+  },
+  {
+    date: "2013/10/22",
+    open: 110,
+    high: 111.5,
+    low: 109.5,
+    close: 111.5,
+    adjClose: 80.5,
+    volume: 38261000
+  },
+  {
+    date: "2013/10/21",
+    open: 111,
+    high: 111.5,
+    low: 109.5,
+    close: 110,
+    adjClose: 79.41,
+    volume: 40443000
+  },
+  {
+    date: "2013/10/18",
+    open: 108.5,
+    high: 110,
+    low: 108.5,
+    close: 110,
+    adjClose: 79.41,
+    volume: 58487000
+  },
+  {
+    date: "2013/10/17",
+    open: 107.5,
+    high: 108,
+    low: 107,
+    close: 107,
+    adjClose: 77.25,
+    volume: 28095000
+  },
+  {
+    date: "2013/10/16",
+    open: 108,
+    high: 108,
+    low: 106,
+    close: 106,
+    adjClose: 76.52,
+    volume: 18482000
+  },
+  {
+    date: "2013/10/15",
+    open: 106.5,
+    high: 107,
+    low: 106,
+    close: 107,
+    adjClose: 77.25,
+    volume: 21383000
+  },
+  {
+    date: "2013/10/14",
+    open: 106.5,
+    high: 106.5,
+    low: 105,
+    close: 105,
+    adjClose: 75.8,
+    volume: 18568000
+  },
+  {
+    date: "2013/10/11",
+    open: 105,
+    high: 107.5,
+    low: 105,
+    close: 106.5,
+    adjClose: 76.89,
+    volume: 56367000
+  },
+  {
+    date: "2013/10/9",
+    open: 104,
+    high: 105.5,
+    low: 103,
+    close: 105,
+    adjClose: 75.8,
+    volume: 22183000
+  },
+  {
+    date: "2013/10/8",
+    open: 103.5,
+    high: 105.5,
+    low: 103,
+    close: 105,
+    adjClose: 75.8,
+    volume: 21082000
+  },
+  {
+    date: "2013/10/7",
+    open: 103.5,
+    high: 104,
+    low: 102,
+    close: 103,
+    adjClose: 74.36,
+    volume: 20847000
+  },
+  {
+    date: "2013/10/4",
+    open: 104.5,
+    high: 105,
+    low: 103.5,
+    close: 104,
+    adjClose: 75.08,
+    volume: 19872000
+  },
+  {
+    date: "2013/10/3",
+    open: 103.5,
+    high: 106,
+    low: 103,
+    close: 105,
+    adjClose: 75.8,
+    volume: 50622000
+  },
+  {
+    date: "2013/10/2",
+    open: 103.5,
+    high: 103.5,
+    low: 102,
+    close: 103,
+    adjClose: 74.36,
+    volume: 14186000
+  },
+  {
+    date: "2013/10/1",
+    open: 100.5,
+    high: 102.5,
+    low: 100.5,
+    close: 101.5,
+    adjClose: 73.28,
+    volume: 22557000
+  },
+  {
+    date: "2013/9/30",
+    open: 100.5,
+    high: 102,
+    low: 100,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 45308000
+  },
+  {
+    date: "2013/9/27",
+    open: 103.5,
+    high: 103.5,
+    low: 102,
+    close: 103,
+    adjClose: 74.36,
+    volume: 26146000
+  },
+  {
+    date: "2013/9/26",
+    open: 103.5,
+    high: 103.5,
+    low: 101.5,
+    close: 101.5,
+    adjClose: 73.28,
+    volume: 23012000
+  },
+  {
+    date: "2013/9/25",
+    open: 104.5,
+    high: 104.5,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 31708000
+  },
+  {
+    date: "2013/9/24",
+    open: 105,
+    high: 105.5,
+    low: 104,
+    close: 105,
+    adjClose: 75.8,
+    volume: 28633000
+  },
+  {
+    date: "2013/9/23",
+    open: 103,
+    high: 106,
+    low: 102.5,
+    close: 105.5,
+    adjClose: 76.16,
+    volume: 51403000
+  },
+  {
+    date: "2013/9/18",
+    open: 105,
+    high: 105.5,
+    low: 103,
+    close: 103,
+    adjClose: 74.36,
+    volume: 28113000
+  },
+  {
+    date: "2013/9/17",
+    open: 105.5,
+    high: 105.5,
+    low: 104.5,
+    close: 105.5,
+    adjClose: 76.16,
+    volume: 25402000
+  },
+  {
+    date: "2013/9/16",
+    open: 104,
+    high: 105.5,
+    low: 104,
+    close: 105.5,
+    adjClose: 76.16,
+    volume: 40590000
+  },
+  {
+    date: "2013/9/13",
+    open: 102.5,
+    high: 103,
+    low: 102,
+    close: 102.5,
+    adjClose: 74,
+    volume: 22273000
+  },
+  {
+    date: "2013/9/12",
+    open: 103,
+    high: 104.5,
+    low: 103,
+    close: 103.5,
+    adjClose: 74.72,
+    volume: 32814000
+  },
+  {
+    date: "2013/9/11",
+    open: 103,
+    high: 104.5,
+    low: 102.5,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 40290000
+  },
+  {
+    date: "2013/9/10",
+    open: 103,
+    high: 104.5,
+    low: 102.5,
+    close: 104.5,
+    adjClose: 75.44,
+    volume: 37304000
+  },
+  {
+    date: "2013/9/9",
+    open: 102.5,
+    high: 103,
+    low: 101,
+    close: 103,
+    adjClose: 74.36,
+    volume: 32515000
+  },
+  {
+    date: "2013/9/6",
+    open: 102,
+    high: 102,
+    low: 101,
+    close: 102,
+    adjClose: 73.64,
+    volume: 24631000
+  },
+  {
+    date: "2013/9/5",
+    open: 100.5,
+    high: 101.5,
+    low: 100,
+    close: 101.5,
+    adjClose: 73.28,
+    volume: 30002000
+  },
+  {
+    date: "2013/9/4",
+    open: 100.5,
+    high: 101.5,
+    low: 100,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 25183000
+  },
+  {
+    date: "2013/9/3",
+    open: 103,
+    high: 103,
+    low: 101.5,
+    close: 102,
+    adjClose: 73.64,
+    volume: 31074000
+  },
+  {
+    date: "2013/9/2",
+    open: 100,
+    high: 102,
+    low: 99.6,
+    close: 102,
+    adjClose: 73.64,
+    volume: 30751000
+  },
+  {
+    date: "2013/8/30",
+    open: 99.6,
+    high: 100.5,
+    low: 98.8,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 37275000
+  },
+  {
+    date: "2013/8/29",
+    open: 96.9,
+    high: 98.9,
+    low: 96.9,
+    close: 98.7,
+    adjClose: 71.25,
+    volume: 36841000
+  },
+  {
+    date: "2013/8/28",
+    open: 95.6,
+    high: 97.3,
+    low: 95.1,
+    close: 96.8,
+    adjClose: 69.88,
+    volume: 34586000
+  },
+  {
+    date: "2013/8/27",
+    open: 96,
+    high: 96.8,
+    low: 95.6,
+    close: 95.6,
+    adjClose: 69.02,
+    volume: 22435000
+  },
+  {
+    date: "2013/8/26",
+    open: 97.6,
+    high: 97.6,
+    low: 96.1,
+    close: 96.8,
+    adjClose: 69.88,
+    volume: 18663000
+  },
+  {
+    date: "2013/8/23",
+    open: 95.7,
+    high: 97.3,
+    low: 95.5,
+    close: 97,
+    adjClose: 70.03,
+    volume: 44276000
+  },
+  {
+    date: "2013/8/22",
+    open: 93,
+    high: 94.9,
+    low: 92.9,
+    close: 94.5,
+    adjClose: 68.22,
+    volume: 60185000
+  },
+  {
+    date: "2013/8/20",
+    open: 95.2,
+    high: 95.4,
+    low: 94.4,
+    close: 94.4,
+    adjClose: 68.15,
+    volume: 41635000
+  },
+  {
+    date: "2013/8/19",
+    open: 95.5,
+    high: 96.1,
+    low: 95.3,
+    close: 95.5,
+    adjClose: 68.94,
+    volume: 49081000
+  },
+  {
+    date: "2013/8/16",
+    open: 95.4,
+    high: 97.5,
+    low: 95.2,
+    close: 96.5,
+    adjClose: 69.67,
+    volume: 37509000
+  },
+  {
+    date: "2013/8/15",
+    open: 96.4,
+    high: 96.4,
+    low: 95.3,
+    close: 96,
+    adjClose: 69.31,
+    volume: 42647000
+  },
+  {
+    date: "2013/8/14",
+    open: 96,
+    high: 97.3,
+    low: 95.8,
+    close: 96.8,
+    adjClose: 69.88,
+    volume: 41618000
+  },
+  {
+    date: "2013/8/13",
+    open: 96,
+    high: 97.4,
+    low: 96,
+    close: 97.2,
+    adjClose: 70.17,
+    volume: 34361000
+  },
+  {
+    date: "2013/8/12",
+    open: 96.4,
+    high: 96.7,
+    low: 95.6,
+    close: 96,
+    adjClose: 69.31,
+    volume: 33389000
+  },
+  {
+    date: "2013/8/9",
+    open: 100,
+    high: 100,
+    low: 96.4,
+    close: 96.4,
+    adjClose: 69.59,
+    volume: 47046000
+  },
+  {
+    date: "2013/8/8",
+    open: 96,
+    high: 97.1,
+    low: 95.3,
+    close: 96.4,
+    adjClose: 69.59,
+    volume: 55550000
+  },
+  {
+    date: "2013/8/7",
+    open: 98.5,
+    high: 98.5,
+    low: 97,
+    close: 97,
+    adjClose: 70.03,
+    volume: 45468000
+  },
+  {
+    date: "2013/8/6",
+    open: 100.5,
+    high: 100.5,
+    low: 98.6,
+    close: 98.8,
+    adjClose: 71.33,
+    volume: 42742000
+  },
+  {
+    date: "2013/8/5",
+    open: 100,
+    high: 101.5,
+    low: 99.9,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 23349000
+  },
+  {
+    date: "2013/8/2",
+    open: 102.5,
+    high: 103,
+    low: 100,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 27947000
+  },
+  {
+    date: "2013/8/1",
+    open: 102,
+    high: 102,
+    low: 100,
+    close: 100.5,
+    adjClose: 72.55,
+    volume: 27849000
+  },
+  {
+    date: "2013/7/31",
+    open: 101.5,
+    high: 103,
+    low: 101,
+    close: 102.5,
+    adjClose: 74,
+    volume: 36945000
+  },
+  {
+    date: "2013/7/30",
+    open: 100.5,
+    high: 102.5,
+    low: 100.5,
+    close: 102,
+    adjClose: 73.64,
+    volume: 33818000
+  },
+  {
+    date: "2013/7/29",
+    open: 100,
+    high: 101.5,
+    low: 100,
+    close: 100,
+    adjClose: 72.19,
+    volume: 38265000
+  },
+  {
+    date: "2013/7/26",
+    open: 103,
+    high: 103,
+    low: 101,
+    close: 102.5,
+    adjClose: 74,
+    volume: 31781000
+  },
+  {
+    date: "2013/7/25",
+    open: 102,
+    high: 103.5,
+    low: 101,
+    close: 102.5,
+    adjClose: 74,
+    volume: 36398000
+  },
+  {
+    date: "2013/7/24",
+    open: 100.5,
+    high: 103,
+    low: 100,
+    close: 102,
+    adjClose: 73.64,
+    volume: 58261000
+  },
+  {
+    date: "2013/7/23",
+    open: 98.5,
+    high: 101.5,
+    low: 98.5,
+    close: 100,
+    adjClose: 72.19,
+    volume: 85529000
+  },
+  {
+    date: "2013/7/22",
+    open: 98,
+    high: 98.4,
+    low: 96.9,
+    close: 97,
+    adjClose: 70.03,
+    volume: 86924000
+  },
+  {
+    date: "2013/7/19",
+    open: 99.4,
+    high: 99.7,
+    low: 98.2,
+    close: 98.2,
+    adjClose: 70.89,
+    volume: 117410000
+  },
+  {
+    date: "2013/7/18",
+    open: 107.5,
+    high: 108,
+    low: 105.5,
+    close: 105.5,
+    adjClose: 76.16,
+    volume: 43963000
+  },
+  {
+    date: "2013/7/17",
+    open: 108,
+    high: 109,
+    low: 107,
+    close: 109,
+    adjClose: 78.69,
+    volume: 36386000
+  },
+  {
+    date: "2013/7/16",
+    open: 108.5,
+    high: 109,
+    low: 107,
+    close: 108,
+    adjClose: 77.97,
+    volume: 35863000
+  },
+  {
+    date: "2013/7/15",
+    open: 108.5,
+    high: 109.5,
+    low: 108,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 33099000
+  },
+  {
+    date: "2013/7/12",
+    open: 109.5,
+    high: 110,
+    low: 108.5,
+    close: 110,
+    adjClose: 79.41,
+    volume: 31046000
+  },
+  {
+    date: "2013/7/11",
+    open: 107.5,
+    high: 109.5,
+    low: 107.5,
+    close: 109.5,
+    adjClose: 79.05,
+    volume: 55975000
+  },
+  {
+    date: "2013/7/10",
+    open: 104.5,
+    high: 107,
+    low: 104.5,
+    close: 106,
+    adjClose: 76.52,
+    volume: 22045000
+  },
+  {
+    date: "2013/7/9",
+    open: 104.5,
+    high: 106.5,
+    low: 103.5,
+    close: 106,
+    adjClose: 76.52,
+    volume: 34261000
+  },
+  {
+    date: "2013/7/8",
+    open: 107,
+    high: 108,
+    low: 104.5,
+    close: 105,
+    adjClose: 75.8,
+    volume: 32729000
+  },
+  {
+    date: "2013/7/5",
+    open: 107.5,
+    high: 109.5,
+    low: 107,
+    close: 109,
+    adjClose: 78.69,
+    volume: 28230000
+  },
+  {
+    date: "2013/7/4",
+    open: 106.5,
+    high: 107,
+    low: 106,
+    close: 107,
+    adjClose: 77.25,
+    volume: 24252000
+  },
+  {
+    date: "2013/7/3",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2013/7/3",
+    open: 107,
+    high: 107,
+    low: 105.5,
+    close: 107,
+    adjClose: 77.25,
+    volume: 44593000
+  },
+  {
+    date: "2013/7/2",
+    open: 109,
+    high: 110,
+    low: 108.5,
+    close: 110,
+    adjClose: 77.25,
+    volume: 44320000
+  },
+  {
+    date: "2013/7/1",
+    open: 109,
+    high: 109.5,
+    low: 108,
+    close: 108,
+    adjClose: 75.84,
+    volume: 51539000
+  },
+  {
+    date: "2013/6/28",
+    open: 106,
+    high: 111,
+    low: 105,
+    close: 111,
+    adjClose: 77.95,
+    volume: 74198000
+  },
+  {
+    date: "2013/6/27",
+    open: 103,
+    high: 105,
+    low: 103,
+    close: 104.5,
+    adjClose: 73.38,
+    volume: 45541000
+  },
+  {
+    date: "2013/6/26",
+    open: 103,
+    high: 104,
+    low: 101.5,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 54819000
+  },
+  {
+    date: "2013/6/25",
+    open: 101,
+    high: 103,
+    low: 101,
+    close: 101,
+    adjClose: 70.93,
+    volume: 32319000
+  },
+  {
+    date: "2013/6/24",
+    open: 102.5,
+    high: 102.5,
+    low: 100,
+    close: 101,
+    adjClose: 70.93,
+    volume: 53521000
+  },
+  {
+    date: "2013/6/21",
+    open: 102,
+    high: 103.5,
+    low: 101.5,
+    close: 103.5,
+    adjClose: 72.68,
+    volume: 38787000
+  },
+  {
+    date: "2013/6/20",
+    open: 105,
+    high: 105.5,
+    low: 103.5,
+    close: 104,
+    adjClose: 73.03,
+    volume: 29951000
+  },
+  {
+    date: "2013/6/19",
+    open: 106,
+    high: 106.5,
+    low: 105,
+    close: 105.5,
+    adjClose: 74.09,
+    volume: 21991000
+  },
+  {
+    date: "2013/6/18",
+    open: 105,
+    high: 106.5,
+    low: 104.5,
+    close: 106.5,
+    adjClose: 74.79,
+    volume: 29969000
+  },
+  {
+    date: "2013/6/17",
+    open: 105.5,
+    high: 106,
+    low: 105,
+    close: 106,
+    adjClose: 74.44,
+    volume: 22921000
+  },
+  {
+    date: "2013/6/14",
+    open: 105,
+    high: 106,
+    low: 104.5,
+    close: 106,
+    adjClose: 74.44,
+    volume: 41147000
+  },
+  {
+    date: "2013/6/13",
+    open: 106,
+    high: 107,
+    low: 104,
+    close: 104.5,
+    adjClose: 73.38,
+    volume: 60275000
+  },
+  {
+    date: "2013/6/11",
+    open: 110,
+    high: 110,
+    low: 108,
+    close: 108,
+    adjClose: 75.84,
+    volume: 34785000
+  },
+  {
+    date: "2013/6/10",
+    open: 110,
+    high: 110,
+    low: 108,
+    close: 108.5,
+    adjClose: 76.19,
+    volume: 21045000
+  },
+  {
+    date: "2013/6/7",
+    open: 108,
+    high: 109.5,
+    low: 108,
+    close: 108.5,
+    adjClose: 76.19,
+    volume: 32987000
+  },
+  {
+    date: "2013/6/6",
+    open: 108.5,
+    high: 109.5,
+    low: 107,
+    close: 107.5,
+    adjClose: 75.49,
+    volume: 31641000
+  },
+  {
+    date: "2013/6/5",
+    open: 109.5,
+    high: 110.5,
+    low: 108.5,
+    close: 109.5,
+    adjClose: 76.9,
+    volume: 23334000
+  },
+  {
+    date: "2013/6/4",
+    open: 109,
+    high: 110,
+    low: 107.5,
+    close: 109,
+    adjClose: 76.54,
+    volume: 27446000
+  },
+  {
+    date: "2013/6/3",
+    open: 108,
+    high: 108.5,
+    low: 106.5,
+    close: 107.5,
+    adjClose: 75.49,
+    volume: 35739000
+  },
+  {
+    date: "2013/5/31",
+    open: 111.5,
+    high: 111.5,
+    low: 109,
+    close: 109.5,
+    adjClose: 76.9,
+    volume: 37162000
+  },
+  {
+    date: "2013/5/30",
+    open: 111,
+    high: 111.5,
+    low: 109.5,
+    close: 110,
+    adjClose: 77.25,
+    volume: 36088000
+  },
+  {
+    date: "2013/5/29",
+    open: 110.5,
+    high: 112,
+    low: 110.5,
+    close: 111,
+    adjClose: 77.95,
+    volume: 16736000
+  },
+  {
+    date: "2013/5/28",
+    open: 112,
+    high: 112.5,
+    low: 109.5,
+    close: 109.5,
+    adjClose: 76.9,
+    volume: 21209000
+  },
+  {
+    date: "2013/5/27",
+    open: 109.5,
+    high: 112,
+    low: 109.5,
+    close: 112,
+    adjClose: 78.65,
+    volume: 19085000
+  },
+  {
+    date: "2013/5/24",
+    open: 109.5,
+    high: 110.5,
+    low: 108.5,
+    close: 109.5,
+    adjClose: 76.9,
+    volume: 26614000
+  },
+  {
+    date: "2013/5/23",
+    open: 110.5,
+    high: 111.5,
+    low: 108,
+    close: 108,
+    adjClose: 75.84,
+    volume: 46370000
+  },
+  {
+    date: "2013/5/22",
+    open: 112.5,
+    high: 113.5,
+    low: 111,
+    close: 112,
+    adjClose: 78.65,
+    volume: 31200000
+  },
+  {
+    date: "2013/5/21",
+    open: 113,
+    high: 113.5,
+    low: 112,
+    close: 112.5,
+    adjClose: 79,
+    volume: 17184000
+  },
+  {
+    date: "2013/5/20",
+    open: 112.5,
+    high: 114,
+    low: 112.5,
+    close: 114,
+    adjClose: 80.06,
+    volume: 14472000
+  },
+  {
+    date: "2013/5/17",
+    open: 112,
+    high: 113.5,
+    low: 111.5,
+    close: 113.5,
+    adjClose: 79.7,
+    volume: 19214000
+  },
+  {
+    date: "2013/5/16",
+    open: 115,
+    high: 116,
+    low: 113,
+    close: 113.5,
+    adjClose: 79.7,
+    volume: 44164000
+  },
+  {
+    date: "2013/5/15",
+    open: 115,
+    high: 116,
+    low: 113.5,
+    close: 115,
+    adjClose: 80.76,
+    volume: 25970000
+  },
+  {
+    date: "2013/5/14",
+    open: 115.5,
+    high: 116.5,
+    low: 115,
+    close: 115.5,
+    adjClose: 81.11,
+    volume: 27714000
+  },
+  {
+    date: "2013/5/13",
+    open: 115,
+    high: 115.5,
+    low: 114,
+    close: 114.5,
+    adjClose: 80.41,
+    volume: 18197000
+  },
+  {
+    date: "2013/5/10",
+    open: 115,
+    high: 115,
+    low: 113.5,
+    close: 114.5,
+    adjClose: 80.41,
+    volume: 27413000
+  },
+  {
+    date: "2013/5/9",
+    open: 116,
+    high: 116,
+    low: 114.5,
+    close: 115,
+    adjClose: 80.76,
+    volume: 27151000
+  },
+  {
+    date: "2013/5/8",
+    open: 112.5,
+    high: 115,
+    low: 112.5,
+    close: 114.5,
+    adjClose: 80.41,
+    volume: 40914000
+  },
+  {
+    date: "2013/5/7",
+    open: 112,
+    high: 113,
+    low: 111,
+    close: 112.5,
+    adjClose: 79,
+    volume: 19273000
+  },
+  {
+    date: "2013/5/6",
+    open: 111.5,
+    high: 111.5,
+    low: 110.5,
+    close: 111.5,
+    adjClose: 78.3,
+    volume: 19268000
+  },
+  {
+    date: "2013/5/3",
+    open: 111.5,
+    high: 112.5,
+    low: 110,
+    close: 110,
+    adjClose: 77.25,
+    volume: 36502000
+  },
+  {
+    date: "2013/5/2",
+    open: 110,
+    high: 111,
+    low: 109,
+    close: 110.5,
+    adjClose: 77.6,
+    volume: 37313000
+  },
+  {
+    date: "2013/4/30",
+    open: 108.5,
+    high: 109.5,
+    low: 108.5,
+    close: 109.5,
+    adjClose: 76.9,
+    volume: 34314000
+  },
+  {
+    date: "2013/4/29",
+    open: 108.5,
+    high: 108.5,
+    low: 107.5,
+    close: 108,
+    adjClose: 75.84,
+    volume: 21008000
+  },
+  {
+    date: "2013/4/26",
+    open: 107,
+    high: 109,
+    low: 107,
+    close: 108.5,
+    adjClose: 76.19,
+    volume: 36420000
+  },
+  {
+    date: "2013/4/25",
+    open: 106,
+    high: 107,
+    low: 105.5,
+    close: 107,
+    adjClose: 75.14,
+    volume: 26145000
+  },
+  {
+    date: "2013/4/24",
+    open: 106.5,
+    high: 107,
+    low: 104.5,
+    close: 106,
+    adjClose: 74.44,
+    volume: 35383000
+  },
+  {
+    date: "2013/4/23",
+    open: 106.5,
+    high: 107.5,
+    low: 105.5,
+    close: 106,
+    adjClose: 74.44,
+    volume: 45835000
+  },
+  {
+    date: "2013/4/22",
+    open: 108.5,
+    high: 109.5,
+    low: 107.5,
+    close: 108.5,
+    adjClose: 76.19,
+    volume: 72170000
+  },
+  {
+    date: "2013/4/19",
+    open: 105.5,
+    high: 106.5,
+    low: 105.5,
+    close: 106.5,
+    adjClose: 74.79,
+    volume: 66723000
+  },
+  {
+    date: "2013/4/18",
+    open: 100,
+    high: 101,
+    low: 99.4,
+    close: 99.9,
+    adjClose: 70.15,
+    volume: 32242000
+  },
+  {
+    date: "2013/4/17",
+    open: 101.5,
+    high: 101.5,
+    low: 99.7,
+    close: 100,
+    adjClose: 70.22,
+    volume: 35304000
+  },
+  {
+    date: "2013/4/16",
+    open: 98.2,
+    high: 101,
+    low: 98.2,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 33395000
+  },
+  {
+    date: "2013/4/15",
+    open: 100.5,
+    high: 101,
+    low: 99.1,
+    close: 99.4,
+    adjClose: 69.8,
+    volume: 23233000
+  },
+  {
+    date: "2013/4/12",
+    open: 101.5,
+    high: 101.5,
+    low: 100,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 18954000
+  },
+  {
+    date: "2013/4/11",
+    open: 99,
+    high: 101.5,
+    low: 98.8,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 54072000
+  },
+  {
+    date: "2013/4/10",
+    open: 98.8,
+    high: 98.8,
+    low: 97.7,
+    close: 98.3,
+    adjClose: 69.03,
+    volume: 34877000
+  },
+  {
+    date: "2013/4/9",
+    open: 98,
+    high: 98.5,
+    low: 97.5,
+    close: 97.5,
+    adjClose: 68.47,
+    volume: 40543000
+  },
+  {
+    date: "2013/4/8",
+    open: 99,
+    high: 99.5,
+    low: 98.5,
+    close: 98.5,
+    adjClose: 69.17,
+    volume: 53948000
+  },
+  {
+    date: "2013/4/3",
+    open: 101.5,
+    high: 101.5,
+    low: 100,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 26312000
+  },
+  {
+    date: "2013/4/2",
+    open: 100.5,
+    high: 101,
+    low: 99.8,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 22291000
+  },
+  {
+    date: "2013/4/1",
+    open: 101,
+    high: 102,
+    low: 100.5,
+    close: 101,
+    adjClose: 70.93,
+    volume: 15964000
+  },
+  {
+    date: "2013/3/29",
+    open: 100,
+    high: 101,
+    low: 99.8,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 18943000
+  },
+  {
+    date: "2013/3/28",
+    open: 100,
+    high: 100.5,
+    low: 99.3,
+    close: 100,
+    adjClose: 70.22,
+    volume: 27872000
+  },
+  {
+    date: "2013/3/27",
+    open: 99,
+    high: 100.5,
+    low: 98.8,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 25674000
+  },
+  {
+    date: "2013/3/26",
+    open: 99.2,
+    high: 99.4,
+    low: 98.8,
+    close: 99,
+    adjClose: 69.52,
+    volume: 27183000
+  },
+  {
+    date: "2013/3/25",
+    open: 99.9,
+    high: 100.5,
+    low: 99.2,
+    close: 99.5,
+    adjClose: 69.87,
+    volume: 24203000
+  },
+  {
+    date: "2013/3/22",
+    open: 98.6,
+    high: 99.1,
+    low: 98,
+    close: 98,
+    adjClose: 68.82,
+    volume: 44822000
+  },
+  {
+    date: "2013/3/21",
+    open: 98.8,
+    high: 100.5,
+    low: 98.7,
+    close: 98.7,
+    adjClose: 69.31,
+    volume: 56415000
+  },
+  {
+    date: "2013/3/20",
+    open: 99.5,
+    high: 99.5,
+    low: 98.8,
+    close: 98.8,
+    adjClose: 69.38,
+    volume: 61605000
+  },
+  {
+    date: "2013/3/19",
+    open: 101,
+    high: 101.5,
+    low: 99.6,
+    close: 100,
+    adjClose: 70.22,
+    volume: 47215000
+  },
+  {
+    date: "2013/3/18",
+    open: 102,
+    high: 102,
+    low: 100.5,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 43902000
+  },
+  {
+    date: "2013/3/15",
+    open: 105,
+    high: 105,
+    low: 103,
+    close: 103,
+    adjClose: 72.33,
+    volume: 34424000
+  },
+  {
+    date: "2013/3/14",
+    open: 104,
+    high: 104.5,
+    low: 103,
+    close: 104,
+    adjClose: 73.03,
+    volume: 32329000
+  },
+  {
+    date: "2013/3/13",
+    open: 102.5,
+    high: 105,
+    low: 102,
+    close: 104.5,
+    adjClose: 73.38,
+    volume: 57399000
+  },
+  {
+    date: "2013/3/12",
+    open: 102,
+    high: 103,
+    low: 101.5,
+    close: 102.5,
+    adjClose: 71.98,
+    volume: 29992000
+  },
+  {
+    date: "2013/3/11",
+    open: 102,
+    high: 104,
+    low: 102,
+    close: 102,
+    adjClose: 71.63,
+    volume: 35709000
+  },
+  {
+    date: "2013/3/8",
+    open: 103,
+    high: 104.5,
+    low: 102,
+    close: 103.5,
+    adjClose: 72.68,
+    volume: 44571000
+  },
+  {
+    date: "2013/3/7",
+    open: 103.5,
+    high: 104,
+    low: 103,
+    close: 103,
+    adjClose: 72.33,
+    volume: 20518000
+  },
+  {
+    date: "2013/3/6",
+    open: 104,
+    high: 104.5,
+    low: 103,
+    close: 104,
+    adjClose: 73.03,
+    volume: 35977000
+  },
+  {
+    date: "2013/3/5",
+    open: 103.5,
+    high: 104,
+    low: 102.5,
+    close: 104,
+    adjClose: 73.03,
+    volume: 53913000
+  },
+  {
+    date: "2013/3/4",
+    open: 104.5,
+    high: 104.5,
+    low: 101.5,
+    close: 102,
+    adjClose: 71.63,
+    volume: 50033000
+  },
+  {
+    date: "2013/3/1",
+    open: 103,
+    high: 105,
+    low: 102.5,
+    close: 105,
+    adjClose: 73.74,
+    volume: 31408000
+  },
+  {
+    date: "2013/2/27",
+    open: 102,
+    high: 104.5,
+    low: 101,
+    close: 104.5,
+    adjClose: 73.38,
+    volume: 80851000
+  },
+  {
+    date: "2013/2/26",
+    open: 103.5,
+    high: 105,
+    low: 102.5,
+    close: 103.5,
+    adjClose: 72.68,
+    volume: 38440000
+  },
+  {
+    date: "2013/2/25",
+    open: 106.5,
+    high: 107,
+    low: 105,
+    close: 105,
+    adjClose: 73.74,
+    volume: 35913000
+  },
+  {
+    date: "2013/2/22",
+    open: 106,
+    high: 106.5,
+    low: 105,
+    close: 105.5,
+    adjClose: 74.09,
+    volume: 39344000
+  },
+  {
+    date: "2013/2/21",
+    open: 108.5,
+    high: 108.5,
+    low: 107,
+    close: 107,
+    adjClose: 75.14,
+    volume: 30260000
+  },
+  {
+    date: "2013/2/20",
+    open: 108.5,
+    high: 109.5,
+    low: 108,
+    close: 109,
+    adjClose: 76.54,
+    volume: 40532000
+  },
+  {
+    date: "2013/2/19",
+    open: 108.5,
+    high: 108.5,
+    low: 106.5,
+    close: 107,
+    adjClose: 75.14,
+    volume: 21802000
+  },
+  {
+    date: "2013/2/18",
+    open: 107,
+    high: 108.5,
+    low: 106.5,
+    close: 107,
+    adjClose: 75.14,
+    volume: 63701000
+  },
+  {
+    date: "2013/2/6",
+    open: 103.5,
+    high: 105,
+    low: 103,
+    close: 105,
+    adjClose: 73.74,
+    volume: 30600000
+  },
+  {
+    date: "2013/2/5",
+    open: 103,
+    high: 103,
+    low: 101.5,
+    close: 103,
+    adjClose: 72.33,
+    volume: 17175000
+  },
+  {
+    date: "2013/2/4",
+    open: 102,
+    high: 103,
+    low: 102,
+    close: 103,
+    adjClose: 72.33,
+    volume: 33911000
+  },
+  {
+    date: "2013/2/1",
+    open: 101.5,
+    high: 101.5,
+    low: 100.5,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 22085000
+  },
+  {
+    date: "2013/1/31",
+    open: 100.5,
+    high: 101.5,
+    low: 100,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 39667000
+  },
+  {
+    date: "2013/1/30",
+    open: 102,
+    high: 102,
+    low: 100.5,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 27884000
+  },
+  {
+    date: "2013/1/29",
+    open: 100,
+    high: 101.5,
+    low: 99.7,
+    close: 101,
+    adjClose: 70.93,
+    volume: 35346000
+  },
+  {
+    date: "2013/1/28",
+    open: 98.7,
+    high: 99.5,
+    low: 98.6,
+    close: 99.3,
+    adjClose: 69.73,
+    volume: 29117000
+  },
+  {
+    date: "2013/1/25",
+    open: 99.9,
+    high: 99.9,
+    low: 98,
+    close: 99,
+    adjClose: 69.52,
+    volume: 47836000
+  },
+  {
+    date: "2013/1/24",
+    open: 100,
+    high: 100.5,
+    low: 99.2,
+    close: 99.9,
+    adjClose: 70.15,
+    volume: 39614000
+  },
+  {
+    date: "2013/1/23",
+    open: 101.5,
+    high: 101.5,
+    low: 100,
+    close: 101,
+    adjClose: 70.93,
+    volume: 23184000
+  },
+  {
+    date: "2013/1/22",
+    open: 101,
+    high: 101,
+    low: 99.9,
+    close: 101,
+    adjClose: 70.93,
+    volume: 21797000
+  },
+  {
+    date: "2013/1/21",
+    open: 101,
+    high: 101,
+    low: 100,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 17257000
+  },
+  {
+    date: "2013/1/18",
+    open: 101.5,
+    high: 101.5,
+    low: 100.5,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 49737000
+  },
+  {
+    date: "2013/1/17",
+    open: 100.5,
+    high: 101,
+    low: 98.5,
+    close: 99.3,
+    adjClose: 69.73,
+    volume: 33698000
+  },
+  {
+    date: "2013/1/16",
+    open: 100.5,
+    high: 100.5,
+    low: 99.2,
+    close: 99.2,
+    adjClose: 69.66,
+    volume: 34626000
+  },
+  {
+    date: "2013/1/15",
+    open: 102,
+    high: 102,
+    low: 99.8,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 35617000
+  },
+  {
+    date: "2013/1/14",
+    open: 101,
+    high: 102,
+    low: 100,
+    close: 102,
+    adjClose: 71.63,
+    volume: 23448000
+  },
+  {
+    date: "2013/1/11",
+    open: 101.5,
+    high: 101.5,
+    low: 100.5,
+    close: 101,
+    adjClose: 70.93,
+    volume: 22418000
+  },
+  {
+    date: "2013/1/10",
+    open: 99.9,
+    high: 101,
+    low: 99.5,
+    close: 101,
+    adjClose: 70.93,
+    volume: 35738000
+  },
+  {
+    date: "2013/1/9",
+    open: 100.5,
+    high: 100.5,
+    low: 99.2,
+    close: 100,
+    adjClose: 70.22,
+    volume: 26137000
+  },
+  {
+    date: "2013/1/8",
+    open: 99.6,
+    high: 100,
+    low: 98.9,
+    close: 99.7,
+    adjClose: 70.01,
+    volume: 31090000
+  },
+  {
+    date: "2013/1/7",
+    open: 101,
+    high: 101,
+    low: 99.1,
+    close: 100.5,
+    adjClose: 70.58,
+    volume: 40288000
+  },
+  {
+    date: "2013/1/4",
+    open: 100.5,
+    high: 101.5,
+    low: 100,
+    close: 101.5,
+    adjClose: 71.28,
+    volume: 39278000
+  },
+  {
+    date: "2013/1/3",
+    open: 100.5,
+    high: 102,
+    low: 100,
+    close: 101,
+    adjClose: 70.93,
+    volume: 44107000
+  },
+  {
+    date: "2013/1/2",
+    open: 97.6,
+    high: 99.9,
+    low: 97.1,
+    close: 99.6,
+    adjClose: 69.94,
+    volume: 40527000
+  },
+  {
+    date: "2012/12/28",
+    open: 96.8,
+    high: 97,
+    low: 95.9,
+    close: 97,
+    adjClose: 68.12,
+    volume: 25594000
+  },
+  {
+    date: "2012/12/27",
+    open: 96.2,
+    high: 96.7,
+    low: 95.5,
+    close: 95.6,
+    adjClose: 67.13,
+    volume: 24172000
+  },
+  {
+    date: "2012/12/26",
+    open: 96.5,
+    high: 97.3,
+    low: 96,
+    close: 96,
+    adjClose: 67.42,
+    volume: 11988000
+  },
+  {
+    date: "2012/12/25",
+    open: 96,
+    high: 97.3,
+    low: 95.6,
+    close: 96.5,
+    adjClose: 67.77,
+    volume: 15925000
+  },
+  {
+    date: "2012/12/24",
+    open: 96,
+    high: 96.4,
+    low: 95.1,
+    close: 95.2,
+    adjClose: 66.85,
+    volume: 16019000
+  },
+  {
+    date: "2012/12/21",
+    open: 95.1,
+    high: 96.5,
+    low: 94.6,
+    close: 94.8,
+    adjClose: 66.57,
+    volume: 34230000
+  },
+  {
+    date: "2012/12/20",
+    open: 96.1,
+    high: 96.9,
+    low: 95.1,
+    close: 96,
+    adjClose: 67.42,
+    volume: 35458000
+  },
+  {
+    date: "2012/12/19",
+    open: 96.7,
+    high: 97.3,
+    low: 96.2,
+    close: 97.3,
+    adjClose: 68.33,
+    volume: 27857000
+  },
+  {
+    date: "2012/12/18",
+    open: 95,
+    high: 96.7,
+    low: 95,
+    close: 96.7,
+    adjClose: 67.91,
+    volume: 35265000
+  },
+  {
+    date: "2012/12/17",
+    open: 96.4,
+    high: 97.7,
+    low: 96.2,
+    close: 97,
+    adjClose: 68.12,
+    volume: 46575000
+  },
+  {
+    date: "2012/12/14",
+    open: 98.2,
+    high: 98.6,
+    low: 97.5,
+    close: 98.4,
+    adjClose: 69.1,
+    volume: 32975000
+  },
+  {
+    date: "2012/12/13",
+    open: 98.3,
+    high: 99.4,
+    low: 97.9,
+    close: 99.2,
+    adjClose: 69.66,
+    volume: 39860000
+  },
+  {
+    date: "2012/12/12",
+    open: 98.3,
+    high: 98.5,
+    low: 97.2,
+    close: 98.4,
+    adjClose: 69.1,
+    volume: 32453000
+  },
+  {
+    date: "2012/12/11",
+    open: 97.3,
+    high: 98.3,
+    low: 96.7,
+    close: 98.3,
+    adjClose: 69.03,
+    volume: 40565000
+  },
+  {
+    date: "2012/12/10",
+    open: 97.9,
+    high: 98,
+    low: 96.5,
+    close: 96.5,
+    adjClose: 67.77,
+    volume: 28995000
+  },
+  {
+    date: "2012/12/7",
+    open: 97.1,
+    high: 98.5,
+    low: 97.1,
+    close: 98.1,
+    adjClose: 68.89,
+    volume: 37005000
+  },
+  {
+    date: "2012/12/6",
+    open: 96.6,
+    high: 96.9,
+    low: 96.1,
+    close: 96.6,
+    adjClose: 67.84,
+    volume: 33074000
+  },
+  {
+    date: "2012/12/5",
+    open: 94.6,
+    high: 97.1,
+    low: 94.6,
+    close: 96.9,
+    adjClose: 68.05,
+    volume: 60447000
+  },
+  {
+    date: "2012/12/4",
+    open: 96.9,
+    high: 97.2,
+    low: 95.3,
+    close: 96.6,
+    adjClose: 67.84,
+    volume: 41419000
+  },
+  {
+    date: "2012/12/3",
+    open: 98.3,
+    high: 98.6,
+    low: 96.8,
+    close: 97.9,
+    adjClose: 68.75,
+    volume: 41656000
+  },
+  {
+    date: "2012/11/30",
+    open: 96,
+    high: 98.8,
+    low: 95.9,
+    close: 98.7,
+    adjClose: 69.31,
+    volume: 74919000
+  },
+  {
+    date: "2012/11/29",
+    open: 96,
+    high: 97.3,
+    low: 95.5,
+    close: 96.5,
+    adjClose: 67.77,
+    volume: 48637000
+  },
+  {
+    date: "2012/11/28",
+    open: 95.8,
+    high: 96.1,
+    low: 95.3,
+    close: 95.9,
+    adjClose: 67.35,
+    volume: 54692000
+  },
+  {
+    date: "2012/11/27",
+    open: 94.6,
+    high: 96.3,
+    low: 94.3,
+    close: 96.3,
+    adjClose: 67.63,
+    volume: 48731000
+  },
+  {
+    date: "2012/11/26",
+    open: 95.5,
+    high: 95.6,
+    low: 94.9,
+    close: 95.3,
+    adjClose: 66.92,
+    volume: 34282000
+  },
+  {
+    date: "2012/11/23",
+    open: 91.6,
+    high: 95.5,
+    low: 91.5,
+    close: 95.5,
+    adjClose: 67.06,
+    volume: 63873000
+  },
+  {
+    date: "2012/11/22",
+    open: 90.3,
+    high: 91.3,
+    low: 90.3,
+    close: 91.3,
+    adjClose: 64.11,
+    volume: 20745000
+  },
+  {
+    date: "2012/11/21",
+    open: 90.3,
+    high: 90.9,
+    low: 89.2,
+    close: 90.5,
+    adjClose: 63.55,
+    volume: 30032000
+  },
+  {
+    date: "2012/11/20",
+    open: 90,
+    high: 90.4,
+    low: 89.8,
+    close: 90.4,
+    adjClose: 63.48,
+    volume: 21424000
+  },
+  {
+    date: "2012/11/19",
+    open: 89.7,
+    high: 90.5,
+    low: 89.7,
+    close: 90,
+    adjClose: 63.2,
+    volume: 23037000
+  },
+  {
+    date: "2012/11/16",
+    open: 89.2,
+    high: 90.3,
+    low: 89.2,
+    close: 90.2,
+    adjClose: 63.34,
+    volume: 32472000
+  },
+  {
+    date: "2012/11/15",
+    open: 89.9,
+    high: 90.6,
+    low: 89,
+    close: 90.2,
+    adjClose: 63.34,
+    volume: 25043000
+  },
+  {
+    date: "2012/11/14",
+    open: 90,
+    high: 90.9,
+    low: 89.5,
+    close: 90.5,
+    adjClose: 63.55,
+    volume: 30190000
+  },
+  {
+    date: "2012/11/13",
+    open: 91,
+    high: 91,
+    low: 89.3,
+    close: 90.3,
+    adjClose: 63.41,
+    volume: 37000000
+  },
+  {
+    date: "2012/11/12",
+    open: 91,
+    high: 91.8,
+    low: 90.6,
+    close: 91.3,
+    adjClose: 64.11,
+    volume: 29882000
+  },
+  {
+    date: "2012/11/9",
+    open: 90.3,
+    high: 90.9,
+    low: 89.5,
+    close: 90.8,
+    adjClose: 63.76,
+    volume: 36639000
+  },
+  {
+    date: "2012/11/8",
+    open: 90.8,
+    high: 90.9,
+    low: 89.9,
+    close: 90.5,
+    adjClose: 63.55,
+    volume: 39566000
+  },
+  {
+    date: "2012/11/7",
+    open: 90.5,
+    high: 91,
+    low: 90,
+    close: 91,
+    adjClose: 63.9,
+    volume: 22025000
+  },
+  {
+    date: "2012/11/6",
+    open: 90.6,
+    high: 90.6,
+    low: 89.7,
+    close: 90.4,
+    adjClose: 63.48,
+    volume: 26333000
+  },
+  {
+    date: "2012/11/5",
+    open: 89.9,
+    high: 90.3,
+    low: 88.8,
+    close: 90.3,
+    adjClose: 63.41,
+    volume: 31435000
+  },
+  {
+    date: "2012/11/2",
+    open: 90,
+    high: 90.1,
+    low: 89.5,
+    close: 89.9,
+    adjClose: 63.13,
+    volume: 38858000
+  },
+  {
+    date: "2012/11/1",
+    open: 88.6,
+    high: 89.2,
+    low: 87.7,
+    close: 89.2,
+    adjClose: 62.64,
+    volume: 35973000
+  },
+  {
+    date: "2012/10/31",
+    open: 88,
+    high: 88.8,
+    low: 87.9,
+    close: 88.7,
+    adjClose: 62.29,
+    volume: 25911000
+  },
+  {
+    date: "2012/10/30",
+    open: 88.8,
+    high: 89,
+    low: 87.7,
+    close: 88,
+    adjClose: 61.8,
+    volume: 30286000
+  },
+  {
+    date: "2012/10/29",
+    open: 88.3,
+    high: 89.1,
+    low: 87.6,
+    close: 88.1,
+    adjClose: 61.87,
+    volume: 36010000
+  },
+  {
+    date: "2012/10/26",
+    open: 86.5,
+    high: 88.3,
+    low: 86.3,
+    close: 87.3,
+    adjClose: 61.31,
+    volume: 65197000
+  },
+  {
+    date: "2012/10/25",
+    open: 85.4,
+    high: 85.6,
+    low: 84.5,
+    close: 84.8,
+    adjClose: 59.55,
+    volume: 36358000
+  },
+  {
+    date: "2012/10/24",
+    open: 85.1,
+    high: 86.4,
+    low: 85.1,
+    close: 85.4,
+    adjClose: 59.97,
+    volume: 28246000
+  },
+  {
+    date: "2012/10/23",
+    open: 85.9,
+    high: 86.3,
+    low: 85.6,
+    close: 85.7,
+    adjClose: 60.18,
+    volume: 16134000
+  },
+  {
+    date: "2012/10/22",
+    open: 86.3,
+    high: 86.3,
+    low: 85.6,
+    close: 86,
+    adjClose: 60.39,
+    volume: 20015000
+  },
+  {
+    date: "2012/10/19",
+    open: 86.2,
+    high: 87.3,
+    low: 86.2,
+    close: 86.7,
+    adjClose: 60.88,
+    volume: 27597000
+  },
+  {
+    date: "2012/10/18",
+    open: 87,
+    high: 88.2,
+    low: 87,
+    close: 88.1,
+    adjClose: 61.87,
+    volume: 20400000
+  },
+  {
+    date: "2012/10/17",
+    open: 87.8,
+    high: 88,
+    low: 86.5,
+    close: 87.4,
+    adjClose: 61.38,
+    volume: 34739000
+  },
+  {
+    date: "2012/10/16",
+    open: 86.7,
+    high: 87.5,
+    low: 86.7,
+    close: 87.5,
+    adjClose: 61.45,
+    volume: 29187000
+  },
+  {
+    date: "2012/10/15",
+    open: 86.1,
+    high: 86.4,
+    low: 85.4,
+    close: 86.4,
+    adjClose: 60.67,
+    volume: 19093000
+  },
+  {
+    date: "2012/10/12",
+    open: 85.6,
+    high: 86.3,
+    low: 85.3,
+    close: 86.3,
+    adjClose: 60.6,
+    volume: 23657000
+  },
+  {
+    date: "2012/10/11",
+    open: 85.1,
+    high: 85.7,
+    low: 84.8,
+    close: 85.5,
+    adjClose: 60.04,
+    volume: 74170000
+  },
+  {
+    date: "2012/10/9",
+    open: 87.2,
+    high: 88.5,
+    low: 87.1,
+    close: 87.1,
+    adjClose: 61.17,
+    volume: 60022000
+  },
+  {
+    date: "2012/10/8",
+    open: 91,
+    high: 91,
+    low: 89,
+    close: 89.1,
+    adjClose: 62.57,
+    volume: 38011000
+  },
+  {
+    date: "2012/10/5",
+    open: 91,
+    high: 91.3,
+    low: 90.4,
+    close: 91,
+    adjClose: 63.9,
+    volume: 35197000
+  },
+  {
+    date: "2012/10/4",
+    open: 89.9,
+    high: 90.6,
+    low: 89.5,
+    close: 90.6,
+    adjClose: 63.62,
+    volume: 36462000
+  },
+  {
+    date: "2012/10/3",
+    open: 89.6,
+    high: 89.9,
+    low: 89.3,
+    close: 89.8,
+    adjClose: 63.06,
+    volume: 26330000
+  },
+  {
+    date: "2012/10/2",
+    open: 89.2,
+    high: 89.8,
+    low: 88.9,
+    close: 89.6,
+    adjClose: 62.92,
+    volume: 23575000
+  },
+  {
+    date: "2012/10/1",
+    open: 89.2,
+    high: 89.2,
+    low: 88.3,
+    close: 88.9,
+    adjClose: 62.43,
+    volume: 38119000
+  },
+  {
+    date: "2012/9/28",
+    open: 88.6,
+    high: 89.8,
+    low: 88.5,
+    close: 89.8,
+    adjClose: 63.06,
+    volume: 58535000
+  },
+  {
+    date: "2012/9/27",
+    open: 86.8,
+    high: 87.8,
+    low: 86.2,
+    close: 87.6,
+    adjClose: 61.52,
+    volume: 53924000
+  },
+  {
+    date: "2012/9/26",
+    open: 85.4,
+    high: 86.4,
+    low: 85,
+    close: 86.4,
+    adjClose: 60.67,
+    volume: 36796000
+  },
+  {
+    date: "2012/9/25",
+    open: 85.8,
+    high: 86.2,
+    low: 85.7,
+    close: 85.9,
+    adjClose: 60.32,
+    volume: 35885000
+  },
+  {
+    date: "2012/9/24",
+    open: 85.7,
+    high: 86.4,
+    low: 85.1,
+    close: 86.1,
+    adjClose: 60.46,
+    volume: 30299000
+  },
+  {
+    date: "2012/9/21",
+    open: 86,
+    high: 86.5,
+    low: 85.3,
+    close: 85.7,
+    adjClose: 60.18,
+    volume: 50990000
+  },
+  {
+    date: "2012/9/20",
+    open: 86,
+    high: 86,
+    low: 85.1,
+    close: 85.3,
+    adjClose: 59.9,
+    volume: 24807000
+  },
+  {
+    date: "2012/9/19",
+    open: 85.9,
+    high: 86.4,
+    low: 85.1,
+    close: 86,
+    adjClose: 60.39,
+    volume: 41915000
+  },
+  {
+    date: "2012/9/18",
+    open: 86.5,
+    high: 86.5,
+    low: 85.4,
+    close: 85.7,
+    adjClose: 60.18,
+    volume: 35483000
+  },
+  {
+    date: "2012/9/17",
+    open: 86.9,
+    high: 87,
+    low: 85.8,
+    close: 86.5,
+    adjClose: 60.74,
+    volume: 24786000
+  },
+  {
+    date: "2012/9/14",
+    open: 85.6,
+    high: 86.5,
+    low: 85.5,
+    close: 86.5,
+    adjClose: 60.74,
+    volume: 51715000
+  },
+  {
+    date: "2012/9/13",
+    open: 84.5,
+    high: 85,
+    low: 84.5,
+    close: 85,
+    adjClose: 59.69,
+    volume: 29565000
+  },
+  {
+    date: "2012/9/12",
+    open: 84.5,
+    high: 84.9,
+    low: 84.5,
+    close: 84.5,
+    adjClose: 59.34,
+    volume: 37428000
+  },
+  {
+    date: "2012/9/11",
+    open: 84.2,
+    high: 84.7,
+    low: 84,
+    close: 84.4,
+    adjClose: 59.27,
+    volume: 31566000
+  },
+  {
+    date: "2012/9/10",
+    open: 83.3,
+    high: 83.6,
+    low: 83.2,
+    close: 83.5,
+    adjClose: 58.64,
+    volume: 16875000
+  },
+  {
+    date: "2012/9/7",
+    open: 83,
+    high: 83.9,
+    low: 82.8,
+    close: 83.8,
+    adjClose: 58.85,
+    volume: 44441000
+  },
+  {
+    date: "2012/9/6",
+    open: 82.8,
+    high: 82.8,
+    low: 81,
+    close: 81.1,
+    adjClose: 56.95,
+    volume: 25755000
+  },
+  {
+    date: "2012/9/5",
+    open: 83,
+    high: 83.3,
+    low: 81.9,
+    close: 82,
+    adjClose: 57.58,
+    volume: 43274000
+  },
+  {
+    date: "2012/9/4",
+    open: 84,
+    high: 84,
+    low: 83.5,
+    close: 84,
+    adjClose: 58.99,
+    volume: 21632000
+  },
+  {
+    date: "2012/9/3",
+    open: 83.5,
+    high: 83.9,
+    low: 82.8,
+    close: 83.9,
+    adjClose: 58.92,
+    volume: 20728000
+  },
+  {
+    date: "2012/8/31",
+    open: 82.4,
+    high: 83.3,
+    low: 82.4,
+    close: 83.3,
+    adjClose: 58.5,
+    volume: 13487000
+  },
+  {
+    date: "2012/8/30",
+    open: 82.3,
+    high: 83.2,
+    low: 82.3,
+    close: 82.7,
+    adjClose: 58.08,
+    volume: 45455000
+  },
+  {
+    date: "2012/8/29",
+    open: 82.6,
+    high: 83,
+    low: 82.1,
+    close: 82.7,
+    adjClose: 58.08,
+    volume: 18411000
+  },
+  {
+    date: "2012/8/28",
+    open: 82.3,
+    high: 83.4,
+    low: 82,
+    close: 82.4,
+    adjClose: 57.86,
+    volume: 31760000
+  },
+  {
+    date: "2012/8/27",
+    open: 82.9,
+    high: 83.5,
+    low: 82.4,
+    close: 83,
+    adjClose: 58.29,
+    volume: 25691000
+  },
+  {
+    date: "2012/8/24",
+    open: 82.3,
+    high: 82.3,
+    low: 81.7,
+    close: 82,
+    adjClose: 57.58,
+    volume: 25460000
+  },
+  {
+    date: "2012/8/23",
+    open: 82.4,
+    high: 82.8,
+    low: 82.2,
+    close: 82.7,
+    adjClose: 58.08,
+    volume: 22336000
+  },
+  {
+    date: "2012/8/22",
+    open: 83.1,
+    high: 83.4,
+    low: 81.9,
+    close: 82.4,
+    adjClose: 57.86,
+    volume: 33548000
+  },
+  {
+    date: "2012/8/21",
+    open: 82.7,
+    high: 83.9,
+    low: 82.7,
+    close: 83.6,
+    adjClose: 58.71,
+    volume: 36814000
+  },
+  {
+    date: "2012/8/20",
+    open: 82.7,
+    high: 82.7,
+    low: 81.9,
+    close: 82.4,
+    adjClose: 57.86,
+    volume: 20997000
+  },
+  {
+    date: "2012/8/17",
+    open: 83,
+    high: 83.2,
+    low: 82,
+    close: 82,
+    adjClose: 57.58,
+    volume: 27049000
+  },
+  {
+    date: "2012/8/16",
+    open: 83,
+    high: 83.4,
+    low: 82.5,
+    close: 82.9,
+    adjClose: 58.22,
+    volume: 27999000
+  },
+  {
+    date: "2012/8/15",
+    open: 83.7,
+    high: 83.7,
+    low: 82.5,
+    close: 83,
+    adjClose: 58.29,
+    volume: 27260000
+  },
+  {
+    date: "2012/8/14",
+    open: 83,
+    high: 83.8,
+    low: 82.8,
+    close: 83.2,
+    adjClose: 58.43,
+    volume: 33268000
+  },
+  {
+    date: "2012/8/13",
+    open: 83.8,
+    high: 83.8,
+    low: 82.5,
+    close: 82.7,
+    adjClose: 58.08,
+    volume: 30234000
+  },
+  {
+    date: "2012/8/10",
+    open: 82.3,
+    high: 82.4,
+    low: 81.2,
+    close: 82,
+    adjClose: 57.58,
+    volume: 29859000
+  },
+  {
+    date: "2012/8/9",
+    open: 81.3,
+    high: 82.3,
+    low: 81.3,
+    close: 82.3,
+    adjClose: 57.79,
+    volume: 54211000
+  },
+  {
+    date: "2012/8/8",
+    open: 81.9,
+    high: 81.9,
+    low: 80.1,
+    close: 80.5,
+    adjClose: 56.53,
+    volume: 39881000
+  },
+  {
+    date: "2012/8/7",
+    open: 81.3,
+    high: 81.4,
+    low: 80.7,
+    close: 81.4,
+    adjClose: 57.16,
+    volume: 40024000
+  },
+  {
+    date: "2012/8/6",
+    open: 80.9,
+    high: 81.5,
+    low: 80.7,
+    close: 80.9,
+    adjClose: 56.81,
+    volume: 58403000
+  },
+  {
+    date: "2012/8/3",
+    open: 79.5,
+    high: 80.1,
+    low: 79.2,
+    close: 79.8,
+    adjClose: 56.04,
+    volume: 46567000
+  },
+  {
+    date: "2012/8/2",
+    open: 80,
+    high: 80,
+    low: 80,
+    close: 80,
+    adjClose: 56.18,
+    volume: null
+  },
+  {
+    date: "2012/8/1",
+    open: 80.1,
+    high: 80.5,
+    low: 79.4,
+    close: 80,
+    adjClose: 56.18,
+    volume: 35881000
+  },
+  {
+    date: "2012/7/31",
+    open: 78.5,
+    high: 81,
+    low: 78.5,
+    close: 81,
+    adjClose: 56.88,
+    volume: 67536000
+  },
+  {
+    date: "2012/7/30",
+    open: 80,
+    high: 80.4,
+    low: 78.8,
+    close: 79,
+    adjClose: 55.48,
+    volume: 37840000
+  },
+  {
+    date: "2012/7/27",
+    open: 77.9,
+    high: 79.4,
+    low: 77.2,
+    close: 79.3,
+    adjClose: 55.69,
+    volume: 72384000
+  },
+  {
+    date: "2012/7/26",
+    open: 75.7,
+    high: 76.7,
+    low: 75.2,
+    close: 76.3,
+    adjClose: 53.58,
+    volume: 46806000
+  },
+  {
+    date: "2012/7/25",
+    open: 75,
+    high: 75.2,
+    low: 74.4,
+    close: 74.6,
+    adjClose: 52.39,
+    volume: 52097000
+  },
+  {
+    date: "2012/7/24",
+    open: 74.3,
+    high: 74.8,
+    low: 74.2,
+    close: 74.8,
+    adjClose: 52.53,
+    volume: 39904000
+  },
+  {
+    date: "2012/7/23",
+    open: 75.1,
+    high: 75.1,
+    low: 73.8,
+    close: 74.3,
+    adjClose: 52.18,
+    volume: 57404000
+  },
+  {
+    date: "2012/7/20",
+    open: 76.4,
+    high: 77,
+    low: 76.2,
+    close: 76.7,
+    adjClose: 53.86,
+    volume: 48352000
+  },
+  {
+    date: "2012/7/19",
+    open: 76.8,
+    high: 78,
+    low: 76.8,
+    close: 77.5,
+    adjClose: 54.42,
+    volume: 61961000
+  },
+  {
+    date: "2012/7/18",
+    open: 75,
+    high: 75.3,
+    low: 74.8,
+    close: 74.8,
+    adjClose: 52.53,
+    volume: 37193000
+  },
+  {
+    date: "2012/7/17",
+    open: 74.5,
+    high: 75.2,
+    low: 74.5,
+    close: 74.8,
+    adjClose: 52.53,
+    volume: 51636000
+  },
+  {
+    date: "2012/7/16",
+    open: 76.3,
+    high: 76.3,
+    low: 75.5,
+    close: 75.5,
+    adjClose: 53.02,
+    volume: 35444000
+  },
+  {
+    date: "2012/7/13",
+    open: 74.9,
+    high: 76,
+    low: 74.5,
+    close: 75.8,
+    adjClose: 53.23,
+    volume: 51423000
+  },
+  {
+    date: "2012/7/12",
+    open: 77.5,
+    high: 77.5,
+    low: 75.7,
+    close: 75.7,
+    adjClose: 53.16,
+    volume: 68200000
+  },
+  {
+    date: "2012/7/11",
+    open: 78.1,
+    high: 78.3,
+    low: 77.4,
+    close: 78.1,
+    adjClose: 54.85,
+    volume: 58592000
+  },
+  {
+    date: "2012/7/10",
+    open: 79.4,
+    high: 79.9,
+    low: 78.6,
+    close: 79.1,
+    adjClose: 55.55,
+    volume: 33429000
+  },
+  {
+    date: "2012/7/9",
+    open: 79.9,
+    high: 80.3,
+    low: 79.6,
+    close: 80,
+    adjClose: 56.18,
+    volume: 45026000
+  },
+  {
+    date: "2012/7/6",
+    open: 81,
+    high: 81,
+    low: 80.1,
+    close: 80.9,
+    adjClose: 56.81,
+    volume: 38090000
+  },
+  {
+    date: "2012/7/5",
+    open: 82,
+    high: 82,
+    low: 80.7,
+    close: 81,
+    adjClose: 56.88,
+    volume: 26863000
+  },
+  {
+    date: "2012/7/4",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2012/7/4",
+    open: 82.1,
+    high: 82.1,
+    low: 81.2,
+    close: 81.2,
+    adjClose: 57.02,
+    volume: 38922000
+  },
+  {
+    date: "2012/7/3",
+    open: 83.6,
+    high: 84.9,
+    low: 83.4,
+    close: 84.2,
+    adjClose: 57.02,
+    volume: 59905000
+  },
+  {
+    date: "2012/7/2",
+    open: 81.5,
+    high: 83.7,
+    low: 81.5,
+    close: 83.3,
+    adjClose: 56.41,
+    volume: 61179000
+  },
+  {
+    date: "2012/6/29",
+    open: 79.6,
+    high: 81.3,
+    low: 79.3,
+    close: 81.3,
+    adjClose: 55.06,
+    volume: 47813000
+  },
+  {
+    date: "2012/6/28",
+    open: 80,
+    high: 80.3,
+    low: 79.5,
+    close: 79.9,
+    adjClose: 54.11,
+    volume: 33067000
+  },
+  {
+    date: "2012/6/27",
+    open: 78.3,
+    high: 79.5,
+    low: 78.2,
+    close: 79.3,
+    adjClose: 53.7,
+    volume: 31889000
+  },
+  {
+    date: "2012/6/26",
+    open: 79,
+    high: 79.1,
+    low: 78.3,
+    close: 78.7,
+    adjClose: 53.3,
+    volume: 36877000
+  },
+  {
+    date: "2012/6/25",
+    open: 80.8,
+    high: 80.8,
+    low: 79.1,
+    close: 79.6,
+    adjClose: 53.91,
+    volume: 39476000
+  },
+  {
+    date: "2012/6/22",
+    open: 80,
+    high: 81,
+    low: 79.9,
+    close: 80.1,
+    adjClose: 54.25,
+    volume: 30162000
+  },
+  {
+    date: "2012/6/21",
+    open: 80.5,
+    high: 81,
+    low: 80.3,
+    close: 80.6,
+    adjClose: 54.58,
+    volume: 27004000
+  },
+  {
+    date: "2012/6/20",
+    open: 81.3,
+    high: 81.6,
+    low: 80.5,
+    close: 81.6,
+    adjClose: 55.26,
+    volume: 28945000
+  },
+  {
+    date: "2012/6/19",
+    open: 80.9,
+    high: 80.9,
+    low: 80,
+    close: 80.5,
+    adjClose: 54.52,
+    volume: 28864000
+  },
+  {
+    date: "2012/6/18",
+    open: 80,
+    high: 81,
+    low: 80,
+    close: 80.8,
+    adjClose: 54.72,
+    volume: 33626000
+  },
+  {
+    date: "2012/6/15",
+    open: 79.2,
+    high: 79.5,
+    low: 78.1,
+    close: 78.1,
+    adjClose: 52.89,
+    volume: 83325000
+  },
+  {
+    date: "2012/6/14",
+    open: 80,
+    high: 80.2,
+    low: 79.1,
+    close: 79.2,
+    adjClose: 53.64,
+    volume: 30382000
+  },
+  {
+    date: "2012/6/13",
+    open: 80.8,
+    high: 80.8,
+    low: 79.5,
+    close: 80,
+    adjClose: 54.18,
+    volume: 32241000
+  },
+  {
+    date: "2012/6/12",
+    open: 78.5,
+    high: 79.8,
+    low: 78.5,
+    close: 79.4,
+    adjClose: 53.77,
+    volume: 38319000
+  },
+  {
+    date: "2012/6/11",
+    open: 79.9,
+    high: 80.5,
+    low: 79.6,
+    close: 80.4,
+    adjClose: 54.45,
+    volume: 36966000
+  },
+  {
+    date: "2012/6/8",
+    open: 77,
+    high: 78.7,
+    low: 77,
+    close: 77.9,
+    adjClose: 52.76,
+    volume: 34628000
+  },
+  {
+    date: "2012/6/7",
+    open: 79.4,
+    high: 79.8,
+    low: 78.6,
+    close: 79.8,
+    adjClose: 54.04,
+    volume: 47636000
+  },
+  {
+    date: "2012/6/6",
+    open: 78.2,
+    high: 78.6,
+    low: 77.5,
+    close: 77.8,
+    adjClose: 52.69,
+    volume: 33650000
+  },
+  {
+    date: "2012/6/5",
+    open: 77.5,
+    high: 78.2,
+    low: 77.2,
+    close: 78.2,
+    adjClose: 52.96,
+    volume: 37461000
+  },
+  {
+    date: "2012/6/4",
+    open: 76.5,
+    high: 77.1,
+    low: 76.1,
+    close: 76.5,
+    adjClose: 51.81,
+    volume: 65908000
+  },
+  {
+    date: "2012/6/1",
+    open: 81.7,
+    high: 81.7,
+    low: 79.9,
+    close: 79.9,
+    adjClose: 54.11,
+    volume: 66832000
+  },
+  {
+    date: "2012/5/31",
+    open: 80.5,
+    high: 85.1,
+    low: 79.7,
+    close: 85.1,
+    adjClose: 57.63,
+    volume: 81199000
+  },
+  {
+    date: "2012/5/30",
+    open: 81.6,
+    high: 82,
+    low: 80.3,
+    close: 81.7,
+    adjClose: 55.33,
+    volume: 75216000
+  },
+  {
+    date: "2012/5/29",
+    open: 82.5,
+    high: 83.2,
+    low: 82,
+    close: 82.3,
+    adjClose: 55.74,
+    volume: 40599000
+  },
+  {
+    date: "2012/5/28",
+    open: 80,
+    high: 81.7,
+    low: 79.8,
+    close: 81.6,
+    adjClose: 55.26,
+    volume: 28830000
+  },
+  {
+    date: "2012/5/25",
+    open: 79.8,
+    high: 80.5,
+    low: 79.2,
+    close: 80,
+    adjClose: 54.18,
+    volume: 28205000
+  },
+  {
+    date: "2012/5/24",
+    open: 78.9,
+    high: 80.6,
+    low: 78.1,
+    close: 80.6,
+    adjClose: 54.58,
+    volume: 40831000
+  },
+  {
+    date: "2012/5/23",
+    open: 81,
+    high: 81.2,
+    low: 79,
+    close: 79.1,
+    adjClose: 53.57,
+    volume: 62853000
+  },
+  {
+    date: "2012/5/22",
+    open: 82.7,
+    high: 82.9,
+    low: 82.2,
+    close: 82.2,
+    adjClose: 55.67,
+    volume: 33935000
+  },
+  {
+    date: "2012/5/21",
+    open: 81,
+    high: 82.8,
+    low: 81,
+    close: 82.5,
+    adjClose: 55.87,
+    volume: 32372000
+  },
+  {
+    date: "2012/5/18",
+    open: 83.9,
+    high: 83.9,
+    low: 81.8,
+    close: 81.8,
+    adjClose: 55.4,
+    volume: 57538000
+  },
+  {
+    date: "2012/5/17",
+    open: 84.8,
+    high: 85.1,
+    low: 84.1,
+    close: 85.1,
+    adjClose: 57.63,
+    volume: 33612000
+  },
+  {
+    date: "2012/5/16",
+    open: 84.2,
+    high: 84.5,
+    low: 83.4,
+    close: 83.4,
+    adjClose: 56.48,
+    volume: 64877000
+  },
+  {
+    date: "2012/5/15",
+    open: 85.4,
+    high: 85.7,
+    low: 84.1,
+    close: 85.5,
+    adjClose: 57.9,
+    volume: 30654000
+  },
+  {
+    date: "2012/5/14",
+    open: 84.8,
+    high: 85.5,
+    low: 84.8,
+    close: 85.4,
+    adjClose: 57.84,
+    volume: 13924000
+  },
+  {
+    date: "2012/5/11",
+    open: 85.7,
+    high: 85.7,
+    low: 84.5,
+    close: 85.5,
+    adjClose: 57.9,
+    volume: 33565000
+  },
+  {
+    date: "2012/5/10",
+    open: 85,
+    high: 85.7,
+    low: 84.3,
+    close: 85.3,
+    adjClose: 57.77,
+    volume: 28381000
+  },
+  {
+    date: "2012/5/9",
+    open: 83.9,
+    high: 85.2,
+    low: 83.5,
+    close: 84.6,
+    adjClose: 57.29,
+    volume: 40753000
+  },
+  {
+    date: "2012/5/8",
+    open: 86,
+    high: 86,
+    low: 84.4,
+    close: 84.4,
+    adjClose: 57.16,
+    volume: 45605000
+  },
+  {
+    date: "2012/5/7",
+    open: 86.5,
+    high: 86.5,
+    low: 85,
+    close: 85.6,
+    adjClose: 57.97,
+    volume: 46464000
+  },
+  {
+    date: "2012/5/4",
+    open: 86.7,
+    high: 88,
+    low: 86.7,
+    close: 87.6,
+    adjClose: 59.33,
+    volume: 37633000
+  },
+  {
+    date: "2012/5/3",
+    open: 88.4,
+    high: 89,
+    low: 87.9,
+    close: 88.9,
+    adjClose: 60.21,
+    volume: 27641000
+  },
+  {
+    date: "2012/5/2",
+    open: 87,
+    high: 88.9,
+    low: 86.8,
+    close: 88.4,
+    adjClose: 59.87,
+    volume: 47424000
+  },
+  {
+    date: "2012/4/30",
+    open: 86.3,
+    high: 87.4,
+    low: 85.7,
+    close: 86.8,
+    adjClose: 58.78,
+    volume: 47549000
+  },
+  {
+    date: "2012/4/27",
+    open: 87,
+    high: 89.8,
+    low: 86,
+    close: 86,
+    adjClose: 58.24,
+    volume: 116673000
+  },
+  {
+    date: "2012/4/26",
+    open: 84.2,
+    high: 84.2,
+    low: 83.5,
+    close: 84,
+    adjClose: 56.89,
+    volume: 21008000
+  },
+  {
+    date: "2012/4/25",
+    open: 84.9,
+    high: 84.9,
+    low: 83.9,
+    close: 84.2,
+    adjClose: 57.02,
+    volume: 31076000
+  },
+  {
+    date: "2012/4/24",
+    open: 83.8,
+    high: 84.6,
+    low: 83.6,
+    close: 84.6,
+    adjClose: 57.29,
+    volume: 24868000
+  },
+  {
+    date: "2012/4/23",
+    open: 84.2,
+    high: 84.6,
+    low: 83.4,
+    close: 84.3,
+    adjClose: 57.09,
+    volume: 20301000
+  },
+  {
+    date: "2012/4/20",
+    open: 85,
+    high: 85.7,
+    low: 84.1,
+    close: 84.3,
+    adjClose: 57.09,
+    volume: 27633000
+  },
+  {
+    date: "2012/4/19",
+    open: 84.5,
+    high: 85.8,
+    low: 84.3,
+    close: 85.8,
+    adjClose: 58.11,
+    volume: 31398000
+  },
+  {
+    date: "2012/4/18",
+    open: 85,
+    high: 85,
+    low: 84.4,
+    close: 85,
+    adjClose: 57.56,
+    volume: 32325000
+  },
+  {
+    date: "2012/4/17",
+    open: 84.9,
+    high: 84.9,
+    low: 83.4,
+    close: 83.8,
+    adjClose: 56.75,
+    volume: 29423000
+  },
+  {
+    date: "2012/4/16",
+    open: 84.6,
+    high: 85,
+    low: 83.8,
+    close: 84.9,
+    adjClose: 57.5,
+    volume: 19461000
+  },
+  {
+    date: "2012/4/13",
+    open: 83.4,
+    high: 85,
+    low: 82.7,
+    close: 84.9,
+    adjClose: 57.5,
+    volume: 44685000
+  },
+  {
+    date: "2012/4/12",
+    open: 82.5,
+    high: 82.7,
+    low: 81.5,
+    close: 82.6,
+    adjClose: 55.94,
+    volume: 36673000
+  },
+  {
+    date: "2012/4/11",
+    open: 82,
+    high: 83.5,
+    low: 81.7,
+    close: 82.4,
+    adjClose: 55.8,
+    volume: 40711000
+  },
+  {
+    date: "2012/4/10",
+    open: 83.1,
+    high: 83.5,
+    low: 81.8,
+    close: 82,
+    adjClose: 55.53,
+    volume: 33332000
+  },
+  {
+    date: "2012/4/9",
+    open: 82,
+    high: 83.6,
+    low: 82,
+    close: 83,
+    adjClose: 56.21,
+    volume: 23209000
+  },
+  {
+    date: "2012/4/6",
+    open: 84,
+    high: 84,
+    low: 83.1,
+    close: 83.8,
+    adjClose: 56.75,
+    volume: 34072000
+  },
+  {
+    date: "2012/4/5",
+    open: 83.3,
+    high: 84,
+    low: 83.1,
+    close: 83.1,
+    adjClose: 56.28,
+    volume: 42645000
+  },
+  {
+    date: "2012/4/3",
+    open: 85,
+    high: 85,
+    low: 83.8,
+    close: 85,
+    adjClose: 57.56,
+    volume: 31241000
+  },
+  {
+    date: "2012/4/2",
+    open: 84.8,
+    high: 85.2,
+    low: 84,
+    close: 85.1,
+    adjClose: 57.63,
+    volume: 23624000
+  },
+  {
+    date: "2012/3/30",
+    open: 83.7,
+    high: 84.9,
+    low: 82.9,
+    close: 84.9,
+    adjClose: 57.5,
+    volume: 43730000
+  },
+  {
+    date: "2012/3/29",
+    open: 84.5,
+    high: 84.5,
+    low: 83.4,
+    close: 84.1,
+    adjClose: 56.95,
+    volume: 49391000
+  },
+  {
+    date: "2012/3/28",
+    open: 86.5,
+    high: 86.5,
+    low: 84.6,
+    close: 85.5,
+    adjClose: 57.9,
+    volume: 28246000
+  },
+  {
+    date: "2012/3/27",
+    open: 85,
+    high: 85.8,
+    low: 84.3,
+    close: 85.8,
+    adjClose: 58.11,
+    volume: 34236000
+  },
+  {
+    date: "2012/3/26",
+    open: 85.1,
+    high: 85.1,
+    low: 82.5,
+    close: 83.6,
+    adjClose: 56.62,
+    volume: 58830000
+  },
+  {
+    date: "2012/3/23",
+    open: 85,
+    high: 85.4,
+    low: 84.4,
+    close: 85.4,
+    adjClose: 57.84,
+    volume: 29341000
+  },
+  {
+    date: "2012/3/22",
+    open: 85,
+    high: 85.7,
+    low: 84.3,
+    close: 85.2,
+    adjClose: 57.7,
+    volume: 37740000
+  },
+  {
+    date: "2012/3/21",
+    open: 84.8,
+    high: 85.2,
+    low: 83.8,
+    close: 84.9,
+    adjClose: 57.5,
+    volume: 61534000
+  },
+  {
+    date: "2012/3/20",
+    open: 84,
+    high: 84.1,
+    low: 82.8,
+    close: 83.2,
+    adjClose: 56.35,
+    volume: 29232000
+  },
+  {
+    date: "2012/3/19",
+    open: 83.7,
+    high: 84.2,
+    low: 82.4,
+    close: 83.7,
+    adjClose: 56.68,
+    volume: 37321000
+  },
+  {
+    date: "2012/3/16",
+    open: 83.2,
+    high: 83.8,
+    low: 81.1,
+    close: 81.1,
+    adjClose: 54.92,
+    volume: 29079000
+  },
+  {
+    date: "2012/3/15",
+    open: 83.2,
+    high: 83.2,
+    low: 82.5,
+    close: 83.2,
+    adjClose: 56.35,
+    volume: 30072000
+  },
+  {
+    date: "2012/3/14",
+    open: 82.4,
+    high: 83.2,
+    low: 82,
+    close: 83.2,
+    adjClose: 56.35,
+    volume: 60618000
+  },
+  {
+    date: "2012/3/13",
+    open: 80.6,
+    high: 81.3,
+    low: 80.1,
+    close: 81.3,
+    adjClose: 55.06,
+    volume: 47221000
+  },
+  {
+    date: "2012/3/12",
+    open: 80.2,
+    high: 80.5,
+    low: 79.6,
+    close: 80,
+    adjClose: 54.18,
+    volume: 28913000
+  },
+  {
+    date: "2012/3/9",
+    open: 79.5,
+    high: 80,
+    low: 78.8,
+    close: 80,
+    adjClose: 54.18,
+    volume: 22702000
+  },
+  {
+    date: "2012/3/8",
+    open: 79.8,
+    high: 80.2,
+    low: 79.2,
+    close: 79.7,
+    adjClose: 53.97,
+    volume: 36169000
+  },
+  {
+    date: "2012/3/7",
+    open: 79,
+    high: 79.3,
+    low: 78.7,
+    close: 79.1,
+    adjClose: 53.57,
+    volume: 30305000
+  },
+  {
+    date: "2012/3/6",
+    open: 79.6,
+    high: 79.6,
+    low: 78.3,
+    close: 79.5,
+    adjClose: 53.84,
+    volume: 27703000
+  },
+  {
+    date: "2012/3/5",
+    open: 78.7,
+    high: 79.6,
+    low: 78.5,
+    close: 78.9,
+    adjClose: 53.43,
+    volume: 22782000
+  },
+  {
+    date: "2012/3/2",
+    open: 80,
+    high: 80.1,
+    low: 79.2,
+    close: 80,
+    adjClose: 54.18,
+    volume: 23782000
+  },
+  {
+    date: "2012/3/1",
+    open: 81,
+    high: 81,
+    low: 80.1,
+    close: 80.1,
+    adjClose: 54.25,
+    volume: 21169000
+  },
+  {
+    date: "2012/2/29",
+    open: 80.2,
+    high: 81.1,
+    low: 79.4,
+    close: 81.1,
+    adjClose: 54.92,
+    volume: 77948000
+  },
+  {
+    date: "2012/2/24",
+    open: 77.5,
+    high: 79.1,
+    low: 77.2,
+    close: 79.1,
+    adjClose: 53.57,
+    volume: 39386000
+  },
+  {
+    date: "2012/2/23",
+    open: 79,
+    high: 79.4,
+    low: 77.7,
+    close: 78.1,
+    adjClose: 52.89,
+    volume: 59936000
+  },
+  {
+    date: "2012/2/22",
+    open: 79.9,
+    high: 80,
+    low: 79,
+    close: 79.7,
+    adjClose: 53.97,
+    volume: 41090000
+  },
+  {
+    date: "2012/2/21",
+    open: 80,
+    high: 80,
+    low: 79.3,
+    close: 80,
+    adjClose: 54.18,
+    volume: 27443000
+  },
+  {
+    date: "2012/2/20",
+    open: 80.6,
+    high: 80.8,
+    low: 79.7,
+    close: 80,
+    adjClose: 54.18,
+    volume: 31043000
+  },
+  {
+    date: "2012/2/17",
+    open: 79.5,
+    high: 81.1,
+    low: 79.4,
+    close: 80,
+    adjClose: 54.18,
+    volume: 63929000
+  },
+  {
+    date: "2012/2/16",
+    open: 78.5,
+    high: 78.9,
+    low: 78,
+    close: 78.5,
+    adjClose: 53.16,
+    volume: 57944000
+  },
+  {
+    date: "2012/2/15",
+    open: 77.6,
+    high: 78.5,
+    low: 77.6,
+    close: 78.5,
+    adjClose: 53.16,
+    volume: 70978000
+  },
+  {
+    date: "2012/2/14",
+    open: 77.1,
+    high: 77.4,
+    low: 76.2,
+    close: 77.3,
+    adjClose: 52.35,
+    volume: 41995000
+  },
+  {
+    date: "2012/2/13",
+    open: 76.4,
+    high: 77.1,
+    low: 76.2,
+    close: 76.6,
+    adjClose: 51.88,
+    volume: 36380000
+  },
+  {
+    date: "2012/2/10",
+    open: 78,
+    high: 78,
+    low: 76.7,
+    close: 76.9,
+    adjClose: 52.08,
+    volume: 42117000
+  },
+  {
+    date: "2012/2/9",
+    open: 77,
+    high: 78,
+    low: 76.5,
+    close: 78,
+    adjClose: 52.82,
+    volume: 54953000
+  },
+  {
+    date: "2012/2/8",
+    open: 77.5,
+    high: 77.5,
+    low: 76.9,
+    close: 77.5,
+    adjClose: 52.49,
+    volume: 34702000
+  },
+  {
+    date: "2012/2/7",
+    open: 77.5,
+    high: 77.5,
+    low: 76.8,
+    close: 77.4,
+    adjClose: 52.42,
+    volume: 29943000
+  },
+  {
+    date: "2012/2/6",
+    open: 77.3,
+    high: 77.5,
+    low: 76.6,
+    close: 77.4,
+    adjClose: 52.42,
+    volume: 47544000
+  },
+  {
+    date: "2012/2/3",
+    open: 76.3,
+    high: 76.4,
+    low: 75.6,
+    close: 76.2,
+    adjClose: 51.6,
+    volume: 47741000
+  },
+  {
+    date: "2012/2/2",
+    open: 77.5,
+    high: 77.5,
+    low: 76.1,
+    close: 76.8,
+    adjClose: 52.01,
+    volume: 53946000
+  },
+  {
+    date: "2012/2/1",
+    open: 77.5,
+    high: 77.7,
+    low: 76.7,
+    close: 77,
+    adjClose: 52.15,
+    volume: 46150000
+  },
+  {
+    date: "2012/1/31",
+    open: 78.1,
+    high: 78.5,
+    low: 76.3,
+    close: 78.5,
+    adjClose: 53.16,
+    volume: 84114000
+  },
+  {
+    date: "2012/1/30",
+    open: 78,
+    high: 79.5,
+    low: 77.2,
+    close: 78.7,
+    adjClose: 53.3,
+    volume: 134364000
+  },
+  {
+    date: "2012/1/18",
+    open: 75.9,
+    high: 76.7,
+    low: 75.6,
+    close: 76.7,
+    adjClose: 51.94,
+    volume: 56756000
+  },
+  {
+    date: "2012/1/17",
+    open: 75.9,
+    high: 75.9,
+    low: 74.9,
+    close: 75.6,
+    adjClose: 51.2,
+    volume: 43605000
+  },
+  {
+    date: "2012/1/16",
+    open: 76.1,
+    high: 76.9,
+    low: 74.6,
+    close: 75.3,
+    adjClose: 51,
+    volume: 37659000
+  },
+  {
+    date: "2012/1/13",
+    open: 77.2,
+    high: 78,
+    low: 77,
+    close: 77.5,
+    adjClose: 52.49,
+    volume: 57301000
+  },
+  {
+    date: "2012/1/12",
+    open: 76.7,
+    high: 77.1,
+    low: 76.5,
+    close: 77,
+    adjClose: 52.15,
+    volume: 55391000
+  },
+  {
+    date: "2012/1/11",
+    open: 76.8,
+    high: 77,
+    low: 76.1,
+    close: 76.5,
+    adjClose: 51.81,
+    volume: 41075000
+  },
+  {
+    date: "2012/1/10",
+    open: 76,
+    high: 76.5,
+    low: 75.8,
+    close: 76.5,
+    adjClose: 51.81,
+    volume: 56436000
+  },
+  {
+    date: "2012/1/9",
+    open: 75.2,
+    high: 75.6,
+    low: 74.6,
+    close: 75.6,
+    adjClose: 51.2,
+    volume: 27627000
+  },
+  {
+    date: "2012/1/6",
+    open: 75.9,
+    high: 75.9,
+    low: 74.9,
+    close: 75.6,
+    adjClose: 51.2,
+    volume: 29866000
+  },
+  {
+    date: "2012/1/5",
+    open: 76,
+    high: 76,
+    low: 75.3,
+    close: 76,
+    adjClose: 51.47,
+    volume: 56718000
+  },
+  {
+    date: "2012/1/4",
+    open: 76.1,
+    high: 76.1,
+    low: 70.5,
+    close: 70.5,
+    adjClose: 47.74,
+    volume: 56684000
+  },
+  {
+    date: "2012/1/3",
+    open: 75.5,
+    high: 75.9,
+    low: 70.5,
+    close: 70.5,
+    adjClose: 47.74,
+    volume: 56936000
+  },
+  {
+    date: "2012/1/2",
+    open: 75,
+    high: 75.4,
+    low: 69.8,
+    close: 69.8,
+    adjClose: 47.27,
+    volume: 26261000
+  },
+  {
+    date: "2011/12/30",
+    open: 75.7,
+    high: 75.9,
+    low: 74.9,
+    close: 75.8,
+    adjClose: 51.33,
+    volume: 32240000
+  },
+  {
+    date: "2011/12/29",
+    open: 75.4,
+    high: 75.9,
+    low: 75.2,
+    close: 75.8,
+    adjClose: 51.33,
+    volume: 24738000
+  },
+  {
+    date: "2011/12/28",
+    open: 75.3,
+    high: 75.7,
+    low: 74.9,
+    close: 75.7,
+    adjClose: 51.27,
+    volume: 19957000
+  },
+  {
+    date: "2011/12/27",
+    open: 74.8,
+    high: 75.5,
+    low: 74.7,
+    close: 75.5,
+    adjClose: 51.13,
+    volume: 14575000
+  },
+  {
+    date: "2011/12/26",
+    open: 75.4,
+    high: 75.5,
+    low: 74.7,
+    close: 75,
+    adjClose: 50.79,
+    volume: 11293000
+  },
+  {
+    date: "2011/12/23",
+    open: 75.8,
+    high: 75.8,
+    low: 74.6,
+    close: 75.4,
+    adjClose: 51.06,
+    volume: 28697000
+  },
+  {
+    date: "2011/12/22",
+    open: 75.3,
+    high: 75.5,
+    low: 74.4,
+    close: 75,
+    adjClose: 50.79,
+    volume: 25805000
+  },
+  {
+    date: "2011/12/21",
+    open: 74.9,
+    high: 76,
+    low: 74.1,
+    close: 76,
+    adjClose: 51.47,
+    volume: 52799000
+  },
+  {
+    date: "2011/12/20",
+    open: 72.9,
+    high: 72.9,
+    low: 72,
+    close: 72.8,
+    adjClose: 49.3,
+    volume: 26756000
+  },
+  {
+    date: "2011/12/19",
+    open: 73.5,
+    high: 73.5,
+    low: 72,
+    close: 72.5,
+    adjClose: 49.1,
+    volume: 24429000
+  },
+  {
+    date: "2011/12/16",
+    open: 72.8,
+    high: 73.4,
+    low: 72.5,
+    close: 72.7,
+    adjClose: 49.23,
+    volume: 20783000
+  },
+  {
+    date: "2011/12/15",
+    open: 74.1,
+    high: 74.1,
+    low: 72.5,
+    close: 72.5,
+    adjClose: 49.1,
+    volume: 35609000
+  },
+  {
+    date: "2011/12/14",
+    open: 75.1,
+    high: 75.1,
+    low: 73.9,
+    close: 74.5,
+    adjClose: 50.45,
+    volume: 27551000
+  },
+  {
+    date: "2011/12/13",
+    open: 73.7,
+    high: 75.2,
+    low: 73.7,
+    close: 75.2,
+    adjClose: 50.93,
+    volume: 29883000
+  },
+  {
+    date: "2011/12/12",
+    open: 75.1,
+    high: 75.2,
+    low: 74.1,
+    close: 75,
+    adjClose: 50.79,
+    volume: 28286000
+  },
+  {
+    date: "2011/12/9",
+    open: 76,
+    high: 76,
+    low: 73.5,
+    close: 74.1,
+    adjClose: 50.18,
+    volume: 41947000
+  },
+  {
+    date: "2011/12/8",
+    open: 76.7,
+    high: 76.7,
+    low: 75.3,
+    close: 76.3,
+    adjClose: 51.67,
+    volume: 31661000
+  },
+  {
+    date: "2011/12/7",
+    open: 76.5,
+    high: 76.5,
+    low: 75.4,
+    close: 76.4,
+    adjClose: 51.74,
+    volume: 40811000
+  },
+  {
+    date: "2011/12/6",
+    open: 76.3,
+    high: 76.3,
+    low: 75.3,
+    close: 75.4,
+    adjClose: 51.06,
+    volume: 40835000
+  },
+  {
+    date: "2011/12/5",
+    open: 76,
+    high: 76.3,
+    low: 75.4,
+    close: 76.3,
+    adjClose: 51.67,
+    volume: 28821000
+  },
+  {
+    date: "2011/12/2",
+    open: 76.6,
+    high: 76.8,
+    low: 75.4,
+    close: 76,
+    adjClose: 51.47,
+    volume: 35285000
+  },
+  {
+    date: "2011/12/1",
+    open: 75.5,
+    high: 76.6,
+    low: 75.5,
+    close: 76.6,
+    adjClose: 51.88,
+    volume: 78257000
+  },
+  {
+    date: "2011/11/30",
+    open: 74,
+    high: 74.6,
+    low: 73,
+    close: 74.6,
+    adjClose: 50.52,
+    volume: 51206000
+  },
+  {
+    date: "2011/11/29",
+    open: 73.8,
+    high: 74.2,
+    low: 72.9,
+    close: 73.6,
+    adjClose: 49.84,
+    volume: 42495000
+  },
+  {
+    date: "2011/11/28",
+    open: 71.6,
+    high: 74.4,
+    low: 71.6,
+    close: 73.6,
+    adjClose: 49.84,
+    volume: 34892000
+  },
+  {
+    date: "2011/11/25",
+    open: 73,
+    high: 73.3,
+    low: 71.3,
+    close: 71.6,
+    adjClose: 48.49,
+    volume: 36741000
+  },
+  {
+    date: "2011/11/24",
+    open: 72.9,
+    high: 73.2,
+    low: 72.6,
+    close: 72.8,
+    adjClose: 49.3,
+    volume: 46889000
+  },
+  {
+    date: "2011/11/23",
+    open: 74,
+    high: 74.5,
+    low: 73.1,
+    close: 73.4,
+    adjClose: 49.71,
+    volume: 42823000
+  },
+  {
+    date: "2011/11/22",
+    open: 75.2,
+    high: 75.2,
+    low: 73.8,
+    close: 74,
+    adjClose: 50.11,
+    volume: 42423000
+  },
+  {
+    date: "2011/11/21",
+    open: 73.2,
+    high: 73.9,
+    low: 73,
+    close: 73.3,
+    adjClose: 49.64,
+    volume: 21320000
+  },
+  {
+    date: "2011/11/18",
+    open: 75,
+    high: 75.2,
+    low: 73.7,
+    close: 74.2,
+    adjClose: 50.25,
+    volume: 52324000
+  },
+  {
+    date: "2011/11/17",
+    open: 75.2,
+    high: 76,
+    low: 74.8,
+    close: 75.7,
+    adjClose: 51.27,
+    volume: 34876000
+  },
+  {
+    date: "2011/11/16",
+    open: 76,
+    high: 76,
+    low: 74.9,
+    close: 75.4,
+    adjClose: 51.06,
+    volume: 38931000
+  },
+  {
+    date: "2011/11/15",
+    open: 75.5,
+    high: 76,
+    low: 75,
+    close: 76,
+    adjClose: 51.47,
+    volume: 35895000
+  },
+  {
+    date: "2011/11/14",
+    open: 74.9,
+    high: 76,
+    low: 74.6,
+    close: 75.9,
+    adjClose: 51.4,
+    volume: 63557000
+  },
+  {
+    date: "2011/11/11",
+    open: 73.5,
+    high: 73.6,
+    low: 72.6,
+    close: 73.4,
+    adjClose: 49.71,
+    volume: 27464000
+  },
+  {
+    date: "2011/11/10",
+    open: 72.5,
+    high: 73.4,
+    low: 72.5,
+    close: 72.6,
+    adjClose: 49.17,
+    volume: 45120000
+  },
+  {
+    date: "2011/11/9",
+    open: 74.9,
+    high: 74.9,
+    low: 74.1,
+    close: 74.1,
+    adjClose: 50.18,
+    volume: 17538000
+  },
+  {
+    date: "2011/11/8",
+    open: 75,
+    high: 75,
+    low: 74,
+    close: 74.5,
+    adjClose: 50.45,
+    volume: 21447000
+  },
+  {
+    date: "2011/11/7",
+    open: 75,
+    high: 75.2,
+    low: 74.3,
+    close: 75,
+    adjClose: 50.79,
+    volume: 28458000
+  },
+  {
+    date: "2011/11/4",
+    open: 74.5,
+    high: 74.9,
+    low: 73.9,
+    close: 74.6,
+    adjClose: 50.52,
+    volume: 56744000
+  },
+  {
+    date: "2011/11/3",
+    open: 74.2,
+    high: 74.2,
+    low: 72.3,
+    close: 73.5,
+    adjClose: 49.78,
+    volume: 36408000
+  },
+  {
+    date: "2011/11/2",
+    open: 73.1,
+    high: 73.9,
+    low: 72.4,
+    close: 73.9,
+    adjClose: 50.05,
+    volume: 34533000
+  },
+  {
+    date: "2011/11/1",
+    open: 73.5,
+    high: 74,
+    low: 73,
+    close: 73.8,
+    adjClose: 49.98,
+    volume: 37063000
+  },
+  {
+    date: "2011/10/31",
+    open: 73.5,
+    high: 73.8,
+    low: 73.1,
+    close: 73.6,
+    adjClose: 49.84,
+    volume: 46670000
+  },
+  {
+    date: "2011/10/28",
+    open: 73.5,
+    high: 74,
+    low: 72.1,
+    close: 73.1,
+    adjClose: 49.51,
+    volume: 90679000
+  },
+  {
+    date: "2011/10/27",
+    open: 72,
+    high: 72.2,
+    low: 71.4,
+    close: 71.9,
+    adjClose: 48.69,
+    volume: 38771000
+  },
+  {
+    date: "2011/10/26",
+    open: 71.4,
+    high: 72,
+    low: 71.1,
+    close: 71.9,
+    adjClose: 48.69,
+    volume: 25653000
+  },
+  {
+    date: "2011/10/25",
+    open: 71.8,
+    high: 72,
+    low: 71,
+    close: 71.5,
+    adjClose: 48.42,
+    volume: 40816000
+  },
+  {
+    date: "2011/10/24",
+    open: 71.2,
+    high: 71.9,
+    low: 71.2,
+    close: 71.7,
+    adjClose: 48.56,
+    volume: 50063000
+  },
+  {
+    date: "2011/10/21",
+    open: 70.7,
+    high: 70.7,
+    low: 69.6,
+    close: 70.3,
+    adjClose: 47.61,
+    volume: 17897000
+  },
+  {
+    date: "2011/10/20",
+    open: 70.5,
+    high: 70.7,
+    low: 69.6,
+    close: 69.7,
+    adjClose: 47.2,
+    volume: 25687000
+  },
+  {
+    date: "2011/10/19",
+    open: 71,
+    high: 71.1,
+    low: 70.2,
+    close: 71.1,
+    adjClose: 48.15,
+    volume: 31141000
+  },
+  {
+    date: "2011/10/18",
+    open: 70.1,
+    high: 70.7,
+    low: 70,
+    close: 70.7,
+    adjClose: 47.88,
+    volume: 25527000
+  },
+  {
+    date: "2011/10/17",
+    open: 70.8,
+    high: 71.1,
+    low: 70.5,
+    close: 71.1,
+    adjClose: 48.15,
+    volume: 38911000
+  },
+  {
+    date: "2011/10/14",
+    open: 70.8,
+    high: 70.8,
+    low: 69.9,
+    close: 70.3,
+    adjClose: 47.61,
+    volume: 35631000
+  },
+  {
+    date: "2011/10/13",
+    open: 69.8,
+    high: 70.4,
+    low: 68.8,
+    close: 70.4,
+    adjClose: 47.68,
+    volume: 58272000
+  },
+  {
+    date: "2011/10/12",
+    open: 70.5,
+    high: 70.5,
+    low: 69.6,
+    close: 70.4,
+    adjClose: 47.68,
+    volume: 41221000
+  },
+  {
+    date: "2011/10/11",
+    open: 70,
+    high: 70.4,
+    low: 69.6,
+    close: 70,
+    adjClose: 47.41,
+    volume: 55155000
+  },
+  {
+    date: "2011/10/7",
+    open: 69.1,
+    high: 69.1,
+    low: 69.1,
+    close: 69.1,
+    adjClose: 46.8,
+    volume: 13073000
+  },
+  {
+    date: "2011/10/6",
+    open: 69.7,
+    high: 69.9,
+    low: 68.7,
+    close: 69,
+    adjClose: 46.73,
+    volume: 57224000
+  },
+  {
+    date: "2011/10/5",
+    open: 68.9,
+    high: 69.7,
+    low: 68.7,
+    close: 69.1,
+    adjClose: 46.8,
+    volume: 30824000
+  },
+  {
+    date: "2011/10/4",
+    open: 70,
+    high: 70,
+    low: 68.2,
+    close: 69.1,
+    adjClose: 46.8,
+    volume: 35690000
+  },
+  {
+    date: "2011/10/3",
+    open: 70,
+    high: 70,
+    low: 68.1,
+    close: 68.6,
+    adjClose: 46.46,
+    volume: 33871000
+  },
+  {
+    date: "2011/9/30",
+    open: 70.3,
+    high: 70.8,
+    low: 69,
+    close: 70,
+    adjClose: 47.41,
+    volume: 60198000
+  },
+  {
+    date: "2011/9/29",
+    open: 69.6,
+    high: 70.9,
+    low: 69.3,
+    close: 70.3,
+    adjClose: 47.61,
+    volume: 39894000
+  },
+  {
+    date: "2011/9/28",
+    open: 70.8,
+    high: 70.9,
+    low: 69.8,
+    close: 70.3,
+    adjClose: 47.61,
+    volume: 42230000
+  },
+  {
+    date: "2011/9/27",
+    open: 68.9,
+    high: 70.2,
+    low: 68.7,
+    close: 69.9,
+    adjClose: 47.34,
+    volume: 56625000
+  },
+  {
+    date: "2011/9/26",
+    open: 67.4,
+    high: 67.4,
+    low: 67.2,
+    close: 67.2,
+    adjClose: 45.51,
+    volume: 26574000
+  },
+  {
+    date: "2011/9/23",
+    open: 68.2,
+    high: 68.9,
+    low: 67.4,
+    close: 67.5,
+    adjClose: 45.71,
+    volume: 85391000
+  },
+  {
+    date: "2011/9/22",
+    open: 70.2,
+    high: 70.5,
+    low: 69,
+    close: 69,
+    adjClose: 46.73,
+    volume: 64836000
+  },
+  {
+    date: "2011/9/21",
+    open: 71,
+    high: 72.1,
+    low: 70.9,
+    close: 72,
+    adjClose: 48.76,
+    volume: 52306000
+  },
+  {
+    date: "2011/9/20",
+    open: 71,
+    high: 71.7,
+    low: 69.7,
+    close: 70.5,
+    adjClose: 47.74,
+    volume: 46860000
+  },
+  {
+    date: "2011/9/19",
+    open: 71.4,
+    high: 71.7,
+    low: 70.7,
+    close: 71.2,
+    adjClose: 48.22,
+    volume: 28682000
+  },
+  {
+    date: "2011/9/16",
+    open: 70.4,
+    high: 72,
+    low: 70.3,
+    close: 71.1,
+    adjClose: 48.15,
+    volume: 76993000
+  },
+  {
+    date: "2011/9/15",
+    open: 69,
+    high: 69.8,
+    low: 68.5,
+    close: 69.1,
+    adjClose: 46.8,
+    volume: 42178000
+  },
+  {
+    date: "2011/9/14",
+    open: 69.5,
+    high: 69.6,
+    low: 66.9,
+    close: 67.2,
+    adjClose: 45.51,
+    volume: 60617000
+  },
+  {
+    date: "2011/9/13",
+    open: 69.6,
+    high: 70,
+    low: 68.4,
+    close: 68.4,
+    adjClose: 46.32,
+    volume: 34863000
+  },
+  {
+    date: "2011/9/9",
+    open: 69.5,
+    high: 70.1,
+    low: 68.9,
+    close: 69.3,
+    adjClose: 46.93,
+    volume: 38210000
+  },
+  {
+    date: "2011/9/8",
+    open: 69.6,
+    high: 69.6,
+    low: 68.4,
+    close: 68.7,
+    adjClose: 46.53,
+    volume: 42602000
+  },
+  {
+    date: "2011/9/7",
+    open: 67,
+    high: 68.6,
+    low: 66.8,
+    close: 68.6,
+    adjClose: 46.46,
+    volume: 40017000
+  },
+  {
+    date: "2011/9/6",
+    open: 66.5,
+    high: 67.2,
+    low: 66.1,
+    close: 66.1,
+    adjClose: 44.76,
+    volume: 38972000
+  },
+  {
+    date: "2011/9/5",
+    open: 66.1,
+    high: 67.1,
+    low: 65.9,
+    close: 66.6,
+    adjClose: 45.1,
+    volume: 49750000
+  },
+  {
+    date: "2011/9/2",
+    open: 69.5,
+    high: 69.5,
+    low: 67.1,
+    close: 67.5,
+    adjClose: 45.71,
+    volume: 42191000
+  },
+  {
+    date: "2011/9/1",
+    open: 69.4,
+    high: 69.8,
+    low: 68.6,
+    close: 68.6,
+    adjClose: 46.46,
+    volume: 47910000
+  },
+  {
+    date: "2011/8/31",
+    open: 69.1,
+    high: 69.4,
+    low: 67.8,
+    close: 69.4,
+    adjClose: 47,
+    volume: 47445000
+  },
+  {
+    date: "2011/8/30",
+    open: 70.3,
+    high: 70.3,
+    low: 68.6,
+    close: 69,
+    adjClose: 46.73,
+    volume: 33717000
+  },
+  {
+    date: "2011/8/29",
+    open: 68.6,
+    high: 69.9,
+    low: 68.1,
+    close: 69.4,
+    adjClose: 47,
+    volume: 38554000
+  },
+  {
+    date: "2011/8/26",
+    open: 67.1,
+    high: 68.3,
+    low: 67,
+    close: 67.9,
+    adjClose: 45.98,
+    volume: 40454000
+  },
+  {
+    date: "2011/8/25",
+    open: 67.4,
+    high: 67.6,
+    low: 66.4,
+    close: 67,
+    adjClose: 45.37,
+    volume: 30837000
+  },
+  {
+    date: "2011/8/24",
+    open: 67.7,
+    high: 67.7,
+    low: 66.4,
+    close: 67.5,
+    adjClose: 45.71,
+    volume: 48112000
+  },
+  {
+    date: "2011/8/23",
+    open: 65,
+    high: 67.1,
+    low: 65,
+    close: 66.8,
+    adjClose: 45.24,
+    volume: 46451000
+  },
+  {
+    date: "2011/8/22",
+    open: 63.6,
+    high: 65.5,
+    low: 63,
+    close: 65,
+    adjClose: 44.02,
+    volume: 46280000
+  },
+  {
+    date: "2011/8/19",
+    open: 63.1,
+    high: 63.9,
+    low: 63,
+    close: 63.9,
+    adjClose: 43.27,
+    volume: 43186000
+  },
+  {
+    date: "2011/8/18",
+    open: 65.8,
+    high: 65.8,
+    low: 63.3,
+    close: 64.4,
+    adjClose: 43.61,
+    volume: 73212000
+  },
+  {
+    date: "2011/8/17",
+    open: 66,
+    high: 66.2,
+    low: 65.3,
+    close: 65.8,
+    adjClose: 44.56,
+    volume: 35809000
+  },
+  {
+    date: "2011/8/16",
+    open: 66.8,
+    high: 66.8,
+    low: 66,
+    close: 66,
+    adjClose: 44.7,
+    volume: 38915000
+  },
+  {
+    date: "2011/8/15",
+    open: 66.9,
+    high: 66.9,
+    low: 65.9,
+    close: 66.8,
+    adjClose: 45.24,
+    volume: 39616000
+  },
+  {
+    date: "2011/8/12",
+    open: 67.2,
+    high: 67.6,
+    low: 65.1,
+    close: 65.1,
+    adjClose: 44.09,
+    volume: 61038000
+  },
+  {
+    date: "2011/8/11",
+    open: 64.6,
+    high: 66.8,
+    low: 64,
+    close: 66.4,
+    adjClose: 44.97,
+    volume: 54267000
+  },
+  {
+    date: "2011/8/10",
+    open: 65.1,
+    high: 67,
+    low: 65,
+    close: 65.8,
+    adjClose: 44.56,
+    volume: 109734000
+  },
+  {
+    date: "2011/8/9",
+    open: 62.5,
+    high: 65.1,
+    low: 62.2,
+    close: 63.3,
+    adjClose: 42.87,
+    volume: 115504000
+  },
+  {
+    date: "2011/8/8",
+    open: 66,
+    high: 67.4,
+    low: 64,
+    close: 65.2,
+    adjClose: 44.16,
+    volume: 97375000
+  },
+  {
+    date: "2011/8/5",
+    open: 66,
+    high: 68,
+    low: 66,
+    close: 66.6,
+    adjClose: 45.1,
+    volume: 89615000
+  },
+  {
+    date: "2011/8/4",
+    open: 69.6,
+    high: 70.7,
+    low: 69.6,
+    close: 70,
+    adjClose: 47.41,
+    volume: 43900000
+  },
+  {
+    date: "2011/8/3",
+    open: 70.1,
+    high: 70.5,
+    low: 69.8,
+    close: 70.1,
+    adjClose: 47.47,
+    volume: 45976000
+  },
+  {
+    date: "2011/8/2",
+    open: 72,
+    high: 72.1,
+    low: 71.2,
+    close: 71.4,
+    adjClose: 48.35,
+    volume: 33350000
+  },
+  {
+    date: "2011/8/1",
+    open: 72,
+    high: 72.8,
+    low: 72,
+    close: 72.6,
+    adjClose: 49.17,
+    volume: 41072000
+  },
+  {
+    date: "2011/7/29",
+    open: 71.8,
+    high: 72.4,
+    low: 71.3,
+    close: 72,
+    adjClose: 48.76,
+    volume: 60614000
+  },
+  {
+    date: "2011/7/28",
+    open: 72.8,
+    high: 73.4,
+    low: 72.3,
+    close: 73,
+    adjClose: 49.44,
+    volume: 33682000
+  },
+  {
+    date: "2011/7/27",
+    open: 73.7,
+    high: 73.9,
+    low: 73,
+    close: 73.4,
+    adjClose: 49.71,
+    volume: 35569000
+  },
+  {
+    date: "2011/7/26",
+    open: 72.3,
+    high: 73.7,
+    low: 72.3,
+    close: 73.7,
+    adjClose: 49.91,
+    volume: 52821000
+  },
+  {
+    date: "2011/7/25",
+    open: 72.4,
+    high: 72.5,
+    low: 71.4,
+    close: 72,
+    adjClose: 48.76,
+    volume: 32490000
+  },
+  {
+    date: "2011/7/22",
+    open: 72.4,
+    high: 72.4,
+    low: 71.7,
+    close: 72,
+    adjClose: 48.76,
+    volume: 37196000
+  },
+  {
+    date: "2011/7/21",
+    open: 71.4,
+    high: 71.6,
+    low: 70.6,
+    close: 71.6,
+    adjClose: 48.49,
+    volume: 32798000
+  },
+  {
+    date: "2011/7/20",
+    open: 69.7,
+    high: 71.7,
+    low: 69.4,
+    close: 71.6,
+    adjClose: 48.49,
+    volume: 55120000
+  },
+  {
+    date: "2011/7/19",
+    open: 69.6,
+    high: 69.8,
+    low: 68.5,
+    close: 68.5,
+    adjClose: 46.39,
+    volume: 57401000
+  },
+  {
+    date: "2011/7/18",
+    open: 69.7,
+    high: 70.2,
+    low: 69.4,
+    close: 69.7,
+    adjClose: 47.2,
+    volume: 34351000
+  },
+  {
+    date: "2011/7/15",
+    open: 70,
+    high: 70.2,
+    low: 69.5,
+    close: 69.9,
+    adjClose: 47.34,
+    volume: 88064000
+  },
+  {
+    date: "2011/7/14",
+    open: 70.5,
+    high: 71.4,
+    low: 70.1,
+    close: 70.7,
+    adjClose: 47.88,
+    volume: 54343000
+  },
+  {
+    date: "2011/7/13",
+    open: 70.5,
+    high: 72.5,
+    low: 70.1,
+    close: 72.2,
+    adjClose: 48.9,
+    volume: 69016000
+  },
+  {
+    date: "2011/7/12",
+    open: 70.6,
+    high: 70.8,
+    low: 70.1,
+    close: 70.3,
+    adjClose: 47.61,
+    volume: 39821000
+  },
+  {
+    date: "2011/7/11",
+    open: 72.6,
+    high: 72.6,
+    low: 70.2,
+    close: 71.3,
+    adjClose: 48.29,
+    volume: 47105000
+  },
+  {
+    date: "2011/7/8",
+    open: 72.1,
+    high: 72.8,
+    low: 72,
+    close: 72.5,
+    adjClose: 49.1,
+    volume: 52356000
+  },
+  {
+    date: "2011/7/7",
+    open: 72.1,
+    high: 72.3,
+    low: 71.5,
+    close: 71.6,
+    adjClose: 48.49,
+    volume: 47655000
+  },
+  {
+    date: "2011/7/6",
+    open: 73.2,
+    high: 73.4,
+    low: 72.5,
+    close: 72.8,
+    adjClose: 49.3,
+    volume: 42991000
+  },
+  {
+    date: "2011/7/5",
+    open: 73.2,
+    high: 73.3,
+    low: 72.4,
+    close: 73.2,
+    adjClose: 49.57,
+    volume: 34203000
+  },
+  {
+    date: "2011/7/4",
+    open: 73.9,
+    high: 73.9,
+    low: 73.1,
+    close: 73.5,
+    adjClose: 49.78,
+    volume: 39959000
+  },
+  {
+    date: "2011/7/1",
+    open: 72.2,
+    high: 73,
+    low: 72,
+    close: 72.8,
+    adjClose: 49.3,
+    volume: 40514000
+  },
+  {
+    date: "2011/6/30",
+    open: 71.4,
+    high: 72.2,
+    low: 71.3,
+    close: 72.2,
+    adjClose: 48.9,
+    volume: 48764000
+  },
+  {
+    date: "2011/6/29",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2011/6/29",
+    open: 70.9,
+    high: 72.1,
+    low: 70.4,
+    close: 71.4,
+    adjClose: 48.35,
+    volume: 93038000
+  },
+  {
+    date: "2011/6/28",
+    open: 72.1,
+    high: 72.6,
+    low: 71.8,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 95586000
+  },
+  {
+    date: "2011/6/27",
+    open: 72,
+    high: 72.1,
+    low: 71.6,
+    close: 72,
+    adjClose: 46.74,
+    volume: 64884000
+  },
+  {
+    date: "2011/6/24",
+    open: 73.6,
+    high: 73.6,
+    low: 71.9,
+    close: 72.9,
+    adjClose: 47.33,
+    volume: 68685000
+  },
+  {
+    date: "2011/6/23",
+    open: 74.7,
+    high: 74.9,
+    low: 73.8,
+    close: 74.2,
+    adjClose: 48.17,
+    volume: 53121000
+  },
+  {
+    date: "2011/6/22",
+    open: 76.3,
+    high: 76.3,
+    low: 74.6,
+    close: 75,
+    adjClose: 48.69,
+    volume: 45315000
+  },
+  {
+    date: "2011/6/21",
+    open: 75.4,
+    high: 76.2,
+    low: 75.3,
+    close: 75.9,
+    adjClose: 49.27,
+    volume: 40800000
+  },
+  {
+    date: "2011/6/20",
+    open: 74.6,
+    high: 75.4,
+    low: 74.1,
+    close: 74.9,
+    adjClose: 48.63,
+    volume: 31713000
+  },
+  {
+    date: "2011/6/17",
+    open: 75,
+    high: 75.1,
+    low: 74.1,
+    close: 74.2,
+    adjClose: 48.17,
+    volume: 79539000
+  },
+  {
+    date: "2011/6/16",
+    open: 76,
+    high: 76.2,
+    low: 75.4,
+    close: 75.5,
+    adjClose: 49.02,
+    volume: 62276000
+  },
+  {
+    date: "2011/6/15",
+    open: 77,
+    high: 77.4,
+    low: 76.1,
+    close: 77,
+    adjClose: 49.99,
+    volume: 85237000
+  },
+  {
+    date: "2011/6/14",
+    open: 74.5,
+    high: 76.4,
+    low: 74.5,
+    close: 76.2,
+    adjClose: 49.47,
+    volume: 52699000
+  },
+  {
+    date: "2011/6/13",
+    open: 74.5,
+    high: 75,
+    low: 73.9,
+    close: 74.7,
+    adjClose: 48.5,
+    volume: 68652000
+  },
+  {
+    date: "2011/6/10",
+    open: 77,
+    high: 77.5,
+    low: 75.1,
+    close: 75.3,
+    adjClose: 48.89,
+    volume: 55263000
+  },
+  {
+    date: "2011/6/9",
+    open: 78,
+    high: 78,
+    low: 76.8,
+    close: 76.9,
+    adjClose: 49.92,
+    volume: 33565000
+  },
+  {
+    date: "2011/6/8",
+    open: 77.1,
+    high: 78,
+    low: 77.1,
+    close: 77.5,
+    adjClose: 50.31,
+    volume: 58158000
+  },
+  {
+    date: "2011/6/7",
+    open: 77.2,
+    high: 78.2,
+    low: 76.6,
+    close: 77.5,
+    adjClose: 50.31,
+    volume: 40816000
+  },
+  {
+    date: "2011/6/3",
+    open: 77,
+    high: 77.2,
+    low: 76.1,
+    close: 77.2,
+    adjClose: 50.12,
+    volume: 35389000
+  },
+  {
+    date: "2011/6/2",
+    open: 76.3,
+    high: 77.4,
+    low: 76.3,
+    close: 76.4,
+    adjClose: 49.6,
+    volume: 61778000
+  },
+  {
+    date: "2011/6/1",
+    open: 76.3,
+    high: 77.3,
+    low: 76.3,
+    close: 77,
+    adjClose: 49.99,
+    volume: 44950000
+  },
+  {
+    date: "2011/5/31",
+    open: 75.5,
+    high: 76.9,
+    low: 75.4,
+    close: 76.7,
+    adjClose: 49.79,
+    volume: 62660000
+  },
+  {
+    date: "2011/5/30",
+    open: 74,
+    high: 75.3,
+    low: 74,
+    close: 75.1,
+    adjClose: 48.76,
+    volume: 33671000
+  },
+  {
+    date: "2011/5/27",
+    open: 73.8,
+    high: 74.5,
+    low: 73.8,
+    close: 74,
+    adjClose: 48.04,
+    volume: 46500000
+  },
+  {
+    date: "2011/5/26",
+    open: 75,
+    high: 75,
+    low: 74,
+    close: 74.2,
+    adjClose: 48.17,
+    volume: 33168000
+  },
+  {
+    date: "2011/5/25",
+    open: 74.2,
+    high: 74.9,
+    low: 73.3,
+    close: 74.5,
+    adjClose: 48.37,
+    volume: 59534000
+  },
+  {
+    date: "2011/5/24",
+    open: 74.9,
+    high: 75.1,
+    low: 74.2,
+    close: 74.8,
+    adjClose: 48.56,
+    volume: 34727000
+  },
+  {
+    date: "2011/5/23",
+    open: 74.7,
+    high: 75.5,
+    low: 74.5,
+    close: 75.1,
+    adjClose: 48.76,
+    volume: 38984000
+  },
+  {
+    date: "2011/5/20",
+    open: 76,
+    high: 76,
+    low: 74.9,
+    close: 75.5,
+    adjClose: 49.02,
+    volume: 32925000
+  },
+  {
+    date: "2011/5/19",
+    open: 74.9,
+    high: 76.3,
+    low: 74.9,
+    close: 75.2,
+    adjClose: 48.82,
+    volume: 52635000
+  },
+  {
+    date: "2011/5/18",
+    open: 75.3,
+    high: 75.8,
+    low: 74.9,
+    close: 75.3,
+    adjClose: 48.89,
+    volume: 27879000
+  },
+  {
+    date: "2011/5/17",
+    open: 74.6,
+    high: 76,
+    low: 74.6,
+    close: 75.6,
+    adjClose: 49.08,
+    volume: 41026000
+  },
+  {
+    date: "2011/5/16",
+    open: 75.9,
+    high: 75.9,
+    low: 74.7,
+    close: 74.9,
+    adjClose: 48.63,
+    volume: 25843000
+  },
+  {
+    date: "2011/5/13",
+    open: 76,
+    high: 76.1,
+    low: 75.5,
+    close: 75.9,
+    adjClose: 49.27,
+    volume: 37218000
+  },
+  {
+    date: "2011/5/12",
+    open: 74.2,
+    high: 76,
+    low: 74.1,
+    close: 75.7,
+    adjClose: 49.15,
+    volume: 58360000
+  },
+  {
+    date: "2011/5/11",
+    open: 75.3,
+    high: 75.3,
+    low: 74.6,
+    close: 75,
+    adjClose: 48.69,
+    volume: 43103000
+  },
+  {
+    date: "2011/5/10",
+    open: 75.6,
+    high: 75.6,
+    low: 74.4,
+    close: 74.4,
+    adjClose: 48.3,
+    volume: 43183000
+  },
+  {
+    date: "2011/5/9",
+    open: 75.6,
+    high: 76.1,
+    low: 75.2,
+    close: 75.5,
+    adjClose: 49.02,
+    volume: 59843000
+  },
+  {
+    date: "2011/5/6",
+    open: 75,
+    high: 75.6,
+    low: 74.4,
+    close: 75,
+    adjClose: 48.69,
+    volume: 53441000
+  },
+  {
+    date: "2011/5/5",
+    open: 74,
+    high: 74.8,
+    low: 73.6,
+    close: 74.8,
+    adjClose: 48.56,
+    volume: 45326000
+  },
+  {
+    date: "2011/5/4",
+    open: 74.4,
+    high: 74.4,
+    low: 73,
+    close: 73.8,
+    adjClose: 47.91,
+    volume: 46461000
+  },
+  {
+    date: "2011/5/3",
+    open: 73.9,
+    high: 74.8,
+    low: 73.6,
+    close: 74.6,
+    adjClose: 48.43,
+    volume: 81495000
+  },
+  {
+    date: "2011/4/29",
+    open: 73.7,
+    high: 73.9,
+    low: 72.9,
+    close: 73.2,
+    adjClose: 47.52,
+    volume: 92890000
+  },
+  {
+    date: "2011/4/28",
+    open: 73.4,
+    high: 73.7,
+    low: 72.9,
+    close: 73,
+    adjClose: 47.39,
+    volume: 83054000
+  },
+  {
+    date: "2011/4/27",
+    open: 71.5,
+    high: 72.7,
+    low: 71.5,
+    close: 72.3,
+    adjClose: 46.94,
+    volume: 58612000
+  },
+  {
+    date: "2011/4/26",
+    open: 69.7,
+    high: 70.3,
+    low: 69.1,
+    close: 70.3,
+    adjClose: 45.64,
+    volume: 31838000
+  },
+  {
+    date: "2011/4/25",
+    open: 71,
+    high: 71.1,
+    low: 70.1,
+    close: 70.3,
+    adjClose: 45.64,
+    volume: 22040000
+  },
+  {
+    date: "2011/4/22",
+    open: 70.9,
+    high: 71,
+    low: 70.3,
+    close: 70.9,
+    adjClose: 46.03,
+    volume: 25299000
+  },
+  {
+    date: "2011/4/21",
+    open: 70.7,
+    high: 71.3,
+    low: 70.3,
+    close: 70.7,
+    adjClose: 45.9,
+    volume: 50849000
+  },
+  {
+    date: "2011/4/20",
+    open: 69,
+    high: 69.8,
+    low: 68.5,
+    close: 69.8,
+    adjClose: 45.31,
+    volume: 48039000
+  },
+  {
+    date: "2011/4/19",
+    open: 68.5,
+    high: 68.5,
+    low: 68,
+    close: 68.1,
+    adjClose: 44.21,
+    volume: 42649000
+  },
+  {
+    date: "2011/4/18",
+    open: 69.8,
+    high: 69.8,
+    low: 68.8,
+    close: 69,
+    adjClose: 44.8,
+    volume: 27120000
+  },
+  {
+    date: "2011/4/15",
+    open: 70,
+    high: 70,
+    low: 69.1,
+    close: 69.2,
+    adjClose: 44.93,
+    volume: 51993000
+  },
+  {
+    date: "2011/4/14",
+    open: 70.3,
+    high: 70.5,
+    low: 69.6,
+    close: 69.8,
+    adjClose: 45.31,
+    volume: 46816000
+  },
+  {
+    date: "2011/4/13",
+    open: 70.1,
+    high: 70.8,
+    low: 70,
+    close: 70.7,
+    adjClose: 45.9,
+    volume: 27328000
+  },
+  {
+    date: "2011/4/12",
+    open: 70.5,
+    high: 70.7,
+    low: 70.1,
+    close: 70.1,
+    adjClose: 45.51,
+    volume: 45901000
+  },
+  {
+    date: "2011/4/11",
+    open: 73,
+    high: 73,
+    low: 70.9,
+    close: 71.1,
+    adjClose: 46.16,
+    volume: 42409000
+  },
+  {
+    date: "2011/4/8",
+    open: 72.9,
+    high: 73,
+    low: 72.4,
+    close: 72.9,
+    adjClose: 47.33,
+    volume: 64884000
+  },
+  {
+    date: "2011/4/7",
+    open: 73,
+    high: 73,
+    low: 72.3,
+    close: 72.8,
+    adjClose: 47.26,
+    volume: 45048000
+  },
+  {
+    date: "2011/4/6",
+    open: 71.5,
+    high: 72.9,
+    low: 71.5,
+    close: 72.9,
+    adjClose: 47.33,
+    volume: 114050000
+  },
+  {
+    date: "2011/4/1",
+    open: 70.7,
+    high: 70.8,
+    low: 70.1,
+    close: 70.7,
+    adjClose: 45.9,
+    volume: 26616000
+  },
+  {
+    date: "2011/3/31",
+    open: 71,
+    high: 71,
+    low: 70,
+    close: 70.6,
+    adjClose: 45.83,
+    volume: 41950000
+  },
+  {
+    date: "2011/3/30",
+    open: 70.3,
+    high: 70.8,
+    low: 70,
+    close: 70.3,
+    adjClose: 45.64,
+    volume: 60127000
+  },
+  {
+    date: "2011/3/29",
+    open: 70.6,
+    high: 71.2,
+    low: 70.4,
+    close: 70.8,
+    adjClose: 45.96,
+    volume: 34785000
+  },
+  {
+    date: "2011/3/28",
+    open: 70.6,
+    high: 71,
+    low: 70.3,
+    close: 71,
+    adjClose: 46.09,
+    volume: 28535000
+  },
+  {
+    date: "2011/3/25",
+    open: 70.4,
+    high: 71.2,
+    low: 70,
+    close: 71.2,
+    adjClose: 46.22,
+    volume: 51518000
+  },
+  {
+    date: "2011/3/24",
+    open: 69.1,
+    high: 70.1,
+    low: 69,
+    close: 69.4,
+    adjClose: 45.06,
+    volume: 44701000
+  },
+  {
+    date: "2011/3/23",
+    open: 69.1,
+    high: 69.1,
+    low: 68.1,
+    close: 68.7,
+    adjClose: 44.6,
+    volume: 31189000
+  },
+  {
+    date: "2011/3/22",
+    open: 69.5,
+    high: 69.5,
+    low: 68.4,
+    close: 68.6,
+    adjClose: 44.54,
+    volume: 31467000
+  },
+  {
+    date: "2011/3/21",
+    open: 68.3,
+    high: 69.1,
+    low: 68,
+    close: 69,
+    adjClose: 44.8,
+    volume: 34725000
+  },
+  {
+    date: "2011/3/18",
+    open: 67.8,
+    high: 68.4,
+    low: 67.2,
+    close: 68.3,
+    adjClose: 44.34,
+    volume: 55649000
+  },
+  {
+    date: "2011/3/17",
+    open: 66.8,
+    high: 67.5,
+    low: 65.7,
+    close: 67.4,
+    adjClose: 43.76,
+    volume: 104629000
+  },
+  {
+    date: "2011/3/16",
+    open: 68.8,
+    high: 69.1,
+    low: 68.1,
+    close: 68.5,
+    adjClose: 44.47,
+    volume: 60944000
+  },
+  {
+    date: "2011/3/15",
+    open: 70,
+    high: 70.1,
+    low: 66.2,
+    close: 68,
+    adjClose: 44.15,
+    volume: 114456000
+  },
+  {
+    date: "2011/3/14",
+    open: 70.3,
+    high: 70.5,
+    low: 69.1,
+    close: 70.3,
+    adjClose: 45.64,
+    volume: 47199000
+  },
+  {
+    date: "2011/3/11",
+    open: 70,
+    high: 70.6,
+    low: 69.5,
+    close: 70,
+    adjClose: 45.44,
+    volume: 52528000
+  },
+  {
+    date: "2011/3/10",
+    open: 72.1,
+    high: 72.1,
+    low: 70.1,
+    close: 70.5,
+    adjClose: 45.77,
+    volume: 61899000
+  },
+  {
+    date: "2011/3/9",
+    open: 72.2,
+    high: 72.2,
+    low: 71.1,
+    close: 71.4,
+    adjClose: 46.35,
+    volume: 42715000
+  },
+  {
+    date: "2011/3/8",
+    open: 70.5,
+    high: 71.8,
+    low: 70.5,
+    close: 71.5,
+    adjClose: 46.42,
+    volume: 49251000
+  },
+  {
+    date: "2011/3/7",
+    open: 71.6,
+    high: 71.7,
+    low: 70.9,
+    close: 70.9,
+    adjClose: 46.03,
+    volume: 30090000
+  },
+  {
+    date: "2011/3/4",
+    open: 71.5,
+    high: 72,
+    low: 71.3,
+    close: 71.8,
+    adjClose: 46.61,
+    volume: 55215000
+  },
+  {
+    date: "2011/3/3",
+    open: 70.1,
+    high: 71.6,
+    low: 70.1,
+    close: 70.8,
+    adjClose: 45.96,
+    volume: 59349000
+  },
+  {
+    date: "2011/3/2",
+    open: 70.8,
+    high: 71,
+    low: 70.4,
+    close: 70.4,
+    adjClose: 45.7,
+    volume: 52968000
+  },
+  {
+    date: "2011/3/1",
+    open: 70,
+    high: 71.8,
+    low: 70,
+    close: 71.4,
+    adjClose: 46.35,
+    volume: 77441000
+  },
+  {
+    date: "2011/2/25",
+    open: 70.6,
+    high: 71.1,
+    low: 69.9,
+    close: 70.5,
+    adjClose: 45.77,
+    volume: 78655000
+  },
+  {
+    date: "2011/2/24",
+    open: 71,
+    high: 71.4,
+    low: 70.5,
+    close: 70.5,
+    adjClose: 45.77,
+    volume: 62708000
+  },
+  {
+    date: "2011/2/23",
+    open: 71.5,
+    high: 71.9,
+    low: 70.5,
+    close: 71,
+    adjClose: 46.09,
+    volume: 78154000
+  },
+  {
+    date: "2011/2/22",
+    open: 72.2,
+    high: 72.5,
+    low: 71.2,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 82528000
+  },
+  {
+    date: "2011/2/21",
+    open: 73.1,
+    high: 73.4,
+    low: 72.3,
+    close: 73.4,
+    adjClose: 47.65,
+    volume: 37954000
+  },
+  {
+    date: "2011/2/18",
+    open: 73.1,
+    high: 73.9,
+    low: 73,
+    close: 73,
+    adjClose: 47.39,
+    volume: 73532000
+  },
+  {
+    date: "2011/2/17",
+    open: 72.4,
+    high: 72.9,
+    low: 71.6,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 49280000
+  },
+  {
+    date: "2011/2/16",
+    open: 72.4,
+    high: 72.7,
+    low: 71.9,
+    close: 72.1,
+    adjClose: 46.81,
+    volume: 53849000
+  },
+  {
+    date: "2011/2/15",
+    open: 72.4,
+    high: 73.1,
+    low: 71.4,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 56427000
+  },
+  {
+    date: "2011/2/14",
+    open: 72,
+    high: 72.9,
+    low: 71.5,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 64830000
+  },
+  {
+    date: "2011/2/11",
+    open: 72.2,
+    high: 72.4,
+    low: 70.9,
+    close: 71.4,
+    adjClose: 46.35,
+    volume: 111841000
+  },
+  {
+    date: "2011/2/10",
+    open: 73.1,
+    high: 73.4,
+    low: 72,
+    close: 72,
+    adjClose: 46.74,
+    volume: 83493000
+  },
+  {
+    date: "2011/2/9",
+    open: 75.5,
+    high: 75.6,
+    low: 73.8,
+    close: 73.8,
+    adjClose: 47.91,
+    volume: 79084000
+  },
+  {
+    date: "2011/2/8",
+    open: 77,
+    high: 77,
+    low: 74.8,
+    close: 75.5,
+    adjClose: 49.02,
+    volume: 105232000
+  },
+  {
+    date: "2011/1/28",
+    open: 75.2,
+    high: 76.9,
+    low: 74.9,
+    close: 76.3,
+    adjClose: 49.53,
+    volume: 97365000
+  },
+  {
+    date: "2011/1/27",
+    open: 74.9,
+    high: 75.4,
+    low: 74.8,
+    close: 75.2,
+    adjClose: 48.82,
+    volume: 69734000
+  },
+  {
+    date: "2011/1/26",
+    open: 74.6,
+    high: 75.2,
+    low: 74.3,
+    close: 74.6,
+    adjClose: 48.43,
+    volume: 66493000
+  },
+  {
+    date: "2011/1/25",
+    open: 75.9,
+    high: 75.9,
+    low: 74.9,
+    close: 75,
+    adjClose: 48.69,
+    volume: 43750000
+  },
+  {
+    date: "2011/1/24",
+    open: 75.2,
+    high: 75.4,
+    low: 74.6,
+    close: 75.3,
+    adjClose: 48.89,
+    volume: 40750000
+  },
+  {
+    date: "2011/1/21",
+    open: 74,
+    high: 75.2,
+    low: 74,
+    close: 74.6,
+    adjClose: 48.43,
+    volume: 81340000
+  },
+  {
+    date: "2011/1/20",
+    open: 77,
+    high: 77,
+    low: 76.1,
+    close: 76.4,
+    adjClose: 49.6,
+    volume: 43578000
+  },
+  {
+    date: "2011/1/19",
+    open: 76.9,
+    high: 78.3,
+    low: 76.6,
+    close: 78,
+    adjClose: 50.64,
+    volume: 86839000
+  },
+  {
+    date: "2011/1/18",
+    open: 75.5,
+    high: 77.4,
+    low: 75.2,
+    close: 76.8,
+    adjClose: 49.86,
+    volume: 56518000
+  },
+  {
+    date: "2011/1/17",
+    open: 75.4,
+    high: 75.9,
+    low: 75.3,
+    close: 75.8,
+    adjClose: 49.21,
+    volume: 67207000
+  },
+  {
+    date: "2011/1/14",
+    open: 74.4,
+    high: 74.8,
+    low: 74.1,
+    close: 74.8,
+    adjClose: 48.56,
+    volume: 28681000
+  },
+  {
+    date: "2011/1/13",
+    open: 75.1,
+    high: 75.3,
+    low: 74.2,
+    close: 74.6,
+    adjClose: 48.43,
+    volume: 92995000
+  },
+  {
+    date: "2011/1/12",
+    open: 74.7,
+    high: 75,
+    low: 74.7,
+    close: 74.9,
+    adjClose: 48.63,
+    volume: 53397000
+  },
+  {
+    date: "2011/1/11",
+    open: 74.1,
+    high: 74.9,
+    low: 73.8,
+    close: 74.5,
+    adjClose: 48.37,
+    volume: 81911000
+  },
+  {
+    date: "2011/1/10",
+    open: 73,
+    high: 74.2,
+    low: 72.6,
+    close: 74.2,
+    adjClose: 48.17,
+    volume: 66767000
+  },
+  {
+    date: "2011/1/7",
+    open: 71.9,
+    high: 73,
+    low: 71.9,
+    close: 72.5,
+    adjClose: 47.07,
+    volume: 169755000
+  },
+  {
+    date: "2011/1/6",
+    open: 69.8,
+    high: 71,
+    low: 69.7,
+    close: 71,
+    adjClose: 46.09,
+    volume: 46666000
+  },
+  {
+    date: "2011/1/5",
+    open: 70.9,
+    high: 71.1,
+    low: 69.6,
+    close: 69.8,
+    adjClose: 45.31,
+    volume: 51755000
+  },
+  {
+    date: "2011/1/4",
+    open: 71,
+    high: 71.6,
+    low: 70.8,
+    close: 71.2,
+    adjClose: 46.22,
+    volume: 35448000
+  },
+  {
+    date: "2011/1/3",
+    open: 71.5,
+    high: 71.6,
+    low: 70.8,
+    close: 71.1,
+    adjClose: 46.16,
+    volume: 35149000
+  },
+  {
+    date: "2010/12/31",
+    open: 70.5,
+    high: 72.3,
+    low: 70.3,
+    close: 71,
+    adjClose: 46.09,
+    volume: 143558000
+  },
+  {
+    date: "2010/12/30",
+    open: 70.6,
+    high: 70.8,
+    low: 70.1,
+    close: 70.6,
+    adjClose: 45.83,
+    volume: 53976000
+  },
+  {
+    date: "2010/12/29",
+    open: 70.8,
+    high: 70.8,
+    low: 70.2,
+    close: 70.6,
+    adjClose: 45.83,
+    volume: 40312000
+  },
+  {
+    date: "2010/12/28",
+    open: 70.9,
+    high: 71,
+    low: 70.6,
+    close: 70.9,
+    adjClose: 46.03,
+    volume: 35961000
+  },
+  {
+    date: "2010/12/27",
+    open: 70.8,
+    high: 70.8,
+    low: 70,
+    close: 70.7,
+    adjClose: 45.9,
+    volume: 29035000
+  },
+  {
+    date: "2010/12/24",
+    open: 71,
+    high: 71,
+    low: 70.5,
+    close: 70.8,
+    adjClose: 45.96,
+    volume: 21468000
+  },
+  {
+    date: "2010/12/23",
+    open: 71.8,
+    high: 71.8,
+    low: 70.7,
+    close: 71,
+    adjClose: 46.09,
+    volume: 35499000
+  },
+  {
+    date: "2010/12/22",
+    open: 71.1,
+    high: 71.6,
+    low: 70.7,
+    close: 71.2,
+    adjClose: 46.22,
+    volume: 26216000
+  },
+  {
+    date: "2010/12/21",
+    open: 71.5,
+    high: 71.6,
+    low: 70.8,
+    close: 71.3,
+    adjClose: 46.29,
+    volume: 35454000
+  },
+  {
+    date: "2010/12/20",
+    open: 73,
+    high: 73,
+    low: 70.9,
+    close: 71.2,
+    adjClose: 46.22,
+    volume: 91134000
+  },
+  {
+    date: "2010/12/17",
+    open: 72,
+    high: 75,
+    low: 71.6,
+    close: 72.9,
+    adjClose: 47.33,
+    volume: 108365000
+  },
+  {
+    date: "2010/12/16",
+    open: 70,
+    high: 71.6,
+    low: 69.8,
+    close: 71.2,
+    adjClose: 46.22,
+    volume: 61923000
+  },
+  {
+    date: "2010/12/15",
+    open: 68.6,
+    high: 70.1,
+    low: 68.5,
+    close: 70,
+    adjClose: 45.44,
+    volume: 56590000
+  },
+  {
+    date: "2010/12/14",
+    open: 69.9,
+    high: 69.9,
+    low: 68.7,
+    close: 69,
+    adjClose: 44.8,
+    volume: 45977000
+  },
+  {
+    date: "2010/12/13",
+    open: 70,
+    high: 70.4,
+    low: 69,
+    close: 69.4,
+    adjClose: 45.06,
+    volume: 36075000
+  },
+  {
+    date: "2010/12/10",
+    open: 69.6,
+    high: 69.9,
+    low: 69.3,
+    close: 69.7,
+    adjClose: 45.25,
+    volume: 32731000
+  },
+  {
+    date: "2010/12/9",
+    open: 69,
+    high: 70.1,
+    low: 68.8,
+    close: 70,
+    adjClose: 45.44,
+    volume: 91264000
+  },
+  {
+    date: "2010/12/8",
+    open: 68.6,
+    high: 68.7,
+    low: 67.8,
+    close: 68,
+    adjClose: 44.15,
+    volume: 46509000
+  },
+  {
+    date: "2010/12/7",
+    open: 68.5,
+    high: 68.6,
+    low: 67.6,
+    close: 68,
+    adjClose: 44.15,
+    volume: 58928000
+  },
+  {
+    date: "2010/12/6",
+    open: 68.9,
+    high: 69.5,
+    low: 68.4,
+    close: 68.5,
+    adjClose: 44.47,
+    volume: 58644000
+  },
+  {
+    date: "2010/12/3",
+    open: 66.8,
+    high: 70,
+    low: 66.7,
+    close: 68.3,
+    adjClose: 44.34,
+    volume: 124694000
+  },
+  {
+    date: "2010/12/2",
+    open: 65,
+    high: 66.4,
+    low: 64.9,
+    close: 66.2,
+    adjClose: 42.98,
+    volume: 87811000
+  },
+  {
+    date: "2010/12/1",
+    open: 63.8,
+    high: 64.6,
+    low: 63.8,
+    close: 64.6,
+    adjClose: 41.94,
+    volume: 58038000
+  },
+  {
+    date: "2010/11/30",
+    open: 63.8,
+    high: 64.4,
+    low: 63.4,
+    close: 63.4,
+    adjClose: 41.16,
+    volume: 66488000
+  },
+  {
+    date: "2010/11/29",
+    open: 64.6,
+    high: 64.7,
+    low: 63.8,
+    close: 64.3,
+    adjClose: 41.74,
+    volume: 33430000
+  },
+  {
+    date: "2010/11/26",
+    open: 63.9,
+    high: 64.5,
+    low: 63.9,
+    close: 64.4,
+    adjClose: 41.81,
+    volume: 30955000
+  },
+  {
+    date: "2010/11/25",
+    open: 63.8,
+    high: 64.5,
+    low: 63.5,
+    close: 64.4,
+    adjClose: 41.81,
+    volume: 34656000
+  },
+  {
+    date: "2010/11/24",
+    open: 63,
+    high: 64,
+    low: 63,
+    close: 63.2,
+    adjClose: 41.03,
+    volume: 26848000
+  },
+  {
+    date: "2010/11/23",
+    open: 63.7,
+    high: 63.8,
+    low: 63.3,
+    close: 63.4,
+    adjClose: 41.16,
+    volume: 30876000
+  },
+  {
+    date: "2010/11/22",
+    open: 63.6,
+    high: 64.3,
+    low: 63.2,
+    close: 63.8,
+    adjClose: 41.42,
+    volume: 25384000
+  },
+  {
+    date: "2010/11/19",
+    open: 63.6,
+    high: 64,
+    low: 63,
+    close: 63.7,
+    adjClose: 41.35,
+    volume: 23769000
+  },
+  {
+    date: "2010/11/18",
+    open: 63.7,
+    high: 63.9,
+    low: 63,
+    close: 63.3,
+    adjClose: 41.09,
+    volume: 39053000
+  },
+  {
+    date: "2010/11/17",
+    open: 64.2,
+    high: 64.5,
+    low: 63.6,
+    close: 63.8,
+    adjClose: 41.42,
+    volume: 51345000
+  },
+  {
+    date: "2010/11/16",
+    open: 64.3,
+    high: 64.7,
+    low: 64.1,
+    close: 64.5,
+    adjClose: 41.87,
+    volume: 55027000
+  },
+  {
+    date: "2010/11/15",
+    open: 63.8,
+    high: 64,
+    low: 63.2,
+    close: 63.9,
+    adjClose: 41.48,
+    volume: 27583000
+  },
+  {
+    date: "2010/11/12",
+    open: 63.6,
+    high: 64,
+    low: 63,
+    close: 63,
+    adjClose: 40.9,
+    volume: 29650000
+  },
+  {
+    date: "2010/11/11",
+    open: 63.9,
+    high: 64.2,
+    low: 63.7,
+    close: 63.7,
+    adjClose: 41.35,
+    volume: 31688000
+  },
+  {
+    date: "2010/11/10",
+    open: 64,
+    high: 64.3,
+    low: 63.7,
+    close: 64.2,
+    adjClose: 41.68,
+    volume: 37637000
+  },
+  {
+    date: "2010/11/9",
+    open: 63.3,
+    high: 64,
+    low: 63.1,
+    close: 64,
+    adjClose: 41.55,
+    volume: 25317000
+  },
+  {
+    date: "2010/11/8",
+    open: 64.2,
+    high: 64.2,
+    low: 63.1,
+    close: 63.3,
+    adjClose: 41.09,
+    volume: 23591000
+  },
+  {
+    date: "2010/11/5",
+    open: 64.5,
+    high: 64.6,
+    low: 63.8,
+    close: 64.2,
+    adjClose: 41.68,
+    volume: 43711000
+  },
+  {
+    date: "2010/11/4",
+    open: 63.9,
+    high: 64.1,
+    low: 63.6,
+    close: 63.9,
+    adjClose: 41.48,
+    volume: 32641000
+  },
+  {
+    date: "2010/11/3",
+    open: 63.5,
+    high: 64,
+    low: 63.3,
+    close: 63.9,
+    adjClose: 41.48,
+    volume: 44405000
+  },
+  {
+    date: "2010/11/2",
+    open: 63,
+    high: 63.4,
+    low: 63,
+    close: 63.3,
+    adjClose: 41.09,
+    volume: 24276000
+  },
+  {
+    date: "2010/11/1",
+    open: 63.4,
+    high: 63.5,
+    low: 63,
+    close: 63.5,
+    adjClose: 41.22,
+    volume: 76051000
+  },
+  {
+    date: "2010/10/29",
+    open: 63,
+    high: 63.1,
+    low: 62.5,
+    close: 62.8,
+    adjClose: 40.77,
+    volume: 67800000
+  },
+  {
+    date: "2010/10/28",
+    open: 62.4,
+    high: 63,
+    low: 62.1,
+    close: 62.7,
+    adjClose: 40.71,
+    volume: 61848000
+  },
+  {
+    date: "2010/10/27",
+    open: 62.3,
+    high: 62.4,
+    low: 61.9,
+    close: 62,
+    adjClose: 40.25,
+    volume: 26552000
+  },
+  {
+    date: "2010/10/26",
+    open: 62.2,
+    high: 62.3,
+    low: 62,
+    close: 62.3,
+    adjClose: 40.45,
+    volume: 37835000
+  },
+  {
+    date: "2010/10/25",
+    open: 62,
+    high: 62.2,
+    low: 61.8,
+    close: 62,
+    adjClose: 40.25,
+    volume: 38467000
+  },
+  {
+    date: "2010/10/22",
+    open: 61.7,
+    high: 61.8,
+    low: 61.4,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 42883000
+  },
+  {
+    date: "2010/10/21",
+    open: 61.3,
+    high: 61.4,
+    low: 60.8,
+    close: 61,
+    adjClose: 39.6,
+    volume: 37243000
+  },
+  {
+    date: "2010/10/20",
+    open: 60.5,
+    high: 61.1,
+    low: 60.4,
+    close: 61,
+    adjClose: 39.6,
+    volume: 34445000
+  },
+  {
+    date: "2010/10/19",
+    open: 60.6,
+    high: 60.7,
+    low: 60.1,
+    close: 60.7,
+    adjClose: 39.41,
+    volume: 34442000
+  },
+  {
+    date: "2010/10/18",
+    open: 61.4,
+    high: 61.8,
+    low: 60.4,
+    close: 60.5,
+    adjClose: 39.28,
+    volume: 32498000
+  },
+  {
+    date: "2010/10/15",
+    open: 61.3,
+    high: 61.9,
+    low: 61.2,
+    close: 61.9,
+    adjClose: 40.19,
+    volume: 29898000
+  },
+  {
+    date: "2010/10/14",
+    open: 61.4,
+    high: 62,
+    low: 61.3,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 45889000
+  },
+  {
+    date: "2010/10/13",
+    open: 61.3,
+    high: 61.3,
+    low: 60.4,
+    close: 61,
+    adjClose: 39.6,
+    volume: 28950000
+  },
+  {
+    date: "2010/10/12",
+    open: 61.5,
+    high: 61.5,
+    low: 60.4,
+    close: 61,
+    adjClose: 39.6,
+    volume: 27854000
+  },
+  {
+    date: "2010/10/11",
+    open: 62,
+    high: 62,
+    low: 61.1,
+    close: 61.5,
+    adjClose: 39.93,
+    volume: 24273000
+  },
+  {
+    date: "2010/10/8",
+    open: 61,
+    high: 61.8,
+    low: 61,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 54186000
+  },
+  {
+    date: "2010/10/7",
+    open: 61.4,
+    high: 61.7,
+    low: 61,
+    close: 61.3,
+    adjClose: 39.8,
+    volume: 37414000
+  },
+  {
+    date: "2010/10/6",
+    open: 61.9,
+    high: 62,
+    low: 61.5,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 34117000
+  },
+  {
+    date: "2010/10/5",
+    open: 61.7,
+    high: 61.7,
+    low: 60.9,
+    close: 61.1,
+    adjClose: 39.67,
+    volume: 28432000
+  },
+  {
+    date: "2010/10/4",
+    open: 62,
+    high: 62.1,
+    low: 61.6,
+    close: 61.9,
+    adjClose: 40.19,
+    volume: 25742000
+  },
+  {
+    date: "2010/10/1",
+    open: 62.2,
+    high: 62.3,
+    low: 61.7,
+    close: 62,
+    adjClose: 40.25,
+    volume: 38944000
+  },
+  {
+    date: "2010/9/30",
+    open: 61.7,
+    high: 62,
+    low: 61.6,
+    close: 62,
+    adjClose: 40.25,
+    volume: 56151000
+  },
+  {
+    date: "2010/9/29",
+    open: 61.5,
+    high: 61.9,
+    low: 61,
+    close: 61.5,
+    adjClose: 39.93,
+    volume: 79436000
+  },
+  {
+    date: "2010/9/28",
+    open: 60.7,
+    high: 61.2,
+    low: 60.6,
+    close: 61,
+    adjClose: 39.6,
+    volume: 48335000
+  },
+  {
+    date: "2010/9/27",
+    open: 60.8,
+    high: 60.8,
+    low: 60.4,
+    close: 60.7,
+    adjClose: 39.41,
+    volume: 57033000
+  },
+  {
+    date: "2010/9/24",
+    open: 59.7,
+    high: 60.2,
+    low: 59.6,
+    close: 60.1,
+    adjClose: 39.02,
+    volume: 58578000
+  },
+  {
+    date: "2010/9/23",
+    open: 60.9,
+    high: 60.9,
+    low: 59.9,
+    close: 60,
+    adjClose: 38.95,
+    volume: 106168000
+  },
+  {
+    date: "2010/9/21",
+    open: 62.3,
+    high: 62.3,
+    low: 61.6,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 32205000
+  },
+  {
+    date: "2010/9/20",
+    open: 61.5,
+    high: 62,
+    low: 61.3,
+    close: 62,
+    adjClose: 40.25,
+    volume: 65877000
+  },
+  {
+    date: "2010/9/17",
+    open: 61,
+    high: 61.4,
+    low: 60.6,
+    close: 61.2,
+    adjClose: 39.73,
+    volume: 49333000
+  },
+  {
+    date: "2010/9/16",
+    open: 60.8,
+    high: 61,
+    low: 60.5,
+    close: 60.5,
+    adjClose: 39.28,
+    volume: 27832000
+  },
+  {
+    date: "2010/9/15",
+    open: 61.2,
+    high: 61.2,
+    low: 60.5,
+    close: 61.2,
+    adjClose: 39.73,
+    volume: 39289000
+  },
+  {
+    date: "2010/9/14",
+    open: 61.2,
+    high: 61.2,
+    low: 60.7,
+    close: 61,
+    adjClose: 39.6,
+    volume: 33482000
+  },
+  {
+    date: "2010/9/13",
+    open: 59.6,
+    high: 60.9,
+    low: 59.4,
+    close: 60.9,
+    adjClose: 39.54,
+    volume: 86590000
+  },
+  {
+    date: "2010/9/10",
+    open: 59.5,
+    high: 59.7,
+    low: 59.1,
+    close: 59.3,
+    adjClose: 38.5,
+    volume: 32620000
+  },
+  {
+    date: "2010/9/9",
+    open: 59.7,
+    high: 59.7,
+    low: 59.2,
+    close: 59.5,
+    adjClose: 38.63,
+    volume: 21194000
+  },
+  {
+    date: "2010/9/8",
+    open: 59.6,
+    high: 59.9,
+    low: 58.9,
+    close: 59.3,
+    adjClose: 38.5,
+    volume: 66266000
+  },
+  {
+    date: "2010/9/7",
+    open: 60.5,
+    high: 60.6,
+    low: 60.1,
+    close: 60.2,
+    adjClose: 39.08,
+    volume: 20235000
+  },
+  {
+    date: "2010/9/6",
+    open: 60.4,
+    high: 60.5,
+    low: 60.1,
+    close: 60.5,
+    adjClose: 39.28,
+    volume: 25773000
+  },
+  {
+    date: "2010/9/3",
+    open: 59.3,
+    high: 59.9,
+    low: 59.3,
+    close: 59.8,
+    adjClose: 38.82,
+    volume: 38247000
+  },
+  {
+    date: "2010/9/2",
+    open: 60,
+    high: 60.1,
+    low: 59.4,
+    close: 59.5,
+    adjClose: 38.63,
+    volume: 25353000
+  },
+  {
+    date: "2010/9/1",
+    open: 59.3,
+    high: 59.3,
+    low: 58.7,
+    close: 59.1,
+    adjClose: 38.37,
+    volume: 33670000
+  },
+  {
+    date: "2010/8/31",
+    open: 59,
+    high: 59,
+    low: 58.4,
+    close: 58.9,
+    adjClose: 38.24,
+    volume: 77308000
+  },
+  {
+    date: "2010/8/30",
+    open: 59.2,
+    high: 59.6,
+    low: 58.9,
+    close: 59.4,
+    adjClose: 38.56,
+    volume: 27583000
+  },
+  {
+    date: "2010/8/27",
+    open: 58.7,
+    high: 58.9,
+    low: 58.5,
+    close: 58.8,
+    adjClose: 38.17,
+    volume: 43374000
+  },
+  {
+    date: "2010/8/26",
+    open: 58.6,
+    high: 59.1,
+    low: 58.5,
+    close: 58.8,
+    adjClose: 38.17,
+    volume: 33540000
+  },
+  {
+    date: "2010/8/25",
+    open: 59.4,
+    high: 59.4,
+    low: 58.6,
+    close: 58.7,
+    adjClose: 38.11,
+    volume: 70486000
+  },
+  {
+    date: "2010/8/24",
+    open: 60,
+    high: 60.1,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 38.69,
+    volume: 30548000
+  },
+  {
+    date: "2010/8/23",
+    open: 59.9,
+    high: 60.9,
+    low: 59.6,
+    close: 60.1,
+    adjClose: 39.02,
+    volume: 27530000
+  },
+  {
+    date: "2010/8/20",
+    open: 59.8,
+    high: 60.2,
+    low: 59.7,
+    close: 59.9,
+    adjClose: 38.89,
+    volume: 30073000
+  },
+  {
+    date: "2010/8/19",
+    open: 59.5,
+    high: 60.4,
+    low: 59.5,
+    close: 60.1,
+    adjClose: 39.02,
+    volume: 45753000
+  },
+  {
+    date: "2010/8/18",
+    open: 60,
+    high: 60.3,
+    low: 59.5,
+    close: 59.6,
+    adjClose: 38.69,
+    volume: 42369000
+  },
+  {
+    date: "2010/8/17",
+    open: 60.5,
+    high: 60.5,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 38.82,
+    volume: 37445000
+  },
+  {
+    date: "2010/8/16",
+    open: 60,
+    high: 60.3,
+    low: 59.6,
+    close: 60.3,
+    adjClose: 39.15,
+    volume: 39691000
+  },
+  {
+    date: "2010/8/13",
+    open: 60.2,
+    high: 60.6,
+    low: 59.9,
+    close: 60.1,
+    adjClose: 39.02,
+    volume: 64069000
+  },
+  {
+    date: "2010/8/12",
+    open: 60.2,
+    high: 60.6,
+    low: 60.1,
+    close: 60.2,
+    adjClose: 39.08,
+    volume: 65513000
+  },
+  {
+    date: "2010/8/11",
+    open: 60.8,
+    high: 61.2,
+    low: 60.7,
+    close: 61,
+    adjClose: 39.6,
+    volume: 28506000
+  },
+  {
+    date: "2010/8/10",
+    open: 60.9,
+    high: 61.4,
+    low: 60.8,
+    close: 61,
+    adjClose: 39.6,
+    volume: 62187000
+  },
+  {
+    date: "2010/8/9",
+    open: 60.5,
+    high: 60.9,
+    low: 60.4,
+    close: 60.7,
+    adjClose: 39.41,
+    volume: 56912000
+  },
+  {
+    date: "2010/8/6",
+    open: 61.6,
+    high: 61.7,
+    low: 60.6,
+    close: 60.9,
+    adjClose: 39.54,
+    volume: 62419000
+  },
+  {
+    date: "2010/8/5",
+    open: 62,
+    high: 62,
+    low: 61.8,
+    close: 61.9,
+    adjClose: 40.19,
+    volume: 21813000
+  },
+  {
+    date: "2010/8/4",
+    open: 62,
+    high: 62.2,
+    low: 61.6,
+    close: 62,
+    adjClose: 40.25,
+    volume: 20350000
+  },
+  {
+    date: "2010/8/3",
+    open: 62.6,
+    high: 62.6,
+    low: 61.7,
+    close: 62,
+    adjClose: 40.25,
+    volume: 32913000
+  },
+  {
+    date: "2010/8/2",
+    open: 62.6,
+    high: 62.8,
+    low: 62.1,
+    close: 62.3,
+    adjClose: 40.45,
+    volume: 48015000
+  },
+  {
+    date: "2010/7/30",
+    open: 62.4,
+    high: 62.4,
+    low: 61.4,
+    close: 62.4,
+    adjClose: 40.51,
+    volume: 43549000
+  },
+  {
+    date: "2010/7/29",
+    open: 63,
+    high: 63,
+    low: 62.6,
+    close: 63,
+    adjClose: 40.9,
+    volume: 38043000
+  },
+  {
+    date: "2010/7/28",
+    open: 62.3,
+    high: 63,
+    low: 62.2,
+    close: 63,
+    adjClose: 40.9,
+    volume: 26119000
+  },
+  {
+    date: "2010/7/27",
+    open: 63,
+    high: 63,
+    low: 62.3,
+    close: 62.5,
+    adjClose: 40.58,
+    volume: 20942000
+  },
+  {
+    date: "2010/7/26",
+    open: 63,
+    high: 63.1,
+    low: 62.3,
+    close: 62.6,
+    adjClose: 40.64,
+    volume: 26958000
+  },
+  {
+    date: "2010/7/23",
+    open: 62.6,
+    high: 63,
+    low: 62.4,
+    close: 62.8,
+    adjClose: 40.77,
+    volume: 65925000
+  },
+  {
+    date: "2010/7/22",
+    open: 61.9,
+    high: 62.3,
+    low: 61.3,
+    close: 62,
+    adjClose: 40.25,
+    volume: 45274000
+  },
+  {
+    date: "2010/7/21",
+    open: 61.9,
+    high: 61.9,
+    low: 61.5,
+    close: 61.8,
+    adjClose: 40.12,
+    volume: 41172000
+  },
+  {
+    date: "2010/7/20",
+    open: 61.3,
+    high: 61.8,
+    low: 61,
+    close: 61.5,
+    adjClose: 39.93,
+    volume: 53905000
+  },
+  {
+    date: "2010/7/19",
+    open: 59.5,
+    high: 61.3,
+    low: 59.4,
+    close: 61.1,
+    adjClose: 39.67,
+    volume: 56238000
+  },
+  {
+    date: "2010/7/16",
+    open: 60.5,
+    high: 60.5,
+    low: 59.8,
+    close: 59.9,
+    adjClose: 38.89,
+    volume: 29874000
+  },
+  {
+    date: "2010/7/15",
+    open: 60.4,
+    high: 60.5,
+    low: 60.1,
+    close: 60.3,
+    adjClose: 39.15,
+    volume: 32938000
+  },
+  {
+    date: "2010/7/14",
+    open: 60.4,
+    high: 60.7,
+    low: 60.2,
+    close: 60.4,
+    adjClose: 39.21,
+    volume: 59702000
+  },
+  {
+    date: "2010/7/13",
+    open: 59.9,
+    high: 60.2,
+    low: 59.5,
+    close: 59.6,
+    adjClose: 38.69,
+    volume: 37431000
+  },
+  {
+    date: "2010/7/12",
+    open: 60.6,
+    high: 60.6,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 38.82,
+    volume: 44157000
+  },
+  {
+    date: "2010/7/9",
+    open: 60.4,
+    high: 60.5,
+    low: 59.9,
+    close: 60.4,
+    adjClose: 39.21,
+    volume: 37986000
+  },
+  {
+    date: "2010/7/8",
+    open: 60.1,
+    high: 60.4,
+    low: 59.7,
+    close: 60.4,
+    adjClose: 39.21,
+    volume: 50323000
+  },
+  {
+    date: "2010/7/7",
+    open: 59.8,
+    high: 59.9,
+    low: 59.2,
+    close: 59.5,
+    adjClose: 38.63,
+    volume: 59093000
+  },
+  {
+    date: "2010/7/6",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2010/7/6",
+    open: 58.9,
+    high: 59.9,
+    low: 58.8,
+    close: 59.9,
+    adjClose: 38.89,
+    volume: 69631000
+  },
+  {
+    date: "2010/7/5",
+    open: 60.3,
+    high: 61.8,
+    low: 60.3,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 86939000
+  },
+  {
+    date: "2010/7/2",
+    open: 60,
+    high: 60.7,
+    low: 60,
+    close: 60.3,
+    adjClose: 37.23,
+    volume: 66885000
+  },
+  {
+    date: "2010/7/1",
+    open: 60.6,
+    high: 60.6,
+    low: 60,
+    close: 60.2,
+    adjClose: 37.17,
+    volume: 15325000
+  },
+  {
+    date: "2010/6/30",
+    open: 60.3,
+    high: 61,
+    low: 60.3,
+    close: 60.6,
+    adjClose: 37.42,
+    volume: 58283000
+  },
+  {
+    date: "2010/6/29",
+    open: 62,
+    high: 62.6,
+    low: 61,
+    close: 61,
+    adjClose: 37.67,
+    volume: 47903000
+  },
+  {
+    date: "2010/6/28",
+    open: 61.2,
+    high: 61.7,
+    low: 61.1,
+    close: 61.7,
+    adjClose: 38.1,
+    volume: 20466000
+  },
+  {
+    date: "2010/6/25",
+    open: 61.5,
+    high: 61.9,
+    low: 61.3,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 30548000
+  },
+  {
+    date: "2010/6/24",
+    open: 62.1,
+    high: 62.2,
+    low: 61.7,
+    close: 62,
+    adjClose: 38.28,
+    volume: 35311000
+  },
+  {
+    date: "2010/6/23",
+    open: 62,
+    high: 62.5,
+    low: 62,
+    close: 62.1,
+    adjClose: 38.35,
+    volume: 37155000
+  },
+  {
+    date: "2010/6/22",
+    open: 63.3,
+    high: 63.3,
+    low: 62.6,
+    close: 62.6,
+    adjClose: 38.65,
+    volume: 30437000
+  },
+  {
+    date: "2010/6/21",
+    open: 63.1,
+    high: 63.7,
+    low: 63.1,
+    close: 63.3,
+    adjClose: 39.09,
+    volume: 68207000
+  },
+  {
+    date: "2010/6/18",
+    open: 62.4,
+    high: 62.7,
+    low: 61.8,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 46267000
+  },
+  {
+    date: "2010/6/17",
+    open: 62,
+    high: 62.3,
+    low: 61.7,
+    close: 62.1,
+    adjClose: 38.35,
+    volume: 55896000
+  },
+  {
+    date: "2010/6/15",
+    open: 61.3,
+    high: 61.9,
+    low: 60.7,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 37382000
+  },
+  {
+    date: "2010/6/14",
+    open: 60.9,
+    high: 61.4,
+    low: 60.9,
+    close: 61.1,
+    adjClose: 37.73,
+    volume: 44867000
+  },
+  {
+    date: "2010/6/11",
+    open: 60.2,
+    high: 60.5,
+    low: 60,
+    close: 60.5,
+    adjClose: 37.36,
+    volume: 41097000
+  },
+  {
+    date: "2010/6/10",
+    open: 59.8,
+    high: 59.8,
+    low: 58.8,
+    close: 59.4,
+    adjClose: 36.68,
+    volume: 28784000
+  },
+  {
+    date: "2010/6/9",
+    open: 58.4,
+    high: 59,
+    low: 58.3,
+    close: 58.6,
+    adjClose: 36.18,
+    volume: 45955000
+  },
+  {
+    date: "2010/6/8",
+    open: 58.9,
+    high: 59.2,
+    low: 58.4,
+    close: 58.5,
+    adjClose: 36.12,
+    volume: 40396000
+  },
+  {
+    date: "2010/6/7",
+    open: 59.7,
+    high: 59.7,
+    low: 58.7,
+    close: 59.2,
+    adjClose: 36.56,
+    volume: 69197000
+  },
+  {
+    date: "2010/6/4",
+    open: 60.5,
+    high: 61,
+    low: 60.2,
+    close: 61,
+    adjClose: 37.67,
+    volume: 41837000
+  },
+  {
+    date: "2010/6/3",
+    open: 60.8,
+    high: 61,
+    low: 60.5,
+    close: 60.8,
+    adjClose: 37.54,
+    volume: 46916000
+  },
+  {
+    date: "2010/6/2",
+    open: 59.8,
+    high: 60.4,
+    low: 59.3,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 35241000
+  },
+  {
+    date: "2010/6/1",
+    open: 59.9,
+    high: 60,
+    low: 59.2,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 27295000
+  },
+  {
+    date: "2010/5/31",
+    open: 59.1,
+    high: 60.2,
+    low: 58.8,
+    close: 60.2,
+    adjClose: 37.17,
+    volume: 25365000
+  },
+  {
+    date: "2010/5/28",
+    open: 58.9,
+    high: 59.4,
+    low: 58.3,
+    close: 58.7,
+    adjClose: 36.25,
+    volume: 61106000
+  },
+  {
+    date: "2010/5/27",
+    open: 58.5,
+    high: 59.3,
+    low: 57.7,
+    close: 58.7,
+    adjClose: 36.25,
+    volume: 55467000
+  },
+  {
+    date: "2010/5/26",
+    open: 58.9,
+    high: 59,
+    low: 58.5,
+    close: 58.9,
+    adjClose: 36.37,
+    volume: 42766000
+  },
+  {
+    date: "2010/5/25",
+    open: 58.8,
+    high: 58.9,
+    low: 58.1,
+    close: 58.4,
+    adjClose: 36.06,
+    volume: 48371000
+  },
+  {
+    date: "2010/5/24",
+    open: 59.6,
+    high: 59.6,
+    low: 58.7,
+    close: 59,
+    adjClose: 36.43,
+    volume: 19294000
+  },
+  {
+    date: "2010/5/21",
+    open: 58.3,
+    high: 59.1,
+    low: 57.9,
+    close: 58.8,
+    adjClose: 36.31,
+    volume: 45655000
+  },
+  {
+    date: "2010/5/20",
+    open: 59.5,
+    high: 59.7,
+    low: 58.9,
+    close: 58.9,
+    adjClose: 36.37,
+    volume: 31637000
+  },
+  {
+    date: "2010/5/19",
+    open: 59,
+    high: 59.6,
+    low: 58.6,
+    close: 59.3,
+    adjClose: 36.62,
+    volume: 48408000
+  },
+  {
+    date: "2010/5/18",
+    open: 59.6,
+    high: 60,
+    low: 59.4,
+    close: 59.5,
+    adjClose: 36.74,
+    volume: 30445000
+  },
+  {
+    date: "2010/5/17",
+    open: 60.5,
+    high: 60.5,
+    low: 59.1,
+    close: 59.2,
+    adjClose: 36.56,
+    volume: 73173000
+  },
+  {
+    date: "2010/5/14",
+    open: 60.7,
+    high: 61.5,
+    low: 60.5,
+    close: 61.2,
+    adjClose: 37.79,
+    volume: 31551000
+  },
+  {
+    date: "2010/5/13",
+    open: 60.6,
+    high: 61.5,
+    low: 60.5,
+    close: 61.2,
+    adjClose: 37.79,
+    volume: 39828000
+  },
+  {
+    date: "2010/5/12",
+    open: 61,
+    high: 61,
+    low: 60,
+    close: 60.1,
+    adjClose: 37.11,
+    volume: 27694000
+  },
+  {
+    date: "2010/5/11",
+    open: 60.4,
+    high: 60.6,
+    low: 59.9,
+    close: 60.1,
+    adjClose: 37.11,
+    volume: 67770000
+  },
+  {
+    date: "2010/5/10",
+    open: 59.4,
+    high: 60,
+    low: 59,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 56272000
+  },
+  {
+    date: "2010/5/7",
+    open: 58.6,
+    high: 60.1,
+    low: 58.5,
+    close: 59.4,
+    adjClose: 36.68,
+    volume: 61514000
+  },
+  {
+    date: "2010/5/6",
+    open: 59.8,
+    high: 59.9,
+    low: 59.2,
+    close: 59.5,
+    adjClose: 36.74,
+    volume: 48824000
+  },
+  {
+    date: "2010/5/5",
+    open: 59.9,
+    high: 60.2,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 93944000
+  },
+  {
+    date: "2010/5/4",
+    open: 61.9,
+    high: 62,
+    low: 60.8,
+    close: 61,
+    adjClose: 37.67,
+    volume: 38039000
+  },
+  {
+    date: "2010/5/3",
+    open: 62.6,
+    high: 62.6,
+    low: 61.4,
+    close: 61.6,
+    adjClose: 38.04,
+    volume: 22418000
+  },
+  {
+    date: "2010/4/30",
+    open: 61.8,
+    high: 62.7,
+    low: 61.8,
+    close: 61.8,
+    adjClose: 38.16,
+    volume: 43339000
+  },
+  {
+    date: "2010/4/29",
+    open: 62.2,
+    high: 62.2,
+    low: 61.6,
+    close: 61.6,
+    adjClose: 38.04,
+    volume: 40178000
+  },
+  {
+    date: "2010/4/28",
+    open: 62.1,
+    high: 62.6,
+    low: 62,
+    close: 62.1,
+    adjClose: 38.35,
+    volume: 72599000
+  },
+  {
+    date: "2010/4/27",
+    open: 63.5,
+    high: 63.7,
+    low: 63.1,
+    close: 63.7,
+    adjClose: 39.33,
+    volume: 25300000
+  },
+  {
+    date: "2010/4/26",
+    open: 62.4,
+    high: 63.6,
+    low: 62.4,
+    close: 63.5,
+    adjClose: 39.21,
+    volume: 67358000
+  },
+  {
+    date: "2010/4/23",
+    open: 61.9,
+    high: 62.4,
+    low: 61.6,
+    close: 61.7,
+    adjClose: 38.1,
+    volume: 48869000
+  },
+  {
+    date: "2010/4/22",
+    open: 61.8,
+    high: 61.8,
+    low: 60.8,
+    close: 61.6,
+    adjClose: 38.04,
+    volume: 90506000
+  },
+  {
+    date: "2010/4/21",
+    open: 62.9,
+    high: 63.1,
+    low: 62.3,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 44895000
+  },
+  {
+    date: "2010/4/20",
+    open: 62.9,
+    high: 63,
+    low: 62.4,
+    close: 62.8,
+    adjClose: 38.78,
+    volume: 37426000
+  },
+  {
+    date: "2010/4/19",
+    open: 62.5,
+    high: 63.2,
+    low: 62.4,
+    close: 62.6,
+    adjClose: 38.65,
+    volume: 66249000
+  },
+  {
+    date: "2010/4/16",
+    open: 63.6,
+    high: 63.7,
+    low: 62.9,
+    close: 63,
+    adjClose: 38.9,
+    volume: 49654000
+  },
+  {
+    date: "2010/4/15",
+    open: 64.5,
+    high: 64.9,
+    low: 64,
+    close: 64.4,
+    adjClose: 39.77,
+    volume: 70894000
+  },
+  {
+    date: "2010/4/14",
+    open: 63.1,
+    high: 63.8,
+    low: 62.9,
+    close: 63.8,
+    adjClose: 39.4,
+    volume: 55548000
+  },
+  {
+    date: "2010/4/13",
+    open: 63,
+    high: 63.1,
+    low: 62.1,
+    close: 62.9,
+    adjClose: 38.84,
+    volume: 42708000
+  },
+  {
+    date: "2010/4/12",
+    open: 63.3,
+    high: 63.4,
+    low: 62.8,
+    close: 63.1,
+    adjClose: 38.96,
+    volume: 34914000
+  },
+  {
+    date: "2010/4/9",
+    open: 61.9,
+    high: 63,
+    low: 61.9,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 31569000
+  },
+  {
+    date: "2010/4/8",
+    open: 62.8,
+    high: 63,
+    low: 62.1,
+    close: 62.3,
+    adjClose: 38.47,
+    volume: 48530000
+  },
+  {
+    date: "2010/4/7",
+    open: 63.5,
+    high: 63.5,
+    low: 63.1,
+    close: 63.5,
+    adjClose: 39.21,
+    volume: 48336000
+  },
+  {
+    date: "2010/4/6",
+    open: 62.8,
+    high: 63.5,
+    low: 62.8,
+    close: 63.4,
+    adjClose: 39.15,
+    volume: 52915000
+  },
+  {
+    date: "2010/4/2",
+    open: 62.5,
+    high: 62.5,
+    low: 62.1,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 17299000
+  },
+  {
+    date: "2010/4/1",
+    open: 61.5,
+    high: 62.5,
+    low: 61.5,
+    close: 62.1,
+    adjClose: 38.35,
+    volume: 54656000
+  },
+  {
+    date: "2010/3/31",
+    open: 62.2,
+    high: 62.2,
+    low: 61.5,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 39228000
+  },
+  {
+    date: "2010/3/30",
+    open: 62.4,
+    high: 62.4,
+    low: 61.7,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 29950000
+  },
+  {
+    date: "2010/3/29",
+    open: 62,
+    high: 62.3,
+    low: 61.7,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 37464000
+  },
+  {
+    date: "2010/3/26",
+    open: 61.3,
+    high: 62,
+    low: 60.3,
+    close: 62,
+    adjClose: 38.28,
+    volume: 77332000
+  },
+  {
+    date: "2010/3/25",
+    open: 60.9,
+    high: 61.5,
+    low: 60.2,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 62713000
+  },
+  {
+    date: "2010/3/24",
+    open: 60.1,
+    high: 60.8,
+    low: 60.1,
+    close: 60.6,
+    adjClose: 37.42,
+    volume: 46973000
+  },
+  {
+    date: "2010/3/23",
+    open: 59.5,
+    high: 60.1,
+    low: 59.5,
+    close: 59.6,
+    adjClose: 36.8,
+    volume: 48107000
+  },
+  {
+    date: "2010/3/22",
+    open: 59.6,
+    high: 59.6,
+    low: 58.8,
+    close: 59,
+    adjClose: 36.43,
+    volume: 47044000
+  },
+  {
+    date: "2010/3/19",
+    open: 60,
+    high: 60.3,
+    low: 59.7,
+    close: 60,
+    adjClose: 37.05,
+    volume: 45829000
+  },
+  {
+    date: "2010/3/18",
+    open: 60.1,
+    high: 60.6,
+    low: 60,
+    close: 60.4,
+    adjClose: 37.3,
+    volume: 70048000
+  },
+  {
+    date: "2010/3/17",
+    open: 60.5,
+    high: 60.9,
+    low: 59.9,
+    close: 60.5,
+    adjClose: 37.36,
+    volume: 68876000
+  },
+  {
+    date: "2010/3/16",
+    open: 60.1,
+    high: 60.2,
+    low: 59.7,
+    close: 59.7,
+    adjClose: 36.86,
+    volume: 29394000
+  },
+  {
+    date: "2010/3/15",
+    open: 61.3,
+    high: 61.3,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 37911000
+  },
+  {
+    date: "2010/3/12",
+    open: 61.4,
+    high: 61.5,
+    low: 60.6,
+    close: 60.8,
+    adjClose: 37.54,
+    volume: 67894000
+  },
+  {
+    date: "2010/3/11",
+    open: 61.6,
+    high: 61.8,
+    low: 61.2,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 25340000
+  },
+  {
+    date: "2010/3/10",
+    open: 61.3,
+    high: 61.4,
+    low: 60.8,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 30540000
+  },
+  {
+    date: "2010/3/9",
+    open: 61.2,
+    high: 61.4,
+    low: 60.8,
+    close: 61.3,
+    adjClose: 37.85,
+    volume: 29829000
+  },
+  {
+    date: "2010/3/8",
+    open: 60.9,
+    high: 61.2,
+    low: 60.6,
+    close: 61.2,
+    adjClose: 37.79,
+    volume: 43993000
+  },
+  {
+    date: "2010/3/5",
+    open: 59.8,
+    high: 60.4,
+    low: 59.6,
+    close: 60.4,
+    adjClose: 37.3,
+    volume: 59062000
+  },
+  {
+    date: "2010/3/4",
+    open: 59.8,
+    high: 59.8,
+    low: 58.4,
+    close: 59.2,
+    adjClose: 36.56,
+    volume: 53405000
+  },
+  {
+    date: "2010/3/3",
+    open: 59.6,
+    high: 60.1,
+    low: 59.6,
+    close: 60,
+    adjClose: 37.05,
+    volume: 32150000
+  },
+  {
+    date: "2010/3/2",
+    open: 60.5,
+    high: 60.5,
+    low: 59.5,
+    close: 59.9,
+    adjClose: 36.99,
+    volume: 53495000
+  },
+  {
+    date: "2010/3/1",
+    open: 59.5,
+    high: 59.9,
+    low: 58.2,
+    close: 59.6,
+    adjClose: 36.8,
+    volume: 60146000
+  },
+  {
+    date: "2010/2/26",
+    open: 58.2,
+    high: 58.9,
+    low: 58,
+    close: 58.8,
+    adjClose: 36.31,
+    volume: 30877000
+  },
+  {
+    date: "2010/2/25",
+    open: 58.5,
+    high: 58.9,
+    low: 57.9,
+    close: 58.2,
+    adjClose: 35.94,
+    volume: 55655000
+  },
+  {
+    date: "2010/2/24",
+    open: 59.2,
+    high: 59.2,
+    low: 58.4,
+    close: 58.5,
+    adjClose: 36.12,
+    volume: 54884000
+  },
+  {
+    date: "2010/2/23",
+    open: 59.6,
+    high: 59.9,
+    low: 59.1,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 50343000
+  },
+  {
+    date: "2010/2/22",
+    open: 60.5,
+    high: 60.5,
+    low: 59,
+    close: 59,
+    adjClose: 36.43,
+    volume: 47519000
+  },
+  {
+    date: "2010/2/10",
+    open: 59,
+    high: 59.2,
+    low: 58.2,
+    close: 58.4,
+    adjClose: 36.06,
+    volume: 53679000
+  },
+  {
+    date: "2010/2/9",
+    open: 58.4,
+    high: 59.2,
+    low: 57.7,
+    close: 58.6,
+    adjClose: 36.18,
+    volume: 45754000
+  },
+  {
+    date: "2010/2/8",
+    open: 58,
+    high: 58.2,
+    low: 57,
+    close: 57.4,
+    adjClose: 35.44,
+    volume: 45247000
+  },
+  {
+    date: "2010/2/5",
+    open: 57.6,
+    high: 57.9,
+    low: 57.2,
+    close: 57.2,
+    adjClose: 35.32,
+    volume: 62227000
+  },
+  {
+    date: "2010/2/4",
+    open: 60,
+    high: 60,
+    low: 59,
+    close: 59.1,
+    adjClose: 36.49,
+    volume: 42564000
+  },
+  {
+    date: "2010/2/3",
+    open: 60.2,
+    high: 60.3,
+    low: 58.8,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 42426000
+  },
+  {
+    date: "2010/2/2",
+    open: 60.2,
+    high: 60.4,
+    low: 59,
+    close: 59,
+    adjClose: 36.43,
+    volume: 65510000
+  },
+  {
+    date: "2010/2/1",
+    open: 60.7,
+    high: 60.7,
+    low: 59.5,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 75480000
+  },
+  {
+    date: "2010/1/29",
+    open: 60.1,
+    high: 61.5,
+    low: 59.4,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 91560000
+  },
+  {
+    date: "2010/1/28",
+    open: 60.5,
+    high: 61.5,
+    low: 59.8,
+    close: 60,
+    adjClose: 37.05,
+    volume: 43988000
+  },
+  {
+    date: "2010/1/27",
+    open: 60.1,
+    high: 60.4,
+    low: 59.5,
+    close: 59.6,
+    adjClose: 36.8,
+    volume: 52639000
+  },
+  {
+    date: "2010/1/26",
+    open: 60.6,
+    high: 61.2,
+    low: 60,
+    close: 60.1,
+    adjClose: 37.11,
+    volume: 79112000
+  },
+  {
+    date: "2010/1/25",
+    open: 60.1,
+    high: 60.8,
+    low: 60.1,
+    close: 60.4,
+    adjClose: 37.3,
+    volume: 62151000
+  },
+  {
+    date: "2010/1/22",
+    open: 61.5,
+    high: 61.7,
+    low: 61,
+    close: 61.1,
+    adjClose: 37.73,
+    volume: 63918000
+  },
+  {
+    date: "2010/1/21",
+    open: 63,
+    high: 63,
+    low: 62.1,
+    close: 62.6,
+    adjClose: 38.65,
+    volume: 24738000
+  },
+  {
+    date: "2010/1/20",
+    open: 62.9,
+    high: 63.2,
+    low: 62.2,
+    close: 63,
+    adjClose: 38.9,
+    volume: 52281000
+  },
+  {
+    date: "2010/1/19",
+    open: 63,
+    high: 63.2,
+    low: 62,
+    close: 62.5,
+    adjClose: 38.59,
+    volume: 47202000
+  },
+  {
+    date: "2010/1/18",
+    open: 62.8,
+    high: 63.1,
+    low: 62.8,
+    close: 62.9,
+    adjClose: 38.84,
+    volume: 30136000
+  },
+  {
+    date: "2010/1/15",
+    open: 62.9,
+    high: 63.5,
+    low: 62.8,
+    close: 63.5,
+    adjClose: 39.21,
+    volume: 47852000
+  },
+  {
+    date: "2010/1/14",
+    open: 63.6,
+    high: 63.6,
+    low: 63,
+    close: 63.2,
+    adjClose: 39.03,
+    volume: 36149000
+  },
+  {
+    date: "2010/1/13",
+    open: 63,
+    high: 63.1,
+    low: 62.6,
+    close: 62.8,
+    adjClose: 38.78,
+    volume: 47976000
+  },
+  {
+    date: "2010/1/12",
+    open: 64.4,
+    high: 64.4,
+    low: 63.3,
+    close: 63.6,
+    adjClose: 39.27,
+    volume: 49853000
+  },
+  {
+    date: "2010/1/11",
+    open: 64,
+    high: 64.9,
+    low: 63.5,
+    close: 64.5,
+    adjClose: 39.83,
+    volume: 36799000
+  },
+  {
+    date: "2010/1/8",
+    open: 63.5,
+    high: 64.3,
+    low: 63.5,
+    close: 64,
+    adjClose: 39.52,
+    volume: 46076000
+  },
+  {
+    date: "2010/1/7",
+    open: 64.9,
+    high: 65,
+    low: 64.2,
+    close: 64.2,
+    adjClose: 39.64,
+    volume: 42134000
+  },
+  {
+    date: "2010/1/6",
+    open: 64.5,
+    high: 64.9,
+    low: 63.7,
+    close: 64.9,
+    adjClose: 40.08,
+    volume: 49261000
+  },
+  {
+    date: "2010/1/5",
+    open: 65,
+    high: 65.1,
+    low: 63.9,
+    close: 64.5,
+    adjClose: 39.83,
+    volume: 37138000
+  },
+  {
+    date: "2010/1/4",
+    open: 65,
+    high: 65,
+    low: 64,
+    close: 64.9,
+    adjClose: 40.08,
+    volume: 39407000
+  },
+  {
+    date: "2009/12/31",
+    open: 64.4,
+    high: 64.5,
+    low: 63.9,
+    close: 64.5,
+    adjClose: 39.83,
+    volume: 51979000
+  },
+  {
+    date: "2009/12/30",
+    open: 63.3,
+    high: 64,
+    low: 63.3,
+    close: 63.9,
+    adjClose: 39.46,
+    volume: 59566000
+  },
+  {
+    date: "2009/12/29",
+    open: 63.7,
+    high: 63.7,
+    low: 62.9,
+    close: 63.3,
+    adjClose: 39.09,
+    volume: 28498000
+  },
+  {
+    date: "2009/12/28",
+    open: 63.4,
+    high: 64,
+    low: 63.4,
+    close: 63.7,
+    adjClose: 39.33,
+    volume: 39136000
+  },
+  {
+    date: "2009/12/25",
+    open: 63.9,
+    high: 63.9,
+    low: 63.1,
+    close: 63.4,
+    adjClose: 39.15,
+    volume: 20204000
+  },
+  {
+    date: "2009/12/24",
+    open: 63.4,
+    high: 63.7,
+    low: 63.3,
+    close: 63.6,
+    adjClose: 39.27,
+    volume: 56297000
+  },
+  {
+    date: "2009/12/23",
+    open: 63,
+    high: 63.5,
+    low: 62.8,
+    close: 63.4,
+    adjClose: 39.15,
+    volume: 65488000
+  },
+  {
+    date: "2009/12/22",
+    open: 62.6,
+    high: 62.9,
+    low: 62.5,
+    close: 62.9,
+    adjClose: 38.84,
+    volume: 43944000
+  },
+  {
+    date: "2009/12/21",
+    open: 62.4,
+    high: 62.8,
+    low: 62.2,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 52334000
+  },
+  {
+    date: "2009/12/18",
+    open: 61.5,
+    high: 61.9,
+    low: 61.3,
+    close: 61.9,
+    adjClose: 38.22,
+    volume: 32071000
+  },
+  {
+    date: "2009/12/17",
+    open: 62.1,
+    high: 62.4,
+    low: 61.5,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 33109000
+  },
+  {
+    date: "2009/12/16",
+    open: 62.5,
+    high: 62.5,
+    low: 61.5,
+    close: 61.8,
+    adjClose: 38.16,
+    volume: 49488000
+  },
+  {
+    date: "2009/12/15",
+    open: 62.5,
+    high: 62.7,
+    low: 62.2,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 27949000
+  },
+  {
+    date: "2009/12/14",
+    open: 62.1,
+    high: 62.8,
+    low: 62,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 38704000
+  },
+  {
+    date: "2009/12/11",
+    open: 61.9,
+    high: 62.6,
+    low: 61.4,
+    close: 62.6,
+    adjClose: 38.65,
+    volume: 40997000
+  },
+  {
+    date: "2009/12/10",
+    open: 62.8,
+    high: 62.8,
+    low: 61,
+    close: 61.3,
+    adjClose: 37.85,
+    volume: 62875000
+  },
+  {
+    date: "2009/12/9",
+    open: 62.2,
+    high: 62.4,
+    low: 61.9,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 37770000
+  },
+  {
+    date: "2009/12/8",
+    open: 62.9,
+    high: 62.9,
+    low: 61.9,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 39388000
+  },
+  {
+    date: "2009/12/7",
+    open: 62,
+    high: 62.8,
+    low: 62,
+    close: 62.5,
+    adjClose: 38.59,
+    volume: 46543000
+  },
+  {
+    date: "2009/12/4",
+    open: 61.5,
+    high: 61.9,
+    low: 61.3,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 26379000
+  },
+  {
+    date: "2009/12/3",
+    open: 61.6,
+    high: 61.8,
+    low: 61,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 54543000
+  },
+  {
+    date: "2009/12/2",
+    open: 61.4,
+    high: 61.5,
+    low: 60.5,
+    close: 60.8,
+    adjClose: 37.54,
+    volume: 38474000
+  },
+  {
+    date: "2009/12/1",
+    open: 61.5,
+    high: 61.6,
+    low: 60.4,
+    close: 60.7,
+    adjClose: 37.48,
+    volume: 53946000
+  },
+  {
+    date: "2009/11/30",
+    open: 61,
+    high: 61.3,
+    low: 60.7,
+    close: 61.1,
+    adjClose: 37.73,
+    volume: 32695000
+  },
+  {
+    date: "2009/11/27",
+    open: 61.1,
+    high: 61.3,
+    low: 60,
+    close: 60,
+    adjClose: 37.05,
+    volume: 93737000
+  },
+  {
+    date: "2009/11/26",
+    open: 62.8,
+    high: 63,
+    low: 61.8,
+    close: 62,
+    adjClose: 38.28,
+    volume: 31172000
+  },
+  {
+    date: "2009/11/25",
+    open: 62.2,
+    high: 63,
+    low: 62.2,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 46553000
+  },
+  {
+    date: "2009/11/24",
+    open: 62.2,
+    high: 62.5,
+    low: 61.8,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 25992000
+  },
+  {
+    date: "2009/11/23",
+    open: 61.4,
+    high: 62.1,
+    low: 61.4,
+    close: 62,
+    adjClose: 38.28,
+    volume: 25386000
+  },
+  {
+    date: "2009/11/20",
+    open: 62.8,
+    high: 62.8,
+    low: 61.4,
+    close: 61.7,
+    adjClose: 38.1,
+    volume: 50419000
+  },
+  {
+    date: "2009/11/19",
+    open: 62.9,
+    high: 63.2,
+    low: 62.7,
+    close: 62.9,
+    adjClose: 38.84,
+    volume: 40088000
+  },
+  {
+    date: "2009/11/18",
+    open: 63,
+    high: 63.2,
+    low: 62.7,
+    close: 62.9,
+    adjClose: 38.84,
+    volume: 54524000
+  },
+  {
+    date: "2009/11/17",
+    open: 63,
+    high: 63.2,
+    low: 62.1,
+    close: 62.6,
+    adjClose: 38.65,
+    volume: 57822000
+  },
+  {
+    date: "2009/11/16",
+    open: 62.4,
+    high: 62.7,
+    low: 62.2,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 59633000
+  },
+  {
+    date: "2009/11/13",
+    open: 61.8,
+    high: 62.2,
+    low: 61.5,
+    close: 61.8,
+    adjClose: 38.16,
+    volume: 43120000
+  },
+  {
+    date: "2009/11/12",
+    open: 62.5,
+    high: 62.8,
+    low: 61.9,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 102770000
+  },
+  {
+    date: "2009/11/11",
+    open: 61,
+    high: 62.5,
+    low: 60.9,
+    close: 62.2,
+    adjClose: 38.41,
+    volume: 94778000
+  },
+  {
+    date: "2009/11/10",
+    open: 60.4,
+    high: 60.5,
+    low: 60,
+    close: 60.5,
+    adjClose: 37.36,
+    volume: 40584000
+  },
+  {
+    date: "2009/11/9",
+    open: 60.5,
+    high: 60.5,
+    low: 59.8,
+    close: 60,
+    adjClose: 37.05,
+    volume: 34813000
+  },
+  {
+    date: "2009/11/6",
+    open: 60.3,
+    high: 60.3,
+    low: 59.7,
+    close: 60,
+    adjClose: 37.05,
+    volume: 44520000
+  },
+  {
+    date: "2009/11/5",
+    open: 59.9,
+    high: 60,
+    low: 59.4,
+    close: 59.7,
+    adjClose: 36.86,
+    volume: 43726000
+  },
+  {
+    date: "2009/11/4",
+    open: 59.2,
+    high: 59.7,
+    low: 59,
+    close: 59.6,
+    adjClose: 36.8,
+    volume: 64073000
+  },
+  {
+    date: "2009/11/3",
+    open: 59.7,
+    high: 59.7,
+    low: 59.1,
+    close: 59.2,
+    adjClose: 36.56,
+    volume: 52726000
+  },
+  {
+    date: "2009/11/2",
+    open: 59.5,
+    high: 60.2,
+    low: 59.2,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 38079000
+  },
+  {
+    date: "2009/10/30",
+    open: 61.4,
+    high: 61.4,
+    low: 60,
+    close: 60,
+    adjClose: 37.05,
+    volume: 65520000
+  },
+  {
+    date: "2009/10/29",
+    open: 60,
+    high: 60.6,
+    low: 59,
+    close: 60.3,
+    adjClose: 37.23,
+    volume: 103965000
+  },
+  {
+    date: "2009/10/28",
+    open: 61.3,
+    high: 61.5,
+    low: 60.5,
+    close: 60.5,
+    adjClose: 37.36,
+    volume: 62705000
+  },
+  {
+    date: "2009/10/27",
+    open: 61.5,
+    high: 61.9,
+    low: 61.1,
+    close: 61.3,
+    adjClose: 37.85,
+    volume: 49427000
+  },
+  {
+    date: "2009/10/26",
+    open: 61.8,
+    high: 62.3,
+    low: 61.5,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 36720000
+  },
+  {
+    date: "2009/10/23",
+    open: 62,
+    high: 62.1,
+    low: 61.5,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 36966000
+  },
+  {
+    date: "2009/10/22",
+    open: 62.2,
+    high: 62.2,
+    low: 61,
+    close: 61.8,
+    adjClose: 38.16,
+    volume: 72693000
+  },
+  {
+    date: "2009/10/21",
+    open: 61.7,
+    high: 62.2,
+    low: 61.3,
+    close: 61.6,
+    adjClose: 38.04,
+    volume: 48816000
+  },
+  {
+    date: "2009/10/20",
+    open: 61.8,
+    high: 62.3,
+    low: 61.8,
+    close: 62,
+    adjClose: 38.28,
+    volume: 67524000
+  },
+  {
+    date: "2009/10/19",
+    open: 61.7,
+    high: 61.9,
+    low: 61,
+    close: 61.4,
+    adjClose: 37.91,
+    volume: 103211000
+  },
+  {
+    date: "2009/10/16",
+    open: 62.5,
+    high: 63,
+    low: 61.8,
+    close: 61.9,
+    adjClose: 38.22,
+    volume: 75045000
+  },
+  {
+    date: "2009/10/15",
+    open: 64,
+    high: 64,
+    low: 63,
+    close: 63.8,
+    adjClose: 39.4,
+    volume: 62541000
+  },
+  {
+    date: "2009/10/14",
+    open: 62.5,
+    high: 63.5,
+    low: 62.3,
+    close: 63.5,
+    adjClose: 39.21,
+    volume: 85334000
+  },
+  {
+    date: "2009/10/13",
+    open: 60.6,
+    high: 61.8,
+    low: 60.3,
+    close: 61.8,
+    adjClose: 38.16,
+    volume: 51266000
+  },
+  {
+    date: "2009/10/12",
+    open: 61.8,
+    high: 61.8,
+    low: 60.6,
+    close: 61.2,
+    adjClose: 37.79,
+    volume: 36486000
+  },
+  {
+    date: "2009/10/9",
+    open: 60.8,
+    high: 61.3,
+    low: 60.7,
+    close: 61.1,
+    adjClose: 37.73,
+    volume: 67762000
+  },
+  {
+    date: "2009/10/8",
+    open: 61.2,
+    high: 61.8,
+    low: 60.9,
+    close: 60.9,
+    adjClose: 37.61,
+    volume: 82064000
+  },
+  {
+    date: "2009/10/7",
+    open: 63,
+    high: 63,
+    low: 61.7,
+    close: 62.1,
+    adjClose: 38.35,
+    volume: 62388000
+  },
+  {
+    date: "2009/10/6",
+    open: 62,
+    high: 63,
+    low: 61.6,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 81906000
+  },
+  {
+    date: "2009/10/5",
+    open: 62,
+    high: 62.2,
+    low: 61.5,
+    close: 62,
+    adjClose: 38.28,
+    volume: 60826000
+  },
+  {
+    date: "2009/10/2",
+    open: 63,
+    high: 63.3,
+    low: 62.5,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 77795000
+  },
+  {
+    date: "2009/10/1",
+    open: 65,
+    high: 65.2,
+    low: 63.8,
+    close: 65,
+    adjClose: 40.14,
+    volume: 54800000
+  },
+  {
+    date: "2009/9/30",
+    open: 63.7,
+    high: 65,
+    low: 63.7,
+    close: 64.5,
+    adjClose: 39.83,
+    volume: 102127000
+  },
+  {
+    date: "2009/9/29",
+    open: 62,
+    high: 63.7,
+    low: 62,
+    close: 63.7,
+    adjClose: 39.33,
+    volume: 82548000
+  },
+  {
+    date: "2009/9/28",
+    open: 61.4,
+    high: 61.4,
+    low: 60.5,
+    close: 60.7,
+    adjClose: 37.48,
+    volume: 27489000
+  },
+  {
+    date: "2009/9/25",
+    open: 61,
+    high: 61.3,
+    low: 60.4,
+    close: 61.1,
+    adjClose: 37.73,
+    volume: 45106000
+  },
+  {
+    date: "2009/9/24",
+    open: 62,
+    high: 62,
+    low: 60.5,
+    close: 60.8,
+    adjClose: 37.54,
+    volume: 54162000
+  },
+  {
+    date: "2009/9/23",
+    open: 62.7,
+    high: 62.9,
+    low: 61.4,
+    close: 62.3,
+    adjClose: 38.47,
+    volume: 34755000
+  },
+  {
+    date: "2009/9/22",
+    open: 62,
+    high: 62.8,
+    low: 62,
+    close: 62.5,
+    adjClose: 38.59,
+    volume: 24321000
+  },
+  {
+    date: "2009/9/21",
+    open: 62.5,
+    high: 62.6,
+    low: 61.5,
+    close: 62.3,
+    adjClose: 38.47,
+    volume: 33473000
+  },
+  {
+    date: "2009/9/18",
+    open: 62,
+    high: 62.7,
+    low: 61.8,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 46352000
+  },
+  {
+    date: "2009/9/17",
+    open: 63,
+    high: 63,
+    low: 62,
+    close: 62.5,
+    adjClose: 38.59,
+    volume: 38573000
+  },
+  {
+    date: "2009/9/16",
+    open: 62.6,
+    high: 63.4,
+    low: 62.5,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 35054000
+  },
+  {
+    date: "2009/9/15",
+    open: 61,
+    high: 62.7,
+    low: 61,
+    close: 62.5,
+    adjClose: 38.59,
+    volume: 36111000
+  },
+  {
+    date: "2009/9/14",
+    open: 62.4,
+    high: 62.5,
+    low: 60.8,
+    close: 61.5,
+    adjClose: 37.98,
+    volume: 44672000
+  },
+  {
+    date: "2009/9/11",
+    open: 62.8,
+    high: 62.8,
+    low: 61.9,
+    close: 62.4,
+    adjClose: 38.53,
+    volume: 47431000
+  },
+  {
+    date: "2009/9/10",
+    open: 64.7,
+    high: 65,
+    low: 62,
+    close: 63.5,
+    adjClose: 39.21,
+    volume: 96349000
+  },
+  {
+    date: "2009/9/9",
+    open: 62.8,
+    high: 63,
+    low: 62,
+    close: 62,
+    adjClose: 38.28,
+    volume: 50654000
+  },
+  {
+    date: "2009/9/8",
+    open: 62,
+    high: 63.1,
+    low: 61.4,
+    close: 62.7,
+    adjClose: 38.72,
+    volume: 70265000
+  },
+  {
+    date: "2009/9/7",
+    open: 60.1,
+    high: 62,
+    low: 59.7,
+    close: 62,
+    adjClose: 38.28,
+    volume: 74764000
+  },
+  {
+    date: "2009/9/4",
+    open: 60.2,
+    high: 60.2,
+    low: 59.5,
+    close: 60,
+    adjClose: 37.05,
+    volume: 44401000
+  },
+  {
+    date: "2009/9/3",
+    open: 60.2,
+    high: 60.2,
+    low: 59.3,
+    close: 59.8,
+    adjClose: 36.93,
+    volume: 42433000
+  },
+  {
+    date: "2009/9/2",
+    open: 60.4,
+    high: 60.8,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 36.8,
+    volume: 61298000
+  },
+  {
+    date: "2009/9/1",
+    open: 59.4,
+    high: 61,
+    low: 58.7,
+    close: 61,
+    adjClose: 37.67,
+    volume: 84266000
+  },
+  {
+    date: "2009/8/31",
+    open: 59.6,
+    high: 59.8,
+    low: 58.5,
+    close: 59.2,
+    adjClose: 36.56,
+    volume: 45013000
+  },
+  {
+    date: "2009/8/28",
+    open: 59,
+    high: 59.5,
+    low: 58.3,
+    close: 59.5,
+    adjClose: 36.74,
+    volume: 49629000
+  },
+  {
+    date: "2009/8/27",
+    open: 58.5,
+    high: 58.9,
+    low: 57.9,
+    close: 58.8,
+    adjClose: 36.31,
+    volume: 30410000
+  },
+  {
+    date: "2009/8/26",
+    open: 58.7,
+    high: 59,
+    low: 58,
+    close: 59,
+    adjClose: 36.43,
+    volume: 50183000
+  },
+  {
+    date: "2009/8/25",
+    open: 58.6,
+    high: 59,
+    low: 58.3,
+    close: 58.7,
+    adjClose: 36.25,
+    volume: 35268000
+  },
+  {
+    date: "2009/8/24",
+    open: 57.8,
+    high: 59,
+    low: 57.6,
+    close: 58.4,
+    adjClose: 36.06,
+    volume: 59282000
+  },
+  {
+    date: "2009/8/21",
+    open: 58,
+    high: 58.1,
+    low: 56.5,
+    close: 56.8,
+    adjClose: 35.07,
+    volume: 42051000
+  },
+  {
+    date: "2009/8/20",
+    open: 57.4,
+    high: 57.8,
+    low: 56.5,
+    close: 57.7,
+    adjClose: 35.63,
+    volume: 25658000
+  },
+  {
+    date: "2009/8/19",
+    open: 57.5,
+    high: 57.9,
+    low: 57.3,
+    close: 57.4,
+    adjClose: 35.44,
+    volume: 21153000
+  },
+  {
+    date: "2009/8/18",
+    open: 57.1,
+    high: 57.8,
+    low: 56.6,
+    close: 57.6,
+    adjClose: 35.57,
+    volume: 32027000
+  },
+  {
+    date: "2009/8/17",
+    open: 59,
+    high: 59.2,
+    low: 57.4,
+    close: 57.8,
+    adjClose: 35.69,
+    volume: 48628000
+  },
+  {
+    date: "2009/8/14",
+    open: 59.2,
+    high: 59.4,
+    low: 58.5,
+    close: 58.9,
+    adjClose: 36.37,
+    volume: 51220000
+  },
+  {
+    date: "2009/8/13",
+    open: 58,
+    high: 58.6,
+    low: 57.5,
+    close: 58.6,
+    adjClose: 36.18,
+    volume: 79925000
+  },
+  {
+    date: "2009/8/12",
+    open: 57.1,
+    high: 57.5,
+    low: 56.5,
+    close: 57.5,
+    adjClose: 35.51,
+    volume: 42908000
+  },
+  {
+    date: "2009/8/11",
+    open: 57.3,
+    high: 57.6,
+    low: 56.5,
+    close: 57.1,
+    adjClose: 35.26,
+    volume: 64378000
+  },
+  {
+    date: "2009/8/10",
+    open: 57.3,
+    high: 58.3,
+    low: 57,
+    close: 57.8,
+    adjClose: 35.69,
+    volume: 69103000
+  },
+  {
+    date: "2009/8/7",
+    open: 56.8,
+    high: 56.8,
+    low: 56.8,
+    close: 56.8,
+    adjClose: 35.07,
+    volume: null
+  },
+  {
+    date: "2009/8/6",
+    open: 57.5,
+    high: 57.5,
+    low: 56.5,
+    close: 56.8,
+    adjClose: 35.07,
+    volume: 53205000
+  },
+  {
+    date: "2009/8/5",
+    open: 57.9,
+    high: 58,
+    low: 56.6,
+    close: 56.9,
+    adjClose: 35.14,
+    volume: 53365000
+  },
+  {
+    date: "2009/8/4",
+    open: 58.6,
+    high: 58.8,
+    low: 56.7,
+    close: 57.6,
+    adjClose: 35.57,
+    volume: 62034000
+  },
+  {
+    date: "2009/8/3",
+    open: 58.6,
+    high: 58.6,
+    low: 57.1,
+    close: 58.3,
+    adjClose: 36,
+    volume: 69991000
+  },
+  {
+    date: "2009/7/31",
+    open: 58.3,
+    high: 59.2,
+    low: 58.1,
+    close: 58.9,
+    adjClose: 36.37,
+    volume: 196178000
+  },
+  {
+    date: "2009/7/30",
+    open: 56.1,
+    high: 56.4,
+    low: 55.2,
+    close: 56,
+    adjClose: 34.58,
+    volume: 62361000
+  },
+  {
+    date: "2009/7/29",
+    open: 58,
+    high: 58,
+    low: 55.9,
+    close: 56.5,
+    adjClose: 34.89,
+    volume: 56781000
+  },
+  {
+    date: "2009/7/28",
+    open: 57.6,
+    high: 57.9,
+    low: 57.1,
+    close: 57.9,
+    adjClose: 35.75,
+    volume: 48101000
+  },
+  {
+    date: "2009/7/27",
+    open: 57.2,
+    high: 57.9,
+    low: 56.9,
+    close: 57.6,
+    adjClose: 35.57,
+    volume: 49935000
+  },
+  {
+    date: "2009/7/24",
+    open: 57,
+    high: 57.3,
+    low: 56.8,
+    close: 57.2,
+    adjClose: 35.32,
+    volume: 81642000
+  },
+  {
+    date: "2009/7/23",
+    open: 55.5,
+    high: 56.7,
+    low: 55.4,
+    close: 56.5,
+    adjClose: 34.89,
+    volume: 69194000
+  },
+  {
+    date: "2009/7/22",
+    open: 55.2,
+    high: 55.6,
+    low: 54.7,
+    close: 55.3,
+    adjClose: 34.15,
+    volume: 55795000
+  },
+  {
+    date: "2009/7/21",
+    open: 55,
+    high: 55.5,
+    low: 54.6,
+    close: 55.5,
+    adjClose: 34.27,
+    volume: 67895000
+  },
+  {
+    date: "2009/7/20",
+    open: 54.9,
+    high: 55.2,
+    low: 54.5,
+    close: 54.8,
+    adjClose: 33.84,
+    volume: 69655000
+  },
+  {
+    date: "2009/7/17",
+    open: 54.9,
+    high: 55,
+    low: 53.9,
+    close: 54,
+    adjClose: 33.34,
+    volume: 54577000
+  },
+  {
+    date: "2009/7/16",
+    open: 55,
+    high: 55.2,
+    low: 54,
+    close: 54.1,
+    adjClose: 33.41,
+    volume: 49572000
+  },
+  {
+    date: "2009/7/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2009/7/15",
+    open: 53.4,
+    high: 55,
+    low: 53.1,
+    close: 53.6,
+    adjClose: 33.1,
+    volume: 73533000
+  },
+  {
+    date: "2009/7/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2009/7/14",
+    open: 55.22,
+    high: 55.92,
+    low: 55.02,
+    close: 55.52,
+    adjClose: 32.44,
+    volume: 88881195
+  },
+  {
+    date: "2009/7/13",
+    open: 56.92,
+    high: 57.01,
+    low: 54.13,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 67172190
+  },
+  {
+    date: "2009/7/10",
+    open: 55.72,
+    high: 55.92,
+    low: 55.12,
+    close: 55.82,
+    adjClose: 32.62,
+    volume: 52935360
+  },
+  {
+    date: "2009/7/9",
+    open: 54.13,
+    high: 55.82,
+    low: 54.03,
+    close: 55.02,
+    adjClose: 32.15,
+    volume: 60531150
+  },
+  {
+    date: "2009/7/8",
+    open: 54.43,
+    high: 54.43,
+    low: 53.83,
+    close: 54.13,
+    adjClose: 31.63,
+    volume: 58099050
+  },
+  {
+    date: "2009/7/7",
+    open: 54.13,
+    high: 55.32,
+    low: 54.03,
+    close: 55.12,
+    adjClose: 32.21,
+    volume: 37127715
+  },
+  {
+    date: "2009/7/6",
+    open: 54.83,
+    high: 55.02,
+    low: 53.93,
+    close: 54.13,
+    adjClose: 31.63,
+    volume: 33242385
+  },
+  {
+    date: "2009/7/3",
+    open: 53.83,
+    high: 54.73,
+    low: 53.83,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 27359115
+  },
+  {
+    date: "2009/7/2",
+    open: 54.63,
+    high: 55.02,
+    low: 54.23,
+    close: 54.83,
+    adjClose: 32.03,
+    volume: 34404165
+  },
+  {
+    date: "2009/7/1",
+    open: 54.03,
+    high: 55.22,
+    low: 53.33,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 46831995
+  },
+  {
+    date: "2009/6/30",
+    open: 54.33,
+    high: 54.43,
+    low: 53.53,
+    close: 54.43,
+    adjClose: 31.8,
+    volume: 45144600
+  },
+  {
+    date: "2009/6/29",
+    open: 54.23,
+    high: 54.23,
+    low: 52.84,
+    close: 53.13,
+    adjClose: 31.05,
+    volume: 64387335
+  },
+  {
+    date: "2009/6/26",
+    open: 53.53,
+    high: 54.23,
+    low: 53.23,
+    close: 54.13,
+    adjClose: 31.63,
+    volume: 68721900
+  },
+  {
+    date: "2009/6/25",
+    open: 53.23,
+    high: 53.63,
+    low: 52.84,
+    close: 53.43,
+    adjClose: 31.22,
+    volume: 56556375
+  },
+  {
+    date: "2009/6/24",
+    open: 51.34,
+    high: 54.53,
+    low: 51.24,
+    close: 52.64,
+    adjClose: 30.76,
+    volume: 122965770
+  },
+  {
+    date: "2009/6/23",
+    open: 51.54,
+    high: 51.54,
+    low: 51.04,
+    close: 51.04,
+    adjClose: 29.83,
+    volume: 59505045
+  },
+  {
+    date: "2009/6/22",
+    open: 50.75,
+    high: 52.84,
+    low: 50.75,
+    close: 52.74,
+    adjClose: 30.81,
+    volume: 48037995
+  },
+  {
+    date: "2009/6/19",
+    open: 51.94,
+    high: 52.24,
+    low: 51.44,
+    close: 52.04,
+    adjClose: 30.41,
+    volume: 66898830
+  },
+  {
+    date: "2009/6/18",
+    open: 53.03,
+    high: 53.03,
+    low: 51.74,
+    close: 52.44,
+    adjClose: 30.64,
+    volume: 62847675
+  },
+  {
+    date: "2009/6/17",
+    open: 52.64,
+    high: 52.64,
+    low: 51.54,
+    close: 51.74,
+    adjClose: 30.23,
+    volume: 83768760
+  },
+  {
+    date: "2009/6/16",
+    open: 52.94,
+    high: 54.03,
+    low: 52.24,
+    close: 53.33,
+    adjClose: 31.16,
+    volume: 78092520
+  },
+  {
+    date: "2009/6/15",
+    open: 54.33,
+    high: 54.73,
+    low: 52.34,
+    close: 53.03,
+    adjClose: 30.99,
+    volume: 98056845
+  },
+  {
+    date: "2009/6/12",
+    open: 57.51,
+    high: 57.51,
+    low: 55.72,
+    close: 55.72,
+    adjClose: 32.56,
+    volume: 87307365
+  },
+  {
+    date: "2009/6/11",
+    open: 57.71,
+    high: 58.01,
+    low: 56.22,
+    close: 58.01,
+    adjClose: 33.89,
+    volume: 54057945
+  },
+  {
+    date: "2009/6/10",
+    open: 59.7,
+    high: 59.7,
+    low: 57.01,
+    close: 57.91,
+    adjClose: 33.84,
+    volume: 55321230
+  },
+  {
+    date: "2009/6/9",
+    open: 60.2,
+    high: 60.2,
+    low: 55.72,
+    close: 55.82,
+    adjClose: 32.62,
+    volume: 75314700
+  },
+  {
+    date: "2009/6/8",
+    open: 53.43,
+    high: 57.81,
+    low: 53.43,
+    close: 56.32,
+    adjClose: 32.91,
+    volume: 55954380
+  },
+  {
+    date: "2009/6/5",
+    open: 61.59,
+    high: 61.59,
+    low: 56.72,
+    close: 57.11,
+    adjClose: 33.37,
+    volume: 42436125
+  },
+  {
+    date: "2009/6/4",
+    open: 63.58,
+    high: 63.58,
+    low: 56.72,
+    close: 57.61,
+    adjClose: 33.66,
+    volume: 81700470
+  },
+  {
+    date: "2009/6/3",
+    open: 63.68,
+    high: 63.68,
+    low: 58.51,
+    close: 59.5,
+    adjClose: 34.77,
+    volume: 73274550
+  },
+  {
+    date: "2009/6/2",
+    open: 58.71,
+    high: 59.7,
+    low: 58.71,
+    close: 59.6,
+    adjClose: 34.83,
+    volume: 80862300
+  },
+  {
+    date: "2009/6/1",
+    open: 60.1,
+    high: 60.3,
+    low: 58.21,
+    close: 58.71,
+    adjClose: 34.3,
+    volume: 102013530
+  },
+  {
+    date: "2009/5/27",
+    open: 56.32,
+    high: 60.1,
+    low: 56.32,
+    close: 60.1,
+    adjClose: 35.12,
+    volume: 183899925
+  },
+  {
+    date: "2009/5/26",
+    open: 59.2,
+    high: 59.2,
+    low: 55.32,
+    close: 56.32,
+    adjClose: 32.91,
+    volume: 62398440
+  },
+  {
+    date: "2009/5/25",
+    open: 52.04,
+    high: 56.62,
+    low: 52.04,
+    close: 55.42,
+    adjClose: 32.38,
+    volume: 50797725
+  },
+  {
+    date: "2009/5/22",
+    open: 56.32,
+    high: 56.42,
+    low: 55.62,
+    close: 55.92,
+    adjClose: 32.67,
+    volume: 57527205
+  },
+  {
+    date: "2009/5/21",
+    open: 52.04,
+    high: 56.52,
+    low: 52.04,
+    close: 56.32,
+    adjClose: 32.91,
+    volume: 64073775
+  },
+  {
+    date: "2009/5/20",
+    open: 56.72,
+    high: 56.72,
+    low: 55.42,
+    close: 55.92,
+    adjClose: 32.67,
+    volume: 64667730
+  },
+  {
+    date: "2009/5/19",
+    open: 55.72,
+    high: 56.72,
+    low: 55.72,
+    close: 56.72,
+    adjClose: 33.14,
+    volume: 91570575
+  },
+  {
+    date: "2009/5/18",
+    open: 54.53,
+    high: 55.72,
+    low: 53.93,
+    close: 55.72,
+    adjClose: 32.56,
+    volume: 62795415
+  },
+  {
+    date: "2009/5/15",
+    open: 50.45,
+    high: 55.52,
+    low: 50.45,
+    close: 54.53,
+    adjClose: 31.86,
+    volume: 64244625
+  },
+  {
+    date: "2009/5/14",
+    open: 52.24,
+    high: 55.12,
+    low: 52.24,
+    close: 54.23,
+    adjClose: 31.69,
+    volume: 82343670
+  },
+  {
+    date: "2009/5/13",
+    open: 55.12,
+    high: 56.52,
+    low: 55.02,
+    close: 56.12,
+    adjClose: 32.79,
+    volume: 94040865
+  },
+  {
+    date: "2009/5/12",
+    open: 52.04,
+    high: 55.72,
+    low: 52.04,
+    close: 55.12,
+    adjClose: 32.21,
+    volume: 83635095
+  },
+  {
+    date: "2009/5/11",
+    open: 52.14,
+    high: 56.72,
+    low: 52.14,
+    close: 55.92,
+    adjClose: 32.67,
+    volume: 77070435
+  },
+  {
+    date: "2009/5/8",
+    open: 56.22,
+    high: 56.72,
+    low: 55.12,
+    close: 56.02,
+    adjClose: 32.73,
+    volume: 96870945
+  },
+  {
+    date: "2009/5/7",
+    open: 53.23,
+    high: 57.21,
+    low: 53.23,
+    close: 56.22,
+    adjClose: 32.85,
+    volume: 141852735
+  },
+  {
+    date: "2009/5/6",
+    open: 57.71,
+    high: 57.71,
+    low: 56.32,
+    close: 57.21,
+    adjClose: 33.43,
+    volume: 176802615
+  },
+  {
+    date: "2009/5/5",
+    open: 54.63,
+    high: 60.6,
+    low: 54.63,
+    close: 57.71,
+    adjClose: 33.72,
+    volume: 131490180
+  },
+  {
+    date: "2009/5/4",
+    open: 51.14,
+    high: 58.71,
+    low: 51.14,
+    close: 58.71,
+    adjClose: 34.3,
+    volume: 177780480
+  },
+  {
+    date: "2009/4/30",
+    open: 47.76,
+    high: 54.93,
+    low: 47.76,
+    close: 54.93,
+    adjClose: 32.09,
+    volume: 155433300
+  },
+  {
+    date: "2009/4/29",
+    open: 47.21,
+    high: 51.54,
+    low: 47.21,
+    close: 51.34,
+    adjClose: 30,
+    volume: 58527180
+  },
+  {
+    date: "2009/4/28",
+    open: 46.77,
+    high: 51.24,
+    low: 46.77,
+    close: 50.75,
+    adjClose: 29.65,
+    volume: 55329270
+  },
+  {
+    date: "2009/4/27",
+    open: 49.75,
+    high: 50.75,
+    low: 49.75,
+    close: 50.25,
+    adjClose: 29.36,
+    volume: 63072795
+  },
+  {
+    date: "2009/4/24",
+    open: 47.51,
+    high: 51.54,
+    low: 47.51,
+    close: 50.25,
+    adjClose: 29.36,
+    volume: 82606980
+  },
+  {
+    date: "2009/4/23",
+    open: 46.97,
+    high: 51.14,
+    low: 46.97,
+    close: 51.04,
+    adjClose: 29.83,
+    volume: 62227590
+  },
+  {
+    date: "2009/4/22",
+    open: 54.93,
+    high: 54.93,
+    low: 50.25,
+    close: 50.45,
+    adjClose: 29.48,
+    volume: 67226460
+  },
+  {
+    date: "2009/4/21",
+    open: 48.06,
+    high: 51.34,
+    low: 48.06,
+    close: 51.34,
+    adjClose: 30,
+    volume: 64313970
+  },
+  {
+    date: "2009/4/20",
+    open: 46.67,
+    high: 51.64,
+    low: 46.67,
+    close: 51.64,
+    adjClose: 30.17,
+    volume: 78258345
+  },
+  {
+    date: "2009/4/17",
+    open: 47.51,
+    high: 52.14,
+    low: 47.51,
+    close: 50.15,
+    adjClose: 29.3,
+    volume: 153010245
+  },
+  {
+    date: "2009/4/16",
+    open: 55.32,
+    high: 55.32,
+    low: 50.85,
+    close: 51.04,
+    adjClose: 29.83,
+    volume: 93780570
+  },
+  {
+    date: "2009/4/15",
+    open: 48.61,
+    high: 52.24,
+    low: 48.61,
+    close: 51.74,
+    adjClose: 30.23,
+    volume: 89649015
+  },
+  {
+    date: "2009/4/14",
+    open: 56.02,
+    high: 56.02,
+    low: 51.04,
+    close: 52.24,
+    adjClose: 30.52,
+    volume: 72156990
+  },
+  {
+    date: "2009/4/13",
+    open: 49.05,
+    high: 53.23,
+    low: 49.05,
+    close: 52.44,
+    adjClose: 30.64,
+    volume: 57354345
+  },
+  {
+    date: "2009/4/10",
+    open: 48.51,
+    high: 52.74,
+    low: 48.51,
+    close: 52.74,
+    adjClose: 30.81,
+    volume: 43027065
+  },
+  {
+    date: "2009/4/9",
+    open: 49.75,
+    high: 52.14,
+    low: 49.75,
+    close: 52.14,
+    adjClose: 30.46,
+    volume: 85832025
+  },
+  {
+    date: "2009/4/8",
+    open: 48.26,
+    high: 51.24,
+    low: 48.26,
+    close: 49.95,
+    adjClose: 29.19,
+    volume: 112552965
+  },
+  {
+    date: "2009/4/7",
+    open: 55.72,
+    high: 55.72,
+    low: 50.75,
+    close: 51.84,
+    adjClose: 30.29,
+    volume: 75857400
+  },
+  {
+    date: "2009/4/6",
+    open: 55.92,
+    high: 55.92,
+    low: 51.34,
+    close: 52.14,
+    adjClose: 30.46,
+    volume: 77220180
+  },
+  {
+    date: "2009/4/3",
+    open: 48.51,
+    high: 53.53,
+    low: 48.51,
+    close: 52.34,
+    adjClose: 30.58,
+    volume: 69842475
+  },
+  {
+    date: "2009/4/2",
+    open: 46.97,
+    high: 52.24,
+    low: 46.97,
+    close: 52.14,
+    adjClose: 30.46,
+    volume: 84861195
+  },
+  {
+    date: "2009/3/31",
+    open: 48.16,
+    high: 52.54,
+    low: 48.16,
+    close: 51.14,
+    adjClose: 29.88,
+    volume: 69573135
+  },
+  {
+    date: "2009/3/30",
+    open: 51.64,
+    high: 51.74,
+    low: 50.55,
+    close: 51.74,
+    adjClose: 30.23,
+    volume: 46200855
+  },
+  {
+    date: "2009/3/27",
+    open: 51.44,
+    high: 52.34,
+    low: 51.34,
+    close: 51.64,
+    adjClose: 30.17,
+    volume: 53753430
+  },
+  {
+    date: "2009/3/26",
+    open: 55.52,
+    high: 55.52,
+    low: 50.85,
+    close: 51.44,
+    adjClose: 30.06,
+    volume: 61318065
+  },
+  {
+    date: "2009/3/25",
+    open: 48.51,
+    high: 52.74,
+    low: 48.51,
+    close: 51.94,
+    adjClose: 30.35,
+    volume: 74241360
+  },
+  {
+    date: "2009/3/24",
+    open: 46.57,
+    high: 52.14,
+    low: 46.57,
+    close: 52.14,
+    adjClose: 30.46,
+    volume: 62127090
+  },
+  {
+    date: "2009/3/23",
+    open: 47.46,
+    high: 50.15,
+    low: 47.46,
+    close: 50.05,
+    adjClose: 29.24,
+    volume: 59197515
+  },
+  {
+    date: "2009/3/20",
+    open: 52.34,
+    high: 52.34,
+    low: 47.46,
+    close: 47.46,
+    adjClose: 27.73,
+    volume: 62498940
+  },
+  {
+    date: "2009/3/19",
+    open: 52.74,
+    high: 52.74,
+    low: 48.86,
+    close: 48.96,
+    adjClose: 28.6,
+    volume: 50981640
+  },
+  {
+    date: "2009/3/18",
+    open: 46.27,
+    high: 50.25,
+    low: 46.27,
+    close: 50.15,
+    adjClose: 29.3,
+    volume: 80529645
+  },
+  {
+    date: "2009/3/17",
+    open: 53.23,
+    high: 53.23,
+    low: 49.4,
+    close: 49.75,
+    adjClose: 29.07,
+    volume: 58131210
+  },
+  {
+    date: "2009/3/16",
+    open: 52.64,
+    high: 52.64,
+    low: 49.6,
+    close: 49.75,
+    adjClose: 29.07,
+    volume: 74268495
+  },
+  {
+    date: "2009/3/13",
+    open: 44.68,
+    high: 49.75,
+    low: 44.68,
+    close: 49.25,
+    adjClose: 28.78,
+    volume: 114907680
+  },
+  {
+    date: "2009/3/12",
+    open: 51.84,
+    high: 51.84,
+    low: 47.71,
+    close: 48.01,
+    adjClose: 28.05,
+    volume: 51724335
+  },
+  {
+    date: "2009/3/11",
+    open: 50.15,
+    high: 50.15,
+    low: 47.76,
+    close: 48.46,
+    adjClose: 28.31,
+    volume: 84086340
+  },
+  {
+    date: "2009/3/10",
+    open: 48.01,
+    high: 48.01,
+    low: 46.27,
+    close: 46.92,
+    adjClose: 27.41,
+    volume: 76816170
+  },
+  {
+    date: "2009/3/9",
+    open: 51.54,
+    high: 51.54,
+    low: 46.77,
+    close: 48.01,
+    adjClose: 28.05,
+    volume: 69829410
+  },
+  {
+    date: "2009/3/6",
+    open: 43.13,
+    high: 48.51,
+    low: 43.13,
+    close: 48.26,
+    adjClose: 28.2,
+    volume: 101923080
+  },
+  {
+    date: "2009/3/5",
+    open: 48.96,
+    high: 48.96,
+    low: 45.77,
+    close: 46.37,
+    adjClose: 27.09,
+    volume: 78208095
+  },
+  {
+    date: "2009/3/4",
+    open: 41.29,
+    high: 45.77,
+    low: 41.29,
+    close: 45.77,
+    adjClose: 26.74,
+    volume: 84194880
+  },
+  {
+    date: "2009/3/3",
+    open: 41.44,
+    high: 44.63,
+    low: 41.44,
+    close: 44.38,
+    adjClose: 25.93,
+    volume: 58369395
+  },
+  {
+    date: "2009/3/2",
+    open: 47.81,
+    high: 47.81,
+    low: 43.93,
+    close: 44.53,
+    adjClose: 26.02,
+    volume: 101285910
+  },
+  {
+    date: "2009/2/27",
+    open: 41.64,
+    high: 45.22,
+    low: 41.64,
+    close: 44.73,
+    adjClose: 26.13,
+    volume: 59610570
+  },
+  {
+    date: "2009/2/26",
+    open: 41.39,
+    high: 45.02,
+    low: 41.39,
+    close: 44.78,
+    adjClose: 26.16,
+    volume: 51748455
+  },
+  {
+    date: "2009/2/25",
+    open: 46.82,
+    high: 46.82,
+    low: 44.08,
+    close: 44.48,
+    adjClose: 25.99,
+    volume: 53483085
+  },
+  {
+    date: "2009/2/24",
+    open: 41.64,
+    high: 44.18,
+    low: 41.64,
+    close: 43.78,
+    adjClose: 25.58,
+    volume: 59968350
+  },
+  {
+    date: "2009/2/23",
+    open: 46.72,
+    high: 46.72,
+    low: 43.28,
+    close: 44.78,
+    adjClose: 26.16,
+    volume: 48933450
+  },
+  {
+    date: "2009/2/20",
+    open: 48.31,
+    high: 48.31,
+    low: 43.63,
+    close: 43.68,
+    adjClose: 25.52,
+    volume: 71748960
+  },
+  {
+    date: "2009/2/19",
+    open: 47.46,
+    high: 47.46,
+    low: 43.78,
+    close: 45.17,
+    adjClose: 26.39,
+    volume: 57849810
+  },
+  {
+    date: "2009/2/18",
+    open: 40.8,
+    high: 45.07,
+    low: 40.8,
+    close: 44.38,
+    adjClose: 25.93,
+    volume: 57631725
+  },
+  {
+    date: "2009/2/17",
+    open: 48.81,
+    high: 48.81,
+    low: 42.84,
+    close: 43.58,
+    adjClose: 25.46,
+    volume: 69379170
+  },
+  {
+    date: "2009/2/16",
+    open: 48.91,
+    high: 48.91,
+    low: 45.52,
+    close: 45.62,
+    adjClose: 26.66,
+    volume: 51524340
+  },
+  {
+    date: "2009/2/13",
+    open: 41.99,
+    high: 46.02,
+    low: 41.99,
+    close: 45.72,
+    adjClose: 26.71,
+    volume: 49684185
+  },
+  {
+    date: "2009/2/12",
+    open: 42.64,
+    high: 46.22,
+    low: 42.64,
+    close: 45.12,
+    adjClose: 26.37,
+    volume: 68792250
+  },
+  {
+    date: "2009/2/11",
+    open: 47.71,
+    high: 47.71,
+    low: 43.78,
+    close: 45.82,
+    adjClose: 26.77,
+    volume: 80546730
+  },
+  {
+    date: "2009/2/10",
+    open: 48.41,
+    high: 48.41,
+    low: 44.58,
+    close: 44.63,
+    adjClose: 26.08,
+    volume: 44570745
+  },
+  {
+    date: "2009/2/9",
+    open: 41.39,
+    high: 46.37,
+    low: 41.39,
+    close: 45.27,
+    adjClose: 26.45,
+    volume: 104560200
+  },
+  {
+    date: "2009/2/6",
+    open: 45.12,
+    high: 45.12,
+    low: 43.68,
+    close: 44.48,
+    adjClose: 25.99,
+    volume: 100351260
+  },
+  {
+    date: "2009/2/5",
+    open: 39.7,
+    high: 43.08,
+    low: 39.7,
+    close: 42.19,
+    adjClose: 24.65,
+    volume: 69793230
+  },
+  {
+    date: "2009/2/4",
+    open: 39.7,
+    high: 42.84,
+    low: 39.7,
+    close: 42.69,
+    adjClose: 24.94,
+    volume: 83271285
+  },
+  {
+    date: "2009/2/3",
+    open: 44.48,
+    high: 44.48,
+    low: 42.09,
+    close: 42.64,
+    adjClose: 24.91,
+    volume: 88523415
+  },
+  {
+    date: "2009/2/2",
+    open: 42.79,
+    high: 42.79,
+    low: 40.35,
+    close: 41.59,
+    adjClose: 24.3,
+    volume: 112945920
+  },
+  {
+    date: "2009/1/21",
+    open: 42.14,
+    high: 42.14,
+    low: 38.51,
+    close: 40,
+    adjClose: 23.37,
+    volume: 65519970
+  },
+  {
+    date: "2009/1/20",
+    open: 43.63,
+    high: 43.63,
+    low: 39.4,
+    close: 39.4,
+    adjClose: 23.02,
+    volume: 81333645
+  },
+  {
+    date: "2009/1/19",
+    open: 41.24,
+    high: 41.24,
+    low: 40.7,
+    close: 40.8,
+    adjClose: 23.84,
+    volume: 36530745000
+  },
+  {
+    date: "2009/1/16",
+    open: 37.96,
+    high: 41.79,
+    low: 37.96,
+    close: 41.49,
+    adjClose: 24.24,
+    volume: 32827320
+  },
+  {
+    date: "2009/1/15",
+    open: 39.8,
+    high: 41.09,
+    low: 39.8,
+    close: 40.8,
+    adjClose: 23.84,
+    volume: 73444395
+  },
+  {
+    date: "2009/1/14",
+    open: 46.62,
+    high: 46.62,
+    low: 42.79,
+    close: 42.79,
+    adjClose: 25,
+    volume: 45100380
+  },
+  {
+    date: "2009/1/13",
+    open: 44.33,
+    high: 44.33,
+    low: 41.49,
+    close: 43.58,
+    adjClose: 25.46,
+    volume: 72003225
+  },
+  {
+    date: "2009/1/12",
+    open: 43.63,
+    high: 43.63,
+    low: 40.3,
+    close: 41.44,
+    adjClose: 24.21,
+    volume: 49417860
+  },
+  {
+    date: "2009/1/9",
+    open: 38.46,
+    high: 42.19,
+    low: 38.46,
+    close: 40.8,
+    adjClose: 23.84,
+    volume: 68485725
+  },
+  {
+    date: "2009/1/8",
+    open: 41.24,
+    high: 43.28,
+    low: 41.24,
+    close: 41.34,
+    adjClose: 24.16,
+    volume: 88934460
+  },
+  {
+    date: "2009/1/7",
+    open: 42.79,
+    high: 46.22,
+    low: 42.79,
+    close: 44.33,
+    adjClose: 25.9,
+    volume: 70769085
+  },
+  {
+    date: "2009/1/6",
+    open: 46.02,
+    high: 46.02,
+    low: 44.78,
+    close: 45.37,
+    adjClose: 26.51,
+    volume: 34246380
+  },
+  {
+    date: "2009/1/5",
+    open: 44.18,
+    high: 46.87,
+    low: 44.18,
+    close: 46.02,
+    adjClose: 26.89,
+    volume: 41163795000
+  },
+  {
+    date: "2009/1/2",
+    open: 44.18,
+    high: 44.18,
+    low: 44.18,
+    close: 44.18,
+    adjClose: 25.81,
+    volume: null
+  },
+  {
+    date: "2008/12/31",
+    open: 41.84,
+    high: 45.27,
+    low: 41.84,
+    close: 44.18,
+    adjClose: 25.81,
+    volume: 20743200000
+  },
+  {
+    date: "2008/12/30",
+    open: 40.15,
+    high: 45.27,
+    low: 40.15,
+    close: 44.98,
+    adjClose: 26.28,
+    volume: 30441450000
+  },
+  {
+    date: "2008/12/29",
+    open: 43.18,
+    high: 43.38,
+    low: 42.39,
+    close: 43.13,
+    adjClose: 25.2,
+    volume: 17648805000
+  },
+  {
+    date: "2008/12/26",
+    open: 45.87,
+    high: 45.87,
+    low: 42.59,
+    close: 43.18,
+    adjClose: 25.23,
+    volume: 7415895000
+  },
+  {
+    date: "2008/12/25",
+    open: 40.2,
+    high: 43.18,
+    low: 40.2,
+    close: 42.89,
+    adjClose: 25.06,
+    volume: 6107385000
+  },
+  {
+    date: "2008/12/24",
+    open: 46.67,
+    high: 46.67,
+    low: 42.79,
+    close: 43.18,
+    adjClose: 25.23,
+    volume: 30835410000
+  },
+  {
+    date: "2008/12/23",
+    open: 41.29,
+    high: 44.23,
+    low: 41.29,
+    close: 43.63,
+    adjClose: 25.49,
+    volume: 38107590
+  },
+  {
+    date: "2008/12/22",
+    open: 47.81,
+    high: 47.81,
+    low: 43.78,
+    close: 44.38,
+    adjClose: 25.93,
+    volume: 51111285
+  },
+  {
+    date: "2008/12/19",
+    open: 46.77,
+    high: 46.77,
+    low: 44.73,
+    close: 44.73,
+    adjClose: 26.13,
+    volume: 39498510000
+  },
+  {
+    date: "2008/12/18",
+    open: 42.59,
+    high: 45.77,
+    low: 42.59,
+    close: 44.78,
+    adjClose: 26.16,
+    volume: 49571625
+  },
+  {
+    date: "2008/12/17",
+    open: 41.19,
+    high: 45.87,
+    low: 41.19,
+    close: 45.77,
+    adjClose: 26.74,
+    volume: 87302340
+  },
+  {
+    date: "2008/12/16",
+    open: 46.22,
+    high: 46.22,
+    low: 42.19,
+    close: 44.28,
+    adjClose: 25.87,
+    volume: 58276935
+  },
+  {
+    date: "2008/12/15",
+    open: 44.48,
+    high: 44.48,
+    low: 43.18,
+    close: 43.23,
+    adjClose: 25.26,
+    volume: 68397285
+  },
+  {
+    date: "2008/12/12",
+    open: 47.76,
+    high: 47.76,
+    low: 41.59,
+    close: 41.59,
+    adjClose: 24.3,
+    volume: 68770140000
+  },
+  {
+    date: "2008/12/11",
+    open: 46.47,
+    high: 46.47,
+    low: 43.28,
+    close: 44.68,
+    adjClose: 26.1,
+    volume: 82269300000
+  },
+  {
+    date: "2008/12/10",
+    open: 37.76,
+    high: 43.43,
+    low: 37.76,
+    close: 43.43,
+    adjClose: 25.38,
+    volume: 113429325000
+  },
+  {
+    date: "2008/12/9",
+    open: 36.87,
+    high: 40.6,
+    low: 36.87,
+    close: 40.6,
+    adjClose: 23.72,
+    volume: 79399020000
+  },
+  {
+    date: "2008/12/8",
+    open: 34.43,
+    high: 39.6,
+    low: 34.43,
+    close: 39.6,
+    adjClose: 23.14,
+    volume: 101543190
+  },
+  {
+    date: "2008/12/5",
+    open: 34.33,
+    high: 37.66,
+    low: 34.33,
+    close: 37.01,
+    adjClose: 21.63,
+    volume: 40846215
+  },
+  {
+    date: "2008/12/4",
+    open: 39.55,
+    high: 39.55,
+    low: 36.82,
+    close: 36.87,
+    adjClose: 21.54,
+    volume: 59691975000
+  },
+  {
+    date: "2008/12/3",
+    open: 40.4,
+    high: 40.4,
+    low: 36.32,
+    close: 36.97,
+    adjClose: 21.6,
+    volume: 73562985
+  },
+  {
+    date: "2008/12/2",
+    open: 43.43,
+    high: 43.43,
+    low: 37.76,
+    close: 37.76,
+    adjClose: 22.06,
+    volume: 83978805
+  },
+  {
+    date: "2008/12/1",
+    open: 43.43,
+    high: 43.43,
+    low: 39.6,
+    close: 40.6,
+    adjClose: 23.72,
+    volume: 62615520
+  },
+  {
+    date: "2008/11/28",
+    open: 40.7,
+    high: 40.95,
+    low: 40.2,
+    close: 40.6,
+    adjClose: 23.72,
+    volume: 50929380
+  },
+  {
+    date: "2008/11/27",
+    open: 41.49,
+    high: 41.49,
+    low: 40.35,
+    close: 40.7,
+    adjClose: 23.78,
+    volume: 62983350000
+  },
+  {
+    date: "2008/11/26",
+    open: 36.97,
+    high: 40.1,
+    low: 36.97,
+    close: 38.81,
+    adjClose: 22.67,
+    volume: 57932220
+  },
+  {
+    date: "2008/11/25",
+    open: 34.53,
+    high: 39.7,
+    low: 34.53,
+    close: 39.7,
+    adjClose: 23.2,
+    volume: 82679340
+  },
+  {
+    date: "2008/11/24",
+    open: 35.67,
+    high: 38.31,
+    low: 35.67,
+    close: 37.11,
+    adjClose: 21.69,
+    volume: 50246985
+  },
+  {
+    date: "2008/11/21",
+    open: 34.08,
+    high: 39.1,
+    low: 34.08,
+    close: 38.31,
+    adjClose: 22.38,
+    volume: 56183520000
+  },
+  {
+    date: "2008/11/20",
+    open: 35.17,
+    high: 37.21,
+    low: 35.17,
+    close: 36.62,
+    adjClose: 21.4,
+    volume: 43302435000
+  },
+  {
+    date: "2008/11/19",
+    open: 38.31,
+    high: 39.2,
+    low: 37.81,
+    close: 37.81,
+    adjClose: 22.09,
+    volume: 50393715000
+  },
+  {
+    date: "2008/11/18",
+    open: 43.43,
+    high: 43.43,
+    low: 38.11,
+    close: 38.31,
+    adjClose: 22.38,
+    volume: 69764085000
+  },
+  {
+    date: "2008/11/17",
+    open: 38.61,
+    high: 44.38,
+    low: 38.61,
+    close: 40.6,
+    adjClose: 23.72,
+    volume: 43537605
+  },
+  {
+    date: "2008/11/14",
+    open: 37.51,
+    high: 41.79,
+    low: 37.51,
+    close: 41.49,
+    adjClose: 24.24,
+    volume: 45642075
+  },
+  {
+    date: "2008/11/13",
+    open: 46.17,
+    high: 46.17,
+    low: 40.3,
+    close: 40.3,
+    adjClose: 23.55,
+    volume: 57074955
+  },
+  {
+    date: "2008/11/12",
+    open: 45.87,
+    high: 45.87,
+    low: 42.44,
+    close: 43.18,
+    adjClose: 25.23,
+    volume: 58458840
+  },
+  {
+    date: "2008/11/11",
+    open: 42.99,
+    high: 43.78,
+    low: 41.79,
+    close: 42.89,
+    adjClose: 25.06,
+    volume: 38927670
+  },
+  {
+    date: "2008/11/10",
+    open: 45.77,
+    high: 45.77,
+    low: 41.69,
+    close: 42.99,
+    adjClose: 25.12,
+    volume: 63185355
+  },
+  {
+    date: "2008/11/7",
+    open: 41.34,
+    high: 44.43,
+    low: 41.34,
+    close: 43.28,
+    adjClose: 25.29,
+    volume: 98908080
+  },
+  {
+    date: "2008/11/6",
+    open: 51.04,
+    high: 51.04,
+    low: 44.43,
+    close: 44.43,
+    adjClose: 25.96,
+    volume: 39522630
+  },
+  {
+    date: "2008/11/5",
+    open: 51.04,
+    high: 51.04,
+    low: 47.01,
+    close: 47.76,
+    adjClose: 27.91,
+    volume: 74490600
+  },
+  {
+    date: "2008/11/4",
+    open: 49.95,
+    high: 49.95,
+    low: 46.47,
+    close: 47.76,
+    adjClose: 27.91,
+    volume: 58564365
+  },
+  {
+    date: "2008/11/3",
+    open: 51.04,
+    high: 51.04,
+    low: 45.77,
+    close: 46.77,
+    adjClose: 27.33,
+    volume: 59412585
+  },
+  {
+    date: "2008/10/31",
+    open: 41.59,
+    high: 47.76,
+    low: 41.59,
+    close: 47.76,
+    adjClose: 27.91,
+    volume: 108091770
+  },
+  {
+    date: "2008/10/30",
+    open: 38.91,
+    high: 44.68,
+    low: 38.91,
+    close: 44.68,
+    adjClose: 26.1,
+    volume: 73326810
+  },
+  {
+    date: "2008/10/29",
+    open: 42.24,
+    high: 42.24,
+    low: 41.49,
+    close: 41.79,
+    adjClose: 24.42,
+    volume: 102281865
+  },
+  {
+    date: "2008/10/28",
+    open: 40.75,
+    high: 40.75,
+    low: 36.32,
+    close: 39.5,
+    adjClose: 23.08,
+    volume: 84327540
+  },
+  {
+    date: "2008/10/27",
+    open: 42.29,
+    high: 42.29,
+    low: 36.82,
+    close: 38.11,
+    adjClose: 22.27,
+    volume: 64823505
+  },
+  {
+    date: "2008/10/24",
+    open: 43.78,
+    high: 43.78,
+    low: 39.55,
+    close: 39.55,
+    adjClose: 23.11,
+    volume: 60111060
+  },
+  {
+    date: "2008/10/23",
+    open: 40.95,
+    high: 40.95,
+    low: 40.95,
+    close: 40.95,
+    adjClose: 23.92,
+    volume: 27365145
+  },
+  {
+    date: "2008/10/22",
+    open: 46.92,
+    high: 46.92,
+    low: 42.39,
+    close: 42.39,
+    adjClose: 24.77,
+    volume: 48494265
+  },
+  {
+    date: "2008/10/21",
+    open: 47.01,
+    high: 47.01,
+    low: 42.54,
+    close: 43.88,
+    adjClose: 25.64,
+    volume: 72999180
+  },
+  {
+    date: "2008/10/20",
+    open: 43.18,
+    high: 44.28,
+    low: 43.18,
+    close: 43.98,
+    adjClose: 25.7,
+    volume: 74536830
+  },
+  {
+    date: "2008/10/17",
+    open: 49.55,
+    high: 49.55,
+    low: 44.73,
+    close: 44.73,
+    adjClose: 26.13,
+    volume: 52474065
+  },
+  {
+    date: "2008/10/16",
+    open: 51.24,
+    high: 51.24,
+    low: 46.32,
+    close: 46.32,
+    adjClose: 27.06,
+    volume: 16615665
+  },
+  {
+    date: "2008/10/15",
+    open: 53.03,
+    high: 53.03,
+    low: 47.96,
+    close: 47.96,
+    adjClose: 28.02,
+    volume: 68217390
+  },
+  {
+    date: "2008/10/14",
+    open: 49.65,
+    high: 49.65,
+    low: 49,
+    close: 49.65,
+    adjClose: 29.01,
+    volume: 90937425
+  },
+  {
+    date: "2008/10/13",
+    open: 44.28,
+    high: 46.87,
+    low: 44.28,
+    close: 46.42,
+    adjClose: 27.12,
+    volume: 93667005
+  },
+  {
+    date: "2008/10/9",
+    open: 49.2,
+    high: 49.2,
+    low: 42.84,
+    close: 45.87,
+    adjClose: 26.8,
+    volume: 64536075
+  },
+  {
+    date: "2008/10/8",
+    open: 49.45,
+    high: 49.45,
+    low: 46.02,
+    close: 46.02,
+    adjClose: 26.89,
+    volume: 86231010
+  },
+  {
+    date: "2008/10/7",
+    open: 52.14,
+    high: 52.14,
+    low: 47.71,
+    close: 49.45,
+    adjClose: 28.89,
+    volume: 48947520
+  },
+  {
+    date: "2008/10/6",
+    open: 54.63,
+    high: 54.63,
+    low: 48.76,
+    close: 48.76,
+    adjClose: 28.49,
+    volume: 59422635
+  },
+  {
+    date: "2008/10/3",
+    open: 54.63,
+    high: 54.63,
+    low: 49.95,
+    close: 51.14,
+    adjClose: 29.88,
+    volume: 56136285
+  },
+  {
+    date: "2008/10/2",
+    open: 48.76,
+    high: 52.84,
+    low: 48.61,
+    close: 51.14,
+    adjClose: 29.88,
+    volume: 43619010
+  },
+  {
+    date: "2008/10/1",
+    open: 53.73,
+    high: 53.73,
+    low: 52.24,
+    close: 52.24,
+    adjClose: 30.52,
+    volume: 43628055
+  },
+  {
+    date: "2008/9/30",
+    open: 49.75,
+    high: 52.24,
+    low: 49.55,
+    close: 52.24,
+    adjClose: 30.52,
+    volume: 78348795
+  },
+  {
+    date: "2008/9/29",
+    open: 53.13,
+    high: 53.13,
+    low: 53.13,
+    close: 53.13,
+    adjClose: 31.05,
+    volume: null
+  },
+  {
+    date: "2008/9/26",
+    open: 52.84,
+    high: 53.13,
+    low: 51.74,
+    close: 53.13,
+    adjClose: 31.05,
+    volume: 71671575
+  },
+  {
+    date: "2008/9/25",
+    open: 52.54,
+    high: 54.03,
+    low: 52.54,
+    close: 52.74,
+    adjClose: 30.81,
+    volume: 39524640000
+  },
+  {
+    date: "2008/9/24",
+    open: 53.73,
+    high: 53.93,
+    low: 53.03,
+    close: 53.03,
+    adjClose: 30.99,
+    volume: 39469365
+  },
+  {
+    date: "2008/9/23",
+    open: 54.43,
+    high: 55.62,
+    low: 54.43,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 56568435
+  },
+  {
+    date: "2008/9/22",
+    open: 56.82,
+    high: 56.82,
+    low: 55.32,
+    close: 55.52,
+    adjClose: 32.44,
+    volume: 60327135
+  },
+  {
+    date: "2008/9/19",
+    open: 54.33,
+    high: 55.32,
+    low: 53.73,
+    close: 55.32,
+    adjClose: 32.33,
+    volume: 130290210
+  },
+  {
+    date: "2008/9/18",
+    open: 51.24,
+    high: 53.33,
+    low: 51.24,
+    close: 51.74,
+    adjClose: 30.23,
+    volume: 123948660
+  },
+  {
+    date: "2008/9/17",
+    open: 53.73,
+    high: 54.23,
+    low: 52.54,
+    close: 52.64,
+    adjClose: 30.76,
+    volume: 85298370
+  },
+  {
+    date: "2008/9/16",
+    open: 50.45,
+    high: 52.04,
+    low: 50.45,
+    close: 50.75,
+    adjClose: 29.65,
+    volume: 60774360
+  },
+  {
+    date: "2008/9/15",
+    open: 52.54,
+    high: 52.84,
+    low: 50.75,
+    close: 51.44,
+    adjClose: 30.06,
+    volume: 41212035
+  },
+  {
+    date: "2008/9/12",
+    open: 52.54,
+    high: 52.84,
+    low: 51.84,
+    close: 52.44,
+    adjClose: 30.64,
+    volume: 37015155
+  },
+  {
+    date: "2008/9/11",
+    open: 53.33,
+    high: 53.33,
+    low: 51.44,
+    close: 52.04,
+    adjClose: 30.41,
+    volume: 72654465000
+  },
+  {
+    date: "2008/9/10",
+    open: 53.33,
+    high: 54.23,
+    low: 52.94,
+    close: 53.43,
+    adjClose: 31.22,
+    volume: 66204375
+  },
+  {
+    date: "2008/9/9",
+    open: 54.73,
+    high: 55.42,
+    low: 53.93,
+    close: 54.03,
+    adjClose: 31.57,
+    volume: 50564565
+  },
+  {
+    date: "2008/9/8",
+    open: 55.22,
+    high: 56.42,
+    low: 55.12,
+    close: 56.42,
+    adjClose: 32.96,
+    volume: 64699890
+  },
+  {
+    date: "2008/9/5",
+    open: 51.94,
+    high: 53.23,
+    low: 51.54,
+    close: 52.74,
+    adjClose: 30.81,
+    volume: 81669315
+  },
+  {
+    date: "2008/9/4",
+    open: 52.94,
+    high: 54.43,
+    low: 52.74,
+    close: 53.13,
+    adjClose: 31.05,
+    volume: 71765040
+  },
+  {
+    date: "2008/9/3",
+    open: 54.23,
+    high: 55.22,
+    low: 53.93,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 78947775
+  },
+  {
+    date: "2008/9/2",
+    open: 55.72,
+    high: 55.72,
+    low: 53.83,
+    close: 54.03,
+    adjClose: 31.57,
+    volume: 116539800
+  },
+  {
+    date: "2008/9/1",
+    open: 57.31,
+    high: 57.31,
+    low: 55.72,
+    close: 56.32,
+    adjClose: 32.91,
+    volume: 119573895
+  },
+  {
+    date: "2008/8/29",
+    open: 59.6,
+    high: 59.7,
+    low: 58.61,
+    close: 58.61,
+    adjClose: 34.24,
+    volume: 78159855
+  },
+  {
+    date: "2008/8/28",
+    open: 59.6,
+    high: 60.2,
+    low: 59.4,
+    close: 59.8,
+    adjClose: 34.94,
+    volume: 80459295
+  },
+  {
+    date: "2008/8/27",
+    open: 59.6,
+    high: 60.8,
+    low: 59.2,
+    close: 60.1,
+    adjClose: 35.12,
+    volume: 65996340
+  },
+  {
+    date: "2008/8/26",
+    open: 59.7,
+    high: 59.9,
+    low: 59.1,
+    close: 59.7,
+    adjClose: 34.88,
+    volume: 52961490
+  },
+  {
+    date: "2008/8/25",
+    open: 59.7,
+    high: 60.7,
+    low: 59.1,
+    close: 60.2,
+    adjClose: 35.17,
+    volume: 52525320
+  },
+  {
+    date: "2008/8/22",
+    open: 59.6,
+    high: 60.1,
+    low: 59.1,
+    close: 59.9,
+    adjClose: 35,
+    volume: 52435875
+  },
+  {
+    date: "2008/8/21",
+    open: 59,
+    high: 59.3,
+    low: 58.81,
+    close: 59.1,
+    adjClose: 34.53,
+    volume: 46564665
+  },
+  {
+    date: "2008/8/20",
+    open: 58.91,
+    high: 60.4,
+    low: 58.91,
+    close: 59.7,
+    adjClose: 34.88,
+    volume: 37273440
+  },
+  {
+    date: "2008/8/19",
+    open: 58.91,
+    high: 60.1,
+    low: 58.61,
+    close: 59.7,
+    adjClose: 34.88,
+    volume: 50736420
+  },
+  {
+    date: "2008/8/18",
+    open: 60.5,
+    high: 60.8,
+    low: 59.7,
+    close: 59.8,
+    adjClose: 34.94,
+    volume: 49773630
+  },
+  {
+    date: "2008/8/15",
+    open: 60.6,
+    high: 61.09,
+    low: 59.7,
+    close: 60.3,
+    adjClose: 35.23,
+    volume: 50530395
+  },
+  {
+    date: "2008/8/14",
+    open: 60.7,
+    high: 60.8,
+    low: 59.7,
+    close: 60.2,
+    adjClose: 35.17,
+    volume: 41157765
+  },
+  {
+    date: "2008/8/13",
+    open: 61.49,
+    high: 61.89,
+    low: 60.8,
+    close: 60.9,
+    adjClose: 35.58,
+    volume: 56098095
+  },
+  {
+    date: "2008/8/12",
+    open: 60.9,
+    high: 61.39,
+    low: 60.6,
+    close: 60.9,
+    adjClose: 35.58,
+    volume: 63225555
+  },
+  {
+    date: "2008/8/11",
+    open: 61.19,
+    high: 61.49,
+    low: 60.2,
+    close: 60.3,
+    adjClose: 35.23,
+    volume: 48411855
+  },
+  {
+    date: "2008/8/8",
+    open: 59.2,
+    high: 60.3,
+    low: 59.2,
+    close: 60.2,
+    adjClose: 35.17,
+    volume: 77002095
+  },
+  {
+    date: "2008/8/7",
+    open: 58.81,
+    high: 59.5,
+    low: 58.31,
+    close: 59.2,
+    adjClose: 34.59,
+    volume: 45290224
+  },
+  {
+    date: "2008/8/6",
+    open: 57.11,
+    high: 58.71,
+    low: 56.92,
+    close: 58.51,
+    adjClose: 34.19,
+    volume: 82447185
+  },
+  {
+    date: "2008/8/5",
+    open: 55.92,
+    high: 55.92,
+    low: 54.73,
+    close: 55.12,
+    adjClose: 32.21,
+    volume: 60352260
+  },
+  {
+    date: "2008/8/4",
+    open: 55.32,
+    high: 55.72,
+    low: 54.83,
+    close: 55.42,
+    adjClose: 32.38,
+    volume: 23351175
+  },
+  {
+    date: "2008/8/1",
+    open: 54.73,
+    high: 56.32,
+    low: 54.73,
+    close: 55.72,
+    adjClose: 32.56,
+    volume: 37225200
+  },
+  {
+    date: "2008/7/31",
+    open: 56.72,
+    high: 56.82,
+    low: 55.42,
+    close: 55.92,
+    adjClose: 32.67,
+    volume: 50981640
+  },
+  {
+    date: "2008/7/30",
+    open: 56.52,
+    high: 56.72,
+    low: 55.72,
+    close: 56.72,
+    adjClose: 33.14,
+    volume: 50989680
+  },
+  {
+    date: "2008/7/29",
+    open: 55.72,
+    high: 55.72,
+    low: 54.03,
+    close: 54.73,
+    adjClose: 31.98,
+    volume: 73118775
+  },
+  {
+    date: "2008/7/28",
+    open: 57.51,
+    high: 57.51,
+    low: 57.51,
+    close: 57.51,
+    adjClose: 33.6,
+    volume: null
+  },
+  {
+    date: "2008/7/25",
+    open: 57.91,
+    high: 57.91,
+    low: 56.92,
+    close: 57.51,
+    adjClose: 33.6,
+    volume: 35268465
+  },
+  {
+    date: "2008/7/24",
+    open: 57.91,
+    high: 58.61,
+    low: 57.81,
+    close: 58.61,
+    adjClose: 34.24,
+    volume: 40385925
+  },
+  {
+    date: "2008/7/23",
+    open: 58.21,
+    high: 58.21,
+    low: 56.82,
+    close: 57.31,
+    adjClose: 33.49,
+    volume: 72415275
+  },
+  {
+    date: "2008/7/22",
+    open: 59,
+    high: 59,
+    low: 56.92,
+    close: 57.61,
+    adjClose: 33.66,
+    volume: 64985310
+  },
+  {
+    date: "2008/7/21",
+    open: 59.1,
+    high: 60.1,
+    low: 59.1,
+    close: 59.5,
+    adjClose: 34.77,
+    volume: 55555395
+  },
+  {
+    date: "2008/7/18",
+    open: 58.71,
+    high: 59.1,
+    low: 56.72,
+    close: 57.71,
+    adjClose: 33.72,
+    volume: 68904810
+  },
+  {
+    date: "2008/7/17",
+    open: 55.62,
+    high: 57.21,
+    low: 55.62,
+    close: 57.21,
+    adjClose: 33.43,
+    volume: 68844510
+  },
+  {
+    date: "2008/7/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2008/7/16",
+    open: 54.33,
+    high: 54.33,
+    low: 52.94,
+    close: 53.53,
+    adjClose: 31.28,
+    volume: 86539545
+  },
+  {
+    date: "2008/7/16",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2008/7/15",
+    open: 58.71,
+    high: 58.91,
+    low: 57.03,
+    close: 57.03,
+    adjClose: 31.57,
+    volume: 63559489
+  },
+  {
+    date: "2008/7/14",
+    open: 60.49,
+    high: 61.28,
+    low: 59.5,
+    close: 60,
+    adjClose: 33.21,
+    volume: 40530966
+  },
+  {
+    date: "2008/7/11",
+    open: 59.9,
+    high: 62.37,
+    low: 59.2,
+    close: 61.78,
+    adjClose: 34.2,
+    volume: 60408079
+  },
+  {
+    date: "2008/7/10",
+    open: 58.31,
+    high: 59.7,
+    low: 58.11,
+    close: 58.91,
+    adjClose: 32.61,
+    volume: 42522819
+  },
+  {
+    date: "2008/7/9",
+    open: 58.91,
+    high: 60.1,
+    low: 58.51,
+    close: 58.91,
+    adjClose: 32.61,
+    volume: 54682008
+  },
+  {
+    date: "2008/7/8",
+    open: 59.3,
+    high: 59.3,
+    low: 57.72,
+    close: 58.31,
+    adjClose: 32.28,
+    volume: 65377610
+  },
+  {
+    date: "2008/7/7",
+    open: 59.1,
+    high: 59.9,
+    low: 58.21,
+    close: 59.5,
+    adjClose: 32.94,
+    volume: 41049131
+  },
+  {
+    date: "2008/7/4",
+    open: 58.71,
+    high: 59.3,
+    low: 57.82,
+    close: 58.41,
+    adjClose: 32.34,
+    volume: 56226401
+  },
+  {
+    date: "2008/7/3",
+    open: 58.91,
+    high: 59.8,
+    low: 56.93,
+    close: 58.21,
+    adjClose: 32.23,
+    volume: 117381930
+  },
+  {
+    date: "2008/7/2",
+    open: 63.36,
+    high: 63.56,
+    low: 61.18,
+    close: 61.18,
+    adjClose: 33.87,
+    volume: 80100349
+  },
+  {
+    date: "2008/7/1",
+    open: 63.36,
+    high: 64.45,
+    low: 63.36,
+    close: 63.56,
+    adjClose: 35.19,
+    volume: 32120137
+  },
+  {
+    date: "2008/6/30",
+    open: 63.26,
+    high: 64.45,
+    low: 62.87,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 88412192
+  },
+  {
+    date: "2008/6/27",
+    open: 62.47,
+    high: 64.35,
+    low: 62.08,
+    close: 63.36,
+    adjClose: 35.08,
+    volume: 177331439
+  },
+  {
+    date: "2008/6/26",
+    open: 66.04,
+    high: 66.04,
+    low: 63.96,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 53469927
+  },
+  {
+    date: "2008/6/25",
+    open: 63.86,
+    high: 65.84,
+    low: 63.66,
+    close: 65.54,
+    adjClose: 36.28,
+    volume: 92978706
+  },
+  {
+    date: "2008/6/24",
+    open: 64.35,
+    high: 64.45,
+    low: 63.56,
+    close: 63.56,
+    adjClose: 35.19,
+    volume: 60810086
+  },
+  {
+    date: "2008/6/23",
+    open: 62.57,
+    high: 63.96,
+    low: 61.98,
+    close: 63.46,
+    adjClose: 35.13,
+    volume: 49626622
+  },
+  {
+    date: "2008/6/20",
+    open: 63.86,
+    high: 64.25,
+    low: 62.57,
+    close: 63.07,
+    adjClose: 34.91,
+    volume: 67444207746
+  },
+  {
+    date: "2008/6/19",
+    open: 63.66,
+    high: 64.35,
+    low: 62.87,
+    close: 63.66,
+    adjClose: 35.24,
+    volume: 65880623
+  },
+  {
+    date: "2008/6/18",
+    open: 64.25,
+    high: 65.24,
+    low: 63.96,
+    close: 64.85,
+    adjClose: 35.9,
+    volume: 34896812
+  },
+  {
+    date: "2008/6/17",
+    open: 64.35,
+    high: 64.75,
+    low: 64.15,
+    close: 64.55,
+    adjClose: 35.74,
+    volume: 44224782
+  },
+  {
+    date: "2008/6/16",
+    open: 65.14,
+    high: 65.34,
+    low: 64.65,
+    close: 65.24,
+    adjClose: 36.12,
+    volume: 35600828
+  },
+  {
+    date: "2008/6/13",
+    open: 64.55,
+    high: 64.75,
+    low: 64.15,
+    close: 64.15,
+    adjClose: 35.52,
+    volume: 52043712
+  },
+  {
+    date: "2008/6/12",
+    open: 63.86,
+    high: 64.75,
+    low: 63.36,
+    close: 64.15,
+    adjClose: 35.52,
+    volume: 74684369
+  },
+  {
+    date: "2008/6/11",
+    open: 63.86,
+    high: 65.24,
+    low: 63.56,
+    close: 65.24,
+    adjClose: 36.12,
+    volume: 46983276
+  },
+  {
+    date: "2008/6/10",
+    open: 64.35,
+    high: 64.55,
+    low: 63.26,
+    close: 63.26,
+    adjClose: 35.02,
+    volume: 89169743
+  },
+  {
+    date: "2008/6/9",
+    open: 66.33,
+    high: 66.33,
+    low: 64.45,
+    close: 64.65,
+    adjClose: 35.79,
+    volume: 107090355
+  },
+  {
+    date: "2008/6/6",
+    open: 68.02,
+    high: 68.21,
+    low: 67.72,
+    close: 67.72,
+    adjClose: 37.49,
+    volume: 84141628
+  },
+  {
+    date: "2008/6/5",
+    open: 66.73,
+    high: 67.12,
+    low: 65.84,
+    close: 67.12,
+    adjClose: 37.16,
+    volume: 81693225
+  },
+  {
+    date: "2008/6/4",
+    open: 65.54,
+    high: 66.63,
+    low: 65.54,
+    close: 66.43,
+    adjClose: 36.78,
+    volume: 34817016
+  },
+  {
+    date: "2008/6/3",
+    open: 66.73,
+    high: 66.93,
+    low: 65.44,
+    close: 65.44,
+    adjClose: 36.23,
+    volume: 62414073
+  },
+  {
+    date: "2008/6/2",
+    open: 65.84,
+    high: 66.93,
+    low: 65.64,
+    close: 66.93,
+    adjClose: 37.05,
+    volume: 52833585
+  },
+  {
+    date: "2008/5/30",
+    open: 67.22,
+    high: 67.32,
+    low: 64.95,
+    close: 64.95,
+    adjClose: 35.95,
+    volume: 180901017
+  },
+  {
+    date: "2008/5/29",
+    open: 67.32,
+    high: 67.42,
+    low: 66.43,
+    close: 66.43,
+    adjClose: 36.78,
+    volume: 103415731
+  },
+  {
+    date: "2008/5/28",
+    open: 66.13,
+    high: 66.83,
+    low: 65.94,
+    close: 66.33,
+    adjClose: 36.72,
+    volume: 109790265
+  },
+  {
+    date: "2008/5/27",
+    open: 65.84,
+    high: 65.84,
+    low: 64.55,
+    close: 65.14,
+    adjClose: 36.06,
+    volume: 32916070
+  },
+  {
+    date: "2008/5/26",
+    open: 64.15,
+    high: 65.14,
+    low: 63.86,
+    close: 64.85,
+    adjClose: 35.9,
+    volume: 49128659
+  },
+  {
+    date: "2008/5/23",
+    open: 65.34,
+    high: 65.94,
+    low: 64.85,
+    close: 64.85,
+    adjClose: 35.9,
+    volume: 60767663
+  },
+  {
+    date: "2008/5/22",
+    open: 65.54,
+    high: 66.23,
+    low: 65.24,
+    close: 66.23,
+    adjClose: 36.67,
+    volume: 44796480
+  },
+  {
+    date: "2008/5/21",
+    open: 67.12,
+    high: 67.22,
+    low: 66.33,
+    close: 66.63,
+    adjClose: 36.89,
+    volume: 43023812
+  },
+  {
+    date: "2008/5/20",
+    open: 68.51,
+    high: 68.81,
+    low: 66.73,
+    close: 67.52,
+    adjClose: 37.38,
+    volume: 76617638
+  },
+  {
+    date: "2008/5/19",
+    open: 68.51,
+    high: 69.1,
+    low: 68.51,
+    close: 68.71,
+    adjClose: 38.04,
+    volume: 82585115
+  },
+  {
+    date: "2008/5/16",
+    open: 67.92,
+    high: 68.61,
+    low: 67.92,
+    close: 68.51,
+    adjClose: 37.93,
+    volume: 97350277
+  },
+  {
+    date: "2008/5/15",
+    open: 68.11,
+    high: 68.21,
+    low: 67.22,
+    close: 67.92,
+    adjClose: 37.6,
+    volume: 84659793
+  },
+  {
+    date: "2008/5/14",
+    open: 68.31,
+    high: 68.51,
+    low: 67.42,
+    close: 67.92,
+    adjClose: 37.6,
+    volume: 67232093
+  },
+  {
+    date: "2008/5/13",
+    open: 67.62,
+    high: 68.21,
+    low: 66.93,
+    close: 68.21,
+    adjClose: 37.76,
+    volume: 64676623
+  },
+  {
+    date: "2008/5/12",
+    open: 66.13,
+    high: 67.12,
+    low: 65.44,
+    close: 66.93,
+    adjClose: 37.05,
+    volume: 28053606
+  },
+  {
+    date: "2008/5/9",
+    open: 66.83,
+    high: 67.03,
+    low: 65.44,
+    close: 65.64,
+    adjClose: 36.34,
+    volume: 43383396
+  },
+  {
+    date: "2008/5/8",
+    open: 67.32,
+    high: 67.32,
+    low: 65.34,
+    close: 66.83,
+    adjClose: 37,
+    volume: 47647900
+  },
+  {
+    date: "2008/5/7",
+    open: 68.02,
+    high: 68.31,
+    low: 67.42,
+    close: 67.52,
+    adjClose: 37.38,
+    volume: 53091152
+  },
+  {
+    date: "2008/5/6",
+    open: 66.73,
+    high: 67.32,
+    low: 66.13,
+    close: 67.32,
+    adjClose: 37.27,
+    volume: 33356459
+  },
+  {
+    date: "2008/5/5",
+    open: 67.32,
+    high: 67.42,
+    low: 65.64,
+    close: 66.53,
+    adjClose: 36.83,
+    volume: 44992433
+  },
+  {
+    date: "2008/5/2",
+    open: 67.32,
+    high: 67.52,
+    low: 66.93,
+    close: 67.32,
+    adjClose: 37.27,
+    volume: 92729220214
+  },
+  {
+    date: "2008/4/30",
+    open: 64.55,
+    high: 66.53,
+    low: 64.55,
+    close: 66.04,
+    adjClose: 36.56,
+    volume: 79222601
+  },
+  {
+    date: "2008/4/29",
+    open: 65.84,
+    high: 66.33,
+    low: 64.06,
+    close: 64.06,
+    adjClose: 35.46,
+    volume: 54811297
+  },
+  {
+    date: "2008/4/28",
+    open: 63.36,
+    high: 65.84,
+    low: 62.87,
+    close: 65.84,
+    adjClose: 36.45,
+    volume: 76233812
+  },
+  {
+    date: "2008/4/25",
+    open: 63.36,
+    high: 64.25,
+    low: 63.36,
+    close: 64.06,
+    adjClose: 35.46,
+    volume: 48321615
+  },
+  {
+    date: "2008/4/24",
+    open: 63.76,
+    high: 63.86,
+    low: 62.87,
+    close: 63.26,
+    adjClose: 35.02,
+    volume: 64370573
+  },
+  {
+    date: "2008/4/23",
+    open: 65.34,
+    high: 65.34,
+    low: 63.96,
+    close: 63.96,
+    adjClose: 35.41,
+    volume: 71430943
+  },
+  {
+    date: "2008/4/22",
+    open: 66.63,
+    high: 66.63,
+    low: 65.94,
+    close: 66.63,
+    adjClose: 36.89,
+    volume: 38568406
+  },
+  {
+    date: "2008/4/21",
+    open: 66.13,
+    high: 66.83,
+    low: 66.13,
+    close: 66.73,
+    adjClose: 36.94,
+    volume: 39365349375
+  },
+  {
+    date: "2008/4/18",
+    open: 66.13,
+    high: 66.13,
+    low: 65.34,
+    close: 66.13,
+    adjClose: 36.61,
+    volume: 34048355
+  },
+  {
+    date: "2008/4/17",
+    open: 66.43,
+    high: 66.83,
+    low: 65.94,
+    close: 66.43,
+    adjClose: 36.78,
+    volume: 102502630
+  },
+  {
+    date: "2008/4/16",
+    open: 63.36,
+    high: 64.55,
+    low: 63.07,
+    close: 64.55,
+    adjClose: 35.74,
+    volume: 46918631
+  },
+  {
+    date: "2008/4/15",
+    open: 62.37,
+    high: 63.16,
+    low: 62.17,
+    close: 62.37,
+    adjClose: 34.53,
+    volume: 38509822
+  },
+  {
+    date: "2008/4/14",
+    open: 62.67,
+    high: 62.97,
+    low: 62.37,
+    close: 62.37,
+    adjClose: 34.53,
+    volume: 36523020
+  },
+  {
+    date: "2008/4/11",
+    open: 63.66,
+    high: 63.96,
+    low: 62.87,
+    close: 63.46,
+    adjClose: 35.13,
+    volume: 37326023
+  },
+  {
+    date: "2008/4/10",
+    open: 62.57,
+    high: 64.65,
+    low: 62.47,
+    close: 63.86,
+    adjClose: 35.35,
+    volume: 47965061
+  },
+  {
+    date: "2008/4/9",
+    open: 62.37,
+    high: 63.86,
+    low: 62.17,
+    close: 62.47,
+    adjClose: 34.58,
+    volume: 43211685
+  },
+  {
+    date: "2008/4/8",
+    open: 63.96,
+    high: 64.35,
+    low: 62.97,
+    close: 63.76,
+    adjClose: 35.3,
+    volume: 42646047
+  },
+  {
+    date: "2008/4/7",
+    open: 63.66,
+    high: 64.45,
+    low: 63.56,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 46050984238
+  },
+  {
+    date: "2008/4/3",
+    open: 63.36,
+    high: 64.25,
+    low: 63.26,
+    close: 63.76,
+    adjClose: 35.3,
+    volume: 28688938
+  },
+  {
+    date: "2008/4/2",
+    open: 62.87,
+    high: 64.35,
+    low: 62.47,
+    close: 63.36,
+    adjClose: 35.08,
+    volume: 64325120
+  },
+  {
+    date: "2008/4/1",
+    open: 61.88,
+    high: 62.87,
+    low: 61.18,
+    close: 61.18,
+    adjClose: 33.87,
+    volume: 49433699
+  },
+  {
+    date: "2008/3/31",
+    open: 61.09,
+    high: 62.47,
+    low: 60.49,
+    close: 62.47,
+    adjClose: 34.58,
+    volume: 74797497
+  },
+  {
+    date: "2008/3/28",
+    open: 61.58,
+    high: 62.67,
+    low: 61.38,
+    close: 61.68,
+    adjClose: 34.15,
+    volume: 110883158
+  },
+  {
+    date: "2008/3/27",
+    open: 64.35,
+    high: 64.45,
+    low: 62.97,
+    close: 63.16,
+    adjClose: 34.97,
+    volume: 55009270
+  },
+  {
+    date: "2008/3/26",
+    open: 65.14,
+    high: 66.33,
+    low: 64.85,
+    close: 66.33,
+    adjClose: 36.72,
+    volume: 54853719
+  },
+  {
+    date: "2008/3/25",
+    open: 66.73,
+    high: 66.73,
+    low: 65.74,
+    close: 66.53,
+    adjClose: 36.83,
+    volume: 88833390
+  },
+  {
+    date: "2008/3/24",
+    open: 68.61,
+    high: 68.61,
+    low: 66.63,
+    close: 66.73,
+    adjClose: 36.94,
+    volume: 131630948
+  },
+  {
+    date: "2008/3/21",
+    open: 62.97,
+    high: 64.25,
+    low: 62.97,
+    close: 64.15,
+    adjClose: 35.52,
+    volume: 102541013
+  },
+  {
+    date: "2008/3/20",
+    open: 61.09,
+    high: 62.27,
+    low: 60.39,
+    close: 61.98,
+    adjClose: 34.31,
+    volume: 54806246
+  },
+  {
+    date: "2008/3/19",
+    open: 60.89,
+    high: 61.48,
+    low: 60.19,
+    close: 61.48,
+    adjClose: 34.04,
+    volume: 43634903
+  },
+  {
+    date: "2008/3/18",
+    open: 59.3,
+    high: 60,
+    low: 58.91,
+    close: 59.3,
+    adjClose: 32.83,
+    volume: 47983242
+  },
+  {
+    date: "2008/3/17",
+    open: 59.4,
+    high: 59.7,
+    low: 58.91,
+    close: 59.3,
+    adjClose: 32.83,
+    volume: 91075740
+  },
+  {
+    date: "2008/3/14",
+    open: 61.88,
+    high: 61.98,
+    low: 60,
+    close: 60.49,
+    adjClose: 33.49,
+    volume: 45962098
+  },
+  {
+    date: "2008/3/13",
+    open: 62.08,
+    high: 62.87,
+    low: 60.89,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 42630896
+  },
+  {
+    date: "2008/3/12",
+    open: 63.36,
+    high: 63.56,
+    low: 62.47,
+    close: 63.16,
+    adjClose: 34.97,
+    volume: 47048930
+  },
+  {
+    date: "2008/3/11",
+    open: 60,
+    high: 61.78,
+    low: 60,
+    close: 61.78,
+    adjClose: 34.2,
+    volume: 43667225
+  },
+  {
+    date: "2008/3/10",
+    open: 62.27,
+    high: 62.27,
+    low: 60.39,
+    close: 60.59,
+    adjClose: 33.54,
+    volume: 60318183
+  },
+  {
+    date: "2008/3/7",
+    open: 62.97,
+    high: 63.86,
+    low: 62.67,
+    close: 63.36,
+    adjClose: 35.08,
+    volume: 53416394
+  },
+  {
+    date: "2008/3/6",
+    open: 62.87,
+    high: 64.25,
+    low: 62.87,
+    close: 64.25,
+    adjClose: 35.57,
+    volume: 64834194
+  },
+  {
+    date: "2008/3/5",
+    open: 62.87,
+    high: 62.87,
+    low: 61.88,
+    close: 62.67,
+    adjClose: 34.69,
+    volume: 70510771
+  },
+  {
+    date: "2008/3/4",
+    open: 59.5,
+    high: 62.37,
+    low: 59.5,
+    close: 62.27,
+    adjClose: 34.47,
+    volume: 74207617
+  },
+  {
+    date: "2008/3/3",
+    open: 59.5,
+    high: 60.1,
+    low: 59.4,
+    close: 60.1,
+    adjClose: 33.27,
+    volume: 47462048
+  },
+  {
+    date: "2008/2/29",
+    open: 61.98,
+    high: 62.87,
+    low: 60.99,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 64072603
+  },
+  {
+    date: "2008/2/27",
+    open: 62.17,
+    high: 62.97,
+    low: 62.08,
+    close: 62.97,
+    adjClose: 34.86,
+    volume: 94417042
+  },
+  {
+    date: "2008/2/26",
+    open: 61.18,
+    high: 61.88,
+    low: 60.89,
+    close: 61.78,
+    adjClose: 34.2,
+    volume: 59821230
+  },
+  {
+    date: "2008/2/25",
+    open: 60.39,
+    high: 60.89,
+    low: 60,
+    close: 60.59,
+    adjClose: 33.54,
+    volume: 40391577
+  },
+  {
+    date: "2008/2/22",
+    open: 60.29,
+    high: 60.39,
+    low: 59.5,
+    close: 60.29,
+    adjClose: 33.38,
+    volume: 37511876
+  },
+  {
+    date: "2008/2/21",
+    open: 60.89,
+    high: 61.48,
+    low: 60.49,
+    close: 61.28,
+    adjClose: 33.93,
+    volume: 40795604
+  },
+  {
+    date: "2008/2/20",
+    open: 60.79,
+    high: 60.79,
+    low: 59.1,
+    close: 60.49,
+    adjClose: 33.49,
+    volume: 41368312
+  },
+  {
+    date: "2008/2/19",
+    open: 60.19,
+    high: 60.89,
+    low: 59.4,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 20237706
+  },
+  {
+    date: "2008/2/18",
+    open: 60.89,
+    high: 61.18,
+    low: 59.1,
+    close: 59.4,
+    adjClose: 32.89,
+    volume: 52548746
+  },
+  {
+    date: "2008/2/15",
+    open: 60.39,
+    high: 61.09,
+    low: 60.29,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 30468677
+  },
+  {
+    date: "2008/2/14",
+    open: 59.6,
+    high: 61.38,
+    low: 59.6,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 73558144
+  },
+  {
+    date: "2008/2/13",
+    open: 60.39,
+    high: 60.39,
+    low: 59.3,
+    close: 59.3,
+    adjClose: 32.83,
+    volume: 52671974
+  },
+  {
+    date: "2008/2/12",
+    open: 59.1,
+    high: 59.7,
+    low: 59.1,
+    close: 59.4,
+    adjClose: 32.89,
+    volume: 104072274
+  },
+  {
+    date: "2008/2/1",
+    open: 60.39,
+    high: 61.58,
+    low: 59.8,
+    close: 60.79,
+    adjClose: 33.65,
+    volume: 135886361
+  },
+  {
+    date: "2008/1/31",
+    open: 56.93,
+    high: 59.3,
+    low: 56.73,
+    close: 59.3,
+    adjClose: 32.83,
+    volume: 172864922
+  },
+  {
+    date: "2008/1/30",
+    open: 56.93,
+    high: 57.72,
+    low: 56.43,
+    close: 57.22,
+    adjClose: 31.68,
+    volume: 111730604
+  },
+  {
+    date: "2008/1/29",
+    open: 55.34,
+    high: 56.43,
+    low: 55.05,
+    close: 56.43,
+    adjClose: 31.24,
+    volume: 58653592
+  },
+  {
+    date: "2008/1/28",
+    open: 54.85,
+    high: 54.85,
+    low: 53.46,
+    close: 53.66,
+    adjClose: 29.71,
+    volume: 39967349
+  },
+  {
+    date: "2008/1/25",
+    open: 54.45,
+    high: 55.44,
+    low: 54.45,
+    close: 54.95,
+    adjClose: 30.42,
+    volume: 50756887
+  },
+  {
+    date: "2008/1/24",
+    open: 53.96,
+    high: 53.96,
+    low: 52.57,
+    close: 53.16,
+    adjClose: 29.43,
+    volume: 72080416
+  },
+  {
+    date: "2008/1/23",
+    open: 50.49,
+    high: 50.89,
+    low: 49.9,
+    close: 50.49,
+    adjClose: 27.95,
+    volume: 78966044
+  },
+  {
+    date: "2008/1/22",
+    open: 49.11,
+    high: 50.59,
+    low: 49.11,
+    close: 49.11,
+    adjClose: 27.19,
+    volume: 88136444
+  },
+  {
+    date: "2008/1/21",
+    open: 54.06,
+    high: 54.15,
+    low: 52.77,
+    close: 52.77,
+    adjClose: 29.21,
+    volume: 43136940
+  },
+  {
+    date: "2008/1/18",
+    open: 53.46,
+    high: 54.35,
+    low: 52.77,
+    close: 54.06,
+    adjClose: 29.93,
+    volume: 66086677
+  },
+  {
+    date: "2008/1/17",
+    open: 55.05,
+    high: 55.84,
+    low: 53.96,
+    close: 54.15,
+    adjClose: 29.98,
+    volume: 51692209
+  },
+  {
+    date: "2008/1/16",
+    open: 55.05,
+    high: 55.64,
+    low: 54.35,
+    close: 54.85,
+    adjClose: 30.36,
+    volume: 79288255
+  },
+  {
+    date: "2008/1/15",
+    open: 54.85,
+    high: 57.32,
+    low: 54.65,
+    close: 56.93,
+    adjClose: 31.52,
+    volume: 98374485
+  },
+  {
+    date: "2008/1/14",
+    open: 55.94,
+    high: 56.23,
+    low: 54.15,
+    close: 54.35,
+    adjClose: 30.09,
+    volume: 77963047
+  },
+  {
+    date: "2008/1/11",
+    open: 55.54,
+    high: 55.54,
+    low: 54.15,
+    close: 54.45,
+    adjClose: 30.14,
+    volume: 72260208
+  },
+  {
+    date: "2008/1/10",
+    open: 56.43,
+    high: 56.83,
+    low: 54.75,
+    close: 55.14,
+    adjClose: 30.53,
+    volume: 61813083
+  },
+  {
+    date: "2008/1/9",
+    open: 54.45,
+    high: 56.43,
+    low: 53.96,
+    close: 56.43,
+    adjClose: 31.24,
+    volume: 45426762
+  },
+  {
+    date: "2008/1/8",
+    open: 55.24,
+    high: 56.04,
+    low: 54.95,
+    close: 55.44,
+    adjClose: 30.69,
+    volume: 47704464
+  },
+  {
+    date: "2008/1/7",
+    open: 56.43,
+    high: 57.42,
+    low: 55.24,
+    close: 55.24,
+    adjClose: 30.58,
+    volume: 104088436
+  },
+  {
+    date: "2008/1/4",
+    open: 58.71,
+    high: 59.8,
+    low: 57.92,
+    close: 59.4,
+    adjClose: 32.89,
+    volume: 48851900
+  },
+  {
+    date: "2008/1/3",
+    open: 59.3,
+    high: 59.4,
+    low: 58.81,
+    close: 58.81,
+    adjClose: 32.56,
+    volume: 35123067
+  },
+  {
+    date: "2008/1/2",
+    open: 61.38,
+    high: 61.38,
+    low: 59.6,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 39300705
+  },
+  {
+    date: "2007/12/31",
+    open: 58.91,
+    high: 59.1,
+    low: 58.11,
+    close: 58.91,
+    adjClose: 32.61,
+    volume: 24080002
+  },
+  {
+    date: "2007/12/28",
+    open: 60.89,
+    high: 61.88,
+    low: 59.9,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 74708611
+  },
+  {
+    date: "2007/12/27",
+    open: 59.4,
+    high: 61.09,
+    low: 59.01,
+    close: 61.09,
+    adjClose: 33.82,
+    volume: 127516944
+  },
+  {
+    date: "2007/12/26",
+    open: 58.91,
+    high: 59.1,
+    low: 58.11,
+    close: 58.91,
+    adjClose: 32.61,
+    volume: 24080002286
+  },
+  {
+    date: "2007/12/25",
+    open: 58.91,
+    high: 59.1,
+    low: 58.51,
+    close: 59.01,
+    adjClose: 32.67,
+    volume: 25618334
+  },
+  {
+    date: "2007/12/24",
+    open: 58.91,
+    high: 59.2,
+    low: 58.31,
+    close: 58.61,
+    adjClose: 32.45,
+    volume: 36075560
+  },
+  {
+    date: "2007/12/21",
+    open: 58.61,
+    high: 59.01,
+    low: 58.41,
+    close: 58.41,
+    adjClose: 32.34,
+    volume: 77640836
+  },
+  {
+    date: "2007/12/20",
+    open: 58.61,
+    high: 58.61,
+    low: 58.21,
+    close: 58.41,
+    adjClose: 32.34,
+    volume: 56875874
+  },
+  {
+    date: "2007/12/19",
+    open: 59.4,
+    high: 59.4,
+    low: 58.21,
+    close: 58.61,
+    adjClose: 32.45,
+    volume: 87625350
+  },
+  {
+    date: "2007/12/18",
+    open: 58.41,
+    high: 59.01,
+    low: 58.02,
+    close: 58.21,
+    adjClose: 32.23,
+    volume: 82978031368
+  },
+  {
+    date: "2007/12/17",
+    open: 58.51,
+    high: 59.01,
+    low: 58.31,
+    close: 58.91,
+    adjClose: 32.61,
+    volume: 67113915
+  },
+  {
+    date: "2007/12/14",
+    open: 59.9,
+    high: 59.9,
+    low: 58.41,
+    close: 59.2,
+    adjClose: 32.78,
+    volume: 153675665
+  },
+  {
+    date: "2007/12/13",
+    open: 60.39,
+    high: 60.99,
+    low: 60.1,
+    close: 60.1,
+    adjClose: 33.27,
+    volume: 139614519
+  },
+  {
+    date: "2007/12/12",
+    open: 61.38,
+    high: 61.68,
+    low: 60.29,
+    close: 60.69,
+    adjClose: 33.6,
+    volume: 118280890
+  },
+  {
+    date: "2007/12/11",
+    open: 60.69,
+    high: 62.08,
+    low: 60.59,
+    close: 62.08,
+    adjClose: 34.37,
+    volume: 77784265
+  },
+  {
+    date: "2007/12/10",
+    open: 62.37,
+    high: 62.37,
+    low: 60.49,
+    close: 60.49,
+    adjClose: 33.49,
+    volume: 75090416
+  },
+  {
+    date: "2007/12/7",
+    open: 61.88,
+    high: 62.87,
+    low: 61.78,
+    close: 61.98,
+    adjClose: 34.31,
+    volume: 165686374
+  },
+  {
+    date: "2007/12/6",
+    open: 60.89,
+    high: 61.28,
+    low: 60.39,
+    close: 61.28,
+    adjClose: 33.93,
+    volume: 93817062
+  },
+  {
+    date: "2007/12/5",
+    open: 59.6,
+    high: 60.49,
+    low: 59.3,
+    close: 60.29,
+    adjClose: 33.38,
+    volume: 113492161
+  },
+  {
+    date: "2007/12/4",
+    open: 59.2,
+    high: 60.19,
+    low: 58.31,
+    close: 59.7,
+    adjClose: 33.05,
+    volume: 41376393
+  },
+  {
+    date: "2007/12/3",
+    open: 60.1,
+    high: 60.19,
+    low: 59.01,
+    close: 59.2,
+    adjClose: 32.78,
+    volume: 40504705
+  },
+  {
+    date: "2007/11/30",
+    open: 58.71,
+    high: 60,
+    low: 58.71,
+    close: 60,
+    adjClose: 33.21,
+    volume: 47288316
+  },
+  {
+    date: "2007/11/29",
+    open: 58.41,
+    high: 59.4,
+    low: 58.21,
+    close: 59.4,
+    adjClose: 32.89,
+    volume: 59114183
+  },
+  {
+    date: "2007/11/28",
+    open: 57.92,
+    high: 58.71,
+    low: 57.92,
+    close: 57.92,
+    adjClose: 32.06,
+    volume: 54263840
+  },
+  {
+    date: "2007/11/27",
+    open: 58.91,
+    high: 59.5,
+    low: 58.21,
+    close: 58.51,
+    adjClose: 32.39,
+    volume: 83528517
+  },
+  {
+    date: "2007/11/26",
+    open: 59.5,
+    high: 60.49,
+    low: 59.4,
+    close: 60.49,
+    adjClose: 33.49,
+    volume: 146777924701
+  },
+  {
+    date: "2007/11/23",
+    open: 59.4,
+    high: 59.6,
+    low: 58.71,
+    close: 59.01,
+    adjClose: 32.67,
+    volume: 54809277
+  },
+  {
+    date: "2007/11/22",
+    open: 57.42,
+    high: 59.5,
+    low: 56.83,
+    close: 59.3,
+    adjClose: 32.83,
+    volume: 55509253
+  },
+  {
+    date: "2007/11/21",
+    open: 59.9,
+    high: 60,
+    low: 58.02,
+    close: 58.02,
+    adjClose: 32.12,
+    volume: 83413370
+  },
+  {
+    date: "2007/11/20",
+    open: 59.4,
+    high: 60.19,
+    low: 59.2,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 64323100
+  },
+  {
+    date: "2007/11/19",
+    open: 59.9,
+    high: 61.38,
+    low: 59.8,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 71248120
+  },
+  {
+    date: "2007/11/16",
+    open: 60.1,
+    high: 60.1,
+    low: 59.4,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 49988226
+  },
+  {
+    date: "2007/11/15",
+    open: 60.39,
+    high: 60.99,
+    low: 60.29,
+    close: 60.29,
+    adjClose: 33.38,
+    volume: 49587229
+  },
+  {
+    date: "2007/11/14",
+    open: 62.17,
+    high: 62.57,
+    low: 60.79,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 76601477
+  },
+  {
+    date: "2007/11/13",
+    open: 60.89,
+    high: 61.09,
+    low: 60.39,
+    close: 61.09,
+    adjClose: 33.82,
+    volume: 53703253
+  },
+  {
+    date: "2007/11/12",
+    open: 60.99,
+    high: 61.48,
+    low: 60.79,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 77819618
+  },
+  {
+    date: "2007/11/9",
+    open: 60.99,
+    high: 62.67,
+    low: 60.89,
+    close: 61.68,
+    adjClose: 34.15,
+    volume: 69057285
+  },
+  {
+    date: "2007/11/8",
+    open: 60.89,
+    high: 61.68,
+    low: 60.79,
+    close: 61.28,
+    adjClose: 33.93,
+    volume: 58650562
+  },
+  {
+    date: "2007/11/7",
+    open: 63.16,
+    high: 63.16,
+    low: 62.27,
+    close: 62.37,
+    adjClose: 34.53,
+    volume: 71047117
+  },
+  {
+    date: "2007/11/6",
+    open: 61.88,
+    high: 62.37,
+    low: 61.38,
+    close: 61.98,
+    adjClose: 34.31,
+    volume: 32956472
+  },
+  {
+    date: "2007/11/5",
+    open: 61.38,
+    high: 61.88,
+    low: 59.9,
+    close: 61.88,
+    adjClose: 34.26,
+    volume: 64364512822
+  },
+  {
+    date: "2007/11/2",
+    open: 62.37,
+    high: 62.97,
+    low: 60.89,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 60329294
+  },
+  {
+    date: "2007/11/1",
+    open: 63.76,
+    high: 63.76,
+    low: 62.77,
+    close: 63.56,
+    adjClose: 35.19,
+    volume: 54973917971
+  },
+  {
+    date: "2007/10/31",
+    open: 63.36,
+    high: 63.56,
+    low: 62.37,
+    close: 63.16,
+    adjClose: 34.97,
+    volume: 48506457
+  },
+  {
+    date: "2007/10/30",
+    open: 63.76,
+    high: 63.76,
+    low: 62.08,
+    close: 62.37,
+    adjClose: 34.53,
+    volume: 38215892
+  },
+  {
+    date: "2007/10/29",
+    open: 61.38,
+    high: 63.36,
+    low: 61.38,
+    close: 63.26,
+    adjClose: 35.02,
+    volume: 83796185
+  },
+  {
+    date: "2007/10/26",
+    open: 60.39,
+    high: 61.18,
+    low: 60.39,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 72908671
+  },
+  {
+    date: "2007/10/25",
+    open: 59.9,
+    high: 60.69,
+    low: 59.8,
+    close: 60.49,
+    adjClose: 33.49,
+    volume: 46308551
+  },
+  {
+    date: "2007/10/24",
+    open: 60.99,
+    high: 61.48,
+    low: 60,
+    close: 60.19,
+    adjClose: 33.32,
+    volume: 33074650
+  },
+  {
+    date: "2007/10/23",
+    open: 60,
+    high: 61.09,
+    low: 60,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 35098825
+  },
+  {
+    date: "2007/10/22",
+    open: 59.4,
+    high: 60,
+    low: 59.01,
+    close: 60,
+    adjClose: 33.21,
+    volume: 80311453
+  },
+  {
+    date: "2007/10/19",
+    open: 62.27,
+    high: 62.27,
+    low: 61.28,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 26892029
+  },
+  {
+    date: "2007/10/18",
+    open: 61.68,
+    high: 62.27,
+    low: 61.18,
+    close: 62.27,
+    adjClose: 34.47,
+    volume: 32670623
+  },
+  {
+    date: "2007/10/17",
+    open: 62.08,
+    high: 62.08,
+    low: 60.99,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 47351950
+  },
+  {
+    date: "2007/10/16",
+    open: 61.18,
+    high: 62.17,
+    low: 61.18,
+    close: 61.78,
+    adjClose: 34.2,
+    volume: 80164994188
+  },
+  {
+    date: "2007/10/15",
+    open: 60.69,
+    high: 62.27,
+    low: 60.59,
+    close: 62.27,
+    adjClose: 34.47,
+    volume: 90365662
+  },
+  {
+    date: "2007/10/12",
+    open: 61.98,
+    high: 61.98,
+    low: 60.59,
+    close: 60.69,
+    adjClose: 33.6,
+    volume: 79288255
+  },
+  {
+    date: "2007/10/11",
+    open: 64.35,
+    high: 64.35,
+    low: 62.37,
+    close: 62.67,
+    adjClose: 34.69,
+    volume: 81860897
+  },
+  {
+    date: "2007/10/9",
+    open: 64.65,
+    high: 64.65,
+    low: 63.36,
+    close: 64.15,
+    adjClose: 35.52,
+    volume: 42308685
+  },
+  {
+    date: "2007/10/8",
+    open: 64.85,
+    high: 64.95,
+    low: 63.86,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 64394814
+  },
+  {
+    date: "2007/10/5",
+    open: 63.56,
+    high: 64.35,
+    low: 63.36,
+    close: 63.96,
+    adjClose: 35.41,
+    volume: 27759677
+  },
+  {
+    date: "2007/10/4",
+    open: 63.56,
+    high: 64.35,
+    low: 63.26,
+    close: 63.56,
+    adjClose: 35.19,
+    volume: 40264309
+  },
+  {
+    date: "2007/10/3",
+    open: 64.65,
+    high: 64.65,
+    low: 64.06,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 78886249
+  },
+  {
+    date: "2007/10/2",
+    open: 64.25,
+    high: 64.65,
+    low: 63.86,
+    close: 64.25,
+    adjClose: 35.57,
+    volume: 110099346
+  },
+  {
+    date: "2007/10/1",
+    open: 62.87,
+    high: 63.56,
+    low: 62.87,
+    close: 63.26,
+    adjClose: 35.02,
+    volume: 59374780
+  },
+  {
+    date: "2007/9/28",
+    open: 62.97,
+    high: 63.26,
+    low: 62.47,
+    close: 62.97,
+    adjClose: 34.86,
+    volume: 66759382
+  },
+  {
+    date: "2007/9/27",
+    open: 61.58,
+    high: 62.97,
+    low: 61.09,
+    close: 62.97,
+    adjClose: 34.86,
+    volume: 75288389
+  },
+  {
+    date: "2007/9/26",
+    open: 60.39,
+    high: 61.18,
+    low: 60.39,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 87819283
+  },
+  {
+    date: "2007/9/21",
+    open: 60.89,
+    high: 61.18,
+    low: 60.39,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 30268684
+  },
+  {
+    date: "2007/9/20",
+    open: 61.09,
+    high: 61.48,
+    low: 60.29,
+    close: 60.39,
+    adjClose: 33.43,
+    volume: 67565415811
+  },
+  {
+    date: "2007/9/19",
+    open: 61.68,
+    high: 61.78,
+    low: 60.19,
+    close: 60.79,
+    adjClose: 33.65,
+    volume: 87697065
+  },
+  {
+    date: "2007/9/18",
+    open: 60.19,
+    high: 60.19,
+    low: 60.19,
+    close: 60.19,
+    adjClose: 33.32,
+    volume: null
+  },
+  {
+    date: "2007/9/17",
+    open: 61.38,
+    high: 61.38,
+    low: 59.9,
+    close: 60.19,
+    adjClose: 33.32,
+    volume: 29274777
+  },
+  {
+    date: "2007/9/14",
+    open: 60.79,
+    high: 61.18,
+    low: 60.29,
+    close: 61.18,
+    adjClose: 33.87,
+    volume: 46905501
+  },
+  {
+    date: "2007/9/13",
+    open: 60.89,
+    high: 60.89,
+    low: 59.8,
+    close: 60,
+    adjClose: 33.21,
+    volume: 31171684
+  },
+  {
+    date: "2007/9/12",
+    open: 60.39,
+    high: 61.18,
+    low: 60.39,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 31121180
+  },
+  {
+    date: "2007/9/11",
+    open: 60.89,
+    high: 60.89,
+    low: 60.19,
+    close: 60.69,
+    adjClose: 33.6,
+    volume: 19271072
+  },
+  {
+    date: "2007/9/10",
+    open: 60.69,
+    high: 60.69,
+    low: 59.7,
+    close: 60.59,
+    adjClose: 33.54,
+    volume: 33192828655
+  },
+  {
+    date: "2007/9/7",
+    open: 62.17,
+    high: 62.17,
+    low: 60.89,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 26939502
+  },
+  {
+    date: "2007/9/6",
+    open: 61.18,
+    high: 61.98,
+    low: 60.49,
+    close: 61.58,
+    adjClose: 34.09,
+    volume: 39366359
+  },
+  {
+    date: "2007/9/5",
+    open: 61.98,
+    high: 62.08,
+    low: 61.09,
+    close: 61.18,
+    adjClose: 33.87,
+    volume: 30499989
+  },
+  {
+    date: "2007/9/4",
+    open: 61.18,
+    high: 61.88,
+    low: 60.79,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 18916538
+  },
+  {
+    date: "2007/9/3",
+    open: 62.08,
+    high: 62.08,
+    low: 61.18,
+    close: 61.98,
+    adjClose: 34.31,
+    volume: 29107106
+  },
+  {
+    date: "2007/8/31",
+    open: 60,
+    high: 62.08,
+    low: 60,
+    close: 62.08,
+    adjClose: 34.37,
+    volume: 57537468
+  },
+  {
+    date: "2007/8/30",
+    open: 60.19,
+    high: 60.39,
+    low: 59.8,
+    close: 59.9,
+    adjClose: 33.16,
+    volume: 32552446
+  },
+  {
+    date: "2007/8/29",
+    open: 59.01,
+    high: 59.7,
+    low: 59.01,
+    close: 59.6,
+    adjClose: 32.99,
+    volume: 51182125
+  },
+  {
+    date: "2007/8/28",
+    open: 60.19,
+    high: 60.89,
+    low: 60,
+    close: 60.79,
+    adjClose: 33.65,
+    volume: 37855298
+  },
+  {
+    date: "2007/8/27",
+    open: 61.78,
+    high: 61.98,
+    low: 60.79,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 39349188
+  },
+  {
+    date: "2007/8/24",
+    open: 62.37,
+    high: 62.37,
+    low: 60.89,
+    close: 60.99,
+    adjClose: 33.76,
+    volume: 55273907
+  },
+  {
+    date: "2007/8/23",
+    open: 61.88,
+    high: 62.37,
+    low: 61.68,
+    close: 62.17,
+    adjClose: 34.42,
+    volume: 81387175
+  },
+  {
+    date: "2007/8/22",
+    open: 60.89,
+    high: 60.89,
+    low: 60.1,
+    close: 60.29,
+    adjClose: 33.38,
+    volume: 36245251
+  },
+  {
+    date: "2007/8/21",
+    open: 60.89,
+    high: 61.38,
+    low: 59.9,
+    close: 61.28,
+    adjClose: 33.93,
+    volume: 50454877
+  },
+  {
+    date: "2007/8/20",
+    open: 61.38,
+    high: 61.68,
+    low: 60.19,
+    close: 61.58,
+    adjClose: 34.09,
+    volume: 62321146
+  },
+  {
+    date: "2007/8/17",
+    open: 58.51,
+    high: 59.7,
+    low: 58.02,
+    close: 58.41,
+    adjClose: 32.34,
+    volume: 77250950
+  },
+  {
+    date: "2007/8/16",
+    open: 59.4,
+    high: 59.5,
+    low: 58.02,
+    close: 58.51,
+    adjClose: 32.39,
+    volume: 116610239
+  },
+  {
+    date: "2007/8/15",
+    open: 60.89,
+    high: 60.89,
+    low: 60.1,
+    close: 60.39,
+    adjClose: 33.43,
+    volume: 70863285
+  },
+  {
+    date: "2007/8/14",
+    open: 61.58,
+    high: 62.08,
+    low: 60.89,
+    close: 61.28,
+    adjClose: 33.93,
+    volume: 42393530
+  },
+  {
+    date: "2007/8/13",
+    open: 61.88,
+    high: 61.98,
+    low: 60.99,
+    close: 61.38,
+    adjClose: 33.98,
+    volume: 60228287
+  },
+  {
+    date: "2007/8/10",
+    open: 60.49,
+    high: 61.68,
+    low: 60.49,
+    close: 60.89,
+    adjClose: 33.71,
+    volume: 79525621
+  },
+  {
+    date: "2007/8/9",
+    open: 63.46,
+    high: 63.66,
+    low: 62.57,
+    close: 63.16,
+    adjClose: 34.97,
+    volume: 50910417
+  },
+  {
+    date: "2007/8/8",
+    open: 60.79,
+    high: 62.17,
+    low: 60.19,
+    close: 62.17,
+    adjClose: 34.42,
+    volume: 79317547
+  },
+  {
+    date: "2007/8/7",
+    open: 62.17,
+    high: 62.27,
+    low: 60.59,
+    close: 60.69,
+    adjClose: 33.6,
+    volume: 68951228
+  },
+  {
+    date: "2007/8/6",
+    open: 61.88,
+    high: 62.77,
+    low: 61.78,
+    close: 61.98,
+    adjClose: 34.31,
+    volume: 51372018
+  },
+  {
+    date: "2007/8/3",
+    open: 63.76,
+    high: 63.86,
+    low: 62.27,
+    close: 63.26,
+    adjClose: 35.02,
+    volume: 43447030
+  },
+  {
+    date: "2007/8/2",
+    open: 61.38,
+    high: 63.16,
+    low: 61.09,
+    close: 63.16,
+    adjClose: 34.97,
+    volume: 96617978
+  },
+  {
+    date: "2007/8/1",
+    open: 63.36,
+    high: 63.86,
+    low: 60.69,
+    close: 60.69,
+    adjClose: 33.6,
+    volume: 184354436
+  },
+  {
+    date: "2007/7/31",
+    open: 64.35,
+    high: 64.55,
+    low: 63.96,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 108052949
+  },
+  {
+    date: "2007/7/30",
+    open: 62.67,
+    high: 64.65,
+    low: 62.47,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 124382706
+  },
+  {
+    date: "2007/7/27",
+    open: 64.35,
+    high: 64.75,
+    low: 63.36,
+    close: 63.36,
+    adjClose: 35.08,
+    volume: 259580202
+  },
+  {
+    date: "2007/7/26",
+    open: 69.3,
+    high: 69.3,
+    low: 67.42,
+    close: 67.52,
+    adjClose: 37.38,
+    volume: 74248020
+  },
+  {
+    date: "2007/7/25",
+    open: 69.2,
+    high: 69.3,
+    low: 68.61,
+    close: 68.91,
+    adjClose: 38.15,
+    volume: 43271279
+  },
+  {
+    date: "2007/7/24",
+    open: 68.31,
+    high: 70.59,
+    low: 68.31,
+    close: 70.59,
+    adjClose: 39.08,
+    volume: 79181188726
+  },
+  {
+    date: "2007/7/23",
+    open: 68.02,
+    high: 68.21,
+    low: 67.62,
+    close: 68.02,
+    adjClose: 37.65,
+    volume: 55621371
+  },
+  {
+    date: "2007/7/20",
+    open: 69.3,
+    high: 69.3,
+    low: 68.11,
+    close: 68.71,
+    adjClose: 38.04,
+    volume: 70424916
+  },
+  {
+    date: "2007/7/19",
+    open: 69.2,
+    high: 69.6,
+    low: 68.71,
+    close: 69.3,
+    adjClose: 38.37,
+    volume: 66622013
+  },
+  {
+    date: "2007/7/18",
+    open: 71.08,
+    high: 71.48,
+    low: 70.29,
+    close: 70.29,
+    adjClose: 38.91,
+    volume: 42577363103
+  },
+  {
+    date: "2007/7/17",
+    open: 72.07,
+    high: 72.07,
+    low: 70.59,
+    close: 71.98,
+    adjClose: 39.85,
+    volume: 30858563
+  },
+  {
+    date: "2007/7/16",
+    open: 72.27,
+    high: 72.27,
+    low: 70.89,
+    close: 71.78,
+    adjClose: 39.74,
+    volume: 47211551
+  },
+  {
+    date: "2007/7/13",
+    open: 71.98,
+    high: 72.37,
+    low: 71.28,
+    close: 72.27,
+    adjClose: 40.01,
+    volume: 87624340
+  },
+  {
+    date: "2007/7/12",
+    open: 71.78,
+    high: 72.17,
+    low: 70.49,
+    close: 70.99,
+    adjClose: 39.3,
+    volume: 66911902
+  },
+  {
+    date: "2007/7/11",
+    open: 71.08,
+    high: 71.88,
+    low: 70.69,
+    close: 71.68,
+    adjClose: 39.68,
+    volume: 62059539
+  },
+  {
+    date: "2007/7/10",
+    open: 71.28,
+    high: 71.88,
+    low: 70.69,
+    close: 71.28,
+    adjClose: 39.46,
+    volume: 83992138
+  },
+  {
+    date: "2007/7/9",
+    open: 69.8,
+    high: 71.28,
+    low: 69.6,
+    close: 71.28,
+    adjClose: 39.46,
+    volume: 54256770
+  },
+  {
+    date: "2007/7/6",
+    open: 70.19,
+    high: 70.29,
+    low: 69.4,
+    close: 69.8,
+    adjClose: 38.64,
+    volume: 41337000
+  },
+  {
+    date: "2007/7/5",
+    open: 70.69,
+    high: 70.89,
+    low: 70.09,
+    close: 70.69,
+    adjClose: 39.13,
+    volume: 49550867
+  },
+  {
+    date: "2007/7/4",
+    open: 71.08,
+    high: 71.28,
+    low: 70.69,
+    close: 71.18,
+    adjClose: 39.41,
+    volume: 45053037
+  },
+  {
+    date: "2007/7/3",
+    open: 70.39,
+    high: 71.18,
+    low: 70.39,
+    close: 70.49,
+    adjClose: 39.02,
+    volume: 45479286
+  },
+  {
+    date: "2007/7/2",
+    open: 70.19,
+    high: 70.29,
+    low: 69.2,
+    close: 70.29,
+    adjClose: 38.91,
+    volume: 34884691
+  },
+  {
+    date: "2007/6/29",
+    open: 70.29,
+    high: 70.29,
+    low: 69.2,
+    close: 70.19,
+    adjClose: 38.86,
+    volume: 65587704
+  },
+  {
+    date: "2007/6/28",
+    open: 69.5,
+    high: 69.9,
+    low: 68.91,
+    close: 69.7,
+    adjClose: 38.59,
+    volume: 76420675
+  },
+  {
+    date: "2007/6/27",
+    open: 68.31,
+    high: 69.1,
+    low: 67.92,
+    close: 68.81,
+    adjClose: 38.09,
+    volume: 45260101
+  },
+  {
+    date: "2007/6/26",
+    open: 69.2,
+    high: 69.3,
+    low: 68.31,
+    close: 68.41,
+    adjClose: 37.87,
+    volume: 43949034
+  },
+  {
+    date: "2007/6/25",
+    open: 68.31,
+    high: 69.7,
+    low: 68.21,
+    close: 69.7,
+    adjClose: 38.59,
+    volume: 98997697
+  },
+  {
+    date: "2007/6/22",
+    open: 69.01,
+    high: 69.01,
+    low: 67.62,
+    close: 68.31,
+    adjClose: 37.82,
+    volume: 61035331
+  },
+  {
+    date: "2007/6/21",
+    open: 67.92,
+    high: 68.71,
+    low: 67.03,
+    close: 68.51,
+    adjClose: 37.93,
+    volume: 144017402
+  },
+  {
+    date: "2007/6/20",
+    open: 65.84,
+    high: 67.82,
+    low: 65.84,
+    close: 67.62,
+    adjClose: 37.43,
+    volume: 156874548
+  },
+  {
+    date: "2007/6/15",
+    open: 65.05,
+    high: 65.14,
+    low: 64.65,
+    close: 65.05,
+    adjClose: 36.01,
+    volume: 76806520
+  },
+  {
+    date: "2007/6/14",
+    open: 64.06,
+    high: 64.45,
+    low: 63.96,
+    close: 64.35,
+    adjClose: 35.63,
+    volume: 63326163
+  },
+  {
+    date: "2007/6/13",
+    open: 64.15,
+    high: 64.15,
+    low: 63.26,
+    close: 63.46,
+    adjClose: 35.13,
+    volume: 53593156
+  },
+  {
+    date: "2007/6/12",
+    open: 64.85,
+    high: 64.95,
+    low: 64.15,
+    close: 64.15,
+    adjClose: 35.52,
+    volume: 58542485
+  },
+  {
+    date: "2007/6/11",
+    open: 65.34,
+    high: 65.34,
+    low: 64.85,
+    close: 64.95,
+    adjClose: 35.95,
+    volume: 52761870
+  },
+  {
+    date: "2007/6/8",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2007/6/8",
+    open: 65.34,
+    high: 65.34,
+    low: 64.65,
+    close: 64.75,
+    adjClose: 35.85,
+    volume: 143994171
+  },
+  {
+    date: "2007/6/8",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2007/6/7",
+    open: 67.68,
+    high: 67.97,
+    low: 67.48,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 90202240
+  },
+  {
+    date: "2007/6/6",
+    open: 67.97,
+    high: 68.37,
+    low: 67.58,
+    close: 67.87,
+    adjClose: 35.94,
+    volume: 90103773
+  },
+  {
+    date: "2007/6/5",
+    open: 68.07,
+    high: 68.27,
+    low: 67.68,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 46546138
+  },
+  {
+    date: "2007/6/4",
+    open: 67.97,
+    high: 68.47,
+    low: 67.97,
+    close: 68.07,
+    adjClose: 36.05,
+    volume: 65067954
+  },
+  {
+    date: "2007/6/1",
+    open: 67.78,
+    high: 67.97,
+    low: 67.58,
+    close: 67.78,
+    adjClose: 35.89,
+    volume: 65352187
+  },
+  {
+    date: "2007/5/31",
+    open: 67.48,
+    high: 67.68,
+    low: 67.18,
+    close: 67.18,
+    adjClose: 35.58,
+    volume: 48873800
+  },
+  {
+    date: "2007/5/30",
+    open: 66.89,
+    high: 67.48,
+    low: 66.49,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 48759092
+  },
+  {
+    date: "2007/5/29",
+    open: 66.89,
+    high: 67.58,
+    low: 66.79,
+    close: 67.58,
+    adjClose: 35.79,
+    volume: 50855308
+  },
+  {
+    date: "2007/5/28",
+    open: 66.89,
+    high: 66.89,
+    low: 66.49,
+    close: 66.59,
+    adjClose: 35.26,
+    volume: 30897102
+  },
+  {
+    date: "2007/5/25",
+    open: 66.59,
+    high: 66.79,
+    low: 65.9,
+    close: 66.4,
+    adjClose: 35.16,
+    volume: 68090971
+  },
+  {
+    date: "2007/5/24",
+    open: 67.48,
+    high: 67.87,
+    low: 67.18,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 44111889
+  },
+  {
+    date: "2007/5/23",
+    open: 67.87,
+    high: 68.17,
+    low: 67.78,
+    close: 67.87,
+    adjClose: 35.94,
+    volume: 61157725
+  },
+  {
+    date: "2007/5/22",
+    open: 67.97,
+    high: 68.07,
+    low: 67.38,
+    close: 67.38,
+    adjClose: 35.68,
+    volume: 27513718
+  },
+  {
+    date: "2007/5/21",
+    open: 67.78,
+    high: 68.37,
+    low: 67.48,
+    close: 68.17,
+    adjClose: 36.1,
+    volume: 69019803
+  },
+  {
+    date: "2007/5/18",
+    open: 67.78,
+    high: 67.87,
+    low: 67.18,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 83547136
+  },
+  {
+    date: "2007/5/17",
+    open: 66.2,
+    high: 67.09,
+    low: 66.1,
+    close: 66.69,
+    adjClose: 35.32,
+    volume: 50899973
+  },
+  {
+    date: "2007/5/16",
+    open: 66,
+    high: 66,
+    low: 65.41,
+    close: 65.61,
+    adjClose: 34.74,
+    volume: 41476646
+  },
+  {
+    date: "2007/5/15",
+    open: 65.9,
+    high: 66.2,
+    low: 65.31,
+    close: 65.51,
+    adjClose: 34.69,
+    volume: 52371892
+  },
+  {
+    date: "2007/5/14",
+    open: 66.49,
+    high: 66.69,
+    low: 65.81,
+    close: 66.2,
+    adjClose: 35.06,
+    volume: 59656368
+  },
+  {
+    date: "2007/5/11",
+    open: 66.49,
+    high: 66.99,
+    low: 66.49,
+    close: 66.49,
+    adjClose: 35.21,
+    volume: 48734729
+  },
+  {
+    date: "2007/5/10",
+    open: 67.48,
+    high: 67.68,
+    low: 67.28,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 38463780
+  },
+  {
+    date: "2007/5/9",
+    open: 66.89,
+    high: 67.48,
+    low: 66.69,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 33224764
+  },
+  {
+    date: "2007/5/8",
+    open: 67.48,
+    high: 67.48,
+    low: 66.79,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 29353109
+  },
+  {
+    date: "2007/5/7",
+    open: 68.47,
+    high: 68.56,
+    low: 67.38,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 40177297
+  },
+  {
+    date: "2007/5/4",
+    open: 67.48,
+    high: 68.17,
+    low: 67.38,
+    close: 68.07,
+    adjClose: 36.05,
+    volume: 43466274
+  },
+  {
+    date: "2007/5/3",
+    open: 66.99,
+    high: 67.58,
+    low: 66.99,
+    close: 67.38,
+    adjClose: 35.68,
+    volume: 63168671
+  },
+  {
+    date: "2007/5/2",
+    open: 67.68,
+    high: 67.68,
+    low: 66.99,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 49526520
+  },
+  {
+    date: "2007/4/30",
+    open: 67.68,
+    high: 67.68,
+    low: 66.89,
+    close: 67.68,
+    adjClose: 35.84,
+    volume: 41678654
+  },
+  {
+    date: "2007/4/27",
+    open: 68.86,
+    high: 68.96,
+    low: 67.68,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 37065965
+  },
+  {
+    date: "2007/4/26",
+    open: 69.35,
+    high: 69.45,
+    low: 68.66,
+    close: 68.86,
+    adjClose: 36.46,
+    volume: 54886335
+  },
+  {
+    date: "2007/4/25",
+    open: 68.37,
+    high: 68.66,
+    low: 67.68,
+    close: 68.27,
+    adjClose: 36.15,
+    volume: 26780804
+  },
+  {
+    date: "2007/4/24",
+    open: 67.78,
+    high: 68.96,
+    low: 67.58,
+    close: 68.76,
+    adjClose: 36.41,
+    volume: 62405304
+  },
+  {
+    date: "2007/4/23",
+    open: 66.99,
+    high: 68.17,
+    low: 66.89,
+    close: 67.58,
+    adjClose: 35.79,
+    volume: 50902003
+  },
+  {
+    date: "2007/4/20",
+    open: 66.4,
+    high: 66.89,
+    low: 66.3,
+    close: 66.49,
+    adjClose: 35.21,
+    volume: 36506635
+  },
+  {
+    date: "2007/4/19",
+    open: 67.48,
+    high: 67.48,
+    low: 66.2,
+    close: 66.4,
+    adjClose: 35.16,
+    volume: 71378934
+  },
+  {
+    date: "2007/4/18",
+    open: 66.59,
+    high: 67.68,
+    low: 66.59,
+    close: 67.58,
+    adjClose: 35.79,
+    volume: 47689159
+  },
+  {
+    date: "2007/4/17",
+    open: 67.68,
+    high: 67.97,
+    low: 66.79,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 29041468
+  },
+  {
+    date: "2007/4/16",
+    open: 67.68,
+    high: 68.07,
+    low: 66.49,
+    close: 66.49,
+    adjClose: 35.21,
+    volume: 26257004
+  },
+  {
+    date: "2007/4/13",
+    open: 68.27,
+    high: 68.37,
+    low: 67.09,
+    close: 67.28,
+    adjClose: 35.63,
+    volume: 15635840
+  },
+  {
+    date: "2007/4/12",
+    open: 67.48,
+    high: 68.27,
+    low: 67.28,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 29913454
+  },
+  {
+    date: "2007/4/11",
+    open: 67.58,
+    high: 68.37,
+    low: 67.58,
+    close: 68.27,
+    adjClose: 36.15,
+    volume: 30941767
+  },
+  {
+    date: "2007/4/10",
+    open: 68.17,
+    high: 68.17,
+    low: 67.18,
+    close: 67.48,
+    adjClose: 35.73,
+    volume: 38949006
+  },
+  {
+    date: "2007/4/9",
+    open: 68.47,
+    high: 68.76,
+    low: 67.68,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 43425670
+  },
+  {
+    date: "2007/4/4",
+    open: 66.99,
+    high: 68.56,
+    low: 66.99,
+    close: 68.27,
+    adjClose: 36.15,
+    volume: 57533759
+  },
+  {
+    date: "2007/4/3",
+    open: 67.09,
+    high: 67.28,
+    low: 66.69,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 27851752
+  },
+  {
+    date: "2007/4/2",
+    open: 66.79,
+    high: 67.58,
+    low: 66.49,
+    close: 67.18,
+    adjClose: 35.58,
+    volume: 25540332
+  },
+  {
+    date: "2007/3/30",
+    open: 66.99,
+    high: 67.48,
+    low: 66.69,
+    close: 66.89,
+    adjClose: 35.42,
+    volume: 40987360
+  },
+  {
+    date: "2007/3/29",
+    open: 66.49,
+    high: 68.07,
+    low: 66.49,
+    close: 67.68,
+    adjClose: 35.84,
+    volume: 58493045
+  },
+  {
+    date: "2007/3/28",
+    open: 67.38,
+    high: 67.97,
+    low: 66.99,
+    close: 67.28,
+    adjClose: 35.63,
+    volume: 37260867
+  },
+  {
+    date: "2007/3/27",
+    open: 68.96,
+    high: 69.65,
+    low: 68.17,
+    close: 68.17,
+    adjClose: 36.1,
+    volume: 47981513
+  },
+  {
+    date: "2007/3/26",
+    open: 68.96,
+    high: 69.15,
+    low: 68.86,
+    close: 68.96,
+    adjClose: 36.52,
+    volume: 17781796
+  },
+  {
+    date: "2007/3/23",
+    open: 69.06,
+    high: 69.15,
+    low: 68.66,
+    close: 68.96,
+    adjClose: 36.52,
+    volume: 52240942
+  },
+  {
+    date: "2007/3/22",
+    open: 69.55,
+    high: 69.75,
+    low: 69.06,
+    close: 69.15,
+    adjClose: 36.62,
+    volume: 64008173
+  },
+  {
+    date: "2007/3/21",
+    open: 68.66,
+    high: 68.96,
+    low: 68.37,
+    close: 68.66,
+    adjClose: 36.36,
+    volume: 36829443
+  },
+  {
+    date: "2007/3/20",
+    open: 67.97,
+    high: 68.47,
+    low: 67.97,
+    close: 68.17,
+    adjClose: 36.1,
+    volume: 27396980
+  },
+  {
+    date: "2007/3/19",
+    open: 67.97,
+    high: 68.07,
+    low: 67.58,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 24381068
+  },
+  {
+    date: "2007/3/16",
+    open: 67.97,
+    high: 68.17,
+    low: 67.48,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 32378157
+  },
+  {
+    date: "2007/3/15",
+    open: 67.58,
+    high: 68.27,
+    low: 67.48,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 39083001
+  },
+  {
+    date: "2007/3/14",
+    open: 66.49,
+    high: 67.18,
+    low: 66.4,
+    close: 66.89,
+    adjClose: 35.42,
+    volume: 49611790
+  },
+  {
+    date: "2007/3/13",
+    open: 66.99,
+    high: 68.07,
+    low: 66.79,
+    close: 68.07,
+    adjClose: 36.05,
+    volume: 88232914
+  },
+  {
+    date: "2007/3/12",
+    open: 65.61,
+    high: 66.2,
+    low: 65.41,
+    close: 66.2,
+    adjClose: 35.06,
+    volume: 36451819
+  },
+  {
+    date: "2007/3/9",
+    open: 65.61,
+    high: 65.71,
+    low: 64.92,
+    close: 65.51,
+    adjClose: 34.69,
+    volume: 38752073
+  },
+  {
+    date: "2007/3/8",
+    open: 65.02,
+    high: 65.02,
+    low: 64.03,
+    close: 64.92,
+    adjClose: 34.38,
+    volume: 42735391
+  },
+  {
+    date: "2007/3/7",
+    open: 65.12,
+    high: 65.12,
+    low: 64.23,
+    close: 64.52,
+    adjClose: 34.17,
+    volume: 52956599
+  },
+  {
+    date: "2007/3/6",
+    open: 62.36,
+    high: 64.62,
+    low: 62.36,
+    close: 64.13,
+    adjClose: 33.96,
+    volume: 68872611
+  },
+  {
+    date: "2007/3/5",
+    open: 63.71,
+    high: 64.11,
+    low: 62.05,
+    close: 62.05,
+    adjClose: 32.86,
+    volume: 76199105583
+  },
+  {
+    date: "2007/3/2",
+    open: 65.28,
+    high: 65.67,
+    low: 64.99,
+    close: 65.48,
+    adjClose: 34.67,
+    volume: 32609394488
+  },
+  {
+    date: "2007/3/1",
+    open: 65.71,
+    high: 66.99,
+    low: 65.71,
+    close: 65.71,
+    adjClose: 34.79,
+    volume: 93824176
+  },
+  {
+    date: "2007/2/27",
+    open: 67.97,
+    high: 69.06,
+    low: 67.87,
+    close: 68.27,
+    adjClose: 36.15,
+    volume: 77431059
+  },
+  {
+    date: "2007/2/26",
+    open: 68.07,
+    high: 68.17,
+    low: 67.68,
+    close: 67.87,
+    adjClose: 35.94,
+    volume: 92771500
+  },
+  {
+    date: "2007/2/14",
+    open: 66,
+    high: 66.3,
+    low: 65.41,
+    close: 66.3,
+    adjClose: 35.11,
+    volume: 36108710
+  },
+  {
+    date: "2007/2/13",
+    open: 65.51,
+    high: 66.1,
+    low: 64.82,
+    close: 64.82,
+    adjClose: 34.32,
+    volume: 59982220
+  },
+  {
+    date: "2007/2/12",
+    open: 66,
+    high: 66.89,
+    low: 65.51,
+    close: 66,
+    adjClose: 34.95,
+    volume: 52307939
+  },
+  {
+    date: "2007/2/9",
+    open: 67.38,
+    high: 67.78,
+    low: 66.49,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 60761830
+  },
+  {
+    date: "2007/2/8",
+    open: 68.27,
+    high: 68.27,
+    low: 66.99,
+    close: 67.38,
+    adjClose: 35.68,
+    volume: 42722194
+  },
+  {
+    date: "2007/2/7",
+    open: 68.17,
+    high: 68.37,
+    low: 67.48,
+    close: 67.78,
+    adjClose: 35.89,
+    volume: 31078807
+  },
+  {
+    date: "2007/2/6",
+    open: 66.99,
+    high: 67.87,
+    low: 66.79,
+    close: 67.87,
+    adjClose: 35.94,
+    volume: 36294476
+  },
+  {
+    date: "2007/2/5",
+    open: 66.79,
+    high: 67.18,
+    low: 66.3,
+    close: 66.79,
+    adjClose: 35.37,
+    volume: 26738169
+  },
+  {
+    date: "2007/2/2",
+    open: 66.79,
+    high: 66.99,
+    low: 66.4,
+    close: 66.79,
+    adjClose: 35.37,
+    volume: 52608414
+  },
+  {
+    date: "2007/2/1",
+    open: 66.79,
+    high: 66.79,
+    low: 65.71,
+    close: 66,
+    adjClose: 34.95,
+    volume: 34083552
+  },
+  {
+    date: "2007/1/31",
+    open: 66.99,
+    high: 67.18,
+    low: 64.92,
+    close: 66.4,
+    adjClose: 35.16,
+    volume: 84426227
+  },
+  {
+    date: "2007/1/30",
+    open: 66.65,
+    high: 66.95,
+    low: 66.56,
+    close: 66.65,
+    adjClose: 35.3,
+    volume: 40901509938
+  },
+  {
+    date: "2007/1/29",
+    open: 67.28,
+    high: 67.78,
+    low: 66.99,
+    close: 67.58,
+    adjClose: 35.79,
+    volume: 46715662
+  },
+  {
+    date: "2007/1/26",
+    open: 66,
+    high: 67.38,
+    low: 66,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 123692965
+  },
+  {
+    date: "2007/1/25",
+    open: 69.84,
+    high: 70.14,
+    low: 69.55,
+    close: 69.94,
+    adjClose: 37.04,
+    volume: 39276889
+  },
+  {
+    date: "2007/1/24",
+    open: 69.94,
+    high: 70.14,
+    low: 68.96,
+    close: 69.45,
+    adjClose: 36.78,
+    volume: 80198266
+  },
+  {
+    date: "2007/1/23",
+    open: 67.78,
+    high: 67.97,
+    low: 67.18,
+    close: 67.78,
+    adjClose: 35.89,
+    volume: 39219027
+  },
+  {
+    date: "2007/1/22",
+    open: 68.96,
+    high: 69.15,
+    low: 67.87,
+    close: 67.97,
+    adjClose: 35.99,
+    volume: 55429423
+  },
+  {
+    date: "2007/1/19",
+    open: 68.47,
+    high: 69.84,
+    low: 68.47,
+    close: 68.76,
+    adjClose: 36.41,
+    volume: 47456698
+  },
+  {
+    date: "2007/1/18",
+    open: 69.59,
+    high: 70.28,
+    low: 69.5,
+    close: 69.79,
+    adjClose: 36.96,
+    volume: 55236218231
+  },
+  {
+    date: "2007/1/17",
+    open: 68.86,
+    high: 69.94,
+    low: 68.17,
+    close: 69.84,
+    adjClose: 36.99,
+    volume: 49354965
+  },
+  {
+    date: "2007/1/16",
+    open: 68.17,
+    high: 69.45,
+    low: 68.07,
+    close: 69.25,
+    adjClose: 36.67,
+    volume: 76456547
+  },
+  {
+    date: "2007/1/15",
+    open: 68.37,
+    high: 68.76,
+    low: 67.78,
+    close: 68.17,
+    adjClose: 36.1,
+    volume: 70399346
+  },
+  {
+    date: "2007/1/12",
+    open: 66.49,
+    high: 68.47,
+    low: 66,
+    close: 68.07,
+    adjClose: 36.05,
+    volume: 134447109
+  },
+  {
+    date: "2007/1/11",
+    open: 63.74,
+    high: 65.71,
+    low: 63.74,
+    close: 64.82,
+    adjClose: 34.32,
+    volume: 69732415
+  },
+  {
+    date: "2007/1/10",
+    open: 64.43,
+    high: 64.43,
+    low: 63.05,
+    close: 63.24,
+    adjClose: 33.49,
+    volume: 74638473
+  },
+  {
+    date: "2007/1/9",
+    open: 64.92,
+    high: 65.51,
+    low: 64.92,
+    close: 65.02,
+    adjClose: 34.43,
+    volume: 26319941
+  },
+  {
+    date: "2007/1/8",
+    open: 65.12,
+    high: 65.51,
+    low: 64.72,
+    close: 64.82,
+    adjClose: 34.32,
+    volume: 24350615
+  },
+  {
+    date: "2007/1/5",
+    open: 66.49,
+    high: 66.69,
+    low: 65.51,
+    close: 65.9,
+    adjClose: 34.9,
+    volume: 30905222
+  },
+  {
+    date: "2007/1/4",
+    open: 66.69,
+    high: 67.09,
+    low: 66.59,
+    close: 66.69,
+    adjClose: 35.32,
+    volume: 22444226
+  },
+  {
+    date: "2007/1/3",
+    open: 66.79,
+    high: 67.68,
+    low: 66.49,
+    close: 66.99,
+    adjClose: 35.47,
+    volume: 42463339
+  },
+  {
+    date: "2007/1/2",
+    open: 66.79,
+    high: 66.99,
+    low: 66.3,
+    close: 66.69,
+    adjClose: 35.32,
+    volume: 26292533
+  },
+  {
+    date: "2006/12/29",
+    open: 65.21,
+    high: 66.49,
+    low: 64.52,
+    close: 66.49,
+    adjClose: 35.21,
+    volume: 30997598
+  },
+  {
+    date: "2006/12/28",
+    open: 65.51,
+    high: 65.81,
+    low: 65.12,
+    close: 65.12,
+    adjClose: 34.48,
+    volume: 20507384
+  },
+  {
+    date: "2006/12/27",
+    open: 65.02,
+    high: 65.61,
+    low: 65.02,
+    close: 65.41,
+    adjClose: 34.64,
+    volume: 23128415
+  },
+  {
+    date: "2006/12/26",
+    open: 64.03,
+    high: 65.12,
+    low: 64.03,
+    close: 65.02,
+    adjClose: 34.43,
+    volume: 19243564
+  },
+  {
+    date: "2006/12/25",
+    open: 64.43,
+    high: 64.52,
+    low: 63.93,
+    close: 64.13,
+    adjClose: 33.96,
+    volume: 4135584
+  },
+  {
+    date: "2006/12/22",
+    open: 64.52,
+    high: 64.62,
+    low: 64.13,
+    close: 64.62,
+    adjClose: 34.22,
+    volume: 9512657
+  },
+  {
+    date: "2006/12/21",
+    open: 63.84,
+    high: 64.72,
+    low: 63.84,
+    close: 63.93,
+    adjClose: 33.86,
+    volume: 34600247
+  },
+  {
+    date: "2006/12/20",
+    open: 64.62,
+    high: 64.62,
+    low: 63.64,
+    close: 63.84,
+    adjClose: 33.8,
+    volume: 33437938
+  },
+  {
+    date: "2006/12/19",
+    open: 64.92,
+    high: 64.92,
+    low: 64.03,
+    close: 64.13,
+    adjClose: 33.96,
+    volume: 36219358
+  },
+  {
+    date: "2006/12/18",
+    open: 64.33,
+    high: 66,
+    low: 64.33,
+    close: 65.61,
+    adjClose: 34.74,
+    volume: 33957678
+  },
+  {
+    date: "2006/12/15",
+    open: 64.03,
+    high: 64.52,
+    low: 63.54,
+    close: 63.93,
+    adjClose: 33.86,
+    volume: 34750484
+  },
+  {
+    date: "2006/12/14",
+    open: 64.23,
+    high: 64.33,
+    low: 63.15,
+    close: 63.15,
+    adjClose: 33.44,
+    volume: 23654245
+  },
+  {
+    date: "2006/12/13",
+    open: 63.54,
+    high: 64.03,
+    low: 62.46,
+    close: 63.93,
+    adjClose: 33.86,
+    volume: 39262677
+  },
+  {
+    date: "2006/12/12",
+    open: 65.51,
+    high: 65.51,
+    low: 62.95,
+    close: 63.24,
+    adjClose: 33.49,
+    volume: 42079625
+  },
+  {
+    date: "2006/12/11",
+    open: 64.43,
+    high: 65.61,
+    low: 64.23,
+    close: 65.51,
+    adjClose: 34.69,
+    volume: 35027611
+  },
+  {
+    date: "2006/12/8",
+    open: 66,
+    high: 66,
+    low: 64.03,
+    close: 65.12,
+    adjClose: 34.48,
+    volume: 38821101
+  },
+  {
+    date: "2006/12/7",
+    open: 66.59,
+    high: 66.69,
+    low: 65.61,
+    close: 66,
+    adjClose: 34.95,
+    volume: 35983850
+  },
+  {
+    date: "2006/12/6",
+    open: 66.4,
+    high: 66.99,
+    low: 66.3,
+    close: 66.89,
+    adjClose: 35.42,
+    volume: 48948919
+  },
+  {
+    date: "2006/12/5",
+    open: 66.4,
+    high: 66.49,
+    low: 65.51,
+    close: 65.9,
+    adjClose: 34.9,
+    volume: 47807928
+  },
+  {
+    date: "2006/12/4",
+    open: 65.21,
+    high: 65.71,
+    low: 64.82,
+    close: 65.31,
+    adjClose: 34.59,
+    volume: 51629842
+  },
+  {
+    date: "2006/12/1",
+    open: 64.43,
+    high: 65.51,
+    low: 63.64,
+    close: 65.51,
+    adjClose: 34.69,
+    volume: 70899799
+  },
+  {
+    date: "2006/11/30",
+    open: 63.93,
+    high: 64.52,
+    low: 63.44,
+    close: 64.52,
+    adjClose: 34.17,
+    volume: 73244718
+  },
+  {
+    date: "2006/11/29",
+    open: 63.44,
+    high: 63.74,
+    low: 62.46,
+    close: 63.54,
+    adjClose: 33.65,
+    volume: 64572577
+  },
+  {
+    date: "2006/11/28",
+    open: 63.05,
+    high: 63.24,
+    low: 62.65,
+    close: 63.05,
+    adjClose: 33.39,
+    volume: 34585020
+  },
+  {
+    date: "2006/11/27",
+    open: 63.15,
+    high: 63.74,
+    low: 62.95,
+    close: 63.64,
+    adjClose: 33.7,
+    volume: 43691630
+  },
+  {
+    date: "2006/11/24",
+    open: 62.36,
+    high: 62.75,
+    low: 62.06,
+    close: 62.46,
+    adjClose: 33.07,
+    volume: 24710981
+  },
+  {
+    date: "2006/11/23",
+    open: 62.36,
+    high: 62.75,
+    low: 62.16,
+    close: 62.55,
+    adjClose: 33.13,
+    volume: 44517935
+  },
+  {
+    date: "2006/11/22",
+    open: 62.06,
+    high: 62.16,
+    low: 61.67,
+    close: 62.06,
+    adjClose: 32.86,
+    volume: 36937045
+  },
+  {
+    date: "2006/11/21",
+    open: 59.11,
+    high: 62.06,
+    low: 59.11,
+    close: 62.06,
+    adjClose: 32.86,
+    volume: 44474285
+  },
+  {
+    date: "2006/11/20",
+    open: 61.37,
+    high: 61.37,
+    low: 60.68,
+    close: 61.27,
+    adjClose: 32.45,
+    volume: 34728151
+  },
+  {
+    date: "2006/11/17",
+    open: 61.57,
+    high: 61.86,
+    low: 61.08,
+    close: 61.47,
+    adjClose: 32.55,
+    volume: 30150991
+  },
+  {
+    date: "2006/11/16",
+    open: 61.57,
+    high: 61.77,
+    low: 61.08,
+    close: 61.27,
+    adjClose: 32.45,
+    volume: 36581754
+  },
+  {
+    date: "2006/11/15",
+    open: 60.68,
+    high: 61.27,
+    low: 60.39,
+    close: 60.88,
+    adjClose: 32.24,
+    volume: 52333317
+  },
+  {
+    date: "2006/11/14",
+    open: 59.3,
+    high: 59.89,
+    low: 59.3,
+    close: 59.89,
+    adjClose: 31.72,
+    volume: 24290723
+  },
+  {
+    date: "2006/11/13",
+    open: 59.6,
+    high: 59.7,
+    low: 59.01,
+    close: 59.11,
+    adjClose: 31.3,
+    volume: 27048795
+  },
+  {
+    date: "2006/11/10",
+    open: 59.6,
+    high: 60.19,
+    low: 59.4,
+    close: 59.89,
+    adjClose: 31.72,
+    volume: 32187315
+  },
+  {
+    date: "2006/11/9",
+    open: 60.09,
+    high: 60.39,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 31.56,
+    volume: 42639970
+  },
+  {
+    date: "2006/11/8",
+    open: 59.89,
+    high: 60.09,
+    low: 59.5,
+    close: 59.5,
+    adjClose: 31.51,
+    volume: 28891231
+  },
+  {
+    date: "2006/11/7",
+    open: 60.09,
+    high: 60.39,
+    low: 59.6,
+    close: 59.7,
+    adjClose: 31.61,
+    volume: 40351897
+  },
+  {
+    date: "2006/11/6",
+    open: 59.4,
+    high: 59.89,
+    low: 59.4,
+    close: 59.6,
+    adjClose: 31.56,
+    volume: 36353353
+  },
+  {
+    date: "2006/11/3",
+    open: 59.3,
+    high: 60.58,
+    low: 59.3,
+    close: 60.19,
+    adjClose: 31.87,
+    volume: 59433042
+  },
+  {
+    date: "2006/11/2",
+    open: 59.11,
+    high: 60.29,
+    low: 59.01,
+    close: 59.89,
+    adjClose: 31.72,
+    volume: 38329785
+  },
+  {
+    date: "2006/11/1",
+    open: 60.49,
+    high: 60.58,
+    low: 59.21,
+    close: 59.3,
+    adjClose: 31.4,
+    volume: 54269145
+  },
+  {
+    date: "2006/10/31",
+    open: 60.09,
+    high: 60.49,
+    low: 59.99,
+    close: 60.09,
+    adjClose: 31.82,
+    volume: 27665986
+  },
+  {
+    date: "2006/10/30",
+    open: 60.58,
+    high: 60.78,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 31.66,
+    volume: 60226864
+  },
+  {
+    date: "2006/10/27",
+    open: 61.47,
+    high: 61.96,
+    low: 61.27,
+    close: 61.57,
+    adjClose: 32.6,
+    volume: 38132852
+  },
+  {
+    date: "2006/10/26",
+    open: 61.26,
+    high: 61.85,
+    low: 60.28,
+    close: 60.28,
+    adjClose: 31.92,
+    volume: 33418405823
+  },
+  {
+    date: "2006/10/25",
+    open: 61.96,
+    high: 61.96,
+    low: 61.08,
+    close: 61.37,
+    adjClose: 32.5,
+    volume: 39131727
+  },
+  {
+    date: "2006/10/24",
+    open: 60.78,
+    high: 62.26,
+    low: 60.78,
+    close: 62.06,
+    adjClose: 32.86,
+    volume: 52962690
+  },
+  {
+    date: "2006/10/23",
+    open: 60.09,
+    high: 60.58,
+    low: 59.99,
+    close: 60.29,
+    adjClose: 31.93,
+    volume: 12936645
+  },
+  {
+    date: "2006/10/20",
+    open: 60.29,
+    high: 60.98,
+    low: 60.29,
+    close: 60.88,
+    adjClose: 32.24,
+    volume: 19804923
+  },
+  {
+    date: "2006/10/19",
+    open: 60.39,
+    high: 60.88,
+    low: 59.89,
+    close: 60.09,
+    adjClose: 31.82,
+    volume: 38504385
+  },
+  {
+    date: "2006/10/18",
+    open: 61.18,
+    high: 61.47,
+    low: 60.58,
+    close: 61.08,
+    adjClose: 32.34,
+    volume: 36902531
+  },
+  {
+    date: "2006/10/17",
+    open: 63.05,
+    high: 63.24,
+    low: 61.86,
+    close: 61.96,
+    adjClose: 32.81,
+    volume: 38272938
+  },
+  {
+    date: "2006/10/16",
+    open: 63.05,
+    high: 64.23,
+    low: 62.36,
+    close: 64.03,
+    adjClose: 33.91,
+    volume: 80407380
+  },
+  {
+    date: "2006/10/13",
+    open: 60.88,
+    high: 62.46,
+    low: 60.88,
+    close: 62.26,
+    adjClose: 32.97,
+    volume: 78219804
+  },
+  {
+    date: "2006/10/12",
+    open: 60.09,
+    high: 60.19,
+    low: 59.7,
+    close: 60.09,
+    adjClose: 31.82,
+    volume: 31482824
+  },
+  {
+    date: "2006/10/11",
+    open: 59.8,
+    high: 59.99,
+    low: 59.5,
+    close: 59.7,
+    adjClose: 31.61,
+    volume: 38087172
+  },
+  {
+    date: "2006/10/9",
+    open: 59.8,
+    high: 59.8,
+    low: 59.8,
+    close: 59.8,
+    adjClose: 31.66,
+    volume: null
+  },
+  {
+    date: "2006/10/5",
+    open: 58.71,
+    high: 59.89,
+    low: 58.71,
+    close: 59.8,
+    adjClose: 31.66,
+    volume: 45036660
+  },
+  {
+    date: "2006/10/4",
+    open: 59.11,
+    high: 59.11,
+    low: 57.63,
+    close: 57.63,
+    adjClose: 30.52,
+    volume: 46779615
+  },
+  {
+    date: "2006/10/3",
+    open: 59.11,
+    high: 59.4,
+    low: 58.71,
+    close: 59.11,
+    adjClose: 31.3,
+    volume: 31465567
+  },
+  {
+    date: "2006/10/2",
+    open: 58.91,
+    high: 59.6,
+    low: 58.61,
+    close: 59.3,
+    adjClose: 31.4,
+    volume: 44685429
+  },
+  {
+    date: "2006/9/29",
+    open: 59.7,
+    high: 59.8,
+    low: 58.32,
+    close: 58.81,
+    adjClose: 31.14,
+    volume: 46391840
+  },
+  {
+    date: "2006/9/28",
+    open: 59.99,
+    high: 60.19,
+    low: 59.8,
+    close: 59.99,
+    adjClose: 31.77,
+    volume: 74300439
+  },
+  {
+    date: "2006/9/27",
+    open: 59.99,
+    high: 60.09,
+    low: 59.5,
+    close: 59.99,
+    adjClose: 31.77,
+    volume: 35342297
+  },
+  {
+    date: "2006/9/26",
+    open: 59.3,
+    high: 59.8,
+    low: 59.3,
+    close: 59.6,
+    adjClose: 31.56,
+    volume: 26138235
+  },
+  {
+    date: "2006/9/25",
+    open: 58.81,
+    high: 59.11,
+    low: 58.32,
+    close: 58.81,
+    adjClose: 31.14,
+    volume: 16036811
+  },
+  {
+    date: "2006/9/22",
+    open: 59.01,
+    high: 59.3,
+    low: 58.61,
+    close: 58.81,
+    adjClose: 31.14,
+    volume: 28759266
+  },
+  {
+    date: "2006/9/21",
+    open: 59.6,
+    high: 59.8,
+    low: 59.11,
+    close: 59.6,
+    adjClose: 31.56,
+    volume: 34170852
+  },
+  {
+    date: "2006/9/20",
+    open: 59.11,
+    high: 59.21,
+    low: 58.61,
+    close: 59.01,
+    adjClose: 31.25,
+    volume: 34033812
+  },
+  {
+    date: "2006/9/19",
+    open: 59.6,
+    high: 59.99,
+    low: 59.4,
+    close: 59.6,
+    adjClose: 31.56,
+    volume: 51626796
+  },
+  {
+    date: "2006/9/18",
+    open: 58.61,
+    high: 59.21,
+    low: 58.52,
+    close: 59.01,
+    adjClose: 31.25,
+    volume: 61945456
+  },
+  {
+    date: "2006/9/15",
+    open: 57.34,
+    high: 57.83,
+    low: 57.05,
+    close: 57.83,
+    adjClose: 30.62,
+    volume: 42647055608
+  },
+  {
+    date: "2006/9/14",
+    open: 58.12,
+    high: 58.12,
+    low: 56.74,
+    close: 57.53,
+    adjClose: 30.46,
+    volume: 40731551
+  },
+  {
+    date: "2006/9/13",
+    open: 56.94,
+    high: 57.53,
+    low: 56.74,
+    close: 57.53,
+    adjClose: 30.46,
+    volume: 45216335
+  },
+  {
+    date: "2006/9/12",
+    open: 55.66,
+    high: 56.25,
+    low: 55.36,
+    close: 55.86,
+    adjClose: 29.58,
+    volume: 28685163
+  },
+  {
+    date: "2006/9/11",
+    open: 56.05,
+    high: 57.14,
+    low: 55.36,
+    close: 55.46,
+    adjClose: 29.37,
+    volume: 36606117
+  },
+  {
+    date: "2006/9/8",
+    open: 55.48,
+    high: 56.17,
+    low: 55.48,
+    close: 55.58,
+    adjClose: 29.43,
+    volume: 30968925561
+  },
+  {
+    date: "2006/9/7",
+    open: 55.95,
+    high: 56.45,
+    low: 55.95,
+    close: 56.25,
+    adjClose: 29.79,
+    volume: 23380164
+  },
+  {
+    date: "2006/9/6",
+    open: 57.63,
+    high: 57.83,
+    low: 56.35,
+    close: 56.94,
+    adjClose: 30.15,
+    volume: 25035819
+  },
+  {
+    date: "2006/9/5",
+    open: 58.52,
+    high: 58.52,
+    low: 57.63,
+    close: 57.73,
+    adjClose: 30.57,
+    volume: 15028800
+  },
+  {
+    date: "2006/9/4",
+    open: 58.22,
+    high: 58.52,
+    low: 58.02,
+    close: 58.42,
+    adjClose: 30.93,
+    volume: 26855923
+  },
+  {
+    date: "2006/9/1",
+    open: 57.43,
+    high: 58.02,
+    low: 57.43,
+    close: 57.92,
+    adjClose: 30.67,
+    volume: 29076998
+  },
+  {
+    date: "2006/8/31",
+    open: 57.33,
+    high: 57.83,
+    low: 57.14,
+    close: 57.23,
+    adjClose: 30.31,
+    volume: 40281854
+  },
+  {
+    date: "2006/8/30",
+    open: 56.55,
+    high: 56.94,
+    low: 56.15,
+    close: 56.45,
+    adjClose: 29.89,
+    volume: 26826484
+  },
+  {
+    date: "2006/8/29",
+    open: 55.86,
+    high: 55.95,
+    low: 55.46,
+    close: 55.66,
+    adjClose: 29.47,
+    volume: 26054996
+  },
+  {
+    date: "2006/8/28",
+    open: 56.15,
+    high: 56.15,
+    low: 55.07,
+    close: 55.36,
+    adjClose: 29.32,
+    volume: 26852877
+  },
+  {
+    date: "2006/8/25",
+    open: 56.15,
+    high: 56.74,
+    low: 55.86,
+    close: 56.15,
+    adjClose: 29.73,
+    volume: 24699815
+  },
+  {
+    date: "2006/8/24",
+    open: 56.35,
+    high: 56.74,
+    low: 55.86,
+    close: 56.05,
+    adjClose: 29.68,
+    volume: 36856851
+  },
+  {
+    date: "2006/8/23",
+    open: 57.92,
+    high: 58.02,
+    low: 56.35,
+    close: 57.23,
+    adjClose: 30.31,
+    volume: 32399474
+  },
+  {
+    date: "2006/8/22",
+    open: 57.14,
+    high: 57.92,
+    low: 57.14,
+    close: 57.92,
+    adjClose: 30.67,
+    volume: 20302
+  },
+  {
+    date: "2006/8/21",
+    open: 58.42,
+    high: 58.61,
+    low: 56.74,
+    close: 57.04,
+    adjClose: 30.2,
+    volume: 41619
+  },
+  {
+    date: "2006/8/18",
+    open: 59.3,
+    high: 59.4,
+    low: 58.52,
+    close: 58.71,
+    adjClose: 31.09,
+    volume: 57626135
+  },
+  {
+    date: "2006/8/17",
+    open: 59.11,
+    high: 59.21,
+    low: 58.42,
+    close: 58.81,
+    adjClose: 31.14,
+    volume: 62238825
+  },
+  {
+    date: "2006/8/16",
+    open: 57.92,
+    high: 58.32,
+    low: 57.63,
+    close: 58.12,
+    adjClose: 30.78,
+    volume: 58560042
+  },
+  {
+    date: "2006/8/15",
+    open: 56.94,
+    high: 57.04,
+    low: 56.45,
+    close: 56.74,
+    adjClose: 30.05,
+    volume: 20543928
+  },
+  {
+    date: "2006/8/14",
+    open: 56.55,
+    high: 57.04,
+    low: 56.45,
+    close: 56.74,
+    adjClose: 30.05,
+    volume: 25133270
+  },
+  {
+    date: "2006/8/11",
+    open: 56.64,
+    high: 56.74,
+    low: 56.15,
+    close: 56.55,
+    adjClose: 29.94,
+    volume: 46873006
+  },
+  {
+    date: "2006/8/10",
+    open: 54.97,
+    high: 56.15,
+    low: 54.97,
+    close: 55.95,
+    adjClose: 29.63,
+    volume: 60819692
+  },
+  {
+    date: "2006/8/9",
+    open: 54.28,
+    high: 55.07,
+    low: 54.18,
+    close: 54.97,
+    adjClose: 29.11,
+    volume: 51550663
+  },
+  {
+    date: "2006/8/8",
+    open: 53.98,
+    high: 54.67,
+    low: 53.79,
+    close: 54.67,
+    adjClose: 28.95,
+    volume: 21339779
+  },
+  {
+    date: "2006/8/7",
+    open: 54.48,
+    high: 54.48,
+    low: 53.59,
+    close: 53.79,
+    adjClose: 28.48,
+    volume: 21937683
+  },
+  {
+    date: "2006/8/4",
+    open: 54.28,
+    high: 54.58,
+    low: 53.79,
+    close: 54.08,
+    adjClose: 28.64,
+    volume: 35807220
+  },
+  {
+    date: "2006/8/3",
+    open: 54.38,
+    high: 54.58,
+    low: 53.79,
+    close: 54.08,
+    adjClose: 28.64,
+    volume: 32050274
+  },
+  {
+    date: "2006/8/2",
+    open: 54.08,
+    high: 54.38,
+    low: 53.69,
+    close: 54.08,
+    adjClose: 28.64,
+    volume: 22049346
+  },
+  {
+    date: "2006/8/1",
+    open: 54.08,
+    high: 54.48,
+    low: 53.98,
+    close: 54.28,
+    adjClose: 28.74,
+    volume: 21196648
+  },
+  {
+    date: "2006/7/31",
+    open: 54.48,
+    high: 54.67,
+    low: 53.39,
+    close: 53.98,
+    adjClose: 28.59,
+    volume: 39760084
+  },
+  {
+    date: "2006/7/28",
+    open: 53.29,
+    high: 53.69,
+    low: 53.1,
+    close: 53.59,
+    adjClose: 28.38,
+    volume: 41668503
+  },
+  {
+    date: "2006/7/27",
+    open: 52.83,
+    high: 53.23,
+    low: 52.64,
+    close: 53.13,
+    adjClose: 28.13,
+    volume: 52802041866
+  },
+  {
+    date: "2006/7/26",
+    open: 53.42,
+    high: 53.42,
+    low: 52.64,
+    close: 52.83,
+    adjClose: 27.98,
+    volume: 39066183301
+  },
+  {
+    date: "2006/7/25",
+    open: 53.49,
+    high: 53.69,
+    low: 52.7,
+    close: 53,
+    adjClose: 28.07,
+    volume: 43911911
+  },
+  {
+    date: "2006/7/24",
+    open: 52.11,
+    high: 52.21,
+    low: 51.52,
+    close: 52.11,
+    adjClose: 27.6,
+    volume: 74943008
+  },
+  {
+    date: "2006/7/21",
+    open: 55.17,
+    high: 55.17,
+    low: 53.89,
+    close: 54.08,
+    adjClose: 28.64,
+    volume: 43132301
+  },
+  {
+    date: "2006/7/20",
+    open: 54.67,
+    high: 55.46,
+    low: 54.38,
+    close: 55.36,
+    adjClose: 29.32,
+    volume: 48255594
+  },
+  {
+    date: "2006/7/19",
+    open: 53.39,
+    high: 53.89,
+    low: 53,
+    close: 53,
+    adjClose: 28.07,
+    volume: 32017790
+  },
+  {
+    date: "2006/7/18",
+    open: 53.2,
+    high: 53.49,
+    low: 53.1,
+    close: 53.29,
+    adjClose: 28.22,
+    volume: 29474923
+  },
+  {
+    date: "2006/7/17",
+    open: 53.89,
+    high: 54.08,
+    low: 52.6,
+    close: 53,
+    adjClose: 28.07,
+    volume: 56417131
+  },
+  {
+    date: "2006/7/14",
+    open: 54.38,
+    high: 54.67,
+    low: 54.18,
+    close: 54.28,
+    adjClose: 28.74,
+    volume: 52402345
+  },
+  {
+    date: "2006/7/13",
+    open: 55.76,
+    high: 55.95,
+    low: 55.46,
+    close: 55.46,
+    adjClose: 29.37,
+    volume: 19841467
+  },
+  {
+    date: "2006/7/12",
+    open: 56.94,
+    high: 57.14,
+    low: 55.86,
+    close: 56.25,
+    adjClose: 29.79,
+    volume: 52523144
+  },
+  {
+    date: "2006/7/11",
+    open: 55.56,
+    high: 56.05,
+    low: 55.36,
+    close: 55.56,
+    adjClose: 29.42,
+    volume: 26654930
+  },
+  {
+    date: "2006/7/10",
+    open: 55.17,
+    high: 56.35,
+    low: 54.87,
+    close: 56.05,
+    adjClose: 29.68,
+    volume: 41145718
+  },
+  {
+    date: "2006/7/7",
+    open: 56.25,
+    high: 56.35,
+    low: 55.36,
+    close: 56.05,
+    adjClose: 29.68,
+    volume: 39109394
+  },
+  {
+    date: "2006/7/6",
+    open: 56.55,
+    high: 56.64,
+    low: 55.95,
+    close: 56.25,
+    adjClose: 29.79,
+    volume: 39664663
+  },
+  {
+    date: "2006/7/5",
+    open: 57.83,
+    high: 57.92,
+    low: 56.74,
+    close: 56.84,
+    adjClose: 30.1,
+    volume: 23413662
+  },
+  {
+    date: "2006/7/4",
+    open: 58.12,
+    high: 58.42,
+    low: 57.73,
+    close: 57.92,
+    adjClose: 30.67,
+    volume: 30927555
+  },
+  {
+    date: "2006/7/3",
+    open: 57.63,
+    high: 57.92,
+    low: 57.33,
+    close: 57.63,
+    adjClose: 30.52,
+    volume: 30083993
+  },
+  {
+    date: "2006/6/30",
+    open: 57.53,
+    high: 57.63,
+    low: 56.94,
+    close: 57.53,
+    adjClose: 30.46,
+    volume: 71963641
+  },
+  {
+    date: "2006/6/29",
+    open: 55.26,
+    high: 55.95,
+    low: 55.26,
+    close: 55.86,
+    adjClose: 29.58,
+    volume: 51614615
+  },
+  {
+    date: "2006/6/28",
+    open: 55.17,
+    high: 55.86,
+    low: 54.97,
+    close: 55.26,
+    adjClose: 29.26,
+    volume: 57331751
+  },
+  {
+    date: "2006/6/27",
+    open: 56.55,
+    high: 57.14,
+    low: 55.95,
+    close: 56.55,
+    adjClose: 29.94,
+    volume: 37100479
+  },
+  {
+    date: "2006/6/26",
+    open: 55.17,
+    high: 56.64,
+    low: 55.17,
+    close: 56.15,
+    adjClose: 29.73,
+    volume: 24011566
+  },
+  {
+    date: "2006/6/23",
+    open: 56.15,
+    high: 56.15,
+    low: 55.07,
+    close: 55.76,
+    adjClose: 29.53,
+    volume: 29058725
+  },
+  {
+    date: "2006/6/22",
+    open: 55.76,
+    high: 56.94,
+    low: 55.36,
+    close: 56.84,
+    adjClose: 30.1,
+    volume: 42459279
+  },
+  {
+    date: "2006/6/21",
+    open: 53.89,
+    high: 54.67,
+    low: 53.79,
+    close: 54.48,
+    adjClose: 28.85,
+    volume: 34227699
+  },
+  {
+    date: "2006/6/20",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2006/6/20",
+    open: 54.28,
+    high: 54.87,
+    low: 53.39,
+    close: 53.89,
+    adjClose: 28.53,
+    volume: 91355412
+  },
+  {
+    date: "2006/6/20",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2006/6/19",
+    open: 57,
+    high: 57.1,
+    low: 56.43,
+    close: 56.81,
+    adjClose: 28.82,
+    volume: 67351439
+  },
+  {
+    date: "2006/6/16",
+    open: 56.91,
+    high: 57,
+    low: 56.33,
+    close: 56.81,
+    adjClose: 28.82,
+    volume: 57760425
+  },
+  {
+    date: "2006/6/15",
+    open: 56.14,
+    high: 56.24,
+    low: 54.23,
+    close: 54.32,
+    adjClose: 27.56,
+    volume: 45438382
+  },
+  {
+    date: "2006/6/14",
+    open: 53.75,
+    high: 56.24,
+    low: 53.75,
+    close: 55.57,
+    adjClose: 28.19,
+    volume: 58904278
+  },
+  {
+    date: "2006/6/13",
+    open: 54.52,
+    high: 54.71,
+    low: 53.65,
+    close: 53.75,
+    adjClose: 27.27,
+    volume: 54639398
+  },
+  {
+    date: "2006/6/12",
+    open: 55.47,
+    high: 56.05,
+    low: 54.52,
+    close: 54.99,
+    adjClose: 27.9,
+    volume: 55858533
+  },
+  {
+    date: "2006/6/9",
+    open: 55.47,
+    high: 56.33,
+    low: 54.42,
+    close: 55.95,
+    adjClose: 28.38,
+    volume: 71531628
+  },
+  {
+    date: "2006/6/8",
+    open: 57,
+    high: 57.1,
+    low: 53.46,
+    close: 53.46,
+    adjClose: 27.12,
+    volume: 80875887
+  },
+  {
+    date: "2006/6/7",
+    open: 57.86,
+    high: 58.15,
+    low: 57.48,
+    close: 57.48,
+    adjClose: 29.16,
+    volume: 33273175
+  },
+  {
+    date: "2006/6/6",
+    open: 57.67,
+    high: 58.53,
+    low: 57.38,
+    close: 58.15,
+    adjClose: 29.5,
+    volume: 54823419
+  },
+  {
+    date: "2006/6/5",
+    open: 59.97,
+    high: 60.16,
+    low: 57.38,
+    close: 57.77,
+    adjClose: 29.3,
+    volume: 55459125
+  },
+  {
+    date: "2006/6/2",
+    open: 59.39,
+    high: 59.78,
+    low: 59.01,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 46201648
+  },
+  {
+    date: "2006/6/1",
+    open: 58.82,
+    high: 59.39,
+    low: 57.96,
+    close: 58.72,
+    adjClose: 29.79,
+    volume: 47066334
+  },
+  {
+    date: "2006/5/30",
+    open: 57.38,
+    high: 58.53,
+    low: 57.19,
+    close: 57.58,
+    adjClose: 29.21,
+    volume: 34352203
+  },
+  {
+    date: "2006/5/29",
+    open: 55.44,
+    high: 56.55,
+    low: 55.25,
+    close: 55.62,
+    adjClose: 28.21,
+    volume: 35559318188
+  },
+  {
+    date: "2006/5/26",
+    open: 57.38,
+    high: 57.96,
+    low: 56.72,
+    close: 56.91,
+    adjClose: 28.87,
+    volume: 62662057
+  },
+  {
+    date: "2006/5/25",
+    open: 57.86,
+    high: 58.25,
+    low: 57.19,
+    close: 57.19,
+    adjClose: 29.01,
+    volume: 53210104
+  },
+  {
+    date: "2006/5/24",
+    open: 58.44,
+    high: 59.01,
+    low: 57.58,
+    close: 58.34,
+    adjClose: 29.59,
+    volume: 58294711
+  },
+  {
+    date: "2006/5/23",
+    open: 57.48,
+    high: 59.01,
+    low: 57.19,
+    close: 58.44,
+    adjClose: 29.64,
+    volume: 60425583
+  },
+  {
+    date: "2006/5/22",
+    open: 59.97,
+    high: 60.06,
+    low: 58.05,
+    close: 58.15,
+    adjClose: 29.5,
+    volume: 66874659
+  },
+  {
+    date: "2006/5/19",
+    open: 57.75,
+    high: 58.3,
+    low: 57.28,
+    close: 57.75,
+    adjClose: 29.29,
+    volume: 45212447317
+  },
+  {
+    date: "2006/5/18",
+    open: 57.65,
+    high: 57.93,
+    low: 57.28,
+    close: 57.75,
+    adjClose: 29.29,
+    volume: 58946971613
+  },
+  {
+    date: "2006/5/17",
+    open: 60.25,
+    high: 61.21,
+    low: 60.06,
+    close: 60.92,
+    adjClose: 30.9,
+    volume: 33387142
+  },
+  {
+    date: "2006/5/16",
+    open: 60.54,
+    high: 61.02,
+    low: 59.58,
+    close: 59.68,
+    adjClose: 30.27,
+    volume: 58757899
+  },
+  {
+    date: "2006/5/15",
+    open: 60.83,
+    high: 61.11,
+    low: 60.35,
+    close: 60.45,
+    adjClose: 30.66,
+    volume: 61700133
+  },
+  {
+    date: "2006/5/12",
+    open: 62.17,
+    high: 62.55,
+    low: 61.98,
+    close: 62.07,
+    adjClose: 31.49,
+    volume: 57094397
+  },
+  {
+    date: "2006/5/11",
+    open: 62.36,
+    high: 63.7,
+    low: 62.36,
+    close: 63.7,
+    adjClose: 32.31,
+    volume: 42994885
+  },
+  {
+    date: "2006/5/10",
+    open: 64.56,
+    high: 64.56,
+    low: 62.26,
+    close: 63.6,
+    adjClose: 32.26,
+    volume: 75295680
+  },
+  {
+    date: "2006/5/9",
+    open: 66.09,
+    high: 66.09,
+    low: 64.75,
+    close: 65.04,
+    adjClose: 32.99,
+    volume: 42165748
+  },
+  {
+    date: "2006/5/8",
+    open: 66.57,
+    high: 66.85,
+    low: 65.9,
+    close: 66.38,
+    adjClose: 33.67,
+    volume: 41549907
+  },
+  {
+    date: "2006/5/5",
+    open: 65.13,
+    high: 66.47,
+    low: 65.04,
+    close: 65.51,
+    adjClose: 33.23,
+    volume: 55011621
+  },
+  {
+    date: "2006/5/4",
+    open: 65.04,
+    high: 65.04,
+    low: 64.46,
+    close: 64.56,
+    adjClose: 32.75,
+    volume: 25590326
+  },
+  {
+    date: "2006/5/3",
+    open: 64.46,
+    high: 65.13,
+    low: 64.08,
+    close: 64.08,
+    adjClose: 32.51,
+    volume: 41723472
+  },
+  {
+    date: "2006/5/2",
+    open: 63.7,
+    high: 64.46,
+    low: 63.6,
+    close: 64.27,
+    adjClose: 32.6,
+    volume: 52414425
+  },
+  {
+    date: "2006/4/28",
+    open: 64.94,
+    high: 65.9,
+    low: 64.08,
+    close: 65.13,
+    adjClose: 33.04,
+    volume: 46648106
+  },
+  {
+    date: "2006/4/27",
+    open: 65.71,
+    high: 65.9,
+    low: 64.27,
+    close: 64.27,
+    adjClose: 32.6,
+    volume: 50857571
+  },
+  {
+    date: "2006/4/26",
+    open: 63.89,
+    high: 66.18,
+    low: 63.7,
+    close: 65.99,
+    adjClose: 33.48,
+    volume: 37492050
+  },
+  {
+    date: "2006/4/25",
+    open: 65.13,
+    high: 65.13,
+    low: 63.89,
+    close: 64.08,
+    adjClose: 32.51,
+    volume: 36433933
+  },
+  {
+    date: "2006/4/24",
+    open: 65.42,
+    high: 66.28,
+    low: 65.13,
+    close: 65.23,
+    adjClose: 33.09,
+    volume: 41773659
+  },
+  {
+    date: "2006/4/21",
+    open: 66.38,
+    high: 66.95,
+    low: 66.18,
+    close: 66.28,
+    adjClose: 33.62,
+    volume: 39472359
+  },
+  {
+    date: "2006/4/20",
+    open: 66.18,
+    high: 66.95,
+    low: 66.18,
+    close: 66.85,
+    adjClose: 33.91,
+    volume: 38494751
+  },
+  {
+    date: "2006/4/19",
+    open: 65.9,
+    high: 66.85,
+    low: 65.9,
+    close: 66.38,
+    adjClose: 33.67,
+    volume: 57104852
+  },
+  {
+    date: "2006/4/18",
+    open: 64.85,
+    high: 65.13,
+    low: 63.98,
+    close: 64.94,
+    adjClose: 32.94,
+    volume: 29590677
+  },
+  {
+    date: "2006/4/17",
+    open: 65.04,
+    high: 65.13,
+    low: 64.46,
+    close: 64.85,
+    adjClose: 32.89,
+    volume: 35193887
+  },
+  {
+    date: "2006/4/14",
+    open: 64.08,
+    high: 65.04,
+    low: 63.7,
+    close: 65.04,
+    adjClose: 32.99,
+    volume: 38892068
+  },
+  {
+    date: "2006/4/13",
+    open: 64.08,
+    high: 64.37,
+    low: 63.41,
+    close: 64.27,
+    adjClose: 32.6,
+    volume: 39164962
+  },
+  {
+    date: "2006/4/12",
+    open: 62.26,
+    high: 64.37,
+    low: 62.26,
+    close: 63.89,
+    adjClose: 32.41,
+    volume: 55796844
+  },
+  {
+    date: "2006/4/11",
+    open: 63.7,
+    high: 63.89,
+    low: 62.84,
+    close: 63.22,
+    adjClose: 32.07,
+    volume: 33915155
+  },
+  {
+    date: "2006/4/10",
+    open: 63.89,
+    high: 64.46,
+    low: 63.51,
+    close: 64.08,
+    adjClose: 32.51,
+    volume: 47331909
+  },
+  {
+    date: "2006/4/7",
+    open: 63.12,
+    high: 64.85,
+    low: 62.74,
+    close: 64.46,
+    adjClose: 32.7,
+    volume: 68181621
+  },
+  {
+    date: "2006/4/6",
+    open: 62.17,
+    high: 63.03,
+    low: 62.07,
+    close: 63.03,
+    adjClose: 31.97,
+    volume: 65636704
+  },
+  {
+    date: "2006/4/4",
+    open: 61.88,
+    high: 61.98,
+    low: 61.31,
+    close: 61.69,
+    adjClose: 31.29,
+    volume: 26653671
+  },
+  {
+    date: "2006/4/3",
+    open: 61.4,
+    high: 62.17,
+    low: 61.02,
+    close: 61.98,
+    adjClose: 31.44,
+    volume: 37725212
+  },
+  {
+    date: "2006/3/31",
+    open: 60.25,
+    high: 61.98,
+    low: 60.25,
+    close: 61.4,
+    adjClose: 31.15,
+    volume: 91399549
+  },
+  {
+    date: "2006/3/30",
+    open: 59.78,
+    high: 60.25,
+    low: 59.39,
+    close: 60.16,
+    adjClose: 30.52,
+    volume: 91007461
+  },
+  {
+    date: "2006/3/29",
+    open: 58.34,
+    high: 59.2,
+    low: 58.05,
+    close: 59.2,
+    adjClose: 30.03,
+    volume: 46391942
+  },
+  {
+    date: "2006/3/28",
+    open: 58.15,
+    high: 58.82,
+    low: 57.67,
+    close: 58.72,
+    adjClose: 29.79,
+    volume: 41086719
+  },
+  {
+    date: "2006/3/27",
+    open: 57.96,
+    high: 58.05,
+    low: 57.58,
+    close: 57.67,
+    adjClose: 29.25,
+    volume: 25907134
+  },
+  {
+    date: "2006/3/24",
+    open: 57,
+    high: 57.58,
+    low: 56.91,
+    close: 57.19,
+    adjClose: 29.01,
+    volume: 22809110
+  },
+  {
+    date: "2006/3/23",
+    open: 57.19,
+    high: 57.67,
+    low: 56.62,
+    close: 57,
+    adjClose: 28.92,
+    volume: 39473405
+  },
+  {
+    date: "2006/3/22",
+    open: 57.38,
+    high: 57.48,
+    low: 56.91,
+    close: 57,
+    adjClose: 28.92,
+    volume: 46207921
+  },
+  {
+    date: "2006/3/21",
+    open: 57.38,
+    high: 58.15,
+    low: 57.29,
+    close: 57.86,
+    adjClose: 29.35,
+    volume: 39790213
+  },
+  {
+    date: "2006/3/20",
+    open: 58.05,
+    high: 58.05,
+    low: 57.48,
+    close: 57.58,
+    adjClose: 29.21,
+    volume: 35351768
+  },
+  {
+    date: "2006/3/17",
+    open: 57.67,
+    high: 58.25,
+    low: 57.38,
+    close: 58.05,
+    adjClose: 29.45,
+    volume: 42512877
+  },
+  {
+    date: "2006/3/16",
+    open: 58.82,
+    high: 59.3,
+    low: 57.86,
+    close: 57.86,
+    adjClose: 29.35,
+    volume: 37898776
+  },
+  {
+    date: "2006/3/15",
+    open: 58.82,
+    high: 59.3,
+    low: 58.25,
+    close: 58.44,
+    adjClose: 29.64,
+    volume: 32314387
+  },
+  {
+    date: "2006/3/14",
+    open: 58.34,
+    high: 58.34,
+    low: 57.19,
+    close: 57.38,
+    adjClose: 29.11,
+    volume: 34625097
+  },
+  {
+    date: "2006/3/13",
+    open: 58.72,
+    high: 59.01,
+    low: 58.15,
+    close: 58.72,
+    adjClose: 29.79,
+    volume: 18581870
+  },
+  {
+    date: "2006/3/10",
+    open: 57.19,
+    high: 59.49,
+    low: 57.19,
+    close: 58.72,
+    adjClose: 29.79,
+    volume: 65318851
+  },
+  {
+    date: "2006/3/9",
+    open: 56.43,
+    high: 57.29,
+    low: 56.43,
+    close: 57.19,
+    adjClose: 29.01,
+    volume: 28139426
+  },
+  {
+    date: "2006/3/8",
+    open: 57.29,
+    high: 57.38,
+    low: 56.33,
+    close: 56.43,
+    adjClose: 28.62,
+    volume: 62459217
+  },
+  {
+    date: "2006/3/7",
+    open: 58.25,
+    high: 58.25,
+    low: 57.48,
+    close: 57.48,
+    adjClose: 29.16,
+    volume: 37496232
+  },
+  {
+    date: "2006/3/6",
+    open: 59.01,
+    high: 59.01,
+    low: 58.05,
+    close: 58.25,
+    adjClose: 29.55,
+    volume: 28457279
+  },
+  {
+    date: "2006/3/3",
+    open: 59.87,
+    high: 59.87,
+    low: 58.72,
+    close: 59.11,
+    adjClose: 29.98,
+    volume: 44579969
+  },
+  {
+    date: "2006/3/2",
+    open: 58.82,
+    high: 60.06,
+    low: 58.82,
+    close: 59.97,
+    adjClose: 30.42,
+    volume: 80870659
+  },
+  {
+    date: "2006/3/1",
+    open: 57.67,
+    high: 58.15,
+    low: 57.29,
+    close: 57.77,
+    adjClose: 29.3,
+    volume: 57964311
+  },
+  {
+    date: "2006/2/27",
+    open: 58.34,
+    high: 58.34,
+    low: 57.67,
+    close: 58.25,
+    adjClose: 29.55,
+    volume: 45298276
+  },
+  {
+    date: "2006/2/24",
+    open: 58.15,
+    high: 58.63,
+    low: 57.67,
+    close: 58.34,
+    adjClose: 29.59,
+    volume: 46726524
+  },
+  {
+    date: "2006/2/23",
+    open: 59.01,
+    high: 59.11,
+    low: 57.86,
+    close: 58.15,
+    adjClose: 29.5,
+    volume: 43459118
+  },
+  {
+    date: "2006/2/22",
+    open: 59.68,
+    high: 59.97,
+    low: 58.63,
+    close: 59.2,
+    adjClose: 30.03,
+    volume: 37527599
+  },
+  {
+    date: "2006/2/21",
+    open: 60.16,
+    high: 60.45,
+    low: 59.3,
+    close: 59.39,
+    adjClose: 30.13,
+    volume: 32982506
+  },
+  {
+    date: "2006/2/20",
+    open: 58.82,
+    high: 59.97,
+    low: 58.72,
+    close: 59.97,
+    adjClose: 30.42,
+    volume: 23522189
+  },
+  {
+    date: "2006/2/17",
+    open: 59.78,
+    high: 60.16,
+    low: 58.92,
+    close: 59.01,
+    adjClose: 29.93,
+    volume: 33274220
+  },
+  {
+    date: "2006/2/16",
+    open: 59.2,
+    high: 60.16,
+    low: 58.92,
+    close: 59.68,
+    adjClose: 30.27,
+    volume: 44765035
+  },
+  {
+    date: "2006/2/15",
+    open: 59.78,
+    high: 59.78,
+    low: 58.44,
+    close: 58.63,
+    adjClose: 29.74,
+    volume: 38611855
+  },
+  {
+    date: "2006/2/14",
+    open: 59.3,
+    high: 59.58,
+    low: 58.92,
+    close: 59.58,
+    adjClose: 30.23,
+    volume: 48076355
+  },
+  {
+    date: "2006/2/13",
+    open: 59.39,
+    high: 59.97,
+    low: 59.3,
+    close: 59.68,
+    adjClose: 30.27,
+    volume: 27026939
+  },
+  {
+    date: "2006/2/10",
+    open: 60.25,
+    high: 60.35,
+    low: 59.3,
+    close: 59.87,
+    adjClose: 30.37,
+    volume: 39062496
+  },
+  {
+    date: "2006/2/9",
+    open: 61.21,
+    high: 61.4,
+    low: 59.87,
+    close: 60.25,
+    adjClose: 30.56,
+    volume: 38461293
+  },
+  {
+    date: "2006/2/8",
+    open: 62.17,
+    high: 62.17,
+    low: 60.25,
+    close: 60.35,
+    adjClose: 30.61,
+    volume: 36292781
+  },
+  {
+    date: "2006/2/7",
+    open: 61.21,
+    high: 62.45,
+    low: 61.21,
+    close: 62.17,
+    adjClose: 31.53,
+    volume: 41847894
+  },
+  {
+    date: "2006/2/6",
+    open: 60.25,
+    high: 63.6,
+    low: 58.92,
+    close: 63.6,
+    adjClose: 32.26,
+    volume: 54588165
+  },
+  {
+    date: "2006/2/3",
+    open: 61.21,
+    high: 61.69,
+    low: 59.58,
+    close: 60.64,
+    adjClose: 30.76,
+    volume: 82349095
+  },
+  {
+    date: "2006/1/25",
+    open: 60.25,
+    high: 60.73,
+    low: 59.58,
+    close: 60.73,
+    adjClose: 30.81,
+    volume: 41525859
+  },
+  {
+    date: "2006/1/24",
+    open: 59.11,
+    high: 59.87,
+    low: 59.01,
+    close: 59.2,
+    adjClose: 30.03,
+    volume: 40324499
+  },
+  {
+    date: "2006/1/23",
+    open: 58.92,
+    high: 59.49,
+    low: 58.72,
+    close: 59.11,
+    adjClose: 29.98,
+    volume: 28493874
+  },
+  {
+    date: "2006/1/20",
+    open: 60.25,
+    high: 60.25,
+    low: 59.39,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 36743422
+  },
+  {
+    date: "2006/1/19",
+    open: 59.11,
+    high: 60.35,
+    low: 58.63,
+    close: 59.3,
+    adjClose: 30.08,
+    volume: 54131251
+  },
+  {
+    date: "2006/1/18",
+    open: 59.3,
+    high: 59.97,
+    low: 58.72,
+    close: 58.92,
+    adjClose: 29.89,
+    volume: 82601078
+  },
+  {
+    date: "2006/1/17",
+    open: 61.31,
+    high: 62.45,
+    low: 61.31,
+    close: 61.78,
+    adjClose: 31.34,
+    volume: 39285202
+  },
+  {
+    date: "2006/1/16",
+    open: 61.02,
+    high: 61.5,
+    low: 60.73,
+    close: 61.11,
+    adjClose: 31,
+    volume: 37459637
+  },
+  {
+    date: "2006/1/13",
+    open: 61.98,
+    high: 62.17,
+    low: 61.02,
+    close: 61.69,
+    adjClose: 31.29,
+    volume: 38442473
+  },
+  {
+    date: "2006/1/12",
+    open: 63.6,
+    high: 63.6,
+    low: 62.26,
+    close: 62.65,
+    adjClose: 31.78,
+    volume: 48264558
+  },
+  {
+    date: "2006/1/11",
+    open: 63.12,
+    high: 63.12,
+    low: 61.31,
+    close: 62.93,
+    adjClose: 31.92,
+    volume: 69942361
+  },
+  {
+    date: "2006/1/10",
+    open: 65.04,
+    high: 65.04,
+    low: 63.31,
+    close: 63.79,
+    adjClose: 32.36,
+    volume: 46107547
+  },
+  {
+    date: "2006/1/9",
+    open: 63.22,
+    high: 65.42,
+    low: 63.22,
+    close: 65.13,
+    adjClose: 33.04,
+    volume: 78626866
+  },
+  {
+    date: "2006/1/6",
+    open: 61.98,
+    high: 62.65,
+    low: 61.88,
+    close: 62.65,
+    adjClose: 31.78,
+    volume: 68933386
+  },
+  {
+    date: "2006/1/5",
+    open: 60.64,
+    high: 61.21,
+    low: 59.87,
+    close: 61.21,
+    adjClose: 31.05,
+    volume: 44492141
+  },
+  {
+    date: "2006/1/4",
+    open: 60.35,
+    high: 60.64,
+    low: 59.3,
+    close: 60.64,
+    adjClose: 30.76,
+    volume: 55262558
+  },
+  {
+    date: "2006/1/3",
+    open: 58.34,
+    high: 60.16,
+    low: 57.86,
+    close: 60.16,
+    adjClose: 30.52,
+    volume: 71325650
+  },
+  {
+    date: "2006/1/2",
+    open: 59.11,
+    high: 59.11,
+    low: 57.38,
+    close: 58.34,
+    adjClose: 29.59,
+    volume: 30366490
+  },
+  {
+    date: "2005/12/30",
+    open: 60.16,
+    high: 60.25,
+    low: 59.58,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 29157811
+  },
+  {
+    date: "2005/12/29",
+    open: 60.73,
+    high: 60.73,
+    low: 59.87,
+    close: 60.25,
+    adjClose: 30.56,
+    volume: 55692287
+  },
+  {
+    date: "2005/12/28",
+    open: 59.87,
+    high: 60.73,
+    low: 59.87,
+    close: 60.73,
+    adjClose: 30.81,
+    volume: 20573681
+  },
+  {
+    date: "2005/12/27",
+    open: 61.02,
+    high: 61.5,
+    low: 60.45,
+    close: 61.02,
+    adjClose: 30.95,
+    volume: 21372497
+  },
+  {
+    date: "2005/12/26",
+    open: 59.13,
+    high: 59.13,
+    low: 57.84,
+    close: 58.95,
+    adjClose: 29.9,
+    volume: 12674941534
+  },
+  {
+    date: "2005/12/23",
+    open: 60.06,
+    high: 61.11,
+    low: 59.68,
+    close: 61.11,
+    adjClose: 31,
+    volume: 35697852
+  },
+  {
+    date: "2005/12/22",
+    open: 58.67,
+    high: 58.67,
+    low: 57.38,
+    close: 57.56,
+    adjClose: 29.2,
+    volume: 21024968367
+  },
+  {
+    date: "2005/12/21",
+    open: 59.68,
+    high: 60.25,
+    low: 59.39,
+    close: 60.25,
+    adjClose: 30.56,
+    volume: 33167572
+  },
+  {
+    date: "2005/12/20",
+    open: 59.3,
+    high: 59.58,
+    low: 59.01,
+    close: 59.58,
+    adjClose: 30.23,
+    volume: 26550159
+  },
+  {
+    date: "2005/12/19",
+    open: 59.49,
+    high: 59.78,
+    low: 59.11,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 36789427
+  },
+  {
+    date: "2005/12/16",
+    open: 58.34,
+    high: 59.58,
+    low: 58.34,
+    close: 59.3,
+    adjClose: 30.08,
+    volume: 43199817
+  },
+  {
+    date: "2005/12/15",
+    open: 58.34,
+    high: 58.34,
+    low: 57.77,
+    close: 58.25,
+    adjClose: 29.55,
+    volume: 32392805
+  },
+  {
+    date: "2005/12/14",
+    open: 58.92,
+    high: 58.92,
+    low: 58.05,
+    close: 58.44,
+    adjClose: 29.64,
+    volume: 47646626
+  },
+  {
+    date: "2005/12/13",
+    open: 58.53,
+    high: 59.3,
+    low: 57.96,
+    close: 59.3,
+    adjClose: 30.08,
+    volume: 45184308
+  },
+  {
+    date: "2005/12/12",
+    open: 58.15,
+    high: 58.72,
+    low: 57.48,
+    close: 58.53,
+    adjClose: 29.69,
+    volume: 32498407
+  },
+  {
+    date: "2005/12/9",
+    open: 58.44,
+    high: 58.53,
+    low: 57.67,
+    close: 58.15,
+    adjClose: 29.5,
+    volume: 41409801
+  },
+  {
+    date: "2005/12/8",
+    open: 59.78,
+    high: 59.78,
+    low: 58.34,
+    close: 59.01,
+    adjClose: 29.93,
+    volume: 38101617
+  },
+  {
+    date: "2005/12/7",
+    open: 59.78,
+    high: 60.73,
+    low: 59.2,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 43699599
+  },
+  {
+    date: "2005/12/6",
+    open: 57.77,
+    high: 59.97,
+    low: 57.77,
+    close: 59.78,
+    adjClose: 30.32,
+    volume: 59293230
+  },
+  {
+    date: "2005/12/5",
+    open: 58.34,
+    high: 59.3,
+    low: 57.67,
+    close: 59.3,
+    adjClose: 30.08,
+    volume: 46885451
+  },
+  {
+    date: "2005/12/2",
+    open: 57.58,
+    high: 58.15,
+    low: 57.48,
+    close: 57.96,
+    adjClose: 29.4,
+    volume: 72773765
+  },
+  {
+    date: "2005/12/1",
+    open: 56.91,
+    high: 57.38,
+    low: 56.72,
+    close: 56.72,
+    adjClose: 28.77,
+    volume: 57002387
+  },
+  {
+    date: "2005/11/30",
+    open: 55.85,
+    high: 57.19,
+    low: 55.85,
+    close: 56.91,
+    adjClose: 28.87,
+    volume: 52173944
+  },
+  {
+    date: "2005/11/29",
+    open: 55.66,
+    high: 56.72,
+    low: 55.28,
+    close: 55.28,
+    adjClose: 28.04,
+    volume: 38924481
+  },
+  {
+    date: "2005/11/28",
+    open: 57,
+    high: 57.29,
+    low: 56.72,
+    close: 56.91,
+    adjClose: 28.87,
+    volume: 29944080
+  },
+  {
+    date: "2005/11/25",
+    open: 57.1,
+    high: 57.1,
+    low: 56.43,
+    close: 56.52,
+    adjClose: 28.67,
+    volume: 23042272
+  },
+  {
+    date: "2005/11/24",
+    open: 57.1,
+    high: 57.38,
+    low: 56.81,
+    close: 57.1,
+    adjClose: 28.96,
+    volume: 61217079
+  },
+  {
+    date: "2005/11/23",
+    open: 56.43,
+    high: 57.58,
+    low: 56.24,
+    close: 57.1,
+    adjClose: 28.96,
+    volume: 99635505
+  },
+  {
+    date: "2005/11/22",
+    open: 55.38,
+    high: 55.47,
+    low: 54.8,
+    close: 55.47,
+    adjClose: 28.14,
+    volume: 35614206
+  },
+  {
+    date: "2005/11/21",
+    open: 54.99,
+    high: 55.76,
+    low: 54.99,
+    close: 55.38,
+    adjClose: 28.09,
+    volume: 67668246
+  },
+  {
+    date: "2005/11/18",
+    open: 54.52,
+    high: 54.9,
+    low: 54.42,
+    close: 54.61,
+    adjClose: 27.7,
+    volume: 52759463
+  },
+  {
+    date: "2005/11/17",
+    open: 54.32,
+    high: 54.32,
+    low: 53.18,
+    close: 53.65,
+    adjClose: 27.22,
+    volume: 27130451
+  },
+  {
+    date: "2005/11/16",
+    open: 54.52,
+    high: 54.71,
+    low: 53.08,
+    close: 54.32,
+    adjClose: 27.56,
+    volume: 36987039
+  },
+  {
+    date: "2005/11/15",
+    open: 53.56,
+    high: 54.52,
+    low: 53.56,
+    close: 54.52,
+    adjClose: 27.65,
+    volume: 56931288
+  },
+  {
+    date: "2005/11/14",
+    open: 54.13,
+    high: 54.71,
+    low: 53.94,
+    close: 54.52,
+    adjClose: 27.65,
+    volume: 62320156
+  },
+  {
+    date: "2005/11/11",
+    open: 53.56,
+    high: 54.52,
+    low: 53.56,
+    close: 54.52,
+    adjClose: 27.65,
+    volume: 96114025
+  },
+  {
+    date: "2005/11/10",
+    open: 53.27,
+    high: 53.56,
+    low: 52.99,
+    close: 53.46,
+    adjClose: 27.12,
+    volume: 69350569
+  },
+  {
+    date: "2005/11/9",
+    open: 52.03,
+    high: 52.99,
+    low: 51.93,
+    close: 52.89,
+    adjClose: 26.83,
+    volume: 74806353
+  },
+  {
+    date: "2005/11/8",
+    open: 52.03,
+    high: 52.12,
+    low: 51.55,
+    close: 52.12,
+    adjClose: 26.44,
+    volume: 42921695
+  },
+  {
+    date: "2005/11/7",
+    open: 51.84,
+    high: 52.03,
+    low: 51.46,
+    close: 52.03,
+    adjClose: 26.39,
+    volume: 42838049
+  },
+  {
+    date: "2005/11/4",
+    open: 51.65,
+    high: 52.03,
+    low: 51.55,
+    close: 51.84,
+    adjClose: 26.3,
+    volume: 61786915
+  },
+  {
+    date: "2005/11/3",
+    open: 50.98,
+    high: 51.26,
+    low: 50.88,
+    close: 51.17,
+    adjClose: 25.96,
+    volume: 50505214
+  },
+  {
+    date: "2005/11/2",
+    open: 50.02,
+    high: 50.5,
+    low: 49.83,
+    close: 50.4,
+    adjClose: 25.57,
+    volume: 38550167
+  },
+  {
+    date: "2005/11/1",
+    open: 50.21,
+    high: 50.21,
+    low: 49.54,
+    close: 49.54,
+    adjClose: 25.13,
+    volume: 27323881
+  },
+  {
+    date: "2005/10/31",
+    open: 49.45,
+    high: 50.21,
+    low: 48.97,
+    close: 49.73,
+    adjClose: 25.23,
+    volume: 63756769
+  },
+  {
+    date: "2005/10/28",
+    open: 47.92,
+    high: 49.45,
+    low: 47.92,
+    close: 48.2,
+    adjClose: 24.45,
+    volume: 64097625
+  },
+  {
+    date: "2005/10/27",
+    open: 47.82,
+    high: 48.39,
+    low: 47.34,
+    close: 47.44,
+    adjClose: 24.06,
+    volume: 34633461
+  },
+  {
+    date: "2005/10/26",
+    open: 48.59,
+    high: 49.26,
+    low: 48.2,
+    close: 48.59,
+    adjClose: 24.65,
+    volume: 28925694
+  },
+  {
+    date: "2005/10/25",
+    open: 49.26,
+    high: 49.35,
+    low: 48.59,
+    close: 48.59,
+    adjClose: 24.65,
+    volume: 37500414
+  },
+  {
+    date: "2005/10/24",
+    open: 47.73,
+    high: 48.49,
+    low: 47.63,
+    close: 48.11,
+    adjClose: 24.4,
+    volume: 43110943
+  },
+  {
+    date: "2005/10/21",
+    open: 46.58,
+    high: 47.58,
+    low: 46.58,
+    close: 47.06,
+    adjClose: 23.87,
+    volume: 32710658
+  },
+  {
+    date: "2005/10/20",
+    open: 47.44,
+    high: 48.3,
+    low: 46.86,
+    close: 48.11,
+    adjClose: 24.4,
+    volume: 53103456
+  },
+  {
+    date: "2005/10/19",
+    open: 47.92,
+    high: 47.92,
+    low: 47.39,
+    close: 47.39,
+    adjClose: 24.04,
+    volume: 58063640
+  },
+  {
+    date: "2005/10/18",
+    open: 48.3,
+    high: 49.16,
+    low: 48.2,
+    close: 48.3,
+    adjClose: 24.5,
+    volume: 35050644
+  },
+  {
+    date: "2005/10/17",
+    open: 48.87,
+    high: 48.97,
+    low: 47.92,
+    close: 47.92,
+    adjClose: 24.31,
+    volume: 37037227
+  },
+  {
+    date: "2005/10/14",
+    open: 49.45,
+    high: 49.64,
+    low: 48.78,
+    close: 48.87,
+    adjClose: 24.79,
+    volume: 40166618
+  },
+  {
+    date: "2005/10/13",
+    open: 49.26,
+    high: 49.35,
+    low: 48.97,
+    close: 49.16,
+    adjClose: 24.94,
+    volume: 36270824
+  },
+  {
+    date: "2005/10/12",
+    open: 50.12,
+    high: 50.12,
+    low: 49.45,
+    close: 49.54,
+    adjClose: 25.13,
+    volume: 49680260
+  },
+  {
+    date: "2005/10/11",
+    open: 51.36,
+    high: 51.36,
+    low: 50.4,
+    close: 50.59,
+    adjClose: 25.66,
+    volume: 34435849
+  },
+  {
+    date: "2005/10/10",
+    open: 51.55,
+    high: 51.55,
+    low: 51.55,
+    close: 51.55,
+    adjClose: 26.15,
+    volume: null
+  },
+  {
+    date: "2005/10/7",
+    open: 51.07,
+    high: 51.84,
+    low: 51.07,
+    close: 51.55,
+    adjClose: 26.15,
+    volume: 39124185
+  },
+  {
+    date: "2005/10/6",
+    open: 51.46,
+    high: 51.55,
+    low: 51.17,
+    close: 51.36,
+    adjClose: 26.05,
+    volume: 31700637
+  },
+  {
+    date: "2005/10/5",
+    open: 51.65,
+    high: 52.41,
+    low: 51.65,
+    close: 51.84,
+    adjClose: 26.3,
+    volume: 65270754
+  },
+  {
+    date: "2005/10/4",
+    open: 50.69,
+    high: 51.65,
+    low: 50.69,
+    close: 51.65,
+    adjClose: 26.2,
+    volume: 61584074
+  },
+  {
+    date: "2005/10/3",
+    open: 51.07,
+    high: 51.07,
+    low: 50.4,
+    close: 50.5,
+    adjClose: 25.62,
+    volume: 37066503
+  },
+  {
+    date: "2005/9/30",
+    open: 50.21,
+    high: 50.98,
+    low: 50.12,
+    close: 50.98,
+    adjClose: 25.86,
+    volume: 52606810
+  },
+  {
+    date: "2005/9/29",
+    open: 48.97,
+    high: 49.92,
+    low: 48.78,
+    close: 49.83,
+    adjClose: 25.28,
+    volume: 50183179
+  },
+  {
+    date: "2005/9/28",
+    open: 47.4,
+    high: 47.77,
+    low: 46.75,
+    close: 47.31,
+    adjClose: 24,
+    volume: 36602111187
+  },
+  {
+    date: "2005/9/27",
+    open: 47.21,
+    high: 47.77,
+    low: 47.03,
+    close: 47.58,
+    adjClose: 24.14,
+    volume: 40158053043
+  },
+  {
+    date: "2005/9/26",
+    open: 47.58,
+    high: 47.95,
+    low: 46.66,
+    close: 47.12,
+    adjClose: 23.9,
+    volume: 41551404761
+  },
+  {
+    date: "2005/9/23",
+    open: 47.68,
+    high: 48.05,
+    low: 47.03,
+    close: 47.49,
+    adjClose: 24.09,
+    volume: 38302580282
+  },
+  {
+    date: "2005/9/22",
+    open: 48.78,
+    high: 48.88,
+    low: 47.95,
+    close: 48.14,
+    adjClose: 24.42,
+    volume: 66175382015
+  },
+  {
+    date: "2005/9/21",
+    open: 49.52,
+    high: 49.52,
+    low: 49.06,
+    close: 49.52,
+    adjClose: 25.12,
+    volume: 17546722820
+  },
+  {
+    date: "2005/9/20",
+    open: 48.78,
+    high: 49.89,
+    low: 48.51,
+    close: 49.52,
+    adjClose: 25.12,
+    volume: 48550504926
+  },
+  {
+    date: "2005/9/19",
+    open: 48.6,
+    high: 49.43,
+    low: 48.32,
+    close: 49.15,
+    adjClose: 24.93,
+    volume: 38608752463
+  },
+  {
+    date: "2005/9/16",
+    open: 49.8,
+    high: 49.99,
+    low: 48.6,
+    close: 48.6,
+    adjClose: 24.65,
+    volume: 48407006712
+  },
+  {
+    date: "2005/9/15",
+    open: 49.71,
+    high: 49.89,
+    low: 49.25,
+    close: 49.8,
+    adjClose: 25.26,
+    volume: 35857932990
+  },
+  {
+    date: "2005/9/14",
+    open: 49.43,
+    high: 49.8,
+    low: 49.34,
+    close: 49.8,
+    adjClose: 25.26,
+    volume: 47095472940
+  },
+  {
+    date: "2005/9/13",
+    open: 48.69,
+    high: 49.52,
+    low: 48.69,
+    close: 49.43,
+    adjClose: 25.07,
+    volume: 80149601150
+  },
+  {
+    date: "2005/9/12",
+    open: 48.51,
+    high: 48.97,
+    low: 48.32,
+    close: 48.69,
+    adjClose: 24.7,
+    volume: 48137107447
+  },
+  {
+    date: "2005/9/9",
+    open: 48.14,
+    high: 48.41,
+    low: 47.58,
+    close: 47.68,
+    adjClose: 24.18,
+    volume: 28265634941
+  },
+  {
+    date: "2005/9/8",
+    open: 48.05,
+    high: 48.41,
+    low: 47.86,
+    close: 47.95,
+    adjClose: 24.32,
+    volume: 22802431148
+  },
+  {
+    date: "2005/9/7",
+    open: 48.14,
+    high: 48.32,
+    low: 47.95,
+    close: 48.05,
+    adjClose: 24.37,
+    volume: 16220889832
+  },
+  {
+    date: "2005/9/6",
+    open: 48.51,
+    high: 48.69,
+    low: 48.14,
+    close: 48.23,
+    adjClose: 24.47,
+    volume: 19749540219
+  },
+  {
+    date: "2005/9/5",
+    open: 48.41,
+    high: 48.6,
+    low: 48.14,
+    close: 48.14,
+    adjClose: 24.42,
+    volume: 24361010117
+  },
+  {
+    date: "2005/9/2",
+    open: 48.97,
+    high: 49.15,
+    low: 48.32,
+    close: 48.6,
+    adjClose: 24.65,
+    volume: 60075576635
+  },
+  {
+    date: "2005/9/1",
+    open: 49.89,
+    high: 49.89,
+    low: 49.89,
+    close: 49.89,
+    adjClose: 25.31,
+    volume: null
+  },
+  {
+    date: "2005/8/31",
+    open: 47.21,
+    high: 49.89,
+    low: 47.21,
+    close: 49.89,
+    adjClose: 25.31,
+    volume: 60381322224
+  },
+  {
+    date: "2005/8/30",
+    open: 47.95,
+    high: 47.95,
+    low: 47.21,
+    close: 47.21,
+    adjClose: 23.95,
+    volume: 47672464489
+  },
+  {
+    date: "2005/8/29",
+    open: 48.32,
+    high: 48.51,
+    low: 47.21,
+    close: 47.4,
+    adjClose: 24.04,
+    volume: 38574733797
+  },
+  {
+    date: "2005/8/26",
+    open: 47.86,
+    high: 49.15,
+    low: 47.77,
+    close: 48.78,
+    adjClose: 24.75,
+    volume: 37548418982
+  },
+  {
+    date: "2005/8/25",
+    open: 47.31,
+    high: 48.14,
+    low: 47.21,
+    close: 47.86,
+    adjClose: 24.28,
+    volume: 23316013057
+  },
+  {
+    date: "2005/8/24",
+    open: 47.86,
+    high: 47.86,
+    low: 47.4,
+    close: 47.58,
+    adjClose: 24.14,
+    volume: 27495679260
+  },
+  {
+    date: "2005/8/23",
+    open: 48.05,
+    high: 48.41,
+    low: 47.95,
+    close: 48.05,
+    adjClose: 24.37,
+    volume: 28805441837
+  },
+  {
+    date: "2005/8/22",
+    open: 47.95,
+    high: 48.23,
+    low: 47.77,
+    close: 48.05,
+    adjClose: 24.37,
+    volume: 21801291569
+  },
+  {
+    date: "2005/8/19",
+    open: 47.86,
+    high: 47.86,
+    low: 47.21,
+    close: 47.68,
+    adjClose: 24.18,
+    volume: 42894422739
+  },
+  {
+    date: "2005/8/18",
+    open: 48.69,
+    high: 48.97,
+    low: 48.05,
+    close: 48.05,
+    adjClose: 24.37,
+    volume: 38514103281
+  },
+  {
+    date: "2005/8/17",
+    open: 48.51,
+    high: 48.97,
+    low: 48.32,
+    close: 48.69,
+    adjClose: 24.7,
+    volume: 40079514004
+  },
+  {
+    date: "2005/8/16",
+    open: 49.34,
+    high: 49.34,
+    low: 48.6,
+    close: 48.97,
+    adjClose: 24.84,
+    volume: 31214533475
+  },
+  {
+    date: "2005/8/15",
+    open: 49.25,
+    high: 49.34,
+    low: 48.05,
+    close: 48.97,
+    adjClose: 24.84,
+    volume: 51535837393
+  },
+  {
+    date: "2005/8/12",
+    open: 49.62,
+    high: 50.17,
+    low: 49.43,
+    close: 49.52,
+    adjClose: 25.12,
+    volume: 38507261071
+  },
+  {
+    date: "2005/8/11",
+    open: 48.97,
+    high: 49.52,
+    low: 48.88,
+    close: 49.52,
+    adjClose: 25.12,
+    volume: 33853893091
+  },
+  {
+    date: "2005/8/10",
+    open: 49.34,
+    high: 49.71,
+    low: 48.6,
+    close: 48.78,
+    adjClose: 24.75,
+    volume: 49252872868
+  },
+  {
+    date: "2005/8/9",
+    open: 49.15,
+    high: 49.52,
+    low: 48.78,
+    close: 48.97,
+    adjClose: 24.84,
+    volume: 60719869436
+  },
+  {
+    date: "2005/8/8",
+    open: 49.52,
+    high: 49.8,
+    low: 49.25,
+    close: 49.34,
+    adjClose: 25.03,
+    volume: 70687652410
+  },
+  {
+    date: "2005/8/5",
+    open: 50.54,
+    high: 50.54,
+    low: 50.54,
+    close: 50.54,
+    adjClose: 25.64,
+    volume: null
+  },
+  {
+    date: "2005/8/4",
+    open: 51.65,
+    high: 51.65,
+    low: 50.54,
+    close: 50.54,
+    adjClose: 25.64,
+    volume: 36365791448
+  },
+  {
+    date: "2005/8/3",
+    open: 51.28,
+    high: 51.83,
+    low: 50.91,
+    close: 51.65,
+    adjClose: 26.2,
+    volume: 59730275041
+  },
+  {
+    date: "2005/8/2",
+    open: 49.8,
+    high: 50.72,
+    low: 49.52,
+    close: 50.72,
+    adjClose: 25.73,
+    volume: 45061843410
+  },
+  {
+    date: "2005/8/1",
+    open: 49.15,
+    high: 49.8,
+    low: 49.06,
+    close: 49.25,
+    adjClose: 24.98,
+    volume: 18557408454
+  },
+  {
+    date: "2005/7/29",
+    open: 49.89,
+    high: 50.36,
+    low: 49.15,
+    close: 49.15,
+    adjClose: 24.93,
+    volume: 41934635454
+  },
+  {
+    date: "2005/7/28",
+    open: 49.15,
+    high: 49.8,
+    low: 48.78,
+    close: 49.8,
+    adjClose: 25.26,
+    volume: 76499842386
+  },
+  {
+    date: "2005/7/27",
+    open: 49.89,
+    high: 50.54,
+    low: 48.97,
+    close: 49.06,
+    adjClose: 24.89,
+    volume: 122266751309
+  },
+  {
+    date: "2005/7/26",
+    open: 51.74,
+    high: 52.67,
+    low: 51.37,
+    close: 51.37,
+    adjClose: 26.06,
+    volume: 66825500732
+  },
+  {
+    date: "2005/7/25",
+    open: 52.2,
+    high: 52.2,
+    low: 51.74,
+    close: 51.83,
+    adjClose: 26.29,
+    volume: 24601317660
+  },
+  {
+    date: "2005/7/22",
+    open: 52.11,
+    high: 52.57,
+    low: 51.37,
+    close: 52.57,
+    adjClose: 26.67,
+    volume: 43749540098
+  },
+  {
+    date: "2005/7/21",
+    open: 51.46,
+    high: 53.03,
+    low: 51.46,
+    close: 52.11,
+    adjClose: 26.43,
+    volume: 63424102491
+  },
+  {
+    date: "2005/7/20",
+    open: 52.02,
+    high: 52.94,
+    low: 51.93,
+    close: 52.11,
+    adjClose: 26.43,
+    volume: 65479613711
+  },
+  {
+    date: "2005/7/19",
+    open: 52.11,
+    high: 52.3,
+    low: 51.74,
+    close: 51.93,
+    adjClose: 26.34,
+    volume: 31257029623
+  },
+  {
+    date: "2005/7/18",
+    open: 52.3,
+    high: 52.3,
+    low: 52.3,
+    close: 52.3,
+    adjClose: 26.53,
+    volume: null
+  },
+  {
+    date: "2005/7/15",
+    open: 52.76,
+    high: 52.85,
+    low: 52.2,
+    close: 52.3,
+    adjClose: 26.53,
+    volume: 27211882278
+  },
+  {
+    date: "2005/7/14",
+    open: 52.67,
+    high: 52.76,
+    low: 51.93,
+    close: 52.67,
+    adjClose: 26.71,
+    volume: 30317490848
+  },
+  {
+    date: "2005/7/13",
+    open: 52.67,
+    high: 52.94,
+    low: 52.3,
+    close: 52.48,
+    adjClose: 26.62,
+    volume: 47584695158
+  },
+  {
+    date: "2005/7/12",
+    open: 52.67,
+    high: 53.4,
+    low: 52.67,
+    close: 52.76,
+    adjClose: 26.76,
+    volume: 76117239035
+  },
+  {
+    date: "2005/7/11",
+    open: 50.36,
+    high: 52.48,
+    low: 50.36,
+    close: 52.48,
+    adjClose: 26.62,
+    volume: 108679945147
+  },
+  {
+    date: "2005/7/8",
+    open: 50.08,
+    high: 50.17,
+    low: 49.62,
+    close: 49.71,
+    adjClose: 25.22,
+    volume: 72912106836
+  },
+  {
+    date: "2005/7/7",
+    open: 50.45,
+    high: 50.63,
+    low: 49.43,
+    close: 50.45,
+    adjClose: 25.59,
+    volume: 60616153071
+  },
+  {
+    date: "2005/7/6",
+    open: 50.45,
+    high: 50.63,
+    low: 50.08,
+    close: 50.45,
+    adjClose: 25.59,
+    volume: 53365764787
+  },
+  {
+    date: "2005/7/5",
+    open: 50.91,
+    high: 50.91,
+    low: 50.26,
+    close: 50.26,
+    adjClose: 25.5,
+    volume: 20550143649
+  },
+  {
+    date: "2005/7/4",
+    open: 51.19,
+    high: 51.65,
+    low: 50.82,
+    close: 50.91,
+    adjClose: 25.82,
+    volume: 19522557421
+  },
+  {
+    date: "2005/7/1",
+    open: 50.91,
+    high: 51.46,
+    low: 50.36,
+    close: 51.46,
+    adjClose: 26.11,
+    volume: 20424031174
+  },
+  {
+    date: "2005/6/30",
+    open: 51.28,
+    high: 51.46,
+    low: 50.63,
+    close: 50.91,
+    adjClose: 25.82,
+    volume: 42307439722
+  },
+  {
+    date: "2005/6/29",
+    open: 52.57,
+    high: 52.57,
+    low: 50.63,
+    close: 50.72,
+    adjClose: 25.73,
+    volume: 119284584828
+  },
+  {
+    date: "2005/6/28",
+    open: 52.02,
+    high: 52.2,
+    low: 51.56,
+    close: 52.11,
+    adjClose: 26.43,
+    volume: 32658503329
+  },
+  {
+    date: "2005/6/27",
+    open: 51.93,
+    high: 52.2,
+    low: 51.37,
+    close: 52.2,
+    adjClose: 26.48,
+    volume: 33091091201
+  },
+  {
+    date: "2005/6/24",
+    open: 52.67,
+    high: 52.76,
+    low: 52.11,
+    close: 52.3,
+    adjClose: 26.53,
+    volume: 37381755119
+  },
+  {
+    date: "2005/6/23",
+    open: 52.94,
+    high: 53.13,
+    low: 52.67,
+    close: 52.85,
+    adjClose: 26.81,
+    volume: 49408583340
+  },
+  {
+    date: "2005/6/22",
+    open: 51.74,
+    high: 52.85,
+    low: 51.74,
+    close: 52.57,
+    adjClose: 26.67,
+    volume: 41546281468
+  },
+  {
+    date: "2005/6/21",
+    open: 52.57,
+    high: 52.57,
+    low: 51.56,
+    close: 51.56,
+    adjClose: 26.15,
+    volume: 29415958543
+  },
+  {
+    date: "2005/6/20",
+    open: 52.48,
+    high: 52.67,
+    low: 51.93,
+    close: 52.57,
+    adjClose: 26.67,
+    volume: 43774458123
+  },
+  {
+    date: "2005/6/17",
+    open: 51.74,
+    high: 53.13,
+    low: 51.65,
+    close: 52.48,
+    adjClose: 26.62,
+    volume: 53602356374
+  },
+  {
+    date: "2005/6/16",
+    open: 51.19,
+    high: 51.74,
+    low: 50.82,
+    close: 51.65,
+    adjClose: 26.2,
+    volume: 49491777256
+  },
+  {
+    date: "2005/6/15",
+    open: 50.36,
+    high: 50.82,
+    low: 50.26,
+    close: 50.82,
+    adjClose: 25.78,
+    volume: 45102875760
+  },
+  {
+    date: "2005/6/14",
+    open: 50.54,
+    high: 50.82,
+    low: 50.26,
+    close: 50.36,
+    adjClose: 25.54,
+    volume: 44913267908
+  },
+  {
+    date: "2005/6/13",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2005/6/13",
+    open: 49.89,
+    high: 50.63,
+    low: 49.43,
+    close: 50.36,
+    adjClose: 25.54,
+    volume: 69491925975
+  },
+  {
+    date: "2005/6/13",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2005/6/10",
+    open: 51.3,
+    high: 51.48,
+    low: 50.86,
+    close: 51.13,
+    adjClose: 25.01,
+    volume: 105148682926
+  },
+  {
+    date: "2005/6/9",
+    open: 51.48,
+    high: 51.48,
+    low: 50.42,
+    close: 51.04,
+    adjClose: 24.97,
+    volume: 56691036329
+  },
+  {
+    date: "2005/6/8",
+    open: 50.77,
+    high: 51.48,
+    low: 50.77,
+    close: 51.21,
+    adjClose: 25.05,
+    volume: 84948744176
+  },
+  {
+    date: "2005/6/7",
+    open: 51.04,
+    high: 51.04,
+    low: 50.33,
+    close: 50.6,
+    adjClose: 24.75,
+    volume: 75422326007
+  },
+  {
+    date: "2005/6/6",
+    open: 50.6,
+    high: 51.13,
+    low: 50.42,
+    close: 51.13,
+    adjClose: 25.01,
+    volume: 59845128818
+  },
+  {
+    date: "2005/6/3",
+    open: 50.25,
+    high: 50.86,
+    low: 50.07,
+    close: 50.77,
+    adjClose: 24.84,
+    volume: 65016333549
+  },
+  {
+    date: "2005/6/2",
+    open: 49.63,
+    high: 50.16,
+    low: 49.63,
+    close: 50.07,
+    adjClose: 24.49,
+    volume: 67194816351
+  },
+  {
+    date: "2005/6/1",
+    open: 49.54,
+    high: 49.89,
+    low: 49.1,
+    close: 49.19,
+    adjClose: 24.06,
+    volume: 57861588784
+  },
+  {
+    date: "2005/5/31",
+    open: 49.81,
+    high: 50.25,
+    low: 49.45,
+    close: 50.07,
+    adjClose: 24.49,
+    volume: 78869368398
+  },
+  {
+    date: "2005/5/30",
+    open: 49.72,
+    high: 49.89,
+    low: 49.45,
+    close: 49.89,
+    adjClose: 24.41,
+    volume: 28950202158
+  },
+  {
+    date: "2005/5/27",
+    open: 49.37,
+    high: 50.07,
+    low: 49.37,
+    close: 49.98,
+    adjClose: 24.45,
+    volume: 44665914896
+  },
+  {
+    date: "2005/5/26",
+    open: 49.1,
+    high: 49.37,
+    low: 48.66,
+    close: 49.28,
+    adjClose: 24.11,
+    volume: 45060152305
+  },
+  {
+    date: "2005/5/25",
+    open: 49.63,
+    high: 50.07,
+    low: 48.93,
+    close: 49.1,
+    adjClose: 24.02,
+    volume: 57040854785
+  },
+  {
+    date: "2005/5/24",
+    open: 48.57,
+    high: 49.89,
+    low: 48.49,
+    close: 49.63,
+    adjClose: 24.28,
+    volume: 58410723837
+  },
+  {
+    date: "2005/5/23",
+    open: 49.54,
+    high: 49.54,
+    low: 48.31,
+    close: 48.57,
+    adjClose: 23.76,
+    volume: 26781931543
+  },
+  {
+    date: "2005/5/20",
+    open: 49.28,
+    high: 49.89,
+    low: 49.28,
+    close: 49.72,
+    adjClose: 24.32,
+    volume: 49192818671
+  },
+  {
+    date: "2005/5/19",
+    open: 48.84,
+    high: 49.72,
+    low: 48.84,
+    close: 49.63,
+    adjClose: 24.28,
+    volume: 111472123607
+  },
+  {
+    date: "2005/5/18",
+    open: 47.78,
+    high: 48.4,
+    low: 47.61,
+    close: 48.31,
+    adjClose: 23.63,
+    volume: 42082145938
+  },
+  {
+    date: "2005/5/17",
+    open: 48.22,
+    high: 48.4,
+    low: 47.69,
+    close: 47.78,
+    adjClose: 23.37,
+    volume: 34232561857
+  },
+  {
+    date: "2005/5/16",
+    open: 48.4,
+    high: 48.49,
+    low: 47.96,
+    close: 48.22,
+    adjClose: 23.59,
+    volume: 36327799197
+  },
+  {
+    date: "2005/5/13",
+    open: 47.78,
+    high: 48.57,
+    low: 47.69,
+    close: 48.22,
+    adjClose: 23.59,
+    volume: 64807210969
+  },
+  {
+    date: "2005/5/12",
+    open: 47.34,
+    high: 47.96,
+    low: 47.25,
+    close: 47.96,
+    adjClose: 23.46,
+    volume: 56783075558
+  },
+  {
+    date: "2005/5/11",
+    open: 47.08,
+    high: 47.34,
+    low: 46.46,
+    close: 47.17,
+    adjClose: 23.07,
+    volume: 53146597206
+  },
+  {
+    date: "2005/5/10",
+    open: 48.13,
+    high: 48.4,
+    low: 47.69,
+    close: 48.13,
+    adjClose: 23.55,
+    volume: 41962019351
+  },
+  {
+    date: "2005/5/9",
+    open: 48.05,
+    high: 48.13,
+    low: 47.43,
+    close: 48.13,
+    adjClose: 23.55,
+    volume: 51938652030
+  },
+  {
+    date: "2005/5/6",
+    open: 47.43,
+    high: 48.13,
+    low: 47.25,
+    close: 48.05,
+    adjClose: 23.5,
+    volume: 58038276527
+  },
+  {
+    date: "2005/5/5",
+    open: 46.73,
+    high: 47.87,
+    low: 46.73,
+    close: 47.43,
+    adjClose: 23.2,
+    volume: 69078812263
+  },
+  {
+    date: "2005/5/4",
+    open: 46.02,
+    high: 46.64,
+    low: 46.02,
+    close: 46.2,
+    adjClose: 22.6,
+    volume: 31220693450
+  },
+  {
+    date: "2005/5/3",
+    open: 45.93,
+    high: 46.73,
+    low: 45.93,
+    close: 46.02,
+    adjClose: 22.51,
+    volume: 48265716324
+  },
+  {
+    date: "2005/5/2",
+    open: 45.67,
+    high: 45.67,
+    low: 45.67,
+    close: 45.67,
+    adjClose: 22.34,
+    volume: null
+  },
+  {
+    date: "2005/4/29",
+    open: 45.93,
+    high: 45.93,
+    low: 45.49,
+    close: 45.67,
+    adjClose: 22.34,
+    volume: 34023149445
+  },
+  {
+    date: "2005/4/28",
+    open: 45.76,
+    high: 46.64,
+    low: 45.32,
+    close: 46.64,
+    adjClose: 22.81,
+    volume: 50355185568
+  },
+  {
+    date: "2005/4/27",
+    open: 45.85,
+    high: 45.93,
+    low: 45.14,
+    close: 45.93,
+    adjClose: 22.47,
+    volume: 65262914721
+  },
+  {
+    date: "2005/4/26",
+    open: 44,
+    high: 45.58,
+    low: 43.95,
+    close: 45.41,
+    adjClose: 22.21,
+    volume: 61575799203
+  },
+  {
+    date: "2005/4/25",
+    open: 43.65,
+    high: 43.91,
+    low: 43.43,
+    close: 43.82,
+    adjClose: 21.44,
+    volume: 26072543538
+  },
+  {
+    date: "2005/4/22",
+    open: 44.09,
+    high: 44.26,
+    low: 43.65,
+    close: 43.65,
+    adjClose: 21.35,
+    volume: 47564687339
+  },
+  {
+    date: "2005/4/21",
+    open: 43.29,
+    high: 44.17,
+    low: 43.21,
+    close: 43.65,
+    adjClose: 21.35,
+    volume: 69457763228
+  },
+  {
+    date: "2005/4/20",
+    open: 44.88,
+    high: 44.88,
+    low: 43.91,
+    close: 44.09,
+    adjClose: 21.57,
+    volume: 36464252987
+  },
+  {
+    date: "2005/4/19",
+    open: 44.09,
+    high: 44.44,
+    low: 43.91,
+    close: 44.09,
+    adjClose: 21.57,
+    volume: 53314278200
+  },
+  {
+    date: "2005/4/18",
+    open: 44.44,
+    high: 44.44,
+    low: 44,
+    close: 44.26,
+    adjClose: 21.65,
+    volume: 82500076458
+  },
+  {
+    date: "2005/4/15",
+    open: 44.7,
+    high: 45.67,
+    low: 44.44,
+    close: 45.14,
+    adjClose: 22.08,
+    volume: 52396006947
+  },
+  {
+    date: "2005/4/14",
+    open: 45.49,
+    high: 45.49,
+    low: 45.05,
+    close: 45.14,
+    adjClose: 22.08,
+    volume: 49927797525
+  },
+  {
+    date: "2005/4/13",
+    open: 46.02,
+    high: 46.29,
+    low: 45.76,
+    close: 46.2,
+    adjClose: 22.6,
+    volume: 21487076131
+  },
+  {
+    date: "2005/4/12",
+    open: 45.32,
+    high: 46.11,
+    low: 45.32,
+    close: 46.02,
+    adjClose: 22.51,
+    volume: 19729611654
+  },
+  {
+    date: "2005/4/11",
+    open: 46.2,
+    high: 46.2,
+    low: 45.67,
+    close: 45.67,
+    adjClose: 22.34,
+    volume: 30677941288
+  },
+  {
+    date: "2005/4/8",
+    open: 45.76,
+    high: 46.02,
+    low: 45.41,
+    close: 46.02,
+    adjClose: 22.51,
+    volume: 38373156886
+  },
+  {
+    date: "2005/4/7",
+    open: 45.32,
+    high: 45.85,
+    low: 45.23,
+    close: 45.23,
+    adjClose: 22.13,
+    volume: 50403640211
+  },
+  {
+    date: "2005/4/6",
+    open: 45.58,
+    high: 46.02,
+    low: 45.32,
+    close: 45.32,
+    adjClose: 22.17,
+    volume: 32716072938
+  },
+  {
+    date: "2005/4/5",
+    open: 45.93,
+    high: 45.93,
+    low: 45.93,
+    close: 45.93,
+    adjClose: 22.47,
+    volume: null
+  },
+  {
+    date: "2005/4/4",
+    open: 45.85,
+    high: 46.46,
+    low: 45.85,
+    close: 45.93,
+    adjClose: 22.47,
+    volume: 28863799283
+  },
+  {
+    date: "2005/4/1",
+    open: 45.32,
+    high: 46.37,
+    low: 44.97,
+    close: 46.29,
+    adjClose: 22.64,
+    volume: 44872512425
+  },
+  {
+    date: "2005/3/31",
+    open: 45.05,
+    high: 45.41,
+    low: 44.7,
+    close: 45.32,
+    adjClose: 22.17,
+    volume: 32289271146
+  },
+  {
+    date: "2005/3/30",
+    open: 44.44,
+    high: 44.88,
+    low: 44.44,
+    close: 44.53,
+    adjClose: 21.78,
+    volume: 57722223499
+  },
+  {
+    date: "2005/3/29",
+    open: 45.32,
+    high: 45.32,
+    low: 44.7,
+    close: 44.97,
+    adjClose: 22,
+    volume: 25286949476
+  },
+  {
+    date: "2005/3/28",
+    open: 45.41,
+    high: 45.49,
+    low: 45.05,
+    close: 45.32,
+    adjClose: 22.17,
+    volume: 21578933118
+  },
+  {
+    date: "2005/3/25",
+    open: 44.79,
+    high: 45.32,
+    low: 44.79,
+    close: 45.32,
+    adjClose: 22.17,
+    volume: 29554956414
+  },
+  {
+    date: "2005/3/24",
+    open: 44.17,
+    high: 45.23,
+    low: 44.09,
+    close: 44.53,
+    adjClose: 21.78,
+    volume: 44706895386
+  },
+  {
+    date: "2005/3/23",
+    open: 43.91,
+    high: 44.44,
+    low: 43.82,
+    close: 44.26,
+    adjClose: 21.65,
+    volume: 48383695519
+  },
+  {
+    date: "2005/3/22",
+    open: 44.26,
+    high: 44.7,
+    low: 43.91,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 44011491777
+  },
+  {
+    date: "2005/3/21",
+    open: 44.7,
+    high: 44.7,
+    low: 44.26,
+    close: 44.53,
+    adjClose: 21.78,
+    volume: 52954513236
+  },
+  {
+    date: "2005/3/18",
+    open: 44.88,
+    high: 45.23,
+    low: 44.61,
+    close: 44.79,
+    adjClose: 21.91,
+    volume: 35101998612
+  },
+  {
+    date: "2005/3/17",
+    open: 44.88,
+    high: 45.32,
+    low: 44.61,
+    close: 44.79,
+    adjClose: 21.91,
+    volume: 62232356540
+  },
+  {
+    date: "2005/3/16",
+    open: 44.88,
+    high: 45.76,
+    low: 44.88,
+    close: 45.76,
+    adjClose: 22.38,
+    volume: 51111133328
+  },
+  {
+    date: "2005/3/15",
+    open: 45.23,
+    high: 45.32,
+    low: 44.88,
+    close: 44.97,
+    adjClose: 22,
+    volume: 36182466008
+  },
+  {
+    date: "2005/3/14",
+    open: 45.67,
+    high: 45.76,
+    low: 45.14,
+    close: 45.32,
+    adjClose: 22.17,
+    volume: 38227024463
+  },
+  {
+    date: "2005/3/11",
+    open: 45.85,
+    high: 46.55,
+    low: 45.85,
+    close: 46.2,
+    adjClose: 22.6,
+    volume: 32535323155
+  },
+  {
+    date: "2005/3/10",
+    open: 46.46,
+    high: 46.46,
+    low: 45.49,
+    close: 45.76,
+    adjClose: 22.38,
+    volume: 52766961183
+  },
+  {
+    date: "2005/3/9",
+    open: 46.37,
+    high: 46.99,
+    low: 46.37,
+    close: 46.64,
+    adjClose: 22.81,
+    volume: 31971749198
+  },
+  {
+    date: "2005/3/8",
+    open: 47.08,
+    high: 47.69,
+    low: 46.46,
+    close: 47.25,
+    adjClose: 23.12,
+    volume: 39390950305
+  },
+  {
+    date: "2005/3/7",
+    open: 46.2,
+    high: 46.73,
+    low: 46.02,
+    close: 46.46,
+    adjClose: 22.73,
+    volume: 41530428744
+  },
+  {
+    date: "2005/3/4",
+    open: 46.64,
+    high: 46.73,
+    low: 45.85,
+    close: 46.2,
+    adjClose: 22.6,
+    volume: 79686501453
+  },
+  {
+    date: "2005/3/3",
+    open: 47.52,
+    high: 47.52,
+    low: 46.81,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: 76743661371
+  },
+  {
+    date: "2005/3/2",
+    open: 47.78,
+    high: 48.13,
+    low: 47.52,
+    close: 47.61,
+    adjClose: 23.29,
+    volume: 54573620253
+  },
+  {
+    date: "2005/3/1",
+    open: 47.96,
+    high: 48.31,
+    low: 47.52,
+    close: 47.78,
+    adjClose: 23.37,
+    volume: 45611671886
+  },
+  {
+    date: "2005/2/28",
+    open: 48.4,
+    high: 48.4,
+    low: 48.4,
+    close: 48.4,
+    adjClose: 23.68,
+    volume: null
+  },
+  {
+    date: "2005/2/25",
+    open: 47.52,
+    high: 48.4,
+    low: 47.52,
+    close: 48.4,
+    adjClose: 23.68,
+    volume: 100432106055
+  },
+  {
+    date: "2005/2/24",
+    open: 46.64,
+    high: 47.08,
+    low: 46.2,
+    close: 46.64,
+    adjClose: 22.81,
+    volume: 45716173892
+  },
+  {
+    date: "2005/2/23",
+    open: 47.08,
+    high: 47.52,
+    low: 46.2,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: 63483267116
+  },
+  {
+    date: "2005/2/22",
+    open: 47.52,
+    high: 47.96,
+    low: 47.08,
+    close: 47.52,
+    adjClose: 23.25,
+    volume: 30276297793
+  },
+  {
+    date: "2005/2/21",
+    open: 47.52,
+    high: 47.96,
+    low: 47.08,
+    close: 47.96,
+    adjClose: 23.46,
+    volume: 33289870061
+  },
+  {
+    date: "2005/2/18",
+    open: 47.08,
+    high: 47.96,
+    low: 46.64,
+    close: 47.52,
+    adjClose: 23.25,
+    volume: 72099015536
+  },
+  {
+    date: "2005/2/17",
+    open: 47.96,
+    high: 47.96,
+    low: 46.64,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: 51282538224
+  },
+  {
+    date: "2005/2/16",
+    open: 48.4,
+    high: 48.4,
+    low: 47.08,
+    close: 47.96,
+    adjClose: 23.46,
+    volume: 45692838023
+  },
+  {
+    date: "2005/2/15",
+    open: 47.96,
+    high: 48.84,
+    low: 47.96,
+    close: 48.4,
+    adjClose: 23.68,
+    volume: 72234208996
+  },
+  {
+    date: "2005/2/14",
+    open: 47.96,
+    high: 48.84,
+    low: 47.52,
+    close: 47.96,
+    adjClose: 23.46,
+    volume: 166804805119
+  },
+  {
+    date: "2005/2/11",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/10",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/9",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/8",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/7",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/4",
+    open: 47.08,
+    high: 47.08,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: null
+  },
+  {
+    date: "2005/2/3",
+    open: 47.08,
+    high: 47.52,
+    low: 46.2,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: 106363439154
+  },
+  {
+    date: "2005/2/2",
+    open: 46.64,
+    high: 47.52,
+    low: 46.64,
+    close: 47.08,
+    adjClose: 23.03,
+    volume: 127649264280
+  },
+  {
+    date: "2005/2/1",
+    open: 46.2,
+    high: 46.64,
+    low: 45.76,
+    close: 46.2,
+    adjClose: 22.6,
+    volume: 126248497378
+  },
+  {
+    date: "2005/1/31",
+    open: 44.44,
+    high: 46.2,
+    low: 44.44,
+    close: 45.76,
+    adjClose: 22.38,
+    volume: 152370837131
+  },
+  {
+    date: "2005/1/28",
+    open: 43.65,
+    high: 44.88,
+    low: 43.65,
+    close: 44,
+    adjClose: 21.52,
+    volume: 96812921013
+  },
+  {
+    date: "2005/1/27",
+    open: 43.29,
+    high: 43.56,
+    low: 43.03,
+    close: 43.47,
+    adjClose: 21.26,
+    volume: 52258477265
+  },
+  {
+    date: "2005/1/26",
+    open: 42.24,
+    high: 43.47,
+    low: 42.15,
+    close: 43.29,
+    adjClose: 21.18,
+    volume: 84585365094
+  },
+  {
+    date: "2005/1/25",
+    open: 41.09,
+    high: 41.97,
+    low: 41.09,
+    close: 41.89,
+    adjClose: 20.49,
+    volume: 44250071829
+  },
+  {
+    date: "2005/1/24",
+    open: 41.8,
+    high: 41.89,
+    low: 41.27,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 28352792508
+  },
+  {
+    date: "2005/1/21",
+    open: 41.97,
+    high: 42.24,
+    low: 41.8,
+    close: 41.8,
+    adjClose: 20.45,
+    volume: 34275911505
+  },
+  {
+    date: "2005/1/20",
+    open: 41.71,
+    high: 42.68,
+    low: 41.71,
+    close: 42.24,
+    adjClose: 20.66,
+    volume: 47151667938
+  },
+  {
+    date: "2005/1/19",
+    open: 43.21,
+    high: 43.38,
+    low: 41.97,
+    close: 41.97,
+    adjClose: 20.53,
+    volume: 37326191436
+  },
+  {
+    date: "2005/1/18",
+    open: 43.03,
+    high: 43.29,
+    low: 42.77,
+    close: 43.21,
+    adjClose: 21.14,
+    volume: 50467394471
+  },
+  {
+    date: "2005/1/17",
+    open: 42.06,
+    high: 43.03,
+    low: 41.89,
+    close: 43.03,
+    adjClose: 21.05,
+    volume: 49625182164
+  },
+  {
+    date: "2005/1/14",
+    open: 40.92,
+    high: 41.45,
+    low: 40.65,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 58380111429
+  },
+  {
+    date: "2005/1/13",
+    open: 41.62,
+    high: 42.06,
+    low: 40.92,
+    close: 41.18,
+    adjClose: 20.15,
+    volume: 42903907522
+  },
+  {
+    date: "2005/1/12",
+    open: 42.06,
+    high: 42.33,
+    low: 41.36,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 49071295621
+  },
+  {
+    date: "2005/1/11",
+    open: 42.5,
+    high: 42.77,
+    low: 42.24,
+    close: 42.41,
+    adjClose: 20.75,
+    volume: 39142041694
+  },
+  {
+    date: "2005/1/10",
+    open: 42.06,
+    high: 42.94,
+    low: 42.06,
+    close: 42.68,
+    adjClose: 20.88,
+    volume: 42064905324
+  },
+  {
+    date: "2005/1/7",
+    open: 42.06,
+    high: 42.15,
+    low: 41.8,
+    close: 42.06,
+    adjClose: 20.58,
+    volume: 52145038772
+  },
+  {
+    date: "2005/1/6",
+    open: 42.33,
+    high: 42.59,
+    low: 42.15,
+    close: 42.24,
+    adjClose: 20.66,
+    volume: 52027134231
+  },
+  {
+    date: "2005/1/5",
+    open: 42.94,
+    high: 42.94,
+    low: 42.68,
+    close: 42.68,
+    adjClose: 20.88,
+    volume: 45343603622
+  },
+  {
+    date: "2005/1/4",
+    open: 44,
+    high: 44.44,
+    low: 43.65,
+    close: 43.65,
+    adjClose: 21.35,
+    volume: 33197547587
+  },
+  {
+    date: "2005/1/3",
+    open: 44.88,
+    high: 45.32,
+    low: 44.44,
+    close: 44.88,
+    adjClose: 21.95,
+    volume: 31140095998
+  },
+  {
+    date: "2004/12/31",
+    open: 44.44,
+    high: 45.32,
+    low: 44.44,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 45287534302
+  },
+  {
+    date: "2004/12/30",
+    open: 44.44,
+    high: 44.88,
+    low: 44.44,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 50723966064
+  },
+  {
+    date: "2004/12/29",
+    open: 44.44,
+    high: 44.88,
+    low: 44,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 48221824340
+  },
+  {
+    date: "2004/12/28",
+    open: 43.91,
+    high: 44.44,
+    low: 43.91,
+    close: 44,
+    adjClose: 21.52,
+    volume: 31476852253
+  },
+  {
+    date: "2004/12/27",
+    open: 44,
+    high: 44,
+    low: 43.65,
+    close: 43.91,
+    adjClose: 21.48,
+    volume: 8412253410
+  },
+  {
+    date: "2004/12/24",
+    open: 44,
+    high: 44.44,
+    low: 43.82,
+    close: 44,
+    adjClose: 21.52,
+    volume: 26070216099
+  },
+  {
+    date: "2004/12/23",
+    open: 43.56,
+    high: 44,
+    low: 43.47,
+    close: 44,
+    adjClose: 21.52,
+    volume: 41782753860
+  },
+  {
+    date: "2004/12/22",
+    open: 43.65,
+    high: 44.44,
+    low: 43.56,
+    close: 43.82,
+    adjClose: 21.44,
+    volume: 96826666077
+  },
+  {
+    date: "2004/12/21",
+    open: 43.73,
+    high: 43.91,
+    low: 43.38,
+    close: 43.38,
+    adjClose: 21.22,
+    volume: 56773111485
+  },
+  {
+    date: "2004/12/20",
+    open: 43.12,
+    high: 44,
+    low: 43.12,
+    close: 44,
+    adjClose: 21.52,
+    volume: 60753721438
+  },
+  {
+    date: "2004/12/17",
+    open: 43.91,
+    high: 44.44,
+    low: 43.82,
+    close: 43.82,
+    adjClose: 21.44,
+    volume: 42662323757
+  },
+  {
+    date: "2004/12/16",
+    open: 43.82,
+    high: 44,
+    low: 43.47,
+    close: 44,
+    adjClose: 21.52,
+    volume: 58561691185
+  },
+  {
+    date: "2004/12/15",
+    open: 42.59,
+    high: 44,
+    low: 42.5,
+    close: 43.82,
+    adjClose: 21.44,
+    volume: 86281567427
+  },
+  {
+    date: "2004/12/14",
+    open: 42.24,
+    high: 42.41,
+    low: 41.97,
+    close: 42.33,
+    adjClose: 20.71,
+    volume: 37938654785
+  },
+  {
+    date: "2004/12/13",
+    open: 41.53,
+    high: 42.85,
+    low: 41.18,
+    close: 41.89,
+    adjClose: 20.49,
+    volume: 66565011387
+  },
+  {
+    date: "2004/12/10",
+    open: 41.97,
+    high: 42.41,
+    low: 41.36,
+    close: 42.41,
+    adjClose: 20.75,
+    volume: 80976385652
+  },
+  {
+    date: "2004/12/9",
+    open: 42.33,
+    high: 42.68,
+    low: 41.8,
+    close: 42.41,
+    adjClose: 20.75,
+    volume: 63210425407
+  },
+  {
+    date: "2004/12/8",
+    open: 43.12,
+    high: 43.12,
+    low: 42.59,
+    close: 42.94,
+    adjClose: 21.01,
+    volume: 47607520997
+  },
+  {
+    date: "2004/12/7",
+    open: 42.94,
+    high: 43.38,
+    low: 42.59,
+    close: 43.29,
+    adjClose: 21.18,
+    volume: 68897214941
+  },
+  {
+    date: "2004/12/6",
+    open: 42.59,
+    high: 43.12,
+    low: 42.33,
+    close: 43.03,
+    adjClose: 21.05,
+    volume: 57341256884
+  },
+  {
+    date: "2004/12/3",
+    open: 42.77,
+    high: 43.12,
+    low: 42.5,
+    close: 43.03,
+    adjClose: 21.05,
+    volume: 72926775765
+  },
+  {
+    date: "2004/12/2",
+    open: 41.62,
+    high: 42.24,
+    low: 41.36,
+    close: 42.24,
+    adjClose: 20.66,
+    volume: 64620027794
+  },
+  {
+    date: "2004/12/1",
+    open: 40.74,
+    high: 41.09,
+    low: 40.65,
+    close: 40.83,
+    adjClose: 19.97,
+    volume: 47480741449
+  },
+  {
+    date: "2004/11/30",
+    open: 41.71,
+    high: 41.71,
+    low: 40.74,
+    close: 41.62,
+    adjClose: 20.36,
+    volume: 92781796853
+  },
+  {
+    date: "2004/11/29",
+    open: 41.36,
+    high: 41.97,
+    low: 41.09,
+    close: 41.27,
+    adjClose: 20.19,
+    volume: 44086215739
+  },
+  {
+    date: "2004/11/26",
+    open: 42.68,
+    high: 43.47,
+    low: 40.92,
+    close: 41.53,
+    adjClose: 20.32,
+    volume: 42229991004
+  },
+  {
+    date: "2004/11/25",
+    open: 43.21,
+    high: 43.29,
+    low: 42.5,
+    close: 42.5,
+    adjClose: 20.79,
+    volume: 44418372009
+  },
+  {
+    date: "2004/11/24",
+    open: 42.59,
+    high: 43.38,
+    low: 42.33,
+    close: 43.03,
+    adjClose: 21.05,
+    volume: 46604307007
+  },
+  {
+    date: "2004/11/23",
+    open: 42.59,
+    high: 42.85,
+    low: 41.8,
+    close: 42.59,
+    adjClose: 20.83,
+    volume: 58128638244
+  },
+  {
+    date: "2004/11/22",
+    open: 43.12,
+    high: 43.47,
+    low: 42.41,
+    close: 42.41,
+    adjClose: 20.75,
+    volume: 73892522380
+  },
+  {
+    date: "2004/11/19",
+    open: 44.44,
+    high: 44.88,
+    low: 43.91,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 94392384566
+  },
+  {
+    date: "2004/11/18",
+    open: 44,
+    high: 44.88,
+    low: 43.82,
+    close: 44.44,
+    adjClose: 21.74,
+    volume: 135703081123
+  },
+  {
+    date: "2004/11/17",
+    open: 42.5,
+    high: 43.73,
+    low: 42.33,
+    close: 43.73,
+    adjClose: 21.39,
+    volume: 145949055570
+  },
+  {
+    date: "2004/11/16",
+    open: 42.06,
+    high: 42.68,
+    low: 41.97,
+    close: 42.59,
+    adjClose: 20.83,
+    volume: 82531782324
+  },
+  {
+    date: "2004/11/15",
+    open: 42.15,
+    high: 42.41,
+    low: 41.8,
+    close: 41.8,
+    adjClose: 20.45,
+    volume: 55523470022
+  },
+  {
+    date: "2004/11/12",
+    open: 40.92,
+    high: 41.97,
+    low: 40.92,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 39705844004
+  },
+  {
+    date: "2004/11/11",
+    open: 41.53,
+    high: 41.8,
+    low: 40.65,
+    close: 40.74,
+    adjClose: 19.93,
+    volume: 60703295059
+  },
+  {
+    date: "2004/11/10",
+    open: 42.06,
+    high: 42.24,
+    low: 41.89,
+    close: 42.24,
+    adjClose: 20.66,
+    volume: 81425704318
+  },
+  {
+    date: "2004/11/9",
+    open: 41.97,
+    high: 42.15,
+    low: 41.8,
+    close: 42.06,
+    adjClose: 20.58,
+    volume: 63245113030
+  },
+  {
+    date: "2004/11/8",
+    open: 42.24,
+    high: 42.24,
+    low: 41.71,
+    close: 42.15,
+    adjClose: 20.62,
+    volume: 54924396034
+  },
+  {
+    date: "2004/11/5",
+    open: 42.24,
+    high: 42.68,
+    low: 41.62,
+    close: 41.97,
+    adjClose: 20.53,
+    volume: 126636819579
+  },
+  {
+    date: "2004/11/4",
+    open: 41.45,
+    high: 42.15,
+    low: 40.83,
+    close: 41.8,
+    adjClose: 20.45,
+    volume: 172666648797
+  },
+  {
+    date: "2004/11/3",
+    open: 40.04,
+    high: 41.36,
+    low: 40.04,
+    close: 41.27,
+    adjClose: 20.19,
+    volume: 171405475533
+  },
+  {
+    date: "2004/11/2",
+    open: 39.07,
+    high: 39.77,
+    low: 38.89,
+    close: 39.6,
+    adjClose: 19.37,
+    volume: 91234260777
+  },
+  {
+    date: "2004/11/1",
+    open: 38.81,
+    high: 39.07,
+    low: 38.28,
+    close: 38.63,
+    adjClose: 18.9,
+    volume: 63414805282
+  },
+  {
+    date: "2004/10/29",
+    open: 38.28,
+    high: 38.72,
+    low: 38.1,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 72732544402
+  },
+  {
+    date: "2004/10/28",
+    open: 37.93,
+    high: 38.45,
+    low: 37.66,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: 102666842616
+  },
+  {
+    date: "2004/10/27",
+    open: 36.96,
+    high: 37.13,
+    low: 36.34,
+    close: 36.87,
+    adjClose: 18.04,
+    volume: 42310081250
+  },
+  {
+    date: "2004/10/26",
+    open: 37.57,
+    high: 37.57,
+    low: 37.13,
+    close: 37.13,
+    adjClose: 18.17,
+    volume: 36858358653
+  },
+  {
+    date: "2004/10/25",
+    open: 38.01,
+    high: 38.01,
+    low: 38.01,
+    close: 38.01,
+    adjClose: 18.6,
+    volume: null
+  },
+  {
+    date: "2004/10/22",
+    open: 38.72,
+    high: 38.72,
+    low: 38.01,
+    close: 38.01,
+    adjClose: 18.6,
+    volume: 47643991526
+  },
+  {
+    date: "2004/10/21",
+    open: 37.4,
+    high: 38.28,
+    low: 37.4,
+    close: 38.01,
+    adjClose: 18.6,
+    volume: 43541046115
+  },
+  {
+    date: "2004/10/20",
+    open: 37.84,
+    high: 38.1,
+    low: 37.66,
+    close: 37.66,
+    adjClose: 18.42,
+    volume: 45963440121
+  },
+  {
+    date: "2004/10/19",
+    open: 37.57,
+    high: 38.01,
+    low: 37.49,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: 36069093386
+  },
+  {
+    date: "2004/10/18",
+    open: 37.57,
+    high: 37.66,
+    low: 37.13,
+    close: 37.13,
+    adjClose: 18.17,
+    volume: 25372937365
+  },
+  {
+    date: "2004/10/15",
+    open: 37.4,
+    high: 37.57,
+    low: 37.13,
+    close: 37.4,
+    adjClose: 18.29,
+    volume: 42023999488
+  },
+  {
+    date: "2004/10/14",
+    open: 37.4,
+    high: 37.93,
+    low: 37.22,
+    close: 37.57,
+    adjClose: 18.38,
+    volume: 47798054806
+  },
+  {
+    date: "2004/10/13",
+    open: 37.66,
+    high: 37.75,
+    low: 37.4,
+    close: 37.49,
+    adjClose: 18.34,
+    volume: 31834946292
+  },
+  {
+    date: "2004/10/12",
+    open: 37.66,
+    high: 38.01,
+    low: 37.49,
+    close: 37.49,
+    adjClose: 18.34,
+    volume: 55164258373
+  },
+  {
+    date: "2004/10/11",
+    open: 37.66,
+    high: 38.01,
+    low: 37.49,
+    close: 37.66,
+    adjClose: 18.42,
+    volume: 38940151740
+  },
+  {
+    date: "2004/10/8",
+    open: 38.45,
+    high: 38.81,
+    low: 37.75,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 98761848079
+  },
+  {
+    date: "2004/10/7",
+    open: 39.86,
+    high: 39.86,
+    low: 38.81,
+    close: 39.6,
+    adjClose: 19.37,
+    volume: 47753789553
+  },
+  {
+    date: "2004/10/6",
+    open: 39.86,
+    high: 40.04,
+    low: 39.16,
+    close: 39.6,
+    adjClose: 19.37,
+    volume: 51228958824
+  },
+  {
+    date: "2004/10/5",
+    open: 40.04,
+    high: 40.04,
+    low: 39.69,
+    close: 39.86,
+    adjClose: 19.5,
+    volume: 47380051173
+  },
+  {
+    date: "2004/10/4",
+    open: 39.6,
+    high: 40.04,
+    low: 39.51,
+    close: 40.04,
+    adjClose: 19.59,
+    volume: 86714251491
+  },
+  {
+    date: "2004/10/1",
+    open: 38.63,
+    high: 39.16,
+    low: 38.37,
+    close: 39.16,
+    adjClose: 19.16,
+    volume: 44043250339
+  },
+  {
+    date: "2004/9/30",
+    open: 37.93,
+    high: 38.45,
+    low: 37.93,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 44969847676
+  },
+  {
+    date: "2004/9/29",
+    open: 37.4,
+    high: 38.28,
+    low: 37.4,
+    close: 37.57,
+    adjClose: 18.38,
+    volume: 40361650413
+  },
+  {
+    date: "2004/9/28",
+    open: 37.84,
+    high: 37.84,
+    low: 37.84,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: null
+  },
+  {
+    date: "2004/9/27",
+    open: 38.19,
+    high: 38.19,
+    low: 37.49,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: 75683974052
+  },
+  {
+    date: "2004/9/24",
+    open: 39.6,
+    high: 39.6,
+    low: 38.45,
+    close: 38.45,
+    adjClose: 18.81,
+    volume: 77032114486
+  },
+  {
+    date: "2004/9/23",
+    open: 39.42,
+    high: 39.69,
+    low: 39.42,
+    close: 39.51,
+    adjClose: 19.33,
+    volume: 41734597832
+  },
+  {
+    date: "2004/9/22",
+    open: 40.48,
+    high: 40.48,
+    low: 39.86,
+    close: 40.3,
+    adjClose: 19.72,
+    volume: 33621707955
+  },
+  {
+    date: "2004/9/21",
+    open: 40.48,
+    high: 40.48,
+    low: 39.95,
+    close: 40.48,
+    adjClose: 19.8,
+    volume: 50264858982
+  },
+  {
+    date: "2004/9/20",
+    open: 39.69,
+    high: 39.95,
+    low: 39.42,
+    close: 39.77,
+    adjClose: 19.46,
+    volume: 28751638685
+  },
+  {
+    date: "2004/9/17",
+    open: 39.6,
+    high: 39.77,
+    low: 39.16,
+    close: 39.42,
+    adjClose: 19.28,
+    volume: 35446947013
+  },
+  {
+    date: "2004/9/16",
+    open: 39.16,
+    high: 39.95,
+    low: 39.07,
+    close: 39.95,
+    adjClose: 19.54,
+    volume: 38571955299
+  },
+  {
+    date: "2004/9/15",
+    open: 39.95,
+    high: 40.13,
+    low: 39.77,
+    close: 39.95,
+    adjClose: 19.54,
+    volume: 28846800196
+  },
+  {
+    date: "2004/9/14",
+    open: 40.48,
+    high: 40.57,
+    low: 39.95,
+    close: 40.04,
+    adjClose: 19.59,
+    volume: 57759550350
+  },
+  {
+    date: "2004/9/13",
+    open: 40.39,
+    high: 40.48,
+    low: 39.86,
+    close: 40.39,
+    adjClose: 19.76,
+    volume: 82727058838
+  },
+  {
+    date: "2004/9/10",
+    open: 39.51,
+    high: 39.51,
+    low: 38.98,
+    close: 39.25,
+    adjClose: 19.2,
+    volume: 52491370462
+  },
+  {
+    date: "2004/9/9",
+    open: 38.63,
+    high: 38.81,
+    low: 38.28,
+    close: 38.45,
+    adjClose: 18.81,
+    volume: 42881853941
+  },
+  {
+    date: "2004/9/8",
+    open: 38.98,
+    high: 38.98,
+    low: 38.54,
+    close: 38.63,
+    adjClose: 18.9,
+    volume: 35283890157
+  },
+  {
+    date: "2004/9/7",
+    open: 38.72,
+    high: 39.07,
+    low: 38.54,
+    close: 39.07,
+    adjClose: 19.11,
+    volume: 34033030082
+  },
+  {
+    date: "2004/9/6",
+    open: 38.54,
+    high: 38.89,
+    low: 38.1,
+    close: 38.72,
+    adjClose: 18.94,
+    volume: 68694328141
+  },
+  {
+    date: "2004/9/3",
+    open: 39.77,
+    high: 39.86,
+    low: 38.72,
+    close: 39.07,
+    adjClose: 19.11,
+    volume: 126728011270
+  },
+  {
+    date: "2004/9/2",
+    open: 40.92,
+    high: 41.27,
+    low: 39.95,
+    close: 40.39,
+    adjClose: 19.76,
+    volume: 63918998808
+  },
+  {
+    date: "2004/9/1",
+    open: 41.36,
+    high: 41.8,
+    low: 41.27,
+    close: 41.45,
+    adjClose: 20.27,
+    volume: 54005075237
+  },
+  {
+    date: "2004/8/31",
+    open: 42.06,
+    high: 42.33,
+    low: 41.18,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 58552333124
+  },
+  {
+    date: "2004/8/30",
+    open: 42.24,
+    high: 42.5,
+    low: 42.06,
+    close: 42.33,
+    adjClose: 20.71,
+    volume: 53305372453
+  },
+  {
+    date: "2004/8/27",
+    open: 42.68,
+    high: 42.68,
+    low: 42.24,
+    close: 42.24,
+    adjClose: 20.66,
+    volume: 46286067066
+  },
+  {
+    date: "2004/8/26",
+    open: 42.06,
+    high: 42.94,
+    low: 42.06,
+    close: 42.77,
+    adjClose: 20.92,
+    volume: 137066512391
+  },
+  {
+    date: "2004/8/25",
+    open: 41.36,
+    high: 41.36,
+    low: 41.36,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: null
+  },
+  {
+    date: "2004/8/24",
+    open: 41.36,
+    high: 41.36,
+    low: 41.36,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: null
+  },
+  {
+    date: "2004/8/23",
+    open: 40.83,
+    high: 41.62,
+    low: 40.83,
+    close: 41.36,
+    adjClose: 20.23,
+    volume: 44596241037
+  },
+  {
+    date: "2004/8/20",
+    open: 40.92,
+    high: 41.18,
+    low: 40.74,
+    close: 40.83,
+    adjClose: 19.97,
+    volume: 51903182740
+  },
+  {
+    date: "2004/8/19",
+    open: 40.13,
+    high: 41.27,
+    low: 40.13,
+    close: 41.18,
+    adjClose: 20.15,
+    volume: 100609360288
+  },
+  {
+    date: "2004/8/18",
+    open: 38.54,
+    high: 39.77,
+    low: 38.37,
+    close: 39.42,
+    adjClose: 19.28,
+    volume: 77122155631
+  },
+  {
+    date: "2004/8/17",
+    open: 38.37,
+    high: 38.63,
+    low: 38.37,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 18408142353
+  },
+  {
+    date: "2004/8/16",
+    open: 38.45,
+    high: 38.45,
+    low: 38.19,
+    close: 38.19,
+    adjClose: 18.68,
+    volume: 25559606746
+  },
+  {
+    date: "2004/8/13",
+    open: 38.01,
+    high: 38.81,
+    low: 38.01,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 36585159046
+  },
+  {
+    date: "2004/8/12",
+    open: 38.19,
+    high: 38.54,
+    low: 37.93,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 32492619043
+  },
+  {
+    date: "2004/8/11",
+    open: 38.54,
+    high: 39.07,
+    low: 38.54,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 60926838978
+  },
+  {
+    date: "2004/8/10",
+    open: 38.1,
+    high: 38.37,
+    low: 37.93,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 21795900924
+  },
+  {
+    date: "2004/8/9",
+    open: 37.84,
+    high: 38.54,
+    low: 37.75,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 61371221716
+  },
+  {
+    date: "2004/8/6",
+    open: 39.16,
+    high: 39.6,
+    low: 38.54,
+    close: 38.72,
+    adjClose: 18.94,
+    volume: 58624417859
+  },
+  {
+    date: "2004/8/5",
+    open: 38.72,
+    high: 39.86,
+    low: 38.1,
+    close: 39.6,
+    adjClose: 19.37,
+    volume: 74169013338
+  },
+  {
+    date: "2004/8/4",
+    open: 38.37,
+    high: 38.72,
+    low: 38.1,
+    close: 38.54,
+    adjClose: 18.85,
+    volume: 50814051124
+  },
+  {
+    date: "2004/8/3",
+    open: 37.84,
+    high: 38.81,
+    low: 37.75,
+    close: 38.72,
+    adjClose: 18.94,
+    volume: 71687761475
+  },
+  {
+    date: "2004/8/2",
+    open: 37.75,
+    high: 37.84,
+    low: 37.31,
+    close: 37.66,
+    adjClose: 18.42,
+    volume: 52584771024
+  },
+  {
+    date: "2004/7/30",
+    open: 37.57,
+    high: 38.1,
+    low: 37.22,
+    close: 37.75,
+    adjClose: 18.47,
+    volume: 113113363251
+  },
+  {
+    date: "2004/7/29",
+    open: 36.69,
+    high: 36.87,
+    low: 36.08,
+    close: 36.08,
+    adjClose: 17.65,
+    volume: 57120501501
+  },
+  {
+    date: "2004/7/28",
+    open: 36.96,
+    high: 37.4,
+    low: 36.61,
+    close: 36.69,
+    adjClose: 17.95,
+    volume: 66424442861
+  },
+  {
+    date: "2004/7/27",
+    open: 35.99,
+    high: 37.22,
+    low: 35.81,
+    close: 36.69,
+    adjClose: 17.95,
+    volume: 70110776710
+  },
+  {
+    date: "2004/7/26",
+    open: 36.52,
+    high: 36.69,
+    low: 35.99,
+    close: 35.99,
+    adjClose: 17.61,
+    volume: 75751311690
+  },
+  {
+    date: "2004/7/23",
+    open: 37.84,
+    high: 38.37,
+    low: 37.57,
+    close: 37.66,
+    adjClose: 18.42,
+    volume: 39942737760
+  },
+  {
+    date: "2004/7/22",
+    open: 36.96,
+    high: 38.28,
+    low: 36.96,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 87100386778
+  },
+  {
+    date: "2004/7/21",
+    open: 37.22,
+    high: 38.63,
+    low: 37.05,
+    close: 38.19,
+    adjClose: 18.68,
+    volume: 77488231029
+  },
+  {
+    date: "2004/7/20",
+    open: 36.69,
+    high: 37.05,
+    low: 36.52,
+    close: 36.52,
+    adjClose: 17.86,
+    volume: 66092901386
+  },
+  {
+    date: "2004/7/19",
+    open: 37.22,
+    high: 37.4,
+    low: 36.78,
+    close: 37.13,
+    adjClose: 18.17,
+    volume: 49032212214
+  },
+  {
+    date: "2004/7/16",
+    open: 36.96,
+    high: 38.01,
+    low: 36.96,
+    close: 37.4,
+    adjClose: 18.29,
+    volume: 62835198344
+  },
+  {
+    date: "2004/7/15",
+    open: 38.01,
+    high: 38.19,
+    low: 37.22,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: 93174519231
+  },
+  {
+    date: "2004/7/14",
+    open: 39.16,
+    high: 39.42,
+    low: 38.81,
+    close: 38.89,
+    adjClose: 19.03,
+    volume: 43236498540
+  },
+  {
+    date: "2004/7/13",
+    open: 38.89,
+    high: 39.16,
+    low: 38.72,
+    close: 38.89,
+    adjClose: 19.03,
+    volume: 48811729097
+  },
+  {
+    date: "2004/7/12",
+    open: 40.48,
+    high: 40.48,
+    low: 39.16,
+    close: 39.42,
+    adjClose: 19.28,
+    volume: 50840377531
+  },
+  {
+    date: "2004/7/9",
+    open: 39.86,
+    high: 40.57,
+    low: 39.51,
+    close: 40.48,
+    adjClose: 19.8,
+    volume: 41715881710
+  },
+  {
+    date: "2004/7/8",
+    open: 39.6,
+    high: 40.3,
+    low: 39.51,
+    close: 39.6,
+    adjClose: 19.37,
+    volume: 43033971834
+  },
+  {
+    date: "2004/7/7",
+    open: 39.16,
+    high: 39.6,
+    low: 38.98,
+    close: 39.33,
+    adjClose: 19.24,
+    volume: 51088649390
+  },
+  {
+    date: "2004/7/6",
+    open: 39.42,
+    high: 40.48,
+    low: 39.42,
+    close: 40.48,
+    adjClose: 19.8,
+    volume: 25355314700
+  },
+  {
+    date: "2004/7/5",
+    open: 39.6,
+    high: 40.04,
+    low: 39.25,
+    close: 39.42,
+    adjClose: 19.28,
+    volume: 36094475644
+  },
+  {
+    date: "2004/7/2",
+    open: 40.74,
+    high: 41.18,
+    low: 40.48,
+    close: 40.65,
+    adjClose: 19.89,
+    volume: 70731377312
+  },
+  {
+    date: "2004/7/1",
+    open: 42.68,
+    high: 42.94,
+    low: 42.33,
+    close: 42.59,
+    adjClose: 20.83,
+    volume: 40285560726
+  },
+  {
+    date: "2004/6/30",
+    open: 41.36,
+    high: 42.59,
+    low: 41.36,
+    close: 42.59,
+    adjClose: 20.83,
+    volume: 84527539216
+  },
+  {
+    date: "2004/6/29",
+    open: 40.04,
+    high: 40.57,
+    low: 39.86,
+    close: 40.57,
+    adjClose: 19.84,
+    volume: 31987220079
+  },
+  {
+    date: "2004/6/28",
+    open: 40.57,
+    high: 40.74,
+    low: 39.6,
+    close: 40.39,
+    adjClose: 19.76,
+    volume: 34155088882
+  },
+  {
+    date: "2004/6/25",
+    open: 40.3,
+    high: 40.74,
+    low: 40.13,
+    close: 40.65,
+    adjClose: 19.89,
+    volume: 35313966816
+  },
+  {
+    date: "2004/6/24",
+    open: 40.74,
+    high: 40.74,
+    low: 40.21,
+    close: 40.3,
+    adjClose: 19.72,
+    volume: 46748331561
+  },
+  {
+    date: "2004/6/23",
+    open: 38.37,
+    high: 40.48,
+    low: 38.37,
+    close: 40.21,
+    adjClose: 19.67,
+    volume: 109654288439
+  },
+  {
+    date: "2004/6/22",
+    open: 38.28,
+    high: 38.28,
+    low: 38.28,
+    close: 38.28,
+    adjClose: 18.72,
+    volume: null
+  },
+  {
+    date: "2004/6/21",
+    open: 38.98,
+    high: 38.98,
+    low: 38.01,
+    close: 38.28,
+    adjClose: 18.72,
+    volume: 50995565009
+  },
+  {
+    date: "2004/6/18",
+    open: 38.37,
+    high: 38.37,
+    low: 37.22,
+    close: 37.66,
+    adjClose: 18.42,
+    volume: 70348210608
+  },
+  {
+    date: "2004/6/17",
+    open: 38.1,
+    high: 39.6,
+    low: 38.1,
+    close: 38.98,
+    adjClose: 19.07,
+    volume: 103497931522
+  },
+  {
+    date: "2004/6/16",
+    open: 39.51,
+    high: 39.51,
+    low: 37.84,
+    close: 38.28,
+    adjClose: 18.72,
+    volume: 84062262225
+  },
+  {
+    date: "2004/6/15",
+    open: 38.1,
+    high: 38.1,
+    low: 37.4,
+    close: 37.84,
+    adjClose: 18.51,
+    volume: 98036108718
+  },
+  {
+    date: "2004/6/14",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2004/6/14",
+    open: 38.72,
+    high: 39.95,
+    low: 38.01,
+    close: 38.1,
+    adjClose: 18.64,
+    volume: 113316447664
+  },
+  {
+    date: "2004/6/14",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2004/6/11",
+    open: 40.11,
+    high: 40.11,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 107893814967
+  },
+  {
+    date: "2004/6/10",
+    open: 41.65,
+    high: 42.04,
+    low: 40.88,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 61053061685
+  },
+  {
+    date: "2004/6/9",
+    open: 42.81,
+    high: 43.19,
+    low: 42.42,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 38013850599
+  },
+  {
+    date: "2004/6/8",
+    open: 42.81,
+    high: 43.58,
+    low: 42.42,
+    close: 43.58,
+    adjClose: 21.05,
+    volume: 52369399817
+  },
+  {
+    date: "2004/6/7",
+    open: 42.04,
+    high: 42.42,
+    low: 41.65,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 43261676803
+  },
+  {
+    date: "2004/6/4",
+    open: 40.88,
+    high: 41.65,
+    low: 40.49,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 58741995319
+  },
+  {
+    date: "2004/6/3",
+    open: 42.81,
+    high: 43.19,
+    low: 40.88,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 70389020107
+  },
+  {
+    date: "2004/6/2",
+    open: 43.19,
+    high: 43.58,
+    low: 42.04,
+    close: 42.81,
+    adjClose: 20.68,
+    volume: 50458326574
+  },
+  {
+    date: "2004/6/1",
+    open: 43.19,
+    high: 43.96,
+    low: 42.81,
+    close: 43.58,
+    adjClose: 21.05,
+    volume: 30231917989
+  },
+  {
+    date: "2004/5/31",
+    open: 44.35,
+    high: 44.35,
+    low: 43.19,
+    close: 43.19,
+    adjClose: 20.87,
+    volume: 33106919598
+  },
+  {
+    date: "2004/5/28",
+    open: 44.35,
+    high: 44.74,
+    low: 43.96,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 69947358842
+  },
+  {
+    date: "2004/5/27",
+    open: 43.96,
+    high: 43.96,
+    low: 43.19,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 48113713271
+  },
+  {
+    date: "2004/5/26",
+    open: 43.58,
+    high: 43.96,
+    low: 43.19,
+    close: 43.19,
+    adjClose: 20.87,
+    volume: 61119564380
+  },
+  {
+    date: "2004/5/25",
+    open: 41.65,
+    high: 42.81,
+    low: 41.26,
+    close: 42.04,
+    adjClose: 20.31,
+    volume: 39175308103
+  },
+  {
+    date: "2004/5/24",
+    open: 42.42,
+    high: 42.42,
+    low: 41.26,
+    close: 41.65,
+    adjClose: 20.12,
+    volume: 38600894452
+  },
+  {
+    date: "2004/5/21",
+    open: 42.04,
+    high: 43.19,
+    low: 41.65,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 73720612771
+  },
+  {
+    date: "2004/5/20",
+    open: 41.65,
+    high: 42.42,
+    low: 40.88,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 90653143947
+  },
+  {
+    date: "2004/5/19",
+    open: 41.65,
+    high: 42.81,
+    low: 41.26,
+    close: 42.81,
+    adjClose: 20.68,
+    volume: 81206930528
+  },
+  {
+    date: "2004/5/18",
+    open: 40.11,
+    high: 40.88,
+    low: 39.72,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 57083896847
+  },
+  {
+    date: "2004/5/17",
+    open: 41.26,
+    high: 41.26,
+    low: 39.72,
+    close: 39.72,
+    adjClose: 19.19,
+    volume: 86322031900
+  },
+  {
+    date: "2004/5/14",
+    open: 43.58,
+    high: 43.96,
+    low: 42.04,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 78750063240
+  },
+  {
+    date: "2004/5/13",
+    open: 43.96,
+    high: 43.96,
+    low: 42.42,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 66581452711
+  },
+  {
+    date: "2004/5/12",
+    open: 44.74,
+    high: 45.12,
+    low: 43.96,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 66123068077
+  },
+  {
+    date: "2004/5/11",
+    open: 42.81,
+    high: 44.35,
+    low: 41.26,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 67254610891
+  },
+  {
+    date: "2004/5/10",
+    open: 43.19,
+    high: 43.19,
+    low: 41.65,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 73920681977
+  },
+  {
+    date: "2004/5/7",
+    open: 42.42,
+    high: 43.96,
+    low: 42.42,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 79685895545
+  },
+  {
+    date: "2004/5/6",
+    open: 43.19,
+    high: 43.96,
+    low: 42.81,
+    close: 42.81,
+    adjClose: 20.68,
+    volume: 107086995086
+  },
+  {
+    date: "2004/5/5",
+    open: 45.51,
+    high: 45.51,
+    low: 42.42,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 100411635466
+  },
+  {
+    date: "2004/5/4",
+    open: 45.51,
+    high: 45.89,
+    low: 45.12,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 40181643586
+  },
+  {
+    date: "2004/5/3",
+    open: 44.35,
+    high: 45.12,
+    low: 43.96,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 45051533177
+  },
+  {
+    date: "2004/4/30",
+    open: 46.28,
+    high: 46.28,
+    low: 43.58,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 117918718068
+  },
+  {
+    date: "2004/4/29",
+    open: 46.28,
+    high: 47.05,
+    low: 45.89,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 116496329919
+  },
+  {
+    date: "2004/4/28",
+    open: 48.59,
+    high: 48.98,
+    low: 47.82,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 42400077618
+  },
+  {
+    date: "2004/4/27",
+    open: 48.98,
+    high: 48.98,
+    low: 47.82,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 61855492809
+  },
+  {
+    date: "2004/4/26",
+    open: 49.36,
+    high: 49.75,
+    low: 48.98,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 75043367117
+  },
+  {
+    date: "2004/4/23",
+    open: 48.59,
+    high: 49.36,
+    low: 48.21,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 123657919733
+  },
+  {
+    date: "2004/4/22",
+    open: 48.21,
+    high: 49.36,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 168975343453
+  },
+  {
+    date: "2004/4/21",
+    open: 47.05,
+    high: 47.43,
+    low: 47.05,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 57984263385
+  },
+  {
+    date: "2004/4/20",
+    open: 46.28,
+    high: 47.43,
+    low: 46.28,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 51785354447
+  },
+  {
+    date: "2004/4/19",
+    open: 46.66,
+    high: 47.05,
+    low: 45.89,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 68277567038
+  },
+  {
+    date: "2004/4/16",
+    open: 46.66,
+    high: 47.43,
+    low: 46.28,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 82229731365
+  },
+  {
+    date: "2004/4/15",
+    open: 48.59,
+    high: 48.59,
+    low: 47.05,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 57452402141
+  },
+  {
+    date: "2004/4/14",
+    open: 46.66,
+    high: 48.98,
+    low: 46.28,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 86126732211
+  },
+  {
+    date: "2004/4/13",
+    open: 47.43,
+    high: 47.82,
+    low: 46.28,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 40807655192
+  },
+  {
+    date: "2004/4/12",
+    open: 46.66,
+    high: 47.82,
+    low: 46.66,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 41585915587
+  },
+  {
+    date: "2004/4/9",
+    open: 46.66,
+    high: 47.05,
+    low: 46.28,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 25151074974
+  },
+  {
+    date: "2004/4/8",
+    open: 47.05,
+    high: 47.43,
+    low: 46.66,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 38234543457
+  },
+  {
+    date: "2004/4/7",
+    open: 47.43,
+    high: 47.82,
+    low: 47.05,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 21580094650
+  },
+  {
+    date: "2004/4/6",
+    open: 48.21,
+    high: 48.21,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 64074695876
+  },
+  {
+    date: "2004/4/5",
+    open: 47.05,
+    high: 47.82,
+    low: 46.28,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 81636893451
+  },
+  {
+    date: "2004/4/2",
+    open: 45.89,
+    high: 46.28,
+    low: 45.12,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 46253291094
+  },
+  {
+    date: "2004/4/1",
+    open: 45.89,
+    high: 46.28,
+    low: 45.51,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 51577118946
+  },
+  {
+    date: "2004/3/31",
+    open: 46.66,
+    high: 47.05,
+    low: 45.89,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 45705002070
+  },
+  {
+    date: "2004/3/30",
+    open: 47.05,
+    high: 47.43,
+    low: 46.28,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 58881388456
+  },
+  {
+    date: "2004/3/29",
+    open: 46.28,
+    high: 47.43,
+    low: 45.89,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 63163056845
+  },
+  {
+    date: "2004/3/26",
+    open: 45.51,
+    high: 45.89,
+    low: 44.74,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 64095071532
+  },
+  {
+    date: "2004/3/25",
+    open: 45.51,
+    high: 45.51,
+    low: 44.35,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 99468714016
+  },
+  {
+    date: "2004/3/24",
+    open: 45.12,
+    high: 45.12,
+    low: 43.96,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 191804415239
+  },
+  {
+    date: "2004/3/23",
+    open: 42.42,
+    high: 43.96,
+    low: 42.42,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 338383911337
+  },
+  {
+    date: "2004/3/22",
+    open: 45.51,
+    high: 45.51,
+    low: 45.51,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 14709469158
+  },
+  {
+    date: "2004/3/19",
+    open: 47.82,
+    high: 48.59,
+    low: 47.43,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 50284855440
+  },
+  {
+    date: "2004/3/18",
+    open: 46.28,
+    high: 48.21,
+    low: 46.28,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 152536452257
+  },
+  {
+    date: "2004/3/17",
+    open: 47.05,
+    high: 47.43,
+    low: 46.28,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 89454311868
+  },
+  {
+    date: "2004/3/16",
+    open: 47.43,
+    high: 47.43,
+    low: 46.28,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 84634725148
+  },
+  {
+    date: "2004/3/15",
+    open: 48.59,
+    high: 48.98,
+    low: 47.05,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 60407658886
+  },
+  {
+    date: "2004/3/12",
+    open: 48.21,
+    high: 48.59,
+    low: 47.82,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 113946512162
+  },
+  {
+    date: "2004/3/11",
+    open: 47.82,
+    high: 49.36,
+    low: 47.82,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 67802288695
+  },
+  {
+    date: "2004/3/10",
+    open: 50.13,
+    high: 50.13,
+    low: 48.59,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 119262980330
+  },
+  {
+    date: "2004/3/9",
+    open: 50.13,
+    high: 50.91,
+    low: 49.75,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 49940613560
+  },
+  {
+    date: "2004/3/8",
+    open: 50.91,
+    high: 52.06,
+    low: 50.91,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 55670361361
+  },
+  {
+    date: "2004/3/5",
+    open: 52.45,
+    high: 52.83,
+    low: 51.68,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 116491650582
+  },
+  {
+    date: "2004/3/4",
+    open: 50.91,
+    high: 52.06,
+    low: 50.52,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 102016096914
+  },
+  {
+    date: "2004/3/3",
+    open: 51.68,
+    high: 52.06,
+    low: 50.52,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 78815548906
+  },
+  {
+    date: "2004/3/2",
+    open: 50.52,
+    high: 51.68,
+    low: 50.13,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 135451351653
+  },
+  {
+    date: "2004/3/1",
+    open: 48.98,
+    high: 49.75,
+    low: 48.59,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 70684384459
+  },
+  {
+    date: "2004/2/27",
+    open: 48.98,
+    high: 48.98,
+    low: 48.21,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 50344409270
+  },
+  {
+    date: "2004/2/26",
+    open: 48.21,
+    high: 48.98,
+    low: 47.82,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 59569366206
+  },
+  {
+    date: "2004/2/25",
+    open: 47.82,
+    high: 48.21,
+    low: 47.43,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 55758417063
+  },
+  {
+    date: "2004/2/24",
+    open: 47.82,
+    high: 48.21,
+    low: 47.43,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 57056792765
+  },
+  {
+    date: "2004/2/23",
+    open: 48.59,
+    high: 48.98,
+    low: 47.82,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 65118193009
+  },
+  {
+    date: "2004/2/20",
+    open: 48.98,
+    high: 49.36,
+    low: 48.59,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 71642481189
+  },
+  {
+    date: "2004/2/19",
+    open: 48.98,
+    high: 49.36,
+    low: 48.59,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 59513264264
+  },
+  {
+    date: "2004/2/18",
+    open: 48.98,
+    high: 49.36,
+    low: 48.59,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 67158874865
+  },
+  {
+    date: "2004/2/17",
+    open: 48.21,
+    high: 48.98,
+    low: 48.21,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 42890781741
+  },
+  {
+    date: "2004/2/16",
+    open: 49.36,
+    high: 49.36,
+    low: 48.21,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 59737436564
+  },
+  {
+    date: "2004/2/13",
+    open: 49.75,
+    high: 49.75,
+    low: 48.98,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 38525854722
+  },
+  {
+    date: "2004/2/12",
+    open: 49.36,
+    high: 50.13,
+    low: 49.36,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 66227356167
+  },
+  {
+    date: "2004/2/11",
+    open: 49.75,
+    high: 49.75,
+    low: 48.98,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 25306778155
+  },
+  {
+    date: "2004/2/10",
+    open: 50.13,
+    high: 50.52,
+    low: 49.36,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 36529491296
+  },
+  {
+    date: "2004/2/9",
+    open: 49.36,
+    high: 50.52,
+    low: 49.36,
+    close: 50.13,
+    adjClose: 24.22,
+    volume: 46450068732
+  },
+  {
+    date: "2004/2/6",
+    open: 48.59,
+    high: 49.36,
+    low: 48.59,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 34788161750
+  },
+  {
+    date: "2004/2/5",
+    open: 48.21,
+    high: 48.98,
+    low: 47.82,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 48073147328
+  },
+  {
+    date: "2004/2/4",
+    open: 48.98,
+    high: 48.98,
+    low: 48.21,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 44442032014
+  },
+  {
+    date: "2004/2/3",
+    open: 49.36,
+    high: 49.75,
+    low: 48.59,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 78128703415
+  },
+  {
+    date: "2004/2/2",
+    open: 50.91,
+    high: 51.29,
+    low: 50.13,
+    close: 50.13,
+    adjClose: 24.22,
+    volume: 31620533751
+  },
+  {
+    date: "2004/1/30",
+    open: 51.29,
+    high: 51.68,
+    low: 50.52,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 52905669859
+  },
+  {
+    date: "2004/1/29",
+    open: 51.29,
+    high: 52.45,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 86873011292
+  },
+  {
+    date: "2004/1/28",
+    open: 52.06,
+    high: 52.45,
+    low: 51.68,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 41273422056
+  },
+  {
+    date: "2004/1/27",
+    open: 52.45,
+    high: 52.83,
+    low: 52.06,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 81458086671
+  },
+  {
+    date: "2004/1/26",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/23",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/22",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/21",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/20",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/19",
+    open: 51.29,
+    high: 51.29,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: null
+  },
+  {
+    date: "2004/1/16",
+    open: 51.68,
+    high: 52.06,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 32418385738
+  },
+  {
+    date: "2004/1/15",
+    open: 52.06,
+    high: 52.06,
+    low: 50.91,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 43363600175
+  },
+  {
+    date: "2004/1/14",
+    open: 51.68,
+    high: 52.45,
+    low: 51.29,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 39630308484
+  },
+  {
+    date: "2004/1/13",
+    open: 52.45,
+    high: 52.45,
+    low: 51.68,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 31056560933
+  },
+  {
+    date: "2004/1/12",
+    open: 52.06,
+    high: 52.45,
+    low: 51.29,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 32366304318
+  },
+  {
+    date: "2004/1/9",
+    open: 51.68,
+    high: 52.06,
+    low: 51.29,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 72428198964
+  },
+  {
+    date: "2004/1/8",
+    open: 50.91,
+    high: 51.29,
+    low: 50.52,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 35635863203
+  },
+  {
+    date: "2004/1/7",
+    open: 50.91,
+    high: 51.29,
+    low: 50.13,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 57748718393
+  },
+  {
+    date: "2004/1/6",
+    open: 50.91,
+    high: 51.29,
+    low: 50.13,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 42246846871
+  },
+  {
+    date: "2004/1/5",
+    open: 50.52,
+    high: 50.91,
+    low: 50.13,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 40274020409
+  },
+  {
+    date: "2004/1/2",
+    open: 48.98,
+    high: 50.52,
+    low: 48.98,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 75096573281
+  },
+  {
+    date: "2004/1/1",
+    open: 48.98,
+    high: 48.98,
+    low: 48.98,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: null
+  },
+  {
+    date: "2003/12/31",
+    open: 48.59,
+    high: 48.98,
+    low: 48.21,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 19860295564
+  },
+  {
+    date: "2003/12/30",
+    open: 48.21,
+    high: 48.98,
+    low: 47.82,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 92688485147
+  },
+  {
+    date: "2003/12/29",
+    open: 47.82,
+    high: 48.21,
+    low: 47.43,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 21356611224
+  },
+  {
+    date: "2003/12/26",
+    open: 47.82,
+    high: 48.21,
+    low: 47.43,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 14701175109
+  },
+  {
+    date: "2003/12/25",
+    open: 47.43,
+    high: 47.82,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 7210784224
+  },
+  {
+    date: "2003/12/24",
+    open: 47.82,
+    high: 47.82,
+    low: 47.05,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 25285535769
+  },
+  {
+    date: "2003/12/23",
+    open: 47.43,
+    high: 48.21,
+    low: 47.43,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 35672806918
+  },
+  {
+    date: "2003/12/22",
+    open: 46.66,
+    high: 47.82,
+    low: 46.28,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 48458250740
+  },
+  {
+    date: "2003/12/19",
+    open: 47.43,
+    high: 47.43,
+    low: 46.28,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 38567770859
+  },
+  {
+    date: "2003/12/18",
+    open: 45.51,
+    high: 46.66,
+    low: 45.12,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 53048845543
+  },
+  {
+    date: "2003/12/17",
+    open: 47.05,
+    high: 47.05,
+    low: 45.51,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 105078026508
+  },
+  {
+    date: "2003/12/16",
+    open: 47.82,
+    high: 47.82,
+    low: 47.05,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 62468891749
+  },
+  {
+    date: "2003/12/15",
+    open: 48.21,
+    high: 48.59,
+    low: 47.82,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 44587677627
+  },
+  {
+    date: "2003/12/12",
+    open: 48.98,
+    high: 48.98,
+    low: 47.43,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 58444822358
+  },
+  {
+    date: "2003/12/11",
+    open: 47.43,
+    high: 48.21,
+    low: 47.43,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 84341179424
+  },
+  {
+    date: "2003/12/10",
+    open: 48.21,
+    high: 48.21,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 137454348315
+  },
+  {
+    date: "2003/12/9",
+    open: 49.36,
+    high: 49.75,
+    low: 48.98,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 38300392348
+  },
+  {
+    date: "2003/12/8",
+    open: 49.75,
+    high: 49.75,
+    low: 48.98,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 37655906378
+  },
+  {
+    date: "2003/12/5",
+    open: 51.29,
+    high: 51.29,
+    low: 50.13,
+    close: 50.13,
+    adjClose: 24.22,
+    volume: 38966839637
+  },
+  {
+    date: "2003/12/4",
+    open: 50.91,
+    high: 51.68,
+    low: 50.91,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 38222902730
+  },
+  {
+    date: "2003/12/3",
+    open: 51.29,
+    high: 51.29,
+    low: 50.91,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 38394367360
+  },
+  {
+    date: "2003/12/2",
+    open: 50.13,
+    high: 50.91,
+    low: 49.75,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 45087494933
+  },
+  {
+    date: "2003/12/1",
+    open: 48.59,
+    high: 49.75,
+    low: 48.21,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 27982847827
+  },
+  {
+    date: "2003/11/28",
+    open: 48.98,
+    high: 49.75,
+    low: 48.98,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 33359333249
+  },
+  {
+    date: "2003/11/27",
+    open: 49.75,
+    high: 50.13,
+    low: 48.59,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 53578953289
+  },
+  {
+    date: "2003/11/26",
+    open: 50.52,
+    high: 50.91,
+    low: 49.75,
+    close: 50.13,
+    adjClose: 24.22,
+    volume: 30805913305
+  },
+  {
+    date: "2003/11/25",
+    open: 50.52,
+    high: 50.91,
+    low: 50.13,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 31656347712
+  },
+  {
+    date: "2003/11/24",
+    open: 50.13,
+    high: 50.52,
+    low: 49.36,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 33096361030
+  },
+  {
+    date: "2003/11/21",
+    open: 50.13,
+    high: 50.13,
+    low: 49.36,
+    close: 50.13,
+    adjClose: 24.22,
+    volume: 65098363442
+  },
+  {
+    date: "2003/11/20",
+    open: 50.52,
+    high: 50.91,
+    low: 49.75,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 56741012676
+  },
+  {
+    date: "2003/11/19",
+    open: 50.91,
+    high: 51.29,
+    low: 50.52,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 34973078221
+  },
+  {
+    date: "2003/11/18",
+    open: 50.52,
+    high: 51.68,
+    low: 50.52,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 44979795035
+  },
+  {
+    date: "2003/11/17",
+    open: 51.68,
+    high: 51.68,
+    low: 50.52,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 33994685995
+  },
+  {
+    date: "2003/11/14",
+    open: 52.06,
+    high: 52.45,
+    low: 51.68,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 30487816093
+  },
+  {
+    date: "2003/11/13",
+    open: 52.06,
+    high: 52.45,
+    low: 51.68,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 34684860629
+  },
+  {
+    date: "2003/11/12",
+    open: 50.91,
+    high: 51.68,
+    low: 50.52,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 74206026336
+  },
+  {
+    date: "2003/11/11",
+    open: 50.91,
+    high: 51.29,
+    low: 50.13,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 105287284048
+  },
+  {
+    date: "2003/11/10",
+    open: 53.22,
+    high: 53.22,
+    low: 52.06,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 36922991463
+  },
+  {
+    date: "2003/11/7",
+    open: 53.61,
+    high: 53.61,
+    low: 52.45,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 37384807945
+  },
+  {
+    date: "2003/11/6",
+    open: 53.99,
+    high: 53.99,
+    low: 52.06,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 62787532546
+  },
+  {
+    date: "2003/11/5",
+    open: 52.83,
+    high: 53.61,
+    low: 52.83,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 49296353040
+  },
+  {
+    date: "2003/11/4",
+    open: 52.45,
+    high: 53.22,
+    low: 52.45,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 39473986569
+  },
+  {
+    date: "2003/11/3",
+    open: 51.68,
+    high: 52.45,
+    low: 51.68,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 32278812241
+  },
+  {
+    date: "2003/10/31",
+    open: 53.61,
+    high: 53.61,
+    low: 51.68,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 35997276847
+  },
+  {
+    date: "2003/10/30",
+    open: 53.61,
+    high: 53.61,
+    low: 52.83,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 46748108423
+  },
+  {
+    date: "2003/10/29",
+    open: 54.76,
+    high: 54.76,
+    low: 53.22,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 86353845379
+  },
+  {
+    date: "2003/10/28",
+    open: 50.91,
+    high: 52.45,
+    low: 50.52,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 68341319245
+  },
+  {
+    date: "2003/10/27",
+    open: 50.13,
+    high: 50.91,
+    low: 50.13,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 27947760315
+  },
+  {
+    date: "2003/10/24",
+    open: 49.75,
+    high: 50.13,
+    low: 49.75,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 50638370824
+  },
+  {
+    date: "2003/10/23",
+    open: 50.52,
+    high: 50.52,
+    low: 49.75,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 59432923957
+  },
+  {
+    date: "2003/10/22",
+    open: 50.52,
+    high: 51.29,
+    low: 50.52,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 47089780175
+  },
+  {
+    date: "2003/10/21",
+    open: 52.83,
+    high: 52.83,
+    low: 50.91,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 124954937727
+  },
+  {
+    date: "2003/10/20",
+    open: 52.06,
+    high: 52.83,
+    low: 51.68,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 53462906736
+  },
+  {
+    date: "2003/10/17",
+    open: 53.99,
+    high: 53.99,
+    low: 52.45,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 28499052832
+  },
+  {
+    date: "2003/10/16",
+    open: 52.45,
+    high: 53.61,
+    low: 52.06,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 43381505903
+  },
+  {
+    date: "2003/10/15",
+    open: 52.83,
+    high: 53.61,
+    low: 52.45,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 53098224070
+  },
+  {
+    date: "2003/10/14",
+    open: 54.38,
+    high: 54.76,
+    low: 52.83,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 57016066502
+  },
+  {
+    date: "2003/10/13",
+    open: 53.61,
+    high: 54.38,
+    low: 53.61,
+    close: 53.99,
+    adjClose: 26.09,
+    volume: 56550702943
+  },
+  {
+    date: "2003/10/10",
+    open: 53.22,
+    high: 53.22,
+    low: 53.22,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: null
+  },
+  {
+    date: "2003/10/9",
+    open: 52.83,
+    high: 53.61,
+    low: 52.45,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 46467769050
+  },
+  {
+    date: "2003/10/8",
+    open: 53.99,
+    high: 54.38,
+    low: 53.22,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 42244647482
+  },
+  {
+    date: "2003/10/7",
+    open: 54.76,
+    high: 54.76,
+    low: 53.22,
+    close: 53.99,
+    adjClose: 26.09,
+    volume: 56382722765
+  },
+  {
+    date: "2003/10/6",
+    open: 55.15,
+    high: 55.15,
+    low: 53.99,
+    close: 54.76,
+    adjClose: 26.46,
+    volume: 63513105311
+  },
+  {
+    date: "2003/10/3",
+    open: 53.22,
+    high: 53.99,
+    low: 52.45,
+    close: 53.99,
+    adjClose: 26.09,
+    volume: 52698696877
+  },
+  {
+    date: "2003/10/2",
+    open: 52.06,
+    high: 52.83,
+    low: 51.68,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 39922120749
+  },
+  {
+    date: "2003/10/1",
+    open: 51.29,
+    high: 51.68,
+    low: 50.91,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 24671014590
+  },
+  {
+    date: "2003/9/30",
+    open: 51.29,
+    high: 52.06,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 25407273678
+  },
+  {
+    date: "2003/9/29",
+    open: 50.91,
+    high: 52.06,
+    low: 50.52,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 44230610155
+  },
+  {
+    date: "2003/9/26",
+    open: 51.29,
+    high: 51.68,
+    low: 50.52,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 49326898990
+  },
+  {
+    date: "2003/9/25",
+    open: 51.29,
+    high: 51.68,
+    low: 50.91,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 45384682924
+  },
+  {
+    date: "2003/9/24",
+    open: 52.45,
+    high: 52.45,
+    low: 51.68,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 39425352026
+  },
+  {
+    date: "2003/9/23",
+    open: 51.68,
+    high: 52.45,
+    low: 51.29,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 40647723574
+  },
+  {
+    date: "2003/9/22",
+    open: 52.83,
+    high: 52.83,
+    low: 52.06,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 44099438423
+  },
+  {
+    date: "2003/9/19",
+    open: 54.38,
+    high: 54.76,
+    low: 53.22,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 40103307278
+  },
+  {
+    date: "2003/9/18",
+    open: 54.76,
+    high: 55.15,
+    low: 53.99,
+    close: 54.38,
+    adjClose: 26.27,
+    volume: 50232185345
+  },
+  {
+    date: "2003/9/17",
+    open: 53.61,
+    high: 55.53,
+    low: 53.61,
+    close: 55.15,
+    adjClose: 26.64,
+    volume: 106909841604
+  },
+  {
+    date: "2003/9/16",
+    open: 50.91,
+    high: 52.83,
+    low: 50.91,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 62011519134
+  },
+  {
+    date: "2003/9/15",
+    open: 52.45,
+    high: 52.45,
+    low: 51.29,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 44112319124
+  },
+  {
+    date: "2003/9/12",
+    open: 52.83,
+    high: 53.22,
+    low: 52.45,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 52673822244
+  },
+  {
+    date: "2003/9/11",
+    open: 53.61,
+    high: 53.61,
+    low: 53.61,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: null
+  },
+  {
+    date: "2003/9/10",
+    open: 53.99,
+    high: 54.38,
+    low: 53.22,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 60459657641
+  },
+  {
+    date: "2003/9/9",
+    open: 55.92,
+    high: 55.92,
+    low: 54.38,
+    close: 54.38,
+    adjClose: 26.27,
+    volume: 75344037056
+  },
+  {
+    date: "2003/9/8",
+    open: 52.83,
+    high: 54.76,
+    low: 52.45,
+    close: 54.76,
+    adjClose: 26.46,
+    volume: 73586720610
+  },
+  {
+    date: "2003/9/5",
+    open: 52.06,
+    high: 53.22,
+    low: 52.06,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 47028517936
+  },
+  {
+    date: "2003/9/4",
+    open: 51.29,
+    high: 51.68,
+    low: 50.91,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 35047594406
+  },
+  {
+    date: "2003/9/3",
+    open: 52.06,
+    high: 52.06,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 33790180436
+  },
+  {
+    date: "2003/9/2",
+    open: 51.68,
+    high: 52.06,
+    low: 50.91,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 37245231943
+  },
+  {
+    date: "2003/9/1",
+    open: 52.06,
+    high: 52.45,
+    low: 51.29,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 42394075642
+  },
+  {
+    date: "2003/8/29",
+    open: 50.52,
+    high: 52.06,
+    low: 50.13,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 80557554802
+  },
+  {
+    date: "2003/8/28",
+    open: 50.13,
+    high: 51.29,
+    low: 49.75,
+    close: 50.52,
+    adjClose: 24.41,
+    volume: 110860504524
+  },
+  {
+    date: "2003/8/27",
+    open: 48.59,
+    high: 50.13,
+    low: 48.59,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 69312341766
+  },
+  {
+    date: "2003/8/26",
+    open: 49.36,
+    high: 49.36,
+    low: 48.21,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 46839490762
+  },
+  {
+    date: "2003/8/25",
+    open: 49.36,
+    high: 49.75,
+    low: 48.98,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 55161731471
+  },
+  {
+    date: "2003/8/22",
+    open: 49.36,
+    high: 49.75,
+    low: 48.98,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 48475414989
+  },
+  {
+    date: "2003/8/21",
+    open: 48.59,
+    high: 49.36,
+    low: 48.21,
+    close: 49.36,
+    adjClose: 23.85,
+    volume: 59475468849
+  },
+  {
+    date: "2003/8/20",
+    open: 48.59,
+    high: 48.98,
+    low: 48.21,
+    close: 48.59,
+    adjClose: 23.48,
+    volume: 46342243584
+  },
+  {
+    date: "2003/8/19",
+    open: 48.59,
+    high: 48.98,
+    low: 47.82,
+    close: 48.21,
+    adjClose: 23.29,
+    volume: 108214104053
+  },
+  {
+    date: "2003/8/18",
+    open: 47.05,
+    high: 47.43,
+    low: 46.28,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 64299970375
+  },
+  {
+    date: "2003/8/15",
+    open: 46.28,
+    high: 47.05,
+    low: 46.28,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 69231520500
+  },
+  {
+    date: "2003/8/14",
+    open: 45.89,
+    high: 46.66,
+    low: 45.51,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 75356431788
+  },
+  {
+    date: "2003/8/13",
+    open: 44.74,
+    high: 45.89,
+    low: 44.74,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 58787871858
+  },
+  {
+    date: "2003/8/12",
+    open: 43.96,
+    high: 44.74,
+    low: 43.96,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 28211681929
+  },
+  {
+    date: "2003/8/11",
+    open: 43.96,
+    high: 44.35,
+    low: 43.19,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 50757723974
+  },
+  {
+    date: "2003/8/8",
+    open: 45.89,
+    high: 45.89,
+    low: 44.74,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 45816399346
+  },
+  {
+    date: "2003/8/7",
+    open: 45.12,
+    high: 46.28,
+    low: 44.74,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 52379980930
+  },
+  {
+    date: "2003/8/6",
+    open: 44.74,
+    high: 45.51,
+    low: 44.74,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 32957914783
+  },
+  {
+    date: "2003/8/5",
+    open: 46.28,
+    high: 46.66,
+    low: 45.12,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 58083135669
+  },
+  {
+    date: "2003/8/4",
+    open: 46.28,
+    high: 46.66,
+    low: 45.51,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 51672965192
+  },
+  {
+    date: "2003/8/1",
+    open: 45.89,
+    high: 46.66,
+    low: 45.51,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 93000327378
+  },
+  {
+    date: "2003/7/31",
+    open: 43.19,
+    high: 45.51,
+    low: 43.19,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 114120709746
+  },
+  {
+    date: "2003/7/30",
+    open: 43.96,
+    high: 44.35,
+    low: 43.19,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 53640030158
+  },
+  {
+    date: "2003/7/29",
+    open: 44.74,
+    high: 44.74,
+    low: 43.96,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 27504470801
+  },
+  {
+    date: "2003/7/28",
+    open: 44.74,
+    high: 45.12,
+    low: 44.35,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 39421419179
+  },
+  {
+    date: "2003/7/25",
+    open: 44.35,
+    high: 44.74,
+    low: 43.96,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 58440488710
+  },
+  {
+    date: "2003/7/24",
+    open: 44.74,
+    high: 45.12,
+    low: 44.35,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 79735509542
+  },
+  {
+    date: "2003/7/23",
+    open: 43.96,
+    high: 45.12,
+    low: 43.96,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 63373451654
+  },
+  {
+    date: "2003/7/22",
+    open: 43.19,
+    high: 44.35,
+    low: 43.19,
+    close: 43.58,
+    adjClose: 21.05,
+    volume: 55617671227
+  },
+  {
+    date: "2003/7/21",
+    open: 44.74,
+    high: 45.51,
+    low: 43.96,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 33956792885
+  },
+  {
+    date: "2003/7/18",
+    open: 43.96,
+    high: 45.12,
+    low: 43.96,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 49861129963
+  },
+  {
+    date: "2003/7/17",
+    open: 45.51,
+    high: 45.89,
+    low: 44.74,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 56681934796
+  },
+  {
+    date: "2003/7/16",
+    open: 45.89,
+    high: 46.28,
+    low: 45.12,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 37579022970
+  },
+  {
+    date: "2003/7/15",
+    open: 46.28,
+    high: 46.66,
+    low: 45.12,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 43450568707
+  },
+  {
+    date: "2003/7/14",
+    open: 44.74,
+    high: 46.28,
+    low: 44.74,
+    close: 45.89,
+    adjClose: 22.17,
+    volume: 66079095337
+  },
+  {
+    date: "2003/7/11",
+    open: 43.58,
+    high: 44.35,
+    low: 43.19,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 56009057175
+  },
+  {
+    date: "2003/7/10",
+    open: 46.66,
+    high: 46.66,
+    low: 44.35,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 60270951107
+  },
+  {
+    date: "2003/7/9",
+    open: 46.28,
+    high: 47.05,
+    low: 45.89,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 70019638063
+  },
+  {
+    date: "2003/7/8",
+    open: 47.82,
+    high: 48.21,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 99411800454
+  },
+  {
+    date: "2003/7/7",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2003/7/7",
+    open: 45.51,
+    high: 47.05,
+    low: 45.12,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 93530385024
+  },
+  {
+    date: "2003/7/4",
+    open: 47.43,
+    high: 47.82,
+    low: 47.05,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 76343664050
+  },
+  {
+    date: "2003/7/3",
+    open: 47.05,
+    high: 48.59,
+    low: 47.05,
+    close: 47.05,
+    adjClose: 22.73,
+    volume: 85603235654
+  },
+  {
+    date: "2003/7/2",
+    open: 45.51,
+    high: 46.28,
+    low: 45.12,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 57313162709
+  },
+  {
+    date: "2003/7/1",
+    open: 43.96,
+    high: 45.12,
+    low: 43.96,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 60523815656
+  },
+  {
+    date: "2003/6/30",
+    open: 43.58,
+    high: 44.35,
+    low: 43.58,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 28406805466
+  },
+  {
+    date: "2003/6/27",
+    open: 44.35,
+    high: 44.74,
+    low: 43.58,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 46451329847
+  },
+  {
+    date: "2003/6/26",
+    open: 43.96,
+    high: 44.74,
+    low: 43.58,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 32158938451
+  },
+  {
+    date: "2003/6/25",
+    open: 43.58,
+    high: 44.74,
+    low: 43.19,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 53202099134
+  },
+  {
+    date: "2003/6/24",
+    open: 43.58,
+    high: 43.96,
+    low: 43.19,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 55692212560
+  },
+  {
+    date: "2003/6/23",
+    open: 44.74,
+    high: 45.51,
+    low: 44.35,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 39969704393
+  },
+  {
+    date: "2003/6/20",
+    open: 45.51,
+    high: 45.89,
+    low: 44.74,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 47996945477
+  },
+  {
+    date: "2003/6/19",
+    open: 45.89,
+    high: 45.89,
+    low: 45.12,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 64311302785
+  },
+  {
+    date: "2003/6/18",
+    open: 45.51,
+    high: 45.89,
+    low: 45.12,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 84217703845
+  },
+  {
+    date: "2003/6/17",
+    open: 43.96,
+    high: 45.12,
+    low: 43.58,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 100960450135
+  },
+  {
+    date: "2003/6/16",
+    open: 43.19,
+    high: 43.96,
+    low: 43.19,
+    close: 43.19,
+    adjClose: 20.87,
+    volume: 51793235972
+  },
+  {
+    date: "2003/6/13",
+    open: 44.35,
+    high: 44.35,
+    low: 43.58,
+    close: 43.96,
+    adjClose: 21.24,
+    volume: 66954963790
+  },
+  {
+    date: "2003/6/12",
+    open: 43.58,
+    high: 46.28,
+    low: 43.19,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 136477069104
+  },
+  {
+    date: "2003/6/11",
+    open: 44.74,
+    high: 44.74,
+    low: 43.58,
+    close: 43.58,
+    adjClose: 21.05,
+    volume: 60828892589
+  },
+  {
+    date: "2003/6/10",
+    open: 44.74,
+    high: 45.12,
+    low: 43.96,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 53176084025
+  },
+  {
+    date: "2003/6/9",
+    open: 44.74,
+    high: 46.28,
+    low: 44.35,
+    close: 45.51,
+    adjClose: 21.99,
+    volume: 111310611036
+  },
+  {
+    date: "2003/6/6",
+    open: 44.74,
+    high: 45.12,
+    low: 44.35,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 86426629004
+  },
+  {
+    date: "2003/6/5",
+    open: 43.58,
+    high: 45.12,
+    low: 43.58,
+    close: 44.35,
+    adjClose: 21.43,
+    volume: 135359642257
+  },
+  {
+    date: "2003/6/4",
+    open: 43.19,
+    high: 43.19,
+    low: 43.19,
+    close: 43.19,
+    adjClose: 20.87,
+    volume: null
+  },
+  {
+    date: "2003/6/3",
+    open: 43.19,
+    high: 43.58,
+    low: 42.81,
+    close: 43.19,
+    adjClose: 20.87,
+    volume: 77388158773
+  },
+  {
+    date: "2003/6/2",
+    open: 42.42,
+    high: 43.96,
+    low: 42.04,
+    close: 43.58,
+    adjClose: 21.05,
+    volume: 142074007706
+  },
+  {
+    date: "2003/5/30",
+    open: 40.11,
+    high: 42.42,
+    low: 40.11,
+    close: 41.26,
+    adjClose: 19.94,
+    volume: 150196284018
+  },
+  {
+    date: "2003/5/29",
+    open: 39.34,
+    high: 40.11,
+    low: 39.34,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 140509421824
+  },
+  {
+    date: "2003/5/28",
+    open: 38.95,
+    high: 39.72,
+    low: 38.95,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 111594385664
+  },
+  {
+    date: "2003/5/27",
+    open: 38.41,
+    high: 38.49,
+    low: 38.03,
+    close: 38.03,
+    adjClose: 18.37,
+    volume: 46901118529
+  },
+  {
+    date: "2003/5/26",
+    open: 38.18,
+    high: 38.49,
+    low: 38.18,
+    close: 38.41,
+    adjClose: 18.56,
+    volume: 52531668998
+  },
+  {
+    date: "2003/5/23",
+    open: 37.33,
+    high: 38.03,
+    low: 37.18,
+    close: 37.87,
+    adjClose: 18.3,
+    volume: 77408027218
+  },
+  {
+    date: "2003/5/22",
+    open: 36.79,
+    high: 37.33,
+    low: 36.56,
+    close: 37.02,
+    adjClose: 17.89,
+    volume: 69367556736
+  },
+  {
+    date: "2003/5/21",
+    open: 37.02,
+    high: 37.1,
+    low: 36.71,
+    close: 37.02,
+    adjClose: 17.89,
+    volume: 72198636907
+  },
+  {
+    date: "2003/5/20",
+    open: 36.87,
+    high: 37.25,
+    low: 36.71,
+    close: 37.02,
+    adjClose: 17.89,
+    volume: 45992883891
+  },
+  {
+    date: "2003/5/19",
+    open: 37.64,
+    high: 37.87,
+    low: 37.18,
+    close: 37.72,
+    adjClose: 18.22,
+    volume: 49004700893
+  },
+  {
+    date: "2003/5/16",
+    open: 38.41,
+    high: 38.57,
+    low: 37.64,
+    close: 37.64,
+    adjClose: 18.18,
+    volume: 67041985629
+  },
+  {
+    date: "2003/5/15",
+    open: 37.95,
+    high: 38.18,
+    low: 37.64,
+    close: 38.18,
+    adjClose: 18.45,
+    volume: 49432034770
+  },
+  {
+    date: "2003/5/14",
+    open: 37.79,
+    high: 37.95,
+    low: 37.64,
+    close: 37.95,
+    adjClose: 18.33,
+    volume: 61289822100
+  },
+  {
+    date: "2003/5/13",
+    open: 37.95,
+    high: 38.41,
+    low: 37.79,
+    close: 37.95,
+    adjClose: 18.33,
+    volume: 78423898828
+  },
+  {
+    date: "2003/5/12",
+    open: 37.18,
+    high: 37.49,
+    low: 37.02,
+    close: 37.25,
+    adjClose: 18,
+    volume: 77305595431
+  },
+  {
+    date: "2003/5/9",
+    open: 36.1,
+    high: 36.87,
+    low: 36.1,
+    close: 36.64,
+    adjClose: 17.7,
+    volume: 47392932866
+  },
+  {
+    date: "2003/5/8",
+    open: 36.64,
+    high: 36.64,
+    low: 36.02,
+    close: 36.02,
+    adjClose: 17.4,
+    volume: 42516871961
+  },
+  {
+    date: "2003/5/7",
+    open: 37.02,
+    high: 37.1,
+    low: 36.48,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: 61006929433
+  },
+  {
+    date: "2003/5/6",
+    open: 37.41,
+    high: 37.72,
+    low: 36.71,
+    close: 36.87,
+    adjClose: 17.81,
+    volume: 70984042978
+  },
+  {
+    date: "2003/5/5",
+    open: 37.41,
+    high: 37.79,
+    low: 37.25,
+    close: 37.41,
+    adjClose: 18.07,
+    volume: 91162699080
+  },
+  {
+    date: "2003/5/2",
+    open: 36.79,
+    high: 37.33,
+    low: 36.79,
+    close: 37.25,
+    adjClose: 18,
+    volume: 83687050811
+  },
+  {
+    date: "2003/5/1",
+    open: 36.87,
+    high: 36.87,
+    low: 36.87,
+    close: 36.87,
+    adjClose: 17.81,
+    volume: null
+  },
+  {
+    date: "2003/4/30",
+    open: 37.18,
+    high: 37.18,
+    low: 36.56,
+    close: 36.87,
+    adjClose: 17.81,
+    volume: 239182284642
+  },
+  {
+    date: "2003/4/29",
+    open: 34.63,
+    high: 35.09,
+    low: 34.25,
+    close: 34.79,
+    adjClose: 16.81,
+    volume: 118886537594
+  },
+  {
+    date: "2003/4/28",
+    open: 34.01,
+    high: 34.17,
+    low: 33.17,
+    close: 33.94,
+    adjClose: 16.4,
+    volume: 98643352334
+  },
+  {
+    date: "2003/4/25",
+    open: 35.48,
+    high: 36.17,
+    low: 34.86,
+    close: 35.09,
+    adjClose: 16.96,
+    volume: 84724571018
+  },
+  {
+    date: "2003/4/24",
+    open: 37.02,
+    high: 37.02,
+    low: 36.1,
+    close: 36.48,
+    adjClose: 17.63,
+    volume: 98290763199
+  },
+  {
+    date: "2003/4/23",
+    open: 36.95,
+    high: 37.33,
+    low: 36.71,
+    close: 37.25,
+    adjClose: 18,
+    volume: 126460202439
+  },
+  {
+    date: "2003/4/22",
+    open: 36.95,
+    high: 36.95,
+    low: 36.1,
+    close: 36.25,
+    adjClose: 17.51,
+    volume: 80199879114
+  },
+  {
+    date: "2003/4/21",
+    open: 36.64,
+    high: 37.25,
+    low: 36.25,
+    close: 37.25,
+    adjClose: 18,
+    volume: 55647984710
+  },
+  {
+    date: "2003/4/18",
+    open: 36.41,
+    high: 36.95,
+    low: 36.33,
+    close: 36.64,
+    adjClose: 17.7,
+    volume: 109353158050
+  },
+  {
+    date: "2003/4/17",
+    open: 36.17,
+    high: 36.25,
+    low: 35.33,
+    close: 35.33,
+    adjClose: 17.07,
+    volume: 83916290022
+  },
+  {
+    date: "2003/4/16",
+    open: 35.25,
+    high: 36.25,
+    low: 35.25,
+    close: 36.17,
+    adjClose: 17.48,
+    volume: 129519607395
+  },
+  {
+    date: "2003/4/15",
+    open: 34.25,
+    high: 34.48,
+    low: 33.86,
+    close: 34.48,
+    adjClose: 16.66,
+    volume: 40375606106
+  },
+  {
+    date: "2003/4/14",
+    open: 34.55,
+    high: 34.94,
+    low: 33.63,
+    close: 33.63,
+    adjClose: 16.25,
+    volume: 38926002352
+  },
+  {
+    date: "2003/4/11",
+    open: 34.4,
+    high: 34.63,
+    low: 34.25,
+    close: 34.55,
+    adjClose: 16.69,
+    volume: 24538294367
+  },
+  {
+    date: "2003/4/10",
+    open: 34.48,
+    high: 34.94,
+    low: 34.17,
+    close: 34.32,
+    adjClose: 16.58,
+    volume: 49287317610
+  },
+  {
+    date: "2003/4/9",
+    open: 34.79,
+    high: 34.94,
+    low: 34.4,
+    close: 34.55,
+    adjClose: 16.69,
+    volume: 48875783259
+  },
+  {
+    date: "2003/4/8",
+    open: 35.48,
+    high: 35.87,
+    low: 35.17,
+    close: 35.25,
+    adjClose: 17.03,
+    volume: 63372226608
+  },
+  {
+    date: "2003/4/7",
+    open: 34.94,
+    high: 35.87,
+    low: 34.63,
+    close: 35.63,
+    adjClose: 17.22,
+    volume: 79856120398
+  },
+  {
+    date: "2003/4/4",
+    open: 33.86,
+    high: 35.02,
+    low: 33.63,
+    close: 34.86,
+    adjClose: 16.84,
+    volume: 75165160133
+  },
+  {
+    date: "2003/4/3",
+    open: 34.32,
+    high: 34.55,
+    low: 33.71,
+    close: 33.86,
+    adjClose: 16.36,
+    volume: 83089644783
+  },
+  {
+    date: "2003/4/2",
+    open: 32.78,
+    high: 33.32,
+    low: 32.39,
+    close: 33.01,
+    adjClose: 15.95,
+    volume: 45530807291
+  },
+  {
+    date: "2003/4/1",
+    open: 32.01,
+    high: 32.55,
+    low: 31.93,
+    close: 32.55,
+    adjClose: 15.73,
+    volume: 85137907165
+  },
+  {
+    date: "2003/3/31",
+    open: 33.55,
+    high: 33.78,
+    low: 32.47,
+    close: 32.63,
+    adjClose: 15.76,
+    volume: 77543735402
+  },
+  {
+    date: "2003/3/28",
+    open: 34.48,
+    high: 34.71,
+    low: 33.55,
+    close: 34.25,
+    adjClose: 16.55,
+    volume: 83406035690
+  },
+  {
+    date: "2003/3/27",
+    open: 34.71,
+    high: 35.17,
+    low: 33.94,
+    close: 34.63,
+    adjClose: 16.73,
+    volume: 152417480863
+  },
+  {
+    date: "2003/3/26",
+    open: 36.41,
+    high: 36.71,
+    low: 36.25,
+    close: 36.25,
+    adjClose: 17.51,
+    volume: 66753806613
+  },
+  {
+    date: "2003/3/25",
+    open: 36.25,
+    high: 36.48,
+    low: 35.71,
+    close: 35.94,
+    adjClose: 17.37,
+    volume: 65069090229
+  },
+  {
+    date: "2003/3/24",
+    open: 37.72,
+    high: 37.79,
+    low: 37.25,
+    close: 37.41,
+    adjClose: 18.07,
+    volume: 56761429212
+  },
+  {
+    date: "2003/3/21",
+    open: 37.64,
+    high: 37.64,
+    low: 36.95,
+    close: 37.41,
+    adjClose: 18.07,
+    volume: 55634506417
+  },
+  {
+    date: "2003/3/20",
+    open: 37.79,
+    high: 38.33,
+    low: 37.02,
+    close: 37.49,
+    adjClose: 18.11,
+    volume: 143544153548
+  },
+  {
+    date: "2003/3/19",
+    open: 36.56,
+    high: 37.18,
+    low: 36.25,
+    close: 36.95,
+    adjClose: 17.85,
+    volume: 125366615560
+  },
+  {
+    date: "2003/3/18",
+    open: 35.79,
+    high: 36.25,
+    low: 35.48,
+    close: 36.25,
+    adjClose: 17.51,
+    volume: 141363072348
+  },
+  {
+    date: "2003/3/17",
+    open: 34.71,
+    high: 34.86,
+    low: 33.94,
+    close: 33.94,
+    adjClose: 16.4,
+    volume: 60341060598
+  },
+  {
+    date: "2003/3/14",
+    open: 36.1,
+    high: 36.1,
+    low: 34.94,
+    close: 35.09,
+    adjClose: 16.96,
+    volume: 150857310190
+  },
+  {
+    date: "2003/3/13",
+    open: 33.17,
+    high: 34.25,
+    low: 33.01,
+    close: 34.01,
+    adjClose: 16.43,
+    volume: 68480959873
+  },
+  {
+    date: "2003/3/12",
+    open: 32.86,
+    high: 33.17,
+    low: 32.78,
+    close: 33.17,
+    adjClose: 16.02,
+    volume: 32006602890
+  },
+  {
+    date: "2003/3/11",
+    open: 32.39,
+    high: 33.4,
+    low: 32.39,
+    close: 32.78,
+    adjClose: 15.84,
+    volume: 46218481635
+  },
+  {
+    date: "2003/3/10",
+    open: 32.63,
+    high: 33.09,
+    low: 32.39,
+    close: 32.86,
+    adjClose: 15.87,
+    volume: 53968365297
+  },
+  {
+    date: "2003/3/7",
+    open: 31.78,
+    high: 32.86,
+    low: 31.62,
+    close: 32.09,
+    adjClose: 15.5,
+    volume: 48518302763
+  },
+  {
+    date: "2003/3/6",
+    open: 32.09,
+    high: 32.32,
+    low: 31.85,
+    close: 31.93,
+    adjClose: 15.43,
+    volume: 38581028912
+  },
+  {
+    date: "2003/3/5",
+    open: 32.39,
+    high: 32.63,
+    low: 32.01,
+    close: 32.09,
+    adjClose: 15.5,
+    volume: 60949861764
+  },
+  {
+    date: "2003/3/4",
+    open: 33.32,
+    high: 33.47,
+    low: 33.01,
+    close: 33.47,
+    adjClose: 16.17,
+    volume: 32170168559
+  },
+  {
+    date: "2003/3/3",
+    open: 33.09,
+    high: 34.17,
+    low: 32.86,
+    close: 33.94,
+    adjClose: 16.4,
+    volume: 48204979777
+  },
+  {
+    date: "2003/2/28",
+    open: 32.39,
+    high: 32.39,
+    low: 32.39,
+    close: 32.39,
+    adjClose: 15.65,
+    volume: null
+  },
+  {
+    date: "2003/2/27",
+    open: 32.47,
+    high: 33.01,
+    low: 32.01,
+    close: 32.39,
+    adjClose: 15.65,
+    volume: 45889288783
+  },
+  {
+    date: "2003/2/26",
+    open: 33.32,
+    high: 33.71,
+    low: 32.93,
+    close: 33.01,
+    adjClose: 15.95,
+    volume: 48616795490
+  },
+  {
+    date: "2003/2/25",
+    open: 34.71,
+    high: 34.71,
+    low: 33.17,
+    close: 33.17,
+    adjClose: 16.02,
+    volume: 63858229750
+  },
+  {
+    date: "2003/2/24",
+    open: 34.86,
+    high: 35.09,
+    low: 34.32,
+    close: 34.94,
+    adjClose: 16.88,
+    volume: 48756659165
+  },
+  {
+    date: "2003/2/21",
+    open: 34.71,
+    high: 35.4,
+    low: 34.48,
+    close: 34.63,
+    adjClose: 16.73,
+    volume: 93056499457
+  },
+  {
+    date: "2003/2/20",
+    open: 33.17,
+    high: 34.09,
+    low: 33.01,
+    close: 34.01,
+    adjClose: 16.43,
+    volume: 71036376200
+  },
+  {
+    date: "2003/2/19",
+    open: 33.86,
+    high: 33.86,
+    low: 33.17,
+    close: 33.17,
+    adjClose: 16.02,
+    volume: 69164819607
+  },
+  {
+    date: "2003/2/18",
+    open: 33.78,
+    high: 33.78,
+    low: 33.01,
+    close: 33.09,
+    adjClose: 15.99,
+    volume: 42627000606
+  },
+  {
+    date: "2003/2/17",
+    open: 33.78,
+    high: 33.78,
+    low: 33.01,
+    close: 33.78,
+    adjClose: 16.32,
+    volume: 77185984366
+  },
+  {
+    date: "2003/2/14",
+    open: 31.7,
+    high: 31.85,
+    low: 31.32,
+    close: 31.62,
+    adjClose: 15.28,
+    volume: 71910988150
+  },
+  {
+    date: "2003/2/13",
+    open: 31.16,
+    high: 31.7,
+    low: 31.01,
+    close: 31.01,
+    adjClose: 14.98,
+    volume: 58453282436
+  },
+  {
+    date: "2003/2/12",
+    open: 31.55,
+    high: 31.78,
+    low: 30.93,
+    close: 31.16,
+    adjClose: 15.05,
+    volume: 72050164654
+  },
+  {
+    date: "2003/2/11",
+    open: 31.85,
+    high: 32.39,
+    low: 31.78,
+    close: 32.01,
+    adjClose: 15.46,
+    volume: 58846760960
+  },
+  {
+    date: "2003/2/10",
+    open: 31.85,
+    high: 31.85,
+    low: 31.24,
+    close: 31.39,
+    adjClose: 15.17,
+    volume: 86410429080
+  },
+  {
+    date: "2003/2/7",
+    open: 31.85,
+    high: 32.93,
+    low: 31.85,
+    close: 32.39,
+    adjClose: 15.65,
+    volume: 156444098138
+  },
+  {
+    date: "2003/2/6",
+    open: 34.32,
+    high: 34.71,
+    low: 34.25,
+    close: 34.25,
+    adjClose: 16.55,
+    volume: 78312317385
+  },
+  {
+    date: "2003/2/5",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/2/4",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/2/3",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/1/31",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/1/30",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/1/29",
+    open: 36.79,
+    high: 36.79,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: null
+  },
+  {
+    date: "2003/1/28",
+    open: 35.63,
+    high: 37.33,
+    low: 35.48,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: 74556364377
+  },
+  {
+    date: "2003/1/27",
+    open: 37.56,
+    high: 37.72,
+    low: 37.1,
+    close: 37.72,
+    adjClose: 18.22,
+    volume: 51491860024
+  },
+  {
+    date: "2003/1/24",
+    open: 39.34,
+    high: 39.72,
+    low: 37.87,
+    close: 38.1,
+    adjClose: 18.41,
+    volume: 76299782491
+  },
+  {
+    date: "2003/1/23",
+    open: 37.64,
+    high: 39.34,
+    low: 37.64,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 99996484294
+  },
+  {
+    date: "2003/1/22",
+    open: 36.71,
+    high: 37.02,
+    low: 36.17,
+    close: 36.87,
+    adjClose: 17.81,
+    volume: 39410885459
+  },
+  {
+    date: "2003/1/21",
+    open: 36.95,
+    high: 37.41,
+    low: 36.64,
+    close: 36.71,
+    adjClose: 17.74,
+    volume: 55275862600
+  },
+  {
+    date: "2003/1/20",
+    open: 36.71,
+    high: 37.02,
+    low: 36.25,
+    close: 36.95,
+    adjClose: 17.85,
+    volume: 63110711997
+  },
+  {
+    date: "2003/1/17",
+    open: 37.02,
+    high: 37.95,
+    low: 36.64,
+    close: 37.64,
+    adjClose: 18.18,
+    volume: 78192755017
+  },
+  {
+    date: "2003/1/16",
+    open: 38.95,
+    high: 38.95,
+    low: 37.49,
+    close: 37.49,
+    adjClose: 18.11,
+    volume: 59139106289
+  },
+  {
+    date: "2003/1/15",
+    open: 38.95,
+    high: 39.34,
+    low: 38.26,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 86943424989
+  },
+  {
+    date: "2003/1/14",
+    open: 39.34,
+    high: 39.34,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 96393056226
+  },
+  {
+    date: "2003/1/13",
+    open: 37.02,
+    high: 38.95,
+    low: 37.02,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 137273311079
+  },
+  {
+    date: "2003/1/10",
+    open: 36.41,
+    high: 36.48,
+    low: 36.17,
+    close: 36.41,
+    adjClose: 17.59,
+    volume: 57046935294
+  },
+  {
+    date: "2003/1/9",
+    open: 35.48,
+    high: 35.79,
+    low: 35.09,
+    close: 35.48,
+    adjClose: 17.14,
+    volume: 48948028212
+  },
+  {
+    date: "2003/1/8",
+    open: 35.09,
+    high: 36.56,
+    low: 35.02,
+    close: 35.87,
+    adjClose: 17.33,
+    volume: 67404817402
+  },
+  {
+    date: "2003/1/7",
+    open: 35.25,
+    high: 36.17,
+    low: 35.02,
+    close: 35.02,
+    adjClose: 16.92,
+    volume: 61698515784
+  },
+  {
+    date: "2003/1/6",
+    open: 34.55,
+    high: 35.25,
+    low: 34.25,
+    close: 34.55,
+    adjClose: 16.69,
+    volume: 49129154621
+  },
+  {
+    date: "2003/1/3",
+    open: 33.94,
+    high: 34.71,
+    low: 33.63,
+    close: 34.55,
+    adjClose: 16.69,
+    volume: 52579684405
+  },
+  {
+    date: "2003/1/2",
+    open: 33.17,
+    high: 33.47,
+    low: 32.7,
+    close: 32.78,
+    adjClose: 15.84,
+    volume: 29925258898
+  },
+  {
+    date: "2003/1/1",
+    open: 32.86,
+    high: 32.86,
+    low: 32.86,
+    close: 32.86,
+    adjClose: 15.87,
+    volume: null
+  },
+  {
+    date: "2002/12/31",
+    open: 32.78,
+    high: 33.32,
+    low: 32.78,
+    close: 32.86,
+    adjClose: 15.87,
+    volume: 28136119555
+  },
+  {
+    date: "2002/12/30",
+    open: 34.71,
+    high: 34.71,
+    low: 33.24,
+    close: 33.32,
+    adjClose: 16.1,
+    volume: 47293731325
+  },
+  {
+    date: "2002/12/27",
+    open: 35.56,
+    high: 35.56,
+    low: 34.79,
+    close: 35.09,
+    adjClose: 16.96,
+    volume: 27456574932
+  },
+  {
+    date: "2002/12/26",
+    open: 34.71,
+    high: 35.48,
+    low: 34.25,
+    close: 35.48,
+    adjClose: 17.14,
+    volume: 23857678406
+  },
+  {
+    date: "2002/12/25",
+    open: 34.48,
+    high: 34.63,
+    low: 33.94,
+    close: 34.48,
+    adjClose: 16.66,
+    volume: 15449960942
+  },
+  {
+    date: "2002/12/24",
+    open: 34.17,
+    high: 34.86,
+    low: 34.01,
+    close: 34.55,
+    adjClose: 16.69,
+    volume: 34911984116
+  },
+  {
+    date: "2002/12/23",
+    open: 35.48,
+    high: 35.48,
+    low: 33.86,
+    close: 34.32,
+    adjClose: 16.58,
+    volume: 57534935020
+  },
+  {
+    date: "2002/12/20",
+    open: 35.4,
+    high: 36.1,
+    low: 34.32,
+    close: 35.48,
+    adjClose: 17.14,
+    volume: 93595912570
+  },
+  {
+    date: "2002/12/19",
+    open: 34.86,
+    high: 36.25,
+    low: 34.71,
+    close: 35.4,
+    adjClose: 17.1,
+    volume: 109025956371
+  },
+  {
+    date: "2002/12/18",
+    open: 36.87,
+    high: 37.25,
+    low: 36.71,
+    close: 37.02,
+    adjClose: 17.89,
+    volume: 44765306756
+  },
+  {
+    date: "2002/12/17",
+    open: 37.41,
+    high: 37.79,
+    low: 36.87,
+    close: 36.87,
+    adjClose: 17.81,
+    volume: 43846304633
+  },
+  {
+    date: "2002/12/16",
+    open: 36.87,
+    high: 37.25,
+    low: 36.48,
+    close: 36.95,
+    adjClose: 17.85,
+    volume: 60298937548
+  },
+  {
+    date: "2002/12/13",
+    open: 37.56,
+    high: 38.1,
+    low: 37.18,
+    close: 37.56,
+    adjClose: 18.15,
+    volume: 61258493589
+  },
+  {
+    date: "2002/12/12",
+    open: 38.57,
+    high: 38.95,
+    low: 37.41,
+    close: 37.79,
+    adjClose: 18.26,
+    volume: 63603402883
+  },
+  {
+    date: "2002/12/11",
+    open: 38.57,
+    high: 38.95,
+    low: 38.41,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 86301396122
+  },
+  {
+    date: "2002/12/10",
+    open: 38.95,
+    high: 38.95,
+    low: 38.41,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 93248680123
+  },
+  {
+    date: "2002/12/9",
+    open: 40.49,
+    high: 40.88,
+    low: 39.72,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 50093028478
+  },
+  {
+    date: "2002/12/6",
+    open: 39.72,
+    high: 40.49,
+    low: 39.72,
+    close: 39.72,
+    adjClose: 19.19,
+    volume: 51058844811
+  },
+  {
+    date: "2002/12/5",
+    open: 39.72,
+    high: 40.49,
+    low: 39.34,
+    close: 40.49,
+    adjClose: 19.56,
+    volume: 48143978458
+  },
+  {
+    date: "2002/12/4",
+    open: 40.49,
+    high: 40.88,
+    low: 40.11,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 73386864025
+  },
+  {
+    date: "2002/12/3",
+    open: 40.11,
+    high: 41.65,
+    low: 39.72,
+    close: 41.26,
+    adjClose: 19.94,
+    volume: 126338005013
+  },
+  {
+    date: "2002/12/2",
+    open: 38.95,
+    high: 38.95,
+    low: 38.95,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: null
+  },
+  {
+    date: "2002/11/29",
+    open: 38.95,
+    high: 39.34,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 42270212692
+  },
+  {
+    date: "2002/11/28",
+    open: 39.72,
+    high: 39.72,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 88820138071
+  },
+  {
+    date: "2002/11/27",
+    open: 38.18,
+    high: 38.57,
+    low: 37.87,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 50155420371
+  },
+  {
+    date: "2002/11/26",
+    open: 39.72,
+    high: 40.11,
+    low: 38.95,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 102202628304
+  },
+  {
+    date: "2002/11/25",
+    open: 38.95,
+    high: 40.11,
+    low: 38.18,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 147887832670
+  },
+  {
+    date: "2002/11/22",
+    open: 38.26,
+    high: 38.57,
+    low: 37.95,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 183661410360
+  },
+  {
+    date: "2002/11/21",
+    open: 36.33,
+    high: 36.64,
+    low: 35.79,
+    close: 36.17,
+    adjClose: 17.48,
+    volume: 85523015187
+  },
+  {
+    date: "2002/11/20",
+    open: 35.94,
+    high: 36.33,
+    low: 35.4,
+    close: 35.56,
+    adjClose: 17.18,
+    volume: 55682754488
+  },
+  {
+    date: "2002/11/19",
+    open: 37.02,
+    high: 37.25,
+    low: 36.71,
+    close: 36.71,
+    adjClose: 17.74,
+    volume: 45870578249
+  },
+  {
+    date: "2002/11/18",
+    open: 37.33,
+    high: 37.79,
+    low: 36.71,
+    close: 37.18,
+    adjClose: 17.96,
+    volume: 42476953811
+  },
+  {
+    date: "2002/11/15",
+    open: 38.03,
+    high: 38.03,
+    low: 36.79,
+    close: 37.33,
+    adjClose: 18.04,
+    volume: 105183977112
+  },
+  {
+    date: "2002/11/14",
+    open: 36.1,
+    high: 36.64,
+    low: 35.79,
+    close: 35.79,
+    adjClose: 17.29,
+    volume: 57321657659
+  },
+  {
+    date: "2002/11/13",
+    open: 36.1,
+    high: 36.25,
+    low: 35.09,
+    close: 36.1,
+    adjClose: 17.44,
+    volume: 72543369566
+  },
+  {
+    date: "2002/11/12",
+    open: 35.09,
+    high: 36.17,
+    low: 35.09,
+    close: 36.1,
+    adjClose: 17.44,
+    volume: 95338546119
+  },
+  {
+    date: "2002/11/11",
+    open: 38.57,
+    high: 38.57,
+    low: 36.71,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: 91990724072
+  },
+  {
+    date: "2002/11/8",
+    open: 38.57,
+    high: 39.34,
+    low: 38.57,
+    close: 39.34,
+    adjClose: 19,
+    volume: 107783107263
+  },
+  {
+    date: "2002/11/7",
+    open: 40.11,
+    high: 40.49,
+    low: 38.95,
+    close: 39.72,
+    adjClose: 19.19,
+    volume: 152395751105
+  },
+  {
+    date: "2002/11/6",
+    open: 36.79,
+    high: 39.34,
+    low: 36.41,
+    close: 39.34,
+    adjClose: 19,
+    volume: 204144045002
+  },
+  {
+    date: "2002/11/5",
+    open: 37.41,
+    high: 37.56,
+    low: 36.79,
+    close: 36.79,
+    adjClose: 17.77,
+    volume: 124262282839
+  },
+  {
+    date: "2002/11/4",
+    open: 35.87,
+    high: 36.64,
+    low: 35.79,
+    close: 36.25,
+    adjClose: 17.51,
+    volume: 88400985319
+  },
+  {
+    date: "2002/11/1",
+    open: 35.79,
+    high: 35.87,
+    low: 34.71,
+    close: 34.71,
+    adjClose: 16.77,
+    volume: 56491857925
+  },
+  {
+    date: "2002/10/31",
+    open: 35.79,
+    high: 36.17,
+    low: 35.56,
+    close: 35.87,
+    adjClose: 17.33,
+    volume: 72249828452
+  },
+  {
+    date: "2002/10/30",
+    open: 35.33,
+    high: 35.71,
+    low: 34.4,
+    close: 35.09,
+    adjClose: 16.96,
+    volume: 74077746973
+  },
+  {
+    date: "2002/10/29",
+    open: 35.94,
+    high: 36.17,
+    low: 35.48,
+    close: 36.1,
+    adjClose: 17.44,
+    volume: 59101295644
+  },
+  {
+    date: "2002/10/28",
+    open: 36.56,
+    high: 36.71,
+    low: 35.87,
+    close: 35.94,
+    adjClose: 17.37,
+    volume: 131088738347
+  },
+  {
+    date: "2002/10/25",
+    open: 34.71,
+    high: 35.79,
+    low: 34.4,
+    close: 35.48,
+    adjClose: 17.14,
+    volume: 125819877973
+  },
+  {
+    date: "2002/10/24",
+    open: 35.33,
+    high: 35.33,
+    low: 34.4,
+    close: 34.71,
+    adjClose: 16.77,
+    volume: 124002532148
+  },
+  {
+    date: "2002/10/23",
+    open: 32.78,
+    high: 35.09,
+    low: 32.16,
+    close: 34.71,
+    adjClose: 16.77,
+    volume: 207266918600
+  },
+  {
+    date: "2002/10/22",
+    open: 35.17,
+    high: 35.48,
+    low: 32.86,
+    close: 33.55,
+    adjClose: 16.21,
+    volume: 136840209293
+  },
+  {
+    date: "2002/10/21",
+    open: 35.63,
+    high: 35.63,
+    low: 34.71,
+    close: 35.09,
+    adjClose: 16.96,
+    volume: 94279112187
+  },
+  {
+    date: "2002/10/18",
+    open: 35.02,
+    high: 35.87,
+    low: 34.4,
+    close: 35.87,
+    adjClose: 17.33,
+    volume: 193637858376
+  },
+  {
+    date: "2002/10/17",
+    open: 33.09,
+    high: 33.86,
+    low: 32.86,
+    close: 33.55,
+    adjClose: 16.21,
+    volume: 114359757123
+  },
+  {
+    date: "2002/10/16",
+    open: 33.47,
+    high: 33.47,
+    low: 32.7,
+    close: 33.47,
+    adjClose: 16.17,
+    volume: 202784225298
+  },
+  {
+    date: "2002/10/15",
+    open: 30.47,
+    high: 31.32,
+    low: 30.24,
+    close: 31.32,
+    adjClose: 15.13,
+    volume: 107764602339
+  },
+  {
+    date: "2002/10/14",
+    open: 28.46,
+    high: 29.31,
+    low: 28.23,
+    close: 29.31,
+    adjClose: 14.16,
+    volume: 143797064993
+  },
+  {
+    date: "2002/10/11",
+    open: 28.54,
+    high: 28.69,
+    low: 27.38,
+    close: 27.54,
+    adjClose: 13.3,
+    volume: 142303923266
+  },
+  {
+    date: "2002/10/10",
+    open: 27.77,
+    high: 27.77,
+    low: 27.77,
+    close: 27.77,
+    adjClose: 13.42,
+    volume: null
+  },
+  {
+    date: "2002/10/9",
+    open: 27.46,
+    high: 29,
+    low: 27.23,
+    close: 27.77,
+    adjClose: 13.42,
+    volume: 176815140516
+  },
+  {
+    date: "2002/10/8",
+    open: 27,
+    high: 27.61,
+    low: 26.92,
+    close: 27.46,
+    adjClose: 13.27,
+    volume: 143018927543
+  },
+  {
+    date: "2002/10/7",
+    open: 28.92,
+    high: 28.92,
+    low: 27.77,
+    close: 27.77,
+    adjClose: 13.42,
+    volume: 78537828557
+  },
+  {
+    date: "2002/10/4",
+    open: 28.38,
+    high: 29.77,
+    low: 28.38,
+    close: 29.31,
+    adjClose: 14.16,
+    volume: 89524174664
+  },
+  {
+    date: "2002/10/3",
+    open: 30.31,
+    high: 30.31,
+    low: 29.08,
+    close: 29.08,
+    adjClose: 14.05,
+    volume: 98992186377
+  },
+  {
+    date: "2002/10/2",
+    open: 31.7,
+    high: 32.01,
+    low: 30.85,
+    close: 30.85,
+    adjClose: 14.91,
+    volume: 86896919194
+  },
+  {
+    date: "2002/10/1",
+    open: 31.16,
+    high: 31.93,
+    low: 30.85,
+    close: 30.93,
+    adjClose: 14.94,
+    volume: 77405814202
+  },
+  {
+    date: "2002/9/30",
+    open: 31.7,
+    high: 31.7,
+    low: 30.85,
+    close: 31.7,
+    adjClose: 15.32,
+    volume: 69557291722
+  },
+  {
+    date: "2002/9/27",
+    open: 32.86,
+    high: 33.09,
+    low: 32.39,
+    close: 32.39,
+    adjClose: 15.65,
+    volume: 61569057069
+  },
+  {
+    date: "2002/9/26",
+    open: 33.63,
+    high: 33.71,
+    low: 32.86,
+    close: 32.86,
+    adjClose: 15.87,
+    volume: 82077349709
+  },
+  {
+    date: "2002/9/25",
+    open: 32.78,
+    high: 33.01,
+    low: 31.62,
+    close: 32.39,
+    adjClose: 15.65,
+    volume: 78987027462
+  },
+  {
+    date: "2002/9/24",
+    open: 32.01,
+    high: 33.09,
+    low: 32.01,
+    close: 32.63,
+    adjClose: 15.76,
+    volume: 105920386500
+  },
+  {
+    date: "2002/9/23",
+    open: 33.17,
+    high: 33.71,
+    low: 32.39,
+    close: 32.47,
+    adjClose: 15.69,
+    volume: 75797395458
+  },
+  {
+    date: "2002/9/20",
+    open: 34.32,
+    high: 34.4,
+    low: 33.17,
+    close: 33.55,
+    adjClose: 16.21,
+    volume: 126676288003
+  },
+  {
+    date: "2002/9/19",
+    open: 35.48,
+    high: 35.56,
+    low: 34.71,
+    close: 35.17,
+    adjClose: 16.99,
+    volume: 73465780491
+  },
+  {
+    date: "2002/9/18",
+    open: 35.87,
+    high: 36.17,
+    low: 35.17,
+    close: 35.17,
+    adjClose: 16.99,
+    volume: 112968608908
+  },
+  {
+    date: "2002/9/17",
+    open: 36.17,
+    high: 37.79,
+    low: 36.17,
+    close: 37.79,
+    adjClose: 18.26,
+    volume: 61144158051
+  },
+  {
+    date: "2002/9/16",
+    open: 36.71,
+    high: 36.87,
+    low: 36.1,
+    close: 36.41,
+    adjClose: 17.59,
+    volume: 49178944769
+  },
+  {
+    date: "2002/9/13",
+    open: 37.49,
+    high: 37.72,
+    low: 37.02,
+    close: 37.1,
+    adjClose: 17.92,
+    volume: 38608734895
+  },
+  {
+    date: "2002/9/12",
+    open: 38.95,
+    high: 38.95,
+    low: 38.18,
+    close: 38.49,
+    adjClose: 18.6,
+    volume: 32294468079
+  },
+  {
+    date: "2002/9/11",
+    open: 39.34,
+    high: 39.34,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 40989717968
+  },
+  {
+    date: "2002/9/10",
+    open: 37.41,
+    high: 38.95,
+    low: 37.25,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 49558517546
+  },
+  {
+    date: "2002/9/9",
+    open: 36.87,
+    high: 37.56,
+    low: 36.71,
+    close: 37.41,
+    adjClose: 18.07,
+    volume: 48750177031
+  },
+  {
+    date: "2002/9/6",
+    open: 36.64,
+    high: 36.64,
+    low: 36.64,
+    close: 36.64,
+    adjClose: 17.7,
+    volume: null
+  },
+  {
+    date: "2002/9/5",
+    open: 37.41,
+    high: 37.41,
+    low: 36.64,
+    close: 36.64,
+    adjClose: 17.7,
+    volume: 31957792095
+  },
+  {
+    date: "2002/9/4",
+    open: 37.02,
+    high: 37.56,
+    low: 36.64,
+    close: 36.95,
+    adjClose: 17.85,
+    volume: 57145958279
+  },
+  {
+    date: "2002/9/3",
+    open: 37.56,
+    high: 37.95,
+    low: 37.41,
+    close: 37.56,
+    adjClose: 18.15,
+    volume: 31752749966
+  },
+  {
+    date: "2002/9/2",
+    open: 38.41,
+    high: 38.41,
+    low: 37.56,
+    close: 37.56,
+    adjClose: 18.15,
+    volume: 32902936481
+  },
+  {
+    date: "2002/8/30",
+    open: 38.95,
+    high: 38.95,
+    low: 38.33,
+    close: 38.49,
+    adjClose: 18.6,
+    volume: 44359594421
+  },
+  {
+    date: "2002/8/29",
+    open: 38.18,
+    high: 39.34,
+    low: 38.1,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 46533076159
+  },
+  {
+    date: "2002/8/28",
+    open: 38.57,
+    high: 38.95,
+    low: 38.57,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 66760743254
+  },
+  {
+    date: "2002/8/27",
+    open: 40.49,
+    high: 40.88,
+    low: 39.34,
+    close: 39.34,
+    adjClose: 19,
+    volume: 46771935765
+  },
+  {
+    date: "2002/8/26",
+    open: 40.88,
+    high: 40.88,
+    low: 40.11,
+    close: 40.49,
+    adjClose: 19.56,
+    volume: 49183911880
+  },
+  {
+    date: "2002/8/23",
+    open: 40.88,
+    high: 40.88,
+    low: 40.88,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: null
+  },
+  {
+    date: "2002/8/22",
+    open: 41.26,
+    high: 41.65,
+    low: 40.88,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 76792100033
+  },
+  {
+    date: "2002/8/21",
+    open: 41.26,
+    high: 41.26,
+    low: 40.49,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 54778096387
+  },
+  {
+    date: "2002/8/20",
+    open: 41.65,
+    high: 42.81,
+    low: 41.65,
+    close: 42.04,
+    adjClose: 20.31,
+    volume: 85566285325
+  },
+  {
+    date: "2002/8/19",
+    open: 41.26,
+    high: 42.04,
+    low: 40.88,
+    close: 41.26,
+    adjClose: 19.94,
+    volume: 46580983350
+  },
+  {
+    date: "2002/8/16",
+    open: 41.65,
+    high: 41.65,
+    low: 40.88,
+    close: 41.26,
+    adjClose: 19.94,
+    volume: 53287622182
+  },
+  {
+    date: "2002/8/15",
+    open: 40.49,
+    high: 41.65,
+    low: 40.49,
+    close: 40.88,
+    adjClose: 19.75,
+    volume: 105961573482
+  },
+  {
+    date: "2002/8/14",
+    open: 38.57,
+    high: 39.34,
+    low: 38.57,
+    close: 39.34,
+    adjClose: 19,
+    volume: 51260440263
+  },
+  {
+    date: "2002/8/13",
+    open: 38.57,
+    high: 38.95,
+    low: 38.41,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 25020477487
+  },
+  {
+    date: "2002/8/12",
+    open: 39.34,
+    high: 39.34,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 52770712571
+  },
+  {
+    date: "2002/8/9",
+    open: 38.57,
+    high: 39.34,
+    low: 38.57,
+    close: 39.34,
+    adjClose: 19,
+    volume: 64740914607
+  },
+  {
+    date: "2002/8/8",
+    open: 38.18,
+    high: 38.18,
+    low: 37.33,
+    close: 37.87,
+    adjClose: 18.3,
+    volume: 77595895479
+  },
+  {
+    date: "2002/8/7",
+    open: 37.95,
+    high: 38.03,
+    low: 37.33,
+    close: 38.03,
+    adjClose: 18.37,
+    volume: 98428338108
+  },
+  {
+    date: "2002/8/6",
+    open: 33.71,
+    high: 36.48,
+    low: 33.71,
+    close: 35.56,
+    adjClose: 17.18,
+    volume: 111234870709
+  },
+  {
+    date: "2002/8/5",
+    open: 36.25,
+    high: 36.79,
+    low: 35.87,
+    close: 35.87,
+    adjClose: 17.33,
+    volume: 104370150049
+  },
+  {
+    date: "2002/8/2",
+    open: 37.79,
+    high: 38.49,
+    low: 37.41,
+    close: 38.49,
+    adjClose: 18.6,
+    volume: 96478698311
+  },
+  {
+    date: "2002/8/1",
+    open: 38.57,
+    high: 39.34,
+    low: 38.57,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 63482390422
+  },
+  {
+    date: "2002/7/31",
+    open: 39.72,
+    high: 39.72,
+    low: 38.57,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 72425544064
+  },
+  {
+    date: "2002/7/30",
+    open: 40.11,
+    high: 40.49,
+    low: 39.34,
+    close: 40.11,
+    adjClose: 19.38,
+    volume: 179507412116
+  },
+  {
+    date: "2002/7/29",
+    open: 38.95,
+    high: 39.72,
+    low: 38.95,
+    close: 38.95,
+    adjClose: 18.82,
+    volume: 268685257937
+  },
+  {
+    date: "2002/7/26",
+    open: 41.65,
+    high: 41.65,
+    low: 41.65,
+    close: 41.65,
+    adjClose: 20.12,
+    volume: 52826795476
+  },
+  {
+    date: "2002/7/25",
+    open: 46.66,
+    high: 47.05,
+    low: 44.74,
+    close: 44.74,
+    adjClose: 21.61,
+    volume: 106641634836
+  },
+  {
+    date: "2002/7/24",
+    open: 45.89,
+    high: 46.28,
+    low: 45.12,
+    close: 45.12,
+    adjClose: 21.8,
+    volume: 99113193428
+  },
+  {
+    date: "2002/7/23",
+    open: 45.89,
+    high: 47.82,
+    low: 45.89,
+    close: 47.82,
+    adjClose: 23.1,
+    volume: 97899616728
+  },
+  {
+    date: "2002/7/22",
+    open: 45.89,
+    high: 46.66,
+    low: 45.51,
+    close: 46.66,
+    adjClose: 22.54,
+    volume: 79529952182
+  },
+  {
+    date: "2002/7/19",
+    open: 47.82,
+    high: 47.82,
+    low: 47.05,
+    close: 47.43,
+    adjClose: 22.92,
+    volume: 161639111963
+  },
+  {
+    date: "2002/7/18",
+    open: 51.29,
+    high: 51.29,
+    low: 49.36,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 127583656914
+  },
+  {
+    date: "2002/7/17",
+    open: 52.45,
+    high: 52.83,
+    low: 51.29,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 56765584704
+  },
+  {
+    date: "2002/7/16",
+    open: 54.38,
+    high: 54.76,
+    low: 52.83,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 40165515704
+  },
+  {
+    date: "2002/7/15",
+    open: 54.76,
+    high: 54.76,
+    low: 53.61,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 30993639582
+  },
+  {
+    date: "2002/7/12",
+    open: 53.22,
+    high: 54.76,
+    low: 53.22,
+    close: 54.76,
+    adjClose: 26.46,
+    volume: 77343844351
+  },
+  {
+    date: "2002/7/11",
+    open: 52.83,
+    high: 52.83,
+    low: 51.68,
+    close: 52.06,
+    adjClose: 25.15,
+    volume: 42029900287
+  },
+  {
+    date: "2002/7/10",
+    open: 54.38,
+    high: 54.38,
+    low: 53.22,
+    close: 53.99,
+    adjClose: 26.09,
+    volume: 55840300646
+  },
+  {
+    date: "2002/7/9",
+    open: 54.38,
+    high: 55.15,
+    low: 53.61,
+    close: 55.15,
+    adjClose: 26.64,
+    volume: 43663517110
+  },
+  {
+    date: "2002/7/8",
+    open: 53.61,
+    high: 55.15,
+    low: 53.22,
+    close: 54.76,
+    adjClose: 26.46,
+    volume: 128201266856
+  },
+  {
+    date: "2002/7/5",
+    open: 49.75,
+    high: 51.68,
+    low: 48.98,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 64912258296
+  },
+  {
+    date: "2002/7/4",
+    open: 49.36,
+    high: 50.13,
+    low: 48.98,
+    close: 49.75,
+    adjClose: 24.04,
+    volume: 57177497811
+  },
+  {
+    date: "2002/7/3",
+    open: 49.36,
+    high: 49.36,
+    low: 47.43,
+    close: 48.98,
+    adjClose: 23.66,
+    volume: 103732963846
+  },
+  {
+    date: "2002/7/2",
+    open: 49.36,
+    high: 51.29,
+    low: 49.36,
+    close: 50.91,
+    adjClose: 24.59,
+    volume: 34987654104
+  },
+  {
+    date: "2002/7/1",
+    open: 52.45,
+    high: 52.45,
+    low: 50.91,
+    close: 51.68,
+    adjClose: 24.97,
+    volume: 31670484218
+  },
+  {
+    date: "2002/6/28",
+    open: 52.06,
+    high: 52.83,
+    low: 51.68,
+    close: 52.45,
+    adjClose: 25.34,
+    volume: 53725561220
+  },
+  {
+    date: "2002/6/27",
+    open: 51.68,
+    high: 52.45,
+    low: 50.91,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 52370730270
+  },
+  {
+    date: "2002/6/26",
+    open: 52.83,
+    high: 53.22,
+    low: 51.29,
+    close: 51.29,
+    adjClose: 24.78,
+    volume: 66817691886
+  },
+  {
+    date: "2002/6/25",
+    open: 53.61,
+    high: 54.76,
+    low: 52.83,
+    close: 53.61,
+    adjClose: 25.9,
+    volume: 77223383791
+  },
+  {
+    date: "2002/6/24",
+    open: 52.83,
+    high: 53.22,
+    low: 52.06,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 50425943958
+  },
+  {
+    date: "2002/6/21",
+    open: 52.06,
+    high: 54.38,
+    low: 51.68,
+    close: 53.22,
+    adjClose: 25.71,
+    volume: 76163646854
+  },
+  {
+    date: "2002/6/20",
+    open: 51.68,
+    high: 52.83,
+    low: 50.91,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 58709305089
+  },
+  {
+    date: "2002/6/19",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2002/6/19",
+    open: 53.61,
+    high: 54.38,
+    low: 52.83,
+    close: 52.83,
+    adjClose: 25.53,
+    volume: 88099701354
+  },
+  {
+    date: "2002/6/18",
+    open: 53.29,
+    high: 53.29,
+    low: 52.59,
+    close: 52.94,
+    adjClose: 25.58,
+    volume: 91342244994
+  },
+  {
+    date: "2002/6/17",
+    open: 52.94,
+    high: 53.29,
+    low: 51.89,
+    close: 51.89,
+    adjClose: 25.07,
+    volume: 101340164674
+  },
+  {
+    date: "2002/6/14",
+    open: 52.59,
+    high: 52.94,
+    low: 52.24,
+    close: 52.94,
+    adjClose: 25.58,
+    volume: 34995182956
+  },
+  {
+    date: "2002/6/13",
+    open: 52.24,
+    high: 53.29,
+    low: 51.54,
+    close: 52.94,
+    adjClose: 25.58,
+    volume: 106950879163
+  },
+  {
+    date: "2002/6/12",
+    open: 51.54,
+    high: 51.89,
+    low: 50.13,
+    close: 50.49,
+    adjClose: 24.39,
+    volume: 69348253720
+  },
+  {
+    date: "2002/6/11",
+    open: 53.29,
+    high: 53.29,
+    low: 51.54,
+    close: 51.89,
+    adjClose: 25.07,
+    volume: 69473808544
+  },
+  {
+    date: "2002/6/10",
+    open: 52.59,
+    high: 53.29,
+    low: 51.89,
+    close: 52.59,
+    adjClose: 25.41,
+    volume: 96887346002
+  },
+  {
+    date: "2002/6/7",
+    open: 52.59,
+    high: 53.64,
+    low: 52.59,
+    close: 52.59,
+    adjClose: 25.41,
+    volume: 220255362174
+  },
+  {
+    date: "2002/6/6",
+    open: 57.15,
+    high: 57.15,
+    low: 56.09,
+    close: 56.45,
+    adjClose: 27.27,
+    volume: 85301430088
+  },
+  {
+    date: "2002/6/5",
+    open: 57.15,
+    high: 57.85,
+    low: 57.15,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: 64899535890
+  },
+  {
+    date: "2002/6/4",
+    open: 57.15,
+    high: 57.85,
+    low: 56.8,
+    close: 57.15,
+    adjClose: 27.61,
+    volume: 90498292782
+  },
+  {
+    date: "2002/6/3",
+    open: 58.9,
+    high: 59.6,
+    low: 57.85,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 42716879074
+  },
+  {
+    date: "2002/5/31",
+    open: 59.95,
+    high: 60.3,
+    low: 58.9,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 65398588791
+  },
+  {
+    date: "2002/5/30",
+    open: 58.9,
+    high: 60.65,
+    low: 58.9,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 74988001460
+  },
+  {
+    date: "2002/5/29",
+    open: 59.6,
+    high: 59.95,
+    low: 58.9,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 45141530520
+  },
+  {
+    date: "2002/5/28",
+    open: 61,
+    high: 61.35,
+    low: 59.6,
+    close: 60.3,
+    adjClose: 29.13,
+    volume: 49149752981
+  },
+  {
+    date: "2002/5/27",
+    open: 61,
+    high: 61,
+    low: 60.3,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 19161398245
+  },
+  {
+    date: "2002/5/24",
+    open: 60.65,
+    high: 61.7,
+    low: 60.65,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 44515744323
+  },
+  {
+    date: "2002/5/23",
+    open: 61,
+    high: 61.35,
+    low: 60.65,
+    close: 61,
+    adjClose: 29.47,
+    volume: 44650024598
+  },
+  {
+    date: "2002/5/22",
+    open: 60.65,
+    high: 62.41,
+    low: 60.65,
+    close: 61.7,
+    adjClose: 29.81,
+    volume: 53130516462
+  },
+  {
+    date: "2002/5/21",
+    open: 60.65,
+    high: 61.35,
+    low: 60.3,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 36348737770
+  },
+  {
+    date: "2002/5/20",
+    open: 62.06,
+    high: 62.41,
+    low: 61,
+    close: 61,
+    adjClose: 29.47,
+    volume: 44740805587
+  },
+  {
+    date: "2002/5/17",
+    open: 62.41,
+    high: 62.76,
+    low: 61.7,
+    close: 62.76,
+    adjClose: 30.32,
+    volume: 40331926640
+  },
+  {
+    date: "2002/5/16",
+    open: 62.41,
+    high: 62.41,
+    low: 61.7,
+    close: 62.06,
+    adjClose: 29.98,
+    volume: 27776030515
+  },
+  {
+    date: "2002/5/15",
+    open: 62.41,
+    high: 63.46,
+    low: 62.06,
+    close: 63.11,
+    adjClose: 30.49,
+    volume: 79152731477
+  },
+  {
+    date: "2002/5/14",
+    open: 60.3,
+    high: 61,
+    low: 60.3,
+    close: 61,
+    adjClose: 29.47,
+    volume: 36539659073
+  },
+  {
+    date: "2002/5/13",
+    open: 59.6,
+    high: 60.3,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 27724948539
+  },
+  {
+    date: "2002/5/10",
+    open: 58.9,
+    high: 61,
+    low: 58.55,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 43498655013
+  },
+  {
+    date: "2002/5/9",
+    open: 61.35,
+    high: 61.35,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 76347552789
+  },
+  {
+    date: "2002/5/8",
+    open: 57.85,
+    high: 58.9,
+    low: 57.85,
+    close: 58.2,
+    adjClose: 28.12,
+    volume: 79020605781
+  },
+  {
+    date: "2002/5/7",
+    open: 56.09,
+    high: 57.85,
+    low: 56.09,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: 61861001999
+  },
+  {
+    date: "2002/5/6",
+    open: 57.5,
+    high: 57.5,
+    low: 56.09,
+    close: 56.8,
+    adjClose: 27.44,
+    volume: 86268098080
+  },
+  {
+    date: "2002/5/3",
+    open: 58.2,
+    high: 59.6,
+    low: 58.2,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 58913763934
+  },
+  {
+    date: "2002/5/2",
+    open: 61.35,
+    high: 61.7,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 75300367818
+  },
+  {
+    date: "2002/5/1",
+    open: 61.35,
+    high: 61.35,
+    low: 61.35,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: null
+  },
+  {
+    date: "2002/4/30",
+    open: 61.7,
+    high: 62.06,
+    low: 61,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 75670931619
+  },
+  {
+    date: "2002/4/29",
+    open: 63.11,
+    high: 63.11,
+    low: 61.7,
+    close: 62.41,
+    adjClose: 30.15,
+    volume: 139939925764
+  },
+  {
+    date: "2002/4/26",
+    open: 63.81,
+    high: 64.51,
+    low: 63.81,
+    close: 64.51,
+    adjClose: 31.17,
+    volume: 51807319192
+  },
+  {
+    date: "2002/4/25",
+    open: 65.21,
+    high: 65.56,
+    low: 64.51,
+    close: 64.51,
+    adjClose: 31.17,
+    volume: 54026886847
+  },
+  {
+    date: "2002/4/24",
+    open: 65.91,
+    high: 66.96,
+    low: 65.91,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 39788585830
+  },
+  {
+    date: "2002/4/23",
+    open: 64.51,
+    high: 65.91,
+    low: 64.51,
+    close: 65.91,
+    adjClose: 31.84,
+    volume: 29257137007
+  },
+  {
+    date: "2002/4/22",
+    open: 65.56,
+    high: 66.26,
+    low: 65.21,
+    close: 65.21,
+    adjClose: 31.51,
+    volume: 33068661869
+  },
+  {
+    date: "2002/4/19",
+    open: 66.61,
+    high: 66.61,
+    low: 65.91,
+    close: 66.26,
+    adjClose: 32.01,
+    volume: 33966082760
+  },
+  {
+    date: "2002/4/18",
+    open: 68.01,
+    high: 68.01,
+    low: 66.61,
+    close: 66.96,
+    adjClose: 32.35,
+    volume: 43245786585
+  },
+  {
+    date: "2002/4/17",
+    open: 66.96,
+    high: 68.01,
+    low: 66.96,
+    close: 67.31,
+    adjClose: 32.52,
+    volume: 119691131673
+  },
+  {
+    date: "2002/4/16",
+    open: 64.51,
+    high: 65.21,
+    low: 64.16,
+    close: 64.86,
+    adjClose: 31.34,
+    volume: 33122690024
+  },
+  {
+    date: "2002/4/15",
+    open: 64.51,
+    high: 64.86,
+    low: 63.81,
+    close: 64.16,
+    adjClose: 31,
+    volume: 45049916269
+  },
+  {
+    date: "2002/4/12",
+    open: 62.76,
+    high: 64.51,
+    low: 62.06,
+    close: 64.51,
+    adjClose: 31.17,
+    volume: 69123195432
+  },
+  {
+    date: "2002/4/11",
+    open: 63.11,
+    high: 63.81,
+    low: 63.11,
+    close: 63.11,
+    adjClose: 30.49,
+    volume: 65494044979
+  },
+  {
+    date: "2002/4/10",
+    open: 63.46,
+    high: 63.81,
+    low: 63.11,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 76946484121
+  },
+  {
+    date: "2002/4/9",
+    open: 64.51,
+    high: 64.51,
+    low: 63.46,
+    close: 64.16,
+    adjClose: 31,
+    volume: 39162192542
+  },
+  {
+    date: "2002/4/8",
+    open: 64.51,
+    high: 64.86,
+    low: 63.81,
+    close: 64.16,
+    adjClose: 31,
+    volume: 61887291435
+  },
+  {
+    date: "2002/4/5",
+    open: 64.86,
+    high: 64.86,
+    low: 64.86,
+    close: 64.86,
+    adjClose: 31.34,
+    volume: null
+  },
+  {
+    date: "2002/4/4",
+    open: 65.91,
+    high: 66.61,
+    low: 64.51,
+    close: 64.86,
+    adjClose: 31.34,
+    volume: 67791165578
+  },
+  {
+    date: "2002/4/3",
+    open: 66.61,
+    high: 66.96,
+    low: 66.26,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 50674695041
+  },
+  {
+    date: "2002/4/2",
+    open: 67.66,
+    high: 68.37,
+    low: 67.31,
+    close: 67.31,
+    adjClose: 32.52,
+    volume: 52946121391
+  },
+  {
+    date: "2002/4/1",
+    open: 67.31,
+    high: 68.01,
+    low: 66.96,
+    close: 66.96,
+    adjClose: 32.35,
+    volume: 29433916653
+  },
+  {
+    date: "2002/3/29",
+    open: 68.01,
+    high: 68.37,
+    low: 67.31,
+    close: 67.66,
+    adjClose: 32.69,
+    volume: 84362914469
+  },
+  {
+    date: "2002/3/28",
+    open: 65.56,
+    high: 66.61,
+    low: 65.21,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 66767145308
+  },
+  {
+    date: "2002/3/27",
+    open: 66.96,
+    high: 66.96,
+    low: 64.86,
+    close: 64.86,
+    adjClose: 31.34,
+    volume: 49892148333
+  },
+  {
+    date: "2002/3/26",
+    open: 66.61,
+    high: 66.96,
+    low: 65.91,
+    close: 66.26,
+    adjClose: 32.01,
+    volume: 34394957091
+  },
+  {
+    date: "2002/3/25",
+    open: 66.61,
+    high: 67.66,
+    low: 65.56,
+    close: 67.31,
+    adjClose: 32.52,
+    volume: 50071097438
+  },
+  {
+    date: "2002/3/22",
+    open: 66.96,
+    high: 67.31,
+    low: 66.26,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 57703426137
+  },
+  {
+    date: "2002/3/21",
+    open: 64.86,
+    high: 66.61,
+    low: 64.86,
+    close: 65.91,
+    adjClose: 31.84,
+    volume: 59678431206
+  },
+  {
+    date: "2002/3/20",
+    open: 64.51,
+    high: 67.31,
+    low: 64.16,
+    close: 67.31,
+    adjClose: 32.52,
+    volume: 89969926892
+  },
+  {
+    date: "2002/3/19",
+    open: 64.51,
+    high: 64.51,
+    low: 63.11,
+    close: 64.16,
+    adjClose: 31,
+    volume: 46678081714
+  },
+  {
+    date: "2002/3/18",
+    open: 64.16,
+    high: 64.16,
+    low: 62.41,
+    close: 64.16,
+    adjClose: 31,
+    volume: 39047773677
+  },
+  {
+    date: "2002/3/15",
+    open: 63.81,
+    high: 64.51,
+    low: 63.11,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 93412069400
+  },
+  {
+    date: "2002/3/14",
+    open: 64.51,
+    high: 65.21,
+    low: 64.16,
+    close: 65.21,
+    adjClose: 31.51,
+    volume: 61840313278
+  },
+  {
+    date: "2002/3/13",
+    open: 66.61,
+    high: 67.31,
+    low: 65.56,
+    close: 65.91,
+    adjClose: 31.84,
+    volume: 55129555206
+  },
+  {
+    date: "2002/3/12",
+    open: 66.96,
+    high: 67.66,
+    low: 65.56,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 81775919652
+  },
+  {
+    date: "2002/3/11",
+    open: 65.56,
+    high: 68.37,
+    low: 65.56,
+    close: 68.37,
+    adjClose: 33.03,
+    volume: 141985430804
+  },
+  {
+    date: "2002/3/8",
+    open: 65.56,
+    high: 66.26,
+    low: 63.81,
+    close: 64.16,
+    adjClose: 31,
+    volume: 84486290907
+  },
+  {
+    date: "2002/3/7",
+    open: 66.61,
+    high: 66.61,
+    low: 65.21,
+    close: 65.56,
+    adjClose: 31.67,
+    volume: 120272975169
+  },
+  {
+    date: "2002/3/6",
+    open: 64.16,
+    high: 66.26,
+    low: 63.81,
+    close: 66.26,
+    adjClose: 32.01,
+    volume: 179561088297
+  },
+  {
+    date: "2002/3/5",
+    open: 64.51,
+    high: 64.51,
+    low: 62.41,
+    close: 63.81,
+    adjClose: 30.83,
+    volume: 179088949780
+  },
+  {
+    date: "2002/3/4",
+    open: 60.65,
+    high: 60.65,
+    low: 58.9,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 97211205432
+  },
+  {
+    date: "2002/3/1",
+    open: 56.8,
+    high: 57.85,
+    low: 56.8,
+    close: 56.8,
+    adjClose: 27.44,
+    volume: 75910280361
+  },
+  {
+    date: "2002/2/28",
+    open: 57.5,
+    high: 57.5,
+    low: 57.5,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: null
+  },
+  {
+    date: "2002/2/27",
+    open: 56.45,
+    high: 57.85,
+    low: 56.45,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: 74203270414
+  },
+  {
+    date: "2002/2/26",
+    open: 57.5,
+    high: 57.85,
+    low: 56.09,
+    close: 56.09,
+    adjClose: 27.1,
+    volume: 63760930103
+  },
+  {
+    date: "2002/2/25",
+    open: 57.5,
+    high: 58.2,
+    low: 56.8,
+    close: 56.8,
+    adjClose: 27.44,
+    volume: 33289509205
+  },
+  {
+    date: "2002/2/22",
+    open: 56.09,
+    high: 57.5,
+    low: 56.09,
+    close: 57.15,
+    adjClose: 27.61,
+    volume: 45345656060
+  },
+  {
+    date: "2002/2/21",
+    open: 58.2,
+    high: 58.55,
+    low: 56.8,
+    close: 57.85,
+    adjClose: 27.95,
+    volume: 53616987097
+  },
+  {
+    date: "2002/2/20",
+    open: 58.9,
+    high: 58.9,
+    low: 57.5,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: 64741959973
+  },
+  {
+    date: "2002/2/19",
+    open: 61.35,
+    high: 61.7,
+    low: 59.6,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 49938769378
+  },
+  {
+    date: "2002/2/18",
+    open: 62.06,
+    high: 62.41,
+    low: 61,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 79417673286
+  },
+  {
+    date: "2002/2/15",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/14",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/13",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/12",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/11",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/8",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/7",
+    open: 60.65,
+    high: 60.65,
+    low: 60.65,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: null
+  },
+  {
+    date: "2002/2/6",
+    open: 60.3,
+    high: 61.35,
+    low: 60.3,
+    close: 60.65,
+    adjClose: 29.3,
+    volume: 70636501574
+  },
+  {
+    date: "2002/2/5",
+    open: 59.25,
+    high: 60.3,
+    low: 59.25,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 43280411623
+  },
+  {
+    date: "2002/2/4",
+    open: 59.6,
+    high: 61,
+    low: 59.25,
+    close: 60.3,
+    adjClose: 29.13,
+    volume: 48429656333
+  },
+  {
+    date: "2002/2/1",
+    open: 61,
+    high: 61,
+    low: 59.6,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 103873616415
+  },
+  {
+    date: "2002/1/31",
+    open: 61,
+    high: 61,
+    low: 61,
+    close: 61,
+    adjClose: 29.47,
+    volume: null
+  },
+  {
+    date: "2002/1/30",
+    open: 61,
+    high: 61.7,
+    low: 60.65,
+    close: 61,
+    adjClose: 29.47,
+    volume: 73377524990
+  },
+  {
+    date: "2002/1/29",
+    open: 63.81,
+    high: 63.81,
+    low: 62.41,
+    close: 62.41,
+    adjClose: 30.15,
+    volume: 58836080048
+  },
+  {
+    date: "2002/1/28",
+    open: 64.51,
+    high: 64.86,
+    low: 63.81,
+    close: 64.51,
+    adjClose: 31.17,
+    volume: 88306395399
+  },
+  {
+    date: "2002/1/25",
+    open: 64.16,
+    high: 64.86,
+    low: 63.11,
+    close: 64.51,
+    adjClose: 31.17,
+    volume: 131361617793
+  },
+  {
+    date: "2002/1/24",
+    open: 63.11,
+    high: 63.81,
+    low: 61.35,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 91067250466
+  },
+  {
+    date: "2002/1/23",
+    open: 61.7,
+    high: 64.51,
+    low: 61.35,
+    close: 62.06,
+    adjClose: 29.98,
+    volume: 120107453497
+  },
+  {
+    date: "2002/1/22",
+    open: 63.81,
+    high: 65.21,
+    low: 62.06,
+    close: 63.11,
+    adjClose: 30.49,
+    volume: 128790074046
+  },
+  {
+    date: "2002/1/21",
+    open: 60.3,
+    high: 63.46,
+    low: 59.95,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 106826877778
+  },
+  {
+    date: "2002/1/18",
+    open: 59.6,
+    high: 60.65,
+    low: 59.25,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 64443521005
+  },
+  {
+    date: "2002/1/17",
+    open: 58.2,
+    high: 59.6,
+    low: 57.85,
+    close: 59.25,
+    adjClose: 28.63,
+    volume: 74009989192
+  },
+  {
+    date: "2002/1/16",
+    open: 61.35,
+    high: 61.7,
+    low: 59.6,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 63000476760
+  },
+  {
+    date: "2002/1/15",
+    open: 61.7,
+    high: 62.06,
+    low: 61,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 36711147501
+  },
+  {
+    date: "2002/1/14",
+    open: 60.65,
+    high: 61.7,
+    low: 60.3,
+    close: 61.7,
+    adjClose: 29.81,
+    volume: 47642526681
+  },
+  {
+    date: "2002/1/11",
+    open: 63.11,
+    high: 63.46,
+    low: 61.35,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 69855335701
+  },
+  {
+    date: "2002/1/10",
+    open: 64.16,
+    high: 64.51,
+    low: 63.11,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 51368481421
+  },
+  {
+    date: "2002/1/9",
+    open: 64.86,
+    high: 65.21,
+    low: 63.11,
+    close: 64.16,
+    adjClose: 31,
+    volume: 72284564141
+  },
+  {
+    date: "2002/1/8",
+    open: 64.51,
+    high: 64.51,
+    low: 63.11,
+    close: 63.46,
+    adjClose: 30.66,
+    volume: 66545271274
+  },
+  {
+    date: "2002/1/7",
+    open: 63.11,
+    high: 65.21,
+    low: 62.41,
+    close: 64.86,
+    adjClose: 31.34,
+    volume: 143660633926
+  },
+  {
+    date: "2002/1/4",
+    open: 62.06,
+    high: 62.76,
+    low: 61.7,
+    close: 62.41,
+    adjClose: 30.15,
+    volume: 161224084400
+  },
+  {
+    date: "2002/1/3",
+    open: 60.3,
+    high: 60.3,
+    low: 60.3,
+    close: 60.3,
+    adjClose: 29.13,
+    volume: null
+  },
+  {
+    date: "2002/1/2",
+    open: 61.35,
+    high: 61.7,
+    low: 59.25,
+    close: 60.3,
+    adjClose: 29.13,
+    volume: 63219970044
+  },
+  {
+    date: "2002/1/1",
+    open: 61.35,
+    high: 61.35,
+    low: 61.35,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: null
+  },
+  {
+    date: "2001/12/31",
+    open: 60.65,
+    high: 62.41,
+    low: 60.65,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 142278227393
+  },
+  {
+    date: "2001/12/28",
+    open: 58.55,
+    high: 59.95,
+    low: 57.85,
+    close: 59.6,
+    adjClose: 28.8,
+    volume: 90661600356
+  },
+  {
+    date: "2001/12/27",
+    open: 58.55,
+    high: 59.6,
+    low: 57.5,
+    close: 57.5,
+    adjClose: 27.78,
+    volume: 74257765791
+  },
+  {
+    date: "2001/12/26",
+    open: 58.55,
+    high: 59.25,
+    low: 57.5,
+    close: 57.85,
+    adjClose: 27.95,
+    volume: 50672647595
+  },
+  {
+    date: "2001/12/25",
+    open: 56.8,
+    high: 58.9,
+    low: 56.45,
+    close: 58.55,
+    adjClose: 28.29,
+    volume: 56300051145
+  },
+  {
+    date: "2001/12/24",
+    open: 55.04,
+    high: 57.5,
+    low: 55.04,
+    close: 56.8,
+    adjClose: 27.44,
+    volume: 69557938312
+  },
+  {
+    date: "2001/12/21",
+    open: 57.5,
+    high: 57.85,
+    low: 56.09,
+    close: 56.09,
+    adjClose: 27.1,
+    volume: 184451732922
+  },
+  {
+    date: "2001/12/20",
+    open: 58.2,
+    high: 60.3,
+    low: 58.2,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 82619407618
+  },
+  {
+    date: "2001/12/19",
+    open: 58.9,
+    high: 60.65,
+    low: 58.55,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 95314211603
+  },
+  {
+    date: "2001/12/18",
+    open: 58.9,
+    high: 58.9,
+    low: 57.5,
+    close: 57.85,
+    adjClose: 27.95,
+    volume: 90387456947
+  },
+  {
+    date: "2001/12/17",
+    open: 57.85,
+    high: 58.2,
+    low: 56.45,
+    close: 56.8,
+    adjClose: 27.44,
+    volume: 62690628046
+  },
+  {
+    date: "2001/12/14",
+    open: 57.85,
+    high: 58.9,
+    low: 57.5,
+    close: 58.55,
+    adjClose: 28.29,
+    volume: 73413581455
+  },
+  {
+    date: "2001/12/13",
+    open: 62.41,
+    high: 62.76,
+    low: 58.9,
+    close: 58.9,
+    adjClose: 28.46,
+    volume: 105076597693
+  },
+  {
+    date: "2001/12/12",
+    open: 60.3,
+    high: 63.11,
+    low: 59.95,
+    close: 62.06,
+    adjClose: 29.98,
+    volume: 118173177116
+  },
+  {
+    date: "2001/12/11",
+    open: 57.5,
+    high: 60.3,
+    low: 57.15,
+    close: 59.95,
+    adjClose: 28.96,
+    volume: 95422642880
+  },
+  {
+    date: "2001/12/10",
+    open: 60.65,
+    high: 61,
+    low: 58.9,
+    close: 58.9,
+    adjClose: 28.46,
+    volume: 107978018216
+  },
+  {
+    date: "2001/12/7",
+    open: 61.7,
+    high: 62.41,
+    low: 60.3,
+    close: 62.06,
+    adjClose: 29.98,
+    volume: 118018166457
+  },
+  {
+    date: "2001/12/6",
+    open: 62.41,
+    high: 62.41,
+    low: 61,
+    close: 62.41,
+    adjClose: 30.15,
+    volume: 194245604436
+  },
+  {
+    date: "2001/12/5",
+    open: 57.5,
+    high: 58.55,
+    low: 57.15,
+    close: 58.55,
+    adjClose: 28.29,
+    volume: 205624746225
+  },
+  {
+    date: "2001/12/4",
+    open: 53.64,
+    high: 55.39,
+    low: 52.94,
+    close: 55.04,
+    adjClose: 26.59,
+    volume: 87963745896
+  },
+  {
+    date: "2001/12/3",
+    open: 52.94,
+    high: 54.34,
+    low: 52.59,
+    close: 54.34,
+    adjClose: 26.25,
+    volume: 95400454286
+  },
+  {
+    date: "2001/11/30",
+    open: 52.59,
+    high: 52.59,
+    low: 51.19,
+    close: 51.19,
+    adjClose: 24.73,
+    volume: 121174113006
+  },
+  {
+    date: "2001/11/29",
+    open: 50.84,
+    high: 51.19,
+    low: 50.49,
+    close: 51.19,
+    adjClose: 24.73,
+    volume: 78561674477
+  },
+  {
+    date: "2001/11/28",
+    open: 53.29,
+    high: 54.69,
+    low: 51.89,
+    close: 51.89,
+    adjClose: 25.07,
+    volume: 82210650629
+  },
+  {
+    date: "2001/11/27",
+    open: 55.39,
+    high: 55.39,
+    low: 51.89,
+    close: 52.94,
+    adjClose: 25.58,
+    volume: 208435722041
+  },
+  {
+    date: "2001/11/26",
+    open: 51.54,
+    high: 52.24,
+    low: 51.19,
+    close: 51.89,
+    adjClose: 25.07,
+    volume: 106122556577
+  },
+  {
+    date: "2001/11/23",
+    open: 51.19,
+    high: 52.24,
+    low: 50.49,
+    close: 51.54,
+    adjClose: 24.9,
+    volume: 67781672336
+  },
+  {
+    date: "2001/11/22",
+    open: 52.59,
+    high: 52.59,
+    low: 50.84,
+    close: 51.19,
+    adjClose: 24.73,
+    volume: 78148114323
+  },
+  {
+    date: "2001/11/21",
+    open: 50.49,
+    high: 52.94,
+    low: 50.49,
+    close: 52.94,
+    adjClose: 25.58,
+    volume: 113891195141
+  },
+  {
+    date: "2001/11/20",
+    open: 54.69,
+    high: 55.04,
+    low: 51.89,
+    close: 52.24,
+    adjClose: 25.24,
+    volume: 108705218429
+  },
+  {
+    date: "2001/11/19",
+    open: 54.34,
+    high: 55.74,
+    low: 53.64,
+    close: 55.74,
+    adjClose: 26.93,
+    volume: 99340227197
+  },
+  {
+    date: "2001/11/16",
+    open: 52.24,
+    high: 55.04,
+    low: 51.54,
+    close: 54.34,
+    adjClose: 26.25,
+    volume: 154915643388
+  },
+  {
+    date: "2001/11/15",
+    open: 50.49,
+    high: 52.24,
+    low: 50.13,
+    close: 52.24,
+    adjClose: 25.24,
+    volume: 127912553253
+  },
+  {
+    date: "2001/11/14",
+    open: 49.08,
+    high: 50.49,
+    low: 49.08,
+    close: 50.49,
+    adjClose: 24.39,
+    volume: 167287343831
+  },
+  {
+    date: "2001/11/13",
+    open: 46.98,
+    high: 47.68,
+    low: 46.98,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 32001930937
+  },
+  {
+    date: "2001/11/12",
+    open: 47.68,
+    high: 48.38,
+    low: 46.98,
+    close: 47.68,
+    adjClose: 23.04,
+    volume: 60076010572
+  },
+  {
+    date: "2001/11/9",
+    open: 47.33,
+    high: 47.33,
+    low: 47.33,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: null
+  },
+  {
+    date: "2001/11/8",
+    open: 47.68,
+    high: 48.73,
+    low: 46.98,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 97915110002
+  },
+  {
+    date: "2001/11/7",
+    open: 46.63,
+    high: 47.33,
+    low: 46.28,
+    close: 46.98,
+    adjClose: 22.7,
+    volume: 62689312681
+  },
+  {
+    date: "2001/11/6",
+    open: 46.98,
+    high: 47.33,
+    low: 45.93,
+    close: 45.93,
+    adjClose: 22.19,
+    volume: 114083762138
+  },
+  {
+    date: "2001/11/5",
+    open: 44.17,
+    high: 45.58,
+    low: 43.82,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 72908380267
+  },
+  {
+    date: "2001/11/2",
+    open: 44.17,
+    high: 44.88,
+    low: 43.47,
+    close: 43.82,
+    adjClose: 21.17,
+    volume: 107589015503
+  },
+  {
+    date: "2001/11/1",
+    open: 43.82,
+    high: 43.82,
+    low: 42.42,
+    close: 42.77,
+    adjClose: 20.66,
+    volume: 67706863206
+  },
+  {
+    date: "2001/10/31",
+    open: 42.07,
+    high: 43.82,
+    low: 42.07,
+    close: 42.77,
+    adjClose: 20.66,
+    volume: 87162486490
+  },
+  {
+    date: "2001/10/30",
+    open: 43.82,
+    high: 45.23,
+    low: 43.82,
+    close: 43.82,
+    adjClose: 21.17,
+    volume: 103426940023
+  },
+  {
+    date: "2001/10/29",
+    open: 46.63,
+    high: 46.98,
+    low: 45.23,
+    close: 46.98,
+    adjClose: 22.7,
+    volume: 159762803606
+  },
+  {
+    date: "2001/10/26",
+    open: 44.17,
+    high: 44.88,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 63375879436
+  },
+  {
+    date: "2001/10/25",
+    open: 44.17,
+    high: 44.17,
+    low: 43.12,
+    close: 43.82,
+    adjClose: 21.17,
+    volume: 100118530217
+  },
+  {
+    date: "2001/10/24",
+    open: 40.67,
+    high: 43.12,
+    low: 40.67,
+    close: 43.12,
+    adjClose: 20.83,
+    volume: 133139455065
+  },
+  {
+    date: "2001/10/23",
+    open: 41.72,
+    high: 41.72,
+    low: 40.32,
+    close: 40.32,
+    adjClose: 19.48,
+    volume: 59501452172
+  },
+  {
+    date: "2001/10/22",
+    open: 41.02,
+    high: 41.37,
+    low: 39.97,
+    close: 40.67,
+    adjClose: 19.65,
+    volume: 53561188259
+  },
+  {
+    date: "2001/10/19",
+    open: 41.02,
+    high: 41.37,
+    low: 39.97,
+    close: 41.02,
+    adjClose: 19.82,
+    volume: 87127763246
+  },
+  {
+    date: "2001/10/18",
+    open: 39.97,
+    high: 41.72,
+    low: 39.97,
+    close: 41.72,
+    adjClose: 20.16,
+    volume: 85720721898
+  },
+  {
+    date: "2001/10/17",
+    open: 40.67,
+    high: 41.37,
+    low: 39.97,
+    close: 40.67,
+    adjClose: 19.65,
+    volume: 129414568686
+  },
+  {
+    date: "2001/10/16",
+    open: 37.86,
+    high: 38.92,
+    low: 37.16,
+    close: 38.92,
+    adjClose: 18.8,
+    volume: 42133562488
+  },
+  {
+    date: "2001/10/15",
+    open: 37.51,
+    high: 38.57,
+    low: 37.16,
+    close: 37.51,
+    adjClose: 18.12,
+    volume: 45872414944
+  },
+  {
+    date: "2001/10/12",
+    open: 39.27,
+    high: 39.27,
+    low: 37.86,
+    close: 38.57,
+    adjClose: 18.63,
+    volume: 146532259358
+  },
+  {
+    date: "2001/10/11",
+    open: 36.11,
+    high: 36.81,
+    low: 35.76,
+    close: 36.81,
+    adjClose: 17.79,
+    volume: 70577691087
+  },
+  {
+    date: "2001/10/10",
+    open: 34.5,
+    high: 34.5,
+    low: 34.5,
+    close: 34.5,
+    adjClose: 16.67,
+    volume: null
+  },
+  {
+    date: "2001/10/9",
+    open: 33.38,
+    high: 34.5,
+    low: 33.17,
+    close: 34.5,
+    adjClose: 16.67,
+    volume: 85981949737
+  },
+  {
+    date: "2001/10/8",
+    open: 31.9,
+    high: 32.68,
+    low: 31.9,
+    close: 32.25,
+    adjClose: 15.58,
+    volume: 36931798424
+  },
+  {
+    date: "2001/10/5",
+    open: 31.34,
+    high: 33.24,
+    low: 31.2,
+    close: 32.82,
+    adjClose: 15.85,
+    volume: 90599194936
+  },
+  {
+    date: "2001/10/4",
+    open: 33.03,
+    high: 33.03,
+    low: 30.99,
+    close: 31.06,
+    adjClose: 15.01,
+    volume: 107361475283
+  },
+  {
+    date: "2001/10/3",
+    open: 31.2,
+    high: 31.69,
+    low: 30.57,
+    close: 30.92,
+    adjClose: 14.94,
+    volume: 50025077532
+  },
+  {
+    date: "2001/10/2",
+    open: 32.68,
+    high: 32.68,
+    low: 30.71,
+    close: 31.55,
+    adjClose: 15.24,
+    volume: 67122484210
+  },
+  {
+    date: "2001/10/1",
+    open: 32.6,
+    high: 32.6,
+    low: 32.6,
+    close: 32.6,
+    adjClose: 15.75,
+    volume: null
+  },
+  {
+    date: "2001/9/28",
+    open: 32.6,
+    high: 32.6,
+    low: 32.6,
+    close: 32.6,
+    adjClose: 15.75,
+    volume: null
+  },
+  {
+    date: "2001/9/27",
+    open: 33.66,
+    high: 33.66,
+    low: 32.25,
+    close: 32.6,
+    adjClose: 15.75,
+    volume: 52486362776
+  },
+  {
+    date: "2001/9/26",
+    open: 32.96,
+    high: 34.15,
+    low: 30.92,
+    close: 34.01,
+    adjClose: 16.43,
+    volume: 137796559978
+  },
+  {
+    date: "2001/9/25",
+    open: 34.5,
+    high: 34.57,
+    low: 33.1,
+    close: 33.24,
+    adjClose: 16.06,
+    volume: 181477080515
+  },
+  {
+    date: "2001/9/24",
+    open: 35.76,
+    high: 35.76,
+    low: 35.76,
+    close: 35.76,
+    adjClose: 17.28,
+    volume: null
+  },
+  {
+    date: "2001/9/21",
+    open: 35.76,
+    high: 35.76,
+    low: 35.76,
+    close: 35.76,
+    adjClose: 17.28,
+    volume: 2609586650
+  },
+  {
+    date: "2001/9/20",
+    open: 36.81,
+    high: 36.81,
+    low: 36.81,
+    close: 36.81,
+    adjClose: 17.79,
+    volume: 4882070946
+  },
+  {
+    date: "2001/9/19",
+    open: 38.92,
+    high: 38.92,
+    low: 38.92,
+    close: 38.92,
+    adjClose: 18.8,
+    volume: null
+  },
+  {
+    date: "2001/9/18",
+    open: 38.92,
+    high: 38.92,
+    low: 38.92,
+    close: 38.92,
+    adjClose: 18.8,
+    volume: null
+  },
+  {
+    date: "2001/9/17",
+    open: 38.92,
+    high: 38.92,
+    low: 38.92,
+    close: 38.92,
+    adjClose: 18.8,
+    volume: null
+  },
+  {
+    date: "2001/9/14",
+    open: 40.67,
+    high: 41.37,
+    low: 38.57,
+    close: 38.92,
+    adjClose: 18.8,
+    volume: 98405401741
+  },
+  {
+    date: "2001/9/13",
+    open: 41.37,
+    high: 41.37,
+    low: 41.37,
+    close: 41.37,
+    adjClose: 19.99,
+    volume: 38823893860
+  },
+  {
+    date: "2001/9/12",
+    open: 44.17,
+    high: 44.17,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: null
+  },
+  {
+    date: "2001/9/11",
+    open: 44.88,
+    high: 44.88,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 29208435782
+  },
+  {
+    date: "2001/9/10",
+    open: 43.82,
+    high: 45.23,
+    low: 43.82,
+    close: 44.88,
+    adjClose: 21.68,
+    volume: 28395811269
+  },
+  {
+    date: "2001/9/7",
+    open: 44.53,
+    high: 44.53,
+    low: 43.82,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 41915298266
+  },
+  {
+    date: "2001/9/6",
+    open: 44.88,
+    high: 45.23,
+    low: 44.17,
+    close: 44.88,
+    adjClose: 21.68,
+    volume: 32151543245
+  },
+  {
+    date: "2001/9/5",
+    open: 45.93,
+    high: 45.93,
+    low: 45.23,
+    close: 45.93,
+    adjClose: 22.19,
+    volume: 45011258834
+  },
+  {
+    date: "2001/9/4",
+    open: 44.88,
+    high: 46.28,
+    low: 44.53,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 52138689890
+  },
+  {
+    date: "2001/9/3",
+    open: 44.88,
+    high: 45.23,
+    low: 44.53,
+    close: 44.88,
+    adjClose: 21.68,
+    volume: 39017023309
+  },
+  {
+    date: "2001/8/31",
+    open: 43.82,
+    high: 45.23,
+    low: 43.47,
+    close: 44.88,
+    adjClose: 21.68,
+    volume: 49968004993
+  },
+  {
+    date: "2001/8/30",
+    open: 44.53,
+    high: 44.88,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 50885587864
+  },
+  {
+    date: "2001/8/29",
+    open: 44.17,
+    high: 45.23,
+    low: 43.82,
+    close: 45.23,
+    adjClose: 21.85,
+    volume: 99128757042
+  },
+  {
+    date: "2001/8/28",
+    open: 44.88,
+    high: 44.88,
+    low: 43.47,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 97109196229
+  },
+  {
+    date: "2001/8/27",
+    open: 42.42,
+    high: 45.23,
+    low: 42.42,
+    close: 44.53,
+    adjClose: 21.51,
+    volume: 172843967671
+  },
+  {
+    date: "2001/8/24",
+    open: 42.77,
+    high: 42.77,
+    low: 42.07,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 92537405507
+  },
+  {
+    date: "2001/8/23",
+    open: 42.07,
+    high: 43.82,
+    low: 42.07,
+    close: 43.47,
+    adjClose: 21,
+    volume: 109761355021
+  },
+  {
+    date: "2001/8/22",
+    open: 44.88,
+    high: 45.23,
+    low: 43.47,
+    close: 43.47,
+    adjClose: 21,
+    volume: 131335001004
+  },
+  {
+    date: "2001/8/21",
+    open: 45.58,
+    high: 46.63,
+    low: 45.58,
+    close: 46.63,
+    adjClose: 22.53,
+    volume: 28486645824
+  },
+  {
+    date: "2001/8/20",
+    open: 45.93,
+    high: 46.28,
+    low: 45.58,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 54058062773
+  },
+  {
+    date: "2001/8/17",
+    open: 47.68,
+    high: 48.03,
+    low: 46.98,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 24091688315
+  },
+  {
+    date: "2001/8/16",
+    open: 47.68,
+    high: 48.03,
+    low: 47.33,
+    close: 47.68,
+    adjClose: 23.04,
+    volume: 22472824164
+  },
+  {
+    date: "2001/8/15",
+    open: 48.38,
+    high: 48.73,
+    low: 48.03,
+    close: 48.03,
+    adjClose: 23.21,
+    volume: 37550138824
+  },
+  {
+    date: "2001/8/14",
+    open: 47.68,
+    high: 48.38,
+    low: 47.68,
+    close: 48.38,
+    adjClose: 23.37,
+    volume: 30352773225
+  },
+  {
+    date: "2001/8/13",
+    open: 47.68,
+    high: 47.68,
+    low: 46.98,
+    close: 47.68,
+    adjClose: 23.04,
+    volume: 22755986154
+  },
+  {
+    date: "2001/8/10",
+    open: 46.63,
+    high: 48.03,
+    low: 45.93,
+    close: 48.03,
+    adjClose: 23.21,
+    volume: 51262912996
+  },
+  {
+    date: "2001/8/9",
+    open: 45.58,
+    high: 46.28,
+    low: 45.58,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 29149178904
+  },
+  {
+    date: "2001/8/8",
+    open: 46.28,
+    high: 47.33,
+    low: 46.28,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 33965064989
+  },
+  {
+    date: "2001/8/7",
+    open: 46.63,
+    high: 46.98,
+    low: 45.93,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 45691471961
+  },
+  {
+    date: "2001/8/6",
+    open: 47.68,
+    high: 48.03,
+    low: 47.33,
+    close: 47.68,
+    adjClose: 23.04,
+    volume: 46619357529
+  },
+  {
+    date: "2001/8/3",
+    open: 49.43,
+    high: 49.43,
+    low: 48.38,
+    close: 48.38,
+    adjClose: 23.37,
+    volume: 69056552276
+  },
+  {
+    date: "2001/8/2",
+    open: 49.08,
+    high: 49.78,
+    low: 49.08,
+    close: 49.43,
+    adjClose: 23.88,
+    volume: 99316282800
+  },
+  {
+    date: "2001/8/1",
+    open: 48.03,
+    high: 48.03,
+    low: 46.98,
+    close: 48.03,
+    adjClose: 23.21,
+    volume: 137701829919
+  },
+  {
+    date: "2001/7/31",
+    open: 45.23,
+    high: 46.28,
+    low: 44.88,
+    close: 46.28,
+    adjClose: 22.36,
+    volume: 103162152962
+  },
+  {
+    date: "2001/7/30",
+    open: 44.53,
+    high: 44.53,
+    low: 44.53,
+    close: 44.53,
+    adjClose: 21.51,
+    volume: null
+  },
+  {
+    date: "2001/7/27",
+    open: 44.53,
+    high: 45.23,
+    low: 44.17,
+    close: 44.53,
+    adjClose: 21.51,
+    volume: 156155062051
+  },
+  {
+    date: "2001/7/26",
+    open: 42.07,
+    high: 42.77,
+    low: 41.37,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 51942754131
+  },
+  {
+    date: "2001/7/25",
+    open: 40.67,
+    high: 41.72,
+    low: 40.32,
+    close: 41.37,
+    adjClose: 19.99,
+    volume: 43066286931
+  },
+  {
+    date: "2001/7/24",
+    open: 39.97,
+    high: 40.32,
+    low: 39.27,
+    close: 40.32,
+    adjClose: 19.48,
+    volume: 52030990693
+  },
+  {
+    date: "2001/7/23",
+    open: 42.07,
+    high: 42.42,
+    low: 40.32,
+    close: 40.67,
+    adjClose: 19.65,
+    volume: 62147840760
+  },
+  {
+    date: "2001/7/20",
+    open: 43.47,
+    high: 43.47,
+    low: 42.42,
+    close: 42.42,
+    adjClose: 20.5,
+    volume: 48338503352
+  },
+  {
+    date: "2001/7/19",
+    open: 42.77,
+    high: 43.47,
+    low: 41.72,
+    close: 42.77,
+    adjClose: 20.66,
+    volume: 52451240755
+  },
+  {
+    date: "2001/7/18",
+    open: 43.82,
+    high: 43.82,
+    low: 42.77,
+    close: 43.47,
+    adjClose: 21,
+    volume: 40148263650
+  },
+  {
+    date: "2001/7/17",
+    open: 43.47,
+    high: 44.17,
+    low: 43.12,
+    close: 43.82,
+    adjClose: 21.17,
+    volume: 39253753226
+  },
+  {
+    date: "2001/7/16",
+    open: 44.88,
+    high: 44.88,
+    low: 43.47,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 52098044529
+  },
+  {
+    date: "2001/7/13",
+    open: 45.58,
+    high: 45.93,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 83440695087
+  },
+  {
+    date: "2001/7/12",
+    open: 43.82,
+    high: 44.53,
+    low: 43.47,
+    close: 44.53,
+    adjClose: 21.51,
+    volume: 45144006501
+  },
+  {
+    date: "2001/7/11",
+    open: 43.47,
+    high: 43.82,
+    low: 43.12,
+    close: 43.12,
+    adjClose: 20.83,
+    volume: 34178454624
+  },
+  {
+    date: "2001/7/10",
+    open: 43.12,
+    high: 43.82,
+    low: 43.12,
+    close: 43.12,
+    adjClose: 20.83,
+    volume: 48435884971
+  },
+  {
+    date: "2001/7/9",
+    open: 43.47,
+    high: 43.47,
+    low: 42.77,
+    close: 42.77,
+    adjClose: 20.66,
+    volume: 62249903530
+  },
+  {
+    date: "2001/7/6",
+    open: 44.88,
+    high: 45.23,
+    low: 44.17,
+    close: 44.17,
+    adjClose: 21.34,
+    volume: 40584223689
+  },
+  {
+    date: "2001/7/5",
+    open: 45.58,
+    high: 46.28,
+    low: 45.58,
+    close: 45.93,
+    adjClose: 22.19,
+    volume: 16044664142
+  },
+  {
+    date: "2001/7/4",
+    open: 46.28,
+    high: 46.28,
+    low: 45.58,
+    close: 45.93,
+    adjClose: 22.19,
+    volume: 26744552544
+  },
+  {
+    date: "2001/7/3",
+    open: 46.98,
+    high: 47.68,
+    low: 46.28,
+    close: 46.63,
+    adjClose: 22.53,
+    volume: 30191453577
+  },
+  {
+    date: "2001/7/2",
+    open: 45.23,
+    high: 46.98,
+    low: 45.23,
+    close: 46.98,
+    adjClose: 22.7,
+    volume: 62442405056
+  },
+  {
+    date: "2001/6/29",
+    open: 44.17,
+    high: 44.88,
+    low: 43.82,
+    close: 44.88,
+    adjClose: 21.68,
+    volume: 53805625856
+  },
+  {
+    date: "2001/6/28",
+    open: 44.53,
+    high: 44.53,
+    low: 42.77,
+    close: 43.12,
+    adjClose: 20.83,
+    volume: 47031141048
+  },
+  {
+    date: "2001/6/27",
+    open: 43.82,
+    high: 44.88,
+    low: 43.47,
+    close: 44.53,
+    adjClose: 21.51,
+    volume: 57765016150
+  },
+  {
+    date: "2001/6/26",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2001/6/26",
+    open: 43.12,
+    high: 44.17,
+    low: 42.77,
+    close: 42.77,
+    adjClose: 20.66,
+    volume: 96070796227
+  },
+  {
+    date: "2001/6/25",
+    open: 42.57,
+    high: 42.57,
+    low: 42.57,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: null
+  },
+  {
+    date: "2001/6/22",
+    open: 43.07,
+    high: 43.57,
+    low: 42.07,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 119957081731
+  },
+  {
+    date: "2001/6/21",
+    open: 44.58,
+    high: 44.58,
+    low: 43.07,
+    close: 43.07,
+    adjClose: 20.81,
+    volume: 101354893188
+  },
+  {
+    date: "2001/6/20",
+    open: 45.08,
+    high: 45.33,
+    low: 44.83,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 41634972048
+  },
+  {
+    date: "2001/6/19",
+    open: 45.83,
+    high: 46.08,
+    low: 45.08,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 89109248718
+  },
+  {
+    date: "2001/6/18",
+    open: 46.58,
+    high: 46.83,
+    low: 45.33,
+    close: 46.08,
+    adjClose: 22.26,
+    volume: 132926523131
+  },
+  {
+    date: "2001/6/15",
+    open: 46.08,
+    high: 46.83,
+    low: 45.83,
+    close: 46.83,
+    adjClose: 22.62,
+    volume: 33606221920
+  },
+  {
+    date: "2001/6/14",
+    open: 47.08,
+    high: 47.08,
+    low: 45.58,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 54805425562
+  },
+  {
+    date: "2001/6/13",
+    open: 48.33,
+    high: 48.58,
+    low: 47.08,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 58310724022
+  },
+  {
+    date: "2001/6/12",
+    open: 49.08,
+    high: 49.33,
+    low: 48.33,
+    close: 48.58,
+    adjClose: 23.47,
+    volume: 61879767074
+  },
+  {
+    date: "2001/6/11",
+    open: 48.58,
+    high: 49.58,
+    low: 48.33,
+    close: 49.58,
+    adjClose: 23.96,
+    volume: 71574202976
+  },
+  {
+    date: "2001/6/8",
+    open: 48.08,
+    high: 48.83,
+    low: 48.08,
+    close: 48.58,
+    adjClose: 23.47,
+    volume: 163135010383
+  },
+  {
+    date: "2001/6/7",
+    open: 46.33,
+    high: 46.83,
+    low: 46.08,
+    close: 46.58,
+    adjClose: 22.5,
+    volume: 62141449041
+  },
+  {
+    date: "2001/6/6",
+    open: 46.33,
+    high: 47.08,
+    low: 46.33,
+    close: 46.83,
+    adjClose: 22.62,
+    volume: 72897807355
+  },
+  {
+    date: "2001/6/5",
+    open: 45.08,
+    high: 45.58,
+    low: 44.83,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 28913070066
+  },
+  {
+    date: "2001/6/4",
+    open: 44.58,
+    high: 45.58,
+    low: 44.33,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 38533131028
+  },
+  {
+    date: "2001/6/1",
+    open: 45.33,
+    high: 45.58,
+    low: 44.33,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 40753226018
+  },
+  {
+    date: "2001/5/31",
+    open: 44.58,
+    high: 45.08,
+    low: 44.58,
+    close: 44.83,
+    adjClose: 21.66,
+    volume: 54368179322
+  },
+  {
+    date: "2001/5/30",
+    open: 46.33,
+    high: 46.58,
+    low: 45.08,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 49790259358
+  },
+  {
+    date: "2001/5/29",
+    open: 46.58,
+    high: 47.08,
+    low: 46.58,
+    close: 46.58,
+    adjClose: 22.5,
+    volume: 50391879153
+  },
+  {
+    date: "2001/5/28",
+    open: 46.83,
+    high: 47.08,
+    low: 46.58,
+    close: 46.58,
+    adjClose: 22.5,
+    volume: 27492071866
+  },
+  {
+    date: "2001/5/25",
+    open: 47.08,
+    high: 47.58,
+    low: 46.83,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 57861378809
+  },
+  {
+    date: "2001/5/24",
+    open: 47.08,
+    high: 47.33,
+    low: 46.58,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 56666480178
+  },
+  {
+    date: "2001/5/23",
+    open: 45.33,
+    high: 47.33,
+    low: 45.33,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 77986608978
+  },
+  {
+    date: "2001/5/22",
+    open: 44.83,
+    high: 45.58,
+    low: 44.83,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 62981494442
+  },
+  {
+    date: "2001/5/21",
+    open: 45.08,
+    high: 45.08,
+    low: 43.82,
+    close: 44.33,
+    adjClose: 21.41,
+    volume: 53491624518
+  },
+  {
+    date: "2001/5/18",
+    open: 45.08,
+    high: 45.83,
+    low: 44.58,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 95308472805
+  },
+  {
+    date: "2001/5/17",
+    open: 44.33,
+    high: 45.08,
+    low: 43.82,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 47654757191
+  },
+  {
+    date: "2001/5/16",
+    open: 44.07,
+    high: 44.33,
+    low: 43.82,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 59935477852
+  },
+  {
+    date: "2001/5/15",
+    open: 45.08,
+    high: 45.33,
+    low: 44.58,
+    close: 44.83,
+    adjClose: 21.66,
+    volume: 85139960454
+  },
+  {
+    date: "2001/5/14",
+    open: 46.08,
+    high: 46.58,
+    low: 46.08,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 40124516855
+  },
+  {
+    date: "2001/5/11",
+    open: 46.33,
+    high: 47.08,
+    low: 46.08,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 63826143619
+  },
+  {
+    date: "2001/5/10",
+    open: 47.08,
+    high: 47.08,
+    low: 46.08,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 64391741470
+  },
+  {
+    date: "2001/5/9",
+    open: 47.58,
+    high: 48.08,
+    low: 47.33,
+    close: 47.58,
+    adjClose: 22.99,
+    volume: 61278672235
+  },
+  {
+    date: "2001/5/8",
+    open: 47.33,
+    high: 47.83,
+    low: 46.83,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 99755803847
+  },
+  {
+    date: "2001/5/7",
+    open: 46.83,
+    high: 48.58,
+    low: 46.58,
+    close: 47.58,
+    adjClose: 22.99,
+    volume: 114545190851
+  },
+  {
+    date: "2001/5/4",
+    open: 48.08,
+    high: 48.08,
+    low: 46.58,
+    close: 46.58,
+    adjClose: 22.5,
+    volume: 80099413071
+  },
+  {
+    date: "2001/5/3",
+    open: 47.83,
+    high: 48.33,
+    low: 47.58,
+    close: 48.33,
+    adjClose: 23.35,
+    volume: 134483249398
+  },
+  {
+    date: "2001/5/2",
+    open: 48.58,
+    high: 48.58,
+    low: 47.58,
+    close: 48.08,
+    adjClose: 23.23,
+    volume: 347857956012
+  },
+  {
+    date: "2001/5/1",
+    open: 45.58,
+    high: 45.58,
+    low: 45.58,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: null
+  },
+  {
+    date: "2001/4/30",
+    open: 44.58,
+    high: 45.83,
+    low: 44.33,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 182494001389
+  },
+  {
+    date: "2001/4/27",
+    open: 44.58,
+    high: 44.58,
+    low: 43.57,
+    close: 43.57,
+    adjClose: 21.05,
+    volume: 44470839800
+  },
+  {
+    date: "2001/4/26",
+    open: 44.07,
+    high: 44.58,
+    low: 43.07,
+    close: 43.32,
+    adjClose: 20.93,
+    volume: 41989129503
+  },
+  {
+    date: "2001/4/25",
+    open: 44.07,
+    high: 44.58,
+    low: 43.07,
+    close: 43.32,
+    adjClose: 20.93,
+    volume: 41989129503
+  },
+  {
+    date: "2001/4/24",
+    open: 44.33,
+    high: 44.58,
+    low: 44.07,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 53528517222
+  },
+  {
+    date: "2001/4/23",
+    open: 45.33,
+    high: 45.33,
+    low: 44.58,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 47925092591
+  },
+  {
+    date: "2001/4/20",
+    open: 45.58,
+    high: 45.83,
+    low: 44.83,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 135618069792
+  },
+  {
+    date: "2001/4/19",
+    open: 45.33,
+    high: 45.33,
+    low: 45.08,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 290954416778
+  },
+  {
+    date: "2001/4/18",
+    open: 42.57,
+    high: 42.57,
+    low: 42.07,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 72644312193
+  },
+  {
+    date: "2001/4/17",
+    open: 41.57,
+    high: 42.07,
+    low: 41.32,
+    close: 41.82,
+    adjClose: 20.21,
+    volume: 35215179174
+  },
+  {
+    date: "2001/4/16",
+    open: 42.32,
+    high: 42.57,
+    low: 41.32,
+    close: 42.07,
+    adjClose: 20.33,
+    volume: 26751186803
+  },
+  {
+    date: "2001/4/13",
+    open: 43.82,
+    high: 43.82,
+    low: 42.57,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 59615425837
+  },
+  {
+    date: "2001/4/12",
+    open: 42.57,
+    high: 43.57,
+    low: 42.32,
+    close: 43.07,
+    adjClose: 20.81,
+    volume: 172602523870
+  },
+  {
+    date: "2001/4/11",
+    open: 40.57,
+    high: 41.57,
+    low: 40.07,
+    close: 41.57,
+    adjClose: 20.08,
+    volume: 63600441933
+  },
+  {
+    date: "2001/4/10",
+    open: 40.07,
+    high: 40.32,
+    low: 39.32,
+    close: 39.57,
+    adjClose: 19.12,
+    volume: 64384767062
+  },
+  {
+    date: "2001/4/9",
+    open: 40.57,
+    high: 40.57,
+    low: 39.57,
+    close: 40.07,
+    adjClose: 19.36,
+    volume: 50202053590
+  },
+  {
+    date: "2001/4/6",
+    open: 42.57,
+    high: 42.57,
+    low: 41.07,
+    close: 41.32,
+    adjClose: 19.96,
+    volume: 83165377968
+  },
+  {
+    date: "2001/4/5",
+    open: 39.82,
+    high: 39.82,
+    low: 39.82,
+    close: 39.82,
+    adjClose: 19.24,
+    volume: null
+  },
+  {
+    date: "2001/4/4",
+    open: 39.57,
+    high: 40.32,
+    low: 39.57,
+    close: 39.82,
+    adjClose: 19.24,
+    volume: 105939504251
+  },
+  {
+    date: "2001/4/3",
+    open: 41.57,
+    high: 41.57,
+    low: 40.57,
+    close: 40.82,
+    adjClose: 19.72,
+    volume: 137153456204
+  },
+  {
+    date: "2001/4/2",
+    open: 44.07,
+    high: 44.07,
+    low: 42.57,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 52770689846
+  },
+  {
+    date: "2001/3/30",
+    open: 44.58,
+    high: 44.58,
+    low: 43.57,
+    close: 44.33,
+    adjClose: 21.41,
+    volume: 52554195712
+  },
+  {
+    date: "2001/3/29",
+    open: 44.58,
+    high: 44.58,
+    low: 44.07,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 47865014354
+  },
+  {
+    date: "2001/3/28",
+    open: 44.83,
+    high: 45.08,
+    low: 44.33,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 63876351860
+  },
+  {
+    date: "2001/3/27",
+    open: 45.33,
+    high: 45.83,
+    low: 44.83,
+    close: 44.83,
+    adjClose: 21.66,
+    volume: 107902171080
+  },
+  {
+    date: "2001/3/26",
+    open: 45.58,
+    high: 45.58,
+    low: 44.83,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 86627400933
+  },
+  {
+    date: "2001/3/23",
+    open: 43.82,
+    high: 45.33,
+    low: 43.82,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 227713615167
+  },
+  {
+    date: "2001/3/22",
+    open: 42.57,
+    high: 43.57,
+    low: 42.57,
+    close: 43.32,
+    adjClose: 20.93,
+    volume: 67485420683
+  },
+  {
+    date: "2001/3/21",
+    open: 42.57,
+    high: 42.82,
+    low: 42.32,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 51471745876
+  },
+  {
+    date: "2001/3/20",
+    open: 43.57,
+    high: 44.07,
+    low: 42.82,
+    close: 43.07,
+    adjClose: 20.81,
+    volume: 47933600202
+  },
+  {
+    date: "2001/3/19",
+    open: 44.07,
+    high: 44.33,
+    low: 43.32,
+    close: 43.57,
+    adjClose: 21.05,
+    volume: 32191037811
+  },
+  {
+    date: "2001/3/16",
+    open: 43.82,
+    high: 44.58,
+    low: 43.82,
+    close: 44.33,
+    adjClose: 21.41,
+    volume: 67691249055
+  },
+  {
+    date: "2001/3/15",
+    open: 43.32,
+    high: 44.33,
+    low: 42.82,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 69605303342
+  },
+  {
+    date: "2001/3/14",
+    open: 43.57,
+    high: 43.57,
+    low: 43.57,
+    close: 43.57,
+    adjClose: 21.05,
+    volume: null
+  },
+  {
+    date: "2001/3/13",
+    open: 42.07,
+    high: 43.57,
+    low: 42.07,
+    close: 43.57,
+    adjClose: 21.05,
+    volume: 103342974528
+  },
+  {
+    date: "2001/3/12",
+    open: 42.57,
+    high: 43.07,
+    low: 42.57,
+    close: 42.82,
+    adjClose: 20.69,
+    volume: 60270770241
+  },
+  {
+    date: "2001/3/9",
+    open: 43.82,
+    high: 44.07,
+    low: 43.82,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 55776539010
+  },
+  {
+    date: "2001/3/8",
+    open: 46.08,
+    high: 46.08,
+    low: 45.08,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 54103039316
+  },
+  {
+    date: "2001/3/7",
+    open: 45.83,
+    high: 46.58,
+    low: 45.83,
+    close: 46.08,
+    adjClose: 22.26,
+    volume: 143096743670
+  },
+  {
+    date: "2001/3/6",
+    open: 44.07,
+    high: 45.08,
+    low: 43.32,
+    close: 44.33,
+    adjClose: 21.41,
+    volume: 118538885378
+  },
+  {
+    date: "2001/3/5",
+    open: 41.82,
+    high: 42.57,
+    low: 41.82,
+    close: 42.32,
+    adjClose: 20.45,
+    volume: 85291005973
+  },
+  {
+    date: "2001/3/2",
+    open: 42.32,
+    high: 42.57,
+    low: 41.57,
+    close: 41.82,
+    adjClose: 20.21,
+    volume: 98608467848
+  },
+  {
+    date: "2001/3/1",
+    open: 43.57,
+    high: 43.57,
+    low: 42.07,
+    close: 42.07,
+    adjClose: 20.33,
+    volume: 179983114401
+  },
+  {
+    date: "2001/2/28",
+    open: 45.08,
+    high: 45.08,
+    low: 45.08,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: null
+  },
+  {
+    date: "2001/2/27",
+    open: 45.08,
+    high: 45.58,
+    low: 45.08,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 76196927473
+  },
+  {
+    date: "2001/2/26",
+    open: 45.08,
+    high: 45.58,
+    low: 44.58,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 88333264549
+  },
+  {
+    date: "2001/2/23",
+    open: 45.58,
+    high: 46.58,
+    low: 45.08,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 95466076101
+  },
+  {
+    date: "2001/2/22",
+    open: 48.33,
+    high: 48.33,
+    low: 46.58,
+    close: 46.83,
+    adjClose: 22.62,
+    volume: 87930948679
+  },
+  {
+    date: "2001/2/21",
+    open: 47.08,
+    high: 49.08,
+    low: 47.08,
+    close: 48.83,
+    adjClose: 23.59,
+    volume: 62630686703
+  },
+  {
+    date: "2001/2/20",
+    open: 48.33,
+    high: 49.08,
+    low: 48.08,
+    close: 48.08,
+    adjClose: 23.23,
+    volume: 42253082111
+  },
+  {
+    date: "2001/2/19",
+    open: 47.08,
+    high: 48.58,
+    low: 47.08,
+    close: 48.08,
+    adjClose: 23.23,
+    volume: 42987928103
+  },
+  {
+    date: "2001/2/16",
+    open: 50.34,
+    high: 50.59,
+    low: 48.83,
+    close: 49.08,
+    adjClose: 23.71,
+    volume: 142289462156
+  },
+  {
+    date: "2001/2/15",
+    open: 48.33,
+    high: 50.34,
+    low: 48.08,
+    close: 50.34,
+    adjClose: 24.32,
+    volume: 174380139732
+  },
+  {
+    date: "2001/2/14",
+    open: 49.08,
+    high: 49.58,
+    low: 46.58,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 79813354005
+  },
+  {
+    date: "2001/2/13",
+    open: 46.83,
+    high: 49.08,
+    low: 46.58,
+    close: 49.08,
+    adjClose: 23.71,
+    volume: 99125740632
+  },
+  {
+    date: "2001/2/12",
+    open: 45.58,
+    high: 46.33,
+    low: 45.08,
+    close: 46.08,
+    adjClose: 22.26,
+    volume: 65390573400
+  },
+  {
+    date: "2001/2/9",
+    open: 45.83,
+    high: 46.58,
+    low: 44.83,
+    close: 45.83,
+    adjClose: 22.14,
+    volume: 128952451939
+  },
+  {
+    date: "2001/2/8",
+    open: 45.08,
+    high: 45.83,
+    low: 44.33,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 94213749009
+  },
+  {
+    date: "2001/2/7",
+    open: 45.83,
+    high: 47.08,
+    low: 45.83,
+    close: 45.83,
+    adjClose: 22.14,
+    volume: 236950264906
+  },
+  {
+    date: "2001/2/6",
+    open: 49.08,
+    high: 50.34,
+    low: 48.83,
+    close: 49.08,
+    adjClose: 23.71,
+    volume: 118522811741
+  },
+  {
+    date: "2001/2/5",
+    open: 49.58,
+    high: 50.08,
+    low: 49.08,
+    close: 49.33,
+    adjClose: 23.83,
+    volume: 131682770311
+  },
+  {
+    date: "2001/2/2",
+    open: 51.09,
+    high: 52.34,
+    low: 50.34,
+    close: 50.34,
+    adjClose: 24.32,
+    volume: 159626108062
+  },
+  {
+    date: "2001/2/1",
+    open: 52.09,
+    high: 52.84,
+    low: 50.59,
+    close: 50.84,
+    adjClose: 24.56,
+    volume: 114697036302
+  },
+  {
+    date: "2001/1/31",
+    open: 50.34,
+    high: 52.84,
+    low: 49.83,
+    close: 52.84,
+    adjClose: 25.53,
+    volume: 225187996096
+  },
+  {
+    date: "2001/1/30",
+    open: 48.58,
+    high: 49.58,
+    low: 48.08,
+    close: 49.58,
+    adjClose: 23.96,
+    volume: 104442681234
+  },
+  {
+    date: "2001/1/29",
+    open: 50.08,
+    high: 50.84,
+    low: 48.58,
+    close: 48.58,
+    adjClose: 23.47,
+    volume: 162287082317
+  },
+  {
+    date: "2001/1/26",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/25",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/24",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/23",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/22",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/19",
+    open: 51.09,
+    high: 51.09,
+    low: 51.09,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: null
+  },
+  {
+    date: "2001/1/18",
+    open: 51.59,
+    high: 51.84,
+    low: 50.59,
+    close: 51.09,
+    adjClose: 24.68,
+    volume: 233121389730
+  },
+  {
+    date: "2001/1/17",
+    open: 50.59,
+    high: 51.59,
+    low: 49.83,
+    close: 50.59,
+    adjClose: 24.44,
+    volume: 224263841163
+  },
+  {
+    date: "2001/1/16",
+    open: 47.08,
+    high: 50.59,
+    low: 47.08,
+    close: 50.59,
+    adjClose: 24.44,
+    volume: 261560243776
+  },
+  {
+    date: "2001/1/15",
+    open: 47.08,
+    high: 47.33,
+    low: 46.33,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 89597298981
+  },
+  {
+    date: "2001/1/12",
+    open: 46.58,
+    high: 47.08,
+    low: 46.33,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 94983533704
+  },
+  {
+    date: "2001/1/11",
+    open: 47.58,
+    high: 47.83,
+    low: 46.08,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 126919807712
+  },
+  {
+    date: "2001/1/10",
+    open: 47.08,
+    high: 47.58,
+    low: 46.33,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 115662646051
+  },
+  {
+    date: "2001/1/9",
+    open: 45.33,
+    high: 46.58,
+    low: 45.33,
+    close: 46.58,
+    adjClose: 22.5,
+    volume: 156022413782
+  },
+  {
+    date: "2001/1/8",
+    open: 44.83,
+    high: 46.83,
+    low: 44.07,
+    close: 44.83,
+    adjClose: 21.66,
+    volume: 193371911891
+  },
+  {
+    date: "2001/1/5",
+    open: 42.57,
+    high: 45.33,
+    low: 42.57,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 200624646603
+  },
+  {
+    date: "2001/1/4",
+    open: 42.82,
+    high: 43.07,
+    low: 41.82,
+    close: 42.57,
+    adjClose: 20.57,
+    volume: 234113138928
+  },
+  {
+    date: "2001/1/3",
+    open: 40.32,
+    high: 41.32,
+    low: 39.82,
+    close: 40.32,
+    adjClose: 19.48,
+    volume: 110639113891
+  },
+  {
+    date: "2001/1/2",
+    open: 39.07,
+    high: 41.82,
+    low: 38.82,
+    close: 41.82,
+    adjClose: 20.21,
+    volume: 109761621667
+  },
+  {
+    date: "2001/1/1",
+    open: 39.82,
+    high: 39.82,
+    low: 39.82,
+    close: 39.82,
+    adjClose: 19.24,
+    volume: null
+  },
+  {
+    date: "2000/12/29",
+    open: 40.82,
+    high: 40.82,
+    low: 39.57,
+    close: 39.82,
+    adjClose: 19.24,
+    volume: 126381270066
+  },
+  {
+    date: "2000/12/28",
+    open: 38.57,
+    high: 40.07,
+    low: 37.81,
+    close: 40.07,
+    adjClose: 19.36,
+    volume: 123757400996
+  },
+  {
+    date: "2000/12/27",
+    open: 38.06,
+    high: 38.06,
+    low: 37.31,
+    close: 37.56,
+    adjClose: 18.15,
+    volume: 70824474913
+  },
+  {
+    date: "2000/12/26",
+    open: 39.82,
+    high: 40.07,
+    low: 37.81,
+    close: 38.06,
+    adjClose: 18.39,
+    volume: 51800030525
+  },
+  {
+    date: "2000/12/25",
+    open: 39.07,
+    high: 39.07,
+    low: 39.07,
+    close: 39.07,
+    adjClose: 18.87,
+    volume: null
+  },
+  {
+    date: "2000/12/22",
+    open: 39.32,
+    high: 40.57,
+    low: 38.31,
+    close: 39.07,
+    adjClose: 18.87,
+    volume: 110292068333
+  },
+  {
+    date: "2000/12/21",
+    open: 39.57,
+    high: 39.82,
+    low: 39.57,
+    close: 39.57,
+    adjClose: 19.12,
+    volume: 72586742077
+  },
+  {
+    date: "2000/12/20",
+    open: 41.07,
+    high: 41.57,
+    low: 40.82,
+    close: 40.82,
+    adjClose: 19.72,
+    volume: 93251563970
+  },
+  {
+    date: "2000/12/19",
+    open: 41.57,
+    high: 42.07,
+    low: 41.07,
+    close: 42.07,
+    adjClose: 20.33,
+    volume: 94536729942
+  },
+  {
+    date: "2000/12/18",
+    open: 43.57,
+    high: 43.82,
+    low: 42.32,
+    close: 42.32,
+    adjClose: 20.45,
+    volume: 56883986726
+  },
+  {
+    date: "2000/12/15",
+    open: 44.33,
+    high: 44.58,
+    low: 44.07,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 48902934635
+  },
+  {
+    date: "2000/12/14",
+    open: 45.58,
+    high: 45.83,
+    low: 44.83,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 48019688732
+  },
+  {
+    date: "2000/12/13",
+    open: 46.33,
+    high: 46.58,
+    low: 45.83,
+    close: 46.08,
+    adjClose: 22.26,
+    volume: 38686726331
+  },
+  {
+    date: "2000/12/12",
+    open: 45.58,
+    high: 46.58,
+    low: 45.58,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 143221466422
+  },
+  {
+    date: "2000/12/11",
+    open: 45.58,
+    high: 45.83,
+    low: 44.83,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 73807371858
+  },
+  {
+    date: "2000/12/8",
+    open: 45.58,
+    high: 45.83,
+    low: 44.83,
+    close: 45.08,
+    adjClose: 21.78,
+    volume: 78859568253
+  },
+  {
+    date: "2000/12/7",
+    open: 44.58,
+    high: 45.58,
+    low: 44.33,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 95605339286
+  },
+  {
+    date: "2000/12/6",
+    open: 47.08,
+    high: 47.08,
+    low: 44.33,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 116992933196
+  },
+  {
+    date: "2000/12/5",
+    open: 43.57,
+    high: 44.83,
+    low: 43.57,
+    close: 44.33,
+    adjClose: 21.41,
+    volume: 89459185698
+  },
+  {
+    date: "2000/12/4",
+    open: 44.83,
+    high: 44.83,
+    low: 44.07,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 46402605085
+  },
+  {
+    date: "2000/12/1",
+    open: 43.57,
+    high: 45.83,
+    low: 43.57,
+    close: 45.83,
+    adjClose: 22.14,
+    volume: 104125416483
+  },
+  {
+    date: "2000/11/30",
+    open: 45.33,
+    high: 46.08,
+    low: 44.33,
+    close: 44.83,
+    adjClose: 21.66,
+    volume: 121708583142
+  },
+  {
+    date: "2000/11/29",
+    open: 45.33,
+    high: 45.83,
+    low: 45.08,
+    close: 45.33,
+    adjClose: 21.9,
+    volume: 73151677484
+  },
+  {
+    date: "2000/11/28",
+    open: 46.83,
+    high: 47.08,
+    low: 46.33,
+    close: 46.33,
+    adjClose: 22.38,
+    volume: 63623002519
+  },
+  {
+    date: "2000/11/27",
+    open: 49.08,
+    high: 49.08,
+    low: 47.33,
+    close: 47.33,
+    adjClose: 22.87,
+    volume: 107690655691
+  },
+  {
+    date: "2000/11/24",
+    open: 45.58,
+    high: 47.58,
+    low: 45.33,
+    close: 47.58,
+    adjClose: 22.99,
+    volume: 159707601148
+  },
+  {
+    date: "2000/11/23",
+    open: 44.33,
+    high: 45.08,
+    low: 44.07,
+    close: 44.58,
+    adjClose: 21.54,
+    volume: 93637447900
+  },
+  {
+    date: "2000/11/22",
+    open: 47.33,
+    high: 48.58,
+    low: 45.58,
+    close: 45.58,
+    adjClose: 22.02,
+    volume: 176943588927
+  },
+  {
+    date: "2000/11/21",
+    open: 43.57,
+    high: 47.08,
+    low: 43.57,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 141268915401
+  },
+  {
+    date: "2000/11/20",
+    open: 44.07,
+    high: 46.08,
+    low: 44.07,
+    close: 44.07,
+    adjClose: 21.29,
+    volume: 121477336093
+  },
+  {
+    date: "2000/11/17",
+    open: 46.58,
+    high: 50.08,
+    low: 46.58,
+    close: 49.33,
+    adjClose: 23.83,
+    volume: 149759745078
+  },
+  {
+    date: "2000/11/16",
+    open: 50.08,
+    high: 52.84,
+    low: 50.08,
+    close: 50.08,
+    adjClose: 24.2,
+    volume: 145488774074
+  },
+  {
+    date: "2000/11/15",
+    open: 55.09,
+    high: 55.34,
+    low: 51.59,
+    close: 53.59,
+    adjClose: 25.89,
+    volume: 138232731310
+  },
+  {
+    date: "2000/11/14",
+    open: 53.09,
+    high: 54.59,
+    low: 52.84,
+    close: 53.34,
+    adjClose: 25.77,
+    volume: 104741997508
+  },
+  {
+    date: "2000/11/13",
+    open: 53.34,
+    high: 54.34,
+    low: 53.34,
+    close: 53.34,
+    adjClose: 25.77,
+    volume: 146585514365
+  },
+  {
+    date: "2000/11/10",
+    open: 56.09,
+    high: 57.6,
+    low: 55.59,
+    close: 57.1,
+    adjClose: 27.59,
+    volume: 174306612636
+  },
+  {
+    date: "2000/11/9",
+    open: 57.6,
+    high: 57.6,
+    low: 55.84,
+    close: 57.6,
+    adjClose: 27.83,
+    volume: 166633646908
+  },
+  {
+    date: "2000/11/8",
+    open: 59.6,
+    high: 61.35,
+    low: 58.35,
+    close: 58.6,
+    adjClose: 28.31,
+    volume: 235556099847
+  },
+  {
+    date: "2000/11/7",
+    open: 57.1,
+    high: 58.35,
+    low: 56.09,
+    close: 58.35,
+    adjClose: 28.19,
+    volume: 252449083392
+  },
+  {
+    date: "2000/11/6",
+    open: 52.84,
+    high: 55.34,
+    low: 52.34,
+    close: 54.59,
+    adjClose: 26.38,
+    volume: 242870995952
+  },
+  {
+    date: "2000/11/3",
+    open: 54.09,
+    high: 55.09,
+    low: 53.09,
+    close: 54.84,
+    adjClose: 26.5,
+    volume: 246387764272
+  },
+  {
+    date: "2000/11/2",
+    open: 48.83,
+    high: 51.84,
+    low: 48.58,
+    close: 51.84,
+    adjClose: 25.04,
+    volume: 190518503961
+  },
+  {
+    date: "2000/11/1",
+    open: 50.59,
+    high: 50.59,
+    low: 48.33,
+    close: 48.58,
+    adjClose: 23.47,
+    volume: 178478658699
+  },
+  {
+    date: "2000/10/31",
+    open: 47.83,
+    high: 49.58,
+    low: 47.83,
+    close: 49.08,
+    adjClose: 23.71,
+    volume: 237316567164
+  },
+  {
+    date: "2000/10/30",
+    open: 49.33,
+    high: 49.33,
+    low: 49.33,
+    close: 49.33,
+    adjClose: 23.83,
+    volume: 43094344075
+  },
+  {
+    date: "2000/10/27",
+    open: 52.84,
+    high: 52.84,
+    low: 52.84,
+    close: 52.84,
+    adjClose: 25.53,
+    volume: null
+  },
+  {
+    date: "2000/10/26",
+    open: 52.09,
+    high: 53.84,
+    low: 52.09,
+    close: 52.84,
+    adjClose: 25.53,
+    volume: 162335511542
+  },
+  {
+    date: "2000/10/25",
+    open: 52.34,
+    high: 54.59,
+    low: 52.34,
+    close: 53.84,
+    adjClose: 26.01,
+    volume: 211862326584
+  },
+  {
+    date: "2000/10/24",
+    open: 49.83,
+    high: 53.09,
+    low: 49.08,
+    close: 53.09,
+    adjClose: 25.65,
+    volume: 281450989671
+  },
+  {
+    date: "2000/10/23",
+    open: 49.83,
+    high: 49.83,
+    low: 48.58,
+    close: 49.83,
+    adjClose: 24.08,
+    volume: 393125049096
+  },
+  {
+    date: "2000/10/20",
+    open: 43.57,
+    high: 43.57,
+    low: 43.57,
+    close: 43.57,
+    adjClose: 21.05,
+    volume: 53403302845
+  },
+  {
+    date: "2000/10/19",
+    open: 41.57,
+    high: 43.32,
+    low: 40.82,
+    close: 40.82,
+    adjClose: 19.72,
+    volume: 199457078987
+  },
+  {
+    date: "2000/10/18",
+    open: 46.58,
+    high: 47.08,
+    low: 43.82,
+    close: 43.82,
+    adjClose: 21.17,
+    volume: 197565539457
+  },
+  {
+    date: "2000/10/17",
+    open: 45.08,
+    high: 47.58,
+    low: 45.08,
+    close: 47.08,
+    adjClose: 22.75,
+    volume: 152970339373
+  },
+  {
+    date: "2000/10/16",
+    open: 48.33,
+    high: 48.33,
+    low: 48.33,
+    close: 48.33,
+    adjClose: 23.35,
+    volume: null
+  },
+  {
+    date: "2000/10/13",
+    open: 45.33,
+    high: 49.08,
+    low: 45.33,
+    close: 48.33,
+    adjClose: 23.35,
+    volume: 191179714534
+  },
+  {
+    date: "2000/10/12",
+    open: 48.83,
+    high: 50.59,
+    low: 48.58,
+    close: 48.58,
+    adjClose: 23.47,
+    volume: 183667251856
+  },
+  {
+    date: "2000/10/11",
+    open: 52.09,
+    high: 52.09,
+    low: 52.09,
+    close: 52.09,
+    adjClose: 25.17,
+    volume: 29010663869
+  },
+  {
+    date: "2000/10/10",
+    open: 53.84,
+    high: 53.84,
+    low: 53.84,
+    close: 53.84,
+    adjClose: 26.01,
+    volume: null
+  },
+  {
+    date: "2000/10/9",
+    open: 54.59,
+    high: 55.34,
+    low: 53.84,
+    close: 53.84,
+    adjClose: 26.01,
+    volume: 102031335801
+  },
+  {
+    date: "2000/10/6",
+    open: 51.59,
+    high: 55.09,
+    low: 51.59,
+    close: 55.09,
+    adjClose: 26.62,
+    volume: 180029493800
+  },
+  {
+    date: "2000/10/5",
+    open: 49.08,
+    high: 52.84,
+    low: 49.08,
+    close: 51.59,
+    adjClose: 24.92,
+    volume: 164805785309
+  },
+  {
+    date: "2000/10/4",
+    open: 49.83,
+    high: 49.83,
+    low: 49.83,
+    close: 49.83,
+    adjClose: 24.08,
+    volume: 84448144144
+  },
+  {
+    date: "2000/10/3",
+    open: 48.58,
+    high: 52.59,
+    low: 48.33,
+    close: 51.59,
+    adjClose: 24.92,
+    volume: 194590275197
+  },
+  {
+    date: "2000/10/2",
+    open: 50.08,
+    high: 51.09,
+    low: 49.33,
+    close: 49.33,
+    adjClose: 23.83,
+    volume: 138001375937
+  },
+  {
+    date: "2000/9/29",
+    open: 53.34,
+    high: 53.59,
+    low: 52.09,
+    close: 52.09,
+    adjClose: 25.17,
+    volume: 76034057956
+  },
+  {
+    date: "2000/9/28",
+    open: 55.59,
+    high: 56.35,
+    low: 53.34,
+    close: 53.34,
+    adjClose: 25.77,
+    volume: 107525519700
+  },
+  {
+    date: "2000/9/27",
+    open: 56.35,
+    high: 58.1,
+    low: 55.59,
+    close: 55.59,
+    adjClose: 26.86,
+    volume: 137224758488
+  },
+  {
+    date: "2000/9/26",
+    open: 53.34,
+    high: 56.85,
+    low: 53.09,
+    close: 56.85,
+    adjClose: 27.46,
+    volume: 199394350975
+  },
+  {
+    date: "2000/9/25",
+    open: 54.09,
+    high: 54.34,
+    low: 52.34,
+    close: 53.34,
+    adjClose: 25.77,
+    volume: 88873752030
+  },
+  {
+    date: "2000/9/22",
+    open: 53.34,
+    high: 54.09,
+    low: 53.34,
+    close: 53.34,
+    adjClose: 25.77,
+    volume: 132834122636
+  },
+  {
+    date: "2000/9/21",
+    open: 56.6,
+    high: 57.85,
+    low: 55.84,
+    close: 57.35,
+    adjClose: 27.71,
+    volume: 68452388650
+  },
+  {
+    date: "2000/9/20",
+    open: 57.85,
+    high: 58.35,
+    low: 56.6,
+    close: 57.6,
+    adjClose: 27.83,
+    volume: 120368246850
+  },
+  {
+    date: "2000/9/19",
+    open: 59.1,
+    high: 59.85,
+    low: 56.6,
+    close: 56.6,
+    adjClose: 27.34,
+    volume: 133186917707
+  },
+  {
+    date: "2000/9/18",
+    open: 60.1,
+    high: 61.1,
+    low: 59.35,
+    close: 60.6,
+    adjClose: 29.28,
+    volume: 97868072327
+  },
+  {
+    date: "2000/9/15",
+    open: 61.1,
+    high: 62.1,
+    low: 60.1,
+    close: 61.35,
+    adjClose: 29.64,
+    volume: 82176445198
+  },
+  {
+    date: "2000/9/14",
+    open: 60.85,
+    high: 61.6,
+    low: 59.85,
+    close: 60.1,
+    adjClose: 29.04,
+    volume: 58547691419
+  },
+  {
+    date: "2000/9/13",
+    open: 61.1,
+    high: 62.61,
+    low: 59.35,
+    close: 62.1,
+    adjClose: 30.01,
+    volume: 118942384480
+  },
+  {
+    date: "2000/9/12",
+    open: 62.1,
+    high: 62.1,
+    low: 62.1,
+    close: 62.1,
+    adjClose: 30.01,
+    volume: null
+  },
+  {
+    date: "2000/9/11",
+    open: 61.85,
+    high: 62.61,
+    low: 61.85,
+    close: 62.1,
+    adjClose: 30.01,
+    volume: 59550218869
+  },
+  {
+    date: "2000/9/8",
+    open: 62.86,
+    high: 63.36,
+    low: 62.1,
+    close: 62.36,
+    adjClose: 30.13,
+    volume: 53151311722
+  },
+  {
+    date: "2000/9/7",
+    open: 63.36,
+    high: 64.11,
+    low: 62.61,
+    close: 62.86,
+    adjClose: 30.37,
+    volume: 67406794020
+  },
+  {
+    date: "2000/9/6",
+    open: 66.11,
+    high: 66.36,
+    low: 65.11,
+    close: 65.61,
+    adjClose: 31.7,
+    volume: 57121754055
+  },
+  {
+    date: "2000/9/5",
+    open: 66.86,
+    high: 67.36,
+    low: 66.11,
+    close: 67.11,
+    adjClose: 32.42,
+    volume: 44200016942
+  },
+  {
+    date: "2000/9/4",
+    open: 66.61,
+    high: 66.86,
+    low: 65.86,
+    close: 66.86,
+    adjClose: 32.3,
+    volume: 37302006304
+  },
+  {
+    date: "2000/9/1",
+    open: 67.61,
+    high: 67.61,
+    low: 64.86,
+    close: 65.11,
+    adjClose: 31.46,
+    volume: 78236371122
+  },
+  {
+    date: "2000/8/31",
+    open: 66.61,
+    high: 67.61,
+    low: 66.61,
+    close: 67.36,
+    adjClose: 32.55,
+    volume: 59711834325
+  },
+  {
+    date: "2000/8/30",
+    open: 68.11,
+    high: 69.12,
+    low: 67.61,
+    close: 67.61,
+    adjClose: 32.67,
+    volume: 55343475749
+  },
+  {
+    date: "2000/8/29",
+    open: 69.12,
+    high: 69.12,
+    low: 67.11,
+    close: 68.62,
+    adjClose: 33.15,
+    volume: 70881336756
+  },
+  {
+    date: "2000/8/28",
+    open: 69.87,
+    high: 69.87,
+    low: 68.62,
+    close: 69.12,
+    adjClose: 33.39,
+    volume: 41797979053
+  },
+  {
+    date: "2000/8/25",
+    open: 70.12,
+    high: 70.37,
+    low: 69.62,
+    close: 70.37,
+    adjClose: 34,
+    volume: 67969846253
+  },
+  {
+    date: "2000/8/24",
+    open: 69.12,
+    high: 70.37,
+    low: 69.12,
+    close: 69.87,
+    adjClose: 33.76,
+    volume: 86961297607
+  },
+  {
+    date: "2000/8/23",
+    open: 68.62,
+    high: 68.62,
+    low: 68.62,
+    close: 68.62,
+    adjClose: 33.15,
+    volume: null
+  },
+  {
+    date: "2000/8/22",
+    open: 69.12,
+    high: 69.12,
+    low: 67.86,
+    close: 68.62,
+    adjClose: 33.15,
+    volume: 47266781772
+  },
+  {
+    date: "2000/8/21",
+    open: 69.37,
+    high: 69.62,
+    low: 68.87,
+    close: 69.12,
+    adjClose: 33.39,
+    volume: 50032384651
+  },
+  {
+    date: "2000/8/18",
+    open: 69.62,
+    high: 70.37,
+    low: 69.37,
+    close: 69.87,
+    adjClose: 33.76,
+    volume: 86628725821
+  },
+  {
+    date: "2000/8/17",
+    open: 68.62,
+    high: 69.62,
+    low: 68.11,
+    close: 69.12,
+    adjClose: 33.39,
+    volume: 93825423620
+  },
+  {
+    date: "2000/8/16",
+    open: 65.36,
+    high: 67.61,
+    low: 65.36,
+    close: 67.61,
+    adjClose: 32.67,
+    volume: 77309224777
+  },
+  {
+    date: "2000/8/15",
+    open: 66.11,
+    high: 66.11,
+    low: 64.86,
+    close: 65.36,
+    adjClose: 31.58,
+    volume: 53931312217
+  },
+  {
+    date: "2000/8/14",
+    open: 65.61,
+    high: 65.86,
+    low: 64.61,
+    close: 65.11,
+    adjClose: 31.46,
+    volume: 42591720049
+  },
+  {
+    date: "2000/8/11",
+    open: 66.11,
+    high: 66.61,
+    low: 65.61,
+    close: 65.61,
+    adjClose: 31.7,
+    volume: 55832817569
+  },
+  {
+    date: "2000/8/10",
+    open: 65.86,
+    high: 66.61,
+    low: 65.11,
+    close: 66.61,
+    adjClose: 32.18,
+    volume: 102063658059
+  },
+  {
+    date: "2000/8/9",
+    open: 63.36,
+    high: 65.11,
+    low: 63.36,
+    close: 65.11,
+    adjClose: 31.46,
+    volume: 97692062259
+  },
+  {
+    date: "2000/8/8",
+    open: 61.6,
+    high: 63.11,
+    low: 61.1,
+    close: 62.86,
+    adjClose: 30.37,
+    volume: 87806300921
+  },
+  {
+    date: "2000/8/7",
+    open: 63.11,
+    high: 63.11,
+    low: 61.1,
+    close: 61.6,
+    adjClose: 29.76,
+    volume: 88230506600
+  },
+  {
+    date: "2000/8/4",
+    open: 61.35,
+    high: 64.36,
+    low: 61.35,
+    close: 62.86,
+    adjClose: 30.37,
+    volume: 80865639734
+  },
+  {
+    date: "2000/8/3",
+    open: 62.61,
+    high: 62.61,
+    low: 60.6,
+    close: 61.1,
+    adjClose: 29.52,
+    volume: 50216489866
+  },
+  {
+    date: "2000/8/2",
+    open: 63.36,
+    high: 63.86,
+    low: 62.61,
+    close: 62.61,
+    adjClose: 30.25,
+    volume: 39456927657
+  },
+  {
+    date: "2000/8/1",
+    open: 64.36,
+    high: 64.86,
+    low: 63.11,
+    close: 63.11,
+    adjClose: 30.49,
+    volume: 54874186395
+  },
+  {
+    date: "2000/7/31",
+    open: 63.86,
+    high: 64.11,
+    low: 63.11,
+    close: 63.61,
+    adjClose: 30.73,
+    volume: 44307028697
+  },
+  {
+    date: "2000/7/28",
+    open: 62.61,
+    high: 64.86,
+    low: 62.61,
+    close: 63.86,
+    adjClose: 30.85,
+    volume: 112145144460
+  },
+  {
+    date: "2000/7/27",
+    open: 64.36,
+    high: 64.61,
+    low: 62.61,
+    close: 64.61,
+    adjClose: 31.21,
+    volume: 75383138177
+  },
+  {
+    date: "2000/7/26",
+    open: 63.61,
+    high: 65.36,
+    low: 63.61,
+    close: 65.11,
+    adjClose: 31.46,
+    volume: 123597006270
+  },
+  {
+    date: "2000/7/25",
+    open: 62.1,
+    high: 64.11,
+    low: 62.1,
+    close: 62.86,
+    adjClose: 30.37,
+    volume: 93606483860
+  },
+  {
+    date: "2000/7/24",
+    open: 64.36,
+    high: 64.61,
+    low: 63.11,
+    close: 63.36,
+    adjClose: 30.61,
+    volume: 110822798308
+  },
+  {
+    date: "2000/7/21",
+    open: 67.61,
+    high: 67.86,
+    low: 64.11,
+    close: 65.11,
+    adjClose: 31.46,
+    volume: 162136495092
+  },
+  {
+    date: "2000/7/20",
+    open: 70.62,
+    high: 70.62,
+    low: 67.61,
+    close: 67.61,
+    adjClose: 32.67,
+    volume: 115203218360
+  },
+  {
+    date: "2000/7/19",
+    open: 71.87,
+    high: 71.87,
+    low: 71.12,
+    close: 71.12,
+    adjClose: 34.36,
+    volume: 32287023418
+  },
+  {
+    date: "2000/7/18",
+    open: 71.87,
+    high: 71.87,
+    low: 71.12,
+    close: 71.12,
+    adjClose: 34.36,
+    volume: 32287023418
+  },
+  {
+    date: "2000/7/17",
+    open: 73.12,
+    high: 73.62,
+    low: 71.62,
+    close: 71.87,
+    adjClose: 34.72,
+    volume: 50712314469
+  },
+  {
+    date: "2000/7/14",
+    open: 72.62,
+    high: 73.62,
+    low: 72.62,
+    close: 73.12,
+    adjClose: 35.33,
+    volume: 62976544862
+  },
+  {
+    date: "2000/7/13",
+    open: 72.12,
+    high: 73.62,
+    low: 72.12,
+    close: 72.62,
+    adjClose: 35.09,
+    volume: 69994503658
+  },
+  {
+    date: "2000/7/12",
+    open: 72.12,
+    high: 72.37,
+    low: 71.37,
+    close: 71.87,
+    adjClose: 34.72,
+    volume: 40919616069
+  },
+  {
+    date: "2000/7/11",
+    open: 71.62,
+    high: 72.87,
+    low: 71.12,
+    close: 72.12,
+    adjClose: 34.84,
+    volume: 52507541337
+  },
+  {
+    date: "2000/7/10",
+    open: 71.37,
+    high: 72.37,
+    low: 70.12,
+    close: 71.87,
+    adjClose: 34.72,
+    volume: 65217525581
+  },
+  {
+    date: "2000/7/7",
+    open: 72.62,
+    high: 73.12,
+    low: 71.12,
+    close: 71.12,
+    adjClose: 34.36,
+    volume: 56914463307
+  },
+  {
+    date: "2000/7/6",
+    open: 72.62,
+    high: 73.87,
+    low: 71.87,
+    close: 72.62,
+    adjClose: 35.09,
+    volume: 101119813131
+  },
+  {
+    date: "2000/7/5",
+    open: 71.37,
+    high: 75.13,
+    low: 70.12,
+    close: 74.63,
+    adjClose: 36.05,
+    volume: 119441525468
+  },
+  {
+    date: "2000/7/4",
+    open: 71.87,
+    high: 72.12,
+    low: 70.12,
+    close: 70.62,
+    adjClose: 34.12,
+    volume: 73680107655
+  },
+  {
+    date: "2000/7/3",
+    open: 71.62,
+    high: 73.12,
+    low: 70.37,
+    close: 71.87,
+    adjClose: 34.72,
+    volume: 104447180852
+  },
+  {
+    date: "2000/6/30",
+    open: 71.62,
+    high: 73.12,
+    low: 70.87,
+    close: 73.12,
+    adjClose: 35.33,
+    volume: 78027855479
+  },
+  {
+    date: "2000/6/29",
+    open: 73.12,
+    high: 73.12,
+    low: 71.12,
+    close: 71.37,
+    adjClose: 34.48,
+    volume: 77624156393
+  },
+  {
+    date: "2000/6/28",
+    open: 71.37,
+    high: 72.37,
+    low: 71.12,
+    close: 72.12,
+    adjClose: 34.84,
+    volume: 64997227603
+  },
+  {
+    date: "2000/6/27",
+    open: 71.12,
+    high: 71.62,
+    low: 70.87,
+    close: 70.87,
+    adjClose: 34.24,
+    volume: 54066359094
+  },
+  {
+    date: "2000/6/26",
+    open: 72.37,
+    high: 72.62,
+    low: 70.37,
+    close: 70.87,
+    adjClose: 34.24,
+    volume: 95197240574
+  },
+  {
+    date: "2000/6/23",
+    open: 74.13,
+    high: 74.38,
+    low: 73.12,
+    close: 73.12,
+    adjClose: 35.33,
+    volume: 49329023488
+  },
+  {
+    date: "2000/6/22",
+    open: 73.12,
+    high: 74.88,
+    low: 73.12,
+    close: 74.63,
+    adjClose: 36.05,
+    volume: 64192016747
+  },
+  {
+    date: "2000/6/21",
+    open: 74.38,
+    high: 74.63,
+    low: 73.62,
+    close: 73.62,
+    adjClose: 35.57,
+    volume: 37673562283
+  },
+  {
+    date: "2000/6/20",
+    open: 75.63,
+    high: 75.63,
+    low: 74.13,
+    close: 74.38,
+    adjClose: 35.93,
+    volume: 45751547817
+  },
+  {
+    date: "2000/6/19",
+    open: 74.88,
+    high: 75.13,
+    low: 73.37,
+    close: 74.13,
+    adjClose: 35.81,
+    volume: 57780102371
+  },
+  {
+    date: "2000/6/16",
+    open: 75.13,
+    high: 75.63,
+    low: 74.63,
+    close: 75.13,
+    adjClose: 36.3,
+    volume: 75573138725
+  },
+  {
+    date: "2000/6/15",
+    open: 77.13,
+    high: 77.13,
+    low: 75.13,
+    close: 75.13,
+    adjClose: 36.3,
+    volume: 69274685557
+  },
+  {
+    date: "2000/6/14",
+    open: 79.13,
+    high: 79.13,
+    low: 77.13,
+    close: 77.13,
+    adjClose: 37.26,
+    volume: 64295991259
+  },
+  {
+    date: "2000/6/13",
+    open: 78.13,
+    high: 78.13,
+    low: 77.63,
+    close: 77.63,
+    adjClose: 37.51,
+    volume: 48311780619
+  },
+  {
+    date: "2000/6/12",
+    open: 80.14,
+    high: 80.14,
+    low: 78.63,
+    close: 78.63,
+    adjClose: 37.99,
+    volume: 67123280572
+  },
+  {
+    date: "2000/6/9",
+    open: 79.13,
+    high: 79.63,
+    low: 78.13,
+    close: 79.13,
+    adjClose: 38.23,
+    volume: 45171655346
+  },
+  {
+    date: "2000/6/8",
+    open: 80.64,
+    high: 81.14,
+    low: 78.63,
+    close: 78.63,
+    adjClose: 37.99,
+    volume: 70697027392
+  },
+  {
+    date: "2000/6/7",
+    open: 78.13,
+    high: 80.64,
+    low: 77.63,
+    close: 80.64,
+    adjClose: 38.96,
+    volume: 81345149055
+  },
+  {
+    date: "2000/6/6",
+    open: 79.13,
+    high: 79.13,
+    low: 79.13,
+    close: 79.13,
+    adjClose: 38.23,
+    volume: null
+  },
+  {
+    date: "2000/6/5",
+    open: 78.63,
+    high: 79.63,
+    low: 77.63,
+    close: 79.13,
+    adjClose: 38.23,
+    volume: 59798968599
+  },
+  {
+    date: "2000/6/2",
+    open: 78.63,
+    high: 79.63,
+    low: 77.63,
+    close: 77.63,
+    adjClose: 37.51,
+    volume: 101225329179
+  },
+  {
+    date: "2000/6/1",
+    open: 78.13,
+    high: 78.13,
+    low: 76.13,
+    close: 76.63,
+    adjClose: 37.02,
+    volume: 55122098697
+  },
+  {
+    date: "2000/5/31",
+    open: 78.63,
+    high: 79.13,
+    low: 77.13,
+    close: 78.63,
+    adjClose: 37.99,
+    volume: 158989878703
+  },
+  {
+    date: "2000/5/30",
+    open: 72.87,
+    high: 72.87,
+    low: 72.87,
+    close: 72.87,
+    adjClose: 35.21,
+    volume: null
+  },
+  {
+    date: "2000/5/29",
+    open: 72.87,
+    high: 74.13,
+    low: 72.62,
+    close: 72.87,
+    adjClose: 35.21,
+    volume: 52122944798
+  },
+  {
+    date: "2000/5/26",
+    open: 72.12,
+    high: 73.12,
+    low: 71.62,
+    close: 72.87,
+    adjClose: 35.21,
+    volume: 70008419144
+  },
+  {
+    date: "2000/5/25",
+    open: 74.63,
+    high: 75.13,
+    low: 72.12,
+    close: 72.87,
+    adjClose: 35.21,
+    volume: 96828793828
+  },
+  {
+    date: "2000/5/24",
+    open: 73.62,
+    high: 75.13,
+    low: 73.62,
+    close: 74.38,
+    adjClose: 35.93,
+    volume: 85726893995
+  },
+  {
+    date: "2000/5/23",
+    open: 79.13,
+    high: 79.13,
+    low: 76.13,
+    close: 76.63,
+    adjClose: 37.02,
+    volume: 78500882016
+  },
+  {
+    date: "2000/5/22",
+    open: 80.14,
+    high: 80.64,
+    low: 79.13,
+    close: 79.13,
+    adjClose: 38.23,
+    volume: 106654860230
+  },
+  {
+    date: "2000/5/19",
+    open: 80.14,
+    high: 81.14,
+    low: 79.63,
+    close: 81.14,
+    adjClose: 39.2,
+    volume: 83311748884
+  },
+  {
+    date: "2000/5/18",
+    open: 79.13,
+    high: 81.64,
+    low: 78.13,
+    close: 81.64,
+    adjClose: 39.44,
+    volume: 124512470273
+  },
+  {
+    date: "2000/5/17",
+    open: 78.13,
+    high: 79.63,
+    low: 77.63,
+    close: 79.63,
+    adjClose: 38.47,
+    volume: 165332157320
+  },
+  {
+    date: "2000/5/16",
+    open: 72.37,
+    high: 75.13,
+    low: 71.12,
+    close: 74.88,
+    adjClose: 36.18,
+    volume: 105315890488
+  },
+  {
+    date: "2000/5/15",
+    open: null,
+    high: 0,
+    low: 0,
+    close: 0,
+    adjClose: 0,
+    volume: 0
+  },
+  {
+    date: "2000/5/15",
+    open: 73.62,
+    high: 73.62,
+    low: 70.37,
+    close: 70.62,
+    adjClose: 34.12,
+    volume: 134465742550
+  },
+  {
+    date: "2000/5/12",
+    open: 71.21,
+    high: 72.39,
+    low: 70.04,
+    close: 72.39,
+    adjClose: 34.97,
+    volume: 213521853794
+  },
+  {
+    date: "2000/5/11",
+    open: 71.21,
+    high: 72,
+    low: 69.26,
+    close: 70.04,
+    adjClose: 33.84,
+    volume: 165385745438
+  },
+  {
+    date: "2000/5/10",
+    open: 75.91,
+    high: 75.91,
+    low: 73.56,
+    close: 73.56,
+    adjClose: 35.54,
+    volume: 93664437942
+  },
+  {
+    date: "2000/5/9",
+    open: 75.52,
+    high: 75.52,
+    low: 75.52,
+    close: 75.52,
+    adjClose: 36.49,
+    volume: null
+  },
+  {
+    date: "2000/5/8",
+    open: 74.34,
+    high: 75.91,
+    low: 74.34,
+    close: 75.52,
+    adjClose: 36.49,
+    volume: 82047327484
+  },
+  {
+    date: "2000/5/5",
+    open: 72.39,
+    high: 75.91,
+    low: 72,
+    close: 75.13,
+    adjClose: 36.3,
+    volume: 110709562579
+  },
+  {
+    date: "2000/5/4",
+    open: 73.56,
+    high: 75.13,
+    low: 72.39,
+    close: 73.17,
+    adjClose: 35.35,
+    volume: 111779167839
+  },
+  {
+    date: "2000/5/3",
+    open: 74.74,
+    high: 75.52,
+    low: 73.56,
+    close: 73.56,
+    adjClose: 35.54,
+    volume: 75426358510
+  },
+  {
+    date: "2000/5/2",
+    open: 76.69,
+    high: 76.69,
+    low: 75.13,
+    close: 75.52,
+    adjClose: 36.49,
+    volume: 84578099452
+  },
+  {
+    date: "2000/5/1",
+    open: 77.08,
+    high: 77.08,
+    low: 77.08,
+    close: 77.08,
+    adjClose: 37.24,
+    volume: null
+  },
+  {
+    date: "2000/4/28",
+    open: 74.74,
+    high: 77.87,
+    low: 73.95,
+    close: 77.08,
+    adjClose: 37.24,
+    volume: 237572314797
+  },
+  {
+    date: "2000/4/27",
+    open: 73.95,
+    high: 74.34,
+    low: 72.39,
+    close: 73.56,
+    adjClose: 35.54,
+    volume: 105813977898
+  },
+  {
+    date: "2000/4/26",
+    open: 74.74,
+    high: 75.13,
+    low: 71.61,
+    close: 72.39,
+    adjClose: 34.97,
+    volume: 221065619149
+  },
+  {
+    date: "2000/4/25",
+    open: 70.43,
+    high: 73.56,
+    low: 70.43,
+    close: 73.17,
+    adjClose: 35.35,
+    volume: 129573988875
+  },
+  {
+    date: "2000/4/24",
+    open: 72.78,
+    high: 73.17,
+    low: 70.43,
+    close: 70.43,
+    adjClose: 34.03,
+    volume: 80690194617
+  },
+  {
+    date: "2000/4/21",
+    open: 73.17,
+    high: 73.95,
+    low: 72.39,
+    close: 72.78,
+    adjClose: 35.16,
+    volume: 70356985905
+  },
+  {
+    date: "2000/4/20",
+    open: 71.61,
+    high: 72.78,
+    low: 70.43,
+    close: 72.78,
+    adjClose: 35.16,
+    volume: 95074579646
+  },
+  {
+    date: "2000/4/19",
+    open: 75.91,
+    high: 75.91,
+    low: 71.21,
+    close: 71.61,
+    adjClose: 34.59,
+    volume: 145654459349
+  },
+  {
+    date: "2000/4/18",
+    open: 73.95,
+    high: 73.95,
+    low: 72.39,
+    close: 73.95,
+    adjClose: 35.73,
+    volume: 217523114345
+  },
+  {
+    date: "2000/4/17",
+    open: 68.87,
+    high: 70.43,
+    low: 68.48,
+    close: 70.04,
+    adjClose: 33.84,
+    volume: 208060407784
+  },
+  {
+    date: "2000/4/14",
+    open: 72.39,
+    high: 74.34,
+    low: 72.39,
+    close: 72.78,
+    adjClose: 35.16,
+    volume: 239165097006
+  },
+  {
+    date: "2000/4/13",
+    open: 74.34,
+    high: 75.91,
+    low: 74.34,
+    close: 75.13,
+    adjClose: 36.3,
+    volume: 248891269216
+  },
+  {
+    date: "2000/4/12",
+    open: 79.04,
+    high: 79.82,
+    low: 78.26,
+    close: 78.26,
+    adjClose: 37.81,
+    volume: 128216408046
+  },
+  {
+    date: "2000/4/11",
+    open: 81.39,
+    high: 81.39,
+    low: 80.21,
+    close: 80.21,
+    adjClose: 38.75,
+    volume: 117967570843
+  },
+  {
+    date: "2000/4/10",
+    open: 78.65,
+    high: 83.34,
+    low: 78.26,
+    close: 82.17,
+    adjClose: 39.7,
+    volume: 201610650952
+  },
+  {
+    date: "2000/4/7",
+    open: 79.82,
+    high: 80.21,
+    low: 78.26,
+    close: 78.26,
+    adjClose: 37.81,
+    volume: 110518474790
+  },
+  {
+    date: "2000/4/6",
+    open: 81.39,
+    high: 82.56,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: 145596416273
+  },
+  {
+    date: "2000/4/5",
+    open: 78.65,
+    high: 82.17,
+    low: 78.65,
+    close: 81.39,
+    adjClose: 39.32,
+    volume: 182695562287
+  },
+  {
+    date: "2000/4/4",
+    open: 80.21,
+    high: 80.21,
+    low: 80.21,
+    close: 80.21,
+    adjClose: 38.75,
+    volume: null
+  },
+  {
+    date: "2000/4/3",
+    open: 80.21,
+    high: 80.21,
+    low: 80.21,
+    close: 80.21,
+    adjClose: 38.75,
+    volume: null
+  },
+  {
+    date: "2000/3/31",
+    open: 81,
+    high: 82.17,
+    low: 80.21,
+    close: 80.21,
+    adjClose: 38.75,
+    volume: 127027740887
+  },
+  {
+    date: "2000/3/30",
+    open: 79.82,
+    high: 82.95,
+    low: 79.82,
+    close: 81.39,
+    adjClose: 39.32,
+    volume: 227815979813
+  },
+  {
+    date: "2000/3/29",
+    open: 81.39,
+    high: 81.39,
+    low: 79.82,
+    close: 79.82,
+    adjClose: 38.57,
+    volume: 105678469394
+  },
+  {
+    date: "2000/3/28",
+    open: 82.95,
+    high: 83.74,
+    low: 81,
+    close: 81.78,
+    adjClose: 39.51,
+    volume: 181779906634
+  },
+  {
+    date: "2000/3/27",
+    open: 78.26,
+    high: 82.56,
+    low: 78.26,
+    close: 82.56,
+    adjClose: 39.89,
+    volume: 257812048419
+  },
+  {
+    date: "2000/3/24",
+    open: 78.65,
+    high: 78.65,
+    low: 76.69,
+    close: 77.47,
+    adjClose: 37.43,
+    volume: 189561198505
+  },
+  {
+    date: "2000/3/23",
+    open: 75.91,
+    high: 79.43,
+    low: 75.52,
+    close: 78.65,
+    adjClose: 38,
+    volume: 280164605464
+  },
+  {
+    date: "2000/3/22",
+    open: 75.13,
+    high: 77.47,
+    low: 73.95,
+    close: 75.13,
+    adjClose: 36.3,
+    volume: 247260900862
+  },
+  {
+    date: "2000/3/21",
+    open: 69.65,
+    high: 76.69,
+    low: 69.65,
+    close: 76.3,
+    adjClose: 36.86,
+    volume: 447638099122
+  },
+  {
+    date: "2000/3/20",
+    open: 72,
+    high: 72,
+    low: 72,
+    close: 72,
+    adjClose: 34.78,
+    volume: 21190095663
+  },
+  {
+    date: "2000/3/17",
+    open: 72.39,
+    high: 74.34,
+    low: 71.61,
+    close: 74.34,
+    adjClose: 35.92,
+    volume: 267728113852
+  },
+  {
+    date: "2000/3/16",
+    open: 70.04,
+    high: 72.78,
+    low: 67.3,
+    close: 72,
+    adjClose: 34.78,
+    volume: 233438180185
+  },
+  {
+    date: "2000/3/15",
+    open: 72.39,
+    high: 73.56,
+    low: 71.21,
+    close: 71.61,
+    adjClose: 34.59,
+    volume: 154204016711
+  },
+  {
+    date: "2000/3/14",
+    open: 71.21,
+    high: 73.17,
+    low: 70.43,
+    close: 72.78,
+    adjClose: 35.16,
+    volume: 145477589021
+  },
+  {
+    date: "2000/3/13",
+    open: 74.34,
+    high: 74.34,
+    low: 71.21,
+    close: 71.21,
+    adjClose: 34.41,
+    volume: 232179364310
+  },
+  {
+    date: "2000/3/10",
+    open: 78.65,
+    high: 79.04,
+    low: 75.91,
+    close: 76.3,
+    adjClose: 36.86,
+    volume: 99978344966
+  },
+  {
+    date: "2000/3/9",
+    open: 77.47,
+    high: 78.26,
+    low: 77.47,
+    close: 78.26,
+    adjClose: 37.81,
+    volume: 71897783191
+  },
+  {
+    date: "2000/3/8",
+    open: 77.47,
+    high: 77.87,
+    low: 76.69,
+    close: 77.47,
+    adjClose: 37.43,
+    volume: 64819045052
+  },
+  {
+    date: "2000/3/7",
+    open: 77.47,
+    high: 78.65,
+    low: 77.08,
+    close: 77.87,
+    adjClose: 37.62,
+    volume: 83737461434
+  },
+  {
+    date: "2000/3/6",
+    open: 79.82,
+    high: 80.21,
+    low: 77.87,
+    close: 78.26,
+    adjClose: 37.81,
+    volume: 72312707991
+  },
+  {
+    date: "2000/3/3",
+    open: 79.04,
+    high: 79.82,
+    low: 79.04,
+    close: 79.43,
+    adjClose: 38.38,
+    volume: 58129351241
+  },
+  {
+    date: "2000/3/2",
+    open: 81,
+    high: 81.39,
+    low: 79.43,
+    close: 79.43,
+    adjClose: 38.38,
+    volume: 68745687934
+  },
+  {
+    date: "2000/3/1",
+    open: 80.21,
+    high: 80.6,
+    low: 79.82,
+    close: 80.6,
+    adjClose: 38.94,
+    volume: 90504908649
+  },
+  {
+    date: "2000/2/29",
+    open: 78.26,
+    high: 79.43,
+    low: 78.26,
+    close: 78.65,
+    adjClose: 38,
+    volume: 98749286567
+  },
+  {
+    date: "2000/2/28",
+    open: 77.87,
+    high: 77.87,
+    low: 77.87,
+    close: 77.87,
+    adjClose: 37.62,
+    volume: null
+  },
+  {
+    date: "2000/2/25",
+    open: 76.3,
+    high: 78.26,
+    low: 76.3,
+    close: 77.87,
+    adjClose: 37.62,
+    volume: 165796729239
+  },
+  {
+    date: "2000/2/24",
+    open: 76.3,
+    high: 77.08,
+    low: 75.91,
+    close: 76.3,
+    adjClose: 36.86,
+    volume: 83371097848
+  },
+  {
+    date: "2000/2/23",
+    open: 76.3,
+    high: 76.3,
+    low: 75.52,
+    close: 75.91,
+    adjClose: 36.67,
+    volume: 73892584628
+  },
+  {
+    date: "2000/2/22",
+    open: 75.13,
+    high: 77.47,
+    low: 74.34,
+    close: 76.3,
+    adjClose: 36.86,
+    volume: 168143612807
+  },
+  {
+    date: "2000/2/21",
+    open: 79.43,
+    high: 79.43,
+    low: 76.3,
+    close: 76.3,
+    adjClose: 36.86,
+    volume: 153903007581
+  },
+  {
+    date: "2000/2/18",
+    open: 82.95,
+    high: 83.74,
+    low: 81,
+    close: 81.39,
+    adjClose: 39.32,
+    volume: 121805090619
+  },
+  {
+    date: "2000/2/17",
+    open: 82.56,
+    high: 83.34,
+    low: 82.17,
+    close: 82.56,
+    adjClose: 39.89,
+    volume: 116400258474
+  },
+  {
+    date: "2000/2/16",
+    open: 84.13,
+    high: 84.52,
+    low: 83.34,
+    close: 83.34,
+    adjClose: 40.27,
+    volume: 79352313450
+  },
+  {
+    date: "2000/2/15",
+    open: 83.74,
+    high: 84.91,
+    low: 82.95,
+    close: 84.13,
+    adjClose: 40.64,
+    volume: 105105248690
+  },
+  {
+    date: "2000/2/14",
+    open: 85.3,
+    high: 85.3,
+    low: 83.74,
+    close: 83.74,
+    adjClose: 40.46,
+    volume: 140301270822
+  },
+  {
+    date: "2000/2/11",
+    open: 84.91,
+    high: 86.87,
+    low: 84.13,
+    close: 85.69,
+    adjClose: 41.4,
+    volume: 215027859365
+  },
+  {
+    date: "2000/2/10",
+    open: 81.78,
+    high: 84.13,
+    low: 81,
+    close: 83.74,
+    adjClose: 40.46,
+    volume: 177540543615
+  },
+  {
+    date: "2000/2/9",
+    open: 83.74,
+    high: 83.74,
+    low: 81,
+    close: 82.56,
+    adjClose: 39.89,
+    volume: 252580321587
+  },
+  {
+    date: "2000/2/8",
+    open: 79.04,
+    high: 79.04,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: null
+  },
+  {
+    date: "2000/2/7",
+    open: 79.04,
+    high: 79.04,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: null
+  },
+  {
+    date: "2000/2/4",
+    open: 79.04,
+    high: 79.04,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: null
+  },
+  {
+    date: "2000/2/3",
+    open: 79.04,
+    high: 79.04,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: null
+  },
+  {
+    date: "2000/2/2",
+    open: 79.04,
+    high: 79.04,
+    low: 79.04,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: null
+  },
+  {
+    date: "2000/2/1",
+    open: 80.21,
+    high: 80.21,
+    low: 78.65,
+    close: 79.04,
+    adjClose: 38.19,
+    volume: 153081850577
+  },
+  {
+    date: "2000/1/31",
+    open: 77.47,
+    high: 79.82,
+    low: 77.08,
+    close: 79.43,
+    adjClose: 38.38,
+    volume: 168059342623
+  },
+  {
+    date: "2000/1/28",
+    open: 78.65,
+    high: 79.82,
+    low: 78.65,
+    close: 79.82,
+    adjClose: 38.57,
+    volume: 197904810671
+  },
+  {
+    date: "2000/1/27",
+    open: 81.39,
+    high: 82.56,
+    low: 79.82,
+    close: 81.39,
+    adjClose: 39.32,
+    volume: 287927232252
+  },
+  {
+    date: "2000/1/26",
+    open: 77.87,
+    high: 80.6,
+    low: 77.87,
+    close: 80.6,
+    adjClose: 38.94,
+    volume: 357880999032
+  },
+  {
+    date: "2000/1/25",
+    open: 75.52,
+    high: 75.52,
+    low: 74.34,
+    close: 75.52,
+    adjClose: 36.49,
+    volume: 223692148326
+  },
+  {
+    date: "2000/1/24",
+    open: 73.56,
+    high: 74.74,
+    low: 73.17,
+    close: 73.56,
+    adjClose: 35.54,
+    volume: 175113122879
+  },
+  {
+    date: "2000/1/21",
+    open: 71.21,
+    high: 72.78,
+    low: 71.21,
+    close: 72.78,
+    adjClose: 35.16,
+    volume: 113397441219
+  },
+  {
+    date: "2000/1/20",
+    open: 72,
+    high: 72,
+    low: 70.82,
+    close: 71.21,
+    adjClose: 34.41,
+    volume: 125758120596
+  },
+  {
+    date: "2000/1/19",
+    open: 72,
+    high: 73.17,
+    low: 71.61,
+    close: 72,
+    adjClose: 34.78,
+    volume: 134848688061
+  },
+  {
+    date: "2000/1/18",
+    open: 73.17,
+    high: 73.17,
+    low: 71.61,
+    close: 72,
+    adjClose: 34.78,
+    volume: 131648031590
+  },
+  {
+    date: "2000/1/17",
+    open: 74.34,
+    high: 74.34,
+    low: 73.17,
+    close: 73.17,
+    adjClose: 35.35,
+    volume: 155256940719
+  },
+  {
+    date: "2000/1/14",
+    open: 70.43,
+    high: 72.39,
+    low: 70.04,
+    close: 71.21,
+    adjClose: 34.41,
+    volume: 288318964353
+  },
+  {
+    date: "2000/1/13",
+    open: 70.82,
+    high: 70.82,
+    low: 69.65,
+    close: 69.65,
+    adjClose: 33.65,
+    volume: 147490954216
+  },
+  {
+    date: "2000/1/12",
+    open: 69.26,
+    high: 70.82,
+    low: 68.87,
+    close: 70.82,
+    adjClose: 34.22,
+    volume: 216246806621
+  },
+  {
+    date: "2000/1/11",
+    open: 70.82,
+    high: 71.61,
+    low: 68.48,
+    close: 68.87,
+    adjClose: 33.27,
+    volume: 277769544650
+  },
+  {
+    date: "2000/1/10",
+    open: 69.65,
+    high: 70.43,
+    low: 68.48,
+    close: 70.04,
+    adjClose: 33.84,
+    volume: 276171685539
+  },
+  {
+    date: "2000/1/7",
+    open: 67.3,
+    high: 68.48,
+    low: 66.52,
+    close: 67.69,
+    adjClose: 32.7,
+    volume: 235270344752
+  },
+  {
+    date: "2000/1/6",
+    open: 70.82,
+    high: 71.21,
+    low: 69.65,
+    close: 69.65,
+    adjClose: 33.65,
+    volume: 197545715802
+  },
+  {
+    date: "2000/1/5",
+    open: 69.65,
+    high: 71.21,
+    low: 68.87,
+    close: 71.21,
+    adjClose: 34.41,
+    volume: 402466805912
+  },
+  {
+    date: "2000/1/4",
+    open: 69.65,
+    high: 69.65,
+    low: 68.48,
+    close: 69.65,
+    adjClose: 33.65,
+    volume: 200662336736
+  }
+];

@@ -1,45 +1,45 @@
 <script setup>
-import { ref, onMounted } from 'vue';
+// import { ref, onMounted } from 'vue';
 
-// 股票與日期區間
-const stockNo = '2330';
-const startYear = 2025;
-const startMonth = 1;
-const endMonth = 10;
+// // 股票與日期區間
+// const stockNo = '2330';
+// const startYear = 2025;
+// const startMonth = 1;
+// const endMonth = 10;
 
-const stockData = ref([]);
-const loading = ref(true);
-const errorMsg = ref('');
+// const stockData = ref([]);
+// const loading = ref(true);
+// const errorMsg = ref('');
 
-// 工具函數：把 1~9 月補 0
-const pad = (num) => num.toString().padStart(2, '0');
+// // 工具函數：把 1~9 月補 0
+// const pad = (num) => num.toString().padStart(2, '0');
 
-async function fetchMonth(year, month) {
-  const date = `${year}${pad(month)}01`;
-  const url = `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${stockNo}`;
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const data = await res.json();
-  return data.data || [];
-}
+// async function fetchMonth(year, month) {
+//   const date = `${year}${pad(month)}01`;
+//   const url = `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${stockNo}`;
+//   const res = await fetch(url);
+//   if (!res.ok) throw new Error(`HTTP ${res.status}`);
+//   const data = await res.json();
+//   return data.data || [];
+// }
 
-onMounted(async () => {
-  try {
-    loading.value = true;
-    let allData = [];
-    for (let m = startMonth; m <= endMonth; m++) {
-      const monthData = await fetchMonth(startYear, m);
-      allData = allData.concat(monthData);
-      await new Promise(r => setTimeout(r, 300)); // 避免短時間多次抓被擋
-    }
-    stockData.value = allData;
-  } catch (err) {
-    console.error(err);
-    errorMsg.value = '載入失敗';
-  } finally {
-    loading.value = false;
-  }
-});
+// onMounted(async () => {
+//   try {
+//     loading.value = true;
+//     let allData = [];
+//     for (let m = startMonth; m <= endMonth; m++) {
+//       const monthData = await fetchMonth(startYear, m);
+//       allData = allData.concat(monthData);
+//       await new Promise(r => setTimeout(r, 300)); // 避免短時間多次抓被擋
+//     }
+//     stockData.value = allData;
+//   } catch (err) {
+//     console.error(err);
+//     errorMsg.value = '載入失敗';
+//   } finally {
+//     loading.value = false;
+//   }
+// });
 </script>
 
 <template>
