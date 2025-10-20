@@ -1,15 +1,15 @@
 <script setup>
-// import { ref, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 
-// // 股票與日期區間
-// const stockNo = '2330';
-// const startYear = 2025;
-// const startMonth = 1;
-// const endMonth = 10;
+// 股票與日期區間
+const stockNo = '2330';
+const startYear = 2025;
+const startMonth = 1;
+const endMonth = 10;
 
-// const stockData = ref([]);
-// const loading = ref(true);
-// const errorMsg = ref('');
+const stockData = ref([]);
+const loading = ref(true);
+const errorMsg = ref('');
 
 // // 工具函數：把 1~9 月補 0
 // const pad = (num) => num.toString().padStart(2, '0');

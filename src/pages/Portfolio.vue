@@ -29,7 +29,7 @@
       <ShareholdingRatioChart></ShareholdingRatioChart>
 
       <!-- 右側：資產變化折線圖 -->
-      <PropertyChart></PropertyChart>
+      <PersonalAssetsChart></PersonalAssetsChart>
     </div>
 
     <!-- 三樓：持股明細表 -->
@@ -47,7 +47,7 @@
 import EditHoldingModal from "@/components/Common/EditHoldingModal.vue";
 import SummaryCards from "@/components/Portfolio/SummaryCards.vue";
 import ShareholdingRatioChart from "@/components/Portfolio/ShareholdingRatioChart.vue";
-import PropertyChart from "@/components/Portfolio/PropertyChart.vue";
+import PersonalAssetsChart from "@/components/Portfolio/PersonalAssetsChart.vue";
 import HoldingDetails from "@/components/Portfolio/HoldingDetails.vue";
 
 import { ref } from "vue";

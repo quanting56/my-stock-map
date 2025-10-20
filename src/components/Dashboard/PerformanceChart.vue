@@ -32,7 +32,7 @@
 
     <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-[color:var(--color-secondary)]">
       <div>當日成交量<span class="font-medium ml-1.5 mt-1">{{ latestVolume.toLocaleString() }}</span></div>
-      <div class="text-right">最近變動：
+      <div class="text-right">此區間變動：
         <span
           class="font-semibold ml-1.5"
           :class="[
@@ -49,7 +49,6 @@
 </template>
 
 <script setup>
-// 新增 import 與 setup
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import { mockData2330 } from "@/data/mock/mockData2330.js";
@@ -73,16 +72,11 @@ const ranges = [
   { label: "最久", value: "max" }
 ];
 
-// 將日期轉換為可排序格式
+// 整理資料：將日期轉換為可排序格式
 const parsedData = mockData2330.map(d => ({
   ...d,
   date: new Date(d.date.replace(/\//g, "-"))
 })).sort((a, b) => a.date - b.date);
-
-// 選擇範圍時加入漸變動畫
-function changeRange(val) {
-  selectedRange.value = val;
-}
 
 // 根據選擇的區間過濾資料
 const filteredData = computed(() => {
@@ -199,26 +193,38 @@ function drawChart(data) {
                        const d = data[Math.min(Math.max(i, 0), data.length - 1)];
 
                        // crosshair 與 dot 平滑顯示
-                       crosshair.transition().duration(80)
-                         .attr("x1", xScale(d.date))
-                         .attr("x2", xScale(d.date))
-                         .style("opacity", 0.6);
+                       crosshair.transition()
+                                .duration(80)
+                                .attr("x1", xScale(d.date))
+                                .attr("x2", xScale(d.date))
+                                .style("opacity", 0.6);
 
-                       dot.transition().duration(80)
-                         .attr("cx", xScale(d.date))
-                         .attr("cy", yScale(d.close))
-                         .style("opacity", 1);
+                       dot.transition()
+                          .duration(80)
+                          .attr("cx", xScale(d.date))
+                          .attr("cy", yScale(d.close))
+                          .style("opacity", 1);
 
-                       // tooltip 使用 left/top，避免 transform 導致定位不穩
-                       tip.transition().duration(150).style("opacity", 1);
-                       tip.style("left", `${xScale(d.date) + 25}px`)
-                          .style("top", `${yScale(d.close) - 40}px`)
-                          .html(`
+                       // tooltip ，使用防溢出邏輯
+                       const tipWidth = 160;
+                       const tipHeight = 70;
+                       let tipX = xScale(d.date) + 30;   // 預設顯示在右上角
+                       let tipY = yScale(d.close) - tipHeight - 10;
+                       if (tipX + tipWidth > width) tipX = xScale(d.date) - tipWidth + 40;
+                       if (tipY < 0) tipY = yScale(d.close) + 10;
+
+                       tip.html(`
                             <div><strong>${d3.timeFormat("%Y/%m/%d")(d.date)}</strong></div>
                             <div>高價: ${d.high.toLocaleString()}</div>
                             <div>低價: ${d.low.toLocaleString()}</div>
-                            <div>平盤: ${i > 0 ? data[i - 1].close.toLocaleString() : "-"} </div>
-                          `);
+                            <div>平盤: ${i > 0 ? data[i - 1].close.toLocaleString() : "-"}</div>
+                          `)
+                          .transition()
+                          .duration(150)
+                          .ease(d3.easeCubicOut)
+                          .style("opacity", 1)
+                          .style("left", `${tipX}px`)
+                          .style("top", `${tipY}px`);
                      })
                      .on("mouseleave", () => {
                        tip.transition().duration(200).style("opacity", 0);
@@ -239,7 +245,7 @@ watch(filteredData, (val) => {
 const latestVolume = computed(() => parsedData.at(-1)?.volume);
 const changePercent = computed(() => {
   if (!endClose.value || !startOpen.value) return "0.00";
-  return ((endClose.value - startOpen.value) / startOpen.value);
+  return (endClose.value - startOpen.value) / startOpen.value;
 });
 
 onMounted(() => {
