@@ -254,11 +254,13 @@ function drawChart(data) {
                        });
 
                        // Tooltip 內容
-                       const rows = banks.map(bank => {
-                         const val = d[bank];
-                         return `<div><span style="color: ${bankColors[bank]};">●</span> ${bank}: ${val ? val.toLocaleString() + " 元" : "-"}</div>`;
-                       }).join("");
-                       const totalStr = `<div><strong>總資產：</strong>${d.totalValue.toLocaleString()} 元</div>`;
+                       const rows = banks.filter(bank => bank !== "totalValue")
+                                         .map(bank => {
+                                           const val = d[bank];
+                                           return `<div><span style="color: ${bankColors[bank]};">●</span> ${bank}: ${val ? val.toLocaleString() + " 元" : "-"}</div>`;
+                                         })
+                                         .join("");
+                       const totalStr = `<div class="mt-1"><strong>總資產：</strong>${d.totalValue.toLocaleString()} 元</div>`;
 
                        // Tooltip 防溢出邏輯
                        const tipWidth = 160;
@@ -269,7 +271,7 @@ function drawChart(data) {
                        if (tipY < 0) tipY = yScale(d.totalValue) + 20;
 
                        tip.html(`
-                            <strong>${d3.timeFormat("%Y/%m/%d")(d.date)}</strong>
+                            <strong>${d3.timeFormat("%Y/%m/%d")(d.date)} <span class="text-[10px] font-medium">(${d3.timeFormat("%a")(d.date)}.)</span></strong>
                             ${rows}
                             ${totalStr}
                           `)
@@ -277,7 +279,6 @@ function drawChart(data) {
                           .duration(150)
                           .ease(d3.easeCubicOut)
                           .style("opacity", 1)
-                          // .style("left", `${xScale(d.date) + 20}px`)
                           .style("left", `${tipX}px`)
                           .style("top", `${tipY}px`);
                      })

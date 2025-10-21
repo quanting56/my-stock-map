@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 忽略 SQLite 資料庫
+/data/*.db
+
+# 忽略整個 data 資料夾（假如未來還會有 log 或 cache）
+/data/*
+
+# 但保留 mockData 讓 git 能追蹤
+!src/data/mockData/**
