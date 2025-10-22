@@ -31,7 +31,12 @@
     </div>
 
     <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-[color:var(--color-secondary)]">
-      <div>當日成交量<span class="font-medium ml-1.5 mt-1">{{ latestVolume.toLocaleString() }}</span></div>
+      <div>
+        當日成交量
+        <span class="font-medium ml-1.5 mt-1">
+          {{ latestVolume ? latestVolume.toLocaleString() : "-" }}
+        </span>
+      </div>
       <div class="text-right">此區間變動：
         <span
           class="font-semibold ml-1.5"
@@ -59,8 +64,38 @@ const tooltipRef = ref(null);
 const selectedRange = ref("6m");
 const transitionDuration = 1000;  // 動畫過渡時間
 
+const stockData = ref([]);
+
+// 當前股號（未來可改由 props 或 Pinia 傳入）
+const symbol = "2330";
+const earliestYear = 1990;
+
 const startOpen = ref(0);
 const endClose = ref(0);
+
+// 動態「是否已過期」判斷
+function monthStart(d) {
+  return new Date(d.getFullYear(), d.getMonth(), 1);
+};
+function isMaxStale() {
+  const last = parsedData.value.at(-1)?.date;
+  if (!last) return true;  // 沒資料 → 需要抓
+  const now = new Date();
+  // 若「最後一筆資料的月份」 < 「本月」，代表少月份，需要補
+  return monthStart(last) < monthStart(now);
+};
+
+// 最久希望的最早日期（之後可換成「上市年」或由後端提供）
+function desiredMaxStart() {
+  return new Date(earliestYear, 0, 1);  // 1990-01-01
+};
+
+// 向「過去」是否不足（目前最早資料是否晚於期望的最早月）
+function isMaxMissingPast() {
+  const first = parsedData.value[0]?.date;
+  if (!first) return true;
+  return monthStart(first) > monthStart(desiredMaxStart());
+};
 
 const ranges = [
   { label: "1 日", value: "1d" },
@@ -69,18 +104,128 @@ const ranges = [
   { label: "6 個月", value: "6m" },
   { label: "1 年", value: "1y" },
   { label: "5 年", value: "5y" },
+  { label: "10 年", value: "10y" },
   { label: "最久", value: "max" }
 ];
 
+// 從後端取得資料的函式，允許帶查詢參數（用於最久取全史）
+async function fetchStockData(params = {}) {
+  try {
+    const qs = new URLSearchParams(params).toString();
+    const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("後端回傳錯誤");
+    const data = await res.json();
+    // 合併新舊資料（避免把既有資料覆蓋掉）
+    const map = new Map();
+    for (const r of stockData.value) map.set(r.date, r);
+    for (const r of data) map.set(r.date, r);
+    stockData.value = Array.from(map.values()).sort(
+      (a, b) => new Date(a.date.replace(/\//g, "-")) - new Date(b.date.replace(/\//g, "-"))
+    );
+    console.log(`✅ 從後端取得 ${symbol} 資料`, data.length, params);
+  } catch (err) {
+    console.warn("⚠️ 無法連線伺服器，改用 mockData2330：", err.message);
+    stockData.value = mockData2330;
+  }
+}
+
+// 最久 → 直接請 server 回全歷史（1990/01~本月）
+function fetchMaxHistory() {
+  const now = new Date();
+  return fetchStockData({
+    startYear: earliestYear,
+    startMonth: 1,
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1
+  });
+};
+
+// 補齊「從最後一筆的下個月 → 本月」的缺口
+async function fetchMissingToNow() {
+  const last = parsedData.value.at(-1)?.date;
+  const now = new Date();
+  if (!last) {
+    // 完全沒有資料 → 走全史
+    return fetchMaxHistory();
+  };
+  return fetchStockData({
+    startYear: last.getFullYear(),
+    startMonth: last.getMonth() + 1,  // 從「下一個月」開始補
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1
+  });
+};
+
+// 補齊「從期望最早月 → 目前持有的最早月的前一個月」的缺口（向過去）
+async function fetchMissingFromPast() {
+  const first = parsedData.value[0]?.date;
+  if (!first) {
+    // 沒資料就直接全史
+    return fetchMaxHistory();
+  }
+  const desired = desiredMaxStart();
+  // 從「現有最早月的前一個月」開始，倒著抓到 desired
+  const prev = new Date(first.getFullYear(), first.getMonth() - 1, 1);
+  return fetchStockData({
+    // 起點較新 → 終點較舊，並宣告 backward
+    startYear: prev.getFullYear(),
+    startMonth: prev.getMonth() + 1,
+    endYear: desired.getFullYear(),
+    endMonth: desired.getMonth() + 1,
+    direction: "backward"
+  });
+};
+
+// 依區間計算「這次需要的最早日期」
+function rangeStartFromNow(range) {
+  const now = new Date();
+  switch (range) {
+    case "1d": return d3.timeDay.offset(now, -1);
+    case "5d": return d3.timeDay.offset(now, -5);
+    case "30d": return d3.timeDay.offset(now, -30);
+    case "6m": return d3.timeMonth.offset(now, -6);
+    case "1y": return d3.timeYear.offset(now, -1);
+    case "5y": return d3.timeYear.offset(now, -5);
+    case "10y": return d3.timeYear.offset(now, -10);
+    case "max": return new Date("1990-01-01");
+    default:    return new Date("1990-01-01");
+  };
+};
+
+// 確保資料覆蓋該區間；不足才打 API 補回來
+let fetching = false;
+async function ensureDataFor(range) {
+  if (fetching) return;  // 簡單避免並發
+  const needStart = rangeStartFromNow(range);
+  const haveStart = parsedData.value[0]?.date;
+  if (!haveStart || haveStart > needStart) {
+    fetching = true;
+    try {
+      const now = new Date();
+      await fetchStockData({
+        startYear: needStart.getFullYear(),
+        startMonth: needStart.getMonth() + 1,
+        endYear: now.getFullYear(),
+        endMonth: now.getMonth() + 1
+      });
+    } finally {
+      fetching = false;
+    };
+  };
+};
+
 // 整理資料：將日期轉換為可排序格式
-const parsedData = mockData2330.map(d => ({
-  ...d,
-  date: new Date(d.date.replace(/\//g, "-"))
-})).sort((a, b) => a.date - b.date);
+const parsedData = computed(() =>
+  stockData.value.map(d => ({
+    ...d,
+    date: new Date(d.date.replace(/\//g, "-"))
+  })).sort((a, b) => a.date - b.date)
+);
 
 // 根據選擇的區間過濾資料
 const filteredData = computed(() => {
-  const now = parsedData.at(-1)?.date || new Date();
+  const now = parsedData.value.at(-1)?.date || new Date();
   let cutoff;
   switch (selectedRange.value) {
     case "1d": cutoff = d3.timeDay.offset(now, -1); break;
@@ -89,10 +234,11 @@ const filteredData = computed(() => {
     case "6m": cutoff = d3.timeMonth.offset(now, -6); break;
     case "1y": cutoff = d3.timeYear.offset(now, -1); break;
     case "5y": cutoff = d3.timeYear.offset(now, -5); break;
-    default: cutoff = parsedData[0].date;
+    case "10y": cutoff = d3.timeYear.offset(now, -10); break;
+    default: cutoff = parsedData.value[0]?.date ?? new Date(0);
   }
-  return parsedData.filter((d) => d.open !== null)
-                   .filter((d) => d.date >= cutoff);
+  return parsedData.value.filter((d) => d.open !== null)
+                         .filter((d) => d.date >= cutoff);
 });
 
 // D3 繪圖函式
@@ -114,7 +260,10 @@ function drawChart(data) {
                    .nice();
 
   const yScale = d3.scaleLinear()
-                   .domain([d3.min(data, d => d.low) , d3.max(data, d => d.high)])
+                   .domain([
+                     d3.min(data, d => (d.low ?? d.close ?? d.open)),
+                     d3.max(data, d => (d.high ?? d.close ?? d.open))
+                   ])
                    .range([height - margin.bottom, margin.top])
                    .nice();
 
@@ -241,15 +390,39 @@ watch(filteredData, (val) => {
   nextTick(() => drawChart(val));
 }, { immediate: true });
 
+// 切換區間時「先確保資料覆蓋」，只有不足才打 API
+watch(selectedRange, async (val) => {
+  if (val === "max") {
+    // 同時檢查「向過去」與「向未來」是否不足；只補缺口
+    const tasks = [];
+    if (isMaxMissingPast()) tasks.push(fetchMissingFromPast());
+    if (isMaxStale())       tasks.push(fetchMissingToNow());
+    if (tasks.length) await Promise.all(tasks);
+  } else {
+    await ensureDataFor(val);
+  };
+});
+
 // 顯示當日成交量與變動
-const latestVolume = computed(() => parsedData.at(-1)?.volume);
+const latestVolume = computed(() => {
+  const last = parsedData.value.at(-1);
+  return last && typeof last.volume === "number" ? last.volume : null;
+});
 const changePercent = computed(() => {
   if (!endClose.value || !startOpen.value) return "0.00";
   return (endClose.value - startOpen.value) / startOpen.value;
 });
 
-onMounted(() => {
+onMounted(async () => {
   resizeObserver.observe(chartContainerRef.value);
+  // 初次載入抓「今年到本月」；之後依需要擴充
+  const now = new Date();
+  await fetchStockData({
+    startYear: now.getFullYear(),
+    startMonth: 1,
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1
+  });
   nextTick(() => drawChart(filteredData.value));
 });
 
