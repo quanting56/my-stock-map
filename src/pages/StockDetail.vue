@@ -1,6 +1,6 @@
 <template>
   <div class="p-6">
-    <!-- 頁面標頭：Ticker + price -->
+    <!-- 頁面標題：Ticker + price -->
     <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
       <div>
         <div class="flex items-center gap-3">
