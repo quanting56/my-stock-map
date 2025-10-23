@@ -5,7 +5,7 @@
       <div>
         <div class="flex items-center gap-3">
           <div class="text-3xl font-bold text-[color:var(--color-primary)]">{{ ticker }}</div>
-          <div class="text-sm text-[color:var(--color-secondary)]">| {{ companyName }}</div>
+          <div class="text-sm text-[color:var(--color-secondary)]">{{ companyName }}</div>
           <div class="ml-3 px-2 py-0.5 rounded-md text-xs font-medium bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
             交易代號
           </div>
@@ -37,7 +37,7 @@
         </div>
 
         <button class="px-3 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm">新增觀察</button>
-        <button class="px-3 py-1 rounded-md bg-[color:var(--color-primary)] text-white text-sm">下單</button>
+        <!-- <button class="px-3 py-1 rounded-md bg-[color:var(--color-primary)] text-white text-sm">下單</button> -->
       </div>
     </header>
 
@@ -66,30 +66,34 @@
 
       <!-- 右側：Positions / quick trade -->
       <aside class="card-theme rounded-2xl shadow p-4 space-y-4">
+
         <div>
-          <h3 class="font-medium text-[color:var(--color-primary)]">持倉快速摘要</h3>
-          <div class="text-sm text-[color:var(--color-secondary)] mt-2">
-            成本： <span class="font-medium">${{ position.cost.toLocaleString() }}</span><br />
-            持股數： <span class="font-medium">{{ position.shares }}</span><br />
-            損益： <span :class="positionPLClass" class="font-medium">${{ positionPL }}</span>
-          </div>
+          <h3 class="font-medium text-[color:var(--color-primary)]">基本面摘要</h3>
+          <ul class="text-sm space-y-1 text-[color:var(--color-text)] mt-2">
+            <li>本益比（PE）：<span class="font-medium text-[color:var(--color-primary)]">22.4</span></li>
+            <li>股價淨值比（PB）：<span class="font-medium text-[color:var(--color-primary)]">5.6</span></li>
+            <li>殖利率：<span class="font-medium text-[color:var(--color-primary)]">1.9%</span></li>
+            <li>股本：<span class="font-medium text-[color:var(--color-primary)]">2,590 億</span></li>
+            <li>EPS（近四季）：<span class="font-medium text-[color:var(--color-primary)]">36.8</span></li>
+          </ul>
         </div>
 
         <div class="border-t border-[color:var(--color-border)] pt-3">
-          <h4 class="font-medium mb-2">快速下單</h4>
-          <div class="space-y-2">
-            <input v-model.number="order.qty" type="number" min="1" placeholder="數量" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]" />
-            <select v-model="order.side" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
-              <option value="buy">買入</option>
-              <option value="sell">賣出</option>
-            </select>
-            <button @click="mockOrder" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-primary)] text-white">執行模擬下單</button>
-          </div>
+          <h3 class="font-medium text-[color:var(--color-primary)]">個人持倉快速摘要</h3>
+          <ul class="text-sm space-y-1 text-[color:var(--color-secondary)] mt-2">
+            <li>成本： <span class="font-medium">${{ position.cost.toLocaleString() }}</span></li>
+            <li>持股數： <span class="font-medium">{{ position.shares }}</span></li>
+            <li>損益： <span :class="positionPLClass" class="font-medium">${{ positionPL }} (-6.21%)</span></li>
+          </ul>
         </div>
 
         <div class="border-t border-[color:var(--color-border)] pt-3">
           <h4 class="font-medium mb-2">更多</h4>
-          <button @click="copyTicker" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm">複製代號</button>
+          <div class="space-y-2.5">
+            <button @click="copyTicker" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm">複製代號 2330.TW</button>
+            <button class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm">查看 PTT 討論這家公司的文章</button>
+            <button class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm">查看 Dcard 討論這家公司的文章</button>
+          </div>
         </div>
       </aside>
     </div>
@@ -97,25 +101,10 @@
     <!-- 下方區塊：成交明細 / 相關新聞 -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
       <div class="card-theme rounded-2xl shadow p-4">
-        <h3 class="font-medium mb-3">最近交易紀錄</h3>
-        <table class="w-full text-sm">
-          <thead class="text-[color:var(--color-secondary)]">
-            <tr>
-              <th class="text-left">時間</th>
-              <th class="text-left">動作</th>
-              <th class="text-right">價位</th>
-              <th class="text-right">張數</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr v-for="(t, i) in recentTrades" :key="i" class="border-t border-[color:var(--color-border)]">
-              <td class="py-2">{{ t.time }}</td>
-              <td>{{ t.action }}</td>
-              <td class="text-right">${{ t.price }}</td>
-              <td class="text-right">{{ t.qty }}</td>
-            </tr>
-          </tbody>
-        </table>
+        <h3 class="font-medium mb-3">持有時間表</h3>
+        <div class="h-64 flex items-center justify-center text-[color:var(--color-secondary)] opacity-70">
+          [個人持有股數折線圖區域 — use D3.js here]
+        </div>
       </div>
 
       <div class="card-theme rounded-2xl shadow p-4">
@@ -133,7 +122,6 @@
 
 <script setup>
 import { ref, reactive, computed } from "vue";
-// import { useRoute } from "vue-router"; // optional: 若不使用 router 可移除
 import { useUIThemeStore } from "@/store/theme";
 
 const uiTheme = useUIThemeStore();
@@ -145,7 +133,7 @@ const uiTheme = useUIThemeStore();
 // 樣式化 / 假資料
 const ticker = ref("2330.TW");
 // const ticker = ref(tickerParam || "2330.TW");  // 若你用 router，上行改這行
-const companyName = ref("台積電 (示範公司)");
+const companyName = ref("台積電｜臺灣市值第 1 大公司｜權重股");
 const latestPrice = ref(520);
 const latestVolume = ref(123456);
 const lastUpdated = ref(new Date().toLocaleString());

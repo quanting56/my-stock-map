@@ -31,9 +31,12 @@
     <!-- 三樓：持倉明細＋公司市值排名圖 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
   
-      <!-- 左側：持倉明細 -->
+      <!-- 左側上：持倉明細 -->
       <HoldingDetails :isTotalValueHidden="isHidden"></HoldingDetails>
-  
+
+      <!-- 左側下：觀察名單明細 -->
+      <!-- <HoldingDetails :isTotalValueHidden="isHidden"></HoldingDetails> -->
+
       <!-- 右側：資產分布圖 -->
       <MarketCapitalizationTreemap></MarketCapitalizationTreemap>
     </div>
@@ -42,7 +45,8 @@
     <!-- Bottom: Timeline / Notes -->
     <TimelineList></TimelineList>
 
-    <Test></Test>
+    <!-- 測試 components 區域 -->
+    <!-- <Test></Test> -->
   </div>
 </template>
 
@@ -53,7 +57,7 @@ import PerformanceChart from "@/components/Dashboard/PerformanceChart.vue";
 import HoldingDetails from "@/components/Dashboard/HoldingDetails.vue";
 import MarketCapitalizationTreemap from "@/components/Dashboard/MarketCapitalizationTreemap.vue";
 import TimelineList from "@/components/Dashboard/TimelineList.vue";
-import Test from "../components/Dashboard/Test.vue";
+// import Test from "../components/Dashboard/Test.vue";
 
 import { ref } from "vue";
 
