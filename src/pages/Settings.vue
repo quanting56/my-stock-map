@@ -71,14 +71,14 @@
 
             <button
               @click="uiTheme.toggleUITheme"
-              class="px-3 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition"
+              class="px-3 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition cursor-pointer"
             >
               切換主題
             </button>
 
             <label class="flex items-center gap-2 ml-2">
-              <input type="checkbox" v-model="form.reduceMotion" />
-              <span class="text-sm text-[color:var(--color-secondary)]">減少動畫（減少動態效果）</span>
+              <input type="checkbox" v-model="form.reduceMotion" disabled />
+              <span class="text-sm text-[color:var(--color-secondary)] opacity-50"><s>減少動畫（減少動態效果）</s></span>
             </label>
           </div>
         </section>

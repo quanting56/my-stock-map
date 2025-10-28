@@ -66,7 +66,7 @@
     <h3 class="font-medium mb-3">📈 資產變化走勢</h3>
   
     <div class="h-72 flex items-center justify-center text-[color:var(--color-secondary)] opacity-70">
-      [回測模擬曲線圖區域]
+      [回測模擬曲線圖區域 — use D3.js here]
     </div>
   
     <!-- 🟢 新增：KPI 面板（圖內右下角） -->
