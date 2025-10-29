@@ -1,4 +1,5 @@
 <template>
+  <LoadingModal :open="isLoading" message="股市資料載入中"></LoadingModal>
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium text-[color:var(--color-secondary)]">
@@ -57,6 +58,9 @@
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import { mockData2330 } from "@/data/mock/mockData2330.js";
+import LoadingModal from "@/components/Common/LoadingModal.vue";
+
+const isLoading = ref(false);
 
 const chartContainerRef = ref(null);
 const svgRef = ref(null);
@@ -110,6 +114,7 @@ const ranges = [
 
 // 從後端取得資料的函式，允許帶查詢參數（用於最久取全史）
 async function fetchStockData(params = {}) {
+  isLoading.value = true;  // 使用 LoadingModal
   try {
     const qs = new URLSearchParams(params).toString();
     const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
@@ -127,6 +132,8 @@ async function fetchStockData(params = {}) {
   } catch (err) {
     console.warn("⚠️ 無法連線伺服器，改用 mockData2330：", err.message);
     stockData.value = mockData2330;
+  } finally {
+    isLoading.value = false;
   }
 }
 
@@ -201,6 +208,7 @@ async function ensureDataFor(range) {
   const haveStart = parsedData.value[0]?.date;
   if (!haveStart || haveStart > needStart) {
     fetching = true;
+    isLoading.value = true;  // 使用 LoadingModal
     try {
       const now = new Date();
       await fetchStockData({
@@ -211,6 +219,7 @@ async function ensureDataFor(range) {
       });
     } finally {
       fetching = false;
+      isLoading.value = false;
     };
   };
 };
