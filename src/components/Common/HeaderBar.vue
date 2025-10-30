@@ -1,4 +1,9 @@
 <template>
+  <LogInPage
+    :open-modal="isLogInPageOpen"
+    @request-close="isLogInPageOpen = false"
+  ></LogInPage>
+
   <!-- Header -->
   <header class="card-theme flex items-center justify-between px-6 py-3 border-b space-x-4">
     <div class="flex items-center space-x-2">
@@ -35,7 +40,10 @@
       </button>
     </form>
     
-    <button class="px-3 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer">
+    <button
+      @click="isLogInPageOpen = true"
+      class="px-3 py-1 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 cursor-pointer"
+    >
       登入
     </button>
     <button
@@ -53,6 +61,9 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 import { useUIStateStore } from "@/store/uiState";
 import { useUIThemeStore } from "@/store/theme.js";
 import { useQueryStockStore } from "@/store/queryStock.js";
+
+import LogInPage from "@/components/Common/LogInPage.vue";
+const isLogInPageOpen = ref(false);
 
 const uiState = useUIStateStore();
 const uiTheme = useUIThemeStore();

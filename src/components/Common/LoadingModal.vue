@@ -14,14 +14,10 @@
 </template>
 
 <script setup>
-import { watch } from "vue";
-
 const props = defineProps({
   open: { type: Boolean, default: false },  // 是否顯示，由父層決定
   message: { type: String, default: "資料讀取中" }  // 顯示訊息
 });
-
-watch(() => props.open)
 </script>
 
 <style scoped></style>
