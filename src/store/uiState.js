@@ -94,7 +94,7 @@ export const useUIStateStore = defineStore("uiState", () => {
   ];
 
   // 處理 tab 切換
-  const activeTab = ref(tabs[2].id);
+  const activeTab = ref(tabs[0].id);
 
   const currentTab = computed(() => {
     return tabs.find((t) => t.id === activeTab.value) || tabs[0];
