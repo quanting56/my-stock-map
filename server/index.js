@@ -63,7 +63,7 @@ async function fetchMonth(symbol, year, month) {
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
   const json = await res.json();
   return json.data || [];
-}
+};
 
 // -------------------------------
 //  工具函式：民國年 → 西元年（支援 2位或3位數；也容忍已是西元的字串）
@@ -114,6 +114,50 @@ function ymStr(y, m) {
   return `${y}/${String(m).padStart(2, "0")}`;
 };
 
+// 取「今天的年/月」做為往後補齊的上限
+function todayYm() {
+  const now = new Date();
+  return { y: now.getFullYear(), m: now.getMonth() + 1 };
+};
+
+// 格式化 Date -> 'YYYY/MM/DD'
+function fmtYmd(d) {
+  return `${d.getFullYear()}/${pad(d.getMonth()+1)}/${pad(d.getDate())}`;
+};
+
+// 是否已有「今天或昨天」的資料
+function hasTodayOrYesterday(symbol) {
+  const now = new Date();
+  const todayStr = fmtYmd(now);
+  const yst = new Date(now);
+  yst.setDate(now.getDate() - 1);
+  const ystStr = fmtYmd(yst);
+  const row = db.prepare(
+    `SELECT COUNT(1) AS c FROM stock_prices WHERE symbol=? AND date IN (?,?)`
+  ).get(symbol, todayStr, ystStr);
+  return (row?.c || 0) > 0;
+};
+
+// 從 'YYYY/MM/DD' 擷取 {y, m}
+function ymFromDateStr(dateStr) {
+  // 預期 'YYYY/MM/DD'
+  const y = parseInt(dateStr.slice(0, 4), 10);
+  const m = parseInt(dateStr.slice(5, 7), 10);
+  return { y, m };
+};
+
+// 迭代「不含起點」的往後月份（起點的下一個月開始）
+function* iterateMonthsExclusiveNext(y1, m1, y2, m2) {
+  // 從 (y1, m1) 的下一個月開始
+  let y = y1, m = m1 + 1;
+  if (m > 12) { m = 1; y += 1; }
+  while (y < y2 || (y === y2 && m <= m2)) {
+    yield { y, m };
+    m++;
+    if (m > 12) { m = 1; y++; }
+  }
+};
+
 // -------------------------------
 //  API：查詢某檔股票（例：/api/stocks/2330?startYear=2025&startMonth=1&endMonth=10）
 // -------------------------------
@@ -139,6 +183,12 @@ app.get("/api/stocks/:symbol", async (req, res) => {
     let emptyStreak = 0;
     const EMPTY_BREAK = 7; // 例如連續 7 個月空資料，視為已早於上市
 
+    // 把今天年月提到最前面（避免未宣告先使用）
+    const { y: todayY, m: todayM } = todayYm();
+
+    // 預先判斷「今天或昨天是否已有資料」
+    const hasRecent = hasTodayOrYesterday(symbol);
+
     // 決定抓取方向（向前或向後月份）
     const useBackward =
       directionParam === "backward" ||
@@ -155,7 +205,15 @@ app.get("/api/stocks/:symbol", async (req, res) => {
       const { c } = db.prepare(
         `SELECT COUNT(1) as c FROM stock_prices WHERE symbol = ? AND date LIKE ?`
       ).get(symbol, like);
-      if (c > 0) continue;  // 該月份已有快取
+
+      const isCurrentMonth = (y === todayY && m === todayM);
+
+      // 同樣套用「今/昨已有資料就略過」
+      if (c > 0 && !isCurrentMonth) continue;
+      if (c > 0 && isCurrentMonth && hasRecent) continue;
+      if (isCurrentMonth && c > 0 && !hasRecent) {
+        console.log(`♻️(forward-fill:init) 重新整理當月 ${symbol} ${y}/${pad(m)}（今/昨無資料）`);
+      };
 
       console.log(`🌐 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
       let rows = [];
@@ -197,6 +255,110 @@ app.get("/api/stocks/:symbol", async (req, res) => {
         };
       };
     };
+
+    // 取該股票目前 DB 的最後日期（字串最大即最新）
+    const rowMax = db.prepare(
+      `SELECT MAX(date) AS maxDate FROM stock_prices WHERE symbol = ?`
+    ).get(symbol);
+
+    if (rowMax?.maxDate) {
+      const { y: lastY, m: lastM } = ymFromDateStr(rowMax.maxDate);
+
+      // 僅當 DB 最後年月 < 本年月 時才需要補
+      if (compareYm(lastY, lastM, todayY, todayM) < 0) {
+        for (const { y, m } of iterateMonthsExclusiveNext(lastY, lastM, todayY, todayM)) {
+          const like = ymStr(y, m) + "/%";
+          const { c } = db.prepare(
+            `SELECT COUNT(1) as c FROM stock_prices WHERE symbol = ? AND date LIKE ?`
+          ).get(symbol, like);
+
+          const isCurrentMonth = (y === todayY && m === todayM);
+          
+          // 🛠 修改：同樣套用「今/昨已有資料就略過」
+          if (c > 0 && !isCurrentMonth) continue;
+          if (c > 0 && isCurrentMonth && hasRecent) continue;
+          if (isCurrentMonth && c > 0 && !hasRecent) {
+            console.log(`♻️(forward-fill) 重新整理當月 ${symbol} ${y}/${pad(m)}（今/昨無資料）`);
+          };
+
+          console.log(`🌐(forward-fill) 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
+          let rows = [];
+          try {
+            rows = await fetchMonth(symbol, y, m);
+          } catch (err) {
+            console.warn(`⚠️(forward-fill) 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
+            rows = [];
+          };
+
+          const batch = [];
+          for (const r of rows) {
+            const [date, shares, , open, high, low, close] = r;
+            if (!open || !close) continue;
+            const normalizedDate = rocToAd((date || "").trim());
+            batch.push({
+              symbol,
+              date: normalizedDate,
+              open: parseFloat(open.replace(/,/g, "")),
+              high: parseFloat(high.replace(/,/g, "")),
+              low: parseFloat(low.replace(/,/g, "")),
+              close: parseFloat(close.replace(/,/g, "")),
+              volume: parseInt(shares.replace(/,/g, "")),
+            });
+          };
+
+          if (batch.length) {
+            tx(batch);
+            newlyFetched += batch.length;
+            await new Promise((r) => setTimeout(r, 300));
+          };
+        };
+      };
+    } else {
+      // 若該股票完全沒有資料（新股票第一次查）
+      // 就以「請求的 startYear/startMonth」當作起點向今天補齊，避免下次還缺段
+      const { y: sY, m: sM } = { y: startYear, m: startMonth };
+      if (compareYm(sY, sM, todayY, todayM) < 0) {
+        for (const { y, m } of iterateMonthsExclusiveNext(sY, sM, todayY, todayM)) {
+          const like = ymStr(y, m) + "/%";
+          const { c } = db.prepare(
+            `SELECT COUNT(1) as c FROM stock_prices WHERE symbol = ? AND date LIKE ?`
+          ).get(symbol, like);
+          if (c > 0) continue;
+
+          console.log(`🌐(forward-fill:init) 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
+          let rows = [];
+          try {
+            rows = await fetchMonth(symbol, y, m);
+          } catch (err) {
+            console.warn(`⚠️(forward-fill:init) 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
+            rows = [];
+          };
+
+          const batch = [];
+          for (const r of rows) {
+            const [date, shares, , open, high, low, close] = r;
+            if (!open || !close) continue;
+            const normalizedDate = rocToAd((date || "").trim());
+            batch.push({
+              symbol,
+              date: normalizedDate,
+              open: parseFloat(open.replace(/,/g, "")),
+              high: parseFloat(high.replace(/,/g, "")),
+              low: parseFloat(low.replace(/,/g, "")),
+              close: parseFloat(close.replace(/,/g, "")),
+              volume: parseInt(shares.replace(/,/g, "")),
+            });
+          };
+
+          if (batch.length) {
+            tx(batch);
+            newlyFetched += batch.length;
+            await new Promise((r) => setTimeout(r, 300));
+          };
+        };
+      };
+    };
+
     if (newlyFetched) console.log(`💾 新增 ${newlyFetched} 筆`);
 
     // 回傳「請求範圍」內的所有資料，SELECT 區間要保證「小在前大在後」
