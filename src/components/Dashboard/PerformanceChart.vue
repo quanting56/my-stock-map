@@ -3,7 +3,7 @@
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium text-[color:var(--color-secondary)]">
-        2330.TW 近期趨勢 {{ endClose - startOpen > 0 ? "📈" : "📉" }}
+        {{ displaySymbol }} 近期趨勢 {{ endClose - startOpen > 0 ? "📈" : "📉" }}
       </h3>
 
       <div class="flex gap-2 text-xs text-[color:var(--color-secondary)]">
@@ -21,6 +21,7 @@
 
     <div
       ref="chartContainerRef"
+      :key="symbol"
       class="h-44 w-full rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] p-3 relative"
     >
       <svg ref="svgRef" class="w-full h-full"></svg>
@@ -57,10 +58,16 @@
 <script setup>
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
-import { mockData2330 } from "@/data/mock/mockData2330.js";
 import LoadingModal from "@/components/Common/LoadingModal.vue";
+import { useQueryStockStore } from "@/store/queryStock";
+import { mockData2330 } from "@/data/mock/mockData2330.js";
 
 const isLoading = ref(false);
+
+// Pinia 全站同步股號
+const queryStock = useQueryStockStore();
+const symbol = computed(() => queryStock.symbol);
+const displaySymbol = computed(() => queryStock.displaySymbol);  // 模板顯示用
 
 const chartContainerRef = ref(null);
 const svgRef = ref(null);
@@ -70,8 +77,6 @@ const transitionDuration = 1000;  // 動畫過渡時間
 
 const stockData = ref([]);
 
-// 當前股號（未來可改由 props 或 Pinia 傳入）
-const symbol = "2330";
 const earliestYear = 1990;
 
 const startOpen = ref(0);
@@ -117,7 +122,7 @@ async function fetchStockData(params = {}) {
   isLoading.value = true;  // 使用 LoadingModal
   try {
     const qs = new URLSearchParams(params).toString();
-    const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
+    const url = `http://localhost:3000/api/stocks/${symbol.value}${qs ? "?" + qs : ""}`;
     const res = await fetch(url);
     if (!res.ok) throw new Error("後端回傳錯誤");
     const data = await res.json();
@@ -128,10 +133,11 @@ async function fetchStockData(params = {}) {
     stockData.value = Array.from(map.values()).sort(
       (a, b) => new Date(a.date.replace(/\//g, "-")) - new Date(b.date.replace(/\//g, "-"))
     );
-    console.log(`✅ 從後端取得 ${symbol} 資料`, data.length, params);
+    console.log(`✅ 從後端取得 ${symbol.value} 資料`, data.length, params);
   } catch (err) {
     console.warn("⚠️ 無法連線伺服器，改用 mockData2330：", err.message);
-    stockData.value = mockData2330;
+    // 只有在 2330 或 2330.TW 時才用 mock data，其餘給空陣列以避免誤導
+    stockData.value = /^2330(?:\.TW)?$/i.test(displaySymbol.value) ? mockData2330 : [];
   } finally {
     isLoading.value = false;
   }
@@ -399,6 +405,26 @@ watch(filteredData, (val) => {
   nextTick(() => drawChart(val));
 }, { immediate: true });
 
+
+// 當全站 symbol 改變 → 清空舊資料並抓新資料
+async function primeSymbol() {
+  stockData.value = [];  // 清掉舊標的資料避免混淆
+
+  // 初次載入抓「今年到本月」；之後依需要擴充
+  const now = new Date();
+  await fetchStockData({
+    startYear: now.getFullYear(),
+    startMonth: 1,
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1
+  });
+  nextTick(() => drawChart(filteredData.value));
+}
+
+// 監聽全站 symbol
+watch(() => symbol.value, () => { primeSymbol(); });  // 新標的就重抓
+
+
 // 切換區間時「先確保資料覆蓋」，只有不足才打 API
 watch(selectedRange, async (val) => {
   if (val === "max") {
@@ -424,15 +450,7 @@ const changePercent = computed(() => {
 
 onMounted(async () => {
   resizeObserver.observe(chartContainerRef.value);
-  // 初次載入抓「今年到本月」；之後依需要擴充
-  const now = new Date();
-  await fetchStockData({
-    startYear: now.getFullYear(),
-    startMonth: 1,
-    endYear: now.getFullYear(),
-    endMonth: now.getMonth() + 1
-  });
-  nextTick(() => drawChart(filteredData.value));
+  await primeSymbol();  // 修改：改呼叫上面封裝，與 watch 行為一致
 });
 
 onBeforeUnmount(() => {

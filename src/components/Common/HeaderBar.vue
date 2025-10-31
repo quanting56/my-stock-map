@@ -75,8 +75,7 @@ const searchTerm = ref("");
 function onSubmit() {
   const q = searchTerm.value.trim();
   if (!q) return;
-  // queryStock.
-  alert(`搜尋 ${q} 的功能建置中`);
+  queryStock.setSymbol(q);
 };
 
 // 快捷鍵「/」聚焦搜尋框
