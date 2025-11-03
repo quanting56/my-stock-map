@@ -5,7 +5,7 @@ export const useQueryStockStore = defineStore("queryStock", () => {
   // 預設顯示標的
   const symbol = ref("2330");
 
-  // 統一顯示字串，例如 2330 -> 2330.TW
+  // 統一顯示字串格式，例如 2330 -> 2330.TW
   const displaySymbol = computed(() => {
     const v = (symbol.value || "").toUpperCase();
     // 顯示 4 碼股票則補'.TW'，其他保留原樣

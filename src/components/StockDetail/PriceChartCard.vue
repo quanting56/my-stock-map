@@ -6,12 +6,10 @@
       <div class="text-xs text-[color:var(--color-secondary)]">最後更新：{{ props.lastUpdated }}</div>
     </div>
 
-    <!-- 這裡放你之後要換成 Chart 的容器 -->
     <div
       ref="chartContainerRef"
       class="relative h-72 md:h-96 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] flex items-center justify-center text-[color:var(--color-secondary)] opacity-70"
     >
-      <!-- [Price chart placeholder — use D3 / Chart.js here] -->
       <svg ref="svgRef" class="w-full h-full"></svg>
       <div
         ref="tooltipRef"
@@ -19,13 +17,8 @@
       ></div>
     </div>
 
-    <!-- 下方：技術指標小卡 -->
-    <div class="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
-      <div v-for="(v, k) in props.indicatorSummary" :key="k" class="p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-center">
-        <div class="text-xs text-[color:var(--color-secondary)]">{{ k }}</div>
-        <div class="text-lg font-semibold mt-1">{{ v }}</div>
-      </div>
-    </div>
+    <!-- 下方技術指標小卡 -->
+    <IndicatorSummaryCards :indicator-summary-data="filteredData"></IndicatorSummaryCards>
   </div>
 </template>
 
@@ -33,6 +26,7 @@
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import LoadingModal from "@/components/Common/LoadingModal.vue";
+import IndicatorSummaryCards from "@/components/StockDetail/PriceChartCard/IndicatorSummaryCards.vue";
 import { useQueryStockStore } from "@/store/queryStock.js";
 
 // fetchStockSeries 直接拿可繪圖資料；normalizeStockRows 用來正規化 mockData
@@ -42,7 +36,6 @@ import { mockData2330 } from "@/data/mock/mockData2330.js";
 const props = defineProps({
   currentTimeframe: String,
   lastUpdated: String,
-  indicatorSummary: Object
 });
 
 const isLoading = ref(false);
@@ -152,7 +145,7 @@ const filteredData = computed(() => {
     ? fromDateByRange(effectiveRange.value, now, earliestYear)
     : new Date(0);
   return rangeData.value
-    .filter(d => d.open !== null)
+    .filter(d => d.high !== null)
     .filter(d => d.date >= cutoff);
 });
 

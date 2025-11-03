@@ -26,7 +26,7 @@
             {{ priceChangeSign }}{{ priceChangeAbs }} ({{ priceChangePct }}%)
           </div>
           <div class="text-xs text-[color:var(--color-secondary)]">
-            成交量 {{ latestVolume.toLocaleString() }}
+            區間平均成交量 {{ latestVolume.toLocaleString() }}
           </div>
         </div>
       </div>
@@ -58,7 +58,6 @@
       <PriceChartCard
         :current-timeframe="currentTimeframe"
         :last-updated="lastUpdated"
-        :indicator-summary="indicatorSummary"
       ></PriceChartCard>
 
       <!-- 右側：資訊摘要 InformationSummary.vue -->
@@ -93,9 +92,14 @@ import HoldingTimelineChart from "@/components/StockDetail/HoldingTimelineChart.
 import RelevantNews from "../components/StockDetail/RelevantNews.vue";
 
 import { ref, computed } from "vue";
+import { useQueryStockStore } from "@/store/queryStock";
+import { fetchStockSeries } from "@/api/stocksApi";
 
-// 樣式化 / 假資料
-const ticker = ref("2330.TW");
+// Pinia
+const queryStock = useQueryStockStore();
+
+// 樣式化（部分為寫死的假資料）
+const ticker = computed(() => queryStock.displaySymbol);
 const companyName = ref("台積電");
 const companyRanking = ref(0 + 1);
 const isWeightedStocks = computed(() => {
@@ -112,15 +116,8 @@ const priceChangeClass = computed(() => (priceChangePct.value >= 0 ? "text-red-5
 
 // timeframes
 const timeframes = ["7D", "1M", "3M", "1Y", "3Y"];
-const currentTimeframe = ref("1M");
+const currentTimeframe = ref("3M");
 
-// indicators (mock)
-const indicatorSummary = ref({
-  "MA(20)": 512,
-  "MA(50)": 498,
-  "RSI": 62,
-  "Vol Avg": 98000 / 1000 + "k"
-});
 
 
 // 基本面摘要
