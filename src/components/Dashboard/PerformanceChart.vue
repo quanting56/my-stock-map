@@ -398,7 +398,6 @@ onMounted(async () => {
 
 onBeforeUnmount(() => {
   resizeObserver.disconnect();
-  // clearTimeout(rangeDebounce);
 });
 </script>
 

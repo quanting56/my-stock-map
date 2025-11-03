@@ -39,7 +39,7 @@
             :key="tf"
             @click="currentTimeframe = tf"
             :class="[
-              'px-3 py-1 rounded-md text-sm transition',
+              'px-3 py-1 rounded-md text-sm transition cursor-pointer',
               currentTimeframe === tf ? 'bg-[color:var(--color-primary)] text-white' : ''
             ]"
           >
@@ -111,7 +111,7 @@ const priceChangeSign = computed(() => (priceChangePct.value >= 0 ? "+" : ""));
 const priceChangeClass = computed(() => (priceChangePct.value >= 0 ? "text-red-500" : "text-green-600"));
 
 // timeframes
-const timeframes = ["1D", "5D", "1M", "3M", "1Y"];
+const timeframes = ["7D", "1M", "3M", "1Y", "3Y"];
 const currentTimeframe = ref("1M");
 
 // indicators (mock)
