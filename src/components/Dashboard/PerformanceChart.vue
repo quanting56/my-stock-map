@@ -3,7 +3,7 @@
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium text-[color:var(--color-secondary)]">
-        {{ displaySymbol }} 近期趨勢 {{ endClose - startOpen > 0 ? "📈" : "📉" }}
+        {{ displaySymbol }} 近期趨勢 {{ endClose - startOpen >= 0 ? "📈" : "📉" }}
       </h3>
 
       <div class="flex gap-2 text-xs text-[color:var(--color-secondary)]">
@@ -21,7 +21,6 @@
 
     <div
       ref="chartContainerRef"
-      :key="symbol"
       class="h-44 w-full rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] p-3 relative"
     >
       <svg ref="svgRef" class="w-full h-full"></svg>
@@ -34,9 +33,9 @@
 
     <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-[color:var(--color-secondary)]">
       <div>
-        當日成交量
+        最末交易日成交量
         <span class="font-medium ml-1.5 mt-1">
-          {{ latestVolume ? latestVolume.toLocaleString() : "-" }}
+          {{ latestVolume ? latestVolume.toLocaleString() : "-" }} 股
         </span>
       </div>
       <div class="text-right">此區間變動：
@@ -59,53 +58,28 @@
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
 import LoadingModal from "@/components/Common/LoadingModal.vue";
-import { useQueryStockStore } from "@/store/queryStock";
+import { useQueryStockStore } from "@/store/queryStock.js";
+
+// fetchStockSeries 直接拿可繪圖資料；normalizeStockRows 用來正規化 mockData
+import { fetchStockSeries, normalizeStockRows } from "@/api/stocksApi.js";
 import { mockData2330 } from "@/data/mock/mockData2330.js";
 
 const isLoading = ref(false);
 
+
 // Pinia 全站同步股號
 const queryStock = useQueryStockStore();
-const symbol = computed(() => queryStock.symbol);
+const symbol = computed(() => queryStock.symbol);  // 邏輯用
 const displaySymbol = computed(() => queryStock.displaySymbol);  // 模板顯示用
 
+
+// DOM ref
 const chartContainerRef = ref(null);
 const svgRef = ref(null);
 const tooltipRef = ref(null);
-const selectedRange = ref("6m");
-const transitionDuration = 1000;  // 動畫過渡時間
 
-const stockData = ref([]);
 
-const earliestYear = 1990;
-
-const startOpen = ref(0);
-const endClose = ref(0);
-
-// 動態「是否已過期」判斷
-function monthStart(d) {
-  return new Date(d.getFullYear(), d.getMonth(), 1);
-};
-function isMaxStale() {
-  const last = parsedData.value.at(-1)?.date;
-  if (!last) return true;  // 沒資料 → 需要抓
-  const now = new Date();
-  // 若「最後一筆資料的月份」 < 「本月」，代表少月份，需要補
-  return monthStart(last) < monthStart(now);
-};
-
-// 最久希望的最早日期（之後可換成「上市年」或由後端提供）
-function desiredMaxStart() {
-  return new Date(earliestYear, 0, 1);  // 1990-01-01
-};
-
-// 向「過去」是否不足（目前最早資料是否晚於期望的最早月）
-function isMaxMissingPast() {
-  const first = parsedData.value[0]?.date;
-  if (!first) return true;
-  return monthStart(first) > monthStart(desiredMaxStart());
-};
-
+// 圖表區間切換用
 const ranges = [
   { label: "1 日", value: "1d" },
   { label: "5 日", value: "5d" },
@@ -116,145 +90,133 @@ const ranges = [
   { label: "10 年", value: "10y" },
   { label: "最久", value: "max" }
 ];
+const earliestYear = 1990;  // 選「最久」時能回溯到的最早年（「最久」起始年）
 
-// 從後端取得資料的函式，允許帶查詢參數（用於最久取全史）
+const selectedRange = ref("6m");  // 預設顯示「6個月」
+const effectiveRange = ref(selectedRange.value);  // 真正驅動圖表的有效區段，資料就緒時才切過去（沒有computed，不會自動隨著selected改變而跟著變）
+const transitionDuration = 1000;  // 動畫過渡時間
+
+const rangeData = ref([]);  // 所選資料暫存
+
+
+// 由 range 推回起始日
+function fromDateByRange(range, baseDate, earliest = earliestYear) {
+  switch (range) {
+    case "1d":  return d3.timeDay.offset(baseDate, -1);
+    case "5d":  return d3.timeDay.offset(baseDate, -5);
+    case "30d": return d3.timeDay.offset(baseDate, -30);
+    case "6m":  return d3.timeMonth.offset(baseDate, -6);
+    case "1y":  return d3.timeYear.offset(baseDate, -1);
+    case "5y":  return d3.timeYear.offset(baseDate, -5);
+    case "10y": return d3.timeYear.offset(baseDate, -10);
+    case "max": return new Date(earliest, 0, 1);
+    default:    return new Date(earliest, 0, 1);
+  };
+};
+
+// 區間首尾的指標價，提供給 UI 顯示趨勢符號/漲跌百分比
+const startOpen = ref(0);
+const endClose = ref(0);
+
+
+// 前端快取（避免同參數重打），請求序號（避免競態覆蓋）
+const cacheMap = new Map();  // key: `${symbol}|${startYear}-${startMonth}~${endYear}-${endMonth}`
+let requestId = 0;
+
+function makeKey(sym, p) {
+  return `${sym}|${p.startYear}-${p.startMonth}~${p.endYear}-${p.endMonth}`;
+};
+
+
+// 前端「所選區間」 -> 後端「API 所需的起訖年月（含「max」）」
+function paramsForRange(range) {
+  const now = new Date();
+  const to = { endYear: now.getFullYear(), endMonth: now.getMonth() + 1 };
+  const fromDate = fromDateByRange(range, now, earliestYear);
+  return {
+    startYear: fromDate.getFullYear(),
+    startMonth: fromDate.getMonth() + 1,
+    ...to
+  };
+};
+
+// 呼叫後端依「參數」回傳完整區間
 async function fetchStockData(params = {}) {
   isLoading.value = true;  // 使用 LoadingModal
+  const key = makeKey(symbol.value, params);
+
+  if (cacheMap.has(key)) {  // 快取命中 → 直接用
+    const cached = cacheMap.get(key);
+    
+    if (rangeData.value === cached) {
+      isLoading.value = false;
+      return;
+    }  // 若目前 rangeData 已是同一參考，就不要再次 set（避免重畫）
+
+    rangeData.value = cached;
+    isLoading.value = false;
+    return;
+  };
+  const myId = ++requestId;  // 標記這次請求
   try {
-    const qs = new URLSearchParams(params).toString();
-    const url = `http://localhost:3000/api/stocks/${symbol.value}${qs ? "?" + qs : ""}`;
-    const res = await fetch(url);
-    if (!res.ok) throw new Error("後端回傳錯誤");
-    const data = await res.json();
-    // 合併新舊資料（避免把既有資料覆蓋掉）
-    const map = new Map();
-    for (const r of stockData.value) map.set(r.date, r);
-    for (const r of data) map.set(r.date, r);
-    stockData.value = Array.from(map.values()).sort(
-      (a, b) => new Date(a.date.replace(/\//g, "-")) - new Date(b.date.replace(/\//g, "-"))
-    );
+    const data = await fetchStockSeries(symbol.value, params);  // 取得「已正規化、已排序」的 StockBar[]
+    if (myId !== requestId) return;  // 舊回應丟棄
+    cacheMap.set(key, data);  // 寫入快取
+    rangeData.value = data;
+    currentKey.value = key;  // 記錄目前使用的資料 key
     console.log(`✅ 從後端取得 ${symbol.value} 資料`, data.length, params);
   } catch (err) {
+    if (myId !== requestId) return;  // 舊錯誤丟棄
     console.warn("⚠️ 無法連線伺服器，改用 mockData2330：", err.message);
-    // 只有在 2330 或 2330.TW 時才用 mock data，其餘給空陣列以避免誤導
-    stockData.value = /^2330(?:\.TW)?$/i.test(displaySymbol.value) ? mockData2330 : [];
+    rangeData.value = /^2330(?:\.TW)?$/i.test(displaySymbol.value)
+      ? normalizeStockRows(symbol.value, mockData2330)
+      : [];  // mockData 轉成 StockBar[]
   } finally {
-    isLoading.value = false;
-  }
-}
-
-// 最久 → 直接請 server 回全歷史（1990/01~本月）
-function fetchMaxHistory() {
-  const now = new Date();
-  return fetchStockData({
-    startYear: earliestYear,
-    startMonth: 1,
-    endYear: now.getFullYear(),
-    endMonth: now.getMonth() + 1
-  });
-};
-
-// 補齊「從最後一筆的下個月 → 本月」的缺口
-async function fetchMissingToNow() {
-  const last = parsedData.value.at(-1)?.date;
-  const now = new Date();
-  if (!last) {
-    // 完全沒有資料 → 走全史
-    return fetchMaxHistory();
-  };
-  return fetchStockData({
-    startYear: last.getFullYear(),
-    startMonth: last.getMonth() + 1,  // 從「下一個月」開始補
-    endYear: now.getFullYear(),
-    endMonth: now.getMonth() + 1
-  });
-};
-
-// 補齊「從期望最早月 → 目前持有的最早月的前一個月」的缺口（向過去）
-async function fetchMissingFromPast() {
-  const first = parsedData.value[0]?.date;
-  if (!first) {
-    // 沒資料就直接全史
-    return fetchMaxHistory();
-  }
-  const desired = desiredMaxStart();
-  // 從「現有最早月的前一個月」開始，倒著抓到 desired
-  const prev = new Date(first.getFullYear(), first.getMonth() - 1, 1);
-  return fetchStockData({
-    // 起點較新 → 終點較舊，並宣告 backward
-    startYear: prev.getFullYear(),
-    startMonth: prev.getMonth() + 1,
-    endYear: desired.getFullYear(),
-    endMonth: desired.getMonth() + 1,
-    direction: "backward"
-  });
-};
-
-// 依區間計算「這次需要的最早日期」
-function rangeStartFromNow(range) {
-  const now = new Date();
-  switch (range) {
-    case "1d": return d3.timeDay.offset(now, -1);
-    case "5d": return d3.timeDay.offset(now, -5);
-    case "30d": return d3.timeDay.offset(now, -30);
-    case "6m": return d3.timeMonth.offset(now, -6);
-    case "1y": return d3.timeYear.offset(now, -1);
-    case "5y": return d3.timeYear.offset(now, -5);
-    case "10y": return d3.timeYear.offset(now, -10);
-    case "max": return new Date("1990-01-01");
-    default:    return new Date("1990-01-01");
+    if (myId === requestId) isLoading.value = false;  // 僅關閉當前請求的 loading
   };
 };
 
-// 確保資料覆蓋該區間；不足才打 API 補回來
-let fetching = false;
-async function ensureDataFor(range) {
-  if (fetching) return;  // 簡單避免並發
-  const needStart = rangeStartFromNow(range);
-  const haveStart = parsedData.value[0]?.date;
-  if (!haveStart || haveStart > needStart) {
-    fetching = true;
-    isLoading.value = true;  // 使用 LoadingModal
-    try {
-      const now = new Date();
-      await fetchStockData({
-        startYear: needStart.getFullYear(),
-        startMonth: needStart.getMonth() + 1,
-        endYear: now.getFullYear(),
-        endMonth: now.getMonth() + 1
-      });
-    } finally {
-      fetching = false;
-      isLoading.value = false;
-    };
-  };
-};
-
-// 整理資料：將日期轉換為可排序格式
-const parsedData = computed(() =>
-  stockData.value.map(d => ({
-    ...d,
-    date: new Date(d.date.replace(/\//g, "-"))
-  })).sort((a, b) => a.date - b.date)
-);
-
-// 根據選擇的區間過濾資料
+// 根據 effectiveRange 過濾資料，避免在資料未就緒時就重畫
 const filteredData = computed(() => {
-  const now = parsedData.value.at(-1)?.date || new Date();
-  let cutoff;
-  switch (selectedRange.value) {
-    case "1d": cutoff = d3.timeDay.offset(now, -1); break;
-    case "5d": cutoff = d3.timeDay.offset(now, -5); break;
-    case "30d": cutoff = d3.timeDay.offset(now, -30); break;
-    case "6m": cutoff = d3.timeMonth.offset(now, -6); break;
-    case "1y": cutoff = d3.timeYear.offset(now, -1); break;
-    case "5y": cutoff = d3.timeYear.offset(now, -5); break;
-    case "10y": cutoff = d3.timeYear.offset(now, -10); break;
-    default: cutoff = parsedData.value[0]?.date ?? new Date(0);
-  }
-  return parsedData.value.filter((d) => d.open !== null)
-                         .filter((d) => d.date >= cutoff);
+  const now = rangeData.value.at(-1)?.date || new Date();
+  const cutoff = rangeData.value.length
+    ? fromDateByRange(effectiveRange.value, now, earliestYear)
+    : new Date(0);
+  return rangeData.value
+    .filter(d => d.open !== null)
+    .filter(d => d.date >= cutoff);
 });
+
+// 判斷目前本地資料是否覆蓋某個 range 的截止點
+function hasCoverageFor(range) {
+  if (!rangeData.value.length) return false;
+  const now = rangeData.value.at(-1)?.date || new Date();
+  const cutoff = fromDateByRange(range, now, earliestYear);
+  const earliest = rangeData.value[0].date;
+  // 只要本地最早日期 <= 目標 cutoff，就代表資料足夠，不必打 API
+  return earliest <= cutoff;
+};
+
+// 記住目前使用中的「後端參數 key」，避免對同一 key 重複 set 造成重畫
+const currentKey = ref("");
+
+watch(selectedRange, async (val) => {
+  // 本地足夠 → 直接切到有效區段（立即只畫一次）
+  if (hasCoverageFor(val)) {
+    effectiveRange.value = val;
+    return;
+  };
+  
+  // 本地不足 → 先補資料，補好再切到有效區段（只畫一次，新資料）
+  const params = paramsForRange(val);
+  const key = makeKey(symbol.value, params);
+  if (key !== currentKey.value) {
+    await fetchStockData(params);
+    currentKey.value = key;
+  }
+  effectiveRange.value = val;
+});
+
 
 // D3 繪圖函式
 function drawChart(data) {
@@ -288,7 +250,7 @@ function drawChart(data) {
                  .curve(d3.curveMonotoneX);
 
   // 動態設定線段顏色
-  const lineColor = endClose.value > startOpen.value
+  const lineColor = endClose.value >= startOpen.value
     ? "var(--color-line2)"
     : "var(--color-line3)";
 
@@ -397,64 +359,46 @@ function drawChart(data) {
                      });
 };
 
-// 監聽 filteredData 與 resize
-const resizeObserver = new ResizeObserver(() => drawChart(filteredData.value));
 
-// 監聽切換區間時重畫
-watch(filteredData, (val) => {
+// 由尺寸 tick 觸發同一個 watch，避免與 filteredData 各畫一次
+const resizeTick = ref(0);
+const resizeObserver = new ResizeObserver(() => { resizeTick.value++; });
+
+
+// 資料變更 或 尺寸變更，圖形只畫一次
+watch([filteredData, resizeTick], ([val]) => {
+  if (!val || val.length < 2) return;  // 避免空畫面與單點重畫
   nextTick(() => drawChart(val));
 }, { immediate: true });
 
 
-// 當全站 symbol 改變 → 清空舊資料並抓新資料
+// 當全站 symbol 改變（換標的） → 抓新資料
 async function primeSymbol() {
-  stockData.value = [];  // 清掉舊標的資料避免混淆
-
-  // 初次載入抓「今年到本月」；之後依需要擴充
-  const now = new Date();
-  await fetchStockData({
-    startYear: now.getFullYear(),
-    startMonth: 1,
-    endYear: now.getFullYear(),
-    endMonth: now.getMonth() + 1
-  });
-  nextTick(() => drawChart(filteredData.value));
-}
-
-// 監聽全站 symbol
-watch(() => symbol.value, () => { primeSymbol(); });  // 新標的就重抓
+  await fetchStockData(paramsForRange(selectedRange.value));
+};
+watch(() => symbol.value, () => { primeSymbol(); });
 
 
-// 切換區間時「先確保資料覆蓋」，只有不足才打 API
-watch(selectedRange, async (val) => {
-  if (val === "max") {
-    // 同時檢查「向過去」與「向未來」是否不足；只補缺口
-    const tasks = [];
-    if (isMaxMissingPast()) tasks.push(fetchMissingFromPast());
-    if (isMaxStale())       tasks.push(fetchMissingToNow());
-    if (tasks.length) await Promise.all(tasks);
-  } else {
-    await ensureDataFor(val);
-  };
-});
-
-// 顯示當日成交量與變動
+// UI 顯示最末日成交量 & 區間報酬百分比
 const latestVolume = computed(() => {
-  const last = parsedData.value.at(-1);
+  const last = rangeData.value.at(-1);
   return last && typeof last.volume === "number" ? last.volume : null;
 });
+
 const changePercent = computed(() => {
-  if (!endClose.value || !startOpen.value) return "0.00";
+  if (!endClose.value || !startOpen.value) return 0;
   return (endClose.value - startOpen.value) / startOpen.value;
 });
 
+
 onMounted(async () => {
   resizeObserver.observe(chartContainerRef.value);
-  await primeSymbol();  // 修改：改呼叫上面封裝，與 watch 行為一致
+  await primeSymbol();
 });
 
 onBeforeUnmount(() => {
   resizeObserver.disconnect();
+  // clearTimeout(rangeDebounce);
 });
 </script>
 
