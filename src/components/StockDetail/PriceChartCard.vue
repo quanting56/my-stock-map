@@ -3,7 +3,7 @@
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <div class="font-medium text-[color:var(--color-secondary)]">價格走勢（{{ props.currentTimeframe }}）</div>
-      <div class="text-xs text-[color:var(--color-secondary)]">最後更新：{{ props.lastUpdated }}</div>
+      <div class="text-xs text-[color:var(--color-secondary)]">最後更新：{{ props.lastUpdated.toLocaleString() }}</div>
     </div>
 
     <div
@@ -35,7 +35,7 @@ import { mockData2330 } from "@/data/mock/mockData2330.js";
 
 const props = defineProps({
   currentTimeframe: String,
-  lastUpdated: String,
+  lastUpdated: Date,
 });
 
 const isLoading = ref(false);

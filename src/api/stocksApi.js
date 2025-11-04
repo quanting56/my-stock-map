@@ -5,7 +5,7 @@ export async function fetchStockRange(symbol, params = {}) {
 
   const res = await fetch(url);
   if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
-  return res.json();  // 回傳「後端原樣 JSON Array」（日期為 'YYYY/MM/DD' 字串）
+  return res.json();  // 回傳「後端原樣 JSON Array」（日期為 "YYYY/MM/DD" 字串）
 };
 
 
@@ -14,7 +14,7 @@ export async function fetchStockRange(symbol, params = {}) {
 
 /**
  * 將後端 rows 正規化為可繪圖的陣列（日期→Date、數字→number、排序）
- * @param {Array<any>} rows 後端回傳的 array（含 date: 'YYYY/MM/DD'）
+ * @param {Array<any>} rows 後端回傳的 array（含 date: "YYYY/MM/DD"）
  * @param {string} symbol
  * @returns {Array<{
  *  symbol: string,
@@ -35,7 +35,7 @@ export function normalizeStockRows(symbol = "", rows = []) {
     return Number.isFinite(n) ? n : null;
   };
 
-  // 後端已是 'YYYY/MM/DD'，安全轉 ISO 再 new Date，避免不同瀏覽器解析差異
+  // 後端已是 "YYYY/MM/DD"，安全轉 ISO 再 new Date，避免不同瀏覽器解析差異
   const toDate = (s) => {
     if (s instanceof Date) return s;
     if (typeof s !== "string") return null;
@@ -99,3 +99,61 @@ export async function fetchStockSeries(symbol, params = {}) {
 
 // const rows = normalizeStockRows("2330", mockData2330);
 // </script>
+
+
+
+
+// 取全清單（做搜尋下拉時會用到）
+export async function fetchAllSymbols() {
+  // 先嘗試打自己的後端，失敗再 fallback 到本地 mock
+  try {
+    const res = await fetch("http://localhost:3000/api/symbols");
+    if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
+    return res.json();
+  } catch(e) {
+    // Fallback：讀前端打包內的 JSON 檔（動態載入避免平常佔 bundle）
+    const { default: mock } = await import("@/data/mock/mockDataCompanyName.json"); // NEW
+    const MARKET_MAP = { twse: "上市", tpex: "上櫃" }; // NEW
+    const arr = Array.isArray(mock?.data) ? mock.data : [];
+    // 映射成與 /api/symbols 相同結構（code, symbol, name, market, industry）
+    return arr.map(r => ({ // NEW
+      code: String(r.stock_id),
+      symbol: `${r.stock_id}.TW`,
+      name: String(r.stock_name),
+      market: MARKET_MAP[r.type?.toLowerCase?.()] ?? (r.type ?? ""),
+      industry: r.industry_category ?? ""
+    }));
+  };
+};
+
+// 用四/五碼代號查公司（回 { code, symbol, name, market, industry }）
+export async function fetchSymbolProfile(codeOrSymbol) {
+  // 正規化（支援 "2330.TW" / " 2330 "）
+  const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
+  try {
+    const res = await fetch(`http://localhost:3000/api/symbols/${code}`);
+    if (res.status === 404) return null;
+    if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
+    return res.json();
+  } catch (e) {
+    // 網路錯誤/後端掛了 → 直接進 fallback
+  };
+
+  // Fallback：用本地 mock 查找並轉成同樣格式
+  try {
+    const { default: mock } = await import("@/data/mock/mockDataCompanyName.json"); // NEW
+    const MARKET_MAP = { twse: "上市", tpex: "上櫃" }; // NEW
+    const arr = Array.isArray(mock?.data) ? mock.data : [];
+    const hit = arr.find(r => String(r.stock_id) === code); // NEW
+    if (!hit) return null; // NEW
+    return { // NEW：回傳結構與後端一致
+      code: String(hit.stock_id),
+      symbol: `${hit.stock_id}.TW`,
+      name: String(hit.stock_name),
+      market: MARKET_MAP[hit.type?.toLowerCase?.()] ?? (hit.type ?? ""),
+      industry: hit.industry_category ?? ""
+    };
+  } catch {
+    return null; // NEW：mock 檔讀不到就回 null，SFC 會顯示 "—"
+  };
+};

@@ -9,6 +9,8 @@ import Database from "better-sqlite3";
 import fs from "fs";
 import cors from "cors";
 
+import { installSymbolRoutes } from "./symbolMap.js";
+
 // -------------------------------
 //  初始化基本設定
 // -------------------------------
@@ -376,6 +378,8 @@ app.get("/api/stocks/:symbol", async (req, res) => {
     res.status(500).json({ error: "資料抓取失敗", message: err.message });
   };
 });
+
+installSymbolRoutes(app);
 
 // -------------------------------
 //  啟動伺服器

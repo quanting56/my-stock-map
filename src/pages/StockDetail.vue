@@ -3,30 +3,34 @@
     <!-- 頁面標題：公司名與現價 -->
     <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
       <div>
-        <div class="flex items-center gap-3">
+        <div class="flex items-end gap-3">
           <div class="text-3xl font-bold text-[color:var(--color-primary)]">
+            {{ companyName }}
+          </div>
+          <div class="mr-3 px-2 py-0.5 rounded-md text-xs font-medium bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
             {{ ticker }}
           </div>
           <div class="text-sm text-[color:var(--color-secondary)]">
-            {{ companyName }}｜臺灣市值第 {{ companyRanking }} 大公司｜{{ isWeightedStocks }}
-          </div>
-          <div class="ml-3 px-2 py-0.5 rounded-md text-xs font-medium bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
-            交易代號
+            臺灣市值第 {{ companyRanking }} 大公司｜{{ isWeightedStocks }}｜{{ industryCategory }}
           </div>
         </div>
 
         <div class="mt-2 flex items-baseline gap-4">
-          <div class="text-2xl font-bold text-[color:var(--color-primary)]">
-            ${{ latestPrice.toLocaleString() }}
+          <div
+            :class="priceChangeClass"
+            class="text-2xl font-bold"
+          >
+            ${{ Number(latestPrice).toFixed(2) }}
           </div>
           <div
             :class="priceChangeClass"
             class="text-sm font-medium"
           >
-            {{ priceChangeSign }}{{ priceChangeAbs }} ({{ priceChangePct }}%)
+            {{ priceChangeSign }}${{ Math.abs(Number(priceChangeAbs)).toFixed(2) }} / {{ priceChangeSign }}{{ Math.abs(Number(priceChangePct)).toFixed(2) }}%
           </div>
           <div class="text-xs text-[color:var(--color-secondary)]">
-            區間平均成交量 {{ latestVolume.toLocaleString() }}
+            {{ lastUpdated.toLocaleString("zh-TW", { month: "2-digit", day: "numeric" }) }}
+            成交量 {{ latestVolume.toLocaleString() }}
           </div>
         </div>
       </div>
@@ -91,32 +95,92 @@ import InformationSummary from "@/components/StockDetail/InformationSummary.vue"
 import HoldingTimelineChart from "@/components/StockDetail/HoldingTimelineChart.vue";
 import RelevantNews from "../components/StockDetail/RelevantNews.vue";
 
-import { ref, computed } from "vue";
+import { ref, computed, watch } from "vue";
 import { useQueryStockStore } from "@/store/queryStock";
-import { fetchStockSeries } from "@/api/stocksApi";
+import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi";
 
 // Pinia
 const queryStock = useQueryStockStore();
 
 // 樣式化（部分為寫死的假資料）
 const ticker = computed(() => queryStock.displaySymbol);
-const companyName = ref("台積電");
+// const companyName = ref("台積電");
+const companyName = ref("—");
 const companyRanking = ref(0 + 1);
 const isWeightedStocks = computed(() => {
   return companyRanking.value < 51 ? "權重股" : "";
 });
-const latestPrice = ref(520);
-const latestVolume = ref(123456);
-const lastUpdated = ref(new Date().toLocaleString());
+// const industryCategory = ref("半導體製造業");
+const industryCategory = ref("—");
 
-const priceChangePct = ref(-1.28);
-const priceChangeAbs = ref((latestPrice.value * priceChangePct.value / 100).toFixed(2));
-const priceChangeSign = computed(() => (priceChangePct.value >= 0 ? "+" : ""));
-const priceChangeClass = computed(() => (priceChangePct.value >= 0 ? "text-red-500" : "text-green-600"));
+const latestPrice = ref("-");
+const latestVolume = ref("-");
+const lastUpdated = ref(new Date());
+
+const priceChangePct = ref("-");
+const priceChangeAbs = ref("-");
+const priceChangeSign = computed(() => {
+  if (!Number.isFinite(priceChangePct.value)) return "";
+  return priceChangePct.value >= 0 ? "+" : "-";
+});
+const priceChangeClass = computed(() => {
+  if (!Number.isFinite(priceChangePct.value)) return "text-red-500";
+  return priceChangePct.value >= 0 ? "text-red-500" : "text-green-600";
+});
 
 // timeframes
 const timeframes = ["7D", "1M", "3M", "1Y", "3Y"];
 const currentTimeframe = ref("3M");
+
+async function refreshHeadline() {
+  try {
+    // 先查基本資料（公司名稱、產業）
+    const prof = await fetchSymbolProfile(queryStock.symbol);
+    if (prof) {
+      companyName.value = prof.name || "—";
+      industryCategory.value = prof.industry || "—";
+    } else {
+      companyName.value = "—";
+      industryCategory.value = "—";
+    };
+
+    // 再處理股價資訊
+    const rows = await fetchStockSeries(queryStock.symbol);
+    if (rows && rows.length) {
+      const last = rows.at(-1);
+      const prev = rows.at(-2);
+      // 最後一日收盤價
+      if (Number.isFinite(last.close)) {
+        latestPrice.value = last.close;
+      };
+      // 最新一日成交量
+      if (Number.isFinite(last?.volume)) {
+        latestVolume.value = Math.round(last.volume);
+      };
+      // 同步「最後更新」
+      if (last?.date instanceof Date && !Number.isNaN(+last.date)) {
+        lastUpdated.value = last.date;
+      };
+      // 計算與前一日的漲跌（有 prev 才算）
+      if (Number.isFinite(prev?.close) && Number.isFinite(last?.close) && prev.close !== 0) {
+        const diff = last.close - prev.close;
+        priceChangeAbs.value = Number(diff);
+        priceChangePct.value = Number(((diff / prev.close) * 100).toFixed(2));
+      };
+    };
+  } catch (err) {
+    console.warn("refreshHeadline failed:", err);
+    // 失敗時維持原值，不強制覆寫
+  };
+};
+
+watch(
+  () => queryStock.symbol,
+  () => { refreshHeadline(); },
+  { immediate: true }
+);
+
+
 
 
 
