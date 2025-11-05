@@ -11,7 +11,7 @@
             {{ ticker }}
           </div>
           <div class="text-sm text-[color:var(--color-secondary)]">
-            臺灣市值第 {{ companyRanking }} 大公司｜{{ isWeightedStocks }}｜{{ industryCategory }}
+            {{ industryCategory }}{{ companyRanking }}{{ isWeightedStocks }}
           </div>
         </div>
 
@@ -97,18 +97,27 @@ import RelevantNews from "../components/StockDetail/RelevantNews.vue";
 
 import { ref, computed, watch } from "vue";
 import { useQueryStockStore } from "@/store/queryStock";
-import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi";
+import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries } from "@/api/stocksApi";
 
 // Pinia
 const queryStock = useQueryStockStore();
 
+
+// === <header> 資訊 ===
 // 樣式化（部分為寫死的假資料）
 const ticker = computed(() => queryStock.displaySymbol);
 // const companyName = ref("台積電");
 const companyName = ref("—");
-const companyRanking = ref(0 + 1);
+const companyRankingNum = ref(null);
+const companyRanking = computed(() => {
+  return Number.isFinite(companyRankingNum.value)
+    ? `｜臺灣市值第 ${companyRankingNum.value} 大公司`
+    : "";
+});
 const isWeightedStocks = computed(() => {
-  return companyRanking.value < 51 ? "權重股" : "";
+  return Number.isFinite(companyRankingNum.value) && companyRankingNum.value < 11
+    ? "｜前 10 大權重股"
+    : "";
 });
 // const industryCategory = ref("半導體製造業");
 const industryCategory = ref("—");
@@ -134,7 +143,7 @@ const currentTimeframe = ref("3M");
 
 async function refreshHeadline() {
   try {
-    // 先查基本資料（公司名稱、產業）
+    // === 查股票基本資料（公司名稱、產業） ===
     const prof = await fetchSymbolProfile(queryStock.symbol);
     if (prof) {
       companyName.value = prof.name || "—";
@@ -144,7 +153,12 @@ async function refreshHeadline() {
       industryCategory.value = "—";
     };
 
-    // 再處理股價資訊
+    // === 查股票市值排名 ===
+    companyRankingNum.value = null;
+    const rankInfo = await fetchCompanyRank(queryStock.symbol);
+    if (rankInfo?.rank) companyRankingNum.value = rankInfo.rank;
+
+    // === 處理股票股價資訊 ===
     const rows = await fetchStockSeries(queryStock.symbol);
     if (rows && rows.length) {
       const last = rows.at(-1);
@@ -179,6 +193,7 @@ watch(
   () => { refreshHeadline(); },
   { immediate: true }
 );
+// === <header> 資訊完 ===
 
 
 

@@ -126,6 +126,7 @@ export async function fetchAllSymbols() {
   };
 };
 
+
 // 用四/五碼代號查公司（回 { code, symbol, name, market, industry }）
 export async function fetchSymbolProfile(codeOrSymbol) {
   // 正規化（支援 "2330.TW" / " 2330 "）
@@ -155,5 +156,24 @@ export async function fetchSymbolProfile(codeOrSymbol) {
     };
   } catch {
     return null; // NEW：mock 檔讀不到就回 null，SFC 會顯示 "—"
+  };
+};
+
+
+
+
+
+export async function fetchCompanyRank(codeOrSymbol){
+  const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/,"").trim();
+  
+  // 簡易規則 — 台灣 ETF 幾乎都是 00 開頭（0050、006208...），直接不打 API
+  if (/^00/.test(code)) return null;
+  try {
+    const res = await fetch(`http://localhost:3000/api/market-ranks/${code}`);
+    if (res.status === 404) return null;   // 後端沒這檔的排名 → 當作沒有
+    if (!res.ok) throw new Error(`排名 API 錯誤：${res.status}`);
+    return res.json();  // {market, rank, name, weight?, code?, symbol?}
+  } catch {
+    return null;  // 網路失敗/伺服器關機 → 不影響頁面
   };
 };

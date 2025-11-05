@@ -9,7 +9,11 @@ import Database from "better-sqlite3";
 import fs from "fs";
 import cors from "cors";
 
+// 得到 台股股票代號 與 公司名稱（含ETF） 的對應
 import { installSymbolRoutes } from "./symbolMap.js";
+
+// 得到 上市上櫃 公司市值排名
+import { installRankingRoutes } from "./rankings.js";
 
 // -------------------------------
 //  初始化基本設定
@@ -380,6 +384,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
 });
 
 installSymbolRoutes(app);
+installRankingRoutes(app);
 
 // -------------------------------
 //  啟動伺服器
