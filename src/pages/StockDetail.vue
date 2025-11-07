@@ -1,4 +1,5 @@
 <template>
+  <LoadingModal :open="isLoading" message="資料讀取中..."></LoadingModal>
   <div class="p-6">
     <!-- 頁面標題：公司名與現價 -->
     <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
@@ -93,14 +94,17 @@
 import PriceChartCard from "@/components/StockDetail/PriceChartCard.vue";
 import InformationSummary from "@/components/StockDetail/InformationSummary.vue";
 import HoldingTimelineChart from "@/components/StockDetail/HoldingTimelineChart.vue";
-import RelevantNews from "../components/StockDetail/RelevantNews.vue";
+import RelevantNews from "@/components/StockDetail/RelevantNews.vue";
 
 import { ref, computed, watch } from "vue";
+import LoadingModal from "@/components/Common/LoadingModal.vue";
 import { useQueryStockStore } from "@/store/queryStock";
 import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
 
 // Pinia
 const queryStock = useQueryStockStore();
+
+const isLoading = ref(false);
 
 
 // === <header> 資訊 ===
@@ -188,11 +192,12 @@ async function refreshHeadline() {
   };
 };
 
-watch(
-  () => queryStock.symbol,
-  () => { refreshHeadline(); },
-  { immediate: true }
-);
+// 此處不在這裡觸發，改由最後由 refreshAll() 統一觸發
+// watch(
+//   () => queryStock.symbol,
+//   () => { refreshHeadline(); },
+//   { immediate: true }
+// );
 // === <header> 資訊完 ===
 
 
@@ -235,11 +240,12 @@ async function refreshFundamentalSummary() {
   };
 };
 
-watch(
-  () => queryStock.symbol,
-  () => { refreshFundamentalSummary(); },
-  { immediate: true }
-);
+// 此處不在這裡觸發，改由最後由 refreshAll() 統一觸發
+// watch(
+//   () => queryStock.symbol,
+//   () => { refreshFundamentalSummary(); },
+//   { immediate: true }
+// );
 
 
 
@@ -260,7 +266,7 @@ function copyTicker() {
   navigator.clipboard?.writeText(ticker.value)
     .then(() => alert("已複製代號"))
     .catch(() => alert("複製失敗"));
-}
+};
 
 
 
@@ -268,6 +274,21 @@ const notes = ref([
   { date: "2025-10-08", text: "法說會預告 - 影響明日盤勢" },
   { date: "2025-09-30", text: "公告除息" }
 ]);
+
+
+// 頁面級 Loading 狀態由此統一觸發
+async function refreshAll() {
+  isLoading.value = true;
+  try {
+    await Promise.all([
+      refreshHeadline(),
+      refreshFundamentalSummary()
+    ]);
+  } finally {
+    isLoading.value = false;
+  };
+};
+watch(() => queryStock.symbol, () => { refreshAll(); }, { immediate: true });
 </script>
 
 <style scoped></style>

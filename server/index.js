@@ -382,6 +382,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
        WHERE symbol = ? AND date BETWEEN ? AND ?
        ORDER BY date`
     ).all(symbol, startDateStr, endDateStr);
+    res.set("Cache-Control", "no-store");  // 避免前端拿舊 JSON
     return res.json(result);
   } catch (err) {
     console.error("❌ 抓取或儲存錯誤：", err);

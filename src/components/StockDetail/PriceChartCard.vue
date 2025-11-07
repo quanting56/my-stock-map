@@ -1,5 +1,5 @@
 <template>
-  <LoadingModal :open="isLoading" message="價格資料載入中"></LoadingModal>
+  <LoadingModal :open="isLoading" message="價格資料載入中..."></LoadingModal>
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <div class="font-medium text-[color:var(--color-secondary)]">價格走勢（{{ props.currentTimeframe }}）</div>
