@@ -3,11 +3,11 @@
     <div>
       <h3 class="font-medium text-[color:var(--color-primary)]">基本面摘要</h3>
       <ul class="text-sm space-y-1 text-[color:var(--color-text)] mt-2">
-        <li>本益比（PE）：<span class="font-medium text-[color:var(--color-primary)]">{{ props.fundamentalSummary.peRatio }}</span></li>
-        <li>股價淨值比（PB）：<span class="font-medium text-[color:var(--color-primary)]">{{ props.fundamentalSummary.pbRatio }}</span></li>
-        <li>殖利率：<span class="font-medium text-[color:var(--color-primary)]">{{ (props.fundamentalSummary.yield * 100).toFixed(1) }}%</span></li>
-        <li>股本：<span class="font-medium text-[color:var(--color-primary)]">{{ (props.fundamentalSummary.shareCapital / 10**8).toLocaleString() }} 億</span></li>
-        <li>EPS（近四季）：<span class="font-medium text-[color:var(--color-primary)]">{{ props.fundamentalSummary.eps.toLocaleString() }}</span></li>
+        <li>本益比（PE）：<span class="font-medium text-[color:var(--color-primary)]">{{ Number.isFinite(props.fundamentalSummary.peRatio) ? props.fundamentalSummary.peRatio : "-" }}</span></li>
+        <li>股價淨值比（PB）：<span class="font-medium text-[color:var(--color-primary)]">{{ Number.isFinite(props.fundamentalSummary.pbRatio) ? props.fundamentalSummary.pbRatio : "-" }}</span></li>
+      <li>殖利率：<span class="font-medium text-[color:var(--color-primary)]">{{ Number.isFinite(props.fundamentalSummary.yield) ? (props.fundamentalSummary.yield * 100).toFixed(1) : "-" }}%</span></li>
+        <li>股本：<span class="font-medium text-[color:var(--color-primary)]">{{ Number.isFinite(props.fundamentalSummary.shareCapital) ? (props.fundamentalSummary.shareCapital / 10**8).toLocaleString() + " 億" : "-" }}</span></li>
+        <li>EPS（近四季）：<span class="font-medium text-[color:var(--color-primary)]">{{ Number.isFinite(props.fundamentalSummary.eps) ? (props.fundamentalSummary.eps).toLocaleString() : "-" }}</span></li>
       </ul>
     </div>
 

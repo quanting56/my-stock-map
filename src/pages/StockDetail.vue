@@ -97,7 +97,7 @@ import RelevantNews from "../components/StockDetail/RelevantNews.vue";
 
 import { ref, computed, watch } from "vue";
 import { useQueryStockStore } from "@/store/queryStock";
-import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries } from "@/api/stocksApi";
+import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
 
 // Pinia
 const queryStock = useQueryStockStore();
@@ -200,13 +200,48 @@ watch(
 
 
 // 基本面摘要
+// const fundamentalSummary = ref({
+//   peRatio: 22.4,
+//   pbRatio: 5.6,
+//   yield: 0.019,
+//   shareCapital: 259000000000,
+//   eps: 36.8
+// });
 const fundamentalSummary = ref({
-  peRatio: 22.4,
-  pbRatio: 5.6,
-  yield: 0.019,
-  shareCapital: 259000000000,
-  eps: 36.8
+  peRatio: null,         // 本益比
+  pbRatio: null,         // 股價淨值比
+  yield: null,           // 殖利率
+  shareCapital: null,    // 股本
+  eps: null
 });
+
+async function refreshFundamentalSummary() {
+  try {
+    // === 查 基本面摘要（PE/PB/殖利率/股本/EPS） ===
+    try {
+      const f = await fetchFundamentals(queryStock.symbol);
+      // 做一些保底處理，避免 NaN 影響 UI
+      fundamentalSummary.value = {
+        peRatio: Number.isFinite(f?.peRatio) ? f.peRatio : null,
+        pbRatio: Number.isFinite(f?.pbRatio) ? f.pbRatio : null,
+        yield:  Number.isFinite(f?.yield) ? f.yield : null, // 小數
+        shareCapital: Number.isFinite(f?.shareCapital) ? f.shareCapital : null,
+        eps: Number.isFinite(f?.eps) ? f.eps : null
+      };
+    } catch {};
+  } catch (err) {
+    console.warn("refreshFundamentalSummary failed:", err);
+    // 失敗時維持原值，不強制覆寫
+  };
+};
+
+watch(
+  () => queryStock.symbol,
+  () => { refreshFundamentalSummary(); },
+  { immediate: true }
+);
+
+
 
 // 個人持倉快速摘要 (mock)
 const holdingSummary = ref({

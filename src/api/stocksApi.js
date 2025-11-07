@@ -1,4 +1,6 @@
+// ===============================
 // 從後端取得資料的函式，允許帶查詢參數（用於最久取全史）
+// ===============================
 export async function fetchStockRange(symbol, params = {}) {
   const qs = new URLSearchParams(params).toString();
   const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
@@ -11,7 +13,7 @@ export async function fetchStockRange(symbol, params = {}) {
 
 
 
-
+// ===============================
 /**
  * 將後端 rows 正規化為可繪圖的陣列（日期→Date、數字→number、排序）
  * @param {Array<any>} rows 後端回傳的 array（含 date: "YYYY/MM/DD"）
@@ -27,6 +29,7 @@ export async function fetchStockRange(symbol, params = {}) {
  *  volume: number
  * }>}
  */
+// ===============================
 export function normalizeStockRows(symbol = "", rows = []) {
   const toNum = (x) => {
     if (x == null) return null;
@@ -64,13 +67,14 @@ export function normalizeStockRows(symbol = "", rows = []) {
 
 
 
-
+// ===============================
 /**
  * 直接取得「可繪圖」的序列資料
  * @param {string} symbol
  * @param {Object} params {startYear,startMonth,endYear,endMonth}
  * @returns {Promise<StockBar[]>}
  */
+// ===============================
 export async function fetchStockSeries(symbol, params = {}) {
   const raw = await fetchStockRange(symbol, params);
   return normalizeStockRows(symbol, raw);
@@ -103,7 +107,9 @@ export async function fetchStockSeries(symbol, params = {}) {
 
 
 
+// ===============================
 // 取全清單（做搜尋下拉時會用到）
+// ===============================
 export async function fetchAllSymbols() {
   // 先嘗試打自己的後端，失敗再 fallback 到本地 mock
   try {
@@ -127,7 +133,10 @@ export async function fetchAllSymbols() {
 };
 
 
+
+// ===============================
 // 用四/五碼代號查公司（回 { code, symbol, name, market, industry }）
+// ===============================
 export async function fetchSymbolProfile(codeOrSymbol) {
   // 正規化（支援 "2330.TW" / " 2330 "）
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
@@ -161,8 +170,9 @@ export async function fetchSymbolProfile(codeOrSymbol) {
 
 
 
-
-
+// ===============================
+// 獲取公司排名
+// ===============================
 export async function fetchCompanyRank(codeOrSymbol){
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/,"").trim();
   
@@ -175,5 +185,30 @@ export async function fetchCompanyRank(codeOrSymbol){
     return res.json();  // {market, rank, name, weight?, code?, symbol?}
   } catch {
     return null;  // 網路失敗/伺服器關機 → 不影響頁面
+  };
+};
+
+
+
+// ===============================
+// 取 基本面摘要（走自己後端）
+// 回傳同 server：{ peRatio, pbRatio, yield, shareCapital, eps }
+// ===============================
+export async function fetchFundamentals(codeOrSymbol) {
+  const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
+  try {
+    const url = `http://localhost:3000/api/fundamentals/${code}?_t=${Date.now()}`;
+    const res = await fetch(url, { cache: "no-store" });
+    if (res.status === 404) {
+      // 明確標示沒有該路由/未掛載，方便你從前端 Console 看到線索
+      console.warn("[fetchFundamentals] 404 Not Found — 後端路由未掛載或 server 未重啟");
+      return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
+    };
+    if (!res.ok) throw new Error(`基本面 API 錯誤：${res.status}`);
+    return res.json();
+  } catch (e) {
+    console.warn("[fetchFundamentals] fallback with nulls:", e?.message || e);
+    // 兜底：讓畫面維持可用
+    return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
   };
 };

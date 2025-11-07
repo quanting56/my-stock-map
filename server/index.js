@@ -15,6 +15,9 @@ import { installSymbolRoutes } from "./symbolMap.js";
 // 得到 上市上櫃 公司市值排名
 import { installRankingRoutes } from "./rankings.js";
 
+// 得到 基本面 資訊
+import { installFundamentalRoutes } from "./fundamentalDetails.js";
+
 // -------------------------------
 //  初始化基本設定
 // -------------------------------
@@ -22,6 +25,9 @@ const app = express();
 const PORT = 3000;
 const dbDir = "./data";
 const dbPath = `${dbDir}/stocks.db`;
+
+// 避免弱驗證快取造成舊 JSON 被重用
+app.set("etag", false);
 
 // 啟用 CORS（允許前端 http://localhost:5173 存取）
 app.use(cors({ origin: "http://localhost:5173" }));
@@ -385,6 +391,8 @@ app.get("/api/stocks/:symbol", async (req, res) => {
 
 installSymbolRoutes(app);
 installRankingRoutes(app);
+installFundamentalRoutes(app, db);  // 把 db 傳進去，讓 fundamentals 能查「最新收盤」
+
 
 // -------------------------------
 //  啟動伺服器
