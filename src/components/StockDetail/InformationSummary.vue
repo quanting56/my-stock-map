@@ -16,7 +16,7 @@
       <ul class="text-sm space-y-1 text-[color:var(--color-secondary)] mt-2">
         <li>成本： <span class="font-medium">${{ props.holdingSummary.cost.toLocaleString() }}</span></li>
         <li>持股數： <span class="font-medium">{{ props.holdingSummary.shares }}</span></li>
-        <li>損益： <span :class="props.holdingSummaryPLClass" class="font-medium">${{ props.holdingSummaryPL }} (-6.21%)</span></li>
+        <li>損益： <span :class="props.holdingSummaryPLClass" class="font-medium">${{ props.holdingSummaryPL.toLocaleString() }} ({{ props.holdingSummaryPLRatio >= 0 ? "+" : "" }}{{ (props.holdingSummaryPLRatio * 100).toFixed(2) }}%)</span></li>
       </ul>
     </div>
 
@@ -28,10 +28,16 @@
           class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm cursor-pointer">
           複製代號 {{ props.ticker }}
         </button>
-        <button class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm cursor-pointer">
+        <button
+          @click="$emit('open-ptt-query-stock')"
+          class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm cursor-pointer"
+        >
           查看 PTT 討論這家公司的文章
         </button>
-        <button class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm cursor-pointer">
+        <button
+          @click="$emit('open-dcard-query-stock')"
+          class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-sm cursor-pointer"
+        >
           查看 Dcard 討論這家公司的文章
         </button>
       </div>
@@ -44,11 +50,12 @@ const props = defineProps({
   ticker: String,
   fundamentalSummary: Object,
   holdingSummary: Object,
-  holdingSummaryPL: [String, Number],
+  holdingSummaryPL: Number,
+  holdingSummaryPLRatio: Number,
   holdingSummaryPLClass: String
 });
 
-defineEmits(['copy-ticker']);
+defineEmits(['copy-ticker', 'open-ptt-query-stock', 'open-dcard-query-stock']);
 </script>
 
 <style scoped></style>

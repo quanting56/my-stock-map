@@ -71,8 +71,11 @@
         :fundamental-summary="fundamentalSummary"
         :holding-summary="holdingSummary"
         :holding-summary-p-l="holdingSummaryPL"
+        :holding-summary-p-l-ratio="holdingSummaryPLRatio"
         :holding-summary-p-l-class="holdingSummaryPLClass"
         @copy-ticker="copyTicker"
+        @open-ptt-query-stock="openPttQueryStock"
+        @open-dcard-query-stock="openDcardQueryStock"
       ></InformationSummary>
     </div>
 
@@ -205,13 +208,6 @@ async function refreshHeadline() {
 
 
 // 基本面摘要
-// const fundamentalSummary = ref({
-//   peRatio: 22.4,
-//   pbRatio: 5.6,
-//   yield: 0.019,
-//   shareCapital: 259000000000,
-//   eps: 36.8
-// });
 const fundamentalSummary = ref({
   peRatio: null,         // 本益比
   pbRatio: null,         // 股價淨值比
@@ -257,15 +253,41 @@ const holdingSummary = ref({
 
 const holdingSummaryPL = computed(() => {
   const pl = (latestPrice.value - holdingSummary.value.cost) * holdingSummary.value.shares;
-  return pl.toFixed(0);
+  return pl;
 });
-const holdingSummaryPLClass = computed(() => (parseFloat(holdingSummaryPL.value) >= 0 ? "text-green-600" : "text-red-500"));
+const holdingSummaryPLRatio = computed(() => {
+  const plRatio = (latestPrice.value - holdingSummary.value.cost) / holdingSummary.value.cost;
+  return plRatio;
+});
+const holdingSummaryPLClass = computed(() => (parseFloat(holdingSummaryPL.value) >= 0 ? "text-red-500" : "text-green-600"));
 
 // copy ticker
 function copyTicker() {
   navigator.clipboard?.writeText(ticker.value)
     .then(() => alert("已複製代號"))
     .catch(() => alert("複製失敗"));
+};
+
+// 查看 ["PTT", "Dcard"] 討論這家公司的文章
+// 外部站台搜尋
+function makeSearchKeyword() {  // 以公司名優先，其次用四碼代號
+  const name = companyName.value && companyName.value !== "—" ? companyName.value : "";
+  const code = (queryStock.symbol || "").replace(/\D/g, "");  // 例如 "2330"
+  return [name, code].filter(Boolean).join(" ");
+};
+
+function openPttQueryStock() {
+  const q = encodeURIComponent(makeSearchKeyword());
+  // 方案一（較穩，不會卡未滿18）：用 Google 限站搜尋 PTT
+  const url = `https://www.google.com/search?q=site:ptt.cc%20${q}`;
+  // 方案二（想直接看 PTT Web 版可改用這行）：const url = `https://www.pttweb.cc/search?q=${q}`;
+  window.open(url, "_blank", "noopener,noreferrer");
+};
+
+function openDcardQueryStock() {
+  const q = encodeURIComponent(makeSearchKeyword());
+  const url = `https://www.dcard.tw/search?query=${q}`;
+  window.open(url, "_blank", "noopener,noreferrer");
 };
 
 
