@@ -14,7 +14,7 @@
     <div>
       <h1 class="text-2xl mt-8 font-semibold">多檔比較</h1>
       <p class="text-sm text-[color:var(--color-secondary)] mt-1">
-        過去的某個時間點 All In，到現在的投資報酬率是多少呢？
+        過去的某個時間點 All In 到不同股票裡，到現在的投資報酬率會相差多少呢？
       </p>
     </div>
 

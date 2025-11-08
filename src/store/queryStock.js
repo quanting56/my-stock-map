@@ -8,8 +8,8 @@ export const useQueryStockStore = defineStore("queryStock", () => {
   // 統一顯示字串格式，例如 2330 -> 2330.TW
   const displaySymbol = computed(() => {
     const v = (symbol.value || "").toUpperCase();
-    // 顯示 4 碼股票則補'.TW'，其他保留原樣
-    return /^\d{4}$/.test(v) ? `${v}.TW` : v;
+    // 4~5 碼 + 可選 1 字母尾碼 → 顯示加 .TW
+    return /^\d{4,6}[A-Z]{0,2}$/.test(v) ? `${v}.TW` : v;
   });
 
   // 正規化使用者輸入，支援 2330 / 2330.tw / 台積電，再依後端需求微調
@@ -20,10 +20,10 @@ export const useQueryStockStore = defineStore("queryStock", () => {
     // 大寫與去空白
     q = q.toUpperCase().replace(/\s+/g, "");
 
-    // 若是 4碼 或 4碼+'.TW'，就取 純4碼 當核心代號
-    const m = q.match(/^(\d{4})(?:\.?TW)?$/i);
+    // 接受 4~6 碼 + 0~2 字母尾碼；可帶 .TW
+    const m = q.match(/^(\d{4,6}[A-Z]{0,2})(?:\.?TW)?$/i);
     if (m) {
-      symbol.value = m[1]; // 只存 4 碼
+      symbol.value = m[1]; // 只存 4~6 碼
       return;
     };
 

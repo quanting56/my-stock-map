@@ -1,11 +1,27 @@
 // ===============================
 // 從後端取得資料的函式，允許帶查詢參數（用於最久取全史）
 // ===============================
+// 簡易 fetch with timeout（前端）
+async function fetchJsonWithTimeout(url, { timeout = 8000, ...opts } = {}) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), timeout);
+  try {
+    const res = await fetch(url, { ...opts, signal: ctrl.signal, cache: "no-store" });
+    return res;
+  } finally {
+    clearTimeout(t);
+  };
+};
+
 export async function fetchStockRange(symbol, params = {}) {
-  const qs = new URLSearchParams(params).toString();
+  const safe = Object.fromEntries(
+    Object.entries(params).filter(([,v]) => v !== null && v !== undefined && !(typeof v === "number" && Number.isNaN(v)))
+  );  // 過濾 NaN/undefined
+  const qs = new URLSearchParams(safe).toString();
   const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
 
-  const res = await fetch(url);
+  const res = await fetchJsonWithTimeout(url, { timeout: 90000 });  // 加 timeout，避免卡住
+  if (res.status === 404) return [];  // 代號不存在，直接回空
   if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
   return res.json();  // 回傳「後端原樣 JSON Array」（日期為 "YYYY/MM/DD" 字串）
 };
@@ -141,7 +157,7 @@ export async function fetchSymbolProfile(codeOrSymbol) {
   // 正規化（支援 "2330.TW" / " 2330 "）
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
   try {
-    const res = await fetch(`http://localhost:3000/api/symbols/${code}`);
+    const res = await fetchJsonWithTimeout(`http://localhost:3000/api/symbols/${code}`, { timeout: 6000 });  // 6 秒超時；逾時就當作查不到，讓 UI 立刻能提示
     if (res.status === 404) return null;
     if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
     return res.json();
@@ -156,7 +172,7 @@ export async function fetchSymbolProfile(codeOrSymbol) {
     const arr = Array.isArray(mock?.data) ? mock.data : [];
     const hit = arr.find(r => String(r.stock_id) === code); // NEW
     if (!hit) return null; // NEW
-    return { // NEW：回傳結構與後端一致
+    return {  // 回傳結構與後端一致
       code: String(hit.stock_id),
       symbol: `${hit.stock_id}.TW`,
       name: String(hit.stock_name),
@@ -164,7 +180,11 @@ export async function fetchSymbolProfile(codeOrSymbol) {
       industry: hit.industry_category ?? ""
     };
   } catch {
-    return null; // NEW：mock 檔讀不到就回 null，SFC 會顯示 "—"
+    // 最後兜底，至少回基本結構，讓圖表可用，標籤顯示代碼
+    if (/^\d{4,6}[A-Z]{0,2}$/.test(code)) {
+      return { code, symbol: `${code}.TW`, name: code, market: "", industry: "" }; // CHANGED
+    };
+    return null;
   };
 };
 

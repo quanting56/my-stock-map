@@ -1,4 +1,5 @@
 <template>
+  <LoadingModal :open="isLoading" message="股票資訊載入中"></LoadingModal>
   <div class="card-theme rounded-2xl shadow p-6">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium">📊 滾動報酬率比較</h3>
@@ -17,6 +18,16 @@
       </div>
     </div>
 
+    <!-- 輕提示（toast/snackbar） -->
+    <div
+      v-if="toast.show"
+      class="fixed left-1/2 top-6 -translate-x-1/2 z-[9999]"
+    >
+      <div class="px-3 py-2 rounded-lg shadow border border-[color:var(--color-text)] bg-[color:var(--color-card)] text-sm">
+        {{ toast.message }}
+      </div>
+    </div>
+
     <!-- 主體：左側控制 + 右側圖區 -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
       <!-- 左：控制面板 -->
@@ -30,8 +41,8 @@
               :key="stock.id"
               class="flex items-center gap-2 text-sm"
             >
-              <input type="checkbox" v-model="selected" :value="stock.id" />
-              {{ stock.name }}（{{ stock.id }}）
+              <input type="checkbox" v-model="selected" :value="toCore(stock.id)" />
+              {{ stock.name }}（{{ toDisplayId(stock.id) }}）
             </label>
           </div>
         </div>
@@ -43,14 +54,14 @@
             <input
               v-model="customSymbol"
               type="text"
-              placeholder="例如：^DJI 或 0050.TW"
+              placeholder="例如：0052 或 00675L"
               class="w-full px-3 py-2 rounded-lg bg-[color:var(--color-card)] border border-[color:var(--color-border)] focus:outline-none"
             />
           </div>
           <div class="flex items-end">
             <button
               type="submit"
-              class="w-full px-3 py-2 rounded-lg border border-[color:var(--color-border)] hover:bg-[color:var(--color-card)]"
+              class="w-full px-3 py-2 rounded-lg border border-[color:var(--color-border)] hover:bg-[color:var(--color-card)] cursor-pointer"
             >
               ➕ 加入
             </button>
@@ -71,7 +82,7 @@
                   class="inline-block w-3 h-3 rounded-full"
                   :style="{ background: colorFor(s) }"
                 ></span>
-                <span class="text-sm">{{ s }}</span>
+                <span class="text-sm">{{ toDisplayId(s) }}</span>
               </div>
               <div class="flex gap-2 text-xs text-[color:var(--color-secondary)]">
                 <button
@@ -114,57 +125,142 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
+import LoadingModal from "@/components/Common/LoadingModal.vue";
 import * as d3 from "d3";
+import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi.js";
+
+const isLoading = ref(false);
+
+const isLogOptions = [
+  { label: "對數刻度", value: true },
+  { label: "一般刻度", value: false }
+];
+const useLog = ref(true);  // 預設使用對數刻度
 
 // mock data，作為測試用與備援用
 import { mockData2330 } from "@/data/mock/mockData2330.js";
 import { mockData2412 } from "@/data/mock/mockData2412.js";
 import { mockData2881 } from "@/data/mock/mockData2881.js";
+import { mockData0050 } from "@/data/mock/mockData0050.js";
 
-const selected = ref(["2412.TW", "2330.TW"]);  // 預設先選兩條，方便展示
-const customSymbol = ref("");  // 自訂代號
+const selected = ref(["2412", "2330"]);  // 預設先選兩條，方便展示
+const customSymbol = ref("");  // 自訂代號（例：2330、2330.TW、0050、0050.TW）
+
+// 輕提示 toast
+const toast = ref({ show: false, message: "" });
+let toastTimer = null;
+function showToast(msg, ms = 3000) {
+  toast.value = { show: true, message: msg };
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => (toast.value.show = false), ms);
+};
 
 const containerRef = ref(null);  // 圖形容器
+
+// 簡易重試狀態（避免第一次灌庫期間畫面提前結束）
+let retryTimer = null;
+let retryAttempts = 0;
 
 // 指數給定顏色
 const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
 const colorFor = (key) => colorScale(key);
 
-const DATASETS = {
-  "2330.TW": { id: "2330.TW", name: "台積電", data: mockData2330 },
-  "2412.TW": { id: "2412.TW", name: "中華電", data: mockData2412 },
-  "2881.TW": { id: "2881.TW", name: "富邦金", data: mockData2881 },
+// 名稱快取，用於標籤與左側清單顯示
+const nameMap = ref(new Map()); // Map<coreCode, displayName>
+
+// 將輸入轉核心代碼（去 .TW）
+function toCore(code = "") {
+  const v = String(code || "").toUpperCase().replace(/\.TW$/, "");
+  return v;
+};
+// 僅允許台股代碼（4~5 碼 + 可選 1 字母）
+function isTaiwanId(code = "") {
+  return /^\d{4,6}[A-Z]{0,2}$/.test(toCore(code));
+};
+// 圖上標籤顯示優先使用名稱
+function labelFor(core) {
+  return nameMap.value.get(core) || DATASETS[core]?.name || core;
 };
 
-// 把「已選但不在 DATASETS 的代號」也補成清單項目，name 先用 id 代替
-const catalogList = computed(() => {
-  const base = Object.values(DATASETS);  // 提供給 <template> 用的「陣列版」資料，避免直接 v-for 物件
-  const customs = [...new Set(selected.value)].filter(id => !DATASETS[id])
-                                              .map(id => ({ id, name: id }));
-  return [...base, ...customs];
+// 預設會顯示的待選選項 & 其備用 mock data
+const DATASETS = {
+  "2330": { id: "2330", name: "台積電", data: mockData2330 },
+  "2412": { id: "2412", name: "中華電", data: mockData2412 },
+  "2881": { id: "2881", name: "富邦金", data: mockData2881 },
+  "0050": { id: "0050", name: "元大台灣50", data: mockData0050 }
+};
+
+// 曾加入過的代號池（只在本次 session 有效），用來讓「取消勾選後仍留在 UI」
+const catalogPool = ref(new Set(Object.keys(DATASETS))); // NEW
+const catalogList = computed(() => {                      // CHANGED
+  const out = [];
+  const seen = new Set();
+  for (const id of catalogPool.value) {
+    const core = toCore(id);
+    if (seen.has(core)) continue;
+    seen.add(core);
+    out.push({ id: core, name: nameMap.value.get(core) || DATASETS[core]?.name || toDisplayId(core) });
+  };
+  return out;
 });
 
 const cache = new Map();
 
-
-// 加入到滾動報酬率圖作比較
-function addCustomSymbol() {
-  const v = (customSymbol.value || "").trim();
-  if (!v) return;
-  if (!selected.value.includes(v)) selected.value.push(v);
-  customSymbol.value = "";
+// --- 輔助：把使用者輸入正規化為「台股代碼」與「顯示用ID」 --- //
+function toTwCode(input) {  // 取出 4~5 碼台股代碼；容忍 .TW
+  const s = String(input || "").toUpperCase().trim();
+  const m = s.match(/^(\d{4,6}[A-Z]{0,2})(?:\.?TW)?$/);
+  return m ? m[1] : null;  // 例如 "2330.TW" -> "2330"
+};
+function toDisplayId(input) {  // 顯示用標籤，一致為 2330.TW
+  const c = toTwCode(input);
+  return c ? `${c}.TW` : String(input || "").toUpperCase().trim();
 };
 
-const isLogOptions = [
-  { label: "一般刻度", value: false },
-  { label: "對數刻度", value: true },
-];
-const useLog = ref(false);  // 預設使用一般刻度
+
+// 加入到滾動報酬率圖作比較
+async function addCustomSymbol() {
+  const raw = (customSymbol.value || "").trim();
+  if (!raw) return;
+
+  if (!isTaiwanId(raw)) {
+    showToast("此 股票代碼 / 股票名稱 不在服務範圍內 ：（");
+    console.warn("[RollingReturnTest] 支援台股代碼（4~6 碼 + 可選 1~2 英文字尾），例如 2330、00675L、00768B、006208。");
+    return;
+  };
+
+  const core = toCore(raw);
+
+  // 先向後端驗證是否為存在的代號（避免 regex 通過但實際查無此股）
+  try {
+    // NEW: 立刻有回饋（或直接用 isLoading 顯示 LoadingModal）
+    isLoading.value = true;
+    showToast("正在查詢代號…", 1200);
+    const prof = await fetchSymbolProfile(core);
+    if (!prof) {
+      showToast(`查無此代號：${toDisplayId(core)}`);
+      isLoading.value = false;
+      return;
+    };
+    if (prof?.name) nameMap.value.set(core, prof.name); // 順便把名稱快取
+  } catch {
+    // 後端暫時連不到/錯誤時，不要把代號加入，顯示輕提示
+    showToast("查詢逾時或伺服器忙碌，請稍後再試");
+    isLoading.value = false;
+    return;
+  };
+
+  // 通過驗證才加入 UI
+  catalogPool.value = new Set([...catalogPool.value, core]);  // 放進清單池，就算未勾選也會留在 UI，直到重新整理
+  if (!selected.value.includes(core)) selected.value.push(core);
+  customSymbol.value = "";
+  isLoading.value = false;
+};
 
 
 // 個股標籤上的顯示狀態
 // 每條線的顯示狀態
-const layerMode = ref({}); // 例如 { "2330.TW": "faded", "2412.TW": "hidden" }
+const layerMode = ref({});  // 例如 "2330", "2412"
 
 // 工具函式
 function modeOf(key) {
@@ -194,32 +290,84 @@ function parseDateLoose(s) {
   return new Date(s.replace(/\//g, "-"));
 }
 
-async function loadOne(symbol) {
-  if (cache.has(symbol)) return cache.get(symbol);
 
-  const meta = DATASETS[symbol];
-  if (!meta?.data) return [];
-  const rows = meta.data
-    .map(d => ({
-      Date: parseDateLoose(d.date),
-      Close: +(d.adjClose ?? d.close)  // 先嘗試 adjClose，沒有再退回 close
-    }))
-    .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))  // 過濾掉 parse 失敗或價格無效
-    .sort((a, b) => a.Date - b.Date);  // 依日期排序（bisector 需要遞增序列）
-  cache.set(symbol, rows);
+// 可從「mock 或 後端 API」載入一條線的資料
+async function loadOne(symbol) {
+  const core = toCore(symbol);
+  if (cache.has(core)) return cache.get(core);
+  let rows = [];
+  const meta = DATASETS[core];
+  if (meta?.data) {
+    // ① 先用 mock（既有）——做為備援或未接線前的資料
+    rows = meta.data
+      .map(d => ({
+        Date: parseDateLoose(d.date),
+        Close: +(d.adjClose ?? d.close)
+      }))
+      .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
+      .sort((a, b) => a.Date - b.Date);
+  } else {
+    // ② 沒 mock：嘗試打後端 API（目前僅支援台股 4~5 碼）
+    const code = toTwCode(core);
+    if (!code) {
+      // 非台股代碼（例如 ^DJI）暫不支援（保持最小改動）；可日後擴充伺服器來源
+      console.warn(`[rolling] 暫不支援此代號：${symbol}`);
+      showToast(`暫不支援此代號：${symbol}`);
+      return [];
+    };
+    try {
+      // 先驗證是否存在，避免錯誤代號讓後端白跑
+      const prof = await fetchSymbolProfile(code);
+      if (!prof) {
+        console.warn(`[rolling] 找不到代號：${code}`);
+        return [];
+      };
+      if (prof?.name) nameMap.value.set(code, prof.name);
+
+      const now = new Date();
+      const params = {
+        startYear: now.getFullYear() - 20,
+        startMonth: 1,
+        endYear: now.getFullYear(),
+        endMonth: now.getMonth() + 1,
+        direction: "backward"
+      };
+      const arr = await fetchStockSeries(code, params);
+      rows = (arr || [])
+        .map(r => ({
+          Date: (r.date instanceof Date) ? r.date : new Date(r.date),
+          Close: +(r.adjClose ?? r.close)
+        }))  // 確保是 Date 物件
+        .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
+        .sort((a, b) => a.Date - b.Date);
+    } catch (e) {
+      console.warn(`[rolling] API 失敗，改用備援（若有） ${symbol}:`, e?.message || e);
+      // 若恰好有同名 mock，就退回 mock；否則給空陣列
+      if (DATASETS[core]?.data) {
+        rows = DATASETS[core].data
+          .map(d => ({ Date: parseDateLoose(d.date), Close: +(d.adjClose ?? d.close) }))
+          .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
+          .sort((a, b) => a.Date - b.Date);
+      } else {
+        if (rows.length > 0) cache.set(core, rows);  // 只有在「真的取得到資料」時才快取，避免把逾時空結果毒化快取
+        rows = [];
+      };
+    };
+  };
+  cache.set(core, rows);
   return rows;
 };
 
 // 依 selected 組 series（正規化到起點 = 1）
 async function getSeries(symbols) {
-  const arrays = await Promise.all(symbols.map(loadOne));
+  const arrays = await Promise.all(symbols.map(loadOne));  // 可能含 mock 或 API 回來的資料
   return symbols.map((sym, i) => {
     const values = arrays[i] || [];
     if (!values.length) return { key: sym, values: [] };
     // 取第一個有限的 Close（保守一點）
     const base = values.find(v => Number.isFinite(v.Close))?.Close ?? 1;
     return {
-      key: sym,
+      key: toCore(sym),  // 用核心代碼做 key
       values: values.map(v => ({ Date: v.Date, value: v.Close / base }))
     };
   });
@@ -233,7 +381,7 @@ function draw(series) {
   const width = 928;
   const height = 600;
   const marginTop = 20;
-  const marginRight = 60;
+  const marginRight = 80;
   const marginBottom = 30;
   const marginLeft = 50;
 
@@ -368,7 +516,7 @@ function draw(series) {
        .attr("x", x.range()[1] + 3)  // 標籤放在最右側
        .attr("y", d => y(d.value))  // 根據價值決定 Y 位置
        .attr("dy", "0.5em")
-       .text(d => DATASETS[d.key]?.name ?? d.key);  // 顯示股票名稱
+       .text(d => labelFor(d.key));  // 有名稱就顯示名稱，否則代碼
 
   // 套用顯示狀態（只改 opacity，不影響計算）
   function applyVisibility() {
@@ -439,18 +587,10 @@ function draw(series) {
       if (lo !== oldLo || hi !== oldHi) {
         y.domain([lo, hi]);
         renderAxis();  // 以寫死 tickValues 重畫，但位置會跟著 domain 改變
-        baseline();  // ← 重新擺放基準線
-      }
-    }
-
-    // 就算 domain 沒變，滑鼠移動仍要對齊基準線
-    if (useLog.value) {
-      // log 模式 domain 沒跟著滑鼠改，但基準線仍需對應 y(1)
-      baseline();
-    } else {
-      // linear 模式若上面沒改 domain，也要更新一次基準線（確保位置正確）
-      baseline();
-    }
+      };
+    };
+    
+    baseline();  // 重新擺放基準線
 
     // 逐條線，用「v/curr」重算 y；線粗細/文字大小不會變
     serie.each(function({ values }) {
@@ -483,14 +623,34 @@ function draw(series) {
 
 // 串起整個流程：讀 selected → 轉 series → 繪圖
 async function refresh() {
-  const symbols = selected.value.filter(s => !!DATASETS[s]);
+  isLoading.value = true;
+  const symbols = selected.value.slice();
   const series = await getSeries(symbols);
   draw(series);
+  const hasEmpty = series.some(s => (s.values?.length || 0) === 0);
+  if (hasEmpty && retryAttempts < 2) {
+    clearTimeout(retryTimer);
+    retryAttempts += 1;
+    showToast("第一次載入歷史資料，時間較久，請稍候…");
+    retryTimer = setTimeout(() => { refresh(); }, 4000);  // 短延遲重試
+    // 保持 LoadingModal 不關閉
+  } else {
+    retryAttempts = 0;
+    isLoading.value = false;
+  };
 };
 
 // 初次與後續變更都會重繪
-onMounted(refresh);
+onMounted(async () => {
+  catalogPool.value = new Set([...catalogPool.value, ...selected.value.map(toCore)]);  // 確保預設選項也在清單池
+  for (const id of selected.value) {
+    const prof = await fetchSymbolProfile(id).catch(()=>null);
+    if (prof?.name) nameMap.value.set(toCore(id), prof.name);
+  };
+  refresh();
+});
 
+// 變更代號或軸尺度就重繪
 watch([selected, useLog], refresh, { deep: true });
 
 // 只更新透明度，不重繪整張（避免閃爍）

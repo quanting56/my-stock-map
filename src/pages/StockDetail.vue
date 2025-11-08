@@ -1,5 +1,5 @@
 <template>
-  <LoadingModal :open="isLoading" message="資料讀取中..."></LoadingModal>
+  <LoadingModal :open="isLoading" message="資料讀取中"></LoadingModal>
   <div class="p-6">
     <!-- 頁面標題：公司名與現價 -->
     <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">

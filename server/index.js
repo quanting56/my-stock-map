@@ -63,18 +63,31 @@ function pad(num) {
 async function fetchMonth(symbol, year, month) {
   const date = `${year}${pad(month)}01`;
   const url = `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${symbol}`;
-  // 加 UA，降低被重導阻擋的機率
-  const res = await fetch(url, {
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
-      "Accept": "application/json,text/plain,*/*",
-      "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8"
-    },
-    redirect: "follow"
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const json = await res.json();
-  return json.data || [];
+  
+  // 加 UA + Origin/Referer + 10 秒超時，降低 30x 風控與長時間卡住
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), 10000);
+  try {
+    const res = await fetch(url, {
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+        "Accept": "application/json,text/plain,*/*",
+        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+        "Origin": "https://www.twse.com.tw",
+        "Referer": "https://www.twse.com.tw/zh/trading/exchange/STOCK_DAY.html" // NEW
+      },
+      redirect: "follow",
+      signal: ctrl.signal,
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const json = await res.json();
+    return json.data || [];
+  } catch (e) {
+    if (e.name === "AbortError") throw new Error("timeout");  // 統一訊息
+    throw e;
+  } finally {
+    clearTimeout(t);
+  };
 };
 
 // -------------------------------
@@ -175,14 +188,25 @@ function* iterateMonthsExclusiveNext(y1, m1, y2, m2) {
 // -------------------------------
 app.get("/api/stocks/:symbol", async (req, res) => {
   const { symbol } = req.params;
-  const startYear = parseInt(req.query.startYear || "2025");
-  const startMonth = parseInt(req.query.startMonth || "1");
-  const endYear = parseInt(req.query.endYear || String(startYear));
-  const endMonth = parseInt(req.query.endMonth || "12");
+  const { y: todayY, m: todayM } = todayYm();  // 先拿今天年月
+  const toInt = (v, def) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : def; };
+  const startYear  = toInt(req.query.startYear,  todayY - 20);
+  const startMonth = toInt(req.query.startMonth, 1);
+  const endYear    = toInt(req.query.endYear,    todayY);
+  const endMonth   = toInt(req.query.endMonth,   todayM);
   const directionParam = (req.query.direction || "auto").toString();  // "forward" | "backward" | "auto"
 
-  // 從這邊往後繼續處理程式碼
   try {
+    // 先用自己的 /api/symbols/:code 驗證，無效代號立即 404，避免跑大量月份
+    try {
+      const chk = await fetch(`http://localhost:${PORT}/api/symbols/${symbol}`);
+      if (chk.status === 404) {
+        return res.status(404).json({ error: "symbol_not_found", message: `Unknown symbol: ${symbol}` });
+      };
+    } catch (e) {
+      console.warn(`[stocks] 符號驗證失敗（略過）：${e?.message || e}`);
+    };
+
     // 逐月檢查快取；缺的月份才抓，抓完 upsert
     const insert = db.prepare(`
       INSERT OR REPLACE INTO stock_prices (symbol, date, open, high, low, close, volume)
@@ -195,9 +219,6 @@ app.get("/api/stocks/:symbol", async (req, res) => {
     let emptyStreak = 0;
     const EMPTY_BREAK = 7; // 例如連續 7 個月空資料，視為已早於上市
 
-    // 把今天年月提到最前面（避免未宣告先使用）
-    const { y: todayY, m: todayM } = todayYm();
-
     // 預先判斷「今天或昨天是否已有資料」
     const hasRecent = hasTodayOrYesterday(symbol);
 
@@ -209,7 +230,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
       `➡️ 抓取方向：${useBackward ? "backward" : "forward"} | 範圍：${startYear}/${String(startMonth).padStart(2,"0")} ~ ${endYear}/${String(endMonth).padStart(2,"0")}`
     );
     const iter = useBackward
-      ? iterateMonthsDesc(startYear, startMonth, endYear, endMonth)
+      ? iterateMonthsDesc(endYear, endMonth, startYear, startMonth)
       : iterateMonths(startYear, startMonth, endYear, endMonth);
 
     for (const { y, m } of iter) {
@@ -235,6 +256,18 @@ app.get("/api/stocks/:symbol", async (req, res) => {
         // 單月錯誤不讓整體中斷，紀錄並當作空月處理
         console.warn(`⚠️ 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
         rows = [];
+
+        // 連續重導/逾時終止
+        if (!globalThis.__twseFailStreak) globalThis.__twseFailStreak = 0;
+        if (/maximum redirect/i.test(err.message) || /timeout/i.test(err.message)) {
+          globalThis.__twseFailStreak++;
+        } else {
+          globalThis.__twseFailStreak = 0;
+        };
+        if (globalThis.__twseFailStreak >= 3) {
+          console.warn(`🧯 偵測到連續 ${globalThis.__twseFailStreak} 次重導/逾時，暫停本次批次抓取以避免被風控。`);
+          break;
+        };
       };
 
       const batch = [];
@@ -261,8 +294,8 @@ app.get("/api/stocks/:symbol", async (req, res) => {
       } else {
         emptyStreak += 1;
         // 連續空月達門檻 → 多半早於上市，提前結束後續月份
-        if (emptyStreak >= EMPTY_BREAK) {
-          console.log(`ℹ️ 連續 ${EMPTY_BREAK} 個月無資料（可能為早期空月），推測已早於上市，停止往前抓取`);
+        if (emptyStreak >= EMPTY_BREAK && useBackward) {
+          console.log(`ℹ️ 連續 ${EMPTY_BREAK} 個月無資料（可能為早期空月），推測已早於上市，停止向過去回溯`);
           break;
         };
       };

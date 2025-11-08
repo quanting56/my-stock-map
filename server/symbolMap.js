@@ -17,25 +17,32 @@ const SOURCES = [
   { label: "OTC",  url: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4" }, // 上櫃
 ];
 
-async function fetchHtmlBig5(url) {
+async function fetchHtmlBig5(url, timeoutMs = 7000) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), timeoutMs);
+  try {
     const res = await fetch(url, {
-    // 模擬瀏覽器的標頭，降低被擋的機率
-    headers: {
-      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
-      "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-      "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
-      "Cache-Control": "no-cache",
-      "Pragma": "no-cache",
-      "Referer": "https://isin.twse.com.tw/isin/class"
-    },
-    redirect: "follow",
-  });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const ab = await res.arrayBuffer();
-  const buf = Buffer.from(ab);
-  // 以 Big5 轉 UTF-8（ISIN 頁面為 MS950/Big5）
-  return iconv.decode(buf, "big5");
-}
+      // 模擬瀏覽器的標頭，降低被擋的機率
+      headers: {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "zh-TW,zh;q=0.9,en;q=0.8",
+        "Cache-Control": "no-cache",
+        "Pragma": "no-cache",
+        "Referer": "https://isin.twse.com.tw/isin/class"
+      },
+      redirect: "follow",
+      signal: ctrl.signal,
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const ab = await res.arrayBuffer();
+    const buf = Buffer.from(ab);
+    // 以 Big5 轉 UTF-8（ISIN 頁面為 MS950/Big5）
+    return iconv.decode(buf, "big5");
+  } finally {
+    clearTimeout(t);
+  };
+};
 
 /** 解析 ISIN 表格成 rows */
 function parseIsinTable(html, marketLabel) {
@@ -52,8 +59,8 @@ function parseIsinTable(html, marketLabel) {
     const market = tds.eq(4).text().trim() || marketLabel;
     const industry = tds.eq(5).text().trim();
 
-    // 只取「純數字股票/ETF 代碼」開頭的列，例如 "2330 台積電"、"0050 元大台灣50"
-    const m = codeNameText.match(/^(\d{4,6})\s+(.+)$/);
+    // 取「純數字股票/ETF 代碼」開頭的列，例如 "2330 台積電"、"0050 元大台灣50"、"00675L 元大台灣50正2"
+    const m = codeNameText.match(/^(\d{4,6}[A-Z]{0,2})\s+(.+)$/); // CHANGED
     if (!m) return;
 
     const code = m[1];
@@ -113,7 +120,7 @@ async function loadAllSymbols({ force = false } = {}) {
   }
 
   // 若 ISIN 抓不到「足量」資料（或 0 筆），就自動改用 FinMind 備援
-  if (all.length < 500) { // CHANGED：閾值 500 你也可調成 1000
+  if (all.length < 500) {  // 閾值 500 你也可調成 1000
     console.warn(`[symbolMap] ISIN 回傳數量過少 (${all.length})，改用 FinMind 備援`);
     try {
       all = await loadFromFinMind(); // NEW
@@ -123,7 +130,7 @@ async function loadAllSymbols({ force = false } = {}) {
       if (fs.existsSync(CACHE_PATH)) {
         try { return JSON.parse(fs.readFileSync(CACHE_PATH, "utf-8")); }
         catch {}
-      }
+      };
       throw e;
     }
   }
