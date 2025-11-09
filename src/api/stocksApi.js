@@ -232,3 +232,20 @@ export async function fetchFundamentals(codeOrSymbol) {
     return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
   };
 };
+
+
+
+// ===============================
+// 取 股票相關新聞（走自己後端統一格式）
+// 回傳：[{ title, url, source, publishedAt, summary }]
+// ===============================
+export async function fetchRelevantNews(
+  codeOrSymbol,
+  { days = 180, limit = 30, lang = "zh", whitelistOnly = false } = {}
+) {
+  const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
+  const url = `http://localhost:3000/api/news/${code}?days=${days}&limit=${limit}&lang=${lang}&whitelistOnly=${whitelistOnly ? 1 : 0}`;
+  const res = await fetchJsonWithTimeout(url, { timeout: 12000 });
+  if (!res.ok) throw new Error(`新聞 API 錯誤：${res.status}`);
+  return res.json();
+};

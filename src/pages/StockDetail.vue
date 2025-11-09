@@ -86,9 +86,7 @@
       <HoldingTimelineChart></HoldingTimelineChart>
 
       <!-- 右側：相關新聞／消息 RelevantNews.vue -->
-      <RelevantNews
-        :notes="notes"
-      ></RelevantNews>
+      <RelevantNews></RelevantNews>
     </div>
   </div>
 </template>
@@ -290,12 +288,6 @@ function openDcardQueryStock() {
   window.open(url, "_blank", "noopener,noreferrer");
 };
 
-
-
-const notes = ref([
-  { date: "2025-10-08", text: "法說會預告 - 影響明日盤勢" },
-  { date: "2025-09-30", text: "公告除息" }
-]);
 
 
 // 頁面級 Loading 狀態由此統一觸發

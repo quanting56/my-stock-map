@@ -18,6 +18,9 @@ import { installRankingRoutes } from "./rankings.js";
 // 得到 基本面 資訊
 import { installFundamentalRoutes } from "./fundamentalDetails.js";
 
+// 可用 .env 提供 FINNHUB_TOKEN
+const FINNHUB_TOKEN = process.env.FINNHUB_TOKEN || "";
+
 // -------------------------------
 //  初始化基本設定
 // -------------------------------
@@ -422,6 +425,204 @@ app.get("/api/stocks/:symbol", async (req, res) => {
     res.status(500).json({ error: "資料抓取失敗", message: err.message });
   };
 });
+
+
+// -------------------------------
+//  API：相關新聞（/api/news/:code）
+// 依 code 先查本地公司名；先試 GDELT→Google News RSS（免金鑰）
+// 回傳：[{ title, url, source, publishedAt, summary }]
+// -------------------------------
+app.get("/api/news/:code", async (req, res) => {
+  const code = String(req.params.code || "").toUpperCase().replace(/\.TW$/, "").trim();
+  const days  = Math.max(parseInt(req.query.days || "180", 10), 1);
+  const limit = Math.min(Math.max(parseInt(req.query.limit || "30", 10), 1), 100);
+  const lang  = (req.query.lang || "zh").toString();  // "zh" | "en"
+  const whitelistOnly = String(req.query.whitelistOnly || "0") === "1";  // 白名單
+
+  function dedupe(items) {
+    const seen = new Set();
+    return items.filter(it => {
+      const key = (it.url || it.title || "").trim();
+      if (!key || seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
+  };
+
+
+  // --- 白名單與加權工具（NEW） -------------------------
+  function baseHost(u = "", fallback = "") {
+    try {
+      const h = new URL(u).hostname.toLowerCase();
+      return h.replace(/^www\./, "").replace(/^m\./, "");
+    } catch {
+      return (fallback || "").toLowerCase();
+    }
+  }
+
+  // 可以在這裡自由增刪，右側數字是權重（越大越優先）
+  const WHITE_WEIGHTS = [
+    ["cnyes.com", 30], ["news.cnyes.com", 30],
+    ["ltn.com.tw", 20],
+    ["money.udn.com", 18],
+    ["finance.ettoday.net", 16],
+    ["technews.tw", 14],
+    ["ctee.com.tw", 12],
+    ["wealth.businessweekly.com.tw", 12],
+  ];
+
+  function weightForHost(host) {
+    for (const [domain, w] of WHITE_WEIGHTS) {
+      if (host === domain || host.endsWith("." + domain)) return w;
+    }
+    return 0;  // 非白名單站台
+  };
+  // ----------------------------------------------------
+
+
+  // 極小的 RSS 解析器（避免新增依賴）
+  function parseRssXml(xml) {
+    const items = [];
+    const itemRe = /<item\b[\s\S]*?<\/item>/gi;
+    const get = (seg, tag) => {
+      const m = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "i").exec(seg);
+      if (!m) return "";
+      return m[1].replace(/<!\[CDATA\[|\]\]>/g, "").replace(/<[^>]*>/g, "").trim();
+    };
+    const decode = (s) => s
+      .replace(/&amp;/g,"&").replace(/&lt;/g,"<").replace(/&gt;/g,">")
+      .replace(/&quot;/g,'"').replace(/&#39;/g,"'");
+    let m;
+    while ((m = itemRe.exec(xml))) {
+      const seg = m[0];
+      const title = decode(get(seg, "title"));
+      const link  = decode(get(seg, "link"));
+      const src   = decode(get(seg, "source")) || (link ? new URL(link).hostname.replace(/^www\./,"") : "Google News");
+      const pub   = get(seg, "pubDate");
+      items.push({
+        title,
+        url: link,
+        source: src || "Google News",
+        publishedAt: pub ? new Date(pub).toISOString() : null,
+        summary: title
+      });
+    }
+    return items;
+  }
+
+  // Google News RSS 後備
+  async function fetchFromGoogleNews(companyName, code, days, limit, lang) {
+    try {
+      const term = [`"${companyName}"`, code].filter(Boolean).join(" OR ");
+      const q = encodeURIComponent(term);
+      const zh = (lang === "zh");
+      const url =
+        `https://news.google.com/rss/search?q=${q}` +
+        `&hl=${zh ? "zh-TW" : "en-US"}&gl=${zh ? "TW" : "US"}&ceid=${zh ? "TW:zh-Hant" : "US:en"}`;
+
+      const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+      if (!r.ok) return [];
+      const xml = await r.text();
+      let arr = parseRssXml(xml);
+
+      // 過濾天數
+      const cutoff = Date.now() - days * 24 * 3600 * 1000;
+      arr = arr.filter(it => {
+        if (!it.publishedAt) return true;
+        return +new Date(it.publishedAt) >= cutoff;
+      });
+
+      // 依時間新→舊並裁切
+      arr.sort((a,b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0));
+      return arr.slice(0, limit);
+    } catch (e) {
+      console.warn("[news] GoogleNews 失敗：", e?.message || e);
+      return [];
+    }
+  }
+
+  try {
+    // 先把公司名稱拿到（沿用你現有的 symbols 路由）
+    let companyName = code;
+    try {
+      const resp = await fetch(`http://localhost:${PORT}/api/symbols/${code}`);
+      if (resp.ok) {
+        const j = await resp.json();
+        if (j?.name) companyName = j.name;
+      }
+    } catch {}
+
+    let items = [];
+
+    // ① GDELT（免金鑰），加強解析容錯
+    if (items.length === 0) {
+      try {
+        const q = encodeURIComponent(companyName);
+        const langFilter = lang === "zh" ? " sourcelang:zh" : "";
+        const url = `https://api.gdeltproject.org/api/v2/doc/doc?query=${q}${langFilter}&mode=ArtList&format=json&maxrecords=${limit}&timespan=${days}d`;
+        const r = await fetch(url, { headers: { "User-Agent": "Mozilla/5.0" } });
+
+        if (r.ok) {
+          const ctype = String(r.headers.get("content-type") || "").toLowerCase();
+          let j;
+          if (ctype.includes("application/json")) {
+            j = await r.json();
+          } else {
+            // 收到文字/HTML，就不要拋錯；直接視為無資料
+            const txt = await r.text();
+            if (/{"articles"/i.test(txt)) {
+              try { j = JSON.parse(txt); } catch {}
+            }
+          }
+          const arr = Array.isArray(j?.articles) ? j.articles : [];
+          for (const it of arr) {
+            items.push({
+              title: it.title || "",
+              url: it.url || it.seurl || "",
+              source: it.sourceCommonName || it.domain || "GDELT",
+              publishedAt: it.seendate ? new Date(it.seendate).toISOString() : null,
+              summary: it.title || ""
+            });
+          }
+        }
+      } catch (e) {
+        console.warn("[news] GDELT 失敗：", e?.message || e);
+      };
+    };
+
+    // ② Google News RSS（免金鑰）最後後備
+    if (items.length === 0) {
+      const rssItems = await fetchFromGoogleNews(companyName, code, days, limit, lang); // NEW
+      items.push(...rssItems);
+    };
+
+    // 去重、排序、裁切
+    items = dedupe(items).map(it => {
+      const host = baseHost(it.url, it.source);
+      const w = weightForHost(host);
+      return { ...it, __host: host, __w: w }; // NEW: 暫放加權資訊
+    });
+
+    // 只保留白名單
+    const filtered = whitelistOnly ? items.filter(it => it.__w > 0) : items;
+
+    // 先比權重、再比時間（新 → 舊）
+    filtered.sort((a, b) => {
+      if (b.__w !== a.__w) return b.__w - a.__w;
+      return new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0);
+    });
+
+    // 回傳前去掉內部欄位
+    const out = filtered.slice(0, limit).map(({ __w, __host, ...rest }) => rest);
+
+    res.set("Cache-Control", "no-store");
+    return res.json(out);
+  } catch (e) {
+    console.error("news route error:", e);
+    return res.status(500).json({ error: "news_failed", message: e.message });
+  };
+});
+
 
 installSymbolRoutes(app);
 installRankingRoutes(app);
