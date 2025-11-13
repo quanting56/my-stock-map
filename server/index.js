@@ -18,9 +18,6 @@ import { installRankingRoutes } from "./rankings.js";
 // 得到 基本面 資訊
 import { installFundamentalRoutes } from "./fundamentalDetails.js";
 
-// 可用 .env 提供 FINNHUB_TOKEN
-const FINNHUB_TOKEN = process.env.FINNHUB_TOKEN || "";
-
 // -------------------------------
 //  初始化基本設定
 // -------------------------------
@@ -572,8 +569,8 @@ app.get("/api/news/:code", async (req, res) => {
             const txt = await r.text();
             if (/{"articles"/i.test(txt)) {
               try { j = JSON.parse(txt); } catch {}
-            }
-          }
+            };
+          };
           const arr = Array.isArray(j?.articles) ? j.articles : [];
           for (const it of arr) {
             items.push({
@@ -583,8 +580,8 @@ app.get("/api/news/:code", async (req, res) => {
               publishedAt: it.seendate ? new Date(it.seendate).toISOString() : null,
               summary: it.title || ""
             });
-          }
-        }
+          };
+        };
       } catch (e) {
         console.warn("[news] GDELT 失敗：", e?.message || e);
       };
