@@ -29,14 +29,16 @@
       </main>
     </div>
 
+    <Footer></Footer>
   </div>
 </template>
 
 <script setup>
 import HeaderBar from "@/components/Common/HeaderBar.vue";
-import SideBarMenu from "./components/Common/SideBarMenu.vue";
+import SideBarMenu from "@/components/Common/SideBarMenu.vue";
+import Footer from "@/components/Common/Footer.vue";
 import { useUIThemeStore } from "@/store/theme";
-import { useUIStateStore } from "./store/uiState";
+import { useUIStateStore } from "@/store/uiState";
 
 const uiThemeStore = useUIThemeStore();
 const uiStateStore = useUIStateStore();

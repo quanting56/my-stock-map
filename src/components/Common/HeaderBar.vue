@@ -6,12 +6,15 @@
 
   <!-- Header -->
   <header class="card-theme flex items-center justify-between px-6 py-3 border-b space-x-4">
-    <div class="flex items-center space-x-2">
+    <div class="flex items-center">
       <div
         @click="uiState.setTab(uiState.tabs[0].id)"
-        class="text-xl font-bold text-[color:var(--color-primary)] cursor-pointer hover:text-[color:var(--color-line2)] transition"
+        class="inline-flex items-center gap-1 text-xl font-bold text-[color:var(--color-primary)] cursor-pointer hover:text-[color:var(--color-line2)] transition"
       >
-        📊 My Stock Map
+        <div class="w-9 h-9 pb-0.5">
+          <MyStockMapLogo></MyStockMapLogo>
+        </div>
+        My Stock Map
       </div>
     </div>
     <div class="md:px-24 lg:px-48 xl:px-60">
@@ -62,6 +65,7 @@ import { useUIStateStore } from "@/store/uiState";
 import { useUIThemeStore } from "@/store/theme.js";
 import { useQueryStockStore } from "@/store/queryStock.js";
 
+import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 import LogInPage from "@/components/Common/LogInPage.vue";
 const isLogInPageOpen = ref(false);
 

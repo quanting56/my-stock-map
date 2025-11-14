@@ -1,0 +1,38 @@
+<svg
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-label="My Stock Map 標誌"
+  class="block w-full h-full"
+>
+  <!-- 背景（要透明就把這裡刪掉） -->
+  <g opacity="0">
+    <!-- 圓背景 -->
+    <ellipse cx="100" cy="100" rx="100" ry="100" fill="#FFFFFF" />
+    <!-- 方背景 -->
+    <!-- <rect x="0" y="0" width="200" height="200" fill="#FFFFFF" /> -->
+  </g>
+  
+  <!-- 7 道光芒：底邊在半徑 45（= 圓周外 10px），底邊平行切線，尖端在半徑 70 -->
+  <polygon points="145.0,106.0  145.0,94.0  170.0,100.0" fill="#FDBA74" />
+  <polygon points="142.0, 82.7  136.0,72.3  160.6, 65.0" fill="#FDBA74" />
+  <polygon points="127.7, 64.0  117.3,58.0  135.0, 39.4" fill="#FDBA74" />
+  <polygon points="106.0, 55.0  94.0,55.0   100.0, 30.0" fill="#FDBA74" />
+  <polygon points=" 82.7, 58.0  72.3,64.0    65.0, 39.4" fill="#FDBA74" />
+  <polygon points=" 64.0, 72.3  58.0,82.7    39.4, 65.0" fill="#FDBA74" />
+  <polygon points=" 55.0, 94.0  55.0,106.0   30.0,100.0" fill="#FDBA74" />
+  
+  <!-- 半圓太陽（半徑 30） -->
+  <!-- 圓心 (100,100)，左右端點分別是 (70,100) 和 (130,100) -->
+    <path
+    d="M70 100
+       A30 30 0 0 1 130 100"
+    fill="none"
+    stroke="#F97316"
+    stroke-width="8"
+    stroke-linecap="round"
+  />
+  <!-- 水面三條橢圓 -->
+  <ellipse cx="100" cy="120" rx="70" ry="7" fill="#2563EB" opacity="0.7" />
+  <ellipse cx="100" cy="140" rx="55" ry="7" fill="#2563EB" opacity="0.85" />
+  <ellipse cx="100" cy="160" rx="40" ry="7" fill="#2563EB" opacity="1" />
+</svg>
