@@ -7,7 +7,7 @@
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <!-- Logo -->
-            <div class="h-9 w-9">
+            <div class="w-9 h-9">
               <MyStockMapLogo></MyStockMapLogo>
             </div>
             <div>
