@@ -12,6 +12,7 @@
       >
         {{ item.content }}
       </p>
+      <p class="text-xs text-[color:var(--color-secondary)] mt-1">{{ item.note }}</p>
     </div>
   </div>
 </template>
@@ -33,16 +34,16 @@ const props = defineProps({
     default: () => []
   },
   lastRunTime: {    // 最後運行耗時字串，例如 "0.18s"
-    type: String,
+    type: Number,
     default: ""
   }
 });
 
 const items = computed(() => [
-  { title: "上次產生", contentClass: "text-[color:var(--color-primary)]", content: props.lastReport?.name ?? "尚未產生" },
-  { title: "累計產生次數", contentClass: "text-[color:var(--color-line2)]", content: props.exportCount ?? 0 },
-  { title: "預排任務", contentClass: "text-[color:var(--color-line3)]", content: props.scheduled.length },
-  { title: "最後運行耗時", contentClass: "text-[color:var(--color-primary)]", content: Number.isFinite(props.lastRunTime) ? props.lastRunTime + " s" : "-" }
+  { title: "上次產生", contentClass: "text-[color:var(--color-primary)]", content: props.lastReport?.name ?? "尚未產生", note: props.lastReport?.date ?? "-" },
+  { title: "累計產生次數", contentClass: "text-[color:var(--color-line2)]", content: props.exportCount ?? 0, note: null },
+  { title: "預排任務", contentClass: "text-[color:var(--color-line3)]", content: props.scheduled.length, note: null },
+  { title: "最後運行耗時", contentClass: "text-[color:var(--color-primary)]", content: Number.isFinite(props.lastRunTime) ? props.lastRunTime.toFixed(2) + " s" : "-", note: null }
 ]);
 </script>
 

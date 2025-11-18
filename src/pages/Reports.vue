@@ -1,4 +1,5 @@
 <template>
+  <LoadingModal :open="isGenerating" message="報表生成中"></LoadingModal>
   <div class="p-6">
     <!-- 頁面標題 + Controls -->
     <HeaderAndControls
@@ -50,6 +51,7 @@
 </template>
 
 <script setup>
+import LoadingModal from "@/components/Common/LoadingModal.vue"
 import HeaderAndControls from "@/components/Reports/HeaderAndControls.vue";
 import SummaryCards from "@/components/Reports/SummaryCards.vue";
 import ReportPreview from "@/components/Reports/ReportPreview.vue";
@@ -59,20 +61,29 @@ import { ref, reactive } from "vue";
 
 const isGenerating = ref(false);
 
+const today = new Date();
+const lastYearToday = new Date(new Date(today).setFullYear(today.getFullYear() - 1));
+function fmtDate(date) {  // 把 Date 轉換成 <input type="date"> 看得懂的格式
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+};
+const from = ref(fmtDate(lastYearToday));   // 預設從去年今天
+const to = ref(fmtDate(today));             // 預設到今天
+
 /* 報表內容 */
 const templates = [
   { id: "summary", name: "Summary（總覽）" },
   { id: "positions", name: "Positions（持倉明細）" },
-  { id: "trades", name: "Trades（交易紀錄）" }
+  { id: "trades", name: "Trades（交易紀錄）" },
+  { id: "blank", name: "Blank（空白報表）" }
 ];
-
-const from = ref("");
-const to = ref("");
 const selectedTemplate = ref(templates[0].id);
 
 /* 產生與匯出紀錄 */
 const exportCount = ref(0);
-const recentExports = ref([
+const recentExports = ref([           // mock data
   { name: "Daily Summary 2025-10-10", date: "2025-10-10 09:12" },
   { name: "Monthly Positions 2025-09", date: "2025-09-30 18:01" }
 ]);
@@ -82,8 +93,8 @@ const scheduled = reactive([
   { id: "s2", name: "每月 1 號報表", frequency: "Monthly", template: "Positions", enabled: false }
 ]);
 
-const lastReport = ref(null);
-const lastRunTime = ref("");
+const lastReport = ref(null);    // 最後產生報告之種類
+const lastRunTime = ref(null);     // 最後產生報告之時刻
 
 /* Latest generated report (mock, with raw numbers) */
 const latestGenerated = ref(null);
@@ -108,7 +119,7 @@ function generateReport() {
   const r = {
     id: `r-${now.getTime()}`,
     template: tpl.id,
-    name: `${tpl.name} ${now.toLocaleString()}`,
+    name: `${tpl.name}`,
     date: now.toLocaleString(),
     range: { from: from.value || null, to: to.value || null },
     rows
@@ -120,7 +131,7 @@ function generateReport() {
   if (recentExports.value.length > 8) recentExports.value.pop();
   exportCount.value++;
   // 更新 last run time 假值
-  lastRunTime.value = `${(Math.random()*0.5+0.05).toFixed(2)}s`;
+  lastRunTime.value = Math.random()*0.5+0.05;
   isGenerating.value = false;
 }
 
