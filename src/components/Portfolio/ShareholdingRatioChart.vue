@@ -51,7 +51,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, computed, watch, nextTick } from "vue";
 import * as d3 from "d3";
-import { usePortfolioStore } from "@/store/portfolio";
+import { usePortfolioStore } from "@/store/portfolio.js";
 
 const portfolioStore = usePortfolioStore();
 

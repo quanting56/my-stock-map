@@ -62,16 +62,16 @@ export const useDisplayFormatStore = defineStore("displayFormat", () => {
 
 
   return { 
-    // === 現在狀態 state ===
+    // === 現在狀態 state (for pages/Settings.vue) ===
     currency,           // 現在使用的貨幣單位
     useGrouping,        // 是否使用千分位
     compact,            // 是否用簡寫（1.2K、3.4M）
 
     // === 格式化工具 ===
-    fmtCurrency,        // 格式化貨幣
-    fmtPct,             // 格式化百分比
+    fmtCurrency,        // 格式化貨幣（$1,550、$995）
+    fmtPct,             // 格式化百分比（25.30%、-8.55%）
 
-    // === for pages/Settings.vue actions ===
+    // === actions (for pages/Settings.vue) ===
     setCurrency,
     setUseGrouping,
     setCompact,

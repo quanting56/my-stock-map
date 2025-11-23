@@ -7,11 +7,11 @@ export const mockData = [
     cost: 32634,
   },
   {
-    id: "2330.TW",  // 股號
-    name: "台積電",  // 股票名稱
-    shares: 167,  // 持有股數
-    price: 1450,  // 現價
-    cost: 899.31,  // 成本
+    id: "2330.TW",   // 股號
+    name: "台積電",   // 股票名稱
+    shares: 167,     // 持有股數
+    price: 1450,     // 現價
+    cost: 899.31,    // 成本
   },
   {
     id: "00757.TW",

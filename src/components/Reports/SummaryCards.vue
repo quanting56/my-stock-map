@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from "vue";
+import { computed } from "vue";
 
 const props = defineProps({
   lastReport: {     // 由父元件傳入的最後一次報表：{ name?: string, date?: string } | null
@@ -40,10 +40,31 @@ const props = defineProps({
 });
 
 const items = computed(() => [
-  { title: "上次產生", contentClass: "text-[color:var(--color-primary)]", content: props.lastReport?.name ?? "尚未產生", note: props.lastReport?.date ?? "-" },
-  { title: "累計產生次數", contentClass: "text-[color:var(--color-line2)]", content: props.exportCount ?? 0, note: null },
-  { title: "預排任務", contentClass: "text-[color:var(--color-line3)]", content: props.scheduled.length, note: null },
-  { title: "最後運行耗時", contentClass: "text-[color:var(--color-primary)]", content: Number.isFinite(props.lastRunTime) ? props.lastRunTime.toFixed(2) + " s" : "-", note: null }
+  {
+    title: "上次產生",
+    contentClass: "text-[color:var(--color-primary)]",
+    content: props.lastReport?.name ?? "尚未產生",
+    note: props.lastReport?.date instanceof Date
+            ? props.lastReport.date.toLocaleString()
+            : "-"
+  },
+  {
+    title: "累計產生次數",
+    contentClass: "text-[color:var(--color-line2)]",
+    content: props.exportCount ?? 0,
+    note: null },
+  {
+    title: "預排任務",
+    contentClass: "text-[color:var(--color-line3)]",
+    content: props.scheduled.length,
+    note: null
+  },
+  {
+    title: "最後運行耗時",
+    contentClass: "text-[color:var(--color-primary)]",
+    content: Number.isFinite(props.lastRunTime) ? props.lastRunTime.toFixed(2) + " s" : "-",
+    note: null
+  }
 ]);
 </script>
 
