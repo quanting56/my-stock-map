@@ -21,7 +21,7 @@
     ></SummaryCards>
     
 
-    <!-- 二樓：報表預覽/匯出＋最近匯出與排程任務 -->
+    <!-- 二樓：報表預覽/匯出＋最近匯出與預設任務 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
       <!-- 報表預覽/匯出 -->
@@ -33,14 +33,15 @@
       ></ReportPreview>
 
 
-      <!-- 最近匯出與排程任務 -->
-      <ExportAndScheduleLists
+      <!-- 最近匯出與預設任務 -->
+      <ExportAndPresetLists
         :recentExports="recentExports"
         :scheduled="scheduled"
+        :fmtDate="fmtDate"
         :downloadCSV="downloadCSV"
         :downloadPDF="downloadPDF"
         :runNow="runNow"
-      ></ExportAndScheduleLists>
+      ></ExportAndPresetLists>
     </div>
 
     <!-- 三樓：報表匯入 -->
@@ -56,7 +57,7 @@ import LoadingModal from "@/components/Common/LoadingModal.vue"
 import HeaderAndControls from "@/components/Reports/HeaderAndControls.vue";
 import SummaryCards from "@/components/Reports/SummaryCards.vue";
 import ReportPreview from "@/components/Reports/ReportPreview.vue";
-import ExportAndScheduleLists from "@/components/Reports/ExportAndScheduleLists.vue";
+import ExportAndPresetLists from "@/components/Reports/ExportAndPresetLists.vue";
 import ReportImport from "@/components/Reports/ReportImport.vue";
 
 import { ref, reactive } from "vue";
@@ -173,14 +174,12 @@ const selectedTemplate = ref(templates[0].id);
 
 // 產生與匯出紀錄
 const exportCount = ref(0);
-const recentExports = ref([           // mock data
-  { name: "Daily Summary 2025-10-10", date: "2025-10-10 09:12" },
-  { name: "Monthly Positions 2025-09", date: "2025-09-30 18:01" }
-]);
+const recentExports = ref([]);
 
 const scheduled = reactive([
-  { id: "s1", name: "每日 08:00 匯出總覽", frequency: "Daily", template: "Summary", enabled: true },
-  { id: "s2", name: "每月 1 號報表", frequency: "Monthly", template: "Positions", enabled: false }
+  { id: "s1", name: "近一個月報表", rangeType: "1m",from: new Date(new Date(today).setMonth(today.getMonth() - 1)), to: today, template: "Summary" },
+  { id: "s2", name: "近一季度報表", rangeType: "3m",from: new Date(new Date(today).setMonth(today.getMonth() - 3)), to: today, template: "Positions" },
+  { id: "s3", name: "近半年度報表", rangeType: "6m",from: new Date(new Date(today).setMonth(today.getMonth() - 6)), to: today, template: "Positions" }
 ]);
 
 const lastReport = ref(null);      // 最後產生報告之種類
@@ -266,7 +265,7 @@ async function generateReport() {
 
 
     // 最近匯出清單（先當「最近產生報表」的 log 用）
-    recentExports.value.unshift({ name: r.name, date: r.date });
+    recentExports.value.unshift(r);
     if (recentExports.value.length > 8) recentExports.value.pop();
 
     exportCount.value++;
@@ -286,6 +285,11 @@ async function generateReport() {
 // 下載 CSV 函式
 function downloadCSV(report, options = { includeMeta: true }) {
   if (!report) return alert("沒有可匯出的報表");
+
+  // （防呆）沒有 columns / rows 的話，直接提醒，不要讓 .map 爆掉
+  if (!Array.isArray(report.columns) || !Array.isArray(report.rows)) {
+    return alert("這筆匯出紀錄缺少詳細內容，請重新產生報表後再匯出。");
+  }
 
   const headerKeys = report.columns.map(c => c.key);
   const headerLabels = report.columns.map(c => c.label);
@@ -329,6 +333,11 @@ function downloadCSV(report, options = { includeMeta: true }) {
 // 下載 JSON 函式
 function downloadJSON(report, options = { pretty: true }) {
   if (!report) return alert("沒有可匯出的報表");
+
+  // （防呆）沒有 columns / rows 的話，直接提醒，不要讓 .map 爆掉
+  if (!Array.isArray(report.columns) || !Array.isArray(report.rows)) {
+    return alert("這筆匯出紀錄缺少詳細內容，請重新產生報表後再匯出。");
+  }
 
   // 準備要輸出的 payload（從 report 摘要出來）
   const payload = {
@@ -516,9 +525,55 @@ async function downloadPDF(report) {
 }
 
 
-/* 立即執行排程（demo） */
-function runNow(task) {
-  alert(`排程立即執行：${task.name}`);
+// 立即執行預設報表（demo）
+async function runNow(task) {
+  // alert(`排程立即執行：${task.name}`);
+
+  try {
+    // 根據 task.template 找對應模板（支援 id 或 name）
+    const tpl = templates.find((t) => t.id === task.template.toLowerCase());
+
+    if (!tpl) {
+      alert(`找不到對應模板：「${task.template}」，請檢查預設報表設定。`);
+      return;
+    }
+
+    // 切換到指定模板
+    selectedTemplate.value = tpl.id;
+
+    // 計算日期區間：to = 今天，from = 今天往前推 N 個月
+    const now = new Date();
+    const fromDate = new Date(now);  // 先複製一份
+
+    switch (task.rangeType) {
+      case "1m":
+        fromDate.setMonth(fromDate.getMonth() - 1);
+        break;
+
+      case "3m":
+        fromDate.setMonth(fromDate.getMonth() - 3);
+        break;
+
+      case "6m":
+        fromDate.setMonth(fromDate.getMonth() - 6);
+        break;
+
+      default:
+        // 其他值就什麼都不做，未來再視需求補上預設行為
+        break;
+    }
+
+    // 套用到頁面上的日期範圍（v-model 綁到 HeaderAndControls）
+    from.value = fmtDate(fromDate);
+    to.value = fmtDate(now);
+
+    // 產生報表（ReportPreview + 最近匯出都會更新）
+    await generateReport();
+
+  } catch (e) {
+    console.error("[Reports] runNow error:", e);
+    alert("預設報表執行失敗，請稍後再試。");
+  }
 }
 
 /* 檔案上傳 demo */

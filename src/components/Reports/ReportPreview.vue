@@ -48,10 +48,9 @@
           </div>
           <div class="p-3 bg-[color:var(--color-card)]">
             <div class="text-xs text-[color:var(--color-secondary)]">總損益（此區間）</div>
-            <!-- 下面這個 DOM 還要修改 -->
             <div
-              :class="latestGenerated.totalPnlPct > 0 ? 'text-[color:var(--color-line2)]' : 'text-[color:var(--color-line3)]'"
-              class="text-lg font-bold text-[color:var(--color-line2)]"
+              :class="latestGenerated.totalPnlPct >= 0 ? 'text-[color:var(--color-line2)]' : 'text-[color:var(--color-line3)]'"
+              class="text-lg font-bold"
             >
               {{ latestGenerated.totalPnlPct > 0 ? "+" : "" }}{{ displayFormat.fmtPct(latestGenerated.totalPnlPct) }}
             </div>

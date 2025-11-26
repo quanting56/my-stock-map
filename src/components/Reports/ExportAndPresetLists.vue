@@ -1,8 +1,9 @@
 <template>
   <div class="card-theme rounded-2xl shadow p-4 space-y-4">
+    <!-- 最近匯出 -->
     <div>
       <h3 class="font-medium mb-2 text-[color:var(--color-primary)]">最近匯出</h3>
-      <ul class="space-y-2">
+      <ul class="space-y-2 max-h-64 overflow-y-auto pr-1">
         <li
           v-for="(r, i) in recentExports"
           :key="i"
@@ -10,7 +11,7 @@
         >
           <div>
             <div class="text-sm font-medium">{{ r.name }}</div>
-            <div class="text-xs text-[color:var(--color-secondary)]">{{ r.date }}</div>
+            <div class="text-xs text-[color:var(--color-secondary)]">{{ r.date.toLocaleString() }}</div>
           </div>
           <div class="flex items-center gap-2">
             <button @click="downloadCSV(r)" class="px-2 py-1 text-xs rounded border border-[color:var(--color-border)] bg-[color:var(--color-card)] cursor-pointer">CSV</button>
@@ -21,10 +22,15 @@
       </ul>
     </div>
 
+
+    <!-- 預設任務 -->
     <div class="border-t border-[color:var(--color-border)] pt-4">
-      <h3 class="font-medium mb-2 text-[color:var(--color-primary)]">排程任務</h3>
-      <ul class="space-y-2">
-        <li v-if="scheduled.length === 0" class="text-sm text-[color:var(--color-secondary)]">尚未建立排程</li>
+      <h3 class="font-medium mb-2 text-[color:var(--color-primary)]">預設報表</h3>
+      <p class="text-xs text-[color:var(--color-secondary)] mb-2">
+    點選下方按鈕，會自動套用常用區間（近一個月、近一季度、近半年度）並產生報表。
+  </p>
+      <ul class="space-y-2 max-h-64 overflow-y-auto pr-1">
+        <li v-if="scheduled.length === 0" class="text-sm text-[color:var(--color-secondary)]">尚未建立預設報表</li>
         <li
           v-else
           v-for="task in scheduled"
@@ -32,19 +38,19 @@
           class="flex items-center justify-between p-2 rounded-md hover:bg-[color:var(--color-border)] transition"
         >
           <div>
-            <div class="font-medium">{{ task.name }}</div>
-            <div class="text-xs text-[color:var(--color-secondary)]">頻率：{{ task.frequency }} • 模板：{{ task.template }}</div>
+            <div class="font-medium">{{ task.name }} ({{ task.rangeType }})</div>
+            <div class="mt-0.5 text-xs text-[color:var(--color-secondary)]">
+              - 模板：{{ task.template }}<br />
+              - 區間：{{ fmtDate(new Date(task.from)) }} ~ {{ fmtDate(new Date(task.to)) }}
+            </div>
           </div>
           <div class="flex items-center gap-2">
-            <button @click="runNow(task)" class="px-2 py-1 text-xs rounded border border-[color:var(--color-border)] bg-[color:var(--color-card)] cursor-pointer">立即執行</button>
-            <label class="inline-flex items-center gap-2">
-              <input
-                type="checkbox"
-                v-model="task.enabled"
-                class="rounded"
-              />
-              <span class="text-xs text-[color:var(--color-secondary)]">{{ task.enabled ? "啟用" : "停用" }}</span>
-            </label>
+            <button
+              @click="runNow(task)"
+              class="px-4 py-2 text-sm rounded border border-[color:var(--color-border)] hover:border-[color:var(--color-primary)] bg-[color:var(--color-card)] cursor-pointer"
+            >
+              立即<br />套用
+            </button>
           </div>
         </li>
       </ul>
@@ -61,6 +67,10 @@ const props = defineProps({
   scheduled: {           // 排程列表
     type: Array,
     default: () => []
+  },
+  fmtDate: {             // 格式化 UI 日期顯示用
+    type: Function,
+    required: true
   },
   downloadCSV: {         // 匯出 CSV 函式
     type: Function,

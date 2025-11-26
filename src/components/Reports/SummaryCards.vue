@@ -54,7 +54,7 @@ const items = computed(() => [
     content: props.exportCount ?? 0,
     note: null },
   {
-    title: "預排任務",
+    title: "預設任務",
     contentClass: "text-[color:var(--color-line3)]",
     content: props.scheduled.length,
     note: null
