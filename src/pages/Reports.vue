@@ -576,11 +576,243 @@ async function runNow(task) {
   }
 }
 
-/* 檔案上傳 demo */
-function onUpload(e) {
-  const f = e.target.files?.[0];
-  if (!f) return;
-  alert(`已上傳檔案：${f.name}（此為 demo，不會進行解析）`);
+
+
+// 匯入相關小工具：讀檔文字
+function readFileAsText(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = (e) => resolve(e.target.result || "");
+    reader.onerror = (err) => reject(err);
+    reader.readAsText(file, "utf-8");
+  });
+}
+
+// 匯入 JSON 報表（暫時先對應 downloadJSON 輸出的格式）
+function parseImportedJson(text, file) {
+  try {
+    const payload = JSON.parse(text);
+
+    return {
+      id:
+        payload.id || `import-${Date.now()}`,
+      template:
+        payload.template || "imported",
+      name:
+        payload.name ||
+        file.name.replace(/\.(json|csv)$/i, "") ||
+        "Imported Report",
+      date:
+        payload.generatedAt
+          ? new Date(payload.generatedAt)
+          : new Date(),
+      range:
+        payload.range || { from: "", to: "" },
+      totalMarketValue:
+        +payload.totalMarketValue,
+      totalPnlPct:
+        +payload.totalPnlPct,
+      columns:
+        Array.isArray(payload.columns) ? payload.columns : [],
+      rows:
+        Array.isArray(payload.rows) ? payload.rows : []
+    };
+  } catch (e) {
+    console.error("[Reports] parseImportedJson error:", e);
+    return null;
+  }
+}
+
+// 匯入 CSV 報表（暫時先對應 downloadCSV 輸出的格式）
+function parseImportedCsv(text, file) {
+  const lines = text
+    .split(/\r?\n/)
+    .map((l) => l.trim())
+    .filter((l) => l.length > 0);
+
+  if (lines.length < 2) return null;
+
+  let idx = 0;
+  const meta = {};
+
+  // ★ 解析前面的 meta 行（以 # 開頭）
+  while (idx < lines.length && lines[idx].startsWith("#")) {
+    const raw = lines[idx].slice(1).trim();  // 去掉 '#'
+    const [k, ...rest] = raw.split(":");
+    const key = k.trim();
+    const value = rest.join(":").trim();
+
+    if (key === "name") {
+      meta.name = value;
+    } else if (key === "generatedAt") {
+      meta.generatedAt = value;
+    } else if (key === "range") {
+      const [from, to] = value.split("~").map((s) => s.trim());
+      meta.range = { from, to };
+    } else if (key === "totalMarketValue") {
+      const n = Number(value.replace(/[^\d.-]/g, ""));
+      if (!Number.isNaN(n)) meta.totalMarketValue = n;
+    } else if (key === "totalPnlPct") {
+      const n = Number(value.replace(/[^\d.-]/g, ""));
+      if (!Number.isNaN(n)) meta.totalPnlPct = n / 100;  // 文字為 12% → 0.12
+    }
+
+    idx++;
+  }
+
+  // 解析表頭（目前假設你輸出的 header 沒有逗號/引號）
+  const headerLine = lines[idx++];
+  const headerLabels = headerLine.split(",");
+
+  const columns = headerLabels.map((label) => ({
+    key: label,  // 匯入後就直接用 label 當 key
+    label,
+    align: "left",
+    format: null
+  }));
+
+  const rows = [];
+
+  // 解析每一列資料
+  for (; idx < lines.length; idx++) {
+    const line = lines[idx];
+    if (!line) continue;
+
+    const values = line.split(",");
+    const rowObj = {};
+    columns.forEach((col, i) => {
+      rowObj[col.key] = values[i] !== undefined ? values[i] : "";
+    });
+    rows.push(rowObj);
+  }
+
+  // 若沒有 meta.range，嘗試從欄位「起始日 / 終止日」推回來
+  if (!meta.range && rows.length > 0) {
+    const idxFrom = headerLabels.indexOf("起始日");
+    const idxTo = headerLabels.indexOf("終止日");
+    meta.range = {
+      from: idxFrom >= 0 ? rows[0][headerLabels[idxFrom]] : "",
+      to: idxTo >= 0 ? rows[0][headerLabels[idxTo]] : ""
+    };
+  }
+
+  // 若沒有 totalMarketValue / totalPnlPct，嘗試從第一列抓「總市值 / 總報酬率」
+  if (meta.totalMarketValue == null && rows.length > 0) {
+    const idxMv = headerLabels.indexOf("總市值");
+    if (idxMv >= 0) {
+      const n = Number(rows[0][headerLabels[idxMv]]);
+      if (!Number.isNaN(n)) meta.totalMarketValue = n;
+    }
+  }
+
+  if (meta.totalPnlPct == null && rows.length > 0) {
+    const idxPnl = headerLabels.indexOf("總報酬率");
+    if (idxPnl >= 0) {
+      const n = Number(rows[0][headerLabels[idxPnl]]);
+      if (!Number.isNaN(n)) meta.totalPnlPct = n;
+    }
+  }
+
+  return {
+    id:
+      `import-${Date.now()}`,
+    template:
+      "imported",
+    name:
+      meta.name ||
+      file.name.replace(/\.(csv|json)$/i, "") ||
+      "Imported CSV",
+    date:
+      meta.generatedAt
+        ? new Date(meta.generatedAt)
+        : new Date(),
+    range:
+      meta.range || { from: "", to: "" },
+    totalMarketValue:
+      meta.totalMarketValue ?? 0,
+    totalPnlPct:
+      meta.totalPnlPct ?? 0,
+    columns,
+    rows
+  };
+}
+
+
+// 檔案上傳
+async function onUpload(e) {
+  try {
+    const file = e?.target?.files?.[0];
+    if (!file) {
+      alert("請先選擇要匯入的檔案。");
+      return;
+    }
+
+    const ext = file.name.split(".").pop()?.toLowerCase() || "";
+
+    // 讀取檔案內容
+    const text = await readFileAsText(file);  // 前面的自訂函式
+
+    let importedReport = null;
+
+    if (ext === "json") {
+      importedReport = parseImportedJson(text, file);  // 前面的自訂函式
+    } else if (ext === "csv") {
+      importedReport = parseImportedCsv(text, file);  // 前面的自訂函式
+    } else {
+      alert("目前僅支援匯入 CSV 或 JSON 報表檔案。");
+      return;
+    }
+
+    if (!importedReport) {
+      alert("匯入失敗：檔案格式不符合預期，請確認是否為由本系統匯出的報表。");
+      return;
+    }
+
+    // 將匯入結果套用到畫面：當作最新報表
+    latestGenerated.value = importedReport;
+
+    // 更新 SummaryCards 的「最後報表」
+    lastReport.value = {
+      name: importedReport.name + "（外部匯入）",
+      date: importedReport.date
+    };
+
+    // 若匯入檔裡有區間資訊，順便同步到上方 Summary Cards 日期欄位
+    if (importedReport.range) {
+      if (importedReport.range.from) {
+        from.value = importedReport.range.from;
+      }
+      if (importedReport.range.to) {
+        to.value = importedReport.range.to;
+      }
+    }
+
+    // 若有 template 資訊，嘗試對應到 Summary Cards 欄位
+    const tplMatch = templates.find(
+      (t) =>
+        t.id === importedReport.template ||
+        t.name.toLowerCase() === String(importedReport.template).toLowerCase()
+    );
+    if (tplMatch) {
+      selectedTemplate.value = tplMatch.id;
+    } else {
+      // 找不到對應 template 時就用目前的 selectedTemplate，純顯示 imported data
+      console.log(
+        "[Reports] imported report template not matched, using current selectedTemplate:",
+        importedReport.template
+      );
+    }
+
+    alert(`已成功匯入報表：「${importedReport.name}」`);
+
+    // ★ 小整理：清空 input 的值，避免同一檔案無法再次觸發 change 事件
+    if (e.target) {
+      e.target.value = "";
+    }
+  } catch (err) {
+    console.error("[Reports] onUpload error:", err);
+    alert("匯入過程發生錯誤，請稍後再試。");
+  }
 }
 
 /* 編輯模板 demo */
