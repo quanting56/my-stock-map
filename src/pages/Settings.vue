@@ -1,25 +1,16 @@
 <!-- src/pages/Settings.vue -->
 <template>
   <div class="p-6">
-    <!-- 標題區 -->
+    <!-- 頁面標題 + 重設按鈕 -->
     <div class="flex items-start justify-between gap-4 mb-6">
+      <!-- 頁面標題 -->
       <div>
         <h1 class="text-2xl font-bold text-[color:var(--color-primary)]">⚙️ 設定</h1>
         <p class="text-sm text-[color:var(--color-secondary)] mt-1">帳號、顯示、通知與整體偏好設定。</p>
       </div>
 
-      <!-- 快速動作 -->
+      <!-- 重設按鈕 -->
       <div class="flex items-center gap-3">
-        <button
-          @click="exportSettings"
-          class="px-3 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm hover:bg-[color:var(--color-border)] transition"
-        >
-          匯出設定
-        </button>
-        <label class="px-3 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm cursor-pointer hover:bg-[color:var(--color-border)] transition">
-          匯入設定
-          <input type="file" @change="onImportFile" class="hidden" />
-        </label>
         <button
           @click="resetAll"
           class="px-3 py-1 rounded-md bg-red-600 text-white text-sm hover:brightness-90 transition"
@@ -29,21 +20,40 @@
       </div>
     </div>
 
-    <!-- 內容：左（主要設定）、右（摘要與快速操作） -->
+
+    <!-- 一樓：主要設定 + 當前設定與快速操作 -->
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <!-- 左：表單區 -->
+      <!-- 主要設定 -->
       <div class="lg:col-span-2 card-theme rounded-2xl shadow p-6 space-y-6">
         <!-- 個人設定 -->
         <section>
           <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">個人設定</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <input v-model="form.displayName" placeholder="顯示名稱" class="px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]" />
-            <input v-model="form.email" placeholder="電子郵件" class="px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]" />
-            <select v-model="form.timezone" class="px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
-              <option value="Asia/Taipei">Asia/Taipei</option>
-              <option value="UTC">UTC</option>
-              <option value="America/New_York">America/New_York</option>
-            </select>
+            <label class="flex flex-col">
+              <span class="text-sm text-[color:var(--color-secondary)]">顯示名稱</span>
+              <input
+                type="text"
+                v-model="form.displayName"
+                placeholder="可輸入暱稱"
+                class="px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]"
+              />
+            </label>
+            <label class="flex flex-col">
+              <span class="text-sm text-[color:var(--color-secondary)]">E-mail</span>
+              <input
+                type="email"
+                v-model="form.email"
+                placeholder="請輸入電子郵件"
+                class="px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]"
+              />
+            </label>
+            <div>
+              <label class="text-sm text-[color:var(--color-secondary)]">貨幣單位</label>
+              <select v-model="form.monetaryUnit" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
+                <option value="TWD">新臺幣 TWD</option>
+                <option value="USD">美元 USD</option>
+              </select>
+            </div>
             <div>
               <label class="text-sm text-[color:var(--color-secondary)]">顯示精度</label>
               <select v-model="form.numberPrecision" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
@@ -55,44 +65,43 @@
           </div>
         </section>
 
-        <!-- 顯示 / 主題設定 -->
-        <section>
-          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">外觀 (Theme)</h2>
-          <div class="flex items-center gap-4 flex-wrap">
-            <button
-              @click="uiTheme.isDarkMode ? uiTheme.toggleUITheme() : null"
-              :class="[
-                'px-3 py-2 rounded-lg border transition',
-                uiTheme.isDarkMode ? 'bg-[color:var(--color-card)] border-[color:var(--color-border)]' : 'bg-white border-gray-200'
-              ]"
-            >
-              現在：{{ uiTheme.isDarkMode ? '夜間' : '日間' }}
-            </button>
 
+        <!-- 外觀設定 -->
+        <section>
+          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">外觀</h2>
+          <div class="flex items-center gap-4 flex-wrap">
             <button
               @click="uiTheme.toggleUITheme"
               class="px-3 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition cursor-pointer"
             >
-              切換主題
+              現在主題：{{ uiTheme.isDarkMode ? '夜間' : '日間' }}
             </button>
 
             <label class="flex items-center gap-2 ml-2">
-              <input type="checkbox" v-model="form.reduceMotion" disabled />
+              <input
+                type="checkbox"
+                v-model="form.reduceMotion"
+                disabled
+              />
               <span class="text-sm text-[color:var(--color-secondary)] opacity-50"><s>減少動畫（減少動態效果）</s></span>
             </label>
           </div>
         </section>
 
-        <!-- 通知 -->
+
+        <!-- 通知（未來實作） -->
         <section>
-          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">通知</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">
+            通知
+            <span class="ml-3 text-xs text-[color:var(--color-secondary)]/80">※ 目前僅儲存偏好設定，尚未實作實際推播服務。</span>
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 opacity-25">
             <label class="flex items-center justify-between p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
               <div>
                 <div class="font-medium">價格提醒</div>
                 <div class="text-xs text-[color:var(--color-secondary)]">當持股達到目標價時通知您</div>
               </div>
-              <input type="checkbox" v-model="form.notifyPrice" />
+              <input type="checkbox" v-model="form.notifyPrice" disabled />
             </label>
 
             <label class="flex items-center justify-between p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
@@ -100,7 +109,7 @@
                 <div class="font-medium">每日摘要</div>
                 <div class="text-xs text-[color:var(--color-secondary)]">每日早上推播昨日總覽</div>
               </div>
-              <input type="checkbox" v-model="form.notifyDaily" />
+              <input type="checkbox" v-model="form.notifyDaily" disabled />
             </label>
 
             <label class="flex items-center justify-between p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
@@ -108,13 +117,18 @@
                 <div class="font-medium">交易異常</div>
                 <div class="text-xs text-[color:var(--color-secondary)]">監控交易失敗或拒單狀態</div>
               </div>
-              <input type="checkbox" v-model="form.notifyTrade" />
+              <input type="checkbox" v-model="form.notifyTrade" disabled />
             </label>
 
             <div class="p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
               <div class="font-medium mb-1">推播頻率</div>
-              <select v-model="form.notifyFrequency" class="w-full px-2 py-1 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
-                <option value="realtime">即時</option>
+              <select
+                v-model="form.notifyFrequency"
+                disabled
+                class="w-full px-2 py-1 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]"
+              >
+                <option value="never">不推播</option>
+                <option value="realtime">即時</option>  <!-- 後端實作後，預設改用這個 -->
                 <option value="hourly">每小時</option>
                 <option value="daily">每日</option>
               </select>
@@ -122,33 +136,32 @@
           </div>
         </section>
 
-        <!-- API Key -->
-        <section>
-          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">API / Integrations</h2>
-          <div class="grid grid-cols-1 gap-3">
-            <div class="p-3 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] flex items-center gap-3">
-              <div class="flex-1">
-                <div class="text-sm text-[color:var(--color-secondary)]">第三方行情 API Key</div>
-                <div class="text-xs text-[color:var(--color-secondary)]">此金鑰會存在 localStorage（示範），上線請改用安全後端儲存。</div>
-              </div>
-
-              <div class="flex items-center gap-2">
-                <input v-model="form.apiKey" :type="showKey ? 'text' : 'password'" placeholder="輸入 API Key" class="px-2 py-1 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]" />
-                <button @click="showKey = !showKey" class="px-2 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm">
-                  {{ showKey ? '隱藏' : '顯示' }}
-                </button>
-                <button @click="clearApiKey" class="px-2 py-1 rounded-md bg-red-600 text-white text-sm hover:brightness-95">清除</button>
-              </div>
-            </div>
-
-            <div class="text-xs text-[color:var(--color-secondary)]">注意：不要在公開 repo 或 client-side 存放敏感金鑰。</div>
-          </div>
-        </section>
 
         <!-- 儲存按鈕 -->
         <div class="flex justify-end">
           <button @click="saveSettings" class="px-5 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition">儲存設定</button>
         </div>
+
+        
+        <!-- 資料來源（API 列表） -->
+        <section class="border-t border-[color:var(--color-border)] pt-6">
+          <h2 class="text-lg font-medium text-[color:var(--color-primary)] mb-2">資料來源</h2>
+          <div class="grid grid-cols-1 gap-3">
+            <div class="px-5 py-4 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)] gap-3">
+              <h3 class="mb-3 font-medium">本網站使用之 API</h3>
+              <ul class="list-disc space-y-2">
+                <li
+                  v-for="(d, i) in apiSources"
+                  :key="i"
+                  class="ml-4 text-sm text-[color:var(--color-secondary)]"
+                >
+                  {{ d.title }}｜{{ d.apiFrom }}<br />
+                  <span class="text-xs break-all">{{ d.partialHyperlink }} ...</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
 
       <!-- 右：摘要 / 小工具 -->
@@ -158,7 +171,8 @@
           <div class="text-sm text-[color:var(--color-secondary)] mt-2">
             <div>顯示名稱：<span class="font-medium">{{ form.displayName || "-" }}</span></div>
             <div>電子郵件：<span class="font-medium">{{ form.email || "-" }}</span></div>
-            <div>時區：<span class="font-medium">{{ form.timezone }}</span></div>
+            <div>貨幣單位：<span class="font-medium">{{ form.monetaryUnit }}</span></div>
+            <div>顯示位數：<span class="font-medium">{{ form.numberPrecision == 0 ? "整數" : `小數後 ${form.numberPrecision} 位` }}</span></div>
             <div>暗色模式：<span class="font-medium">{{ uiTheme.isDarkMode ? "啟用" : "停用" }}</span></div>
           </div>
         </div>
@@ -166,8 +180,11 @@
         <div class="border-t border-[color:var(--color-border)] pt-3">
           <h3 class="font-medium text-[color:var(--color-primary)]">快速匯入 / 匯出</h3>
           <div class="flex flex-col gap-2 mt-2">
-            <button @click="exportSettings" class="px-3 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm">匯出 JSON</button>
-            <button @click="loadDefault" class="px-3 py-1 rounded-md bg-[color:var(--color-primary)] text-white text-sm">載入預設</button>
+            <label class="inline-flex justify-center px-3 py-1 rounded-md border border-[color:var(--color-border)] bg-[color:var(--color-card)] text-sm cursor-pointer">
+              匯入設定
+              <input type="file" @change="onImportFile" class="hidden" />
+            </label>
+            <button @click="exportSettings" class="px-3 py-1 rounded-md bg-[color:var(--color-primary)] text-white text-sm cursor-pointer">匯出設定（JSON）</button>
           </div>
         </div>
 
@@ -183,10 +200,22 @@
 </template>
 
 <script setup>
-import { reactive, ref } from "vue";
+import { reactive } from "vue";
 import { useUIThemeStore } from "@/store/theme";
 
 const uiTheme = useUIThemeStore();
+
+const apiSources = [
+  { title: "個股股價", apiFrom: "TWSE 證交所", partialHyperlink: "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=" },
+  { title: "個股基本資訊（殖利率、本益比、股價淨值比等）", apiFrom: "TWSE 證交所", partialHyperlink: "https://www.twse.com.tw/exchangeReport/BWIBBU?response=" },
+  { title: "公司基本資料（公司代號、名稱、地址、資本額、發行股數等）", apiFrom: "TWSE 證交所", partialHyperlink: "https://openapi.twse.com.tw/v1/opendata/t18" },
+  { title: "個股相關新聞", apiFrom: "Google News RSS", partialHyperlink: "https://news.google.com/rss/search?q=" },
+  { title: "上市公司市值排名", apiFrom: "taifex 臺灣期貨交易所", partialHyperlink: "https://www.taifex.com.tw/cht/9/fut" },
+  { title: "上櫃公司市值排名", apiFrom: "證券櫃檯買賣中心", partialHyperlink: "https://www.bq888.taifex.com.tw/cht/2/tPE" },
+  { title: "公司基本資料（代碼、名稱、產業等）", apiFrom: "FinMind", partialHyperlink: "https://api.finmindtrade.com/api/v4/data?dataset=" },
+  { title: "國內上市證券國際證券辨識號碼", apiFrom: "TWSE 證交所", partialHyperlink: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=" },
+  { title: "國內上櫃證券國際證券辨識號碼", apiFrom: "TWSE 證交所", partialHyperlink: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=" }
+];
 
 // localStorage key
 const STORAGE_KEY = "my-stock-map:settings";
@@ -195,21 +224,24 @@ const STORAGE_KEY = "my-stock-map:settings";
 const defaultSettings = {
   displayName: "",
   email: "",
-  timezone: "Asia/Taipei",
+  monetaryUnit: "TWD",
   numberPrecision: 2,
   reduceMotion: false,
-  notifyPrice: true,
+  notifyPrice: false,
   notifyDaily: false,
-  notifyTrade: true,
-  notifyFrequency: "daily",
-  apiKey: ""
+  notifyTrade: false,
+  notifyFrequency: "never"
 };
 
 // 複製到 reactive 表單（避免直接綁定 defaultSettings）
 const form = reactive(loadSettings());
 
-// 顯示 API Key 開關
-const showKey = ref(false);
+function resetAll() {
+  if (!confirm("確定要重設所有設定並清空本地儲存嗎？")) return;
+  Object.assign(form, { ...defaultSettings });
+  localStorage.removeItem(STORAGE_KEY);
+  alert("已重設為預設值");
+}
 
 /* helpers */
 function loadSettings() {
@@ -235,19 +267,6 @@ function saveSettings() {
   alert("設定已儲存（本地示範）");
 }
 
-function exportSettings() {
-  const data = JSON.stringify(form, null, 2);
-  const blob = new Blob([data], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "mst-settings.json";
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-  URL.revokeObjectURL(url);
-}
-
 function onImportFile(e) {
   const file = e.target.files?.[0];
   if (!file) return;
@@ -265,29 +284,17 @@ function onImportFile(e) {
   reader.readAsText(file);
 }
 
-function onImportJson(json) {
-  // 若要從程式中匯入
-  Object.assign(form, json);
-  saveToStorage(form);
-}
-
-function resetAll() {
-  if (!confirm("確定要重設所有設定並清空本地儲存嗎？")) return;
-  Object.assign(form, { ...defaultSettings });
-  localStorage.removeItem(STORAGE_KEY);
-  alert("已重設為預設值");
-}
-
-function loadDefault() {
-  Object.assign(form, { ...defaultSettings });
-  saveToStorage(form);
-  alert("已載入預設設定");
-}
-
-function clearApiKey() {
-  form.apiKey = "";
-  saveToStorage(form);
-  alert("API Key 已清除（本地示範）");
+function exportSettings() {
+  const data = JSON.stringify(form, null, 2);
+  const blob = new Blob([data], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "mst-settings.json";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
 }
 
 function signOut() {
