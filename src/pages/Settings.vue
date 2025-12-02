@@ -13,7 +13,7 @@
       <div class="flex items-center gap-3">
         <button
           @click="resetAll"
-          class="px-3 py-1 rounded-md bg-red-600 text-white text-sm hover:brightness-90 transition"
+          class="px-3 py-1 rounded-md bg-red-600 text-white text-sm hover:brightness-90 transition cursor-pointer"
         >
           重設全部
         </button>
@@ -139,7 +139,7 @@
 
         <!-- 儲存按鈕 -->
         <div class="flex justify-end">
-          <button @click="saveSettings" class="px-5 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition">儲存設定</button>
+          <button @click="saveSettings" class="px-5 py-2 rounded-lg bg-[color:var(--color-primary)] text-white hover:brightness-95 transition cursor-pointer">儲存設定</button>
         </div>
 
         
@@ -169,10 +169,10 @@
         <div>
           <h3 class="font-medium text-[color:var(--color-primary)]">當前設定</h3>
           <div class="text-sm text-[color:var(--color-secondary)] mt-2">
-            <div>顯示名稱：<span class="font-medium">{{ form.displayName || "-" }}</span></div>
-            <div>電子郵件：<span class="font-medium">{{ form.email || "-" }}</span></div>
-            <div>貨幣單位：<span class="font-medium">{{ form.monetaryUnit }}</span></div>
-            <div>顯示位數：<span class="font-medium">{{ form.numberPrecision == 0 ? "整數" : `小數後 ${form.numberPrecision} 位` }}</span></div>
+            <div>顯示名稱：<span class="font-medium">{{ settingItems.settings.displayName || "-" }}</span></div>
+            <div>電子郵件：<span class="font-medium">{{ settingItems.settings.email || "-" }}</span></div>
+            <div>貨幣單位：<span class="font-medium">{{ settingItems.settings.monetaryUnit || "-" }}</span></div>
+            <div>顯示位數：<span class="font-medium">{{ settingItems.settings.numberPrecision == 0 ? "整數" : `小數後 ${form.numberPrecision} 位` || "-" }}</span></div>
             <div>暗色模式：<span class="font-medium">{{ uiTheme.isDarkMode ? "啟用" : "停用" }}</span></div>
           </div>
         </div>
@@ -191,7 +191,7 @@
         <div class="border-t border-[color:var(--color-border)] pt-3">
           <h3 class="font-medium text-[color:var(--color-primary)]">帳戶</h3>
           <div class="mt-2">
-            <button @click="signOut" class="px-3 py-1 rounded-md bg-red-600 text-white text-sm">登出</button>
+            <button @click="signOut" class="px-3 py-1 rounded-md bg-red-600 text-white text-sm cursor-pointer">登出</button>
           </div>
         </div>
       </aside>
@@ -201,9 +201,14 @@
 
 <script setup>
 import { reactive } from "vue";
+
 import { useUIThemeStore } from "@/store/theme";
+import { useDisplayFormatStore } from "@/store/displayFormat.js";
+import { useSettingItemsStore } from "@/store/settingItems.js";
 
 const uiTheme = useUIThemeStore();
+const displayFormat = useDisplayFormatStore();
+const settingItems = useSettingItemsStore();
 
 const apiSources = [
   { title: "個股股價", apiFrom: "TWSE 證交所", partialHyperlink: "https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=" },
@@ -217,65 +222,57 @@ const apiSources = [
   { title: "國內上櫃證券國際證券辨識號碼", apiFrom: "TWSE 證交所", partialHyperlink: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=" }
 ];
 
-// localStorage key
-const STORAGE_KEY = "my-stock-map:settings";
 
-// 表單初始值（可擴充）
-const defaultSettings = {
-  displayName: "",
-  email: "",
-  monetaryUnit: "TWD",
-  numberPrecision: 2,
-  reduceMotion: false,
-  notifyPrice: false,
-  notifyDaily: false,
-  notifyTrade: false,
-  notifyFrequency: "never"
-};
-
-// 複製到 reactive 表單（避免直接綁定 defaultSettings）
-const form = reactive(loadSettings());
+// 建一份「編輯用」的表單副本，避免直接綁定 store
+const form = reactive({ ...settingItems.settings });
 
 function resetAll() {
   if (!confirm("確定要重設所有設定並清空本地儲存嗎？")) return;
-  Object.assign(form, { ...defaultSettings });
-  localStorage.removeItem(STORAGE_KEY);
+
+  settingItems.reset();  // 重設 Pinia + localStorage
+  Object.assign(form, settingItems.settings);  // 重設畫面上的表單
+  
+  // 同步顯示格式（貨幣與小數位數）
+  displayFormat.setCurrency(form.monetaryUnit);
+  displayFormat.setCurrencyDigits(form.numberPrecision);
+  displayFormat.setPctDigits(form.numberPrecision);
+
   alert("已重設為預設值");
-}
-
-/* helpers */
-function loadSettings() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    if (raw) {
-      return JSON.parse(raw);
-    }
-  } catch (e) {
-    // ignore parse error
-  }
-  // return fresh copy
-  return { ...defaultSettings };
-}
-
-function saveToStorage(payload) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
 }
 
 /* 行為 */
 function saveSettings() {
-  saveToStorage(form);
+  // 把目前編輯中的 form 寫回 Pinia 狀態，再存到 localStorage
+  Object.assign(settingItems.settings, form);
+  settingItems.saveToStorage();
+
+  // 同步顯示格式（全站會吃到新的設定）
+  displayFormat.setCurrency(form.monetaryUnit);
+  displayFormat.setCurrencyDigits(form.numberPrecision);
+  displayFormat.setPctDigits(form.numberPrecision);
+
   alert("設定已儲存（本地示範）");
 }
 
 function onImportFile(e) {
   const file = e.target.files?.[0];
   if (!file) return;
+
   const reader = new FileReader();
   reader.onload = () => {
     try {
       const parsed = JSON.parse(reader.result);
+
+      // 套用匯入設定到表單 + store
       Object.assign(form, parsed);
-      saveToStorage(form);
+      Object.assign(settingItems.settings, form);
+      settingItems.saveToStorage();  // 存回 localStorage
+
+      // 匯入後順便同步顯示格式
+      displayFormat.setCurrency(form.monetaryUnit);
+      displayFormat.setCurrencyDigits(form.numberPrecision);
+      displayFormat.setPctDigits(form.numberPrecision);
+
       alert("匯入並套用設定完成");
     } catch (err) {
       alert("匯入失敗：檔案不是正確的 JSON");
@@ -301,6 +298,10 @@ function signOut() {
   // 實作登出流程（示範）
   alert("已登出（示範），請串實際認證流程");
 }
+
+displayFormat.setCurrency(form.monetaryUnit);
+displayFormat.setCurrencyDigits(form.numberPrecision);
+displayFormat.setPctDigits(form.numberPrecision);
 </script>
 
 <style scoped></style>
