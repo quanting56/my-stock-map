@@ -164,7 +164,7 @@ async function refreshHeadline() {
     if (rankInfo?.rank) companyRankingNum.value = rankInfo.rank;
 
     // === 處理股票股價資訊 ===
-    const rows = await fetchStockSeries(queryStock.symbol);
+    const rows = await fetchStockSeries(queryStock.symbol, makeRecentRangeParams(3));  // 僅抓 3 個月
     if (rows && rows.length) {
       const last = rows.at(-1);
       const prev = rows.at(-2);
@@ -192,6 +192,20 @@ async function refreshHeadline() {
     // 失敗時維持原值，不強制覆寫
   };
 };
+
+// 為 <header> 做一個「最近 N 個月」的參數產生器
+function makeRecentRangeParams(monthsBack = 3) {
+  const now = new Date();
+  const endYear = now.getFullYear();
+  const endMonth = now.getMonth() + 1;
+
+  const start = new Date(now);
+  start.setMonth(start.getMonth() - monthsBack);
+  const startYear = start.getFullYear();
+  const startMonth = start.getMonth() + 1;
+
+  return { startYear, startMonth, endYear, endMonth };
+}
 
 // 此處不在這裡觸發，改由最後由 refreshAll() 統一觸發
 // watch(

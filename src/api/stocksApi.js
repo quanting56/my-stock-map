@@ -13,6 +13,23 @@ async function fetchJsonWithTimeout(url, { timeout = 8000, ...opts } = {}) {
   };
 };
 
+
+
+// ===============================
+// 簡單前端快取（memory cache）
+//  - key: 代碼，例如 "2330"
+//  - at:   暫存時間（毫秒）
+//  - data: 真正的回傳資料
+// ===============================
+const FUND_CACHE = new Map();           // fundamentals cache
+const FUND_TTL = 24 * 60 * 60 * 1000;   // 基本面預設 1 天更新一次
+
+const NEWS_CACHE = new Map();           // news cache
+const NEWS_TTL = 30 * 60 * 1000;        // 新聞預設 30 分鐘更新一次
+
+
+
+
 export async function fetchStockRange(symbol, params = {}) {
   const safe = Object.fromEntries(
     Object.entries(params).filter(([,v]) => v !== null && v !== undefined && !(typeof v === "number" && Number.isNaN(v)))
@@ -217,19 +234,37 @@ export async function fetchCompanyRank(codeOrSymbol){
 export async function fetchFundamentals(codeOrSymbol) {
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
   try {
+    // 先看前端 cache（24 小時內就直接用）
+    const now = Date.now();
+    const cached = FUND_CACHE.get(code);
+    if (cached && (now - cached.at) < FUND_TTL) {
+      return cached.data;
+    }
+
     const url = `http://localhost:3000/api/fundamentals/${code}?_t=${Date.now()}`;
     const res = await fetch(url, { cache: "no-store" });
+
     if (res.status === 404) {
-      // 明確標示沒有該路由/未掛載，方便你從前端 Console 看到線索
+      // 明確標示沒有該路由/未掛載，方便從前端 Console 看到線索
       console.warn("[fetchFundamentals] 404 Not Found — 後端路由未掛載或 server 未重啟");
       return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
     };
+
     if (!res.ok) throw new Error(`基本面 API 錯誤：${res.status}`);
-    return res.json();
+    const data = await res.json();
+
+    // 成功時寫入 cache
+    FUND_CACHE.set(code, { at: now, data });
+    return data;
   } catch (e) {
     console.warn("[fetchFundamentals] fallback with nulls:", e?.message || e);
+
     // 兜底：讓畫面維持可用
-    return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
+    const data = { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
+
+    // 寫進 cache，避免短時間內一直重試
+    FUND_CACHE.set(code, { at: Date.now(), data });
+    return data;
   };
 };
 
@@ -245,7 +280,20 @@ export async function fetchRelevantNews(
 ) {
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
   const url = `http://localhost:3000/api/news/${code}?days=${days}&limit=${limit}&lang=${lang}&whitelistOnly=${whitelistOnly ? 1 : 0}`;
+
+  // 把查詢條件組成一個 cache key
+  const key = JSON.stringify({ code, days, limit, lang, whitelistOnly });
+  const now = Date.now();
+  const cached = NEWS_CACHE.get(key);
+  if (cached && (now - cached.at) < NEWS_TTL) {
+    return cached.data;
+  }
+
   const res = await fetchJsonWithTimeout(url, { timeout: 12000 });
   if (!res.ok) throw new Error(`新聞 API 錯誤：${res.status}`);
-  return res.json();
+  const data = await res.json();
+
+  // 寫入 cache
+  NEWS_CACHE.set(key, { at: now, data });
+  return data;
 };
