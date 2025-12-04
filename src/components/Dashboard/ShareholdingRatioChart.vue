@@ -1,6 +1,6 @@
 <template>
   <div class="lg:col-span-1 card-theme rounded-2xl shadow p-4">
-    <h3 class="font-medium text-[color:var(--color-secondary)] mb-2">持股分布</h3>
+    <h3 class="font-medium text-[color:var(--color-secondary)] mb-2">持股分布（個股 + ETF）</h3>
 
     <div ref="container" class="flex items-center gap-4 relative flex-col xl:flex-row">
       <!-- SVG for donut chart -->

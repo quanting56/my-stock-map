@@ -22,10 +22,10 @@ async function fetchJsonWithTimeout(url, { timeout = 8000, ...opts } = {}) {
 //  - data: 真正的回傳資料
 // ===============================
 const FUND_CACHE = new Map();           // fundamentals cache
-const FUND_TTL = 24 * 60 * 60 * 1000;   // 基本面預設 1 天更新一次
+const FUND_TTL = 6 * 60 * 60 * 1000;   // 基本面預設 6 小時更新一次
 
 const NEWS_CACHE = new Map();           // news cache
-const NEWS_TTL = 30 * 60 * 1000;        // 新聞預設 30 分鐘更新一次
+const NEWS_TTL = 5 * 60 * 1000;        // 新聞預設 5 分鐘更新一次
 
 
 
@@ -234,7 +234,7 @@ export async function fetchCompanyRank(codeOrSymbol){
 export async function fetchFundamentals(codeOrSymbol) {
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
   try {
-    // 先看前端 cache（24 小時內就直接用）
+    // 先看前端 cache（6 小時內就直接用）
     const now = Date.now();
     const cached = FUND_CACHE.get(code);
     if (cached && (now - cached.at) < FUND_TTL) {

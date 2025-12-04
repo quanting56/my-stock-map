@@ -109,7 +109,7 @@ function drawChart() {
        .attr("dominant-baseline", "middle")
        .attr("fill", "currentColor")
        .attr("opacity", 0.6)
-       .text("無資料");
+       .text("請先設定好「回測參數」，再按下「開始回測」按鈕");
     return;
   }
 

@@ -296,7 +296,7 @@ function exportSettings() {
 
 function signOut() {
   // 實作登出流程（示範）
-  alert("已登出（示範），請串實際認證流程");
+  alert("登入登出功能建置中尚未啟用，待完成後接上。");
 }
 
 displayFormat.setCurrency(form.monetaryUnit);
