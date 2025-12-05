@@ -225,6 +225,37 @@ export async function fetchCompanyRank(codeOrSymbol){
   };
 };
 
+// 大盤市值 Treemap 用的資料函式
+// 回傳格式：
+// { name: "TWSE", date: "2025/09/30", children: [{ id, name, MarketCapitalizationAsAPercentageOfTheOverallMarket }, ...] }
+export async function fetchMarketTreemapData({ market = "TWSE" } = {}) {
+  const res = await fetch("http://localhost:3000/api/market-ranks");
+  if (!res.ok) throw new Error(`市場市值 API 錯誤：${res.status}`);
+  const json = await res.json();
+
+  const upper = String(market).toUpperCase();
+  const key = upper === "TPEX" ? "tpex" : "twse";  // 預設 TWSE
+  const list = Array.isArray(json[key]) ? json[key] : [];
+
+  // TAIFEX 給的是「指數成分股比重 %」，Mock 裡是「佔比 (0~1)」，
+  // 這裡直接用 weight / 100 當作 MarketCapitalizationAsAPercentageOfTheOverallMarket
+  const children = list.filter((r) => r && r.name)  // 基本防呆
+                       .map((r) => {
+                         const w = (typeof r.weight === "number" && Number.isFinite(r.weight)) ? r.weight : 0;
+                         return {
+                           id: r.symbol || (r.code ? `${r.code}.TW` : r.name),
+                           name: r.name,  // 「台積電」、「鴻海」⋯
+                           MarketCapitalizationAsAPercentageOfTheOverallMarket: w / 100,  // 變 0~1
+                         };
+                       });
+
+  return {
+    name: upper,  // "TWSE" 或 "TPEX"
+    date: json.date || "",  // "YYYY-MM-DD"
+    children
+  };
+};
+
 
 
 // ===============================

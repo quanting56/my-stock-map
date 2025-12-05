@@ -2,7 +2,9 @@
   <div class="card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium text-[color:var(--color-secondary)]">大盤市值佔比</h3>
-      <div class="text-xs text-[color:var(--color-secondary)]">資料最後更新時間：{{ mockData.date }}</div>
+      <div class="text-xs text-[color:var(--color-secondary)]">
+        資料最後更新時間：{{ displayDate || "載入中..." }}
+      </div>
     </div>
     <div ref="chartContainer" class="w-full h-full min-h-96 relative"></div>
   </div>
@@ -10,10 +12,16 @@
 
 <script setup>
 import * as d3 from "d3";
-import { ref, onMounted, watch, nextTick, onBeforeUnmount } from "vue";
+import { ref, onMounted, nextTick, onBeforeUnmount } from "vue";
 
-// --- mock data 模擬上市公司市值 ---
+// 從前端 API helper 取真實市值資料
+import { fetchMarketTreemapData } from "@/api/stocksApi.js";
+// mock data（備援資料）
 import { mockData } from "@/data/mock/marketCapitalizationTreemapData.js"
+
+// 目前實際繪圖用的資料 & 顯示日期
+const treemapData = ref(null);  // 真實 或 mock data 都放這
+const displayDate = ref("");
 
 const chartContainer = ref(null);
 let resizeObserver = null;
@@ -50,8 +58,8 @@ function drawTreemap(data) {
                  .sum((d) => d.MarketCapitalizationAsAPercentageOfTheOverallMarket)
                  .sort(
                    (a, b) =>
-                     b.MarketCapitalizationAsAPercentageOfTheOverallMarket -
-                     a.MarketCapitalizationAsAPercentageOfTheOverallMarket
+                     b.data.MarketCapitalizationAsAPercentageOfTheOverallMarket -
+                     a.data.MarketCapitalizationAsAPercentageOfTheOverallMarket
                  );
 
   d3.treemap()
@@ -108,7 +116,7 @@ function drawTreemap(data) {
       })
       .on("mouseout", () => tooltip.style("opacity", 0));
 
-  // 🆕 建立 clipPath，確保方塊內文字不超出方塊
+  // 建立 clipPath，確保方塊內文字不超出方塊
   leaf.append("clipPath")
       .attr("id", (d) => `clip-${d.data.rank}`)
       .append("use")
@@ -116,6 +124,7 @@ function drawTreemap(data) {
 
   // 公司名稱（僅顯示前 60 名）
   leaf.filter((d) => d.data.rank < 60)
+      // .filter((d) => d.x1 - d.x0 > 60 && d.y1 - d.y0 > 20)
       .append("text")
       .attr("clip-path", (d) => `url(#clip-${d.data.rank})`)
       .attr("x", 5)
@@ -124,8 +133,7 @@ function drawTreemap(data) {
       .attr("font-size", "16px")
       .attr("font-weight", "bold")
       .attr("pointer-events", "none")
-      .text((d) => d.data.name)
-      .filter((d) => d.x1 - d.x0 > 100 && d.y1 - d.y0 > 20);
+      .text((d) => d.data.name);
 
   // 市值排名數值（僅顯示前 50 名）
   leaf.filter((d) => d.data.rank < 50)
@@ -172,11 +180,34 @@ function drawTreemap(data) {
             );
 }
 
+
+// 封裝「載入資料 + 畫圖」的流程
+async function loadAndDrawTreemap() {
+  let dataToUse;
+  try {
+    const live = await fetchMarketTreemapData({   // 優先打後端 API
+      market: "TWSE",                             // 目前先固定畫上市
+    });
+    if (live && Array.isArray(live.children) && live.children.length) {
+      dataToUse = live;
+    }
+  } catch (e) {
+    dataToUse = mockData;
+    console.warn("[MarketCapitalizationTreemap] 取得後端資料失敗，改用 mockData：", e);
+  }
+
+  treemapData.value = dataToUse;       // 更新目前使用的資料
+  displayDate.value = dataToUse.date;  // 更新日期顯示
+  drawTreemap(dataToUse);              // 繪圖
+}
+
+
 onMounted(() => {
-  nextTick(() => drawTreemap(mockData));
+  nextTick(() => loadAndDrawTreemap());
   if (window.ResizeObserver) {
     resizeObserver = new ResizeObserver(() => {
-      drawTreemap(mockData);
+      const data = treemapData.value || mockData;
+      drawTreemap(data);
     });
     resizeObserver.observe(chartContainer.value);
   }

@@ -360,8 +360,6 @@ my-stock-map/
 
 > 現正進行中
 
-- `components/Dashboard/MarketCapitalizationTreemap.vue` 的大盤市值佔比圖接上 API ，使其能夠每月抓最新資料。
-
 - SideBarMenu 的響應式設計，方便手機使用者與平板使用者操作。
 
 - 針對手機或平板使用者做 UI/UX 優化。
@@ -383,6 +381,8 @@ my-stock-map/
 - Backtest 加入是否開啟「通膨修正」選項。
 
 - 重新調整整體網站配色。
+
+- `components/Dashboard/MarketCapitalizationTreemap.vue` 的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
 
 
 > 近期規劃中
