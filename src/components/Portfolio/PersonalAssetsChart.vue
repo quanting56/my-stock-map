@@ -52,6 +52,13 @@ import * as d3 from "d3";
 import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue";
 import { assetsMockData } from "@/data/mock/assetsMockData.js";
 
+const props = defineProps({
+  isTotalValueHidden: {
+    type: Boolean,
+    default: false
+  }
+});
+
 const chartContainerRef = ref(null);
 const svgRef = ref(null);
 const tooltipRef = ref(null);
@@ -153,6 +160,13 @@ function drawChart(data) {
                    .range([height - margin.bottom - 30, margin.top])
                    .nice();
 
+  // 根據「隱藏總市值」決定 y軸（畫刻度）用哪種 yScale
+  const yScaleForYAxis = props.isTotalValueHidden
+                           ? d3.scaleLinear()
+                               .domain([0, 1])
+                               .range(yScale.range())
+                           : yScale;
+
   const lineGen = d3.line()
                     .defined(d => d.value !== null)
                     .x(d => xScale(d.date))
@@ -193,8 +207,22 @@ function drawChart(data) {
   const xAxis = d3.axisBottom(xScale)
                   .ticks(6)
                   .tickFormat(d3.timeFormat("%Y/%m/%d"));
-  const yAxis = d3.axisLeft(yScale)
-                  .ticks(5);
+
+  // y 軸依據 isTotalValueHidden 切換顯示「金額」或「百分比」
+  let yAxis;
+
+  if (props.isTotalValueHidden) {
+    // 隱藏總市值 → y 軸 0%～100%
+    const percentTicks = [0, 0.2, 0.4, 0.6, 0.8, 1];
+    yAxis = d3.axisLeft(yScaleForYAxis)
+              .tickValues(percentTicks)
+              .tickFormat(d => `${(d * 100).toFixed(0)}%`);
+  } else {
+    // 一般模式 → 顯示金額
+    yAxis = d3.axisLeft(yScaleForYAxis)
+              .ticks(5)
+              .tickFormat(d => d.toLocaleString());
+  }
 
   svg.append("g")
      .attr("transform", `translate(0, ${height - margin.bottom - 30})`)
@@ -313,6 +341,14 @@ const resizeObserver = new ResizeObserver(() => drawChart(filteredData.value));
 watch(filteredData, (val) => {
   nextTick(() => drawChart(val));
 }, { immediate: true });
+
+// 監聽「是否隱藏總市值」，切換時重畫 y 軸刻度
+watch(
+  () => props.isTotalValueHidden,
+  () => {
+    nextTick(() => drawChart(filteredData.value));
+  }
+);
 
 // Resize + 初始繪圖
 onMounted(() => {

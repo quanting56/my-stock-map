@@ -2,11 +2,15 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="card-theme rounded-2xl shadow p-4 text-center">
       <h3 class="text-sm text-[color:var(--color-secondary)]">動產總值</h3>
-      <p class="text-2xl font-bold mt-2 text-[color:var(--color-primary)]">${{ totalValue.toLocaleString() }}</p>
+      <p class="text-2xl font-bold mt-2 text-[color:var(--color-primary)]">
+        {{ isTotalValueHidden ? "＊＊＊＊＊＊" : "$" + totalValue.toLocaleString() }}
+      </p>
     </div>
     <div class="card-theme rounded-2xl shadow p-4 text-center">
       <h3 class="text-sm text-[color:var(--color-secondary)]">總成本</h3>
-      <p class="text-2xl font-bold mt-2 text-[color:var(--color-line3)]">${{ totalCost.toLocaleString() }}</p>
+      <p class="text-2xl font-bold mt-2 text-[color:var(--color-line3)]">
+        {{ isTotalValueHidden ? "＊＊＊＊＊＊" : "$" + totalCost.toLocaleString() }}
+      </p>
     </div>
     <div class="card-theme rounded-2xl shadow p-4 text-center">
       <h3 class="text-sm text-[color:var(--color-secondary)]">總報酬率</h3>
@@ -29,6 +33,13 @@
 <script setup>
 import { computed } from "vue";
 import { usePortfolioStore } from "@/store/portfolio";
+
+defineProps({
+  isTotalValueHidden: {
+    type: Boolean,
+    default: false
+  }
+});
 
 const portfolioStore = usePortfolioStore();
 

@@ -362,8 +362,6 @@ my-stock-map/
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
-- Portfolio 頁面製作關燈鍵（隱藏數值）。
-
 - Dashboard 股票趨勢圖，新增可以多檔並列，並讓使用者自訂顯示檔數。
 
 - 完成 `components/StockDetail/HoldingTimelineChart.vue` 的持有時間軸（依實際交易紀錄畫線）。

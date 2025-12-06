@@ -32,7 +32,7 @@
                 {{ percentage(d.stockValue) }}%
               </div>
               <div class="text-xs text-[color:var(--color-secondary)]">
-                ${{ formatNumber(d.stockValue) }}
+                {{ isTotalValueHidden ? "$ ＊＊＊" : "$" + formatNumber(d.stockValue) }}
               </div>
             </div>
           </li>
@@ -54,6 +54,13 @@ import * as d3 from "d3";
 import { usePortfolioStore } from "@/store/portfolio.js";
 
 const portfolioStore = usePortfolioStore();
+
+const props = defineProps({
+  isTotalValueHidden: {
+    type: Boolean,
+    default: false
+  }
+});
 
 const container = ref(null);
 const svgRef = ref(null);
@@ -183,7 +190,11 @@ function drawChart() {
     .style("font-size", "12px")
     .style("font-weight", "bold")
     .style("fill", "var(--color-primary)")
-    .text(`$${formatNumber(totalValue.value)}`);
+    .text(
+      props.isTotalValueHidden
+        ? "＊＊＊"
+        : `$${formatNumber(totalValue.value)}`
+    );
 }
 
 // tooltip helpers
@@ -223,7 +234,11 @@ onMounted(() => {
   });
 
   // 當 chartData 或 totalValue 改變時，圖形重繪
-  stopWatch = watch([chartData, () => totalValue.value], () => {
+  stopWatch = watch([
+      chartData,
+      () => totalValue.value,
+      () => props.isTotalValueHidden
+    ], () => {
     drawChart();
   });
 
