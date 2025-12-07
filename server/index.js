@@ -9,6 +9,15 @@ import Database from "better-sqlite3";
 import fs from "fs";
 import cors from "cors";
 
+
+// 為了拿到 __dirname
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+
 // 得到 台股股票代號 與 公司名稱（含ETF） 的對應
 import { installSymbolRoutes } from "./symbolMap.js";
 
@@ -18,19 +27,21 @@ import { installRankingRoutes } from "./rankings.js";
 // 得到 基本面 資訊
 import { installFundamentalRoutes } from "./fundamentalDetails.js";
 
+
 // -------------------------------
 //  初始化基本設定
 // -------------------------------
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const dbDir = "./data";
 const dbPath = `${dbDir}/stocks.db`;
 
 // 避免弱驗證快取造成舊 JSON 被重用
 app.set("etag", false);
 
-// 啟用 CORS（允許前端 http://localhost:5173 存取）
-app.use(cors({ origin: "http://localhost:5173" }));
+// 啟用 CORS
+// app.use(cors({ origin: "http://localhost:5173" }));  先註解掉，未來上線再加限制
+app.use(cors());  // CORS 放寬（dev / prod 都 OK）
 
 // 若沒有資料夾就建立
 if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir);
@@ -624,6 +635,22 @@ app.get("/api/news/:code", async (req, res) => {
 installSymbolRoutes(app);
 installRankingRoutes(app);
 installFundamentalRoutes(app, db);  // 把 db 傳進去，讓 fundamentals 能查「最新收盤」
+
+
+// -------------------------------
+//  在 production 服務前端打包好的檔案（Vue dist）
+// -------------------------------
+const distPath = path.join(__dirname, "..", "dist");   // ../dist
+
+if (fs.existsSync(distPath)) {
+  // 提供靜態檔案（JS / CSS / assets）
+  app.use(express.static(distPath));
+
+  // 讓 Vue Router 的前端路由都回到 index.html
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(distPath, "index.html"));
+  });
+}
 
 
 // -------------------------------

@@ -13,6 +13,10 @@ async function fetchJsonWithTimeout(url, { timeout = 8000, ...opts } = {}) {
   };
 };
 
+// 環境無論 dev / prod，前端統一用相對路徑 "/api"
+const API_BASE = "";
+const api = (path) => `${API_BASE}${path}`;
+
 
 
 // ===============================
@@ -35,7 +39,7 @@ export async function fetchStockRange(symbol, params = {}) {
     Object.entries(params).filter(([,v]) => v !== null && v !== undefined && !(typeof v === "number" && Number.isNaN(v)))
   );  // 過濾 NaN/undefined
   const qs = new URLSearchParams(safe).toString();
-  const url = `http://localhost:3000/api/stocks/${symbol}${qs ? "?" + qs : ""}`;
+  const url = api(`/api/stocks/${symbol}${qs ? "?" + qs : ""}`);
 
   const res = await fetchJsonWithTimeout(url, { timeout: 90000 });  // 加 timeout，避免卡住
   if (res.status === 404) return [];  // 代號不存在，直接回空
@@ -146,7 +150,7 @@ export async function fetchStockSeries(symbol, params = {}) {
 export async function fetchAllSymbols() {
   // 先嘗試打自己的後端，失敗再 fallback 到本地 mock
   try {
-    const res = await fetch("http://localhost:3000/api/symbols");
+    const res = await fetch(api("/api/symbols"));
     if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
     return res.json();
   } catch(e) {
@@ -174,7 +178,7 @@ export async function fetchSymbolProfile(codeOrSymbol) {
   // 正規化（支援 "2330.TW" / " 2330 "）
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
   try {
-    const res = await fetchJsonWithTimeout(`http://localhost:3000/api/symbols/${code}`, { timeout: 6000 });  // 6 秒超時；逾時就當作查不到，讓 UI 立刻能提示
+    const res = await fetchJsonWithTimeout(api(`/api/symbols/${code}`), { timeout: 6000 });  // 6 秒超時；逾時就當作查不到，讓 UI 立刻能提示
     if (res.status === 404) return null;
     if (!res.ok) throw new Error(`後端回傳錯誤：${res.status}`);
     return res.json();
@@ -216,7 +220,7 @@ export async function fetchCompanyRank(codeOrSymbol){
   // 簡易規則 — 台灣 ETF 幾乎都是 00 開頭（0050、006208...），直接不打 API
   if (/^00/.test(code)) return null;
   try {
-    const res = await fetch(`http://localhost:3000/api/market-ranks/${code}`);
+    const res = await fetch(api(`/api/market-ranks/${code}`));
     if (res.status === 404) return null;   // 後端沒這檔的排名 → 當作沒有
     if (!res.ok) throw new Error(`排名 API 錯誤：${res.status}`);
     return res.json();  // {market, rank, name, weight?, code?, symbol?}
@@ -229,7 +233,7 @@ export async function fetchCompanyRank(codeOrSymbol){
 // 回傳格式：
 // { name: "TWSE", date: "2025/09/30", children: [{ id, name, MarketCapitalizationAsAPercentageOfTheOverallMarket }, ...] }
 export async function fetchMarketTreemapData({ market = "TWSE" } = {}) {
-  const res = await fetch("http://localhost:3000/api/market-ranks");
+  const res = await fetch(api("/api/market-ranks"));
   if (!res.ok) throw new Error(`市場市值 API 錯誤：${res.status}`);
   const json = await res.json();
 
@@ -272,7 +276,7 @@ export async function fetchFundamentals(codeOrSymbol) {
       return cached.data;
     }
 
-    const url = `http://localhost:3000/api/fundamentals/${code}?_t=${Date.now()}`;
+    const url = api(`/api/fundamentals/${code}?_t=${Date.now()}`);
     const res = await fetch(url, { cache: "no-store" });
 
     if (res.status === 404) {
@@ -310,7 +314,9 @@ export async function fetchRelevantNews(
   { days = 180, limit = 30, lang = "zh", whitelistOnly = false } = {}
 ) {
   const code = String(codeOrSymbol).toUpperCase().replace(/\.TW$/, "").trim();
-  const url = `http://localhost:3000/api/news/${code}?days=${days}&limit=${limit}&lang=${lang}&whitelistOnly=${whitelistOnly ? 1 : 0}`;
+  const url = api(
+    `/api/news/${code}?days=${days}&limit=${limit}&lang=${lang}&whitelistOnly=${whitelistOnly ? 1 : 0}`
+  );
 
   // 把查詢條件組成一個 cache key
   const key = JSON.stringify({ code, days, limit, lang, whitelistOnly });
