@@ -378,15 +378,19 @@ my-stock-map/
 
 - 重新調整整體網站配色。
 
-- `components/Dashboard/MarketCapitalizationTreemap.vue` 的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
+- Dashboard 頁面的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
+
+- Portfolio 加上個人資產 `週K` / `月K` / `季K` / `年K` 的 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2) 區域。
+
+- Stock Detail 頁面的價格走勢圖改成用 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2)。
 
 
 > 近期規劃中
 
 - Portfolio 與 Stock Detail 串接實際持股成本，而不是 mock 值。
-    - 需要先決定「交易紀錄」資料結構（ex: [{date, id, action, qty, price}]），
-    - 再在前端或後端計算成交加總 &現有持股。
-    - JavaScript、Pinia、SQLite，只是多一層資料設計 + 邏輯而已。
+  - 需要先決定「交易紀錄」資料結構（ex: [{date, id, action, qty, price}]），
+  - 再在前端或後端計算成交加總 &現有持股。
+  - JavaScript、Pinia、SQLite，只是多一層資料設計 + 邏輯而已。
 
 - 調整 Dashboard 頁面小卡資料串接。
 
@@ -403,13 +407,19 @@ my-stock-map/
 - Stock Detail 頁面新增滾動最大回撤圖表。
 
 - 新增「槓桿模擬」功能，參考 testfol.io 的 `L`、`E`、`SW`、`SP` 參數設計：
-    - 以原始標的 + 槓桿倍率 `L` + 費用率 `E` + swap 比例 `SW` + 利率點差 `SP` 生成虛擬槓桿資產。
-    - 設計支援類似 `2330SIM?L=2&E=0.95` 這種語法，對個股 / 指數做槓桿回測。
+  - 以原始標的 + 槓桿倍率 `L` + 費用率 `E` + swap 比例 `SW` + 利率點差 `SP` 生成虛擬槓桿資產。
+  - 設計支援類似 `2330SIM?L=2&E=0.95` 這種語法，對個股 / 指數做槓桿回測。
 
 - 為仍在規劃中的指數 / ETF 設計「模擬資產代碼（SIM）」格式，類似 testfol.io 的 `SPYSIM` / `QQQSIM` 方法：
-    - 例：`0050SIM`、`TWII_SIM`，用歷史成分股 + 權重來回推上市前的走勢。
+  - 例：`0050SIM`、`TWII_SIM`，用歷史成分股 + 權重來回推上市前的走勢。
 
 - 新增美股數據 / 資料。
+
+- 將大盤公司依產業等類別及其子類別，照市值畫成 [Sequences Sunburst](https://observablehq.com/@kerryrodden/sequences-sunburst)。
+
+- 在 Welcome Modal 上面增加文字雲 [Word Cloud](https://observablehq.com/@d3/word-cloud)。
+
+- 按照公司市值、產業市值、年份繪出 [Animated Treemap](https://observablehq.com/@d3/animated-treemap)。
 
 
 > 中長期規劃
@@ -417,25 +427,32 @@ my-stock-map/
 - 改善後端程式碼架構，將 `server/index.js` 依功能拆分。
 
 - 完成 **登入** / **登出** 功能。
-    - 需要補的一些知識：
-        - Node.js + Express.js
-        - 密碼雜湊（bcrypt）
-        - Session 或 JWT
-        - 基本的「註冊 / 登入 / 驗證 middleware」
+  - 需要補的一些知識：
+    - Node.js + Express.js
+    - 密碼雜湊（bcrypt）
+    - Session 或 JWT
+    - 基本的「註冊 / 登入 / 驗證 middleware」
 
 - 與其他使用者的投資競賽（目前投資報酬率相較於於整個專案使用者裡之排名）。
-    - 需要補的一些知識：
-        - SQLite + Node.js
-    - 需要處理：
-        - 使用者資料表 server-side data。
-        - 每個 user 的 portfolio / 交易紀錄。
-        - 定期計算報酬率並排行。
+  - 需要補的一些知識：
+    - SQLite + Node.js
+  - 需要處理：
+    - 使用者資料表 server-side data。
+    - 每個 user 的 portfolio / 交易紀錄。
+    - 定期計算報酬率並排行。
 
 - 推播功能（預計於 App 化後進行）
-    - 需要補的一些知識：
-        - PWA 基礎。
-        - Swift / Kotlin / Flutter / React Native。
+  - 需要補的一些知識：
+    - PWA 基礎。
+    - Swift / Kotlin / Flutter / React Native。
 
+- Stock Detail 中做「估值 / 殖利率 軌跡圖」
+  - 使用工具
+    - 連結散點圖 [Connected Scatterplot](https://observablehq.com/@d3/connected-scatterplot/2)
+  - 內容
+    - x 軸：股價淨值比 (P/B) 或 本益比 (P/E)
+    - y 軸：殖利率 (Dividend Yield)
+    - 每一個點：某個月 或 某年
 
 
 ## Git Commit 分類（Git Commit Message）
