@@ -647,7 +647,7 @@ if (fs.existsSync(distPath)) {
   app.use(express.static(distPath));
 
   // 讓 Vue Router 的前端路由都回到 index.html
-  app.get("*", (req, res) => {
+  app.get(/.*/, (req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }
