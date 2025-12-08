@@ -233,7 +233,7 @@ async function addCustomSymbol() {
 
   // 先向後端驗證是否為存在的代號（避免 regex 通過但實際查無此股）
   try {
-    // NEW: 立刻有回饋（或直接用 isLoading 顯示 LoadingModal）
+    // 立刻有回饋（或直接用 isLoading 顯示 LoadingModal）
     isLoading.value = true;
     showToast("正在查詢代號…", 1200);
     const prof = await fetchSymbolProfile(core);
@@ -291,38 +291,45 @@ function parseDateLoose(s) {
 }
 
 
-// 可從「mock 或 後端 API」載入一條線的資料
+// 可從「後端 API 優先，mock 作備援」載入一條線的資料
 async function loadOne(symbol) {
   const core = toCore(symbol);
   if (cache.has(core)) return cache.get(core);
-  let rows = [];
+
   const meta = DATASETS[core];
-  if (meta?.data) {
-    // ① 先用 mock（既有）——做為備援或未接線前的資料
-    rows = meta.data
+  const hasMock = !!meta?.data;   // 是否有 mock 資料
+  const code = toTwCode(core);    // 統一處理 TW 代碼
+  let rows = [];
+
+  // 小工具：把 mockData 轉成標準 rows
+  const fromMock = () => {
+    if (!hasMock) return [];
+    return meta.data
       .map(d => ({
         Date: parseDateLoose(d.date),
         Close: +(d.adjClose ?? d.close)
       }))
       .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
       .sort((a, b) => a.Date - b.Date);
-  } else {
-    // ② 沒 mock：嘗試打後端 API（目前僅支援台股 4~5 碼）
-    const code = toTwCode(core);
-    if (!code) {
-      // 非台股代碼（例如 ^DJI）暫不支援（保持最小改動）；可日後擴充伺服器來源
-      console.warn(`[rolling] 暫不支援此代號：${symbol}`);
-      showToast(`暫不支援此代號：${symbol}`);
-      return [];
-    };
-    try {
-      // 先驗證是否存在，避免錯誤代號讓後端白跑
-      const prof = await fetchSymbolProfile(code);
-      if (!prof) {
-        console.warn(`[rolling] 找不到代號：${code}`);
-        return [];
-      };
-      if (prof?.name) nameMap.value.set(code, prof.name);
+  };
+
+  // 若不是可支援的台股代碼，只能靠 mock（若有）
+  if (!code) {
+    console.warn(`[rolling] 暫不支援此代號：${symbol}`);
+    showToast(`暫不支援此代號：${symbol}`);
+    rows = fromMock();                        // 有 mock 就至少畫得出東西
+    if (rows.length) cache.set(core, rows);   // 只快取有資料的
+    return rows;
+  }
+
+  try {  // 先嘗試 API（預設路徑）
+    // 先驗證是否存在，避免錯誤代號讓後端白跑
+    const prof = await fetchSymbolProfile(code);
+    if (!prof) {
+      console.warn(`[rolling] 找不到代號：${code}`);
+      rows = fromMock();  // 查無此股就退回 mock（若有）
+    } else {
+      if (prof?.name) nameMap.value.set(core, prof.name);
 
       const now = new Date();
       const params = {
@@ -337,26 +344,29 @@ async function loadOne(symbol) {
         .map(r => ({
           Date: (r.date instanceof Date) ? r.date : new Date(r.date),
           Close: +(r.adjClose ?? r.close)
-        }))  // 確保是 Date 物件
+        }))
         .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
         .sort((a, b) => a.Date - b.Date);
-    } catch (e) {
-      console.warn(`[rolling] API 失敗，改用備援（若有） ${symbol}:`, e?.message || e);
-      // 若恰好有同名 mock，就退回 mock；否則給空陣列
-      if (DATASETS[core]?.data) {
-        rows = DATASETS[core].data
-          .map(d => ({ Date: parseDateLoose(d.date), Close: +(d.adjClose ?? d.close) }))
-          .filter(d => d.Date instanceof Date && !isNaN(+d.Date) && Number.isFinite(d.Close))
-          .sort((a, b) => a.Date - b.Date);
-      } else {
-        if (rows.length > 0) cache.set(core, rows);  // 只有在「真的取得到資料」時才快取，避免把逾時空結果毒化快取
-        rows = [];
-      };
-    };
-  };
-  cache.set(core, rows);
+
+      // 若 API 沒回資料，又恰好有 mock，也退回 mock
+      if (!rows.length && hasMock) {
+        rows = fromMock();
+      }
+    }
+  } catch (e) {  // API 失敗才進這裡
+    console.warn(`[rolling] API 失敗，改用備援（若有） ${symbol}:`, e?.message || e);
+    rows = fromMock();  // 有 mock 就改用 mock；沒有就 []
+    if (!rows.length) {
+      showToast("載入歷史資料失敗，請稍後再試");  // 完全沒有資料時給個提示
+    }
+  }
+
+  if (rows.length) {  // 只快取「有資料」結果
+    cache.set(core, rows);
+  }
   return rows;
 };
+
 
 // 依 selected 組 series（正規化到起點 = 1）
 async function getSeries(symbols) {
