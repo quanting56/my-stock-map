@@ -86,6 +86,13 @@
 - [iconv-lite](https://github.com/ashtuchkin/iconv-lite) - 將 Big5 頁面轉 UTF-8。
 
 
+### 部署
+
+- 專案部署於 [Railway](https://railway.com/)，前端 build 之後，由 Node.js + SQLite 寫成的後端伺服器服務。
+
+  > Live Demo: [My Stock Map](https://my-stock-map-production.up.railway.app/)
+
+
 ### Data Sources（使用公開資料）
 
 - **TWSE 證交所**
@@ -293,7 +300,8 @@ my-stock-map/
 4. 啟動後端（Express + SQLite，在專案根目錄啟動 Terminal A）
     ```bash
     node server/index.js
-    # 伺服器預設跑在 http://localhost:3000
+    # 開發環境中，後端伺服器預設跑在 http://localhost:3000
+    # 部署於 Railway 時，實際會使用平台提供的 PORT（目前為 8080）
     ```
 
 5. 啟動前端（Vite Dev Server，在專案根目錄啟動 Terminal B）
@@ -384,6 +392,8 @@ my-stock-map/
 
 - Stock Detail 頁面的價格走勢圖改成用 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2)。
 
+- 製作 Welcome Modal。
+
 
 > 近期規劃中
 
@@ -420,6 +430,8 @@ my-stock-map/
 - 在 Welcome Modal 上面增加文字雲 [Word Cloud](https://observablehq.com/@d3/word-cloud)。
 
 - 按照公司市值、產業市值、年份繪出 [Animated Treemap](https://observablehq.com/@d3/animated-treemap)。
+
+- 製作 Idle Modal。
 
 
 > 中長期規劃
