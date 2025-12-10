@@ -75,11 +75,24 @@
           name="fade"
           mode="out-in"
         >
-          <div :key="uiStateStore.activeTab">
-            <component
-              :is="uiStateStore.currentTab.pages"
-            ></component>
-          </div>
+          <Suspense>
+            <!-- 已載入完成的狀態 -->
+            <template #default>
+              <div :key="uiStateStore.activeTab">
+                <component
+                  :is="uiStateStore.currentTab.pages"
+                ></component>
+              </div>
+            </template>
+
+            <!-- 載入中狀態 -->
+            <template #fallback>
+              <!-- 用不同 key 避免和 default 衝突 -->
+              <div :key="'loading-' + uiStateStore.activeTab">
+                <LoadingModal :open="true" message="畫面載入中，Demo版本初次載入較久"></LoadingModal>
+              </div>
+            </template>
+          </Suspense>
         </transition>
       </main>
     </div>
@@ -93,6 +106,7 @@ import HeaderBar from "@/components/Common/HeaderBar.vue";
 import SideBarMenu from "@/components/Common/SideBarMenu.vue";
 import Footer from "@/components/Common/Footer.vue";
 
+import LoadingModal from "@/components/Common/LoadingModal.vue";
 import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 import LogInPage from "@/components/Common/LogInPage.vue";
 
