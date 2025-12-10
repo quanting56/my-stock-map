@@ -100,6 +100,9 @@ const bankColors = {
   "當日持股市值": "#406cb4" // 灰
 };
 
+// 明確指定 data 的日期格式（YYYY/M/D）
+const parseTwDate = d3.timeParse("%Y/%-m/%-d");  // 例如 2022/1/3、2022/03/05、2019/10/23
+
 // 整理資料：將日期解析成 Date + 取得資產總值
 const parsedData = assetsMockData.map(d => {
   // 過濾出所有 key 中非日期的數值欄位
@@ -112,12 +115,20 @@ const parsedData = assetsMockData.map(d => {
                        })  // 取出值，並轉成 Number
                        .filter((v) => v != null && !isNaN(v))  // 排除 null 或 NaN
 
+  // 用 parseTwDate 解析字串，避免 Safari 用 Date.parse 亂猜
+  const date = parseTwDate(String(d["日期"]).trim());
+  if (!date) {
+    console.warn("[PersonalAssetsChart] 無法解析日期：", d["日期"]);
+    return null; // 這筆丟掉，避免後面出現 d 為 undefined
+  }
+
   return {
     ...d,
-    date: new Date(d["日期"].replace(/\//g, "-")),
+    date,
     totalValue: d3.sum(values)
   };
-}).sort((a, b) => a.date - b.date);
+}).filter(d => d !== null)  // 把 parse 失敗的資料踢掉
+  .sort((a, b) => a.date - b.date);
 
 // 取得所有銀行欄位（包含"當日持股市值"，但排除"日期"）
 const banks = Object.keys(parsedData[0]).filter(k => !["日期", "date"].includes(k));
@@ -359,6 +370,17 @@ onMounted(() => {
 onBeforeUnmount(() => {
   resizeObserver.disconnect();
 });
+
+// 測試哪些是壞資料用的
+// assetsMockData.forEach((row, idx) => {
+//   const raw = row && row["日期"];
+//   const str = String(raw);
+//   const d = new Date(str.replace(/\//g, "-"));
+
+//   if (!(d instanceof Date) || Number.isNaN(+d)) {
+//     console.log("bad row index:", idx, "raw:", raw);
+//   }
+// });
 </script>
 
 <style scoped></style>
