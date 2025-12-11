@@ -2,7 +2,7 @@
   <Teleport to="body">
     <div
       v-if="open"
-      class="fixed inset-0 z-50 flex items-center justify-center bg-black/40"
+      class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/40"
       @click.self="emit('close')"
     >
       <div class="card-theme w-[90vw] max-w-md md:max-w-xl xl:max-w-2xl 2xl:max-w-3xl rounded-2xl shadow-lg p-6 max-h-[80vh] flex flex-col">
