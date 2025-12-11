@@ -51,7 +51,7 @@
               <label class="text-sm text-[color:var(--color-secondary)]">貨幣單位</label>
               <select v-model="form.monetaryUnit" class="w-full px-3 py-2 rounded-md bg-[color:var(--color-card)] border border-[color:var(--color-border)]">
                 <option value="TWD">新臺幣 TWD</option>
-                <option value="USD">美元 USD</option>
+                <option value="USD" disabled>美元 USD</option>
               </select>
             </div>
             <div>

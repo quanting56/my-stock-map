@@ -152,7 +152,8 @@ my-stock-map/
 │   │   ├─ LoadingModal.vue       ← 全螢幕 Loading 覆蓋層（資料載入時顯示）
 │   │   ├─ LogInPage.vue          ← 登入對話框（Email / 密碼）
 │   │   ├─ MyStockMapLogo.vue     ← My Stock Map 的 Logo 元件檔
-│   │   └─ SideBarMenu.vue        ← 側邊選單（切換頁面用）
+│   │   ├─ SideBarMenu.vue        ← 側邊選單（切換頁面用）
+│   │   └─ WelcomeModal.vue       ← 歡迎視窗（進入網站時顯示）
 │   ├─ Dashboard/
 │   │   ├─ HoldingDetails.vue              ← 持倉明細表格（Dashboard 版本）
 │   │   ├─ MarketCapitalizationTreemap.vue ← 台股大盤市值佔比 Treemap 圖
@@ -362,6 +363,10 @@ my-stock-map/
 - `components/Common/MyStockMapLogo.vue`
     - 專案 Logo 的 SVG 元件：將 `<svg>` 元件化，提供給 Header、Footer 等處重複使用，未來若要改 Logo 只需改這一處（網站 Favicon 需另外到 `public/` 中修改）。
 
+- `components/Common/WelcomeModal.vue`
+    - 全螢幕歡迎視窗（使用 `<Teleport>` 掛到 `<body>`）：進入網站時會看到的招呼語與介紹文字。
+    - 使用者若登入且設定個人顯示名字，將會在此處個人化顯示。
+
 
 
 ## 未來規劃（Roadmap）
@@ -488,4 +493,4 @@ my-stock-map/
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2025/12/07 16:04
+> README.md 更新時間：2025/12/11 19:40

@@ -43,7 +43,7 @@
   
   
     <!-- Bottom: Timeline / Notes -->
-    <TimelineList></TimelineList>
+    <!-- <TimelineList></TimelineList> -->
 
     <!-- 測試 components 區域 -->
     <!-- <Test></Test> -->
@@ -56,7 +56,7 @@ import ShareholdingRatioChart from "@/components/Dashboard/ShareholdingRatioChar
 import PerformanceChart from "@/components/Dashboard/PerformanceChart.vue";
 import HoldingDetails from "@/components/Dashboard/HoldingDetails.vue";
 import MarketCapitalizationTreemap from "@/components/Dashboard/MarketCapitalizationTreemap.vue";
-import TimelineList from "@/components/Dashboard/TimelineList.vue";
+// import TimelineList from "@/components/Dashboard/TimelineList.vue";
 // import Test from "../components/Dashboard/Test.vue";
 
 import { ref } from "vue";

@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
     <div class="card-theme rounded-2xl shadow p-4 text-center">
-      <h3 class="text-sm text-[color:var(--color-secondary)]">總市值</h3>
+      <h3 class="text-sm text-[color:var(--color-secondary)]">持股總市值</h3>
       <p class="text-2xl font-bold mt-1 text-[color:var(--color-primary)]">
         {{ isTotalValueHidden ? "＊＊＊＊＊＊" : "$" + totalValueExCash.toLocaleString() }}
       </p>

@@ -9,6 +9,11 @@
       @request-close="isLogInPageOpen = false"
     ></LogInPage>
 
+    <WelcomeModal
+      :open="isWelcomeOpen"
+      @close="isWelcomeOpen = false"
+    />
+
     <HeaderBar
       @toggle-sidebar="isSidebarOpen = !isSidebarOpen"
       @open-login="isLogInPageOpen = true"
@@ -105,6 +110,7 @@ import SideBarMenu from "@/components/Common/SideBarMenu.vue";
 import Footer from "@/components/Common/Footer.vue";
 
 import LoadingModal from "@/components/Common/LoadingModal.vue";
+import WelcomeModal from "@/components/Common/WelcomeModal.vue";
 import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 import LogInPage from "@/components/Common/LogInPage.vue";
 
@@ -117,6 +123,7 @@ const uiStateStore = useUIStateStore();
 
 const isSidebarOpen = ref(false);
 const isLogInPageOpen = ref(false);
+const isWelcomeOpen = ref(true);
 
 // 當切換 Tab 時，自動把手機抽屜關掉
 watch(
