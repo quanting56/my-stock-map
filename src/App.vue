@@ -75,24 +75,22 @@
           name="fade"
           mode="out-in"
         >
-          <Suspense>
-            <!-- 已載入完成的狀態 -->
-            <template #default>
-              <div :key="uiStateStore.activeTab">
+          <!-- 用 activeTab 當 Suspense 的 key，切 tab 時重新進入 pending/fallback 流程 -->
+          <div :key="uiStateStore.activeTab">
+            <Suspense>
+              <!-- 已載入完成的狀態 -->
+              <template #default>
                 <component
                   :is="uiStateStore.currentTab.pages"
                 ></component>
-              </div>
-            </template>
-
-            <!-- 載入中狀態 -->
-            <template #fallback>
-              <!-- 用不同 key 避免和 default 衝突 -->
-              <div :key="'loading-' + uiStateStore.activeTab">
+              </template>
+  
+              <!-- 載入中狀態 -->
+              <template #fallback>
                 <LoadingModal :open="true" message="畫面載入中，Demo版本初次載入較久"></LoadingModal>
-              </div>
-            </template>
-          </Suspense>
+              </template>
+            </Suspense>
+          </div>
         </transition>
       </main>
     </div>

@@ -1,15 +1,21 @@
 import { defineStore } from "pinia";
 import { ref, computed, defineAsyncComponent } from "vue";
 
+// 常用頁 → 先全部使用同步載入，未來再視情況看要不要改回 lazy load
+import DashboardPage from "@/pages/Dashboard.vue";
+import PortfolioPage from "@/pages/Portfolio.vue";
+import StockDetailPage from "@/pages/StockDetail.vue";
+import BacktestPage from "@/pages/Backtest.vue";
+import ReportsPage from "@/pages/Reports.vue";
+import SettingsPage from "@/pages/Settings.vue";
+
 export const useUIStateStore = defineStore("uiState", () => {
   const tabs = [
     {
       id: "dashboard",
       icon: "🏠",
       title: "Dashboard",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/Dashboard.vue")
-      )
+      pages: DashboardPage
     },
     // {
     //   id: "dashboardOld",
@@ -31,9 +37,7 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "portfolio",
       icon: "💼",
       title: "Portfolio",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/Portfolio.vue")
-      )
+      pages: PortfolioPage
     },
     // {
     //   id: "portfolionew",
@@ -55,17 +59,13 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "stockDetail",
       icon: "📈",
       title: "Stock Detail",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/StockDetail.vue")
-      )
+      pages: StockDetailPage
     },
     {
       id: "backtest",
       icon: "🔍",
       title: "Backtest",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/Backtest.vue")
-      )
+      pages: BacktestPage
     },
     // {
     //   id: "backtestNew",
@@ -79,17 +79,13 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "reports",
       icon: "📊",
       title: "Reports",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/Reports.vue")
-      )
+      pages: ReportsPage
     },
     {
       id: "settings",
       icon: "⚙️",
       title: "Settings",
-      pages: defineAsyncComponent(() =>
-        import("@/pages/Settings.vue")
-      )
+      pages: SettingsPage
     }
   ];
 
