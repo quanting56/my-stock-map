@@ -55,8 +55,8 @@
       <div class="mt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         <p class="text-xs text-[color:var(--color-secondary)]">
           未公開測試版・有建議事項與 bug，歡迎來信：
-          <a href="mailto:qwerdgt@gmail.com" class="underline underline-offset-2 hover:text-[color:var(--color-primary)]">
-            qwerdgt@gmail.com
+          <a href="mailto:mystockmap2025@gmail.com" class="underline underline-offset-2 hover:text-[color:var(--color-primary)]">
+            mystockmap2025@gmail.com
           </a>
         </p>
         <p class="text-xs text-[color:var(--color-secondary)]">
@@ -93,15 +93,15 @@ const items = [
     lists: [
       {
         listTitle: "何謂 ETF",
-        href: "#"
+        href: "https://www.twse.com.tw/zh/products/securities/etf/overview/introduction.html"
       },
       {
         listTitle: "槓桿型及反向型 ETF",
-        href: "#"
+        href: "https://www.twse.com.tw/zh/products/securities/etf/products/li.html"
       },
       {
         listTitle: "台股 vs 美股",
-        href: "#"
+        href: "https://school.george-dewi.com/posts/ustock-vs-taiwanstock"
       }
     ]
   },
