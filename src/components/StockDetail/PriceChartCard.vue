@@ -2,13 +2,28 @@
   <LoadingModal :open="isLoading" message="價格資料載入中..."></LoadingModal>
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
-      <div class="font-medium text-[color:var(--color-secondary)]">價格走勢（{{ props.currentTimeframe }}）</div>
+      <div class="font-medium text-[color:var(--color-secondary)]">
+        價格走勢（{{ props.currentTimeframe }}）
+        <div class="inline-flex items-baseline text-xs px-2.5 py-1 rounded-full border bg-[color:var(--color-card)] border-[color:var(--color-border)] shadow-sm">
+          <span class="tracking-[0.1em] uppercase text-[color:var(--color-secondary)]/75 mx-1">區間漲跌幅</span>
+          <span
+            class="font-semibold tabular-nums"
+            :class="[
+              changePercent < 0
+              ? 'text-[color:var(--color-line3)]'
+              : 'text-[color:var(--color-line2)]'
+            ]"
+          >
+            {{ changePercent < 0 ? "▼" : "▲" }}{{ (Math.abs(changePercent) * 100).toFixed(2) }}%
+          </span>
+        </div>
+      </div>
       <div class="text-xs text-[color:var(--color-secondary)]">最後更新：{{ props.lastUpdated.toLocaleString() }}</div>
     </div>
 
     <div
       ref="chartContainerRef"
-      class="relative h-72 md:h-96 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] flex items-center justify-center text-[color:var(--color-secondary)] opacity-70"
+      class="relative h-72 md:h-96 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] flex items-center justify-center text-[color:var(--color-secondary)] opacity-80"
     >
       <svg ref="svgRef" class="w-full h-full"></svg>
       <div
@@ -189,14 +204,34 @@ function drawChart(data) {
   const height = chartContainerRef.value.clientHeight;
   const margin = { top: 30, right: 20, bottom: 40, left: 40 };
 
+  const plotWidth = width - margin.left - margin.right;
+  const plotHeight = height - margin.top - margin.bottom;
+
   startOpen.value = data[0]?.open ?? 0;  // 最初日開盤價
   endClose.value = data.at(-1)?.close ?? 0;  // 最末日收盤價
 
+  // 區間除 "7D" 以外都啟用「壓縮 X 軸（等距交易日）」模式
+  const useCompressed = effectiveRange.value !== "7D";
+
   // 設定比例尺
-  const xScale = d3.scaleTime()
-                   .domain(d3.extent(data, d => d.date))
-                   .range([margin.left, width - margin.right])
-                   .nice();
+  // X 比例尺中，"7D" 用 time scale，其餘用 index scale（0 ~ N-1）
+  let xScale;
+  if (useCompressed) {
+    const edgePadding = 0.5;  // 左右各保留 0.5 格
+    xScale = d3.scaleLinear()
+               .domain([0 - edgePadding, (data.length - 1) + edgePadding])
+               .range([margin.left, width - margin.right]);
+  } else {
+    // "7D" 用 time scale → 自己加「0.5 天 padding」
+    const [minDate, maxDate] = d3.extent(data, d => d.date);
+    const dayMs = 24 * 60 * 60 * 1000;
+    xScale = d3.scaleTime()
+               .domain([
+                 new Date(minDate.getTime() - dayMs * 0.5),  // 左邊多 0.5 天
+                 new Date(maxDate.getTime() + dayMs * 0.5),  // 右邊多 0.5 天
+               ])
+               .range([margin.left, width - margin.right]);
+  }
 
   const yScale = d3.scaleLinear()
                    .domain([
@@ -206,9 +241,143 @@ function drawChart(data) {
                    .range([height - margin.bottom, margin.top])
                    .nice();
 
+
+  // === 軸線繪製 ===
+  // long-term 區間判斷
+  const isLongRange = effectiveRange.value === "1Y" || effectiveRange.value === "3Y";
+  const axisDateFormat = isLongRange
+    ? d3.timeFormat("%Y/%m")   // 1Y / 3Y → 年 + 月
+    : d3.timeFormat("%m/%d");  // 短期 → 月 + 日
+
+  // X 軸 → 壓縮模式用 index + 自定 tick label；7D 用 time scale
+  let xAxisGenerator;
+  if (useCompressed) {
+    const tickCount = isLongRange ? 6 : 5;
+    const tickIndex = d3.ticks(0, Math.max(0, data.length - 1), tickCount);
+    xAxisGenerator = d3.axisBottom(xScale)
+                       .tickValues(tickIndex)
+                       .tickFormat(i => {
+                         const idx = Math.round(i);
+                         const d = data[idx];
+                         return d ? axisDateFormat(d.date) : "";
+                       })
+                       .tickSizeOuter(0);
+  } else {
+    const tickCount = isLongRange ? 6 : 5;
+    xAxisGenerator = d3.axisBottom(xScale)
+                       .ticks(tickCount)
+                       .tickFormat(axisDateFormat);
+  }
+        
+  const yAxisGenerator = d3.axisLeft(yScale)
+                           .ticks(5)
+                           .tickSizeOuter(0);
+
+  const xAxis = svg.append("g")
+                   .attr("transform", `translate(0, ${height - margin.bottom})`)
+                   .call(xAxisGenerator)
+                   .attr("color", "var(--color-text)")
+                   .attr("opacity", 0.6);
+  xAxis.selectAll("path").remove();  // 消掉 X 軸的橫線
+
+  const yAxis = svg.append("g")
+                   .attr("transform", `translate(${margin.left},0)`)
+                   .call(yAxisGenerator)
+                   .attr("color", "var(--color-text)")
+                   .attr("opacity", 0.6);
+  yAxis.selectAll("path").remove();  // 消掉 Y 軸橫線
+
+  // 畫出顏色較淡的 Y 軸刻度延伸線
+  yAxis.selectAll(".tick")  // '.tick'為預設的class名稱
+       .append("line")
+       .attr("x1", 0)
+       .attr("x2", width - margin.left - margin.right)
+       .attr("y1", 0)
+       .attr("y2", 0)
+       .attr("stroke", "var(--color-border)");
+
+
+  // 統一計算 X 座標的 helper，依模式決定用 index or date
+  const xPos = (d, i) => useCompressed ? xScale(i) : xScale(d.date);
+
+  // 計算每根 K 棒的寬度
+  let candleWidth = 4;  // fallback
+  if (data.length > 1) {
+    if (useCompressed) {
+      const x1 = xScale(0);
+      const x2 = xScale(1);
+      candleWidth = Math.max(
+        effectiveRange.value === "3Y" ? 1 : 2,  // long-term 區間允許更細一點
+        (x2 - x1) * 0.6  // 相鄰兩天距離的 60%
+      );
+    } else {
+      const x1 = xScale(data[0].date);
+      const x2 = xScale(data[1].date);
+      candleWidth = Math.max(2, (x2 - x1) * 0.6);  // 相鄰兩天距離的 60%
+    }
+  }
+
+  // clipPath → 用來做「從左到右揭開」的動畫
+  const clipId = `price-clip-${Math.random().toString(36).slice(2, 9)}`;
+  const clipRect = svg.append("clipPath")
+                      .attr("id", clipId)
+                      .append("rect")
+                      .attr("x", margin.left)
+                      .attr("y", margin.top)
+                      .attr("width", 0)  // 一開始看不到
+                      .attr("height", plotHeight);
+
+  // 所有「實際圖形」（K 線 / 折線 / 未來的 MA 線），都掛在這個 group 底下
+  const mainGroup = svg.append("g")
+                       .attr("clip-path", `url(#${clipId})`);
+
+
+  // === K 線繪製 → 上下影線 + 實體 ===
+  const candleGroup = mainGroup.append("g")
+                               .attr("stroke-linecap", "round");
+
+  // 上下影線（low ~ high）
+  candleGroup.selectAll("line.stem")
+             .data(data)
+             .join("line")
+             .attr("class", "stem")
+             .attr("x1", (d, i) => xPos(d, i))
+             .attr("x2", (d, i) => xPos(d, i))
+             .attr("y1", d => yScale(d.low ?? d.close ?? d.open))
+             .attr("y2", d => yScale(d.high ?? d.close ?? d.open))
+             .attr("stroke", "var(--color-text)")
+             .attr("stroke-width", 1);
+
+  // K 棒顏色
+  const upColor = "var(--color-line2)";      // 上漲色
+  const downColor = "var(--color-line3)";    // 下跌色
+  const flatColor = "var(--color-text)";     // 平盤色
+
+  // 實體（open ~ close）
+  candleGroup.selectAll("rect.body")
+             .data(data)
+             .join("rect")
+             .attr("class", "body")
+             .attr("x", (d, i) => xPos(d, i) - candleWidth / 2)
+             .attr("width", candleWidth)
+             .attr("y", d => yScale(Math.max(d.open, d.close)))
+             .attr("height", d => {
+               const h = Math.abs(yScale(d.open) - yScale(d.close));
+               return Math.max(1, h);  // 避免 open == close 時高度為 0 看不到
+             })
+             .attr("fill", d => {
+               if (d.close > d.open) return upColor;
+               if (d.close < d.open) return downColor;
+               return flatColor;
+             })
+             .attr("rx", Math.min(2, candleWidth / 2))
+             .attr("ry", Math.min(2, candleWidth / 2));
+
+  // === 折線繪製 ===
+  // 淡色折線（close 串起來）
   const line = d3.line()
-                 .x(d => xScale(d.date))
-                 .y(d => yScale(d.close))
+                 .x((d, i) => xPos(d, i))  // 支援壓縮 / 非壓縮模式
+                 .y((d) => yScale(d.close))
                  .curve(d3.curveMonotoneX);
 
   // 動態設定線段顏色
@@ -217,41 +386,19 @@ function drawChart(data) {
     : "var(--color-line3)";
 
   // 畫線
-  const path = svg.append("path")
-                  .datum(data)
-                  .attr("fill", "none")
-                  .attr("stroke", lineColor)
-                  .attr("stroke-width", 2)
-                  .attr("d", line);
+  const path = mainGroup.append("path")
+                        .datum(data)
+                        .attr("fill", "none")
+                        .attr("stroke", lineColor)
+                        .attr("stroke-width", 1.5)
+                        .attr("stroke-opacity", 0.3)  // 淡淡的，不喧賓奪主
+                        .attr("d", line);
 
-  // 線條過渡動畫
-  const totalLength = path.node().getTotalLength();
-  path.attr("stroke-dasharray", totalLength + " " + totalLength)
-      .attr("stroke-dashoffset", totalLength)
-      .transition()
-      .duration(transitionDuration)
-      .ease(d3.easeCubicOut)
-      .attr("stroke-dashoffset", 0);
-
-  // 畫軸線
-  const xAxis = d3.axisBottom(xScale)
-                  .ticks(5)
-                  .tickFormat(d3.timeFormat("%Y/%m/%d"));
-        
-  const yAxis = d3.axisLeft(yScale)
-                  .ticks(5);
-
-  svg.append("g")
-     .attr("transform", `translate(0, ${height - margin.bottom})`)
-     .call(xAxis)
-     .attr("color", "var(--color-text)")
-     .attr("opacity", 0.6);
-
-  svg.append("g")
-     .attr("transform", `translate(${margin.left},0)`)
-     .call(yAxis)
-     .attr("color", "var(--color-text)")
-     .attr("opacity", 0.6);
+  // 用 clipRect 做從左到右的 reveal 動畫 → K 線 + 折線一起
+  clipRect.transition()
+          .duration(transitionDuration)
+          .ease(d3.easeCubicOut)
+          .attr("width", plotWidth);
 
 
   // Tooltip
@@ -272,11 +419,11 @@ function drawChart(data) {
                               .attr("stroke", "var(--color-border)")
                               .attr("stroke-width", 1)
                               .attr("x1", margin.left)
-                              .attr("x2", width - margin.left);
+                              .attr("x2", width - margin.right);
 
   const dot = svg.append("circle")
-                 .attr("r", 4)
-                 .attr("fill", lineColor)
+                 .attr("r", 2.3)
+                 .attr("fill", "var(--color-text)")
                  .style("opacity", 0);
 
   const overlay = svg.append("rect")
@@ -285,16 +432,27 @@ function drawChart(data) {
                      .attr("height", height)
                      .on("mousemove", function (e) {
                        const [mx] = d3.pointer(e);
-                       const xDate = xScale.invert(mx);
-                       const i = bisect(data, xDate);
-                       const d = data[Math.min(Math.max(i, 0), data.length - 1)];
+
+                       // 根據模式取得 index
+                       let i;
+                       if (useCompressed) {
+                         const xIndex = xScale.invert(mx);
+                         i = Math.round(xIndex);
+                       } else {
+                         const xDate = xScale.invert(mx);
+                         i = bisect(data, xDate);
+                       }
+                       i = Math.min(Math.max(0, i), data.length - 1);  // clamp
+                       const d = data[i];
+                     
+                       const xCoord = xPos(d, i);  // 統一 X 位置
 
                        // 兩條 crosshair 與 dot 平滑顯示
                        crosshair.style("opacity", 0.9);
                        crosshairX.transition()
                                  .duration(80)
-                                 .attr("x1", xScale(d.date))
-                                 .attr("x2", xScale(d.date));
+                                 .attr("x1", xCoord)
+                                 .attr("x2", xCoord);
                        crosshairY.transition()
                                  .duration(80)
                                  .attr("y1", yScale(d.close))
@@ -302,16 +460,16 @@ function drawChart(data) {
 
                        dot.transition()
                           .duration(80)
-                          .attr("cx", xScale(d.date))
+                          .attr("cx", xCoord)
                           .attr("cy", yScale(d.close))
                           .style("opacity", 1);
 
                        // tooltip ，使用防溢出邏輯
                        const tipWidth = 160;
                        const tipHeight = 70;
-                       let tipX = xScale(d.date) + 30;   // 預設顯示在右上角
+                       let tipX = xCoord + 30;   // 預設顯示在右上角
                        let tipY = yScale(d.close) - tipHeight - 10;
-                       if (tipX + tipWidth > width) tipX = xScale(d.date) - tipWidth + 40;
+                       if (tipX + tipWidth > width) tipX = xCoord - tipWidth + 40;
                        if (tipY < 0) tipY = yScale(d.close) + 10;
 
                        tip.html(`
@@ -355,12 +513,7 @@ async function primeSymbol() {
 watch(() => symbol.value, () => { primeSymbol(); });
 
 
-// UI 顯示最末日成交量 & 區間報酬百分比
-const latestVolume = computed(() => {
-  const last = rangeData.value.at(-1);
-  return last && typeof last.volume === "number" ? last.volume : null;
-});
-
+// UI 顯示區間報酬百分比
 const changePercent = computed(() => {
   if (!endClose.value || !startOpen.value) return 0;
   return (endClose.value - startOpen.value) / startOpen.value;

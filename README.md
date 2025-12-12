@@ -395,8 +395,6 @@ my-stock-map/
 
 - Portfolio 加上個人資產 `週K` / `月K` / `季K` / `年K` 的 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2) 區域。
 
-- Stock Detail 頁面的價格走勢圖改成用 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2)。
-
 - 製作 Welcome Modal。
 
 
@@ -493,4 +491,4 @@ my-stock-map/
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2025/12/11 19:40
+> README.md 更新時間：2025/12/12 23:09
