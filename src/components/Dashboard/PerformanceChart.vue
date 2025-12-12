@@ -33,7 +33,7 @@
 
     <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-[color:var(--color-secondary)]">
       <div>
-        最末交易日成交量
+        {{ latestTradingDate }} 成交量
         <span class="font-medium ml-1.5 mt-1">
           {{ latestVolume ? latestVolume.toLocaleString() : "-" }} 股
         </span>
@@ -212,7 +212,6 @@ watch(selectedRange, async (val) => {
   const key = makeKey(symbol.value, params);
   if (key !== currentKey.value) {
     await fetchStockData(params);
-    currentKey.value = key;
   }
   effectiveRange.value = val;
 });
@@ -381,9 +380,15 @@ watch(() => symbol.value, () => { primeSymbol(); });
 
 // UI 顯示最末日成交量 & 區間報酬百分比
 const latestVolume = computed(() => {
-  const last = rangeData.value.at(-1);
+  const last = filteredData.value.at(-1);
   return last && typeof last.volume === "number" ? last.volume : null;
 });
+
+// UI 顯示最末交易日日期（格式：YYYY/MM/DD）
+const latestTradingDate = computed(() => {
+  const last = filteredData.value.at(-1);
+  return last ? d3.timeFormat("%Y/%m/%d")(last.date) : "";
+}); 
 
 const changePercent = computed(() => {
   if (!endClose.value || !startOpen.value) return 0;
