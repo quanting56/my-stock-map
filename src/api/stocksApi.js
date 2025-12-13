@@ -25,11 +25,12 @@ const api = (path) => `${API_BASE}${path}`;
 //  - at:   暫存時間（毫秒）
 //  - data: 真正的回傳資料
 // ===============================
-const FUND_CACHE = new Map();           // fundamentals cache
-const FUND_TTL = 6 * 60 * 60 * 1000;   // 基本面預設 6 小時更新一次
+const FUND_CACHE = new Map();             // fundamentals cache
+const FUND_TTL_OK = 6 * 60 * 60 * 1000;   // 成功 → 基本面預設 6 小時更新一次
+const FUND_TTL_FALLBACK = 60 * 1000;      // 失敗 → 失敗時基本面只 cache 60 秒
 
-const NEWS_CACHE = new Map();           // news cache
-const NEWS_TTL = 5 * 60 * 1000;        // 新聞預設 5 分鐘更新一次
+const NEWS_CACHE = new Map();             // news cache
+const NEWS_TTL = 5 * 60 * 1000;           // 新聞預設 5 分鐘更新一次
 
 
 
@@ -272,8 +273,9 @@ export async function fetchFundamentals(codeOrSymbol) {
     // 先看前端 cache（6 小時內就直接用）
     const now = Date.now();
     const cached = FUND_CACHE.get(code);
-    if (cached && (now - cached.at) < FUND_TTL) {
-      return cached.data;
+    if (cached) {
+      const ttl = cached.isFallback ? FUND_TTL_FALLBACK : FUND_TTL_OK;
+      if ((now - cached.at) < ttl) return cached.data;
     }
 
     const url = api(`/api/fundamentals/${code}?_t=${Date.now()}`);
@@ -282,7 +284,9 @@ export async function fetchFundamentals(codeOrSymbol) {
     if (res.status === 404) {
       // 明確標示沒有該路由/未掛載，方便從前端 Console 看到線索
       console.warn("[fetchFundamentals] 404 Not Found — 後端路由未掛載或 server 未重啟");
-      return { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
+      const data = { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
+      FUND_CACHE.set(code, { at: now, data, isFallback: true });
+      return data;
     };
 
     if (!res.ok) throw new Error(`基本面 API 錯誤：${res.status}`);
@@ -298,7 +302,7 @@ export async function fetchFundamentals(codeOrSymbol) {
     const data = { peRatio: null, pbRatio: null, yield: null, shareCapital: null, eps: null };
 
     // 寫進 cache，避免短時間內一直重試
-    FUND_CACHE.set(code, { at: Date.now(), data });
+    FUND_CACHE.set(code, { at: Date.now(), data, isFallback: true });
     return data;
   };
 };

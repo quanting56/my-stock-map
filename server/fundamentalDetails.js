@@ -125,11 +125,11 @@ async function fetchShareCapital(code) {
 }
 
 // === 從 DB 取最新收盤（用來估 TTM EPS）=========================
-function getLatestCloseFromDb(db, code) {
+function getLatestCloseFromDb(db, symbol) {
   if (!db) return null;
   const row = db
     .prepare(`SELECT close FROM stock_prices WHERE symbol=? ORDER BY date DESC LIMIT 1`)
-    .get(code);
+    .get(symbol);
   return toNum(row?.close);
 }
 
@@ -148,7 +148,7 @@ export function installFundamentalRoutes(app, db) {
       const shareCapital = await fetchShareCapital(code);
 
       // 3) EPS（近四季，保守估）：有 close 與 PE 才估
-      const latestClose = getLatestCloseFromDb(db, code);
+      const latestClose = getLatestCloseFromDb(db, `${code}.TW`);
       const epsTTM = (Number.isFinite(bw.peRatio) && Number.isFinite(latestClose) && bw.peRatio > 0)
         ? Number((latestClose / bw.peRatio).toFixed(2))
         : null;

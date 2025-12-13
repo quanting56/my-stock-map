@@ -12,9 +12,13 @@ const UA = {
 const TWSE_URL = "https://www.taifex.com.tw/cht/9/futuresQADetail";       // 上市（TAIEX） 來源
 const TPEX_URL = "https://www.bq888.taifex.com.tw/cht/2/tPEXPropertion";  // 上櫃（OTC）   來源
 
-const DATA_DIR = path.join("data");
+const DATA_DIR = process.env.DATA_DIR
+                   ? path.resolve(process.env.DATA_DIR)
+                   : path.join(process.cwd(), "data");
+
 const CACHE_FILE = path.join(DATA_DIR, "market_ranks.json");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
 
 function normalizeName(s=""){ return s.replace(/\s+/g,"").trim(); }
 
@@ -76,7 +80,7 @@ async function fetchRanksOnce(){
 
   // 嘗試把名稱對上你既有的 symbols 快取（由 symbolMap 產生）
   let symbols = [];
-  try { symbols = JSON.parse(fs.readFileSync(path.join("data","symbols.json"), "utf-8")); } catch {}
+  try { symbols = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "symbols.json"), "utf-8")); } catch {}
   const byName = new Map(symbols.map(s => [normalizeName(s.name), s]));
 
   const attach = (row) => {

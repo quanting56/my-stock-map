@@ -397,7 +397,7 @@ my-stock-map/
 
 - Portfolio 加上個人資產 `週K` / `月K` / `季K` / `年K` 的 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2) 區域。
 
-- 調整 Dashboard 區塊，將 `SummaryCard` 區域的「持股總市值」和「今日損益」放到 `持倉明細` 區域，原處改為最新加權指數與最新加權損益。
+- 調整 Dashboard 區塊，將 `SummaryCards` 區域的「持股總市值」和「今日損益」放到 `持倉明細` 區域，原處改為最新加權指數與最新加權損益。
 
 - 新增 Dashboard 大盤市值佔比圖焦點功能，當點擊 Dashboard 頁面其他含股票內容時，佔比圖中對應公司會自動高亮（若存在的話）。
 

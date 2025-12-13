@@ -5,16 +5,61 @@ import fs from "fs";
 import path from "path";
 
 // 確保 data 目錄存在
-const DATA_DIR = path.join("data");
+const DATA_DIR = process.env.DATA_DIR
+                   ? path.resolve(process.env.DATA_DIR)
+                   : path.join(process.cwd(), "data");
 if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 const CACHE_PATH = path.join(DATA_DIR, "symbols.json");
+
+
+// -------------------------
+// 共享 cache（避免自打自己 HTTP）
+// -------------------------
+let cache = null;
+let lastLoadAt = 0;
+const TTL = 24 * 60 * 60 * 1000;
+
+export async function ensureSymbolsCache({ force = false } = {}) {
+  const now = Date.now();
+  const needReload = force || !cache || (now - lastLoadAt > TTL);
+
+  if (!needReload) return cache;
+
+  const coldStartWithDisk = !force && !cache && fs.existsSync(CACHE_PATH);
+  cache = await loadAllSymbols({ force: coldStartWithDisk ? false : true });
+
+  lastLoadAt = now;
+  return cache;
+}
+
+export async function getSymbol(codeOrSymbol, { force = false } = {}) {
+  const code = String(codeOrSymbol || "").toUpperCase().replace(/\.TW$/, "").trim();
+  await ensureSymbolsCache({ force: false });
+  let hit = cache?.find?.((r) => r.code === code);
+
+  if (!hit && force) {
+    await ensureSymbolsCache({ force: true });
+    hit = cache?.find?.((r) => r.code === code);
+  }
+  return hit || null;
+}
+
+export async function searchSymbols(q, { limit = 100 } = {}) {
+  const qq = String(q || "").trim().toLowerCase();
+  if (!qq) return [];
+  await ensureSymbolsCache({ force: false });
+  return (cache || [])
+    .filter((r) => r.code.startsWith(qq) || r.name.toLowerCase().includes(qq))
+    .slice(0, limit);
+}
+
 
 // FinMind 備援資料源（官方公開資料集，含代碼/名稱/產業/上市別）
 const FINMIND_URL = "https://api.finmindtrade.com/api/v4/data?dataset=TaiwanStockInfo";
 
 const SOURCES = [
-  { label: "TWSE", url: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2" }, // 上市
-  { label: "OTC",  url: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4" }, // 上櫃
+  { label: "TWSE", url: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=2" },  // 上市
+  { label: "OTC",  url: "https://isin.twse.com.tw/isin/C_public.jsp?strMode=4" },  // 上櫃
 ];
 
 async function fetchHtmlBig5(url, timeoutMs = 7000) {
@@ -150,78 +195,40 @@ async function loadAllSymbols({ force = false } = {}) {
 }
 
 export function installSymbolRoutes(app) {
-  let cache = null;
-  let lastLoadAt = 0;
-  const TTL = 24 * 60 * 60 * 1000; // 一天自動刷新一次（可調）
+  // 啟動先載入一次（失敗不擋啟動）
+  ensureSymbolsCache().catch(() => {});
 
-  // 啟動時先載入一次（失敗也不影響啟動）
-  loadAllSymbols()
-    .then((d) => { cache = d; lastLoadAt = Date.now(); })
-    .catch(() => {});
-
-  // 取用前若 cache 不存在或過期，主動補一次
-  async function ensureCache() {
-    const needReload = !cache || (Date.now() - lastLoadAt > TTL);
-    if (needReload) {
-      cache = await loadAllSymbols({ force: true });
-      lastLoadAt = Date.now();
-    }
-    return cache;
-  }
-
-  // 取得全清單
   app.get("/api/symbols", async (req, res) => {
     try {
-      await ensureCache();
-      // ✨ 支援手動強制刷新：/api/symbols?force=1
-      if (String(req.query.force || "") === "1") {
-        cache = await loadAllSymbols({ force: true });
-        lastLoadAt = Date.now();
-      }
+      const force = String(req.query.force || "") === "1";
+      await ensureSymbolsCache({ force });
       res.json(cache);
     } catch (e) {
       res.status(500).json({ error: "symbol_load_failed", message: e.message });
     }
   });
 
-  // 模糊搜尋：名稱或代碼
   app.get("/api/symbols/search", async (req, res) => {
-    const q = String(req.query.q || "").trim();
     try {
-      await ensureCache();
-      if (!q) return res.json([]);
-      const qq = q.toLowerCase();
-      const result = cache.filter(
-        (r) => r.code.startsWith(q) || r.name.toLowerCase().includes(qq)
-      ).slice(0, 100);
+      const q = String(req.query.q || "").trim();
+      const result = await searchSymbols(q, { limit: 100 });
       res.json(result);
     } catch (e) {
       res.status(500).json({ error: "symbol_search_failed", message: e.message });
     }
   });
 
-  // 查單一代碼（四碼/五碼皆可）
   app.get("/api/symbols/:code", async (req, res) => {
-    // 正規化傳入參數：去掉 .TW、清空白
-    const code = String(req.params.code || "").toUpperCase().replace(/\.TW$/, "").trim();
     try {
-      await ensureCache();
-      let hit = cache.find((r) => r.code === code);
-      // 如果沒命中，兜底：強制重抓一次再找（第一次冷啟或來源臨時失敗時有用）
-      if (!hit) {
-        cache = await loadAllSymbols({ force: true });
-        lastLoadAt = Date.now();
-        hit = cache.find((r) => r.code === code);
-      }
+      const hit = await getSymbol(req.params.code, { force: true });
       if (!hit) return res.status(404).json({ error: "not_found" });
       res.json(hit);
     } catch (e) {
       res.status(500).json({ error: "symbol_lookup_failed", message: e.message });
-    };
+    }
   });
 
-  // 簡易偵錯端點（可選）：看目前 cache 筆數
   app.get("/api/symbols/_debug", async (_req, res) => {
     res.json({ size: cache?.length || 0, sample: (cache || []).slice(0, 5) });
   });
-};
+}

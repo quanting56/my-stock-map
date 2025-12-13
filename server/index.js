@@ -19,7 +19,7 @@ const __dirname = path.dirname(__filename);
 
 
 // 得到 台股股票代號 與 公司名稱（含ETF） 的對應
-import { installSymbolRoutes } from "./symbolMap.js";
+import { installSymbolRoutes, getSymbol } from "./symbolMap.js";
 
 // 得到 上市上櫃 公司市值排名
 import { installRankingRoutes } from "./rankings.js";
@@ -33,8 +33,17 @@ import { installFundamentalRoutes } from "./fundamentalDetails.js";
 // -------------------------------
 const app = express();
 const PORT = process.env.PORT || 3000;
-const dbDir = "./data";
-const dbPath = `${dbDir}/stocks.db`;
+
+// Railway Volume 可設 DATA_DIR=/data
+const DATA_DIR = process.env.DATA_DIR
+                   ? path.resolve(process.env.DATA_DIR)
+                   : path.join(__dirname, "..", "data");
+
+const dbDir = DATA_DIR;
+const dbPath = path.join(dbDir, "stocks.db");
+
+if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir, { recursive: true });
+
 
 // Health check
 app.get("/healthz", (_req, res) => {
@@ -45,11 +54,13 @@ app.get("/healthz", (_req, res) => {
 app.set("etag", false);
 
 // 啟用 CORS
-// app.use(cors({ origin: "http://localhost:5173" }));  先註解掉，未來上線再加限制
-app.use(cors());  // CORS 放寬（dev / prod 都 OK）
-
-// 若沒有資料夾就建立
-if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir);
+const rawCors = String(process.env.CORS_ORIGIN || "").trim();
+if (rawCors) {
+  const origins = rawCors.split(",").map(s => s.trim()).filter(Boolean);
+  app.use(cors({ origin: origins }));
+} else {
+  app.use(cors());  // CORS 放寬（dev / prod 都 OK）
+}
 
 // 建立 / 連線 SQLite 資料庫
 const db = new Database(dbPath);
@@ -73,12 +84,28 @@ function pad(num) {
   return num.toString().padStart(2, "0");
 };
 
+// ===============================
+// Symbol 正規化（canonical key）
+// - DB/回傳：2330.TW
+// - 打 TWSE：2330
+// ===============================
+function normalizeSymbolInput(input = "") {
+  const raw = String(input || "").toUpperCase().trim();
+  if (!raw) return { symbol: "", code: "", exch: "" };
+  if (raw.includes(".")) {
+    const [code, exch] = raw.split(".", 2);
+    return { symbol: `${code}.${exch}`, code, exch };
+  }
+  // 沒帶尾碼：目前視為台股（向後兼容）
+  return { symbol: `${raw}.TW`, code: raw, exch: "TW" };
+}
+
 // -------------------------------
 //  工具函式：呼叫證交所 API 抓取單月資料
 // -------------------------------
-async function fetchMonth(symbol, year, month) {
+async function fetchMonth(code, year, month) {
   const date = `${year}${pad(month)}01`;
-  const url = `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${symbol}`;
+  const url = `https://www.twse.com.tw/exchangeReport/STOCK_DAY?response=json&date=${date}&stockNo=${code}`;
   
   // 加 UA + Origin/Referer + 10 秒超時，降低 30x 風控與長時間卡住
   const ctrl = new AbortController();
@@ -203,7 +230,7 @@ function* iterateMonthsExclusiveNext(y1, m1, y2, m2) {
 //  API：查詢某檔股票（例：/api/stocks/2330?startYear=2025&startMonth=1&endMonth=10）
 // -------------------------------
 app.get("/api/stocks/:symbol", async (req, res) => {
-  const { symbol } = req.params;
+  const { symbol, code, exch } = normalizeSymbolInput(req.params.symbol);
   const { y: todayY, m: todayM } = todayYm();  // 先拿今天年月
   const toInt = (v, def) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : def; };
   const startYear  = toInt(req.query.startYear,  todayY - 20);
@@ -213,15 +240,13 @@ app.get("/api/stocks/:symbol", async (req, res) => {
   const directionParam = (req.query.direction || "auto").toString();  // "forward" | "backward" | "auto"
 
   try {
-    // 先用自己的 /api/symbols/:code 驗證，無效代號立即 404，避免跑大量月份
-    try {
-      const chk = await fetch(`http://localhost:${PORT}/api/symbols/${symbol}`);
-      if (chk.status === 404) {
-        return res.status(404).json({ error: "symbol_not_found", message: `Unknown symbol: ${symbol}` });
-      };
-    } catch (e) {
-      console.warn(`[stocks] 符號驗證失敗（略過）：${e?.message || e}`);
-    };
+    if (exch !== "TW") {
+      return res.status(400).json({ error: "exchange_not_supported_yet", message: `Unsupported exchange: ${exch}` });
+    }
+    const profile = await getSymbol(code, { force: false });
+    if (!profile) {
+      return res.status(404).json({ error: "symbol_not_found", message: `Unknown symbol: ${symbol}` });
+    }
 
     // 逐月檢查快取；缺的月份才抓，抓完 upsert
     const insert = db.prepare(`
@@ -267,7 +292,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
       console.log(`🌐 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
       let rows = [];
       try {
-        rows = await fetchMonth(symbol, y, m);
+        rows = await fetchMonth(code, y, m);
       } catch (err) {
         // 單月錯誤不讓整體中斷，紀錄並當作空月處理
         console.warn(`⚠️ 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
@@ -292,7 +317,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
         if (!open || !close) continue;
         const normalizedDate = rocToAd((date || "").trim());
         batch.push({
-          symbol,
+          symbol,  // canonical symbol 寫入 DB（2330.TW）
           date: normalizedDate,
           open: parseFloat(open.replace(/,/g, "")),
           high: parseFloat(high.replace(/,/g, "")),
@@ -345,7 +370,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
           console.log(`🌐(forward-fill) 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
           let rows = [];
           try {
-            rows = await fetchMonth(symbol, y, m);
+            rows = await fetchMonth(code, y, m);
           } catch (err) {
             console.warn(`⚠️(forward-fill) 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
             rows = [];
@@ -452,6 +477,11 @@ app.get("/api/news/:code", async (req, res) => {
   const lang  = (req.query.lang || "zh").toString();  // "zh" | "en"
   const whitelistOnly = String(req.query.whitelistOnly || "0") === "1";  // 白名單
 
+  // 直接從 symbols cache 拿公司名
+  let companyName = code;
+  const profile = await getSymbol(code, { force: false });
+  if (profile?.name) companyName = profile.name;
+
   function dedupe(items) {
     const seen = new Set();
     return items.filter(it => {
@@ -555,16 +585,6 @@ app.get("/api/news/:code", async (req, res) => {
   }
 
   try {
-    // 先把公司名稱拿到（沿用你現有的 symbols 路由）
-    let companyName = code;
-    try {
-      const resp = await fetch(`http://localhost:${PORT}/api/symbols/${code}`);
-      if (resp.ok) {
-        const j = await resp.json();
-        if (j?.name) companyName = j.name;
-      }
-    } catch {}
-
     let items = [];
 
     // ① GDELT（免金鑰），加強解析容錯
