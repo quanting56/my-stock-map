@@ -89,9 +89,9 @@
 ### 部署
 
 - 專案部署於 [Railway](https://railway.com/)，前端 build 之後，由 Node.js + SQLite 寫成的後端伺服器服務。
+- Demo 首次開啟可能因平台閒置機制而有短暫延遲，之後會因 SQLite / JSON 快取加速。
 
   > Live Demo: **[My Stock Map](https://my-stock-map-production.up.railway.app/)**
-  <!-- （首次載入可能較久（因平台機制/閒置而有首次請求延遲），之後會因 SQLite cache 加速） -->
   <!-- （Hobby plan, always-on） -->
 
 
@@ -396,6 +396,10 @@ my-stock-map/
 - Dashboard 頁面的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
 
 - Portfolio 加上個人資產 `週K` / `月K` / `季K` / `年K` 的 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2) 區域。
+
+- 調整 Dashboard 區塊，將 `SummaryCard` 區域的「持股總市值」和「今日損益」放到 `持倉明細` 區域，原處改為最新加權指數與最新加權損益。
+
+- 新增 Dashboard 大盤市值佔比圖焦點功能，當點擊 Dashboard 頁面其他含股票內容時，佔比圖中對應公司會自動高亮（若存在的話）。
 
 
 > 近期規劃中
