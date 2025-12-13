@@ -36,6 +36,11 @@ const PORT = process.env.PORT || 3000;
 const dbDir = "./data";
 const dbPath = `${dbDir}/stocks.db`;
 
+// Health check
+app.get("/healthz", (_req, res) => {
+  res.status(200).json({ ok: true, ts: Date.now() });
+});
+
 // 避免弱驗證快取造成舊 JSON 被重用
 app.set("etag", false);
 

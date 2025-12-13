@@ -90,7 +90,9 @@
 
 - 專案部署於 [Railway](https://railway.com/)，前端 build 之後，由 Node.js + SQLite 寫成的後端伺服器服務。
 
-  > Live Demo: [My Stock Map](https://my-stock-map-production.up.railway.app/)
+  > Live Demo: **[My Stock Map](https://my-stock-map-production.up.railway.app/)**
+  <!-- （首次載入可能較久（因平台機制/閒置而有首次請求延遲），之後會因 SQLite cache 加速） -->
+  <!-- （Hobby plan, always-on） -->
 
 
 ### Data Sources（使用公開資料）
@@ -394,8 +396,6 @@ my-stock-map/
 - Dashboard 頁面的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
 
 - Portfolio 加上個人資產 `週K` / `月K` / `季K` / `年K` 的 [Candlestick Chart](https://observablehq.com/@d3/candlestick-chart/2) 區域。
-
-- 製作 Welcome Modal。
 
 
 > 近期規劃中
