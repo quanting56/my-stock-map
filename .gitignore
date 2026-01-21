@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# TypeScript incremental build cache
+*.tsbuildinfo
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -30,4 +33,4 @@ dist-ssr
 /data/*
 
 # 但保留 mockData 讓 git 能追蹤
-!src/data/mockData/**
+!src/data/mock/**

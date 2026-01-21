@@ -272,12 +272,12 @@ my-stock-map/
 │   ├─ index.js
 │   └─ ...
 ├─ src/             ← 前端 Vue 內容
+├─ .gitignore
 ├─ index.html
 ├─ package-lock.json
 ├─ package.json
 ├─ README.md
-├─ vite.config.js
-└─ ...
+└─ vite.config.js
 ```
 
 1. Clone 專案
