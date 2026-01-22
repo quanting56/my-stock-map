@@ -1,7 +1,7 @@
 # My Stock Map / 投資可視化系統
 
 一個開發來為使用者 **個人記帳**、**長期投資管理用** 的「**個人投資可視化系統**」專案，專門拿來快速管理自己的持股（目前以臺股為主）、資產配置，並檢視持股股價走勢、基本面摘要與新聞訊息，以及回測投資策略。
-前端使用 **Vue 3 + Vite + Pinia + D3.js + TailwindCSS**，後端使用 **Node.js + Express + SQLite 快取股價與基本面**。
+前端使用 **Vue 3 + Vite + Pinia + D3.js + TailwindCSS + TypeScript**，後端使用 **Node.js + Express + SQLite 快取股價與基本面**。
 
 > ⚠️ **免責聲明**：本專案僅供個人學習與技術實驗使用，所有資料與分析結果都不構成任何投資建議，投資前請衡量自身風險承受能力。
 
@@ -73,6 +73,8 @@
 
 - [jsPDF](https://artskydj.github.io/jsPDF/docs/jsPDF.html) - 直接透過前端匯出 PDF 文件。
 
+- [TypeScript](https://www.typescriptlang.org/) - 使用 TypeScript 撰寫程式碼，開發時獲得靜態型別檢查與更完整的 IDE 提示，降低重構成本。
+
 
 ### Back-end
 - [Node.js](https://nodejs.org/zh-tw) + [Express.js](https://expressjs.com/)
@@ -93,6 +95,12 @@
 
   > Live Demo: **[My Stock Map](https://my-stock-map-production.up.railway.app/)**
   <!-- （Hobby plan, always-on） -->
+
+  ---
+
+- 亦另外手動部署於 GitHub Pages ，作為 Railway 站故障時前端上架測試用（未提供後端服務，資料僅為 mock data）。
+
+  > GitHub Pages Demo: **[My Stock Map (gh-p)](https://quanting56.github.io/my-stock-map/)**
 
 
 ### Data Sources（使用公開資料）
@@ -234,6 +242,10 @@ my-stock-map/
     └─ market_ranks.json     ← rankings.js 產生的上市 / 上櫃市值排名快取
 ```
 
+<!-- ### 全專案架構 (Vite + TypeScript)
+
+  > 全專案架構請見後面「**開發環境快速啟動（Quick Startup）**」章節 -->
+
 
 
 ## 資料流程簡述（Data Flow）
@@ -266,18 +278,21 @@ my-stock-map/
 ```text
 my-stock-map/
 ┌┘
-├─ data/            ← 後端產生的data
-├─ public/
-├─ server/          ← 後端伺服器
+├─ data/              ← 後端產生的 data
+├─ public/            ← 靜態資料（如 favicon）
+├─ server/            ← 後端伺服器
 │   ├─ index.js
 │   └─ ...
-├─ src/             ← 前端 Vue 內容
+├─ src/               ← 前端 Vue 內容
 ├─ .gitignore
 ├─ index.html
 ├─ package-lock.json
-├─ package.json
+├─ package.json       ← 專案資訊、scripts、dependencies/devDependencies
 ├─ README.md
-└─ vite.config.js
+├─ tsconfig.json      ← 前端 TypeScript 設定
+├─ tsconfig.node.json ← Node/Vite 的 TypeScript 設定
+├─ vite-env.d.ts      ← Vite 型別宣告入口
+└─ vite.config.ts     ← Vite 設定（alias、proxy、base、plugins）
 ```
 
 1. Clone 專案
@@ -317,7 +332,72 @@ my-stock-map/
 
 
 
+## 上傳更新（Git Commit）
+
+> Railway 會在每次 push 後自動觸發部署，無須另外 build。
+
+1. 進行 TypeScript 型別檢查（可選）
+    ```bash
+    npm run typecheck
+    ```
+
+2. 放入暫存檔
+    ```bash
+    # 確認此次修改
+    git status
+
+    # 將此次修改全部移入暫存區 Staging Area
+    git add .
+    ```
+
+3. 提交 commit
+    ```bash
+    # 按照分類提交 commit
+    git commit -m "分類(修改的檔案1, 修改的檔案2?, ...): 此次修改內容"
+    ```
+
+    - **Git Commit 分類（Git Commit Message）**
+
+        |類型	|用途說明                |
+        |------|-----------------------|
+        |`feat`|💡 新增功能（feature）   |
+        |`fix` |🐛 修復錯誤（bug）       |
+        |`docs`|📚 修改文件（README、說明文字、註解等）|
+        |`perf`|🚀 性能優化             |
+        |`refactor`|🔧 重構程式碼（邏輯不變，非 bug fix 或新功能）|
+        |`style`|🎨 調整程式碼格式（例如空格、縮排、換行，不影響功能）|
+        |`test`|✅ 增加或修改測試內容     |
+        |`build`|🏗️ 編譯相關檔案變動，如 Vite 設定或打包流程|
+        |`revert`|⏪ 撤銷回覆先前的commit|
+        |`chore`|🔨 其他雜項（部署設定、更新套件、CI 設定、建置腳本等）|
+
+4. 上傳到 GitHub Repo
+    ```bash
+    git push
+    ```
+
+
+### 若是要另外部署至 GitHub Pages，
+
+5. 進行打包
+    ```bash
+    npm run build
+    ```
+
+6. 部署到 GitHub Pages
+    ```bash
+    npx gh-pages -d dist
+    ```
+
+> 註：GitHub Pages 為靜態網站（未提供後端），僅作為前端 demo 用（將使用 mock data）。
+
+
+
 ## 資料快取與長期資料（Data Cache & Long-term Data）
+
+> 注意：根目錄 `data/` 為後端快取；`src/data/mock/` 則為前端 mock 資料。
+
+> 本節皆為 `data/` 後端快取。
 
 - **股價快取 SQLite**
     - 檔案路徑：`data/stocks.db`
@@ -374,6 +454,8 @@ my-stock-map/
 ## 未來規劃（Roadmap）
 
 > 現正進行中
+
+- 將整個專案 TypeScript 化，方便後續開發與維護。
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
@@ -474,25 +556,10 @@ my-stock-map/
     - 每一個點：某個月 或 某年
 
 
-## Git Commit 分類（Git Commit Message）
-|類型	|用途說明                |
-|------|-----------------------|
-|`feat`|💡 新增功能（feature）   |
-|`fix` |🐛 修復錯誤（bug）       |
-|`docs`|📚 修改文件（README、說明文字、註解等）|
-|`perf`|🚀 性能優化             |
-|`refactor`|🔧 重構程式碼（邏輯不變，非 bug fix 或新功能）|
-|`style`|🎨 調整程式碼格式（例如空格、縮排、換行，不影響功能）|
-|`test`|✅ 增加或修改測試內容     |
-|`build`|🏗️ 編譯相關檔案變動，如 Vite 設定或打包流程|
-|`revert`|⏪ 撤銷回覆先前的commit|
-|`chore`|🔨 其他雜項（部署設定、更新套件、CI 設定、建置腳本等）|
-
-
 
 ## 開發者（Developer）
 本案由 [quanting56](https://github.com/quanting56) 開發與維護。
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2025/12/12 23:09
+> README.md 更新時間：2026/01/22 12:54
