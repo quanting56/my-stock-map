@@ -15,7 +15,7 @@ import * as d3 from "d3";
 import { ref, onMounted, nextTick, onBeforeUnmount } from "vue";
 
 // 從前端 API helper 取真實市值資料
-import { fetchMarketTreemapData } from "@/api/stocksApi.js";
+import { fetchMarketTreemapData } from "@/api/stocksApi";
 // mock data（備援資料）
 import { mockData } from "@/data/mock/marketCapitalizationTreemapData.js"
 

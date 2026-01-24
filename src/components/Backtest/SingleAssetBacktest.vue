@@ -82,7 +82,7 @@ import LoadingModal from "@/components/Common/LoadingModal.vue";
 import SingleAssetBacktestChart from "@/components/Backtest/SingleAssetBacktest/SingleAssetBacktestChart.vue";
 
 import { reactive, ref } from "vue";
-import { fetchStockSeries } from "@/api/stocksApi.js";
+import { fetchStockSeries } from "@/api/stocksApi";
 
 const form = reactive({
   symbol: "2330",

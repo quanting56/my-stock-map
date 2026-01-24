@@ -45,7 +45,7 @@ import IndicatorSummaryCards from "@/components/StockDetail/PriceChartCard/Indic
 import { useQueryStockStore } from "@/store/queryStock.js";
 
 // fetchStockSeries 直接拿可繪圖資料；normalizeStockRows 用來正規化 mockData
-import { fetchStockSeries, normalizeStockRows } from "@/api/stocksApi.js";
+import { fetchStockSeries, normalizeStockRows } from "@/api/stocksApi";
 import { mockData2330 } from "@/data/mock/mockData2330.js";
 
 const props = defineProps({

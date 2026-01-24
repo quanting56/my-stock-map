@@ -127,7 +127,7 @@
 import { ref, onMounted, watch, computed } from "vue";
 import LoadingModal from "@/components/Common/LoadingModal.vue";
 import * as d3 from "d3";
-import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi.js";
+import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi";
 
 const isLoading = ref(false);
 

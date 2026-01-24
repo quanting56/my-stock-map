@@ -205,7 +205,7 @@ my-stock-map/
 │   └─ uiState.js         ← 頁籤 / 主頁面切換
 │
 ├─ api/
-│   └─ stocksApi.js   ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
+│   └─ stocksApi.ts   ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
 │
 ├─ assets/
 │   └─ vue.svg
@@ -250,9 +250,9 @@ my-stock-map/
 
 ## 資料流程簡述（Data Flow）
 
-1. 前端（例如 `PriceChartCard.vue`）呼叫 `api/stocksApi.js` 中的 `fetchStockSeries(symbol, params)` 函式。
+1. 前端（例如 `PriceChartCard.vue`）呼叫 `api/stocksApi.ts` 中的 `fetchStockSeries(symbol, params)` 函式。
 
-2. `api/stocksApi.js` 將請求轉發到後端 `/api/stocks/:symbol`。
+2. `api/stocksApi.ts` 將請求轉發到後端 `/api/stocks/:symbol`。
 
 3. 後端：
 
@@ -459,6 +459,8 @@ my-stock-map/
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
+- 把 Dashboard 裡 Treemap（`components/Dashboard/MarketCapitalizationTreemap.vue`）的錯誤處理邏輯（後端掛掉會改用 mock data）部分移到 `api/stocksApi.ts` ，或是新建 Pinia 來統一全站的錯誤管理。
+
 - Dashboard 股票趨勢圖，新增可以多檔並列，並讓使用者自訂顯示檔數。
 
 - 完成 `components/StockDetail/HoldingTimelineChart.vue` 的持有時間軸（依實際交易紀錄畫線）。
@@ -496,6 +498,8 @@ my-stock-map/
 - 調整 Portfolio 頁面小卡資料串接。
 
 - 完成 Reports 頁面中，報表匯入按鈕功能（模板編輯器遮罩）。
+
+- 將 `src/api/stocksApi.ts` 按領域拆檔以方便維護（可在後端 TS 化後再著手進行）。
 
 - 串連即時股價 API。
 
