@@ -199,10 +199,10 @@ my-stock-map/
 ├─ store/
 │   ├─ displayFormat.js   ← 貨幣 / 百分比格式化（UI 顯示設定用）
 │   ├─ portfolio.js       ← 持股資料 + localStorage
-│   ├─ queryStock.js      ← 全站目前查詢的 symbol（目前選中的股票代碼）
+│   ├─ queryStock.ts      ← 全站目前查詢的 symbol（目前選中的股票代碼）
 │   ├─ settingItems.js    ← 一般設定（顯示名稱 / Email / 貨幣單位 / 通知偏好）
-│   ├─ theme.js           ← 深淺色主題（Tailwind dark mode 切換）
-│   └─ uiState.js         ← 頁籤 / 主頁面切換
+│   ├─ theme.ts           ← 深淺色主題（Tailwind dark mode 切換）
+│   └─ uiState.ts         ← 頁籤 / 主頁面切換
 │
 ├─ api/
 │   └─ stocksApi.ts   ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
@@ -424,7 +424,7 @@ my-stock-map/
     - 全站頂部導覽列：顯示 My Stock Map Logo、提供股票搜尋框（支援「/」快捷鍵聚焦）、登入按鈕與深淺色主題切換。
 
 - `components/Common/SideBarMenu.vue`
-    - 左側功能選單：依據 `uiState.js` store 的 `tabs` 資訊產生按鈕，並用來切換 **Dashboard** / **Portfolio** / **StockDetail** / **Backtest** / **Reports** / **Settings** 等主要頁面。
+    - 左側功能選單：依據 `uiState.ts` store 的 `tabs` 資訊產生按鈕，並用來切換 **Dashboard** / **Portfolio** / **StockDetail** / **Backtest** / **Reports** / **Settings** 等主要頁面。
 
 - `components/Common/Footer.vue`
     - 頁尾區塊：顯示 Logo 與專案標語、贊助連結群組、作者聯絡 Email 與版權 / 免責說明文字。

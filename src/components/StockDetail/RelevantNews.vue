@@ -51,7 +51,7 @@
 
 <script setup>
 import { ref, computed, watch } from "vue";
-import { useQueryStockStore } from "@/store/queryStock.js";
+import { useQueryStockStore } from "@/store/queryStock";
 import { fetchRelevantNews } from "@/api/stocksApi";
 
 const queryStock = useQueryStockStore();
