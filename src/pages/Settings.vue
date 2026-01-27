@@ -203,8 +203,8 @@
 import { reactive } from "vue";
 
 import { useUIThemeStore } from "@/store/theme";
-import { useDisplayFormatStore } from "@/store/displayFormat.js";
-import { useSettingItemsStore } from "@/store/settingItems.js";
+import { useDisplayFormatStore } from "@/store/displayFormat";
+import { useSettingItemsStore } from "@/store/settingItems";
 
 const uiTheme = useUIThemeStore();
 const displayFormat = useDisplayFormatStore();

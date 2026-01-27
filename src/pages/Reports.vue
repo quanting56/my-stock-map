@@ -61,7 +61,7 @@ import ExportAndPresetLists from "@/components/Reports/ExportAndPresetLists.vue"
 import ReportImport from "@/components/Reports/ReportImport.vue";
 
 import { ref, reactive } from "vue";
-import { usePortfolioStore } from "@/store/portfolio.js";
+import { usePortfolioStore } from "@/store/portfolio";
 
 import jsPDF from "jspdf";
 import autoTable from "jspdf-autotable";

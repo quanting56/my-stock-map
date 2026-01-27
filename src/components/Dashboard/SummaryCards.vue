@@ -31,7 +31,7 @@
 
 <script setup>
 import { computed } from "vue";
-import { usePortfolioStore } from "../../store/portfolio";
+import { usePortfolioStore } from "@/store/portfolio";
 
 defineProps({
   isTotalValueHidden: {

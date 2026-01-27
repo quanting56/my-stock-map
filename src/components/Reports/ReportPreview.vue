@@ -115,7 +115,7 @@
 </template>
 
 <script setup>
-import { useDisplayFormatStore } from '@/store/displayFormat.js';
+import { useDisplayFormatStore } from '@/store/displayFormat';
 
 const props = defineProps({
   latestGenerated: {

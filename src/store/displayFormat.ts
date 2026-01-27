@@ -5,16 +5,16 @@ import { ref, computed } from "vue";
 // 貨幣格式、百分比位數
 export const useDisplayFormatStore = defineStore("displayFormat", () => {
   // 貨幣格式
-  const currency = ref("TWD");            // 例：'TWD', 'USD', 'JPY'
-  const useGrouping = ref(true);          // 是否使用千分位
-  const compact = ref(false);             // 是否用簡寫（1.2K、3.4M）
+  const currency = ref<string>("TWD");            // 例："TWD", "USD", "JPY"
+  const useGrouping = ref<boolean>(true);         // 是否使用千分位
+  const compact = ref<boolean>(false);            // 是否用簡寫（1.2K、3.4M）
 
   // 顯示小數位數
-  const currencyDigits = ref(0);          // 貨幣數值顯示預設為 整數
-  const pctDigits = ref(2);               // 百分比顯示預設為 小數 2 位
+  const currencyDigits = ref<number>(0);          // 貨幣數值顯示預設為 整數
+  const pctDigits = ref<number>(2);               // 百分比顯示預設為 小數 2 位
 
   // 顯示語系（此處用系統語系，設定為 undefined
-  const locale = ref(undefined);
+  const locale = ref<string | undefined>(undefined);
 
 
   // Formatter
@@ -39,25 +39,27 @@ export const useDisplayFormatStore = defineStore("displayFormat", () => {
 
 
   // 對外提供的格式化工具（給 SFC <template> 直接呼叫）
-  const fmtCurrency = (n) => {
-    if (!Number.isFinite(n)) return "—";
-    return currencyFormatter.value.format(n);
+  const fmtCurrency = (n: unknown): string => {
+    const x = typeof n === "number" ? n : Number(n);
+    if (!Number.isFinite(x)) return "—";
+    return currencyFormatter.value.format(x);
   };
 
-  const fmtPct = (n) => {  // n 用「比率」：0.123 => 12.30%
-    if (!Number.isFinite(n)) return "—";
-    return pctFormatter.value.format(n);
+  const fmtPct = (n: unknown): string => {  // n 用「比率」：0.123 => 12.30%
+    const x = typeof n === "number" ? n : Number(n);
+    if (!Number.isFinite(x)) return "—";
+    return pctFormatter.value.format(x);
   };
 
 
   // ==================
   // 給 pages/Settings.vue 改設定用
   // ==================
-  const setCurrency = (newCurrency) => { currency.value = newCurrency; };
-  const setUseGrouping = (val) => { useGrouping.value = !!val; };
-  const setCompact = (val) => { compact.value = !!val; };
-  const setCurrencyDigits = (digits) => { currencyDigits.value = +digits; };  // 需在 Setting.vue 設定上下界
-  const setPctDigits = (digits) => { pctDigits.value = +digits; };            // 需在 Setting.vue 設定上下界
+  const setCurrency = (newCurrency: string): void => { currency.value = newCurrency; };
+  const setUseGrouping = (val: unknown): void => { useGrouping.value = !!val; };
+  const setCompact = (val: unknown): void => { compact.value = !!val; };
+  const setCurrencyDigits = (digits: number): void => { currencyDigits.value = +digits; };  // 需在 Setting.vue 設定上下界
+  const setPctDigits = (digits: number): void => { pctDigits.value = +digits; };            // 需在 Setting.vue 設定上下界
   // ==================
 
 

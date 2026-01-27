@@ -197,10 +197,10 @@ my-stock-map/
 │   └─ Settings/
 │
 ├─ store/
-│   ├─ displayFormat.js   ← 貨幣 / 百分比格式化（UI 顯示設定用）
-│   ├─ portfolio.js       ← 持股資料 + localStorage
+│   ├─ displayFormat.ts   ← 貨幣 / 百分比格式化（UI 顯示設定用）
+│   ├─ portfolio.ts       ← 持股資料 + localStorage
 │   ├─ queryStock.ts      ← 全站目前查詢的 symbol（目前選中的股票代碼）
-│   ├─ settingItems.js    ← 一般設定（顯示名稱 / Email / 貨幣單位 / 通知偏好）
+│   ├─ settingItems.ts    ← 一般設定（顯示名稱 / Email / 貨幣單位 / 通知偏好）
 │   ├─ theme.ts           ← 深淺色主題（Tailwind dark mode 切換）
 │   └─ uiState.ts         ← 頁籤 / 主頁面切換
 │
@@ -219,7 +219,7 @@ my-stock-map/
 │       ├─ mockData2412.js          ← 2412 歷史 OHLC 假資料
 │       ├─ mockData2881.js          ← 2881 歷史 OHLC 假資料
 │       ├─ mockDataCompanyName.js   ← 台股代號與公司名稱對應清單假資料
-│       └─ portfolioData.js         ← 預設投資組合假資料（持股明細）
+│       └─ portfolioData.ts         ← 預設投資組合假資料（持股明細）
 │
 ├─ App.vue     ← Root 佈局：Header / 側邊選單 / 主內容 + data-theme 深淺色容器
 ├─ main.js     ← Vue 進入點：建立 App、掛載 Pinia、載入全域樣式並掛載到 #app
@@ -412,7 +412,7 @@ my-stock-map/
     - 來源：TAIFEX 頁面，解析表格後搭配 `symbols.json` 對上代碼。
 
 - **個人持股資料**
-    - 儲存在瀏覽器 `localStorage`（key：`myStockMap_holdings`，由 `portfolio.js` store 管理）。
+    - 儲存在瀏覽器 `localStorage`（key：`myStockMap_holdings`，由 `portfolio.ts` store 管理）。
 
 
 
@@ -430,7 +430,7 @@ my-stock-map/
     - 頁尾區塊：顯示 Logo 與專案標語、贊助連結群組、作者聯絡 Email 與版權 / 免責說明文字。
 
 - `components/Common/EditHoldingModal.vue`
-    - 編輯持股資料的彈出視窗：以表格方式一次調整多檔持股（代碼、名稱、股數、現價、成本），支援新增 / 刪除列，儲存時會更新 `portfolioStore.holdingDetailsData` 並呼叫 `portfolioStore.recalcValues()`，實際的持股資料持久化則由 `portfolio.js` store 統一寫入 `localStorage`。
+    - 編輯持股資料的彈出視窗：以表格方式一次調整多檔持股（代碼、名稱、股數、現價、成本），支援新增 / 刪除列，儲存時會更新 `portfolioStore.holdingDetailsData` 並呼叫 `portfolioStore.recalcValues()`，實際的持股資料持久化則由 `portfolio.ts` store 統一寫入 `localStorage`。
 
 - `components/Common/LoadingModal.vue`
     - 全螢幕 Loading 遮罩（使用 `<Teleport>` 掛到 `<body>`）：顯示轉圈圈與自訂訊息，用於資料載入中的全局提示。
@@ -456,6 +456,8 @@ my-stock-map/
 > 現正進行中
 
 - 將整個專案 TypeScript 化，方便後續開發與維護。
+
+- 確認 `store/settingItems.ts` 和 `store/displayFormat.ts` 有沒有項目（例如貨幣單位）要合併，並確認與 `src/pages/Settings` 的項目是否有相符。
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
