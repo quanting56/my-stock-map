@@ -10,7 +10,10 @@
     "skipLibCheck": false,
     "noUncheckedIndexedAccess": true,
 
-    "types": ["vite/client"]
+    "types": ["vite/client"],
+
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"]
   },
   "include": [
     "vite-env.d.ts",

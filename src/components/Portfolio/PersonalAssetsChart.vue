@@ -47,10 +47,15 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import * as d3 from "d3";
 import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue";
-import { assetsMockData } from "@/data/mock/assetsMockData.js";
+
+import { usePersonalAssetsStore } from "@/store/personalAssets";
+import type { PersonalAssetsParsedRow } from "@/types/personalAssets";
+import bankColors from "@/constants/bankColors";
+
+const personalAssets = usePersonalAssetsStore();
 
 const props = defineProps({
   isTotalValueHidden: {
@@ -59,16 +64,16 @@ const props = defineProps({
   }
 });
 
-const chartContainerRef = ref(null);
-const svgRef = ref(null);
-const tooltipRef = ref(null);
-const selectedRange = ref("6m");
+const chartContainerRef = ref<HTMLElement | null>(null);
+const svgRef = ref<SVGSVGElement | null>(null);
+const tooltipRef = ref<HTMLElement | null>(null);
+const selectedRange = ref<"7d" | "30d" | "3m" | "6m" | "1y" | "5y" | "max">("6m");
 const transitionDuration = 1000;  // 動畫過渡時間
 
 const startTotalValue = ref(0);
 const endTotalValue = ref(0);
 const changePercent = computed(() => {
-  if (!endTotalValue.value || !startTotalValue.value) return "0.00";
+  if (!endTotalValue.value || !startTotalValue.value) return 0;
   return (endTotalValue.value - startTotalValue.value) / startTotalValue.value;
 });
 
@@ -80,77 +85,42 @@ const ranges = [
   { label: "1 年", value: "1y" },
   { label: "5 年", value: "5y" },
   { label: "最久", value: "max" }
-];
-
-// 銀行顏色表
-// const bankColors = {
-//   "台新銀行": "#E60012",   // 紅
-//   "合作金庫銀行": "#1B73B5", // 藍
-//   "郵局": "#009944",       // 綠
-//   "國泰世華銀行": "#007C3E", // 深綠
-//   "當日持股市值": "#888888" // 灰
-// };
-
-// mockData 銀行顏色表
-const bankColors = {
-  "台新銀行": "#a5a5a5",   // 紅
-  "合作金庫銀行": "#f5ba1a", // 藍
-  "郵局": "#e37933",       // 綠
-  "國泰世華銀行": "#6ea647", // 深綠
-  "當日持股市值": "#406cb4" // 灰
-};
-
-// 明確指定 data 的日期格式（YYYY/M/D）
-const parseTwDate = d3.timeParse("%Y/%-m/%-d");  // 例如 2022/1/3、2022/03/05、2019/10/23
+] as const;
 
 // 整理資料：將日期解析成 Date + 取得資產總值
-const parsedData = assetsMockData.map(d => {
-  // 過濾出所有 key 中非日期的數值欄位
-  const values = Object.keys(d)
-                       .filter((k) => k !== "日期")  // 不要日期
-                       .map(k => {
-                         if (d[k] === "" || d[k] == null) return null;
-                         const num = Number(String(d[k]).replace(/,/g, ""));
-                         return Number.isFinite(num) ? num : null;
-                       })  // 取出值，並轉成 Number
-                       .filter((v) => v != null && !isNaN(v))  // 排除 null 或 NaN
+const parsedData = computed(() => personalAssets.parsedRows);
 
-  // 用 parseTwDate 解析字串，避免 Safari 用 Date.parse 亂猜
-  const date = parseTwDate(String(d["日期"]).trim());
-  if (!date) {
-    console.warn("[PersonalAssetsChart] 無法解析日期：", d["日期"]);
-    return null; // 這筆丟掉，避免後面出現 d 為 undefined
-  }
-
-  return {
-    ...d,
-    date,
-    totalValue: d3.sum(values)
-  };
-}).filter(d => d !== null)  // 把 parse 失敗的資料踢掉
-  .sort((a, b) => a.date - b.date);
-
-// 取得所有銀行欄位（包含"當日持股市值"，但排除"日期"）
-const banks = Object.keys(parsedData[0]).filter(k => !["日期", "date"].includes(k));
+// 取得所有銀行欄位（包含"當日持股市值"）
+const banks = computed(() => personalAssets.bankKeys);
 
 // 根據選擇的區間過濾資料
-const filteredData = computed(() => {
-  const now = parsedData.at(-1)?.date || new Date();
-  let cutoff;
+const filteredData = computed<PersonalAssetsParsedRow[]>(() => {
+  const dataArr = parsedData.value;
+  if (dataArr.length === 0) { return []; }
+
+  const firstDate = dataArr.find((d) => d.date)?.date;
+  if (!firstDate) { return []; }
+
+  const now = dataArr.at(-1)?.date || new Date();
+  let cutoff: Date;
   switch (selectedRange.value) {
-    case "7d": cutoff = d3.timeDay.offset(now, -7); break;
-    case "30d": cutoff = d3.timeDay.offset(now, -30); break;
-    case "3m": cutoff = d3.timeMonth.offset(now, -3); break;
-    case "6m": cutoff = d3.timeMonth.offset(now, -6); break;
-    case "1y": cutoff = d3.timeYear.offset(now, -1); break;
-    case "5y": cutoff = d3.timeYear.offset(now, -5); break;
-    default: cutoff = parsedData[0].date;
+    case "7d":  cutoff = d3.timeDay.offset(now,   -7); break;
+    case "30d": cutoff = d3.timeDay.offset(now,  -30); break;
+    case "3m":  cutoff = d3.timeMonth.offset(now, -3); break;
+    case "6m":  cutoff = d3.timeMonth.offset(now, -6); break;
+    case "1y":  cutoff = d3.timeYear.offset(now,  -1); break;
+    case "5y":  cutoff = d3.timeYear.offset(now,  -5); break;
+    default:    cutoff = firstDate; break;
   }
-  return parsedData.filter((d) => d.date && d.date >= cutoff);
+  return parsedData.value.filter((d) => d.date && d.date >= cutoff);
 });
 
+
 // D3 繪圖函式
-function drawChart(data) {
+function drawChart(data: PersonalAssetsParsedRow[]) {
+  if (!svgRef.value || !chartContainerRef.value) { return; }
+  if (data.length === 0) { return; }
+
   const svg = d3.select(svgRef.value);
   svg.selectAll("*").remove();
 
@@ -162,12 +132,12 @@ function drawChart(data) {
   endTotalValue.value = data.at(-1)?.totalValue ?? 0;  // 區間最末日總資產
 
   const xScale = d3.scaleTime()
-                   .domain(d3.extent(data, d => d.date))
+                   .domain(d3.extent(data, (d) => d.date) as [Date, Date])
                    .range([margin.left, width - margin.right])
                    .nice();
 
   const yScale = d3.scaleLinear()
-                   .domain([0, d3.max(data, d => d.totalValue)])
+                   .domain([0, d3.max(data, (d) => d.totalValue) ?? 0])
                    .range([height - margin.bottom - 30, margin.top])
                    .nice();
 
@@ -178,28 +148,31 @@ function drawChart(data) {
                                .range(yScale.range())
                            : yScale;
 
-  const lineGen = d3.line()
-                    .defined(d => d.value !== null)
+  const lineGen = d3.line<{ date: Date; value: number | null}>()
+                    .defined((d) => d.value !== null)
                     .x(d => xScale(d.date))
-                    .y(d => yScale(d.value))
+                    .y(d => yScale(d.value as number))
                     .curve(d3.curveMonotoneX);
 
   // dots 容器
   const dotsGroup = svg.append("g");
 
   // 為每間銀行畫線
-  banks.forEach(bank => {
-    const depositInTheBank = data.map(d => ({ date: d.date, value: d[bank] }));
+  banks.value.forEach((bank) => {
+    const depositInTheBank = data.map((d) => ({
+      date: d.date,
+      value: d.values[bank] ?? null
+    }));
 
     const path = svg.append("path")
-      .datum(depositInTheBank)
-      .attr("fill", "none")
-      .attr("stroke", bankColors[bank] || "#000000")
-      .attr("stroke-width", 2)
-      .attr("d", lineGen);
+                    .datum(depositInTheBank)
+                    .attr("fill", "none")
+                    .attr("stroke", bankColors[bank] || "#000000")
+                    .attr("stroke-width", 2)
+                    .attr("d", lineGen);
 
     // 動畫效果
-    const totalLength = path.node().getTotalLength();
+    const totalLength = (path.node() as SVGPathElement).getTotalLength();
     path.attr("stroke-dasharray", `${totalLength} ${totalLength}`)
         .attr("stroke-dashoffset", totalLength)
         .transition()
@@ -209,7 +182,7 @@ function drawChart(data) {
 
     dotsGroup.append("circle")
              .attr("r", 4)
-             .attr("fill", bankColors[bank])
+             .attr("fill", bankColors[bank] || "#000000")
              .style("opacity", 0)
              .attr("class", `dot-${bank}`);
   });
@@ -217,7 +190,11 @@ function drawChart(data) {
   // 加上座標軸
   const xAxis = d3.axisBottom(xScale)
                   .ticks(6)
-                  .tickFormat(d3.timeFormat("%Y/%m/%d"));
+                  .tickFormat((domainValue, index) =>
+                    domainValue instanceof Date
+                      ? d3.timeFormat("%Y/%m/%d")(domainValue)
+                      : ""
+                  );
 
   // y 軸依據 isTotalValueHidden 切換顯示「金額」或「百分比」
   let yAxis;
@@ -227,12 +204,12 @@ function drawChart(data) {
     const percentTicks = [0, 0.2, 0.4, 0.6, 0.8, 1];
     yAxis = d3.axisLeft(yScaleForYAxis)
               .tickValues(percentTicks)
-              .tickFormat(d => `${(d * 100).toFixed(0)}%`);
+              .tickFormat((d) => `${(Number(d) * 100).toFixed(0)}%`);
   } else {
     // 一般模式 → 顯示金額
     yAxis = d3.axisLeft(yScaleForYAxis)
               .ticks(5)
-              .tickFormat(d => d.toLocaleString());
+              .tickFormat((d) => Number(d).toLocaleString());
   }
 
   svg.append("g")
@@ -249,8 +226,9 @@ function drawChart(data) {
 
 
   // Tooltip
+  if (!tooltipRef.value) { return; }
   const tip = d3.select(tooltipRef.value);
-  const bisect = d3.bisector(d => d.date).left;
+  const bisect = d3.bisector<PersonalAssetsParsedRow, Date>((d) => d.date).left;
 
   const crosshair = svg.append("line")
                        .attr("stroke", "var(--color-border)")
@@ -263,11 +241,12 @@ function drawChart(data) {
                      .attr("fill", "transparent")
                      .attr("width", width)
                      .attr("height", height)
-                     .on("mousemove", function (e) {
-                       const [mx] = d3.pointer(e);
+                     .on("mousemove", function (e: MouseEvent) {
+                       const [mx] = d3.pointer(e, this);
                        const xDate = xScale.invert(mx);
                        const i = bisect(data, xDate);
                        const d = data[Math.min(Math.max(i, 0), data.length - 1)];
+                       if (!d) { return; }
 
                        // crosshair 與 dot 平滑顯示
                        crosshair.transition()
@@ -277,8 +256,8 @@ function drawChart(data) {
                                 .style("opacity", 0.6);
 
                        // 更新所有 dots 的位置
-                       banks.forEach(bank => {
-                         const val = d[bank];
+                       banks.value.forEach((bank) => {
+                         const val = d.values[bank];
                          const dot = svg.select(`.dot-${bank}`);
                          if (val != null) {
                            dot.transition()
@@ -293,12 +272,12 @@ function drawChart(data) {
                        });
 
                        // Tooltip 內容
-                       const rows = banks.filter(bank => bank !== "totalValue")
-                                         .map(bank => {
-                                           const val = d[bank];
-                                           return `<div><span style="color: ${bankColors[bank]};">●</span> ${bank}: ${val ? val.toLocaleString() + " 元" : "-"}</div>`;
-                                         })
-                                         .join("");
+                       const rows = banks.value
+                         .map((bank) => {
+                           const val = d.values[bank];
+                           return `<div><span style="color: ${bankColors[bank]};">●</span> ${bank}: ${val != null ? val.toLocaleString() + " 元" : "-"}</div>`;
+                         })
+                         .join("");
                        const totalStr = `<div class="mt-1"><strong>總資產：</strong>${d.totalValue.toLocaleString()} 元</div>`;
 
                        // Tooltip 防溢出邏輯
@@ -329,13 +308,13 @@ function drawChart(data) {
 
   // 圖例
   const legend = svg.append("g").attr("transform", `translate(10, ${height - margin.bottom})`);
-  banks.concat(["總資產"]).forEach((bank, i) => {
+  banks.value.concat(["總資產"]).forEach((bank, i) => {
     const g = legend.append("g")
                     .attr("transform", `translate(${i * 100}, 0)`);
     g.append("rect")
      .attr("width", 12)
      .attr("height", 12)
-     .attr("fill", bankColors[bank]);
+     .attr("fill", bankColors[bank] || "#000000");
     g.append("text")
      .attr("x", 16)
      .attr("y", 10)
@@ -363,24 +342,14 @@ watch(
 
 // Resize + 初始繪圖
 onMounted(() => {
+  personalAssets.init();
   nextTick(() => drawChart(filteredData.value));
-  resizeObserver.observe(chartContainerRef.value);
+  if (chartContainerRef.value) { resizeObserver.observe(chartContainerRef.value); }
 });
 
 onBeforeUnmount(() => {
   resizeObserver.disconnect();
 });
-
-// 測試哪些是壞資料用的
-// assetsMockData.forEach((row, idx) => {
-//   const raw = row && row["日期"];
-//   const str = String(raw);
-//   const d = new Date(str.replace(/\//g, "-"));
-
-//   if (!(d instanceof Date) || Number.isNaN(+d)) {
-//     console.log("bad row index:", idx, "raw:", raw);
-//   }
-// });
 </script>
 
 <style scoped></style>

@@ -1,8 +1,8 @@
 import type { Holding } from "@/store/portfolio";
 
-type MockDataHoding = Omit<Holding, "stockValue">;
+type MockDataHolding = Omit<Holding, "stockValue">;
 
-export const mockData: MockDataHoding[] = [
+export const mockData: MockDataHolding[] = [
   {
     id: "CASH",
     name: "現金",
