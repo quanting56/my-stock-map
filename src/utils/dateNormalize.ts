@@ -1,4 +1,5 @@
 // 把 string 轉換成 Date 物件或 null
+// 2020/08/09、2020/8/9 → Date 物件
 export function parseTwYmd(input: string): Date | null {
   const s = String(input).trim();
   const m = s.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})$/);

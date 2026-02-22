@@ -62,6 +62,7 @@
 - [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/)
   - 使用 Vue 3 Composition API 與 Vue SFC（單檔元件）開發，方便內容維護與擴充。
   - 採用 Vite 作為建構工具，啟動快速、熱重載流暢。
+  - 使用 [Vue DevTools](https://devtools.vuejs.org/) 套件作為開發輔助工具。
 
 - [Pinia](https://pinia.vuejs.org/) - Store 狀態管理。
 
@@ -194,10 +195,12 @@ my-stock-map/
 │   │   ├─ ReportImport.vue         ← 報表匯入區
 │   │   ├─ ReportPreview.vue        ← 報表預覽區
 │   │   └─ SummaryCards.vue         ← Summary 卡片（Reports 版本）
-│   └─ Settings/
+│   ├─ Settings/    ← 暫時沒有拆分
+│   └─ Demo/        ← 設計基礎 UIUX 時的 legacy
 │
 ├─ store/
 │   ├─ displayFormat.ts   ← 貨幣 / 百分比格式化（UI 顯示設定用）
+│   ├─ personalAssets.ts  ← 使用者個人每日資產紀錄
 │   ├─ portfolio.ts       ← 持股資料 + localStorage
 │   ├─ queryStock.ts      ← 全站目前查詢的 symbol（目前選中的股票代碼）
 │   ├─ settingItems.ts    ← 一般設定（顯示名稱 / Email / 貨幣單位 / 通知偏好）
@@ -205,24 +208,37 @@ my-stock-map/
 │   └─ uiState.ts         ← 頁籤 / 主頁面切換
 │
 ├─ api/
-│   └─ stocksApi.ts   ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
+│   ├─ personalAssets.ts  ← 讀取或寫入個人每日資產紀錄（目前暫串 localStorage）
+│   └─ stocksApi.ts       ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
 │
 ├─ assets/
 │   └─ vue.svg
 │
+├─ constants/
+│   └─ bankColors.ts      ← 設定圖表裡各家銀行的顏色呈現
+│
 ├─ data/
 │   └─ mock/
-│       ├─ assetsMockData.js        ← 個人總資產歷史假資料（活存餘額 + 每日持股市值）
+│       ├─ assetsMockData.json      ← 個人總資產歷史假資料（活存餘額 + 每日持股市值）
 │       ├─ marketCapitalizationTreemapDate.js  ← 台股大盤市值佔比 Treemap 用假資料
 │       ├─ mockData0050.js          ← 0050 歷史 OHLC 假資料
 │       ├─ mockData2330.js          ← 2330 歷史 OHLC 假資料
 │       ├─ mockData2412.js          ← 2412 歷史 OHLC 假資料
 │       ├─ mockData2881.js          ← 2881 歷史 OHLC 假資料
-│       ├─ mockDataCompanyName.js   ← 台股代號與公司名稱對應清單假資料
+│       ├─ mockDataCompanyName.json ← 台股代號與公司名稱對應清單假資料
 │       └─ portfolioData.ts         ← 預設投資組合假資料（持股明細）
 │
+├─ types/
+│   └─ personalAssets.ts      ← 個人每日資產資料格式
+│
+├─ utils/
+│   ├─ portfolio/
+│   │   └─ personalAssets.ts   ← 個人每日資產資料格式轉換
+│   ├─ dateNormalize.ts        ← 日期格式轉換
+│   └─ numberNormalize.ts      ← 數字格式（型別）轉換
+│
 ├─ App.vue     ← Root 佈局：Header / 側邊選單 / 主內容 + data-theme 深淺色容器
-├─ main.js     ← Vue 進入點：建立 App、掛載 Pinia、載入全域樣式並掛載到 #app
+├─ main.ts     ← Vue 進入點：建立 App、掛載 Pinia、載入全域樣式並掛載到 #app
 └─ style.css   ← Tailwind 入口 + 自訂 light/dark 主題 + 自訂 UI utility 類別
 ```
 
@@ -267,6 +283,8 @@ my-stock-map/
 5. 基本面 `/api/fundamentals/:code` 同理，後端負責打 TWSE & open data，前端只拿整理好的結果。
 
 6. 新聞 `/api/news/:code` 優先嘗試 GDELT → 失敗再用 Google News RSS，前端只渲染結果。
+
+<!-- 個人每日資產資料後端架設後，需補其資料流程敘述 -->
 
 
 
@@ -397,7 +415,7 @@ my-stock-map/
 
 > 注意：根目錄 `data/` 為後端快取；`src/data/mock/` 則為前端 mock 資料。
 
-> 本節皆為 `data/` 後端快取。
+> 本節所指 `data/` 皆為後端快取。
 
 - **股價快取 SQLite**
     - 檔案路徑：`data/stocks.db`
@@ -457,11 +475,15 @@ my-stock-map/
 
 - 將整個專案 TypeScript 化，方便後續開發與維護。
 
+- 新增 `personalAssets` 的編輯 Modal 介面。
+
 - 確認 `store/settingItems.ts` 和 `store/displayFormat.ts` 有沒有項目（例如貨幣單位）要合併，並確認與 `src/pages/Settings` 的項目是否有相符。
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
 - 把 Dashboard 裡 Treemap（`components/Dashboard/MarketCapitalizationTreemap.vue`）的錯誤處理邏輯（後端掛掉會改用 mock data）部分移到 `api/stocksApi.ts` ，或是新建 Pinia 來統一全站的錯誤管理。
+
+- 拆檔重構 `api/stocksApi.ts`。
 
 - Dashboard 股票趨勢圖，新增可以多檔並列，並讓使用者自訂顯示檔數。
 
@@ -568,4 +590,4 @@ my-stock-map/
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2026/01/22 12:54
+> README.md 更新時間：2026/02/22 22:37
