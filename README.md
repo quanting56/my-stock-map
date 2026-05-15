@@ -7,6 +7,25 @@
 
 
 
+## 目錄
+
+- [功能概覽（Overview）](#overview)
+- [技術堆疊（Technology Stack）](#technology-stack)
+- [專案架構（Project Structure）](#project-structure)
+- [資料流程簡述（Data Flow）](#data-flow)
+- [開發環境快速啟動（Quick Startup）](#quick-startup)
+- [上傳更新（Git Commit）](#git-commit)
+- [資料快取與長期資料（Data Cache & Long-term Data）](#data-cache--long-term-data)
+- [共用元件（Common Components）](#common-components)
+- [未來規劃（Roadmap）](#roadmap)
+- [開發者（Developer）](#developer)
+
+---
+---
+
+
+
+<a id="overview"></a>
 ## 功能概覽（Overview）
 
 - **Dashboard 儀表板（大總覽）**
@@ -56,6 +75,7 @@
 
 
 
+<a id="technology-stack"></a>
 ## 技術堆疊（Technology Stack）
 
 ### Front-end
@@ -137,6 +157,7 @@
 
 
 
+<a id="project-structure"></a>
 ## 專案架構（Project Structure）
 
 ### Front-end (Vite + Vue 3)
@@ -264,6 +285,7 @@ my-stock-map/
 
 
 
+<a id="data-flow"></a>
 ## 資料流程簡述（Data Flow）
 
 1. 前端（例如 `PriceChartCard.vue`）呼叫 `api/stocksApi.ts` 中的 `fetchStockSeries(symbol, params)` 函式。
@@ -288,6 +310,7 @@ my-stock-map/
 
 
 
+<a id="quick-startup"></a>
 ## 開發環境快速啟動（Quick Startup）
 
 以下指令假設已經安裝好 Node.js 和 npm。
@@ -350,6 +373,7 @@ my-stock-map/
 
 
 
+<a id="git-commit"></a>
 ## 上傳更新（Git Commit）
 
 > Railway 會在每次 push 後自動觸發部署，無須另外 build。
@@ -411,6 +435,7 @@ my-stock-map/
 
 
 
+<a id="data-cache--long-term-data"></a>
 ## 資料快取與長期資料（Data Cache & Long-term Data）
 
 > 注意：根目錄 `data/` 為後端快取；`src/data/mock/` 則為前端 mock 資料。
@@ -434,6 +459,7 @@ my-stock-map/
 
 
 
+<a id="common-components"></a>
 ## 共用元件（Common Components）
 
 > 這些元件會出現在不同頁面中，可重複利用。
@@ -469,6 +495,7 @@ my-stock-map/
 
 
 
+<a id="roadmap"></a>
 ## 未來規劃（Roadmap）
 
 > 現正進行中
@@ -585,6 +612,7 @@ my-stock-map/
 
 
 
+<a id="developer"></a>
 ## 開發者（Developer）
 本案由 [quanting56](https://github.com/quanting56) 開發與維護。
 
