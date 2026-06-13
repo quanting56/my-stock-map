@@ -21,17 +21,17 @@
             :class="priceChangeClass"
             class="text-2xl font-bold"
           >
-            ${{ Number(latestPrice).toFixed(2) }}
+            ${{ latestPriceText }}
           </div>
           <div
             :class="priceChangeClass"
             class="text-sm font-medium"
           >
-            {{ priceChangeSign }}${{ Math.abs(Number(priceChangeAbs)).toFixed(2) }} / {{ priceChangeSign }}{{ Math.abs(Number(priceChangePct)).toFixed(2) }}%
+            {{ priceChangeSign }}${{ priceChangeAbsText }} / {{ priceChangeSign }}{{ priceChangePctText }}%
           </div>
           <div class="text-xs text-[color:var(--color-secondary)]">
             {{ lastUpdated.toLocaleString("zh-TW", { month: "2-digit", day: "numeric" }) }}
-            成交量 {{ latestVolume.toLocaleString() }}
+            成交量 {{ latestVolumeText }}
           </div>
         </div>
       </div>
@@ -91,16 +91,76 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref, computed, watch } from "vue";
+import { useQueryStockStore } from "@/store/queryStock";
+import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
+
 import PriceChartCard from "@/components/StockDetail/PriceChartCard.vue";
 import InformationSummary from "@/components/StockDetail/InformationSummary.vue";
 import HoldingTimelineChart from "@/components/StockDetail/HoldingTimelineChart.vue";
 import RelevantNews from "@/components/StockDetail/RelevantNews.vue";
-
-import { ref, computed, watch } from "vue";
 import LoadingModal from "@/components/Common/LoadingModal.vue";
-import { useQueryStockStore } from "@/store/queryStock";
-import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
+
+type Timeframe = "7D" | "1M" | "3M" | "1Y" | "3Y";
+
+interface RecentRangeParams {
+  startYear: number;
+  startMonth: number;
+  endYear: number;
+  endMonth: number;
+}
+
+interface SymbolProfile {
+  name: string;
+  industry: string | null;
+}
+
+interface CompanyRank {
+  rank: number | null;
+}
+
+interface StockSeriesRow {
+  close: number;
+  volume: number;
+  date: Date | string;
+}
+
+interface FundamentalSummary {
+  peRatio: number | null;
+  pbRatio: number | null;
+  yield: number | null;
+  shareCapital: number | null;
+  eps: number | null;
+}
+
+interface Fundamentals {
+  peRatio: number | null;
+  pbRatio: number | null;
+  yield: number | null;
+  shareCapital: number | null;
+  eps: number | null;
+}
+
+function isFiniteNumber(value: unknown): value is number {
+  return typeof value === "number" && Number.isFinite(value);
+}
+
+function formatFixed(value: number | null, digits = 2): string {
+  return isFiniteNumber(value) ? value.toFixed(digits) : "—";
+}
+
+function formatAbsoluteFixed(value: number | null, digits = 2): string {
+  return isFiniteNumber(value)
+    ? Math.abs(value).toFixed(digits)
+    : "—";
+}
+
+function parseApiDate(value: Date | string): Date | null {
+  const date = value instanceof Date ? value : new Date(value);
+
+  return Number.isNaN(date.getTime()) ? null : date;
+}
 
 // Pinia
 const queryStock = useQueryStockStore();
@@ -113,88 +173,116 @@ const isLoading = ref(false);
 const ticker = computed(() => queryStock.displaySymbol);
 // const companyName = ref("台積電");
 const companyName = ref("—");
-const companyRankingNum = ref(null);
+const companyRankingNum = ref<number | null>(null);
 const companyRanking = computed(() => {
-  return Number.isFinite(companyRankingNum.value)
+  return isFiniteNumber(companyRankingNum.value)
     ? `｜臺灣市值第 ${companyRankingNum.value} 大公司`
     : "";
 });
 const isWeightedStocks = computed(() => {
-  return Number.isFinite(companyRankingNum.value) && companyRankingNum.value < 11
+  return isFiniteNumber(companyRankingNum.value) && companyRankingNum.value < 11
     ? "｜前 10 大權重股"
     : "";
 });
 // const industryCategory = ref("半導體製造業");
 const industryCategory = ref("—");
 
-const latestPrice = ref("-");
-const latestVolume = ref("-");
+const latestPrice = ref<number | null>(null);
+const latestVolume = ref<number | null>(null);
 const lastUpdated = ref(new Date());
 
-const priceChangePct = ref("-");
-const priceChangeAbs = ref("-");
+const priceChangePct = ref<number | null>(null);
+const priceChangeAbs = ref<number | null>(null);
+
+const latestPriceText = computed(() => formatFixed(latestPrice.value, 2));
+
+const latestVolumeText = computed(() => {
+  return isFiniteNumber(latestVolume.value)
+    ? latestVolume.value.toLocaleString("zh-TW")
+    : "—";
+});
+
+const priceChangeAbsText = computed(() => formatAbsoluteFixed(priceChangeAbs.value, 2));
+const priceChangePctText = computed(() => formatAbsoluteFixed(priceChangePct.value, 2));
+
 const priceChangeSign = computed(() => {
-  if (!Number.isFinite(priceChangePct.value)) return "";
+  if (!isFiniteNumber(priceChangePct.value)) return "";
   return priceChangePct.value >= 0 ? "+" : "-";
 });
 const priceChangeClass = computed(() => {
-  if (!Number.isFinite(priceChangePct.value)) return "text-red-500";
+  if (!isFiniteNumber(priceChangePct.value)) return "text-red-500";
   return priceChangePct.value >= 0 ? "text-red-500" : "text-green-600";
 });
 
 // timeframes
-const timeframes = ["7D", "1M", "3M", "1Y", "3Y"];
-const currentTimeframe = ref("3M");
+const timeframes = ["7D", "1M", "3M", "1Y", "3Y"] as const;
+const currentTimeframe = ref<Timeframe>("3M");
 
-async function refreshHeadline() {
+async function refreshHeadline(): Promise<void> {
+  // 先清空上一支股票的資料，避免 API 尚未回來時顯示舊股票資料
+  companyName.value = "—";
+  industryCategory.value = "—";
+  companyRankingNum.value = null;
+
+  latestPrice.value = null;
+  latestVolume.value = null;
+  priceChangeAbs.value = null;
+  priceChangePct.value = null;
+
   try {
     // === 查股票基本資料（公司名稱、產業） ===
-    const prof = await fetchSymbolProfile(queryStock.symbol);
+    const prof = await fetchSymbolProfile(queryStock.symbol) as SymbolProfile | null;
+
     if (prof) {
-      companyName.value = prof.name || "—";
-      industryCategory.value = prof.industry || "—";
-    } else {
-      companyName.value = "—";
-      industryCategory.value = "—";
-    };
+      companyName.value = prof.name;
+      industryCategory.value = prof.industry ?? "—";
+    }
 
     // === 查股票市值排名 ===
-    companyRankingNum.value = null;
-    const rankInfo = await fetchCompanyRank(queryStock.symbol);
-    if (rankInfo?.rank) companyRankingNum.value = rankInfo.rank;
+    const rankInfo = await fetchCompanyRank(queryStock.symbol) as CompanyRank | null;
 
-    // === 處理股票股價資訊 ===
-    const rows = await fetchStockSeries(queryStock.symbol, makeRecentRangeParams(3));  // 僅抓 3 個月
-    if (rows && rows.length) {
-      const last = rows.at(-1);
-      const prev = rows.at(-2);
-      // 最後一日收盤價
-      if (Number.isFinite(last.close)) {
-        latestPrice.value = last.close;
-      };
-      // 最新一日成交量
-      if (Number.isFinite(last?.volume)) {
-        latestVolume.value = Math.round(last.volume);
-      };
-      // 同步「最後更新」
-      if (last?.date instanceof Date && !Number.isNaN(+last.date)) {
-        lastUpdated.value = last.date;
-      };
-      // 計算與前一日的漲跌（有 prev 才算）
-      if (Number.isFinite(prev?.close) && Number.isFinite(last?.close) && prev.close !== 0) {
-        const diff = last.close - prev.close;
-        priceChangeAbs.value = Number(diff);
-        priceChangePct.value = Number(((diff / prev.close) * 100).toFixed(2));
-      };
-    };
+    if (rankInfo && isFiniteNumber(rankInfo.rank)) {
+      companyRankingNum.value = rankInfo.rank;
+    }
+
+    // === 查最近三個月股票資料 ===
+    const rows = await fetchStockSeries(
+      queryStock.symbol,
+      makeRecentRangeParams(3)
+    ) as StockSeriesRow[];
+
+    const last = rows[rows.length - 1];
+    if (!last) return;  // 即使 rows 型別是陣列，也仍然可能是空陣列
+
+    const prev = rows[rows.length - 2];
+
+    // 最後一日收盤價
+    latestPrice.value = last.close;
+
+    // 最新一日成交量
+    latestVolume.value = Math.round(last.volume);
+
+    // 最後更新日期
+    const parsedLastUpdated = parseApiDate(last.date);
+
+    if (parsedLastUpdated) {
+      lastUpdated.value = parsedLastUpdated;
+    }
+
+    // 有前一個交易日，且前一日收盤價不是 0，才計算漲跌
+    if (prev && prev.close !== 0) {
+      const diff = last.close - prev.close;
+
+      priceChangeAbs.value = diff;
+      priceChangePct.value = Number(((diff / prev.close) * 100).toFixed(2));
+    }
   } catch (err) {
     console.warn("refreshHeadline failed:", err);
-    // 失敗時維持原值，不強制覆寫
-  };
-};
+  }
+}
 
 // 為 <header> 做一個「最近 N 個月」的參數產生器
-function makeRecentRangeParams(monthsBack = 3) {
+function makeRecentRangeParams(monthsBack = 3): RecentRangeParams {
   const now = new Date();
   const endYear = now.getFullYear();
   const endMonth = now.getMonth() + 1;
@@ -220,7 +308,7 @@ function makeRecentRangeParams(monthsBack = 3) {
 
 
 // 基本面摘要
-const fundamentalSummary = ref({
+const fundamentalSummary = ref<FundamentalSummary>({
   peRatio: null,         // 本益比
   pbRatio: null,         // 股價淨值比
   yield: null,           // 殖利率
@@ -228,25 +316,43 @@ const fundamentalSummary = ref({
   eps: null
 });
 
-async function refreshFundamentalSummary() {
+async function refreshFundamentalSummary(): Promise<void> {
   try {
-    // === 查 基本面摘要（PE/PB/殖利率/股本/EPS） ===
-    try {
-      const f = await fetchFundamentals(queryStock.symbol);
-      // 做一些保底處理，避免 NaN 影響 UI
+    const f = await fetchFundamentals(queryStock.symbol) as Fundamentals | null;
+
+    if (!f) {
       fundamentalSummary.value = {
-        peRatio: Number.isFinite(f?.peRatio) ? f.peRatio : null,
-        pbRatio: Number.isFinite(f?.pbRatio) ? f.pbRatio : null,
-        yield:  Number.isFinite(f?.yield) ? f.yield : null, // 小數
-        shareCapital: Number.isFinite(f?.shareCapital) ? f.shareCapital : null,
-        eps: Number.isFinite(f?.eps) ? f.eps : null
+        peRatio: null,
+        pbRatio: null,
+        yield: null,
+        shareCapital: null,
+        eps: null,
       };
-    } catch {};
+
+      return;
+    }
+
+    fundamentalSummary.value = {
+      peRatio: isFiniteNumber(f.peRatio) ? f.peRatio : null,
+      pbRatio: isFiniteNumber(f.pbRatio) ? f.pbRatio : null,
+      yield: isFiniteNumber(f.yield) ? f.yield : null,
+      shareCapital: isFiniteNumber(f.shareCapital)
+        ? f.shareCapital
+        : null,
+      eps: isFiniteNumber(f.eps) ? f.eps : null
+    };
   } catch (err) {
     console.warn("refreshFundamentalSummary failed:", err);
-    // 失敗時維持原值，不強制覆寫
-  };
-};
+
+    fundamentalSummary.value = {
+      peRatio: null,
+      pbRatio: null,
+      yield: null,
+      shareCapital: null,
+      eps: null,
+    };
+  }
+}
 
 // 此處不在這裡觸發，改由最後由 refreshAll() 統一觸發
 // watch(
@@ -263,15 +369,18 @@ const holdingSummary = ref({
   cost: 450,
 });
 
+
 const holdingSummaryPL = computed(() => {
-  const pl = (latestPrice.value - holdingSummary.value.cost) * holdingSummary.value.shares;
-  return pl;
+  if (!isFiniteNumber(latestPrice.value)) return 0;
+  return (latestPrice.value - holdingSummary.value.cost) * holdingSummary.value.shares;
 });
 const holdingSummaryPLRatio = computed(() => {
-  const plRatio = (latestPrice.value - holdingSummary.value.cost) / holdingSummary.value.cost;
-  return plRatio;
+  if (!isFiniteNumber(latestPrice.value) || holdingSummary.value.cost === 0) { return 0; }
+  return (latestPrice.value - holdingSummary.value.cost) / holdingSummary.value.cost;
 });
-const holdingSummaryPLClass = computed(() => (parseFloat(holdingSummaryPL.value) >= 0 ? "text-red-500" : "text-green-600"));
+const holdingSummaryPLClass = computed(() => {
+  return holdingSummaryPL.value >= 0 ? "text-red-500" : "text-green-600";
+});
 
 // copy ticker
 function copyTicker() {
