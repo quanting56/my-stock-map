@@ -34,7 +34,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import RollingReturnTest from "@/components/Backtest/RollingReturnTest.vue";
 import SingleAssetBacktest from "@/components/Backtest/SingleAssetBacktest.vue";
 </script>
