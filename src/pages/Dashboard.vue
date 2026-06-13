@@ -50,7 +50,7 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import SummaryCards from "@/components/Dashboard/SummaryCards.vue";
 import ShareholdingRatioChart from "@/components/Dashboard/ShareholdingRatioChart.vue";
 import PerformanceChart from "@/components/Dashboard/PerformanceChart.vue";
