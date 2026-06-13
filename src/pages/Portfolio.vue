@@ -55,14 +55,14 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { ref } from "vue";
+
 import EditHoldingModal from "@/components/Common/EditHoldingModal.vue";
 import SummaryCards from "@/components/Portfolio/SummaryCards.vue";
 import ShareholdingRatioChart from "@/components/Portfolio/ShareholdingRatioChart.vue";
 import PersonalAssetsChart from "@/components/Portfolio/PersonalAssetsChart.vue";
 import HoldingDetails from "@/components/Portfolio/HoldingDetails.vue";
-
-import { ref } from "vue";
 
 const isHidden = ref(false);
 const editorOpen = ref(false);
