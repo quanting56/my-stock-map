@@ -31,6 +31,7 @@ dist-ssr
 
 # 忽略整個 data 資料夾（假如未來還會有 log 或 cache）
 /data/*
+/server/data/*
 
 # 但保留 mockData 讓 git 能追蹤
 !src/data/mock/**
