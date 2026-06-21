@@ -1,0 +1,89 @@
+{
+  // 禁止所有一般 formatter 在存檔時自動排版
+  "editor.formatOnSave": false,
+
+  // 貼上與輸入時也不要自動格式化
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  // 手動執行 Format Document 時使用 Prettier，這不會開啟 format-on-save
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tailwindcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 明確禁止存檔時執行 ESLint、Prettier 修正，以及自動整理 import
+  // 即使你的 VS Code 使用者層級曾經開啟，此專案也會以 workspace 設定覆蓋
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+    "source.fixAll.prettier": "never",
+    "source.organizeImports": "never"
+  },
+
+  // ESLint 在輸入時即時重新檢查，但不執行任何自動修正
+  "eslint.run": "onType",
+
+  // 不隱藏 warning
+  "eslint.quiet": false,
+
+  // 不把 ESLint 當成 VS Code formatter，ESLint 只負責顯示診斷
+  "eslint.format.enable": false,
+
+  // 明確指定要檢查的語言
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue"
+  ],
+
+  // Prettier 擴充套件只有在專案存在設定檔時才工作 → 避免它對沒有設定的其他專案套用 VS Code 全域預設值
+  "prettier.requireConfig": true,
+
+  // Tailwind IntelliSense 保持 linting
+  "tailwindCSS.validate": true,
+
+  // 顯示 Tailwind 提示，提供自動重構 code action
+  "tailwindCSS.codeActions": true,
+
+  // 互相覆蓋的 Tailwind class 顯示黃色 warning
+  "tailwindCSS.lint.cssConflict": "warning",
+
+  // Tailwind variant 順序顯示黃色 warning
+  "tailwindCSS.lint.recommendedVariantOrder": "warning",
+
+  // 能改成較標準 Tailwind 寫法時顯示 warning
+  "tailwindCSS.lint.suggestCanonicalClasses": "warning",
+
+  // 讓一般 .css 使用 Tailwind CSS language mode → 它仍保留一般 CSS IntelliSense
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}

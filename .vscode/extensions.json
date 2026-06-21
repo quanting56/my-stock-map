@@ -1,3 +1,8 @@
 {
-  "recommendations": ["Vue.volar"]
+  "recommendations": [
+    "Vue.volar",                 // Vue 3 與 TypeScript language service
+    "dbaeumer.vscode-eslint",    // 將專案 ESLint 診斷顯示在 VS Code
+    "esbenp.prettier-vscode",    // 保留手動 Format Document 能力
+    "bradlc.vscode-tailwindcss"  // Tailwind 補全、hover 與衝突檢查
+  ]
 }

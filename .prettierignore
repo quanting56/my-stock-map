@@ -1,0 +1,21 @@
+# npm dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test coverage
+coverage/
+
+# npm 自動產生，不手動排版
+package-lock.json
+
+# 已壓縮的第三方資源
+*.min.js
+*.min.css
+
+# TODO: 臨時後端，待正式重構 Node.js 後再納入格式檢查
+server/
+
+# TODO: 臨時 mock data，待移除假資料時再處理
+src/data/mock/
