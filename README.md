@@ -1,10 +1,10 @@
 # My Stock Map / 投資可視化系統
 
-一個開發來為使用者 **個人記帳**、**長期投資管理用** 的「**個人投資可視化系統**」專案，專門拿來快速管理自己的持股（目前以臺股為主）、資產配置，並檢視持股股價走勢、基本面摘要與新聞訊息，以及回測投資策略。
-前端使用 **Vue 3 + Vite + Pinia + D3.js + TailwindCSS + TypeScript**，後端使用 **Node.js + Express + SQLite 快取股價與基本面**。
+**My Stock Map** 是一個以 **個人記帳**、**長期投資管理** 與 **投資資料視覺化** 為核心的專案。
 
-> ⚠️ **免責聲明**：本專案僅供個人學習與技術實驗使用，所有資料與分析結果都不構成任何投資建議，投資前請衡量自身風險承受能力。
+專案目前以 **臺股資料** 為主，目標是協助使用者快速管理持股、檢視資產配置、追蹤個股價格走勢、查看基本面摘要與新聞資訊，並逐步加入投資策略回測與報表匯出功能。前端使用 **Vue 3 + Vite + Pinia + D3.js + Tailwind CSS + TypeScript** 開發；後端使用 **Node.js + Express + SQLite** 快取股價、公司基本資料與新聞資料。
 
+> ⚠️ **免責聲明**：本專案僅供個人學習、作品集展示與技術實驗使用，所有資料與分析結果都不構成任何投資建議。投資前請自行評估風險承受能力。
 
 
 ## 目錄
@@ -14,14 +14,12 @@
 - [專案架構（Project Structure）](#project-structure)
 - [資料流程簡述（Data Flow）](#data-flow)
 - [開發環境快速啟動（Quick Startup）](#quick-startup)
+- [程式碼檢查與格式設定（Code Quality）](#code-quality)
 - [上傳更新（Git Commit）](#git-commit)
 - [資料快取與長期資料（Data Cache & Long-term Data）](#data-cache--long-term-data)
 - [共用元件（Common Components）](#common-components)
 - [未來規劃（Roadmap）](#roadmap)
 - [開發者（Developer）](#developer)
-
----
----
 
 
 
@@ -314,26 +312,35 @@ my-stock-map/
 ## 開發環境快速啟動（Quick Startup）
 
 以下指令假設已經安裝好 Node.js 和 npm。
+
+> 註：目前前端與後端依賴皆集中在根目錄的 `package.json` 中，因此只需要在專案根目錄執行一次 `npm install`。
+
 > 這個 repo 的目錄結構是：
 
 ```text
 my-stock-map/
 ┌┘
-├─ data/              ← 後端產生的 data
-├─ public/            ← 靜態資料（如 favicon）
-├─ server/            ← 後端伺服器
+├─ .vscode/             ← VS Code 工作區設定，統一編輯器檢查與擴充套件建議
+│   ├─ extensions.json  ← 建議安裝的 VS Code 擴充套件清單
+│   └─ settings.json    ← 專案層級的 VS Code 設定，例如 ESLint、Prettier、Tailwind 提示與關閉自動格式化
+├─ data/                ← 後端產生的 data
+├─ public/              ← 靜態資料（如 favicon）
+├─ server/              ← 後端伺服器
 │   ├─ index.js
 │   └─ ...
-├─ src/               ← 前端 Vue 內容
+├─ src/                 ← 前端 Vue 內容
 ├─ .gitignore
+├─ .prettierignore      ← Prettier 檢查時忽略的檔案與資料夾
+├─ eslint.config.mjs    ← ESLint Flat Config 設定，負責 Vue、TypeScript、JavaScript 與 Prettier 提示檢查
 ├─ index.html
 ├─ package-lock.json
-├─ package.json       ← 專案資訊、scripts、dependencies/devDependencies
+├─ package.json         ← 專案資訊、scripts、dependencies/devDependencies
+├─ prettier.config.mjs  ← Prettier 格式設定，包含縮排、引號、分號、行寬與 Tailwind class 排序規則
 ├─ README.md
-├─ tsconfig.json      ← 前端 TypeScript 設定
-├─ tsconfig.node.json ← Node/Vite 的 TypeScript 設定
-├─ vite-env.d.ts      ← Vite 型別宣告入口
-└─ vite.config.ts     ← Vite 設定（alias、proxy、base、plugins）
+├─ tsconfig.json        ← 前端 TypeScript 設定
+├─ tsconfig.node.json   ← Node/Vite 的 TypeScript 設定
+├─ vite-env.d.ts        ← Vite 型別宣告入口
+└─ vite.config.ts       ← Vite 設定（alias、proxy、base、plugins）
 ```
 
 1. Clone 專案
@@ -342,17 +349,17 @@ my-stock-map/
     cd my-stock-map
     ```
 
-2. 安裝前端依賴（專案根目錄）
+2. 安裝前端與後端依賴（均於專案根目錄操作，目前前後端尚未完全拆開）
     ```bash
     npm install
     ```
 
-3. 安裝後端依賴（server 子資料夾）
+<!-- 3. 安裝後端依賴（server 子資料夾）
     ```bash
     cd server
     npm install
     cd ..
-    ```
+    ``` -->
 
 > 建議接下來「開兩個終端視窗」：一個跑後端，一個跑前端。
 
@@ -373,17 +380,65 @@ my-stock-map/
 
 
 
+<a id="code-quality"></a>
+## 程式碼檢查與格式設定（Code Quality）
+
+本專案使用 **ESLint**、**Prettier**、**Vue ESLint plugin**、**TypeScript ESLint** 與 **Tailwind CSS IntelliSense** 輔助開發。
+
+目前設定目標是：
+
+- 由 VS Code 顯示 ESLint / Prettier / Tailwind 提示。
+- 存檔時不自動格式化、不自動修正 ESLint。
+- 由開發者依照提示手動調整程式碼。
+- Tailwind class 依官方建議順序檢查。
+
+常用指令：
+
+```bash
+# TypeScript 型別檢查
+npm run type-check
+
+# ESLint 檢查 Vue / TypeScript / JavaScript
+npm run lint
+
+# 嚴格檢查：warning 也會視為不通過
+npm run lint:strict
+
+# Prettier 格式檢查，不會自動修改檔案
+npm run format:check
+
+# 綜合檢查
+npm run check
+
+# 嚴格綜合檢查
+npm run check:strict
+```
+
+> 本專案刻意沒有設定 `eslint --fix` 或 `prettier --write` 的 npm script，避免誤觸後大量自動修改程式碼。
+
+
+
 <a id="git-commit"></a>
 ## 上傳更新（Git Commit）
 
-> Railway 會在每次 push 後自動觸發部署，無須另外 build。
+> Railway 會在每次 push 後自動觸發部署，無須另外手動 build。
 
-1. 進行 TypeScript 型別檢查（可選）
+1. 進行 TypeScript 型別檢查
     ```bash
-    npm run typecheck
+    npm run type-check
     ```
 
-2. 放入暫存檔
+2. 檢查 Prettier 支援的檔案格式
+    ```bash
+    npm run format:check
+    ```
+
+3. 檢查 ESLint / Vue / TypeScript / Prettier 提示
+    ```bash
+    npm run lint
+    ```
+
+4. 放入暫存檔
     ```bash
     # 確認此次修改
     git status
@@ -392,7 +447,7 @@ my-stock-map/
     git add .
     ```
 
-3. 提交 commit
+5. 提交 commit（本專案使用 Conventional Commits 風格）
     ```bash
     # 按照分類提交 commit
     git commit -m "分類(修改的檔案1, 修改的檔案2?, ...): 此次修改內容"
@@ -410,28 +465,28 @@ my-stock-map/
         |`style`|🎨 調整程式碼格式（例如空格、縮排、換行，不影響功能）|
         |`test`|✅ 增加或修改測試內容     |
         |`build`|🏗️ 編譯相關檔案變動，如 Vite 設定或打包流程|
-        |`revert`|⏪ 撤銷回覆先前的commit|
+        |`revert`|⏪ 撤銷回復先前的commit|
         |`chore`|🔨 其他雜項（部署設定、更新套件、CI 設定、建置腳本等）|
 
-4. 上傳到 GitHub Repo
+6. 上傳到 GitHub Repo
     ```bash
     git push
     ```
 
 
-### 若是要另外部署至 GitHub Pages，
+### 若是要另外部署至 GitHub Pages：
 
-5. 進行打包
+7. 進行打包
     ```bash
     npm run build
     ```
 
-6. 部署到 GitHub Pages
+8. 部署到 GitHub Pages
     ```bash
     npx gh-pages -d dist
     ```
 
-> 註：GitHub Pages 為靜態網站（未提供後端），僅作為前端 demo 用（將使用 mock data）。
+> 註：GitHub Pages 為靜態網站（不提供後端服務），僅作為前端 demo 用（將使用 mock data）。
 
 
 
@@ -618,4 +673,4 @@ my-stock-map/
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2026/02/22 22:37
+> README.md 更新時間：2026/07/10 22:22
