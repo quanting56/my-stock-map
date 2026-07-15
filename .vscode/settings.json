@@ -55,6 +55,17 @@
   // 不把 ESLint 當成 VS Code formatter，ESLint 只負責顯示診斷
   "eslint.format.enable": false,
 
+  "eslint.workingDirectories": [
+    {
+      "directory": "./frontend",
+      "changeProcessCWD": true
+    },
+    // {
+    //   "directory": "./backend",
+    //   "changeProcessCWD": true
+    // }
+  ],
+
   // 明確指定要檢查的語言
   "eslint.validate": [
     "javascript",

@@ -1,5 +1,5 @@
 {
-  "name": "my-stock-map",
+  "name": "my-stock-map-frontend",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "npm run type-check && vite build",
     "preview": "vite preview",
-    "deploy": "npm run build && gh-pages -d dist",
+    "deploy": "npm run type-check && vite build --base=/my-stock-map/ && gh-pages -d dist",
     "lint": "eslint .",
     "lint:strict": "eslint . --max-warnings=0",
     "format:check": "prettier . --check",
@@ -16,15 +16,9 @@
     "check:strict": "npm run format:check && npm run lint:strict && npm run type-check"
   },
   "dependencies": {
-    "better-sqlite3": "^12.4.1",
-    "cheerio": "^1.1.2",
-    "cors": "^2.8.5",
     "d3": "^7.9.0",
-    "express": "^5.1.0",
-    "iconv-lite": "^0.7.0",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.2",
-    "node-fetch": "^3.3.2",
     "pinia": "^3.0.3",
     "vue": "^3.5.22"
   },
@@ -39,6 +33,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.6",
     "eslint-plugin-vue": "^10.9.2",
+    "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
     "prettier": "3.8.4",
     "prettier-plugin-tailwindcss": "^0.8.0",

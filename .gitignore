@@ -7,10 +7,18 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Environment variables
+.env
+.env.*
 *.local
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
 
 # TypeScript incremental build cache
 *.tsbuildinfo
@@ -27,12 +35,6 @@ dist-ssr
 *.sln
 *.sw?
 
-# 忽略 SQLite 資料庫
-/data/*.db
-
-# 忽略整個 data 資料夾（假如未來還會有 log 或 cache）
-/data/*
-/server/data/*
-
-# 但保留 mockData 讓 git 能追蹤
-!src/data/mock/**
+# 後端忽略整個 data 資料夾
+/backend/data/*
+!/backend/data/.gitkeep

@@ -25,9 +25,6 @@ export default defineConfig([
     "coverage/**",
     "**/*.min.js",
 
-    // TODO: 臨時後端目前不納入 ESLint，待正式重構 Node.js 後再移除
-    "server/**",
-
     // TODO: 臨時 mock data 目前不納入檢查，待移除假資料時再移除
     "src/data/mock/**",
   ]),
@@ -62,7 +59,10 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: "latest",
       parserOptions: {
-        projectService: true, // 使用最接近每個檔案的 tsconfig.json 取得型別資訊
+        projectService: {
+          allowDefaultProject: ["vite.config.ts"],
+          defaultProject: "tsconfig.node.json",
+        },
         tsconfigRootDir: import.meta.dirname, // 明確指定專案根目錄，避免從其他目錄執行 ESLint 時找錯 tsconfig
         extraFileExtensions, // 讓 Project Service 同時認得 Vue SFC
       },
