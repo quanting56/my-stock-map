@@ -35,14 +35,15 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Railway Volume 可設 DATA_DIR=/data
-const DATA_DIR = process.env.DATA_DIR
-                   ? path.resolve(process.env.DATA_DIR)
-                   : path.join(__dirname, "..", "data");
+// 若 DATA_DIR 是相對路徑，固定以 backend/ 為基準
+const DATA_DIR =
+  process.env.DATA_DIR
+    ? path.resolve(__dirname, process.env.DATA_DIR)
+    : path.join(__dirname, "data");
 
-const dbDir = DATA_DIR;
-const dbPath = path.join(dbDir, "stocks.db");
+fs.mkdirSync(DATA_DIR, { recursive: true });
 
-if (!fs.existsSync(dbDir)) fs.mkdirSync(dbDir, { recursive: true });
+const dbPath = path.join(DATA_DIR, "stocks.db");
 
 
 // Health check
@@ -414,7 +415,7 @@ app.get("/api/stocks/:symbol", async (req, res) => {
           console.log(`🌐(forward-fill:init) 抓取 ${symbol} ${y}/${String(m).padStart(2, "0")}`);
           let rows = [];
           try {
-            rows = await fetchMonth(symbol, y, m);
+            rows = await fetchMonth(code, y, m);
           } catch (err) {
             console.warn(`⚠️(forward-fill:init) 抓取失敗 ${symbol} ${y}/${String(m).padStart(2,"0")}：${err.message}`);
             rows = [];
@@ -665,14 +666,14 @@ installFundamentalRoutes(app, db);  // 把 db 傳進去，讓 fundamentals 能�
 // -------------------------------
 //  在 production 服務前端打包好的檔案（Vue dist）
 // -------------------------------
-const distPath = path.join(__dirname, "..", "dist");   // ../dist
+const distPath = path.join(__dirname, "..", "frontend", "dist");   // ../frontend/dist
 
 if (fs.existsSync(distPath)) {
   // 提供靜態檔案（JS / CSS / assets）
   app.use(express.static(distPath));
 
   // 讓 Vue Router 的前端路由都回到 index.html
-  app.get(/.*/, (req, res) => {
+  app.get(/.*/, (_req, res) => {
     res.sendFile(path.join(distPath, "index.html"));
   });
 }

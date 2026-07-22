@@ -3,6 +3,10 @@ import fetch from "node-fetch";
 import * as cheerio from "cheerio";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const UA = {
   "User-Agent": "Mozilla/5.0",
@@ -12,12 +16,14 @@ const UA = {
 const TWSE_URL = "https://www.taifex.com.tw/cht/9/futuresQADetail";       // 上市（TAIEX） 來源
 const TPEX_URL = "https://www.bq888.taifex.com.tw/cht/2/tPEXPropertion";  // 上櫃（OTC）   來源
 
-const DATA_DIR = process.env.DATA_DIR
-                   ? path.resolve(process.env.DATA_DIR)
-                   : path.join(process.cwd(), "data");
+const DATA_DIR =
+  process.env.DATA_DIR
+    ? path.resolve(__dirname, process.env.DATA_DIR)
+    : path.join(__dirname, "data");
+
+fs.mkdirSync(DATA_DIR, { recursive: true });
 
 const CACHE_FILE = path.join(DATA_DIR, "market_ranks.json");
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
 
 
 function normalizeName(s=""){ return s.replace(/\s+/g,"").trim(); }
@@ -40,7 +46,7 @@ function parseTaifexTable(html, market){
     const tds = $(tr).find("td");
     if (tds.length < 4) return;
     const cells = tds.toArray().map(td => $(td).text().replace(/\s+/g," ").trim());
-    // 以 3 格為一組掃過去
+    // 以 4 格為一組掃過去
     for (let i = 0; i + 3 < cells.length; i += 4) {
       const rank = Number(cells[i]);
       const code = cells[i + 1];

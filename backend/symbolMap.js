@@ -3,12 +3,19 @@ import iconv from "iconv-lite";
 import * as cheerio from "cheerio";
 import fs from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // 確保 data 目錄存在
-const DATA_DIR = process.env.DATA_DIR
-                   ? path.resolve(process.env.DATA_DIR)
-                   : path.join(process.cwd(), "data");
-if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+const DATA_DIR =
+  process.env.DATA_DIR
+    ? path.resolve(__dirname, process.env.DATA_DIR)
+    : path.join(__dirname, "data");
+
+fs.mkdirSync(DATA_DIR, { recursive: true });
+
 const CACHE_PATH = path.join(DATA_DIR, "symbols.json");
 
 
@@ -218,6 +225,10 @@ export function installSymbolRoutes(app) {
     }
   });
 
+  app.get("/api/symbols/_debug", async (_req, res) => {
+    res.json({ size: cache?.length || 0, sample: (cache || []).slice(0, 5) });
+  });
+
   app.get("/api/symbols/:code", async (req, res) => {
     try {
       const hit = await getSymbol(req.params.code, { force: true });
@@ -226,9 +237,5 @@ export function installSymbolRoutes(app) {
     } catch (e) {
       res.status(500).json({ error: "symbol_lookup_failed", message: e.message });
     }
-  });
-
-  app.get("/api/symbols/_debug", async (_req, res) => {
-    res.json({ size: cache?.length || 0, sample: (cache || []).slice(0, 5) });
   });
 }

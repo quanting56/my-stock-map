@@ -11,10 +11,20 @@ function fmtYYYYMMDD(d = new Date()) {
   return `${y}${m}${dd}`;
 }
 
-// 共用：字串轉數字（遇到 '—' / 'N/A' 會回 null）
-function toNum(x) {
-  const n = Number(String(x ?? "").replace(/,/g, ""));
-  return Number.isFinite(n) ? n : null;
+/** 共用：字串轉數字（遇到 `—` / `N/A` 會回 `null`） */
+function toNum(value) {
+  const normalized = String(value ?? "").replace(/,/g, "").trim();
+
+  if (
+    !normalized ||
+    /^(?:—|-{1,2}|N\/A|NA)$/i.test(normalized)
+  ) {
+    return null;
+  }
+
+  const number = Number(normalized);
+
+  return Number.isFinite(number) ? number : null;
 }
 
 // === NEW: 直接用單檔端點（最近交易日）========================
