@@ -10,7 +10,7 @@ const config = {
   // 但執行 eslint --fix、prettier --write 或啟用儲存時自動修正，仍會自動修改程式碼
   plugins: ["prettier-plugin-tailwindcss"], // 假如未來加入其他 Prettier plugin，Tailwind plugin 必須放最後
 
-  printWidth: 120, // 一行建議寬度 → 這不是絕對最大長度，而是 Prettier 判斷是否換行的重要依據
+  printWidth: 100, // 一行建議寬度 → 這不是絕對最大長度，而是 Prettier 判斷是否換行的重要依據
   tabWidth: 2, // 使用 2 個空格縮排
   useTabs: false, // 不使用 Tab 字元
   semi: true, // JavaScript / TypeScript 保留分號
