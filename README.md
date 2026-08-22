@@ -693,6 +693,12 @@ npm run check:strict
 
 - 新增 Dashboard 大盤市值佔比圖焦點功能，當點擊 Dashboard 頁面其他含股票內容時，佔比圖中對應公司會自動高亮（若存在的話）。
 
+- 新增 [World History Timeline](https://observablehq.com/@tezzutezzu/world-history-timeline) 圖形，來視覺化各檔股票持股時間。
+
+- 新增 [Electricity Usage Heatmap](https://observablehq.com/@mbostock/electric-usage-2019) 圖形，來視覺化個檔股票於 每週 / 每月 / 每季 / 每年各月 的各時段漲跌福趨勢。
+
+- 新增 [Connected scatterplot](https://observablehq.com/notebook-kit/ex/d3/connected-scatterplot) 圖形，來視覺化 EPS、股價、年份的關係。
+
 
 ### 近期規劃中
 
@@ -735,10 +741,13 @@ npm run check:strict
 
 - 製作 Idle Modal。
 
+- 在 Repo 中新增 VitePress ，以存放投資筆記。
+
 
 ### 中長期規劃
 
 - 改善後端程式碼架構，將 `backend/index.js` 依功能拆分。
+  - 後端 Swagger 化。
 
 - 完成 **登入** / **登出** 功能。
   - 需要補的一些知識：
