@@ -15,6 +15,7 @@ const config = {
   useTabs: false, // 不使用 Tab 字元
   semi: true, // JavaScript / TypeScript 保留分號
   singleQuote: false, // false 代表 JavaScript / TypeScript 字串使用雙引號
+  experimentalOperatorPosition: "start", // 多行二元運算式的運算子放在下一行開頭，e.g. 'foo\n|| bar'
   quoteProps: "as-needed", // 只有必要時才替物件 property 加引號
   trailingComma: "all", // 多行參數、陣列、物件等保留尾逗號
   bracketSpacing: true, // 物件的大括號內保留空格，e.g. '{ name: "TSMC" }'
