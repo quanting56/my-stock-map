@@ -1,5 +1,5 @@
+import { ref, computed, type Component } from "vue";
 import { defineStore } from "pinia";
-import { ref, computed } from "vue";
 
 // 常用頁 → 先全部使用同步載入，未來再視情況看要不要改回 lazy load
 import DashboardPage from "@/pages/Dashboard.vue";
@@ -9,16 +9,12 @@ import BacktestPage from "@/pages/Backtest.vue";
 import ReportsPage from "@/pages/Reports.vue";
 import SettingsPage from "@/pages/Settings.vue";
 
-
-import type { Component } from "vue";
-
 interface UITab {
   id: string;
   icon: string;
   title: string;
   pages: Component;
-};
-
+}
 
 export const useUIStateStore = defineStore("uiState", () => {
   const tabs = [
@@ -26,7 +22,7 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "dashboard",
       icon: "🏠",
       title: "Dashboard",
-      pages: DashboardPage
+      pages: DashboardPage,
     },
     // {
     //   id: "dashboardOld",
@@ -48,7 +44,7 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "portfolio",
       icon: "💼",
       title: "Portfolio",
-      pages: PortfolioPage
+      pages: PortfolioPage,
     },
     // {
     //   id: "portfolionew",
@@ -70,13 +66,13 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "stockDetail",
       icon: "📈",
       title: "Stock Detail",
-      pages: StockDetailPage
+      pages: StockDetailPage,
     },
     {
       id: "backtest",
       icon: "🔍",
       title: "Backtest",
-      pages: BacktestPage
+      pages: BacktestPage,
     },
     // {
     //   id: "backtestNew",
@@ -90,17 +86,17 @@ export const useUIStateStore = defineStore("uiState", () => {
       id: "reports",
       icon: "📊",
       title: "Reports",
-      pages: ReportsPage
+      pages: ReportsPage,
     },
     {
       id: "settings",
       icon: "⚙️",
       title: "Settings",
-      pages: SettingsPage
-    }
+      pages: SettingsPage,
+    },
   ] as const satisfies readonly [UITab, ...UITab[]];
 
-  type TabId = typeof tabs[number]["id"];
+  type TabId = (typeof tabs)[number]["id"];
 
   // 處理 tab 切換
   const activeTab = ref<TabId>(tabs[0].id);
@@ -111,7 +107,12 @@ export const useUIStateStore = defineStore("uiState", () => {
 
   function setTab(tabId: TabId) {
     activeTab.value = tabId;
-  };
+  }
 
-  return { tabs, activeTab, currentTab, setTab };
+  return {
+    tabs,
+    activeTab,
+    currentTab,
+    setTab,
+  };
 });

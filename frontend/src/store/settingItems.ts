@@ -1,10 +1,5 @@
-// 此 pinia 檔原命名為 settings.ts
-// 因為會與檔案內的 settings 變數搞混
-// 所以改命名為 settingItems.ts
-
 import { defineStore } from "pinia";
 import { reactive } from "vue";
-
 
 type MonetaryUnit = "TWD" | "USD" | "JPY";
 type NotifyFrequency = "never" | "daily" | "weekly" | "monthly" | "custom";
@@ -19,8 +14,7 @@ export interface SettingsState {
   notifyDaily: boolean;
   notifyTrade: boolean;
   notifyFrequency: NotifyFrequency;
-};
-
+}
 
 // localStorage key
 const STORAGE_KEY = "my-stock-map:settings";
@@ -35,31 +29,52 @@ const defaultSettings: SettingsState = {
   notifyPrice: false,
   notifyDaily: false,
   notifyTrade: false,
-  notifyFrequency: "never"
+  notifyFrequency: "never",
 };
 
-// helpers
+// 資料驗證與合併工具
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
 }
 
 function mergeSettings(parsed: unknown): SettingsState {
-  if (!isRecord(parsed)) return { ...defaultSettings };
+  if (!isRecord(parsed)) {
+    return { ...defaultSettings };
+  }
+
   return {
     ...defaultSettings,
-    displayName: typeof parsed.displayName === "string" ? parsed.displayName : defaultSettings.displayName,
+
+    displayName:
+      typeof parsed.displayName === "string" ? parsed.displayName : defaultSettings.displayName,
     email: typeof parsed.email === "string" ? parsed.email : defaultSettings.email,
-    monetaryUnit: (parsed.monetaryUnit === "TWD" || parsed.monetaryUnit === "USD" || parsed.monetaryUnit === "JPY")
-      ? parsed.monetaryUnit
-      : defaultSettings.monetaryUnit,
-    numberPrecision: typeof parsed.numberPrecision === "number" ? parsed.numberPrecision : defaultSettings.numberPrecision,
-    reduceMotion: typeof parsed.reduceMotion === "boolean" ? parsed.reduceMotion : defaultSettings.reduceMotion,
-    notifyPrice: typeof parsed.notifyPrice === "boolean" ? parsed.notifyPrice : defaultSettings.notifyPrice,
-    notifyDaily: typeof parsed.notifyDaily === "boolean" ? parsed.notifyDaily : defaultSettings.notifyDaily,
-    notifyTrade: typeof parsed.notifyTrade === "boolean" ? parsed.notifyTrade : defaultSettings.notifyTrade,
-    notifyFrequency: (parsed.notifyFrequency === "never" || parsed.notifyFrequency === "daily" || parsed.notifyFrequency === "weekly" || parsed.notifyFrequency === "monthly" || parsed.notifyFrequency === "custom")
-      ? parsed.notifyFrequency
-      : defaultSettings.notifyFrequency
+    monetaryUnit:
+      parsed.monetaryUnit === "TWD"
+      || parsed.monetaryUnit === "USD"
+      || parsed.monetaryUnit === "JPY"
+        ? parsed.monetaryUnit
+        : defaultSettings.monetaryUnit,
+    numberPrecision:
+      typeof parsed.numberPrecision === "number"
+        ? parsed.numberPrecision
+        : defaultSettings.numberPrecision,
+    reduceMotion:
+      typeof parsed.reduceMotion === "boolean" ? parsed.reduceMotion : defaultSettings.reduceMotion,
+
+    notifyPrice:
+      typeof parsed.notifyPrice === "boolean" ? parsed.notifyPrice : defaultSettings.notifyPrice,
+    notifyDaily:
+      typeof parsed.notifyDaily === "boolean" ? parsed.notifyDaily : defaultSettings.notifyDaily,
+    notifyTrade:
+      typeof parsed.notifyTrade === "boolean" ? parsed.notifyTrade : defaultSettings.notifyTrade,
+    notifyFrequency:
+      parsed.notifyFrequency === "never"
+      || parsed.notifyFrequency === "daily"
+      || parsed.notifyFrequency === "weekly"
+      || parsed.notifyFrequency === "monthly"
+      || parsed.notifyFrequency === "custom"
+        ? parsed.notifyFrequency
+        : defaultSettings.notifyFrequency,
   };
 }
 
@@ -68,12 +83,14 @@ function loadSettingsFromStorage(): SettingsState {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (raw) {
       const parsed: unknown = JSON.parse(raw);
-      return { ...defaultSettings, ...mergeSettings(parsed) };
+
+      return mergeSettings(parsed);
     }
   } catch (e) {
     console.warn("[settings] 讀取 localStorage 失敗：", e);
   }
-  // localStorage 沒資料的話，return fresh copy
+
+  // localStorage 沒有資料時，回傳預設設定的副本
   return { ...defaultSettings };
 }
 
@@ -93,6 +110,7 @@ export const useSettingItemsStore = defineStore("settingItems", () => {
   // [ACTION]：重設為預設值 + 清除 localStorage
   function reset() {
     Object.assign(settings, defaultSettings);
+
     try {
       localStorage.removeItem(STORAGE_KEY);
     } catch (e) {
@@ -103,6 +121,6 @@ export const useSettingItemsStore = defineStore("settingItems", () => {
   return {
     settings,
     saveToStorage,
-    reset
+    reset,
   };
 });
