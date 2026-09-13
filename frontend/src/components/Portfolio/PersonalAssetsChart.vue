@@ -51,7 +51,7 @@
 import * as d3 from "d3";
 import { ref, computed, watch, onMounted, onBeforeUnmount, nextTick } from "vue";
 
-import { usePersonalAssetsStore } from "@/store/personalAssets";
+import { usePersonalAssetsStore } from "@/stores/personalAssets";
 import type { PersonalAssetsParsedRow } from "@/types/personalAssets";
 import bankColors from "@/constants/bankColors";
 

@@ -1,4 +1,4 @@
-import type { Holding } from "@/store/portfolio";
+import type { Holding } from "@/stores/portfolio";
 
 type MockDataHolding = Omit<Holding, "stockValue">;
 

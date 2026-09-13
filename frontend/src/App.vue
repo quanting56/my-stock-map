@@ -115,8 +115,8 @@ import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 import LogInPage from "@/components/Common/LogInPage.vue";
 
 import { watch, ref } from "vue";
-import { useUIThemeStore } from "@/store/theme";
-import { useUIStateStore } from "@/store/uiState";
+import { useUIThemeStore } from "@/stores/theme";
+import { useUIStateStore } from "@/stores/uiState";
 
 const uiThemeStore = useUIThemeStore();
 const uiStateStore = useUIStateStore();

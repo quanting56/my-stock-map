@@ -17,7 +17,7 @@
 </template>
 
 <script setup>
-import { useUIStateStore } from "@/store/uiState";
+import { useUIStateStore } from "@/stores/uiState";
 
 const uiState = useUIStateStore();
 </script>

@@ -66,7 +66,7 @@
 </template>
 
 <script setup>
-import { useSettingItemsStore } from "@/store/settingItems";
+import { useSettingItemsStore } from "@/stores/settingItems";
 
 const settingItems = useSettingItemsStore();
 

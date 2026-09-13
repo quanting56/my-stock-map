@@ -93,7 +93,7 @@
 
 <script setup lang="ts">
 import { ref, computed, watch } from "vue";
-import { useQueryStockStore } from "@/store/queryStock";
+import { useQueryStockStore } from "@/stores/queryStock";
 import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
 
 import PriceChartCard from "@/components/StockDetail/PriceChartCard.vue";

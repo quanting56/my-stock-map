@@ -66,9 +66,9 @@
 
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from "vue";
-import { useUIStateStore } from "@/store/uiState";
-import { useUIThemeStore } from "@/store/theme";
-import { useQueryStockStore } from "@/store/queryStock";
+import { useUIStateStore } from "@/stores/uiState";
+import { useUIThemeStore } from "@/stores/theme";
+import { useQueryStockStore } from "@/stores/queryStock";
 
 import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 
