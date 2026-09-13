@@ -289,8 +289,7 @@ my-stock-map/
 │   │   │   ├─ ReportImport.vue         ← 報表匯入區
 │   │   │   ├─ ReportPreview.vue        ← 報表預覽區
 │   │   │   └─ SummaryCards.vue         ← Summary 卡片（Reports 版本）
-│   │   ├─ Settings/    ← 暫時沒有拆分
-│   │   └─ Demo/        ← 設計基礎 UI/UX 時的 legacy
+│   │   └─ Settings/    ← 暫時沒有拆分
 │   │
 │   ├─ store/
 │   │   ├─ displayFormat.ts   ← 貨幣 / 百分比格式化（UI 顯示設定用）

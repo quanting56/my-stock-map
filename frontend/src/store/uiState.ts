@@ -24,44 +24,12 @@ export const useUIStateStore = defineStore("uiState", () => {
       title: "Dashboard",
       pages: DashboardPage,
     },
-    // {
-    //   id: "dashboardOld",
-    //   icon: "🏠",
-    //   title: "Dashboard (old)",
-    //   pages: defineAsyncComponent(() =>
-    //     import("@/components/Demo/AppAndDashboardDemo.vue")
-    //   )
-    // },
-    // {
-    //   id: "dashboardNew",
-    //   icon: "🏠",
-    //   title: "Dashboard (new)",
-    //   pages: defineAsyncComponent(() =>
-    //     import("@/components/Demo/DashboardNewDemo.vue")
-    //   )
-    // },
     {
       id: "portfolio",
       icon: "💼",
       title: "Portfolio",
       pages: PortfolioPage,
     },
-    // {
-    //   id: "portfolionew",
-    //   icon: "💼",
-    //   title: "Portfolio (new) ❌",
-    //   pages: defineAsyncComponent(() =>
-    //     import("@/components/Demo/PortfolioNewDemo.vue")
-    //   )
-    // },
-    // {
-    //   id: "stockDetailOld",
-    //   icon: "📈",
-    //   title: "Stock Detail (old) ❌",
-    //   pages: defineAsyncComponent(() =>
-    //     import("@/components/Demo/StockDetailOldDemo.vue")
-    //   )
-    // },
     {
       id: "stockDetail",
       icon: "📈",
@@ -74,14 +42,6 @@ export const useUIStateStore = defineStore("uiState", () => {
       title: "Backtest",
       pages: BacktestPage,
     },
-    // {
-    //   id: "backtestNew",
-    //   icon: "🔍",
-    //   title: "Backtest (new) ❌",
-    //   pages: defineAsyncComponent(() =>
-    //     import("@/components/Demo/BacktestNewDemo.vue")
-    //   )
-    // },
     {
       id: "reports",
       icon: "📊",
