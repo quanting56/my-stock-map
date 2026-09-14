@@ -22,7 +22,7 @@ const config = {
   bracketSameLine: false, // 多行 Vue / HTML 標籤的 > 放在下一行
   arrowParens: "always", // 箭頭函式只有一個參數時也保留括號，e.g. '(value) => value'
   endOfLine: "lf", // Git 與 macOS/Linux 常用的 LF 換行，也就是 \n
-  singleAttributePerLine: false, // 不強迫 Vue template 每個 attribute 都獨占一行，太長時 Prettier 才建議拆行
+  singleAttributePerLine: true, // Vue / HTML 標籤有多個 attribute 時，每行只放一個
   vueIndentScriptAndStyle: false, // Vue SFC 的 script 與 style 內容不額外縮排
 
   // =========
