@@ -1,62 +1,222 @@
 @import "tailwindcss";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
+/*
+ * =========================================================
+ * My Stock Map Design Tokens
+ * =========================================================
+ *
+ * 原則：
+ * - background / surface：頁面與容器層級
+ * - foreground：文字層級
+ * - brand：品牌識別
+ * - action：主要互動操作
+ * - gain / loss：臺股市場漲跌與損益
+ * - chart-*：一般資料視覺化分類色
+ */
 
 @theme {
-  --color-bg: #F9FAFB;
-  --color-primary: #D97706;
-  --color-secondary: #4B5563;
-  --color-text: #111827;
-  --color-card: #FFFFFF;
-  --color-border: #E5E7EB;
+  /* =======================================================
+   * Base / Surface
+   * ======================================================= */
 
-  --color-line1: #F59E0B;
-  --color-line2: #EF4444;
-  --color-line3: #14BBA6;
+  --color-background: #f7f8fa;
 
-  --color-pie1: #7C3AED;  /* 紫色 */
-  --color-pie2: #2563EB;  /* 藍色 */
-  --color-pie3: #14BBA6;  /* 藍綠色 */
-  --color-pie4: #F59E0B;  /* 橘黃色 */
-  --color-pie5: #EF4444;  /* 紅色 */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f3f4f6;
+  --color-surface-hover: #f3f4f6;
+
+  --color-border: #e5e7eb;
+  --color-border-strong: #d1d5db;
+
+  /* =======================================================
+   * Text
+   * ======================================================= */
+
+  --color-foreground: #111827;
+  --color-foreground-muted: #6b7280;
+  --color-foreground-subtle: #9ca3af;
+
+  /* =======================================================
+   * Brand
+   * ======================================================= */
+
+  --color-brand: #d97706;
+  --color-brand-hover: #b45309;
+
+  --color-brand-soft: #fff7ed;
+  --color-brand-soft-foreground: #9a3412;
+
+  /* =======================================================
+   * Primary Action
+   * ======================================================= */
+
+  --color-action: #b45309;
+  --color-action-hover: #92400e;
+  --color-action-foreground: #ffffff;
+
+  --color-focus: #d97706;
+
+  /* =======================================================
+   * Financial / Market
+   *
+   * 臺股慣例：
+   * - gain：紅色
+   * - loss：綠色
+   * ======================================================= */
+
+  --color-gain: #ef4444;
+  --color-loss: #14bba6;
+
+  /* =======================================================
+   * General Status
+   *
+   * success / danger 是一般 UI 狀態，不與臺股漲跌語意混用。
+   * ======================================================= */
+
+  --color-success: #15803d;
+  --color-warning: #b45309;
+  --color-danger: #dc2626;
+  --color-info: #2563eb;
+
+  /* =======================================================
+   * Chart Palette
+   * ======================================================= */
+
+  --color-chart-1: #7c3aed; /* Violet */
+  --color-chart-2: #2563eb; /* Blue */
+  --color-chart-3: #14b8a6; /* Teal */
+  --color-chart-4: #f59e0b; /* Amber */
+  --color-chart-5: #ef4444; /* Red */
+  --color-chart-6: #65a30d; /* Lime */
+  --color-chart-7: #db2777; /* Pink */
+  --color-chart-8: #0891b2; /* Cyan */
+  --color-chart-9: #ea580c; /* Orange */
+  --color-chart-10: #4f46e5; /* Indigo */
+  --color-chart-11: #a16207; /* Brown / Ochre */
+  --color-chart-12: #475569; /* Slate */
+
+  /*
+   * =======================================================
+   * Legacy aliases
+   * =======================================================
+   *
+   * 舊元件仍在使用，暫時保留。
+   * 待所有 SFC 遷移至新的 semantic tokens 後再移除。
+   */
+
+  --color-bg: var(--color-background);
+  --color-primary: var(--color-brand);
+  --color-secondary: var(--color-foreground-muted);
+  --color-text: var(--color-foreground);
+  --color-card: var(--color-surface);
+
+  --color-line1: var(--color-brand);
+  --color-line2: var(--color-gain);
+  --color-line3: var(--color-loss);
+
+  --color-pie1: var(--color-chart-1);
+  --color-pie2: var(--color-chart-2);
+  --color-pie3: var(--color-chart-3);
+  --color-pie4: var(--color-chart-4);
+  --color-pie5: var(--color-chart-5);
 }
 
-/* 夜間模式（使用 data-theme="dark" 控制） */
+/*
+ * =========================================================
+ * Dark Theme
+ * =========================================================
+ *
+ * 目前仍沿用 App.vue 的 data-theme。
+ * 之後再統一至 <html class="dark">。
+ */
+
 [data-theme="dark"] {
-  --color-bg: #000000;
-  --color-primary: #FACC15;
-  --color-secondary: #FDE68A;
-  --color-text: #E5E7EB;
-  --color-card: #111111;
-  --color-border: #27272A;
+  /* Base / Surface */
 
-  --color-line1: #FACC15;
-  --color-line2: #F87171;
-  --color-line3: #2DD4BF;
+  --color-background: #09090b;
 
-  --color-pie1: #A78BFA;  /* 柔和紫 */
-  --color-pie2: #60A5FA;  /* 亮藍偏霧面 */
-  --color-pie3: #2DD4BF;  /* 青綠偏亮 */
-  --color-pie4: #FBBF24;  /* 暖黃偏深 */
-  --color-pie5: #F87171;  /* 柔紅偏粉 */
+  --color-surface: #111214;
+  --color-surface-muted: #18181b;
+  --color-surface-hover: #1f2024;
+
+  --color-border: #27272a;
+  --color-border-strong: #3f3f46;
+
+  /* Text */
+
+  --color-foreground: #f4f4f5;
+  --color-foreground-muted: #a1a1aa;
+  --color-foreground-subtle: #71717a;
+
+  /* Brand */
+
+  --color-brand: #facc15;
+  --color-brand-hover: #fde047;
+
+  --color-brand-soft: #422006;
+  --color-brand-soft-foreground: #fde68a;
+
+  /* Primary Action */
+
+  --color-action: #eab308;
+  --color-action-hover: #facc15;
+  --color-action-foreground: #18181b;
+
+  --color-focus: #facc15;
+
+  /* Financial / Market */
+
+  --color-gain: #f87171;
+  --color-loss: #2dd4bf;
+
+  /* General Status */
+
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-info: #60a5fa;
+
+  /* Chart Palette */
+
+  --color-chart-1: #a78bfa; /* Violet */
+  --color-chart-2: #60a5fa; /* Blue */
+  --color-chart-3: #2dd4bf; /* Teal */
+  --color-chart-4: #fbbf24; /* Amber */
+  --color-chart-5: #f87171; /* Red */
+  --color-chart-6: #a3e635; /* Lime */
+  --color-chart-7: #f472b6; /* Pink */
+  --color-chart-8: #22d3ee; /* Cyan */
+  --color-chart-9: #fb923c; /* Orange */
+  --color-chart-10: #818cf8; /* Indigo */
+  --color-chart-11: #d6a756; /* Brown / Ochre */
+  --color-chart-12: #94a3b8; /* Slate */
 }
 
-
-@layer base {}
-
-@layer components {}
+/*
+ * =========================================================
+ * Legacy utilities
+ * =========================================================
+ *
+ * 舊元件相容層。
+ * 新程式碼不再使用這些 class。
+ */
 
 @layer utilities {
   .bg-theme {
-    background-color: var(--color-bg);
+    background-color: var(--color-background);
   }
+
   .text-theme {
-    color: var(--color-text);
+    color: var(--color-foreground);
   }
+
   .card-theme {
-    background-color: var(--color-card);
+    background-color: var(--color-surface);
     border-color: var(--color-border);
   }
+
   .border-theme {
     border-color: var(--color-border);
   }
