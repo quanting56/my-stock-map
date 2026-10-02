@@ -125,14 +125,26 @@
 
 /*
  * =========================================================
+ * Browser Color Scheme
+ * =========================================================
+ */
+
+:root {
+  color-scheme: light;
+}
+
+/*
+ * =========================================================
  * Dark Theme
  * =========================================================
  *
- * 目前仍沿用 App.vue 的 data-theme。
- * 之後再統一至 <html class="dark">。
+ * 由 <html class="dark"> 作為全站唯一的深色模式狀態來源。
+ * Tailwind dark variant 與 semantic color tokens 共用同一狀態。
  */
 
-[data-theme="dark"] {
+:root.dark {
+  color-scheme: dark;
+
   /* Base / Surface */
 
   --color-background: #09090b;

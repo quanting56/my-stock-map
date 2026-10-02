@@ -1,8 +1,5 @@
 <template>
-  <div
-    :data-theme="uiThemeStore.isDarkMode ? 'dark' : 'light'"
-    class="bg-theme text-theme flex min-h-screen flex-col transition-colors duration-500"
-  >
+  <div class="bg-theme text-theme flex min-h-screen flex-col transition-colors duration-500">
     <!-- 登入 modal -->
     <LogInPage
       :open-modal="isLogInPageOpen"
