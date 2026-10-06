@@ -2,7 +2,11 @@
 
 **My Stock Map** 是一個以 **個人記帳**、**長期投資管理** 與 **投資資料視覺化** 為核心的專案。
 
-專案目前以 **臺股資料** 為主，目標是協助使用者快速管理持股、檢視資產配置、追蹤個股價格走勢、查看基本面摘要與新聞資訊，並逐步加入投資策略回測與報表匯出功能。前端使用 **Vue 3 + Vite + Pinia + D3.js + Tailwind CSS + TypeScript** 開發；後端使用 SQLite 與 JSON 快取歷史股價、股票清單及市值排名資料，以整合 TWSE、TAIFEX、FinMind、GDELT 與 Google News 等公開資料來源。
+專案目前以 **臺股資料** 為主，目標是協助使用者快速管理持股、檢視資產配置、追蹤個股價格走勢、查看基本面摘要與新聞資訊，並逐步加入投資策略回測與報表匯出功能。
+
+前端使用 **Vue 3 + Vite + Pinia + D3.js + Tailwind CSS + TypeScript** 開發；後端使用 **Node.js + Express** 建置 API，並以 **SQLite 與 JSON** 快取歷史股價、股票清單及市值排名資料，以整合 TWSE、TAIFEX、FinMind、GDELT 與 Google News 等公開資料來源。
+
+前端與後端位於同一個 Git repository，但各自維護獨立的 `package.json`、套件依賴與開發環境。
 
 > ⚠️ **免責聲明**：本專案僅供個人學習、作品集展示與技術實驗使用，所有資料與分析結果都不構成任何投資建議。投資前請自行評估風險承受能力。
 
@@ -26,8 +30,8 @@
 [![Express](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24.dependencies.express&label=Express&logo=express&logoColor=white)](https://expressjs.com/)
 [![better-sqlite3](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24%5B%22dependencies%22%5D%5B%22better-sqlite3%22%5D&label=better-sqlite3&logo=sqlite&color=003B57)](https://github.com/WiseLibs/better-sqlite3)
 [![Cheerio](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24.dependencies.cheerio&label=Cheerio&logo=cheerio&color=E88C1F)](https://cheerio.js.org/)
-![CORS](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24.dependencies.cors&label=CORS)
-![node-fetch](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24%5B%22dependencies%22%5D%5B%22node-fetch%22%5D&label=node-fetch&logo=nodedotjs&color=339933)
+[![CORS](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24.dependencies.cors&label=CORS)](https://www.npmjs.com/package/cors)
+[![node-fetch](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fquanting56%2Fmy-stock-map%2Fmain%2Fbackend%2Fpackage.json&query=%24%5B%22dependencies%22%5D%5B%22node-fetch%22%5D&label=node-fetch&logo=nodedotjs&color=339933)](https://github.com/node-fetch/node-fetch)
 
 <!-- repo information -->
 
@@ -42,6 +46,7 @@
 - [功能概覽（Overview）](#overview)
 - [技術堆疊（Technology Stack）](#technology-stack)
 - [專案架構（Project Structure）](#project-structure)
+- [Git 分支策略（Git Branch Strategy）](#git-branch-strategy)
 - [資料流程簡述（Data Flow）](#data-flow)
 - [開發環境快速啟動（Quick Startup）](#quick-startup)
 - [程式碼檢查與格式設定（Code Quality）](#code-quality)
@@ -204,9 +209,8 @@ my-stock-map/
  │  │   │   └─ Settings.vue     ← 個人化設定頁
  │  │   │
  │  │   ├─ components/     ← 各頁面與全站共用的 Vue 元件
- │  │   ├─ store/          ← Pinia stores，管理全站狀態與瀏覽器端資料
+ │  │   ├─ stores/         ← Pinia stores，管理全站狀態與瀏覽器端資料
  │  │   ├─ api/            ← 前端 API 存取
- │  │   ├─ assets/         ← 由前端程式匯入並交由 Vite 處理的靜態資源
  │  │   ├─ constants/      ← 跨元件共用的常數與固定設定
  │  │   ├─ data/           ← 前端使用的資料檔案
  │  │   │   └─ mock/            ← 開發及無後端環境使用的模擬資料
@@ -291,21 +295,18 @@ my-stock-map/
 │   │   │   └─ SummaryCards.vue         ← Summary 卡片（Reports 版本）
 │   │   └─ Settings/    ← 暫時沒有拆分
 │   │
-│   ├─ store/
+│   ├─ stores/
 │   │   ├─ displayFormat.ts   ← 貨幣 / 百分比格式化（UI 顯示設定用）
 │   │   ├─ personalAssets.ts  ← 使用者個人每日資產紀錄
 │   │   ├─ portfolio.ts       ← 持股資料 + localStorage
 │   │   ├─ queryStock.ts      ← 全站目前查詢的 symbol（目前選中的股票代碼）
 │   │   ├─ settingItems.ts    ← 一般設定（顯示名稱 / Email / 貨幣單位 / 通知偏好）
-│   │   ├─ theme.ts           ← 深淺色主題（Tailwind dark mode 切換）
+│   │   ├─ theme.ts           ← 深淺色主題狀態，透過 <html class="dark"> 統一控制全站主題
 │   │   └─ uiState.ts         ← 頁籤 / 主頁面切換
 │   │
 │   ├─ api/
 │   │   ├─ personalAssets.ts  ← 讀取或寫入個人每日資產紀錄（目前暫串 localStorage）
 │   │   └─ stocksApi.ts       ← 與本地後端溝通的股票 API 工具（股價序列正規化 / 公司清單 / 基本面 / 新聞 + 前端快取）
-│   │
-│   ├─ assets/
-│   │   └─ vue.svg
 │   │
 │   ├─ constants/
 │   │   └─ bankColors.ts      ← 設定圖表裡各家銀行的顏色呈現
@@ -330,9 +331,9 @@ my-stock-map/
 │   │   ├─ dateNormalize.ts        ← 日期格式轉換
 │   │   └─ numberNormalize.ts      ← 數字格式（型別）轉換
 │   │
-│   ├─ App.vue     ← Root 佈局：Header / 側邊選單 / 主內容 + data-theme 深淺色容器
+│   ├─ App.vue     ← Root 佈局：Header / 側邊選單 / 主內容 / Footer，以及全站 Modal 與頁面切換
 │   ├─ main.ts     ← Vue 進入點：建立 App、掛載 Pinia、載入全域樣式並掛載到 #app
-│   └─ style.css   ← Tailwind 入口 + 自訂 light/dark 主題 + 自訂 UI utility 類別
+│   └─ style.css   ← Tailwind CSS 入口、全站 semantic design tokens、light / dark 主題色票與共用樣式
 ├─ .prettierignore      ← Prettier 檢查時忽略的檔案與資料夾
 ├─ eslint.config.mjs    ← ESLint Flat Config 設定，負責 Vue、TypeScript、JavaScript 與 Prettier 提示檢查
 ├─ index.html
@@ -376,6 +377,33 @@ my-stock-map/
 
 
 
+<a id="git-branch-strategy"></a>
+## Git 分支策略（Git Branch Strategy）
+
+目前專案採用以下長期分支：
+
+```text
+─┬──── main ───────────┬───────────────────┬─ 
+ └─ develop ─┬─┬──────┴─────────────┬──┬──┴──
+             └───── dev_frontend ──┴─────────
+               └─── dev_backend ──────┴──────
+```
+
+| Branch | 用途 |
+| --- | --- |
+| `main` | 穩定版本；供正式部署與 Demo 使用 |
+| `develop` | 整合前後端最新且可運作的開發版本 |
+| `dev_frontend` | 前端功能開發、重構與 UI 調整 |
+| `dev_backend` | 後端 API、資料處理與伺服器功能開發 |
+
+### 一般開發流程：
+
+`dev_frontend` / `dev_backend` → `develop` → `main`。
+
+前端或後端完成一個可整合的階段後合併至 `develop`；待整體功能確認穩定後，再由 `develop` 合併至 `main`，作為穩定部署版本。
+
+
+
 <a id="data-flow"></a>
 ## 資料流程簡述（Data Flow）
 
@@ -389,7 +417,7 @@ my-stock-map/
 
     - 若無 → 打 TWSE `STOCK_DAY` API 抓指定月份，寫入 SQLite。
 
-    - 未來同一檔、同一範圍就直接從 SQLite 回傳，不再打 TWSE。
+    - 未來已完整快取的歷史月份會直接從 SQLite 讀取，若缺少指定月份或當月資料仍需更新，才會再次呼叫 TWSE API。
 
 4. `fetchStockSeries()` 內部把後端回傳的原始 JSON 正規化成 `StockBar[]`（日期→`Date`，數字→`number`），用 D3.js 畫圖。
 
@@ -519,7 +547,7 @@ npm run check:strict
 <a id="git-commit"></a>
 ## 上傳更新（Git Commit）
 
-> Railway 會在每次 push 後自動觸發部署，無須另外手動 build。
+> Railway 以 `main` 作為部署分支；當更新合併並 push 至 `main` 後會自動觸發部署。
 
 > 步驟 1-3 暫時僅於前端程式碼異動時使用，並需先執行 `cd frontend` 以進入 `frontend/`。
 
@@ -571,7 +599,7 @@ npm run check:strict
         |`revert`|⏪ 撤銷回復先前的commit|
         |`chore`|🔨 其他雜項（部署設定、更新套件、CI 設定、建置腳本等）|
 
-6. 上傳到 GitHub Repo
+6. 上傳目前開發分支到 GitHub Repo
     ```bash
     git push
     ```
@@ -598,7 +626,7 @@ npm run check:strict
 <a id="data-cache--long-term-data"></a>
 ## 資料快取與長期資料（Data Cache & Long-term Data）
 
-> 注意：`backend/data/` 為後端快取（部署環境可透過 `DATA_DIR` 環境變數指定其他儲存位置，例如 Railway Volume）；`frontend/src/data/mock/` 則為前端 mock 資料。
+> 注意：`backend/data/` 為後端快取（部署環境可透過 `DATA_DIR` 環境變數指定其他儲存位置，例如 Railway Volume），其中 SQLite 與 JSON 快取均屬執行期資料，不納入 Git，repository 僅保留 `.gitkeep` 以維持目錄結構；`frontend/src/data/mock/` 則為前端 mock 資料。
 
 - **股價快取 SQLite**
     - 檔案路徑：`backend/data/stocks.db`
@@ -626,13 +654,13 @@ npm run check:strict
     - 全站頂部導覽列：顯示 My Stock Map Logo、提供股票搜尋框（支援「/」快捷鍵聚焦）、登入按鈕與深淺色主題切換。
 
 - `components/Common/SideBarMenu.vue`
-    - 左側功能選單：依據 `uiState.ts` store 的 `tabs` 資訊產生按鈕，並用來切換 **Dashboard** / **Portfolio** / **StockDetail** / **Backtest** / **Reports** / **Settings** 等主要頁面。
+    - 左側功能選單：依據 `stores/uiState.ts` 的 `tabs` 資訊產生按鈕，並用來切換 **Dashboard** / **Portfolio** / **StockDetail** / **Backtest** / **Reports** / **Settings** 等主要頁面。
 
 - `components/Common/Footer.vue`
     - 頁尾區塊：顯示 Logo 與專案標語、贊助連結群組、作者聯絡 Email 與版權 / 免責說明文字。
 
 - `components/Common/EditHoldingModal.vue`
-    - 編輯持股資料的彈出視窗：以表格方式一次調整多檔持股（代碼、名稱、股數、現價、成本），支援新增 / 刪除列，儲存時會更新 `portfolioStore.holdingDetailsData` 並呼叫 `portfolioStore.recalcValues()`，實際的持股資料持久化則由 `portfolio.ts` store 統一寫入 `localStorage`。
+    - 編輯持股資料的彈出視窗：以表格方式一次調整多檔持股（代碼、名稱、股數、現價、成本），支援新增 / 刪除列，儲存時會更新 `portfolioStore.holdingDetailsData` 並呼叫 `portfolioStore.recalcValues()`，實際的持股資料持久化則由 `stores/portfolio.ts` 統一寫入 `localStorage`。
 
 - `components/Common/LoadingModal.vue`
     - 全螢幕 Loading 遮罩（使用 `<Teleport>` 掛到 `<body>`）：顯示轉圈圈與自訂訊息，用於資料載入中的全局提示。
@@ -662,7 +690,7 @@ npm run check:strict
 
 - 新增 `personalAssets` 的編輯 Modal 介面。
 
-- 確認 `frontend/src/store/settingItems.ts` 和 `frontend/src/store/displayFormat.ts` 有沒有項目（例如貨幣單位）要合併，並確認與 `frontend/src/pages/Settings` 的項目是否有相符。
+- 確認 `frontend/src/stores/settingItems.ts` 和 `frontend/src/stores/displayFormat.ts` 有沒有項目（例如貨幣單位）要合併，並確認與 `frontend/src/pages/Settings` 的項目是否有相符。
 
 - 針對手機或平板使用者做 UI/UX 優化。
 
@@ -674,15 +702,13 @@ npm run check:strict
 
 - 完成 Footer 的超連結與其頁面。
 
-- 統一按鈕樣式。
-
 - 改善 Stock Detail 頁面「價格走勢圖」的 tooltip 互動效果。
 
 - Portfolio 「個人資產變化趨勢圖」加上現金佔比圖。
 
 - Backtest 加入是否開啟「通膨修正」選項。
 
-- 重新調整整體網站配色。
+- 逐步將既有 SFC 的 legacy 色彩 class 與 CSS variable 遷移至新的 semantic design tokens，並統一按鈕、表單、卡片與互動狀態的配色。
 
 - Dashboard 頁面的大盤市值佔比圖加上上櫃公司，使其能夠在上市公司與上櫃公司間做切換。
 
@@ -694,7 +720,7 @@ npm run check:strict
 
 - 新增 [World History Timeline](https://observablehq.com/@tezzutezzu/world-history-timeline) 圖形，來視覺化各檔股票持股時間。
 
-- 新增 [Electricity Usage Heatmap](https://observablehq.com/@mbostock/electric-usage-2019) 圖形，來視覺化個檔股票於 每週 / 每月 / 每季 / 每年各月 的各時段漲跌福趨勢。
+- 新增 [Electricity Usage Heatmap](https://observablehq.com/@mbostock/electric-usage-2019) 圖形，來視覺化各檔股票於 每週 / 每月 / 每季 / 每年各月 的各時段歷史漲跌幅趨勢。
 
 - 新增 [Connected scatterplot](https://observablehq.com/notebook-kit/ex/d3/connected-scatterplot) 圖形，來視覺化 EPS、股價、年份的關係。
 
@@ -740,7 +766,7 @@ npm run check:strict
 
 - 製作 Idle Modal。
 
-- 在 Repo 中新增 VitePress ，以存放投資筆記。
+- 在 Repo 中新增 VitePress，以存放投資筆記。
 
 
 ### 中長期規劃
@@ -784,4 +810,4 @@ npm run check:strict
 
 <!-- 若你有任何建議或想法，歡迎開 Issue 或 PR，一起把這個「投資可視化系統」專案變得更好！ -->
 
-> README.md 更新時間：2026/08/03 23:18
+> README.md 更新日期：2026/10/06
