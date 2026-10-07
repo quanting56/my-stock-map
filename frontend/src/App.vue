@@ -1,19 +1,21 @@
 <template>
-  <div class="bg-theme text-theme flex min-h-screen flex-col transition-colors duration-500">
+  <div
+    class="flex min-h-screen flex-col bg-background text-foreground transition-colors duration-500"
+  >
     <!-- 登入 modal -->
     <LogInPage
-      :open-modal="isLogInPageOpen"
-      @request-close="isLogInPageOpen = false"
+      :open-modal="isLogInModalOpen"
+      @request-close="closeLoginModal"
     ></LogInPage>
 
     <WelcomeModal
       :open="isWelcomeOpen"
-      @close="isWelcomeOpen = false"
-    />
+      @close="closeWelcomeModal"
+    ></WelcomeModal>
 
     <HeaderBar
-      @toggle-sidebar="isSidebarOpen = !isSidebarOpen"
-      @open-login="isLogInPageOpen = true"
+      @toggle-sidebar="toggleSidebar"
+      @open-login="openLoginModal"
     ></HeaderBar>
 
     <!-- 手機版側邊欄抽屜 -->
@@ -21,19 +23,19 @@
       <div
         v-if="isSidebarOpen"
         class="fixed inset-0 z-40 md:hidden"
-        @click.self="isSidebarOpen = false"
+        @click.self="closeSidebar"
       >
         <!-- 抽屜本體 -->
         <aside
-          class="card-theme relative z-50 h-full w-64 max-w-[80vw] space-y-2 overflow-y-auto border-r p-4"
+          class="relative z-50 h-full w-64 max-w-[80vw] space-y-2 overflow-y-auto border-r border-border bg-surface p-4"
         >
           <!-- Logo -->
           <div class="flex items-center gap-2">
             <div class="h-9 w-9 pb-0.5">
-              <MyStockMapLogo />
+              <MyStockMapLogo></MyStockMapLogo>
             </div>
 
-            <span class="text-lg font-bold text-primary">My Stock Map</span>
+            <span class="text-lg font-bold text-brand">My Stock Map</span>
           </div>
 
           <hr class="mb-4 border-border" />
@@ -44,15 +46,15 @@
           <div class="mt-8 flex items-center gap-2">
             <button
               type="button"
-              class="cursor-pointer rounded-lg bg-blue-500 px-3 py-1 text-sm text-white hover:bg-blue-600"
-              @click="isLogInPageOpen = true"
+              class="cursor-pointer rounded-lg border border-transparent bg-action px-3 py-1 text-sm text-action-foreground transition-colors hover:bg-action-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:outline-2 active:outline-offset-2 active:outline-action"
+              @click="openLoginModal"
             >
               登入
             </button>
 
             <button
               type="button"
-              class="card-theme cursor-pointer rounded-lg border px-3 py-1 text-sm transition hover:bg-border"
+              class="cursor-pointer rounded-lg border border-border bg-surface px-3 py-1 text-sm text-foreground transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:border-action"
               @click="uiThemeStore.toggleUITheme()"
             >
               {{ uiThemeStore.isDarkMode ? "🌞 日間模式" : "🌙 夜間模式" }}
@@ -65,7 +67,7 @@
     <!-- 主要顯示區域 -->
     <div class="flex flex-1 overflow-hidden">
       <!-- Left Sidebar -->
-      <aside class="card-theme hidden w-60 space-y-2 border-r p-4 md:block">
+      <aside class="hidden w-60 space-y-2 border-r border-border bg-surface p-4 md:block">
         <SideBarMenu></SideBarMenu>
       </aside>
 
@@ -75,23 +77,10 @@
           name="fade"
           mode="out-in"
         >
-          <!-- 用 activeTab 當 Suspense 的 key，切 tab 時重新進入 pending/fallback 流程 -->
-          <div :key="uiStateStore.activeTab">
-            <Suspense>
-              <!-- 已載入完成的狀態 -->
-              <template #default>
-                <component :is="uiStateStore.currentTab.pages"></component>
-              </template>
-
-              <!-- 載入中狀態 -->
-              <template #fallback>
-                <LoadingModal
-                  :open="true"
-                  message="畫面載入中，請稍候"
-                ></LoadingModal>
-              </template>
-            </Suspense>
-          </div>
+          <component
+            :is="uiStateStore.currentTab.pages"
+            :key="uiStateStore.activeTab"
+          ></component>
         </transition>
       </main>
     </div>
@@ -109,7 +98,6 @@ import { useUIStateStore } from "@/stores/uiState";
 import HeaderBar from "@/components/Common/HeaderBar.vue";
 import SideBarMenu from "@/components/Common/SideBarMenu.vue";
 import Footer from "@/components/Common/Footer.vue";
-import LoadingModal from "@/components/Common/LoadingModal.vue";
 import WelcomeModal from "@/components/Common/WelcomeModal.vue";
 import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
 import LogInPage from "@/components/Common/LogInPage.vue";
@@ -118,14 +106,34 @@ const uiThemeStore = useUIThemeStore();
 const uiStateStore = useUIStateStore();
 
 const isSidebarOpen = ref(false);
-const isLogInPageOpen = ref(false);
+const isLogInModalOpen = ref(false);
 const isWelcomeOpen = ref(true);
+
+function toggleSidebar(): void {
+  isSidebarOpen.value = !isSidebarOpen.value;
+}
+
+function closeSidebar(): void {
+  isSidebarOpen.value = false;
+}
+
+function openLoginModal(): void {
+  isLogInModalOpen.value = true;
+}
+
+function closeLoginModal(): void {
+  isLogInModalOpen.value = false;
+}
+
+function closeWelcomeModal(): void {
+  isWelcomeOpen.value = false;
+}
 
 // 當切換 Tab 時，自動把手機抽屜關掉
 watch(
   () => uiStateStore.activeTab,
   () => {
-    isSidebarOpen.value = false;
+    closeSidebar();
   },
 );
 </script>
