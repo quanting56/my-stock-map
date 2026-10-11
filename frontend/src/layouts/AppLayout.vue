@@ -76,10 +76,10 @@ import { ref, watch } from "vue";
 import { useUIStateStore } from "@/stores/uiState";
 import { useUIThemeStore } from "@/stores/theme";
 
-import HeaderBar from "@/components/Common/HeaderBar.vue";
-import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
-import SideBarMenu from "@/components/Common/SideBarMenu.vue";
-import Footer from "@/components/Common/Footer.vue";
+import HeaderBar from "@/components/common/HeaderBar.vue";
+import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
+import SideBarMenu from "@/components/common/SideBarMenu.vue";
+import Footer from "@/components/common/Footer.vue";
 
 const emit = defineEmits<{
   (event: "open-login"): void;

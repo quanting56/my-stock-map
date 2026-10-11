@@ -68,7 +68,7 @@
 </template>
 
 <script setup>
-import MyStockMapLogo from '@/components/Common/MyStockMapLogo.vue';
+import MyStockMapLogo from '@/components/common/MyStockMapLogo.vue';
 
 const items = [
   {

@@ -29,8 +29,8 @@ import { ref } from "vue";
 import { useUIStateStore } from "@/stores/uiState";
 
 import AppLayout from "@/layouts/AppLayout.vue";
-import LogInPage from "@/components/Common/LogInPage.vue";
-import WelcomeModal from "@/components/Common/WelcomeModal.vue";
+import LogInPage from "@/components/common/LogInPage.vue";
+import WelcomeModal from "@/components/common/WelcomeModal.vue";
 
 const uiStateStore = useUIStateStore();
 

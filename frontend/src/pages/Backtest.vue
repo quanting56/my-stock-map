@@ -35,8 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import RollingReturnTest from "@/components/Backtest/RollingReturnTest.vue";
-import SingleAssetBacktest from "@/components/Backtest/SingleAssetBacktest.vue";
+import RollingReturnTest from "@/components/backtest/RollingReturnTest.vue";
+import SingleAssetBacktest from "@/components/backtest/SingleAssetBacktest.vue";
 </script>
 
 <style scoped></style>

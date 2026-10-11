@@ -70,7 +70,7 @@ import { useUIStateStore } from "@/stores/uiState";
 import { useUIThemeStore } from "@/stores/theme";
 import { useQueryStockStore } from "@/stores/queryStock";
 
-import MyStockMapLogo from "@/components/Common/MyStockMapLogo.vue";
+import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
 
 const uiState = useUIStateStore();
 const uiTheme = useUIThemeStore();
