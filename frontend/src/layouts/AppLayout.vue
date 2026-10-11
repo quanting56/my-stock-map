@@ -29,7 +29,7 @@
 
           <hr class="mb-4 border-border" />
 
-          <SideBarMenu></SideBarMenu>
+          <SidebarItems></SidebarItems>
 
           <!-- 登入按鈕 + 日間/夜間模式切換 -->
           <div class="mt-8 flex items-center gap-2">
@@ -57,7 +57,7 @@
     <div class="flex flex-1 overflow-hidden">
       <!-- Desktop Sidebar -->
       <aside class="hidden w-60 space-y-2 border-r border-border bg-surface p-4 md:block">
-        <SideBarMenu></SideBarMenu>
+        <SidebarItems></SidebarItems>
       </aside>
 
       <!-- Main Content -->
@@ -78,7 +78,7 @@ import { useUIThemeStore } from "@/stores/theme";
 
 import HeaderBar from "@/components/common/HeaderBar.vue";
 import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
-import SideBarMenu from "@/components/common/SideBarMenu.vue";
+import SidebarItems from "@/components/common/layouts/SidebarItems.vue";
 import Footer from "@/components/common/Footer.vue";
 
 const emit = defineEmits<{
