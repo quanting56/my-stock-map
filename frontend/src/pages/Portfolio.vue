@@ -58,11 +58,11 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import EditHoldingModal from "@/components/Common/EditHoldingModal.vue";
-import SummaryCards from "@/components/Portfolio/SummaryCards.vue";
-import ShareholdingRatioChart from "@/components/Portfolio/ShareholdingRatioChart.vue";
-import PersonalAssetsChart from "@/components/Portfolio/PersonalAssetsChart.vue";
-import HoldingDetails from "@/components/Portfolio/HoldingDetails.vue";
+import EditHoldingModal from "@/components/common/EditHoldingModal.vue";
+import SummaryCards from "@/components/portfolio/SummaryCards.vue";
+import ShareholdingRatioChart from "@/components/portfolio/ShareholdingRatioChart.vue";
+import PersonalAssetsChart from "@/components/portfolio/PersonalAssetsChart.vue";
+import HoldingDetails from "@/components/portfolio/HoldingDetails.vue";
 
 const isHidden = ref(false);
 const editorOpen = ref(false);

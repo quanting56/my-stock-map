@@ -78,8 +78,8 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/Common/LoadingModal.vue";
-import SingleAssetBacktestChart from "@/components/Backtest/SingleAssetBacktest/SingleAssetBacktestChart.vue";
+import LoadingModal from "@/components/common/LoadingModal.vue";
+import SingleAssetBacktestChart from "@/components/backtest/single-asset-backtest/SingleAssetBacktestChart.vue";
 
 import { reactive, ref } from "vue";
 import { fetchStockSeries } from "@/api/stocksApi";

@@ -53,12 +53,12 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/Common/LoadingModal.vue"
-import HeaderAndControls from "@/components/Reports/HeaderAndControls.vue";
-import SummaryCards from "@/components/Reports/SummaryCards.vue";
-import ReportPreview from "@/components/Reports/ReportPreview.vue";
-import ExportAndPresetLists from "@/components/Reports/ExportAndPresetLists.vue";
-import ReportImport from "@/components/Reports/ReportImport.vue";
+import LoadingModal from "@/components/common/LoadingModal.vue"
+import HeaderAndControls from "@/components/reports/HeaderAndControls.vue";
+import SummaryCards from "@/components/reports/SummaryCards.vue";
+import ReportPreview from "@/components/reports/ReportPreview.vue";
+import ExportAndPresetLists from "@/components/reports/ExportAndPresetLists.vue";
+import ReportImport from "@/components/reports/ReportImport.vue";
 
 import { ref, reactive } from "vue";
 import { usePortfolioStore } from "@/stores/portfolio";

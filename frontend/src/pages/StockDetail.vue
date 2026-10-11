@@ -96,11 +96,11 @@ import { ref, computed, watch } from "vue";
 import { useQueryStockStore } from "@/stores/queryStock";
 import { fetchSymbolProfile, fetchCompanyRank, fetchStockSeries, fetchFundamentals } from "@/api/stocksApi";
 
-import PriceChartCard from "@/components/StockDetail/PriceChartCard.vue";
-import InformationSummary from "@/components/StockDetail/InformationSummary.vue";
-import HoldingTimelineChart from "@/components/StockDetail/HoldingTimelineChart.vue";
-import RelevantNews from "@/components/StockDetail/RelevantNews.vue";
-import LoadingModal from "@/components/Common/LoadingModal.vue";
+import PriceChartCard from "@/components/stock-detail/PriceChartCard.vue";
+import InformationSummary from "@/components/stock-detail/InformationSummary.vue";
+import HoldingTimelineChart from "@/components/stock-detail/HoldingTimelineChart.vue";
+import RelevantNews from "@/components/stock-detail/RelevantNews.vue";
+import LoadingModal from "@/components/common/LoadingModal.vue";
 
 type Timeframe = "7D" | "1M" | "3M" | "1Y" | "3Y";
 

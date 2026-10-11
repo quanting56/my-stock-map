@@ -57,7 +57,7 @@
 <script setup>
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
-import LoadingModal from "@/components/Common/LoadingModal.vue";
+import LoadingModal from "@/components/common/LoadingModal.vue";
 import { useQueryStockStore } from "@/stores/queryStock";
 
 // fetchStockSeries 直接拿可繪圖資料；normalizeStockRows 用來正規化 mockData

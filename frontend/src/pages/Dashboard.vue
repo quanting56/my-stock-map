@@ -51,13 +51,13 @@
 </template>
 
 <script setup lang="ts">
-import SummaryCards from "@/components/Dashboard/SummaryCards.vue";
-import ShareholdingRatioChart from "@/components/Dashboard/ShareholdingRatioChart.vue";
-import PerformanceChart from "@/components/Dashboard/PerformanceChart.vue";
-import HoldingDetails from "@/components/Dashboard/HoldingDetails.vue";
-import MarketCapitalizationTreemap from "@/components/Dashboard/MarketCapitalizationTreemap.vue";
-// import TimelineList from "@/components/Dashboard/TimelineList.vue";
-// import Test from "../components/Dashboard/Test.vue";
+import SummaryCards from "@/components/dashboard/SummaryCards.vue";
+import ShareholdingRatioChart from "@/components/dashboard/ShareholdingRatioChart.vue";
+import PerformanceChart from "@/components/dashboard/PerformanceChart.vue";
+import HoldingDetails from "@/components/dashboard/HoldingDetails.vue";
+import MarketCapitalizationTreemap from "@/components/dashboard/MarketCapitalizationTreemap.vue";
+// import TimelineList from "@/components/dashboard/TimelineList.vue";
+// import Test from "../components/dashboard/Test.vue";
 
 import { ref } from "vue";
 
