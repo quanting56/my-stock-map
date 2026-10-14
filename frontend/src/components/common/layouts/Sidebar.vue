@@ -44,13 +44,45 @@
     </div>
   </Transition>
 
+  <!-- 中尺寸 Sidebar -->
+  <div
+    class="relative hidden shrink-0 transition-[width] duration-200 ease-in-out md:block xl:hidden"
+    :class="isMediumSidebarExpanded ? 'w-60' : 'w-16'"
+  >
+    <aside class="h-full overflow-hidden border-r border-border bg-surface">
+      <!-- 內部固定保持完整 Sidebar 寬度，外層負責改變可見寬度，避免 SidebarItems 在收合時重新排版 -->
+      <div class="w-60 p-3">
+        <SidebarItems :collapsed="!isMediumSidebarExpanded"></SidebarItems>
+      </div>
+    </aside>
+
+    <!-- 中尺寸 Sidebar 展開 / 收合按鈕 -->
+    <button
+      type="button"
+      :aria-expanded="isMediumSidebarExpanded"
+      :aria-label="isMediumSidebarExpanded ? '收合側邊欄' : '展開側邊欄'"
+      :title="isMediumSidebarExpanded ? '收合側邊欄' : '展開側邊欄'"
+      class="absolute top-1/2 right-0 z-10 flex h-8 w-8 translate-x-1/2 -translate-y-1/2 cursor-pointer items-center justify-center rounded-lg border border-border bg-surface text-foreground transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:border-action"
+      @click="toggleMediumSidebar"
+    >
+      <span
+        class="text-lg leading-none"
+        aria-hidden="true"
+      >
+        {{ isMediumSidebarExpanded ? "‹" : "›" }}
+      </span>
+    </button>
+  </div>
+
   <!-- 寬版 Sidebar -->
-  <aside class="hidden w-60 shrink-0 space-y-2 border-r border-border bg-surface p-4 md:block">
+  <aside class="hidden w-60 shrink-0 space-y-2 border-r border-border bg-surface p-4 xl:block">
     <SidebarItems></SidebarItems>
   </aside>
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+
 import { useUIThemeStore } from "@/stores/theme";
 
 import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
@@ -66,6 +98,12 @@ const emit = defineEmits<{
 }>();
 
 const uiThemeStore = useUIThemeStore();
+
+const isMediumSidebarExpanded = ref(false);
+
+function toggleMediumSidebar(): void {
+  isMediumSidebarExpanded.value = !isMediumSidebarExpanded.value;
+}
 
 function requestLogin(): void {
   emit("open-login");
