@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex min-h-screen flex-col bg-background text-foreground transition-colors duration-500"
+    class="flex min-h-screen flex-col bg-background text-foreground transition-colors duration-500 [--app-header-height:3.5rem]"
   >
     <HeaderBar
       @toggle-sidebar="toggleMobileSidebar"
@@ -8,7 +8,7 @@
     ></HeaderBar>
 
     <!-- 主要顯示區域 -->
-    <div class="flex flex-1 overflow-hidden">
+    <div class="flex flex-1">
       <!-- Sidebar -->
       <Sidebar
         :mobile-open="isMobileSidebarOpen"
@@ -17,7 +17,7 @@
       ></Sidebar>
 
       <!-- Main Content -->
-      <main class="flex-1 overflow-y-auto p-6">
+      <main class="min-w-0 flex-1 p-6">
         <slot></slot>
       </main>
     </div>

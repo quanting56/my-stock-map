@@ -1,7 +1,7 @@
 <template>
   <!-- Header -->
   <header
-    class="sticky top-0 z-30 flex shrink-0 items-center gap-3 border-b border-border bg-surface px-4 py-3 text-foreground md:py-2.5"
+    class="sticky top-0 z-30 flex h-(--app-header-height) shrink-0 items-center gap-3 border-b border-border bg-surface px-4 text-foreground"
   >
     <div class="flex items-center">
       <button
