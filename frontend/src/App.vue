@@ -30,7 +30,7 @@ import { useUIStateStore } from "@/stores/uiState";
 
 import AppLayout from "@/layouts/AppLayout.vue";
 import LogInPage from "@/components/common/LogInPage.vue";
-import WelcomeModal from "@/components/common/WelcomeModal.vue";
+import WelcomeModal from "@/components/common/modals/WelcomeModal.vue";
 
 const uiStateStore = useUIStateStore();
 

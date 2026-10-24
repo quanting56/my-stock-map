@@ -33,7 +33,7 @@ import { useUIStateStore } from "@/stores/uiState";
 
 import HeaderBar from "@/components/common/layouts/HeaderBar.vue";
 import Sidebar from "@/components/common/layouts/Sidebar.vue";
-import Footer from "@/components/common/Footer.vue";
+import Footer from "@/components/common/layouts/Footer.vue";
 
 const emit = defineEmits<{
   (event: "open-login"): void;

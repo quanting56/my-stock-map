@@ -40,7 +40,7 @@
 <script setup>
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
-import LoadingModal from "@/components/common/LoadingModal.vue";
+import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import IndicatorSummaryCards from "@/components/Stock-detail/price-chart-card/IndicatorSummaryCards.vue";
 import { useQueryStockStore } from "@/stores/queryStock";
 

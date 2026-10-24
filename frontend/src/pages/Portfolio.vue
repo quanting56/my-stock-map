@@ -58,7 +58,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import EditHoldingModal from "@/components/common/EditHoldingModal.vue";
+import EditHoldingModal from "@/components/portfolio/modals/EditHoldingModal.vue";
 import SummaryCards from "@/components/portfolio/SummaryCards.vue";
 import ShareholdingRatioChart from "@/components/portfolio/ShareholdingRatioChart.vue";
 import PersonalAssetsChart from "@/components/portfolio/PersonalAssetsChart.vue";
