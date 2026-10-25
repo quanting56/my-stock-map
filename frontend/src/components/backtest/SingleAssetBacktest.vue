@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/common/LoadingModal.vue";
+import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import SingleAssetBacktestChart from "@/components/backtest/single-asset-backtest/SingleAssetBacktestChart.vue";
 
 import { reactive, ref } from "vue";

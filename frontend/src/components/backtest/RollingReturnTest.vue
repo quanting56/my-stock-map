@@ -125,7 +125,7 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
-import LoadingModal from "@/components/common/LoadingModal.vue";
+import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import * as d3 from "d3";
 import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi";
 

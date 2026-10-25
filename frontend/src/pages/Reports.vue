@@ -53,7 +53,7 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/common/LoadingModal.vue"
+import LoadingModal from "@/components/common/global/LoadingModal.vue"
 import HeaderAndControls from "@/components/reports/HeaderAndControls.vue";
 import SummaryCards from "@/components/reports/SummaryCards.vue";
 import ReportPreview from "@/components/reports/ReportPreview.vue";

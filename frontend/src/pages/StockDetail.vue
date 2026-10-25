@@ -100,7 +100,7 @@ import PriceChartCard from "@/components/stock-detail/PriceChartCard.vue";
 import InformationSummary from "@/components/stock-detail/InformationSummary.vue";
 import HoldingTimelineChart from "@/components/stock-detail/HoldingTimelineChart.vue";
 import RelevantNews from "@/components/stock-detail/RelevantNews.vue";
-import LoadingModal from "@/components/common/LoadingModal.vue";
+import LoadingModal from "@/components/common/global/LoadingModal.vue";
 
 type Timeframe = "7D" | "1M" | "3M" | "1Y" | "3Y";
 

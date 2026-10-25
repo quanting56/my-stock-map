@@ -12,7 +12,7 @@
         <!-- Logo -->
         <div class="flex items-center gap-2">
           <div class="h-9 w-9 pb-0.5">
-            <MyStockMapLogo></MyStockMapLogo>
+            <MyStockMapLogo background="transparent"></MyStockMapLogo>
           </div>
 
           <span class="text-lg font-bold text-brand">My Stock Map</span>
@@ -46,10 +46,10 @@
 
   <!-- 中尺寸 Sidebar -->
   <div
-    class="relative hidden shrink-0 transition-[width] duration-200 ease-in-out md:block xl:hidden"
+    class="sticky top-(--app-header-height) z-20 hidden h-[calc(100dvh-var(--app-header-height))] shrink-0 self-start transition-[width] duration-200 ease-in-out md:block xl:hidden"
     :class="isMediumSidebarExpanded ? 'w-60' : 'w-16'"
   >
-    <aside class="h-full overflow-hidden border-r border-border bg-surface">
+    <aside class="h-full overflow-x-hidden overflow-y-auto border-r border-border bg-surface">
       <!-- 內部固定保持完整 Sidebar 寬度，外層負責改變可見寬度，避免 SidebarItems 在收合時重新排版 -->
       <div class="w-60 p-3">
         <SidebarItems :collapsed="!isMediumSidebarExpanded"></SidebarItems>
@@ -75,7 +75,9 @@
   </div>
 
   <!-- 寬版 Sidebar -->
-  <aside class="hidden w-60 shrink-0 space-y-2 border-r border-border bg-surface p-4 xl:block">
+  <aside
+    class="sticky top-(--app-header-height) z-20 hidden h-[calc(100dvh-var(--app-header-height))] w-60 shrink-0 space-y-2 self-start overflow-y-auto border-r border-border bg-surface p-4 xl:block"
+  >
     <SidebarItems></SidebarItems>
   </aside>
 </template>
