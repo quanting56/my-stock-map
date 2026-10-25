@@ -12,7 +12,7 @@
         <!-- Logo -->
         <div class="flex items-center gap-2">
           <div class="h-9 w-9 pb-0.5">
-            <MyStockMapLogo></MyStockMapLogo>
+            <MyStockMapLogo background="transparent"></MyStockMapLogo>
           </div>
 
           <span class="text-lg font-bold text-brand">My Stock Map</span>

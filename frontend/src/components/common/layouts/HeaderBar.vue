@@ -22,7 +22,7 @@
         @click="goToDashboard"
       >
         <span class="h-9 w-9 pb-0.5">
-          <MyStockMapLogo></MyStockMapLogo>
+          <MyStockMapLogo background="transparent"></MyStockMapLogo>
         </span>
 
         <span>My Stock Map</span>
