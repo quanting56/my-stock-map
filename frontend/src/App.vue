@@ -18,7 +18,7 @@
   ></LogInPage>
 
   <WelcomeModal
-    :open="isWelcomeOpen"
+    :is-open="isWelcomeOpen"
     @close="closeWelcomeModal"
   ></WelcomeModal>
 </template>
