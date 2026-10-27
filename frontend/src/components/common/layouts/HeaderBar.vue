@@ -45,29 +45,31 @@
         <!-- <p class="pl-3.5 text-[10px] text-gray-400 md:hidden">例如：2330、2330.TW、台積電</p> -->
       </div>
 
-      <button
+      <BaseButton
         type="submit"
-        class="cursor-pointer rounded-lg border border-transparent bg-action px-3 py-1 text-sm text-action-foreground transition-colors hover:bg-action-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:outline-2 active:outline-offset-2 active:outline-action"
+        variant="primary"
       >
         搜尋
-      </button>
+      </BaseButton>
     </form>
 
-    <button
+    <BaseButton
       type="button"
-      class="hidden cursor-pointer rounded-lg border border-transparent bg-action px-3 py-1 text-sm text-action-foreground transition-colors hover:bg-action-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:outline-2 active:outline-offset-2 active:outline-action md:inline-block"
+      variant="primary"
+      class="hidden md:inline-block"
       @click="emit('open-login')"
     >
       登入
-    </button>
+    </BaseButton>
 
-    <button
+    <BaseButton
       type="button"
-      class="hidden cursor-pointer rounded-lg border border-border bg-surface px-3 py-1 text-sm text-foreground transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:border-action md:inline-block"
+      variant="secondary"
+      class="hidden md:inline-block"
       @click="uiThemeStore.toggleUITheme"
     >
       {{ uiThemeStore.isDarkMode ? "🌞 日間模式" : "🌙 夜間模式" }}
-    </button>
+    </BaseButton>
   </header>
 </template>
 
@@ -78,6 +80,7 @@ import { useQueryStockStore } from "@/stores/queryStock";
 import { useUIStateStore } from "@/stores/uiState";
 import { useUIThemeStore } from "@/stores/theme";
 
+import BaseButton from "@/components/ui/BaseButton.vue";
 import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
 
 const emit = defineEmits<{

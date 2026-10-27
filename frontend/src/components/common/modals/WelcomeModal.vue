@@ -127,21 +127,21 @@
         -->
 
         <div class="mt-5 flex shrink-0 justify-end gap-3">
-          <button
+          <BaseButton
             type="button"
-            class="cursor-pointer rounded-lg border border-border bg-surface px-3 py-1 text-sm text-foreground transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:border-action"
+            variant="secondary"
             @click="emit('close')"
           >
             關閉
-          </button>
+          </BaseButton>
 
-          <button
+          <BaseButton
             type="button"
-            class="cursor-pointer rounded-lg border border-transparent bg-action px-3 py-1 text-sm text-action-foreground transition-colors hover:bg-action-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:outline-2 active:outline-offset-2 active:outline-action"
+            variant="primary"
             @click="emit('close')"
           >
             開始使用
-          </button>
+          </BaseButton>
         </div>
       </div>
     </div>
@@ -152,6 +152,8 @@
 import { computed } from "vue";
 
 import { useSettingItemsStore } from "@/stores/settingItems";
+
+import BaseButton from "@/components/ui/BaseButton.vue";
 
 const props = defineProps<{
   isOpen: boolean; // 是否顯示，由父層決定
