@@ -13,7 +13,8 @@
             <th class="px-3 text-right">數量</th>
             <th class="px-3 text-right">現價</th>
             <th class="px-3 text-right">市值</th>
-            <th class="px-3 text-right">今日損益</th>
+            <th class="px-3 text-right">未實現損益</th>
+            <th class="px-3 text-right">未實現報酬率</th>
             <th class="px-3 text-right">權重</th>
           </tr>
         </thead>
@@ -30,10 +31,18 @@
             </td>
 
             <td class="px-3 py-3 text-right">
-              {{ isTotalValueHidden ? "＊＊＊" : detail.shares.toLocaleString() }}
+              {{
+                detail.id === "CASH"
+                  ? "—"
+                  : isTotalValueHidden
+                    ? "＊＊＊"
+                    : detail.shares.toLocaleString()
+              }}
             </td>
 
-            <td class="px-3 py-3 text-right">${{ detail.price }}</td>
+            <td class="px-3 py-3 text-right">
+              {{ detail.id === "CASH" ? "—" : `$${detail.price}` }}
+            </td>
 
             <td class="px-3 py-3 text-right font-medium">
               ${{ isTotalValueHidden ? " ＊＊＊" : detail.stockValue.toLocaleString() }}
@@ -41,12 +50,37 @@
 
             <td
               class="px-3 py-3 text-right"
-              :class="detail.cost > detail.price ? 'text-loss' : 'text-gain'"
+              :class="
+                detail.id === 'CASH'
+                  ? 'text-foreground-muted'
+                  : detail.price >= detail.cost
+                    ? 'text-gain'
+                    : 'text-loss'
+              "
             >
               {{
-                isTotalValueHidden
-                  ? " ＊＊＊"
-                  : `${detail.profitLoss >= 0 ? "+" : ""}${detail.profitLoss.toLocaleString()}`
+                detail.id === "CASH"
+                  ? "—"
+                  : isTotalValueHidden
+                    ? " ＊＊＊"
+                    : `${detail.profitLoss >= 0 ? "+" : ""}${detail.profitLoss.toLocaleString()}`
+              }}
+            </td>
+
+            <td
+              class="px-3 py-3 text-right"
+              :class="
+                detail.id === 'CASH' || detail.profitLossPercent === null
+                  ? 'text-foreground-muted'
+                  : detail.price >= detail.cost
+                    ? 'text-gain'
+                    : 'text-loss'
+              "
+            >
+              {{
+                detail.id === "CASH" || detail.profitLossPercent === null
+                  ? "—"
+                  : `${detail.profitLossPercent >= 0 ? "+" : ""}${detail.profitLossPercent.toFixed(2)}%`
               }}
             </td>
 
@@ -66,6 +100,7 @@ import { usePortfolioStore, type Holding } from "@/stores/portfolio";
 interface HoldingDetail extends Holding {
   ratio: number;
   profitLoss: number;
+  profitLossPercent: number | null;
 }
 
 withDefaults(
@@ -80,15 +115,13 @@ withDefaults(
 const portfolioStore = usePortfolioStore();
 
 const details = computed<HoldingDetail[]>(() => {
-  return portfolioStore.holdingDetailsData
-    .map((holding) => ({
-      ...holding,
-      ratio: portfolioStore.totalValueExCash
-        ? holding.stockValue / portfolioStore.totalValueExCash
-        : 0,
-      profitLoss: (holding.price - holding.cost) * holding.shares,
-    }))
-    .filter((holding) => holding.id !== null); // 過濾掉「現金」
+  return portfolioStore.holdingDetailsData.map((holding) => ({
+    ...holding,
+    ratio: portfolioStore.totalValue ? holding.stockValue / portfolioStore.totalValue : 0,
+    profitLoss: (holding.price - holding.cost) * holding.shares,
+    profitLossPercent:
+      holding.cost > 0 ? ((holding.price - holding.cost) / holding.cost) * 100 : null,
+  }));
 });
 </script>
 
