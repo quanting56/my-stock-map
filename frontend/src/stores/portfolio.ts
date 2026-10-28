@@ -27,7 +27,7 @@ export interface Holding {
  * - `name`: 例如 `現金`、`台積電`
  */
 type HoldingLike = {
-  id: string; // 識別碼
+  id: unknown; // 識別碼
   name?: unknown; // 顯示名稱
   shares?: unknown; // 持股數
   price?: unknown; // 股票現價
