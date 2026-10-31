@@ -36,16 +36,16 @@
                   ? "—"
                   : isTotalValueHidden
                     ? "＊＊＊"
-                    : detail.shares.toLocaleString()
+                    : formatQuantity(detail.shares)
               }}
             </td>
 
             <td class="px-3 py-3 text-right">
-              {{ detail.id === "CASH" ? "—" : `$${detail.price}` }}
+              {{ detail.id === "CASH" ? "—" : `${formatPrice(detail.price)}` }}
             </td>
 
             <td class="px-3 py-3 text-right font-medium">
-              ${{ isTotalValueHidden ? " ＊＊＊" : detail.stockValue.toLocaleString() }}
+              {{ isTotalValueHidden ? " ＊＊＊" : formatAmount(detail.stockValue) }}
             </td>
 
             <td
@@ -63,14 +63,14 @@
                   ? "—"
                   : isTotalValueHidden
                     ? " ＊＊＊"
-                    : `${detail.profitLoss >= 0 ? "+" : ""}${detail.profitLoss.toLocaleString()}`
+                    : formatSignedAmount(detail.profitLoss)
               }}
             </td>
 
             <td
               class="px-3 py-3 text-right"
               :class="
-                detail.id === 'CASH' || detail.profitLossPercent === null
+                detail.id === 'CASH' || detail.profitLossRatio === null
                   ? 'text-foreground-muted'
                   : detail.price >= detail.cost
                     ? 'text-gain'
@@ -78,13 +78,13 @@
               "
             >
               {{
-                detail.id === "CASH" || detail.profitLossPercent === null
+                detail.id === "CASH" || detail.profitLossRatio === null
                   ? "—"
-                  : `${detail.profitLossPercent >= 0 ? "+" : ""}${detail.profitLossPercent.toFixed(2)}%`
+                  : formatSignedPercentage(detail.profitLossRatio)
               }}
             </td>
 
-            <td class="px-3 py-3 text-right">{{ (detail.ratio * 100).toFixed(2) }}%</td>
+            <td class="px-3 py-3 text-right">{{ formatPercentage(detail.weight) }}</td>
           </tr>
         </tbody>
       </table>
@@ -95,12 +95,21 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
+import {
+  formatAmount,
+  formatPercentage,
+  formatPrice,
+  formatQuantity,
+  formatSignedAmount,
+  formatSignedPercentage,
+} from "@/utils/format/number";
+
 import { usePortfolioStore, type Holding } from "@/stores/portfolio";
 
 interface HoldingDetail extends Holding {
-  ratio: number;
-  profitLoss: number;
-  profitLossPercent: number | null;
+  weight: number; // 權重
+  profitLoss: number; // 未實現損益
+  profitLossRatio: number | null; // 未實現報酬率
 }
 
 withDefaults(
@@ -117,10 +126,9 @@ const portfolioStore = usePortfolioStore();
 const details = computed<HoldingDetail[]>(() => {
   return portfolioStore.holdingDetailsData.map((holding) => ({
     ...holding,
-    ratio: portfolioStore.totalValue ? holding.stockValue / portfolioStore.totalValue : 0,
+    weight: portfolioStore.totalValue ? holding.stockValue / portfolioStore.totalValue : 0,
     profitLoss: (holding.price - holding.cost) * holding.shares,
-    profitLossPercent:
-      holding.cost > 0 ? ((holding.price - holding.cost) / holding.cost) * 100 : null,
+    profitLossRatio: holding.cost > 0 ? (holding.price - holding.cost) / holding.cost : null,
   }));
 });
 </script>
