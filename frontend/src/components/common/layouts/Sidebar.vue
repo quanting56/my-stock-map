@@ -24,21 +24,21 @@
 
         <!-- 登入按鈕 + 日間/夜間模式切換 -->
         <div class="mt-8 flex items-center gap-2">
-          <button
+          <BaseButton
             type="button"
-            class="cursor-pointer rounded-lg border border-transparent bg-action px-3 py-1 text-sm text-action-foreground transition-colors hover:bg-action-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:outline-2 active:outline-offset-2 active:outline-action"
+            variant="primary"
             @click="requestLogin"
           >
             登入
-          </button>
+          </BaseButton>
 
-          <button
+          <BaseButton
             type="button"
-            class="cursor-pointer rounded-lg border border-border bg-surface px-3 py-1 text-sm text-foreground transition-colors hover:bg-surface-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus active:border-action"
-            @click="uiThemeStore.toggleUITheme()"
+            variant="secondary"
+            @click="uiThemeStore.toggleUITheme"
           >
             {{ uiThemeStore.isDarkMode ? "🌞 日間模式" : "🌙 夜間模式" }}
-          </button>
+          </BaseButton>
         </div>
       </aside>
     </div>
@@ -87,6 +87,7 @@ import { ref } from "vue";
 
 import { useUIThemeStore } from "@/stores/theme";
 
+import BaseButton from "@/components/ui/BaseButton.vue";
 import MyStockMapLogo from "@/components/common/MyStockMapLogo.vue";
 import SidebarItems from "@/components/common/layouts/SidebarItems.vue";
 
