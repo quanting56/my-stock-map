@@ -1,262 +1,320 @@
 <template>
-  <div class="lg:col-span-1 card-theme rounded-2xl shadow p-4">
-    <h3 class="font-medium text-[color:var(--color-secondary)] mb-2">持股分布（個股 + ETF）</h3>
+  <div class="rounded-2xl bg-surface p-4 text-foreground shadow lg:col-span-1">
+    <h3 class="mb-2 font-medium text-foreground-muted">持股分布（個股 + ETF）</h3>
 
-    <div ref="container" class="flex items-center gap-4 relative flex-col xl:flex-row">
-      <!-- SVG for donut chart -->
-      <div class="h-40 w-40 flex items-center justify-center">
-        <svg ref="svgRef" class="w-full h-full"></svg>
+    <div
+      ref="containerRef"
+      class="relative flex flex-col items-center gap-4 xl:flex-row"
+    >
+      <!-- Donut chart -->
+      <div class="flex h-40 w-40 items-center justify-center">
+        <svg
+          ref="svgRef"
+          role="img"
+          aria-label="持股分布圓環圖"
+          class="h-full w-full"
+        ></svg>
       </div>
 
-      <!-- legend -->
+      <!-- Legend -->
       <div class="flex-1">
         <ul class="space-y-2 text-sm">
           <li
-            v-for="(d, i) in chartData"
-            :key="d.id"
-            @click="toggleHighlight(d.id)"
-            class="flex items-center justify-between cursor-pointer"
+            v-for="(item, index) in chartData"
+            :key="item.id"
           >
-            <div class="flex items-center gap-3">
-              <span
-                class="w-3 h-3 rounded-sm"
-                :style="{ backgroundColor: colorForLegend(i) }"
-              ></span>
-              <div>
-                <div class="font-medium">{{ d.name }}</div>
-                <div class="text-xs text-[color:var(--color-secondary)]">{{ d.id }}</div>
+            <button
+              type="button"
+              :aria-pressed="highlightedId === item.id"
+              class="flex w-full cursor-pointer items-center justify-between rounded-md text-left focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+              @click="toggleHighlightedId(item.id)"
+            >
+              <div class="flex items-center gap-3">
+                <span
+                  class="h-3 w-3 shrink-0 rounded-sm"
+                  :style="{ backgroundColor: getChartColor(index) }"
+                ></span>
+
+                <div>
+                  <div class="font-medium">{{ item.name }}</div>
+                  <div class="text-xs text-foreground-muted">{{ item.id }}</div>
+                </div>
               </div>
-            </div>
-            <div class="text-right pl-3">
-              <div class="font-medium text-[color:var(--color-primary)]">
-                {{ percentage(d.stockValue) }}%
+
+              <div class="pl-3 text-right">
+                <div class="font-medium text-brand">
+                  {{ formatPercentage(getHoldingRatio(item.stockValue)) }}
+                </div>
+
+                <div class="text-xs text-foreground-muted">
+                  {{ props.isTotalValueHidden ? "$ ＊＊＊" : `$${formatAmount(item.stockValue)}` }}
+                </div>
               </div>
-              <div class="text-xs text-[color:var(--color-secondary)]">
-                {{ isTotalValueHidden ? "$ ＊＊＊" : "$" + formatNumber(d.stockValue) }}
-              </div>
-            </div>
+            </button>
           </li>
         </ul>
       </div>
 
-      <!-- tooltip -->
+      <!-- Tooltip -->
       <div
-        ref="tooltip"
-        class="bg-[color:var(--color-card)] border border-[color:var(--color-border)] py-2 px-2.5 rounded-md shadow-lg z-50 min-w-24 hidden absolute pointer-events-none text-sm"
+        ref="tooltipRef"
+        class="pointer-events-none absolute z-50 hidden min-w-24 rounded-md border border-border bg-surface px-2.5 py-2 text-sm text-foreground shadow-lg"
       ></div>
     </div>
   </div>
 </template>
 
-<script setup>
-import { ref, onMounted, onBeforeUnmount, computed, watch, nextTick } from "vue";
+<script setup lang="ts">
+import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import * as d3 from "d3";
+
+import { formatAmount, formatPercentage } from "@/utils/format/number";
 import { usePortfolioStore } from "@/stores/portfolio";
 
-const props = defineProps({
-  isTotalValueHidden: {
-    type: Boolean,
-    default: false
-  }
-});
+interface HoldingChartDatum {
+  id: string;
+  name: string;
+  stockValue: number;
+}
+
+const CHART_COLOR_COUNT = 12;
+
+const props = withDefaults(
+  defineProps<{
+    isTotalValueHidden?: boolean;
+  }>(),
+  {
+    isTotalValueHidden: false,
+  },
+);
 
 const portfolioStore = usePortfolioStore();
 
-const container = ref(null);
-const svgRef = ref(null);
-const tooltip = ref(null);
+const containerRef = ref<HTMLDivElement | null>(null);
+const svgRef = ref<SVGSVGElement | null>(null);
+const tooltipRef = ref<HTMLDivElement | null>(null);
 
-// 當前被 highlight 的 id
-const highlighted = ref(null);
+/** 目前高亮顯示的持股 id。 */
+const highlightedId = ref<string | null>(null);
 
+let resizeObserver: ResizeObserver | null = null;
 
 // 將 store 的資料轉成圖表要的格式
-const details = computed(() => {
+const chartData = computed<HoldingChartDatum[]>(() => {
   return portfolioStore.holdingDetailsData
-    .map((d) => ({
-      id: d.id,
-      name: d.name,
-      stockValue: Number(d.stockValue ?? (d.shares * d.price) ?? 0)
+    .filter((holding) => holding.stockValue > 0)
+    .map((holding) => ({
+      id: holding.id,
+      name: holding.name,
+      stockValue: holding.stockValue,
     }))
-    .filter((d) => d.id !== null);  // 過濾掉「現金」
+    .sort((a, b) => b.stockValue - a.stockValue);
 });
 
-// 過濾掉值為 0 的項目並依 stockValue 降冪排序（for視覺上好看）
-const chartData = computed(() =>
-  details.value
-    .filter(d => Number(d.stockValue) > 0)
-    .sort((a, b) => b.stockValue - a.stockValue)
-);
+const totalValue = computed(() => d3.sum(chartData.value, (item) => item.stockValue));
 
-// 用 chartData 計算出 total stockValue
-const totalValue = computed(() => chartData.value.reduce((s, d) => s + d.stockValue, 0));
+function getHoldingRatio(stockValue: number): number {
+  return totalValue.value ? stockValue / totalValue.value : 0;
+}
 
-// formatting helpers
-const formatNumber = (n) => new Intl.NumberFormat().format(Math.round(n));  // 數字格式化（千分位、四捨五入）
-const percentage = (v) => (totalValue.value ? (v / totalValue.value * 100).toFixed(2) : "0.00");
+function getSliceOpacity(id: string): number {
+  if (highlightedId.value === null || highlightedId.value === id) {
+    return 1;
+  }
 
+  return 0.45;
+}
 
-// 顏色處理 ---------
+function toggleHighlightedId(id: string): void {
+  highlightedId.value = highlightedId.value === id ? null : id;
+}
 
-// 圖例顏色
-function colorForLegend(i) {
-  const palette = d3.schemeTableau10;
-  return palette[i % palette.length];
-};
+// ===============
+// 顏色處理
+// ===============
 
-// D3 繪圖 ---------
+function getChartColor(index: number): string {
+  const colorIndex = (index % CHART_COLOR_COUNT) + 1;
+
+  return `var(--color-chart-${colorIndex})`;
+}
+
+// ===============
+// D3 繪圖
+// ===============
 
 // 繪製 donut 圖
-function drawChart() {
-  if (!svgRef.value || !container.value) return;
+function renderChart(): void {
+  const containerElement = containerRef.value;
+  const svgElement = svgRef.value;
+
+  if (!containerElement || !svgElement) {
+    return;
+  }
+
+  hideTooltip();
 
   const data = chartData.value;
-  const rect = container.value.getBoundingClientRect();
-  const size = Math.min(160, rect.width * 0.48); // keep svg reasonable
+  const containerRect = containerElement.getBoundingClientRect();
+
+  const size = Math.min(160, containerRect.width * 0.48);
   const width = size;
   const height = size;
   const radius = Math.min(width, height) / 2;
 
-  // clear svg
-  const svg = d3.select(svgRef.value);
-  svg.selectAll("*").remove();
+  const svg = d3.select<SVGSVGElement, unknown>(svgElement);
 
-  svg.attr("viewBox", `0 0 ${width} ${height}`)
-     .attr("preserveAspectRatio", "xMidYMid meet");
+  svg.selectAll("*").remove(); // clear svg
 
-  const g = svg.append("g").attr("transform", `translate(${width/2}, ${height/2})`);
+  svg.attr("viewBox", `0 0 ${width} ${height}`).attr("preserveAspectRatio", "xMidYMid meet");
+
+  const chartGroup = svg.append("g").attr("transform", `translate(${width / 2}, ${height / 2})`);
 
   if (!data.length) {
-    g.append("text")
-     .attr("text-anchor", "middle")
-     .attr("dy", "0.35em")
-     .text("No data")
-     .style("fill", "var(--color-secondary)");
+    chartGroup
+      .append("text")
+      .attr("text-anchor", "middle")
+      .attr("dy", "0.35em")
+      .style("fill", "var(--color-foreground-muted)")
+      .text("暫無資料");
+
     return;
-  };
+  }
 
-  const pie = d3.pie().sort(null).value(d => d.stockValue);
-  const arcs = pie(data);  // 計算各弧的角度資料陣列
+  const pieGenerator = d3
+    .pie<HoldingChartDatum>()
+    .sort(null)
+    .value((item) => item.stockValue);
 
-  const outer = radius * 0.95;
-  const inner = radius * 0.58;
-  const arcGenerator = d3.arc()
-                         .innerRadius(inner)
-                         .outerRadius(outer)
-                         .cornerRadius(4);
+  const arcs = pieGenerator(data); // 計算各弧的角度資料陣列
 
-  // 顏色比例尺
-  const ids = data.map(d => d.id);
-  const colorScale = d3.scaleOrdinal()
-                       .domain(ids)
-                       .range(d3.schemeTableau10);
+  const outerRadius = radius * 0.95;
+  const innerRadius = radius * 0.58;
 
-  // draw slices
-  const paths = g.selectAll("path")
+  const arcGenerator = d3
+    .arc<d3.PieArcDatum<HoldingChartDatum>>()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius)
+    .cornerRadius(4);
+
+  chartGroup
+    .selectAll<SVGPathElement, d3.PieArcDatum<HoldingChartDatum>>("path")
     .data(arcs)
-    .enter()
-    .append("path")
+    .join("path")
     .attr("d", arcGenerator)
-    .attr("fill", d =>
-      d3.color(colorScale(d.data.id))
-        .copy({opacity: highlighted.value && highlighted.value !== d.data.id ? 0.45 : 1})
-    )
-    .attr("stroke", "var(--color-card)")
+    .attr("fill", (_arcDatum, index) => getChartColor(index))
+    .attr("opacity", (arcDatum) => getSliceOpacity(arcDatum.data.id))
+    .attr("stroke", "var(--color-surface)")
     .attr("stroke-width", 1)
     .style("cursor", "pointer")
-    .on("mousemove", (e, d) => {
-      showTooltip(e, d);
-      d3.select(e.currentTarget).attr("opacity", 0.9);
-    })
-    .on("mouseout", (e) => {
-      hideTooltip();
-      d3.select(e.currentTarget).attr("opacity", 1);
-    })
-    .on("click", (e, d) => {
-      // toggle highlight
-      highlighted.value = highlighted.value === d.data.id ? null : d.data.id;
-      // redraw to reflect highlight
-      drawChart();
+    .on(
+      "mousemove",
+      function (
+        this: SVGPathElement,
+        event: MouseEvent,
+        arcDatum: d3.PieArcDatum<HoldingChartDatum>,
+      ) {
+        showTooltip(event, arcDatum);
+
+        d3.select(this).attr("opacity", 0.9);
+      },
+    )
+    .on(
+      "mouseout",
+      function (
+        this: SVGPathElement,
+        _event: MouseEvent,
+        arcDatum: d3.PieArcDatum<HoldingChartDatum>,
+      ) {
+        hideTooltip();
+
+        d3.select(this).attr("opacity", getSliceOpacity(arcDatum.data.id));
+      },
+    )
+    .on("click", (_event: MouseEvent, arcDatum: d3.PieArcDatum<HoldingChartDatum>) => {
+      toggleHighlightedId(arcDatum.data.id);
     });
 
-  // center texts
-  g.append("text")
+  // 中心文字
+  chartGroup
+    .append("text")
     .attr("text-anchor", "middle")
     .style("font-size", "22px")
-    .style("fill", "var(--color-secondary)")
+    .style("fill", "var(--color-foreground-muted)")
     .text("持倉");
 
-  g.append("text")
+  chartGroup
+    .append("text")
     .attr("text-anchor", "middle")
     .attr("dy", "1.6em")
     .style("font-size", "12px")
     .style("font-weight", "bold")
-    .style("fill", "var(--color-primary)")
-    .text(
-      props.isTotalValueHidden
-        ? "＊＊＊"
-        : `$${formatNumber(totalValue.value)}`
-    );
-};
+    .style("fill", "var(--color-brand)")
+    .text(props.isTotalValueHidden ? "＊＊＊" : `$${formatAmount(totalValue.value)}`);
+}
 
-// tooltip helpers
-function showTooltip(e, d) {
-  if (!tooltip.value) return;
-  const t = tooltip.value;
-  const [x, y] = d3.pointer(e, container.value);
-  t.style.left = `${x + 18}px`;
-  t.style.top = `${y + 18}px`;
-  t.innerHTML = `
-    <div class="font-semibold">${d.data.name}</div>
-    <div class="text-[13px] mt-1">${formatNumber(d.data.stockValue)} 元</div>
-    <div class="text-[12px] text-[color:var(--color-secondary)] mt-0.5">${((d.data.stockValue/totalValue.value)*100).toFixed(2)}%</div>
+// ===============
+// Tooltip
+// ===============
+
+function showTooltip(event: MouseEvent, arcDatum: d3.PieArcDatum<HoldingChartDatum>): void {
+  const containerElement = containerRef.value;
+  const tooltipElement = tooltipRef.value;
+
+  if (!containerElement || !tooltipElement) {
+    return;
+  }
+
+  const [x, y] = d3.pointer(event, containerElement);
+
+  tooltipElement.style.left = `${x + 18}px`;
+  tooltipElement.style.top = `${y + 18}px`;
+
+  const amountText = props.isTotalValueHidden
+    ? "＊＊＊"
+    : `${formatAmount(arcDatum.data.stockValue)} 元`;
+
+  tooltipElement.innerHTML = `
+    <div class="font-semibold">${arcDatum.data.name}</div>
+    <div class="mt-1 text-[13px]">${amountText}</div>
+    <div class="mt-0.5 text-xs text-foreground-muted">
+      ${formatPercentage(getHoldingRatio(arcDatum.data.stockValue))}
+    </div>
   `;
-  t.classList.remove('hidden');
+
+  tooltipElement.classList.remove("hidden");
 }
 
-function hideTooltip() {
-  if (!tooltip.value) return;
-  tooltip.value.classList.add('hidden');
+function hideTooltip(): void {
+  tooltipRef.value?.classList.add("hidden");
 }
 
-// 從 legend 點擊切換 highlight ，同時重新繪製
-function toggleHighlight(id) {
-  highlighted.value = highlighted.value === id ? null : id;
-  drawChart();
-}
-
-// reactive watchers
-let resizeObserver = null;
-let stopWatch = null;
+// 相關顯示狀態改變時重新繪製圖表
+watch(
+  [chartData, () => props.isTotalValueHidden, highlightedId],
+  () => {
+    renderChart();
+  },
+  {
+    flush: "post",
+  },
+);
 
 onMounted(() => {
-  // 元件掛載完成後首次繪製
-  nextTick(() => {
-    drawChart();
-  });
-
-  // 當 chartData 或 totalValue 改變時，圖形重繪
-  stopWatch = watch(
-    [
-      chartData,
-      () => totalValue.value,
-      () => props.isTotalValueHidden
-    ],
-    () => { drawChart(); }
-  );
+  renderChart();
 
   // 容器尺寸變化時重繪
-  if (container.value && window.ResizeObserver) {
+  if (containerRef.value && typeof ResizeObserver !== "undefined") {
     resizeObserver = new ResizeObserver(() => {
-      drawChart();
+      renderChart();
     });
-    resizeObserver.observe(container.value);
+
+    resizeObserver.observe(containerRef.value);
   }
 });
 
 onBeforeUnmount(() => {
-  if (resizeObserver) resizeObserver.disconnect();  // 離開元件時解除 observer
-  if (stopWatch) stopWatch();  // 移除 stopWatch()
+  resizeObserver?.disconnect(); // 離開元件時解除 observer
 });
 </script>
 
