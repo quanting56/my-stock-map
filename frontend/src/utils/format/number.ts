@@ -22,11 +22,25 @@ const signedAmountFormatter = new Intl.NumberFormat("zh-TW", {
   signDisplay: "always",
 });
 
-const percentageFormatter = new Intl.NumberFormat("zh-TW", {
-  useGrouping: true,
-  minimumFractionDigits: 2,
-  maximumFractionDigits: 2,
-});
+const percentageFormatterCache = new Map<number, Intl.NumberFormat>();
+
+function getPercentageFormatter(fractionDigits: number): Intl.NumberFormat {
+  const cachedFormatter = percentageFormatterCache.get(fractionDigits);
+
+  if (cachedFormatter) {
+    return cachedFormatter;
+  }
+
+  const formatter = new Intl.NumberFormat("zh-TW", {
+    useGrouping: true,
+    minimumFractionDigits: fractionDigits,
+    maximumFractionDigits: fractionDigits,
+  });
+
+  percentageFormatterCache.set(fractionDigits, formatter);
+
+  return formatter;
+}
 
 const signedPercentageFormatter = new Intl.NumberFormat("zh-TW", {
   useGrouping: true,
@@ -55,9 +69,9 @@ export function formatSignedAmount(value: number): string {
   return signedAmountFormatter.format(value);
 }
 
-/** 格式化百分比，例如 `0.442813` → `44.28%`。 */
-export function formatPercentage(value: number): string {
-  return `${percentageFormatter.format(value * 100)}%`;
+/** 格式化百分比，可指定小數位數，例如 `0.442813` → `44.28%`。 */
+export function formatPercentage(value: number, fractionDigits = 2): string {
+  return `${getPercentageFormatter(fractionDigits).format(value * 100)}%`;
 }
 
 /** 格式化帶正負號的百分比，例如 `0.16` → `+16.00%`。 */

@@ -1,220 +1,274 @@
 <template>
-  <div class="card-theme rounded-2xl shadow p-4">
-    <div class="flex items-center justify-between mb-3">
-      <h3 class="font-medium text-[color:var(--color-secondary)]">大盤市值佔比</h3>
-      <div class="text-xs text-[color:var(--color-secondary)]">
+  <div class="rounded-2xl bg-surface p-4 text-foreground shadow">
+    <div class="mb-3 flex items-center justify-between">
+      <h3 class="font-medium text-foreground-muted">大盤市值佔比</h3>
+
+      <div class="text-xs text-foreground-muted">
         資料最後更新時間：{{ displayDate || "載入中..." }}
       </div>
     </div>
-    <div ref="chartContainer" class="w-full h-full min-h-96 relative"></div>
+
+    <div
+      ref="chartContainerRef"
+      class="relative h-108 w-full"
+    ></div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import * as d3 from "d3";
-import { ref, onMounted, nextTick, onBeforeUnmount } from "vue";
 
-// 從前端 API helper 取真實市值資料
-import { fetchMarketTreemapData } from "@/api/stocksApi";
+import { formatPercentage } from "@/utils/format/number";
+import { fetchMarketTreemapData, type MarketTreemapData } from "@/api/stocksApi";
 // mock data（備援資料）
-import { mockData } from "@/data/mock/marketCapitalizationTreemapData.js"
+import { mockData } from "@/data/mock/marketCapitalizationTreemapData";
 
-// 目前實際繪圖用的資料 & 顯示日期
-const treemapData = ref(null);  // 真實 或 mock data 都放這
-const displayDate = ref("");
-
-const chartContainer = ref(null);
-let resizeObserver = null;
-
-// --- D3 畫圖主函式 ---
-function drawTreemap(data) {
-  if (!chartContainer.value) return;
-
-  d3.select(chartContainer.value).selectAll("*").remove();
-
-  const width = chartContainer.value.clientWidth;
-  const height = chartContainer.value.clientHeight;
-
-  // --- 排名分桶 ---
-  const children = (data.children || []).slice();
-  children.sort(
-    (a, b) =>
-      b.MarketCapitalizationAsAPercentageOfTheOverallMarket -
-      a.MarketCapitalizationAsAPercentageOfTheOverallMarket
-  );
-
-  const bucketSize = 50;  // 照公司「市值占大盤比重」排名每 50 個一組 
-  const mapping = new Map();
-  children.forEach((child, idx) => {
-    mapping.set(child.id, Math.floor(idx / bucketSize));
-    child.rank = idx + 1;  // 🆕 儲存排名供 tooltip 顯示
-  });
-
-  const numBuckets = Math.max(1, Math.ceil(children.length / bucketSize));
-  const color = d3.scaleOrdinal().domain(d3.range(numBuckets)).range(d3.schemeTableau10);
-
-  // --- layout ---
-  const root = d3.hierarchy(data)
-                 .sum((d) => d.MarketCapitalizationAsAPercentageOfTheOverallMarket)
-                 .sort(
-                   (a, b) =>
-                     b.data.MarketCapitalizationAsAPercentageOfTheOverallMarket -
-                     a.data.MarketCapitalizationAsAPercentageOfTheOverallMarket
-                 );
-
-  d3.treemap()
-    .tile(d3.treemapBinary)  // 用 d3.treemapBinary 的形式
-    .size([width, height - 40])
-    .padding(1)(root);
-
-  const svg = d3.select(chartContainer.value)
-                .append("svg")
-                .attr("width", width)
-                .attr("height", height)
-                .attr("viewBox", [0, 0, width, height])
-                .attr("style", "font: 12px sans-serif;");
-
-  // --- Tooltip ---
-  const tooltip = d3.select(chartContainer.value)
-                    .append("div")
-                    .attr("class", "absolute bg-white dark:bg-gray-800 text-sm p-2 rounded shadow border")
-                    .style("opacity", 0)
-                    .style("transition", "opacity 0.1s ease")
-                    .style("pointer-events", "none");
-
-  const leaf = svg.selectAll("g")
-                  .data(root.leaves())
-                  .join("g")
-                  .attr("transform", (d) => `translate(${d.x0},${d.y0})`);
-
-  leaf.append("rect")
-      .attr("id", (d) => `rect-${d.data.rank}`)  // 給每個 rect 一個唯一 id
-      .attr("fill", (d) => {
-        const key = d.data.id ?? d.data.name;
-        return color(mapping.get(key) || 0);
-      })
-      .attr("fill-opacity", 0.9)
-      .attr("width", (d) => d.x1 - d.x0)
-      .attr("height", (d) => d.y1 - d.y0)
-      .attr("stroke", "var(--color-border)")
-      .attr("rx", 4)
-      .attr("ry", 4)
-      // 🟢 加入 tooltip 事件
-      .on("mouseover", (e, d) => {
-        tooltip
-          .style("opacity", 0.85)
-          .html(
-            `<strong>${d.data.name}</strong> <small>${d.data.id}</small><br/>
-             排名第 ${d.data.rank} 名<br/>
-             市值佔比：${(d.data.MarketCapitalizationAsAPercentageOfTheOverallMarket * 100).toFixed(4)}%`
-          );
-      })
-      .on("mousemove", (e) => {
-        tooltip
-          .style("left", `${e.offsetX + 10}px`)
-          .style("top", `${e.offsetY + 10}px`);
-      })
-      .on("mouseout", () => tooltip.style("opacity", 0));
-
-  // 建立 clipPath，確保方塊內文字不超出方塊
-  leaf.append("clipPath")
-      .attr("id", (d) => `clip-${d.data.rank}`)
-      .append("use")
-      .attr("xlink:href", (d) => `#rect-${d.data.rank}`);
-
-  // 公司名稱（僅顯示前 60 名）
-  leaf.filter((d) => d.data.rank < 60)
-      // .filter((d) => d.x1 - d.x0 > 60 && d.y1 - d.y0 > 20)
-      .append("text")
-      .attr("clip-path", (d) => `url(#clip-${d.data.rank})`)
-      .attr("x", 5)
-      .attr("y", 18)
-      .attr("fill", "#E5E7EB")
-      .attr("font-size", "16px")
-      .attr("font-weight", "bold")
-      .attr("pointer-events", "none")
-      .text((d) => d.data.name);
-
-  // 市值排名數值（僅顯示前 50 名）
-  leaf.filter((d) => d.data.rank < 50)
-      .append("text")
-      .attr("clip-path", (d) => `url(#clip-${d.data.rank})`)
-      .attr("x", 4)
-      .attr("y", 35)
-      .attr("fill", "var(--color-secondary)")
-      .attr("font-size", "11px")
-      .attr("pointer-events", "none")
-      .text(
-        (d) =>
-          `${(d.data.MarketCapitalizationAsAPercentageOfTheOverallMarket * 100).toFixed(4)}%`
-      );
-
-  // 圖例 Legend（僅前 4 組＝ 200 名）
-  const visibleBuckets = Math.min(numBuckets, 4);
-  const legend = svg.append("g")
-                    .attr("transform", `translate(5, ${height - 25})`);
-
-  const legendItem = legend.selectAll("g")
-                           .data(d3.range(visibleBuckets))
-                           .join("g")
-                           .attr("transform", (d, i) => `translate(${i * 110}, 0)`);
-
-  legendItem.append("rect")
-            .attr("x", 0)
-            .attr("width", 14)
-            .attr("height", 14)
-            .attr("fill", (d) => color(d))
-            .attr("rx", 3);
-
-  legendItem.append("text")
-            .attr("x", 20)
-            .attr("y", 11)
-            .attr("fill", "var(--color-primary)")
-            .attr("font-weight", "bold")
-            .text(
-              (d) =>
-                `${d * bucketSize + 1} - ${Math.min(
-                  (d + 1) * bucketSize,
-                  children.length
-                )} 名`
-            );
+interface TreemapDatum {
+  id: string;
+  name: string;
+  marketCapRatio: number;
+  rank: number;
+  children?: TreemapDatum[];
 }
 
+const BUCKET_SIZE = 50; // 照公司「市值占大盤比重」排名每 50 個一組
+const MAX_VISIBLE_BUCKETS = 4;
+const COMPANY_LABEL_MAX_RANK = 60;
+const RATIO_LABEL_MAX_RANK = 50;
+const CHART_COLOR_COUNT = 12;
+const LEGEND_HEIGHT = 40;
 
-// 封裝「載入資料 + 畫圖」的流程
-async function loadAndDrawTreemap() {
-  let dataToUse;
-  try {
-    const live = await fetchMarketTreemapData({   // 優先打後端 API
-      market: "TWSE",                             // 目前先固定畫上市
-    });
-    if (live && Array.isArray(live.children) && live.children.length) {
-      dataToUse = live;
-    }
-  } catch (e) {
-    dataToUse = mockData;
-    console.warn("[MarketCapitalizationTreemap] 取得後端資料失敗，改用 mockData：", e);
+const treemapData = ref<MarketTreemapData | null>(null);
+
+const chartContainerRef = ref<HTMLDivElement | null>(null);
+
+let resizeObserver: ResizeObserver | null = null;
+
+const displayDate = computed(() => treemapData.value?.date ?? "");
+
+function getChartColor(index: number): string {
+  const colorIndex = (index % CHART_COLOR_COUNT) + 1;
+
+  return `var(--color-chart-${colorIndex})`;
+}
+
+function getBucketIndex(rank: number): number {
+  return Math.floor((rank - 1) / BUCKET_SIZE);
+}
+
+/** 將 API / mock 資料整理為 D3 Treemap 使用的資料結構。 */
+function createTreemapRootData(data: MarketTreemapData): TreemapDatum {
+  const children: TreemapDatum[] = [...data.children]
+    .filter((item) => Number.isFinite(item.marketCapRatio) && item.marketCapRatio > 0)
+    .sort((a, b) => b.marketCapRatio - a.marketCapRatio)
+    .map((item, index) => ({
+      ...item,
+      rank: index + 1,
+    }));
+
+  return {
+    id: data.name,
+    name: data.name,
+    marketCapRatio: 0,
+    rank: 0,
+    children,
+  };
+}
+
+/** 繪製大盤市值 Treemap。 */
+function renderTreemap(data: MarketTreemapData): void {
+  const containerElement = chartContainerRef.value;
+
+  if (!containerElement) {
+    return;
   }
 
-  treemapData.value = dataToUse;       // 更新目前使用的資料
-  displayDate.value = dataToUse.date;  // 更新日期顯示
-  drawTreemap(dataToUse);              // 繪圖
+  const width = containerElement.clientWidth;
+  const height = containerElement.clientHeight;
+
+  if (width <= 0 || height <= LEGEND_HEIGHT) {
+    return;
+  }
+
+  d3.select(containerElement).selectAll("*").remove();
+
+  const rootData = createTreemapRootData(data);
+  const children = rootData.children ?? [];
+
+  const hierarchyRoot = d3
+    .hierarchy<TreemapDatum>(rootData)
+    .sum((datum) => datum.marketCapRatio)
+    .sort((a, b) => (b.value ?? 0) - (a.value ?? 0));
+
+  const treemapRoot = d3
+    .treemap<TreemapDatum>()
+    .tile(d3.treemapBinary)
+    .size([width, height - LEGEND_HEIGHT])
+    .padding(1)(hierarchyRoot);
+
+  const svg = d3
+    .select(containerElement)
+    .append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .attr("viewBox", `0 0 ${width} ${height}`)
+    .attr("role", "img")
+    .attr("aria-label", "臺灣上市公司大盤市值佔比圖")
+    .style("display", "block");
+
+  // TODO: 下一階段抽 TreemapChart.vue 時改為 Vue 控制 Tooltip
+  const tooltip = d3
+    .select(containerElement)
+    .append("div")
+    .attr(
+      "class",
+      "pointer-events-none absolute z-50 rounded-md border border-border bg-surface p-2 text-sm text-foreground shadow-lg",
+    )
+    .style("opacity", 0);
+
+  const leaves = treemapRoot.leaves();
+
+  const leafGroups = svg
+    .selectAll<SVGGElement, d3.HierarchyRectangularNode<TreemapDatum>>("g")
+    .data(leaves)
+    .join("g")
+    .attr("transform", (node) => `translate(${node.x0}, ${node.y0})`);
+
+  leafGroups
+    .append("rect")
+    .attr("id", (node) => `treemap-rect-${node.data.rank}`)
+    .attr("fill", (node) => getChartColor(getBucketIndex(node.data.rank)))
+    .attr("fill-opacity", 0.9)
+    .attr("width", (node) => node.x1 - node.x0)
+    .attr("height", (node) => node.y1 - node.y0)
+    .attr("stroke", "var(--color-border)")
+    .attr("rx", 4)
+    .attr("ry", 4)
+    .on("mouseover", (_event, node) => {
+      tooltip.style("opacity", 1).html(
+        `<strong>${node.data.name}</strong> <small>${node.data.id}</small><br>
+        排名第 ${node.data.rank} 名<br>
+        市值佔比：${formatPercentage(node.data.marketCapRatio, 4)}`,
+      );
+    })
+    .on("mousemove", (event: MouseEvent) => {
+      const [x, y] = d3.pointer(event, containerElement);
+
+      tooltip.style("left", `${x + 10}px`).style("top", `${y + 10}px`);
+    })
+    .on("mouseout", () => {
+      tooltip.style("opacity", 0);
+    });
+
+  // 建立 clipPath，避免文字超出 Treemap 方塊
+  leafGroups
+    .append("clipPath")
+    .attr("id", (node) => `treemap-clip-${node.data.rank}`)
+    .append("use")
+    .attr("href", (node) => `#treemap-rect-${node.data.rank}`);
+
+  // 公司名稱：前 60 名
+  leafGroups
+    .filter((node) => node.data.rank <= COMPANY_LABEL_MAX_RANK)
+    .append("text")
+    .attr("clip-path", (node) => `url(#treemap-clip-${node.data.rank})`)
+    .attr("x", 5)
+    .attr("y", 18)
+    .attr("fill", "var(--color-background)")
+    .attr("font-size", "16px")
+    .attr("font-weight", "bold")
+    .attr("pointer-events", "none")
+    .text((node) => node.data.name);
+
+  // 市值佔比：前 50 名
+  leafGroups
+    .filter((node) => node.data.rank <= RATIO_LABEL_MAX_RANK)
+    .append("text")
+    .attr("clip-path", (node) => `url(#treemap-clip-${node.data.rank})`)
+    .attr("x", 5)
+    .attr("y", 35)
+    .attr("fill", "var(--color-background)")
+    .attr("fill-opacity", 0.7)
+    .attr("font-size", "11px")
+    .attr("pointer-events", "none")
+    .text((node) => formatPercentage(node.data.marketCapRatio, 4));
+
+  // Legend：僅顯示前 4 組，即前 200 名
+  const bucketCount = Math.max(1, Math.ceil(children.length / BUCKET_SIZE));
+  const visibleBucketCount = Math.min(bucketCount, MAX_VISIBLE_BUCKETS);
+
+  const legend = svg.append("g").attr("transform", `translate(5, ${height - 25})`);
+
+  const legendItems = legend
+    .selectAll<SVGGElement, number>("g")
+    .data(d3.range(visibleBucketCount))
+    .join("g")
+    .attr("transform", (_bucketIndex, index) => `translate(${index * 110}, 0)`);
+
+  legendItems
+    .append("rect")
+    .attr("width", 14)
+    .attr("height", 14)
+    .attr("fill", (bucketIndex) => getChartColor(bucketIndex))
+    .attr("rx", 3);
+
+  legendItems
+    .append("text")
+    .attr("x", 20)
+    .attr("y", 11)
+    .attr("fill", "var(--color-brand)")
+    .attr("font-weight", "bold")
+    .text(
+      (bucketIndex) =>
+        `${bucketIndex * BUCKET_SIZE + 1} - ${Math.min(
+          (bucketIndex + 1) * BUCKET_SIZE,
+          children.length,
+        )} 名`,
+    );
 }
 
+/** 取得 Treemap 資料；API 不可用或無有效資料時使用 mock。 */
+async function loadTreemapData(): Promise<void> {
+  let data: MarketTreemapData = mockData;
+
+  try {
+    const liveData = await fetchMarketTreemapData({
+      market: "TWSE",
+    });
+
+    if (liveData.children.length > 0) {
+      data = liveData;
+    }
+  } catch (error) {
+    console.warn("[MarketCapitalizationTreemap] 取得後端資料失敗，改用 mockData：", error);
+  }
+
+  treemapData.value = data;
+
+  renderTreemap(data);
+}
 
 onMounted(() => {
-  nextTick(() => loadAndDrawTreemap());
-  if (window.ResizeObserver) {
-    resizeObserver = new ResizeObserver(() => {
-      const data = treemapData.value || mockData;
-      drawTreemap(data);
-    });
-    resizeObserver.observe(chartContainer.value);
+  void loadTreemapData();
+
+  const containerElement = chartContainerRef.value;
+
+  if (!containerElement || typeof ResizeObserver === "undefined") {
+    return;
   }
+
+  resizeObserver = new ResizeObserver(() => {
+    if (treemapData.value) {
+      renderTreemap(treemapData.value);
+    }
+  });
+
+  resizeObserver.observe(containerElement);
 });
 
 onBeforeUnmount(() => {
-  if (resizeObserver) resizeObserver.disconnect();
+  resizeObserver?.disconnect();
 });
 </script>
 
