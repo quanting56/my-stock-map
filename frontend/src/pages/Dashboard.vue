@@ -38,7 +38,7 @@
       <!-- <HoldingDetails :isTotalValueHidden="isHidden"></HoldingDetails> -->
 
       <!-- 右側：資產分布圖 -->
-      <MarketCapitalizationTreemap></MarketCapitalizationTreemap>
+      <MarketCapitalizationCard></MarketCapitalizationCard>
     </div>
   
   
@@ -55,7 +55,7 @@ import SummaryCards from "@/components/dashboard/SummaryCards.vue";
 import HoldingAllocationCard from "@/components/dashboard/HoldingAllocationCard.vue";
 import PerformanceChart from "@/components/dashboard/PerformanceChart.vue";
 import HoldingDetails from "@/components/dashboard/HoldingDetails.vue";
-import MarketCapitalizationTreemap from "@/components/dashboard/MarketCapitalizationTreemap.vue";
+import MarketCapitalizationCard from "@/components/dashboard/MarketCapitalizationCard.vue";
 // import TimelineList from "@/components/dashboard/TimelineList.vue";
 // import Test from "../components/dashboard/Test.vue";
 
