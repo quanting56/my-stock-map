@@ -20,7 +20,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
   
       <!-- 左側：資產分布圖 -->
-      <ShareholdingRatioChart :isTotalValueHidden="isHidden"></ShareholdingRatioChart>
+      <HoldingAllocationCard :isTotalValueHidden="isHidden"></HoldingAllocationCard>
   
       <!-- 右側：市值趨勢圖 -->
       <PerformanceChart></PerformanceChart>
@@ -38,7 +38,7 @@
       <!-- <HoldingDetails :isTotalValueHidden="isHidden"></HoldingDetails> -->
 
       <!-- 右側：資產分布圖 -->
-      <MarketCapitalizationTreemap></MarketCapitalizationTreemap>
+      <MarketCapitalizationCard></MarketCapitalizationCard>
     </div>
   
   
@@ -52,10 +52,10 @@
 
 <script setup lang="ts">
 import SummaryCards from "@/components/dashboard/SummaryCards.vue";
-import ShareholdingRatioChart from "@/components/dashboard/ShareholdingRatioChart.vue";
+import HoldingAllocationCard from "@/components/dashboard/HoldingAllocationCard.vue";
 import PerformanceChart from "@/components/dashboard/PerformanceChart.vue";
 import HoldingDetails from "@/components/dashboard/HoldingDetails.vue";
-import MarketCapitalizationTreemap from "@/components/dashboard/MarketCapitalizationTreemap.vue";
+import MarketCapitalizationCard from "@/components/dashboard/MarketCapitalizationCard.vue";
 // import TimelineList from "@/components/dashboard/TimelineList.vue";
 // import Test from "../components/dashboard/Test.vue";
 

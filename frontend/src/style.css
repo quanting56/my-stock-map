@@ -82,20 +82,23 @@
 
   /* =======================================================
    * Chart Palette
+   *
+   * chart-1 ~ chart-10：D3 schemeTableau10
+   * chart-11 ~ chart-12：My Stock Map extension
    * ======================================================= */
 
-  --color-chart-1: #7c3aed; /* Violet */
-  --color-chart-2: #2563eb; /* Blue */
-  --color-chart-3: #14b8a6; /* Teal */
-  --color-chart-4: #f59e0b; /* Amber */
-  --color-chart-5: #ef4444; /* Red */
-  --color-chart-6: #65a30d; /* Lime */
-  --color-chart-7: #db2777; /* Pink */
-  --color-chart-8: #0891b2; /* Cyan */
-  --color-chart-9: #ea580c; /* Orange */
-  --color-chart-10: #4f46e5; /* Indigo */
-  --color-chart-11: #a16207; /* Brown / Ochre */
-  --color-chart-12: #475569; /* Slate */
+  --color-chart-1: #4e79a7; /* Blue */
+  --color-chart-2: #f28e2c; /* Orange */
+  --color-chart-3: #e15759; /* Red */
+  --color-chart-4: #76b7b2; /* Teal */
+  --color-chart-5: #59a14f; /* Green */
+  --color-chart-6: #edc949; /* Yellow */
+  --color-chart-7: #af7aa1; /* Purple */
+  --color-chart-8: #ff9da7; /* Pink */
+  --color-chart-9: #9c755f; /* Brown */
+  --color-chart-10: #bab0ab; /* Gray */
+  --color-chart-11: #17becf; /* Cyan */
+  --color-chart-12: #bcbd22; /* Olive */
 
   /*
    * =======================================================
@@ -190,20 +193,23 @@
   --color-danger: #f87171;
   --color-info: #60a5fa;
 
-  /* Chart Palette */
+  /* Chart Palette
+   *
+   * 保留 light palette 的色相識別，並提高亮度以適應深色 surface。
+   */
 
-  --color-chart-1: #a78bfa; /* Violet */
-  --color-chart-2: #60a5fa; /* Blue */
-  --color-chart-3: #2dd4bf; /* Teal */
-  --color-chart-4: #fbbf24; /* Amber */
-  --color-chart-5: #f87171; /* Red */
-  --color-chart-6: #a3e635; /* Lime */
-  --color-chart-7: #f472b6; /* Pink */
-  --color-chart-8: #22d3ee; /* Cyan */
-  --color-chart-9: #fb923c; /* Orange */
-  --color-chart-10: #818cf8; /* Indigo */
-  --color-chart-11: #d6a756; /* Brown / Ochre */
-  --color-chart-12: #94a3b8; /* Slate */
+  --color-chart-1: #6e91b7; /* Blue */
+  --color-chart-2: #f4a252; /* Orange */
+  --color-chart-3: #e67577; /* Red */
+  --color-chart-4: #8fc4c0; /* Teal */
+  --color-chart-5: #77b26f; /* Green */
+  --color-chart-6: #f0d36a; /* Yellow */
+  --color-chart-7: #bd92b2; /* Purple */
+  --color-chart-8: #ffafb7; /* Pink */
+  --color-chart-9: #ae8e7c; /* Brown */
+  --color-chart-10: #c6beba; /* Gray */
+  --color-chart-11: #41cad8; /* Cyan */
+  --color-chart-12: #c8c94a; /* Olive */
 }
 
 /*

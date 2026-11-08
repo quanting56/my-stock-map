@@ -74,11 +74,11 @@ export interface MarketTreemapData {
   children: MarketTreemapNode[];
 }
 
+/** 大盤市值 Treemap 單一公司資料。 */
 export interface MarketTreemapNode {
   id: string; // "2330.TW"
   name: string; // "台積電"
-  MarketCapitalizationAsAPercentageOfTheOverallMarket: number; // 0~1
-  rank: number;
+  marketCapRatio: number; // 0 ~ 1
 }
 
 /** 相關新聞查詢參數。 */
@@ -375,14 +375,15 @@ export async function fetchCompanyRank(codeOrSymbol: number | string): Promise<C
   }
 }
 
-// 大盤市值 Treemap 用的資料函式
-// 回傳格式：
-// { name: "TWSE", date: "2025/09/30", children: [{ id, name, MarketCapitalizationAsAPercentageOfTheOverallMarket }, ...] }
+// ===============================
+// 大盤市值 Treemap
+// 後端 weight 為 0 ~ 100 的百分比，前端統一正規化為 0 ~ 1 的 marketCapRatio
+// ===============================
 type MarketCode = "TWSE" | "TPEX";
 
-// =========================================
+// ======
 // Market ranks API types (local, from Backend)
-// =========================================
+// ======
 interface MarketRanksApiResponse {
   date: string;
   twse: MarketRanksApiRow[];
@@ -397,7 +398,7 @@ interface MarketRanksApiRow {
   weight: number; // 0~100 的百分比
   rank: number;
 }
-// =========================================
+// ======
 
 export async function fetchMarketTreemapData({
   market = "TWSE",
@@ -413,19 +414,14 @@ export async function fetchMarketTreemapData({
   const json = (await res.json()) as MarketRanksApiResponse;
   const list = (upper === "TPEX" ? json.tpex : json.twse) ?? [];
 
-  // TAIFEX 給的是「指數成分股比重 %」，Mock 裡是「佔比 (0~1)」，
-  // 這裡直接用 weight / 100 當作 MarketCapitalizationAsAPercentageOfTheOverallMarket
   const children: MarketTreemapNode[] = list
-    .filter((r) => r.symbol.length > 0) // 基本防呆
-    .map((r) => {
-      const w = typeof r.weight === "number" && Number.isFinite(r.weight) ? r.weight : 0;
-      return {
-        id: r.symbol,
-        name: r.name, // 「台積電」、「鴻海」⋯
-        MarketCapitalizationAsAPercentageOfTheOverallMarket: w / 100, // 變 0~1
-        rank: r.rank,
-      };
-    });
+    .filter((row) => row.symbol.length > 0) // 基本防呆
+    .map((row) => ({
+      id: row.symbol,
+      name: row.name, // 「台積電」、「鴻海」⋯
+      marketCapRatio:
+        typeof row.weight === "number" && Number.isFinite(row.weight) ? row.weight / 100 : 0, // 變 0~1
+    }));
 
   return {
     name: upper, // "TWSE" 或 "TPEX"
