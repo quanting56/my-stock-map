@@ -108,37 +108,39 @@
     </svg>
 
     <!-- Tooltip -->
-    <div
-      v-if="tooltipItem"
-      class="pointer-events-none absolute z-50 min-w-32 rounded-md border border-border bg-surface p-2 text-sm text-foreground shadow-lg"
-      :style="{
-        left: `${tooltipPosition.x}px`,
-        top: `${tooltipPosition.y}px`,
-      }"
+    <BaseTooltip
+      :is-open="tooltipItem !== null"
+      :x="tooltipPosition.x"
+      :y="tooltipPosition.y"
+      :placement-key="tooltipItem?.id ?? null"
     >
-      <div>
-        <strong>{{ tooltipItem.label }}</strong>
+      <template v-if="tooltipItem">
+        <div>
+          <strong>{{ tooltipItem.label }}</strong>
 
-        <span
-          v-if="tooltipItem.secondaryLabel"
-          class="ml-1 text-xs text-foreground-muted"
-        >
-          {{ tooltipItem.secondaryLabel }}
-        </span>
-      </div>
+          <span
+            v-if="tooltipItem.secondaryLabel"
+            class="ml-1 text-xs text-foreground-muted"
+          >
+            {{ tooltipItem.secondaryLabel }}
+          </span>
+        </div>
 
-      <div class="mt-1">排名第 {{ tooltipItem.rank }} 名</div>
+        <div class="mt-1">排名第 {{ tooltipItem.rank }} 名</div>
 
-      <div>
-        {{ tooltipItem.displayValue }}
-      </div>
-    </div>
+        <div>
+          {{ tooltipItem.displayValue }}
+        </div>
+      </template>
+    </BaseTooltip>
   </div>
 </template>
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from "vue";
 import * as d3 from "d3";
+
+import BaseTooltip from "@/components/ui/BaseTooltip.vue";
 
 interface TreemapChartItem {
   id: string;
@@ -158,7 +160,7 @@ interface ContainerSize {
   height: number;
 }
 
-interface TooltipPosition {
+interface PointerPosition {
   x: number;
   y: number;
 }
@@ -196,7 +198,7 @@ const containerSize = ref<ContainerSize>({ width: 0, height: 0 });
 
 const tooltipItem = ref<TreemapDatum | null>(null);
 
-const tooltipPosition = ref<TooltipPosition>({ x: 0, y: 0 });
+const tooltipPosition = ref<PointerPosition>({ x: 0, y: 0 });
 
 let resizeObserver: ResizeObserver | null = null;
 
@@ -278,19 +280,11 @@ function getClipPathId(rank: number): string {
 }
 
 function showTooltip(event: MouseEvent, item: TreemapDatum): void {
-  const containerElement = containerRef.value;
-
-  if (!containerElement) {
-    return;
-  }
-
-  const containerRect = containerElement.getBoundingClientRect();
-
   tooltipItem.value = item;
 
   tooltipPosition.value = {
-    x: event.clientX - containerRect.left + 10,
-    y: event.clientY - containerRect.top + 10,
+    x: event.clientX,
+    y: event.clientY,
   };
 }
 
