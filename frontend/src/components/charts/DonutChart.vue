@@ -1,8 +1,5 @@
 <template>
-  <div
-    ref="containerRef"
-    class="relative flex flex-col items-center gap-4 xl:flex-row"
-  >
+  <div class="relative flex flex-col items-center gap-4 xl:flex-row">
     <!-- Donut -->
     <div class="flex h-40 w-40 shrink-0 items-center justify-center">
       <svg
@@ -100,26 +97,26 @@
     </div>
 
     <!-- Tooltip -->
-    <div
-      v-if="tooltipItem"
-      class="pointer-events-none absolute z-50 min-w-24 rounded-md border border-border bg-surface px-2.5 py-2 text-sm text-foreground shadow-lg"
-      :style="{
-        left: `${tooltipPosition.x}px`,
-        top: `${tooltipPosition.y}px`,
-      }"
+    <BaseTooltip
+      :is-open="tooltipItem !== null"
+      :x="tooltipPosition.x"
+      :y="tooltipPosition.y"
+      :placement-key="tooltipItem?.id ?? null"
     >
-      <div class="font-semibold">
-        {{ tooltipItem.label }}
-      </div>
+      <template v-if="tooltipItem">
+        <div class="font-semibold">
+          {{ tooltipItem.label }}
+        </div>
 
-      <div class="text-xs">
-        {{ tooltipItem.displayValue }}
-      </div>
+        <div class="text-xs">
+          {{ tooltipItem.displayValue }}
+        </div>
 
-      <div class="text-xs text-foreground-muted">
-        {{ formatPercentage(getItemRatio(tooltipItem.value)) }}
-      </div>
-    </div>
+        <div class="text-xs text-foreground-muted">
+          {{ formatPercentage(getItemRatio(tooltipItem.value)) }}
+        </div>
+      </template>
+    </BaseTooltip>
   </div>
 </template>
 
@@ -129,6 +126,8 @@ import * as d3 from "d3";
 
 import { formatPercentage } from "@/utils/format/number";
 
+import BaseTooltip from "@/components/ui/BaseTooltip.vue";
+
 interface DonutChartItem {
   id: string;
   label: string;
@@ -137,7 +136,7 @@ interface DonutChartItem {
   displayValue: string;
 }
 
-interface TooltipPosition {
+interface PointerPosition {
   x: number;
   y: number;
 }
@@ -158,13 +157,11 @@ const props = withDefaults(
   },
 );
 
-const containerRef = ref<HTMLDivElement | null>(null);
-
 const highlightedId = ref<string | null>(null);
 const hoveredId = ref<string | null>(null);
 
 const tooltipItem = ref<DonutChartItem | null>(null);
-const tooltipPosition = ref<TooltipPosition>({ x: 0, y: 0 });
+const tooltipPosition = ref<PointerPosition>({ x: 0, y: 0 });
 
 const validItems = computed(() =>
   props.items.filter((item) => Number.isFinite(item.value) && item.value > 0),
@@ -219,20 +216,12 @@ function toggleHighlightedId(id: string): void {
 }
 
 function showTooltip(event: MouseEvent, item: DonutChartItem): void {
-  const containerElement = containerRef.value;
-
-  if (!containerElement) {
-    return;
-  }
-
-  const containerRect = containerElement.getBoundingClientRect();
-
   hoveredId.value = item.id;
   tooltipItem.value = item;
 
   tooltipPosition.value = {
-    x: event.clientX - containerRect.left + 18,
-    y: event.clientY - containerRect.top + 18,
+    x: event.clientX,
+    y: event.clientY,
   };
 }
 
