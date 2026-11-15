@@ -1,86 +1,102 @@
 <template>
-  <LoadingModal :open="isLoading" message="股市資料載入中"></LoadingModal>
-  <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
-    <div class="flex items-center justify-between mb-3">
-      <h3 class="font-medium text-[color:var(--color-secondary)]">
-        {{ displaySymbol }} 近期趨勢 {{ endClose - startOpen >= 0 ? "📈" : "📉" }}
+  <LoadingModal
+    :open="isLoading"
+    message="股市資料載入中"
+  ></LoadingModal>
+
+  <div class="rounded-2xl bg-surface p-4 text-foreground shadow lg:col-span-2">
+    <div class="mb-3 flex items-center justify-between">
+      <h3 class="font-medium text-foreground-muted">
+        {{ displaySymbol }} 近期趨勢 {{ trendIcon }}
       </h3>
 
-      <div class="flex gap-2 text-xs text-[color:var(--color-secondary)]">
-        <div v-for="range in ranges" :key="range.value">
+      <div class="flex gap-1 text-xs text-foreground-muted">
+        <template
+          v-for="(range, index) in RANGE_OPTIONS"
+          :key="range.value"
+        >
           <button
+            type="button"
+            class="cursor-pointer transition-colors duration-200 hover:text-brand"
+            :class="selectedRange === range.value ? 'font-semibold text-brand' : ''"
             @click="selectedRange = range.value"
-            class="hover:text-[color:var(--color-primary)] transition-all duration-200 cursor-pointer"
-            :class="selectedRange === range.value ? 'font-semibold text-[color:var(--color-primary)]' : ''"
           >
             {{ range.label }}
-          </button>｜
-        </div>
+          </button>
+
+          <span
+            v-if="index < RANGE_OPTIONS.length - 1"
+            aria-hidden="true"
+          >
+            ｜
+          </span>
+        </template>
       </div>
     </div>
 
     <div
       ref="chartContainerRef"
-      class="h-44 w-full rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] p-3 relative"
+      class="relative h-44 w-full rounded-lg border border-border bg-surface p-3"
     >
-      <svg ref="svgRef" class="w-full h-full"></svg>
+      <svg
+        ref="svgRef"
+        class="h-full w-full"
+      ></svg>
+
+      <div
+        v-if="loadErrorMessage"
+        role="status"
+        class="absolute inset-0 flex items-center justify-center px-4 text-center text-sm text-danger"
+      >
+        {{ loadErrorMessage }}
+      </div>
 
       <div
         ref="tooltipRef"
-        class="absolute bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-[color:var(--color-text)] text-xs px-2 py-1 rounded shadow opacity-0 transition-opacity duration-200 pointer-events-none"
+        class="pointer-events-none absolute rounded border border-border bg-surface px-2 py-1 text-xs text-foreground opacity-0 shadow transition-opacity duration-200"
       ></div>
     </div>
 
-    <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-[color:var(--color-secondary)]">
+    <div class="mt-3 grid grid-cols-2 gap-3 text-sm text-foreground-muted">
       <div>
         {{ latestTradingDate }} 成交量
-        <span class="font-medium ml-1.5 mt-1">
-          {{ latestVolume ? latestVolume.toLocaleString() : "-" }} 股
+
+        <span class="mt-1 ml-1.5 font-medium">
+          {{ latestVolume !== null ? formatQuantity(latestVolume) : "？" }} 股
         </span>
       </div>
-      <div class="text-right">此區間變動：
+
+      <div class="text-right">
+        此區間變動：
         <span
-          class="font-semibold ml-1.5"
-          :class="[
-            changePercent < 0
-            ? 'text-[color:var(--color-line3)]'
-            : 'text-[color:var(--color-line2)]'
-          ]"
+          class="ml-1.5 font-semibold"
+          :class="changePercent !== null && changePercent < 0 ? 'text-loss' : 'text-gain'"
         >
-          {{ changePercent < 0 ? "" : "+" }}{{ (changePercent * 100).toFixed(2) }}%
+          {{ changePercent !== null ? formatSignedPercentage(changePercent) : "？" }}
         </span>
       </div>
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import * as d3 from "d3";
-import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
+
+import { formatQuantity, formatSignedPercentage } from "@/utils/format/number";
+import { fetchStockSeries, type StockBar, type StockRangeQuery } from "@/api/stocksApi";
 import { useQueryStockStore } from "@/stores/queryStock";
 
-// fetchStockSeries 直接拿可繪圖資料；normalizeStockRows 用來正規化 mockData
-import { fetchStockSeries, normalizeStockRows } from "@/api/stocksApi";
-import { mockData2330 } from "@/data/mock/mockData2330.js";
+import LoadingModal from "@/components/common/global/LoadingModal.vue";
 
-const isLoading = ref(false);
+const EARLIEST_YEAR = 1990;
+const LINE_TRANSITION_DURATION = 1000;
 
+const TOOLTIP_WIDTH = 160;
+const TOOLTIP_HEIGHT = 76;
+const TOOLTIP_OFFSET = 12;
 
-// Pinia 全站同步股號
-const queryStock = useQueryStockStore();
-const symbol = computed(() => queryStock.symbol);  // 邏輯用
-const displaySymbol = computed(() => queryStock.displaySymbol);  // 模板顯示用
-
-
-// DOM ref
-const chartContainerRef = ref(null);
-const svgRef = ref(null);
-const tooltipRef = ref(null);
-
-
-// 圖表區間切換用
-const ranges = [
+const RANGE_OPTIONS = [
   { label: "1 日", value: "1d" },
   { label: "5 日", value: "5d" },
   { label: "30 日", value: "30d" },
@@ -88,321 +104,484 @@ const ranges = [
   { label: "1 年", value: "1y" },
   { label: "5 年", value: "5y" },
   { label: "10 年", value: "10y" },
-  { label: "最久", value: "max" }
-];
-const earliestYear = 1990;  // 選「最久」時能回溯到的最早年（「最久」起始年）
+  { label: "最久", value: "max" },
+] as const;
 
-const selectedRange = ref("6m");  // 預設顯示「6個月」
-const effectiveRange = ref(selectedRange.value);  // 真正驅動圖表的有效區段，資料就緒時才切過去（沒有computed，不會自動隨著selected改變而跟著變）
-const transitionDuration = 1000;  // 動畫過渡時間
+type PriceRange = (typeof RANGE_OPTIONS)[number]["value"];
 
-const rangeData = ref([]);  // 所選資料暫存
+const queryStockStore = useQueryStockStore();
 
+const isLoading = ref(false);
+const loadErrorMessage = ref("");
 
-// 由 range 推回起始日
-function fromDateByRange(range, baseDate, earliest = earliestYear) {
+const chartContainerRef = ref<HTMLDivElement | null>(null);
+const svgRef = ref<SVGSVGElement | null>(null);
+const tooltipRef = ref<HTMLDivElement | null>(null);
+
+const selectedRange = ref<PriceRange>("6m");
+
+// 實際套用在目前圖表上的區間
+// 等對應資料準備完成後才更新，避免先切 range 再等待資料造成重複繪製
+const activeRange = ref<PriceRange>(selectedRange.value);
+
+const stockData = ref<StockBar[]>([]);
+
+const stockDataCache = new Map<string, StockBar[]>();
+
+let latestRequestId = 0;
+let activeDataKey = "";
+let resizeObserver: ResizeObserver | null = null;
+
+const chartResizeTick = ref(0);
+
+const stockSymbol = computed(() => queryStockStore.symbol);
+const displaySymbol = computed(() => queryStockStore.displaySymbol);
+
+/** 依目前真正生效的 range 過濾已載入資料。 */
+const filteredData = computed<StockBar[]>(() => {
+  if (stockData.value.length === 0) {
+    return [];
+  }
+
+  const latestDate = stockData.value.at(-1)?.date;
+
+  if (!latestDate) {
+    return [];
+  }
+
+  const cutoffDate = getRangeStartDate(activeRange.value, latestDate);
+
+  return stockData.value.filter((datum) => datum.date >= cutoffDate);
+});
+
+const changePercent = computed<number | null>(() => {
+  const firstDatum = filteredData.value[0];
+  const lastDatum = filteredData.value.at(-1);
+
+  if (!firstDatum || !lastDatum || firstDatum.open === 0) {
+    return null;
+  }
+
+  return (lastDatum.close - firstDatum.open) / firstDatum.open;
+});
+
+const trendIcon = computed(() => {
+  if (changePercent.value === null) {
+    return "";
+  }
+
+  return changePercent.value >= 0 ? "📈" : "📉";
+});
+
+const latestVolume = computed<number | null>(() => filteredData.value.at(-1)?.volume ?? null);
+
+const latestTradingDate = computed(() => {
+  const latestDate = filteredData.value.at(-1)?.date;
+
+  return latestDate ? formatChartDate(latestDate) : "";
+});
+
+const formatChartDate = d3.timeFormat("%Y/%m/%d");
+
+/** 根據顯示區間取得起始日期。 */
+function getRangeStartDate(range: PriceRange, baseDate: Date, earliestYear = EARLIEST_YEAR): Date {
   switch (range) {
-    case "1d":  return d3.timeDay.offset(baseDate, -1);
-    case "5d":  return d3.timeDay.offset(baseDate, -5);
-    case "30d": return d3.timeDay.offset(baseDate, -30);
-    case "6m":  return d3.timeMonth.offset(baseDate, -6);
-    case "1y":  return d3.timeYear.offset(baseDate, -1);
-    case "5y":  return d3.timeYear.offset(baseDate, -5);
-    case "10y": return d3.timeYear.offset(baseDate, -10);
-    case "max": return new Date(earliest, 0, 1);
-    default:    return new Date(earliest, 0, 1);
-  };
-};
+    case "1d":
+      return d3.timeDay.offset(baseDate, -1);
 
-// 區間首尾的指標價，提供給 UI 顯示趨勢符號/漲跌百分比
-const startOpen = ref(0);
-const endClose = ref(0);
+    case "5d":
+      return d3.timeDay.offset(baseDate, -5);
 
+    case "30d":
+      return d3.timeDay.offset(baseDate, -30);
 
-// 前端快取（避免同參數重打），請求序號（避免競態覆蓋）
-const cacheMap = new Map();  // key: `${symbol}|${startYear}-${startMonth}~${endYear}-${endMonth}`
-let requestId = 0;
+    case "6m":
+      return d3.timeMonth.offset(baseDate, -6);
 
-function makeKey(sym, p) {
-  return `${sym}|${p.startYear}-${p.startMonth}~${p.endYear}-${p.endMonth}`;
-};
+    case "1y":
+      return d3.timeYear.offset(baseDate, -1);
 
+    case "5y":
+      return d3.timeYear.offset(baseDate, -5);
 
-// 前端「所選區間」 -> 後端「API 所需的起訖年月（含「max」）」
-function paramsForRange(range) {
+    case "10y":
+      return d3.timeYear.offset(baseDate, -10);
+
+    case "max":
+      return new Date(earliestYear, 0, 1);
+
+    default:
+      return new Date(earliestYear, 0, 1);
+  }
+}
+
+/** 將前端顯示區間轉換為股票歷史資料 API 的年月查詢參數。 */
+function getRangeQuery(range: PriceRange): StockRangeQuery {
   const now = new Date();
-  const to = { endYear: now.getFullYear(), endMonth: now.getMonth() + 1 };
-  const fromDate = fromDateByRange(range, now, earliestYear);
+  const startDate = getRangeStartDate(range, now);
+
   return {
-    startYear: fromDate.getFullYear(),
-    startMonth: fromDate.getMonth() + 1,
-    ...to
+    startYear: startDate.getFullYear(),
+    startMonth: startDate.getMonth() + 1,
+    endYear: now.getFullYear(),
+    endMonth: now.getMonth() + 1,
   };
-};
+}
 
-// 呼叫後端依「參數」回傳完整區間
-async function fetchStockData(params = {}) {
-  isLoading.value = true;  // 使用 LoadingModal
-  const key = makeKey(symbol.value, params);
+function createCacheKey(symbol: string, params: StockRangeQuery): string {
+  return `${symbol}|${params.startYear ?? ""}-${params.startMonth ?? ""}~${
+    params.endYear ?? ""
+  }-${params.endMonth ?? ""}`;
+}
 
-  if (cacheMap.has(key)) {  // 快取命中 → 直接用
-    const cached = cacheMap.get(key);
-    
-    if (rangeData.value === cached) {
-      isLoading.value = false;
-      return;
-    }  // 若目前 rangeData 已是同一參考，就不要再次 set（避免重畫）
+/** 取得指定查詢範圍的股票資料，並處理 cache、競態與錯誤狀態。 */
+async function loadStockData(params: StockRangeQuery): Promise<void> {
+  // 每次資料需求都先產生新 request id
+  // 即使這次命中 cache，也能讓較早仍在進行中的 request 失效
+  const currentRequestId = ++latestRequestId;
 
-    rangeData.value = cached;
+  const cacheKey = createCacheKey(stockSymbol.value, params);
+  const cachedData = stockDataCache.get(cacheKey);
+
+  if (cachedData) {
+    activeDataKey = cacheKey;
+    loadErrorMessage.value = "";
+
+    if (stockData.value !== cachedData) {
+      stockData.value = cachedData;
+    }
+
     isLoading.value = false;
     return;
-  };
-  const myId = ++requestId;  // 標記這次請求
-  try {
-    const data = await fetchStockSeries(symbol.value, params);  // 取得「已正規化、已排序」的 StockBar[]
-    if (myId !== requestId) return;  // 舊回應丟棄
-    cacheMap.set(key, data);  // 寫入快取
-    rangeData.value = data;
-    currentKey.value = key;  // 記錄目前使用的資料 key
-    console.log(`✅ 從後端取得 ${symbol.value} 資料`, data.length, params);
-  } catch (err) {
-    if (myId !== requestId) return;  // 舊錯誤丟棄
-    console.warn("⚠️ 無法連線伺服器，改用 mockData2330：", err.message);
-    rangeData.value = /^2330(?:\.TW)?$/i.test(displaySymbol.value)
-      ? normalizeStockRows(symbol.value, mockData2330)
-      : [];  // mockData 轉成 StockBar[]
-  } finally {
-    if (myId === requestId) isLoading.value = false;  // 僅關閉當前請求的 loading
-  };
-};
-
-// 根據 effectiveRange 過濾資料，避免在資料未就緒時就重畫
-const filteredData = computed(() => {
-  const now = rangeData.value.at(-1)?.date || new Date();
-  const cutoff = rangeData.value.length
-    ? fromDateByRange(effectiveRange.value, now, earliestYear)
-    : new Date(0);
-  return rangeData.value
-    .filter(d => d.open !== null)
-    .filter(d => d.date >= cutoff);
-});
-
-// 判斷目前本地資料是否覆蓋某個 range 的截止點
-function hasCoverageFor(range) {
-  if (!rangeData.value.length) return false;
-  const now = rangeData.value.at(-1)?.date || new Date();
-  const cutoff = fromDateByRange(range, now, earliestYear);
-  const earliest = rangeData.value[0].date;
-  // 只要本地最早日期 <= 目標 cutoff，就代表資料足夠，不必打 API
-  return earliest <= cutoff;
-};
-
-// 記住目前使用中的「後端參數 key」，避免對同一 key 重複 set 造成重畫
-const currentKey = ref("");
-
-watch(selectedRange, async (val) => {
-  // 本地足夠 → 直接切到有效區段（立即只畫一次）
-  if (hasCoverageFor(val)) {
-    effectiveRange.value = val;
-    return;
-  };
-  
-  // 本地不足 → 先補資料，補好再切到有效區段（只畫一次，新資料）
-  const params = paramsForRange(val);
-  const key = makeKey(symbol.value, params);
-  if (key !== currentKey.value) {
-    await fetchStockData(params);
   }
-  effectiveRange.value = val;
-});
 
+  isLoading.value = true;
+  loadErrorMessage.value = "";
 
-// D3 繪圖函式
-function drawChart(data) {
-  const svg = d3.select(svgRef.value);
-  svg.selectAll("*").remove();
+  try {
+    const data = await fetchStockSeries(stockSymbol.value, params);
 
-  const width = chartContainerRef.value.clientWidth;
-  const height = chartContainerRef.value.clientHeight;
-  const margin = { top: 10, right: 40, bottom: 40, left: 40 };
+    if (currentRequestId !== latestRequestId) {
+      return;
+    }
 
-  startOpen.value = data[0]?.open ?? 0;  // 最初日開盤價
-  endClose.value = data.at(-1)?.close ?? 0;  // 最末日收盤價
+    if (data.length === 0) {
+      stockData.value = [];
+      activeDataKey = "";
+      loadErrorMessage.value = "目前查無可用的股價資料。";
+      return;
+    }
 
-  // 設定比例尺
-  const xScale = d3.scaleTime()
-                   .domain(d3.extent(data, d => d.date))
-                   .range([margin.left, width - margin.right])
-                   .nice();
+    stockDataCache.set(cacheKey, data);
 
-  const yScale = d3.scaleLinear()
-                   .domain([
-                     d3.min(data, d => (d.low ?? d.close ?? d.open)),
-                     d3.max(data, d => (d.high ?? d.close ?? d.open))
-                   ])
-                   .range([height - margin.bottom, margin.top])
-                   .nice();
+    stockData.value = data;
+    activeDataKey = cacheKey;
+    loadErrorMessage.value = "";
+  } catch (error: unknown) {
+    if (currentRequestId !== latestRequestId) {
+      return;
+    }
 
-  const line = d3.line()
-                 .x(d => xScale(d.date))
-                 .y(d => yScale(d.close))
-                 .curve(d3.curveMonotoneX);
+    const errorMessage = error instanceof Error ? error.message : String(error);
 
-  // 動態設定線段顏色
-  const lineColor = endClose.value >= startOpen.value
-    ? "var(--color-line2)"
-    : "var(--color-line3)";
+    console.warn(`[PerformanceChart] 無法取得 ${stockSymbol.value} 股價資料：`, errorMessage);
 
-  // 畫線
-  const path = svg.append("path")
-                  .datum(data)
-                  .attr("fill", "none")
-                  .attr("stroke", lineColor)
-                  .attr("stroke-width", 2)
-                  .attr("d", line);
+    stockData.value = [];
+    activeDataKey = "";
+    loadErrorMessage.value = "股價資料讀取失敗，請稍後再試。";
+  } finally {
+    if (currentRequestId === latestRequestId) {
+      isLoading.value = false;
+    }
+  }
+}
 
-  // 線條過渡動畫
-  const totalLength = path.node().getTotalLength();
-  path.attr("stroke-dasharray", totalLength + " " + totalLength)
+/** 判斷目前本地資料是否已涵蓋指定 range。 */
+function hasCoverageFor(range: PriceRange): boolean {
+  const earliestDate = stockData.value[0]?.date;
+  const latestDate = stockData.value.at(-1)?.date;
+
+  if (!earliestDate || !latestDate) {
+    return false;
+  }
+
+  const cutoffDate = getRangeStartDate(range, latestDate);
+
+  return earliestDate <= cutoffDate;
+}
+
+/** 清除目前 SVG 與 tooltip。 */
+function clearChart(): void {
+  if (svgRef.value) {
+    d3.select(svgRef.value).selectAll("*").interrupt().remove();
+  }
+
+  if (tooltipRef.value) {
+    d3.select(tooltipRef.value).interrupt().style("opacity", 0);
+  }
+}
+
+/** 繪製股票價格趨勢圖。 */
+function renderChart(data: StockBar[]): void {
+  const containerElement = chartContainerRef.value;
+  const svgElement = svgRef.value;
+  const tooltipElement = tooltipRef.value;
+
+  if (!containerElement || !svgElement || !tooltipElement || data.length < 2) {
+    return;
+  }
+
+  const width = containerElement.clientWidth;
+  const height = containerElement.clientHeight;
+
+  if (width <= 0 || height <= 0) {
+    return;
+  }
+
+  const firstDatum = data[0];
+  const lastDatum = data.at(-1);
+
+  if (!firstDatum || !lastDatum) {
+    return;
+  }
+
+  const minPrice = d3.min(data, (datum) => datum.low);
+  const maxPrice = d3.max(data, (datum) => datum.high);
+
+  if (minPrice === undefined || maxPrice === undefined) {
+    return;
+  }
+
+  const margin = {
+    top: 10,
+    right: 40,
+    bottom: 40,
+    left: 40,
+  };
+
+  const svg = d3.select<SVGSVGElement, unknown>(svgElement);
+
+  svg.selectAll("*").interrupt().remove();
+
+  const xScale = d3
+    .scaleTime()
+    .domain([firstDatum.date, lastDatum.date])
+    .range([margin.left, width - margin.right])
+    .nice();
+
+  const yScale = d3
+    .scaleLinear()
+    .domain([minPrice, maxPrice])
+    .range([height - margin.bottom, margin.top])
+    .nice();
+
+  const lineGenerator = d3
+    .line<StockBar>()
+    .x((datum) => xScale(datum.date))
+    .y((datum) => yScale(datum.close))
+    .curve(d3.curveMonotoneX);
+
+  const lineColor = lastDatum.close >= firstDatum.open ? "var(--color-gain)" : "var(--color-loss)";
+
+  const path = svg
+    .append("path")
+    .datum(data)
+    .attr("fill", "none")
+    .attr("stroke", lineColor)
+    .attr("stroke-width", 2)
+    .attr("d", lineGenerator);
+
+  const pathElement = path.node();
+
+  if (pathElement) {
+    const totalLength = pathElement.getTotalLength();
+
+    path
+      .attr("stroke-dasharray", `${totalLength} ${totalLength}`)
       .attr("stroke-dashoffset", totalLength)
       .transition()
-      .duration(transitionDuration)
+      .duration(LINE_TRANSITION_DURATION)
       .ease(d3.easeCubicOut)
       .attr("stroke-dashoffset", 0);
+  }
 
-  // 畫軸線
-  const xAxis = d3.axisBottom(xScale)
-                  .ticks(5)
-                  .tickFormat(d3.timeFormat("%Y/%m/%d"));
-        
-  const yAxis = d3.axisLeft(yScale)
-                  .ticks(5);
+  const xAxis = d3.axisBottom(xScale).ticks(5, "%Y/%m/%d");
+  const yAxis = d3.axisLeft(yScale).ticks(5);
 
-  svg.append("g")
-     .attr("transform", `translate(0, ${height - margin.bottom})`)
-     .call(xAxis)
-     .attr("color", "var(--color-text)")
-     .attr("opacity", 0.6);
+  svg
+    .append("g")
+    .attr("transform", `translate(0, ${height - margin.bottom})`)
+    .call(xAxis)
+    .attr("color", "var(--color-foreground-muted)");
 
-  svg.append("g")
-     .attr("transform", `translate(${margin.left},0)`)
-     .call(yAxis)
-     .attr("color", "var(--color-text)")
-     .attr("opacity", 0.6);
+  svg
+    .append("g")
+    .attr("transform", `translate(${margin.left}, 0)`)
+    .call(yAxis)
+    .attr("color", "var(--color-foreground-muted)");
 
+  const tooltip = d3.select(tooltipElement);
 
-  // Tooltip
-  const tip = d3.select(tooltipRef.value);
-  const bisect = d3.bisector(d => d.date).left;
+  const dateBisector = d3.bisector<StockBar, Date>((datum) => datum.date);
 
-  const crosshair = svg.append("line")
-                       .attr("stroke", "var(--color-border)")
-                       .attr("stroke-width", 1)
-                       .attr("y1", margin.top)
-                       .attr("y2", height - margin.bottom)
-                       .style("opacity", 0);
+  const crosshair = svg
+    .append("line")
+    .attr("stroke", "var(--color-border-strong)")
+    .attr("stroke-width", 1)
+    .attr("y1", margin.top)
+    .attr("y2", height - margin.bottom)
+    .style("opacity", 0);
 
-  const dot = svg.append("circle")
-                 .attr("r", 4)
-                 .attr("fill", lineColor)
-                 .style("opacity", 0);
+  const dot = svg.append("circle").attr("r", 4).attr("fill", lineColor).style("opacity", 0);
 
-  const overlay = svg.append("rect")
-                     .attr("fill", "transparent")
-                     .attr("width", width)
-                     .attr("height", height)
-                     .on("mousemove", function (e) {
-                       const [mx] = d3.pointer(e);
-                       const xDate = xScale.invert(mx);
-                       const i = bisect(data, xDate);
-                       const d = data[Math.min(Math.max(i, 0), data.length - 1)];
+  svg
+    .append("rect")
+    .attr("fill", "transparent")
+    .attr("width", width)
+    .attr("height", height)
+    .on("mousemove", (event: MouseEvent) => {
+      const [pointerX] = d3.pointer(event, svgElement);
+      const pointerDate = xScale.invert(pointerX);
 
-                       // crosshair 與 dot 平滑顯示
-                       crosshair.transition()
-                                .duration(80)
-                                .attr("x1", xScale(d.date))
-                                .attr("x2", xScale(d.date))
-                                .style("opacity", 0.6);
+      const insertionIndex = dateBisector.left(data, pointerDate);
+      const datumIndex = Math.min(Math.max(insertionIndex, 0), data.length - 1);
 
-                       dot.transition()
-                          .duration(80)
-                          .attr("cx", xScale(d.date))
-                          .attr("cy", yScale(d.close))
-                          .style("opacity", 1);
+      const datum = data[datumIndex];
 
-                       // tooltip ，使用防溢出邏輯
-                       const tipWidth = 160;
-                       const tipHeight = 70;
-                       let tipX = xScale(d.date) + 30;   // 預設顯示在右上角
-                       let tipY = yScale(d.close) - tipHeight - 10;
-                       if (tipX + tipWidth > width) tipX = xScale(d.date) - tipWidth + 40;
-                       if (tipY < 0) tipY = yScale(d.close) + 10;
+      if (!datum) {
+        return;
+      }
 
-                       tip.html(`
-                            <div><strong>${d3.timeFormat("%Y/%m/%d")(d.date)}</strong></div>
-                            <div>高價: ${d.high.toLocaleString()}</div>
-                            <div>低價: ${d.low.toLocaleString()}</div>
-                            <div>平盤: ${i > 0 ? data[i - 1].close.toLocaleString() : "-"}</div>
-                          `)
-                          .transition()
-                          .duration(150)
-                          .ease(d3.easeCubicOut)
-                          .style("opacity", 1)
-                          .style("left", `${tipX}px`)
-                          .style("top", `${tipY}px`);
-                     })
-                     .on("mouseleave", () => {
-                       tip.transition().duration(200).style("opacity", 0);
-                       crosshair.transition().duration(150).style("opacity", 0);
-                       dot.transition().duration(150).style("opacity", 0);
-                     });
-};
+      const datumX = xScale(datum.date);
+      const datumY = yScale(datum.close);
 
+      crosshair
+        .interrupt()
+        .transition()
+        .duration(80)
+        .attr("x1", datumX)
+        .attr("x2", datumX)
+        .style("opacity", 0.6);
 
-// 由尺寸 tick 觸發同一個 watch，避免與 filteredData 各畫一次
-const resizeTick = ref(0);
-const resizeObserver = new ResizeObserver(() => { resizeTick.value++; });
+      dot
+        .interrupt()
+        .transition()
+        .duration(80)
+        .attr("cx", datumX)
+        .attr("cy", datumY)
+        .style("opacity", 1);
 
+      let tooltipX = datumX + TOOLTIP_OFFSET;
+      let tooltipY = datumY - TOOLTIP_HEIGHT - TOOLTIP_OFFSET;
 
-// 資料變更 或 尺寸變更，圖形只畫一次
-watch([filteredData, resizeTick], ([val]) => {
-  if (!val || val.length < 2) return;  // 避免空畫面與單點重畫
-  nextTick(() => drawChart(val));
-}, { immediate: true });
+      if (tooltipX + TOOLTIP_WIDTH > width) {
+        tooltipX = datumX - TOOLTIP_WIDTH - TOOLTIP_OFFSET;
+      }
 
+      if (tooltipY < 0) {
+        tooltipY = datumY + TOOLTIP_OFFSET;
+      }
 
-// 當全站 symbol 改變（換標的） → 抓新資料
-async function primeSymbol() {
-  await fetchStockData(paramsForRange(selectedRange.value));
-};
-watch(() => symbol.value, () => { primeSymbol(); });
+      const previousClose = datumIndex > 0 ? data[datumIndex - 1]?.close : null;
 
+      tooltip
+        .interrupt()
+        .html(
+          `
+            <div><strong>${formatChartDate(datum.date)}</strong></div>
+            <div>高價：${datum.high.toLocaleString("zh-TW")}</div>
+            <div>低價：${datum.low.toLocaleString("zh-TW")}</div>
+            <div>平盤：${previousClose?.toLocaleString("zh-TW") ?? "-"}</div>
+          `,
+        )
+        .style("left", `${tooltipX}px`)
+        .style("top", `${tooltipY}px`)
+        .transition()
+        .duration(150)
+        .ease(d3.easeCubicOut)
+        .style("opacity", 1);
+    })
+    .on("mouseleave", () => {
+      tooltip.interrupt().transition().duration(200).style("opacity", 0);
+      crosshair.interrupt().transition().duration(150).style("opacity", 0);
+      dot.interrupt().transition().duration(150).style("opacity", 0);
+    });
+}
 
-// UI 顯示最末日成交量 & 區間報酬百分比
-const latestVolume = computed(() => {
-  const last = filteredData.value.at(-1);
-  return last && typeof last.volume === "number" ? last.volume : null;
+/** 載入目前全站選定股票的資料。 */
+async function loadCurrentSymbol(): Promise<void> {
+  const range = selectedRange.value;
+
+  await loadStockData(getRangeQuery(range));
+
+  if (selectedRange.value === range) {
+    activeRange.value = range;
+  }
+}
+
+watch(selectedRange, async (range) => {
+  if (hasCoverageFor(range)) {
+    activeRange.value = range;
+    return;
+  }
+
+  const params = getRangeQuery(range);
+  const cacheKey = createCacheKey(stockSymbol.value, params);
+
+  if (cacheKey !== activeDataKey) {
+    await loadStockData(params);
+  }
+
+  // 等待 API 的過程中，使用者可能已經切到另一個 range
+  if (selectedRange.value !== range) {
+    return;
+  }
+
+  activeRange.value = range;
 });
 
-// UI 顯示最末交易日日期（格式：YYYY/MM/DD）
-const latestTradingDate = computed(() => {
-  const last = filteredData.value.at(-1);
-  return last ? d3.timeFormat("%Y/%m/%d")(last.date) : "";
-}); 
+watch(
+  [filteredData, chartResizeTick],
+  ([data]) => {
+    if (data.length < 2) {
+      clearChart();
+      return;
+    }
 
-const changePercent = computed(() => {
-  if (!endClose.value || !startOpen.value) return 0;
-  return (endClose.value - startOpen.value) / startOpen.value;
+    void nextTick(() => {
+      renderChart(data);
+    });
+  },
+  {
+    immediate: true,
+  },
+);
+
+watch(stockSymbol, () => {
+  void loadCurrentSymbol();
 });
 
+onMounted(() => {
+  const containerElement = chartContainerRef.value;
 
-onMounted(async () => {
-  resizeObserver.observe(chartContainerRef.value);
-  await primeSymbol();
+  if (containerElement && typeof ResizeObserver !== "undefined") {
+    resizeObserver = new ResizeObserver(() => {
+      chartResizeTick.value += 1;
+    });
+
+    resizeObserver.observe(containerElement);
+  }
+
+  void loadCurrentSymbol();
 });
 
 onBeforeUnmount(() => {
-  resizeObserver.disconnect();
+  // 讓仍在進行中的舊 request 回來後直接失效
+  latestRequestId += 1;
+
+  resizeObserver?.disconnect();
+
+  clearChart();
 });
 </script>
 
