@@ -124,26 +124,25 @@
       {{ props.emptyText }}
     </div>
 
-    <!--
-      TODO:
-      下一個 commit 改用 BaseTooltip，這一筆先完成 chart / business separation 與 declarative rendering。
-    -->
-    <div
-      v-if="hoveredDatum"
-      class="pointer-events-none absolute z-50 w-40 rounded-md border border-border bg-surface px-2.5 py-2 text-xs text-foreground shadow-lg"
-      :style="{
-        left: `${tooltipPosition.x}px`,
-        top: `${tooltipPosition.y}px`,
-      }"
+    <!-- Tooltip -->
+    <BaseTooltip
+      :is-open="hoveredDatum !== null"
+      :x="tooltipAnchor.x"
+      :y="tooltipAnchor.y"
+      :placement-key="hoveredDatum?.date.getTime() ?? null"
     >
-      <div class="font-semibold">
-        {{ formatChartDate(hoveredDatum.date) }}
-      </div>
+      <template v-if="hoveredDatum">
+        <div class="min-w-24 text-xs">
+          <div class="font-semibold">
+            {{ formatChartDate(hoveredDatum.date) }}
+          </div>
 
-      <div class="mt-1">高價：{{ formatPrice(hoveredDatum.high) }}</div>
-      <div>低價：{{ formatPrice(hoveredDatum.low) }}</div>
-      <div>平盤：{{ previousClose !== null ? formatPrice(previousClose) : "—" }}</div>
-    </div>
+          <div class="mt-1">高價：{{ formatPrice(hoveredDatum.high) }}</div>
+          <div>低價：{{ formatPrice(hoveredDatum.low) }}</div>
+          <div>平盤：{{ previousClose !== null ? formatPrice(previousClose) : "—" }}</div>
+        </div>
+      </template>
+    </BaseTooltip>
   </div>
 </template>
 
@@ -152,6 +151,8 @@ import { computed, onBeforeUnmount, onMounted, ref, watch } from "vue";
 import * as d3 from "d3";
 
 import { formatPrice } from "@/utils/format/number";
+
+import BaseTooltip from "@/components/ui/BaseTooltip.vue";
 
 interface StockPricePoint {
   date: Date;
@@ -166,7 +167,7 @@ interface ContainerSize {
   height: number;
 }
 
-interface TooltipPosition {
+interface ViewportPoint {
   x: number;
   y: number;
 }
@@ -177,10 +178,6 @@ const MARGIN = {
   bottom: 20,
   left: 40,
 } as const;
-
-const TOOLTIP_WIDTH = 160;
-const TOOLTIP_HEIGHT = 76;
-const TOOLTIP_OFFSET = 12;
 
 const props = withDefaults(
   defineProps<{
@@ -201,7 +198,7 @@ const containerSize = ref<ContainerSize>({ width: 0, height: 0 });
 const hoveredDatum = ref<StockPricePoint | null>(null);
 const previousClose = ref<number | null>(null);
 
-const tooltipPosition = ref<TooltipPosition>({ x: 0, y: 0 });
+const tooltipAnchor = ref<ViewportPoint>({ x: 0, y: 0 });
 
 let resizeObserver: ResizeObserver | null = null;
 
@@ -351,20 +348,11 @@ function handlePointerMove(event: MouseEvent): void {
   hoveredDatum.value = datum;
   previousClose.value = datumIndex > 0 ? (data[datumIndex - 1]?.close ?? null) : null;
 
-  let tooltipX = datumX + TOOLTIP_OFFSET;
-  let tooltipY = datumY - TOOLTIP_HEIGHT - TOOLTIP_OFFSET;
+  const svgRect = svgElement.getBoundingClientRect();
 
-  if (tooltipX + TOOLTIP_WIDTH > layout.width) {
-    tooltipX = datumX - TOOLTIP_WIDTH - TOOLTIP_OFFSET;
-  }
-
-  if (tooltipY < 0) {
-    tooltipY = datumY + TOOLTIP_OFFSET;
-  }
-
-  tooltipPosition.value = {
-    x: clamp(tooltipX, 0, Math.max(0, layout.width - TOOLTIP_WIDTH)),
-    y: clamp(tooltipY, 0, Math.max(0, layout.height - TOOLTIP_HEIGHT)),
+  tooltipAnchor.value = {
+    x: svgRect.left + (datumX / layout.width) * svgRect.width,
+    y: svgRect.top + (datumY / layout.height) * svgRect.height,
   };
 }
 
