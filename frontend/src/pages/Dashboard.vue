@@ -23,7 +23,7 @@
       <HoldingAllocationCard :isTotalValueHidden="isHidden"></HoldingAllocationCard>
   
       <!-- 右側：市值趨勢圖 -->
-      <PerformanceChart></PerformanceChart>
+      <StockPriceTrendCard></StockPriceTrendCard>
   
     </div>
   
@@ -53,7 +53,7 @@
 <script setup lang="ts">
 import SummaryCards from "@/components/dashboard/SummaryCards.vue";
 import HoldingAllocationCard from "@/components/dashboard/HoldingAllocationCard.vue";
-import PerformanceChart from "@/components/dashboard/PerformanceChart.vue";
+import StockPriceTrendCard from "@/components/dashboard/StockPriceTrendCard.vue";
 import HoldingDetails from "@/components/dashboard/HoldingDetails.vue";
 import MarketCapitalizationCard from "@/components/dashboard/MarketCapitalizationCard.vue";
 // import TimelineList from "@/components/dashboard/TimelineList.vue";
