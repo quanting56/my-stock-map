@@ -137,7 +137,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, onBeforeUnmount, onMounted, ref, useId } from "vue";
 import * as d3 from "d3";
 
 import BaseTooltip from "@/components/ui/BaseTooltip.vue";
@@ -191,6 +191,8 @@ const props = withDefaults(
     valueLabelMaxRank: 50,
   },
 );
+
+const treemapInstanceId = useId();
 
 const containerRef = ref<HTMLDivElement | null>(null);
 
@@ -276,7 +278,7 @@ function getBucketIndex(rank: number): number {
 }
 
 function getClipPathId(rank: number): string {
-  return `treemap-clip-${rank}`;
+  return `${treemapInstanceId}-treemap-clip-${rank}`;
 }
 
 function showTooltip(event: MouseEvent, item: TreemapDatum): void {
