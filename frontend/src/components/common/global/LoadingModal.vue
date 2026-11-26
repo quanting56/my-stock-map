@@ -1,23 +1,36 @@
 <template>
-  <!-- Loading 覆蓋層 -->
-  <teleport v-if="open" to="body">
+  <Teleport to="body">
+    <!-- Loading 覆蓋層 -->
     <div
-      role="dialog"
-      aria-busy="true"
+      v-if="props.open"
+      role="status"
       aria-live="polite"
-      class="fixed inset-0 bg-gray-950/50 flex flex-col items-center justify-center z-[999]"
+      aria-atomic="true"
+      class="fixed inset-0 z-999 flex flex-col items-center justify-center bg-black/50 px-6"
     >
-      <div class="h-12 w-12 rounded-full border-4 border-gray-400 border-t-blue-500 animate-spin"></div>
-      <p class="mt-4 text-gray-50">{{ message }}，請稍候…</p>
+      <!-- Spinner -->
+      <div
+        aria-hidden="true"
+        class="size-14 rounded-full border-10 border-foreground-subtle/50 border-t-brand motion-safe:animate-spin"
+      ></div>
+
+      <!-- Loading message -->
+      <p class="mt-6 text-center text-white">{{ props.message }}，請稍候…</p>
     </div>
-  </teleport>
+  </Teleport>
 </template>
 
-<script setup>
-const props = defineProps({
-  open: { type: Boolean, default: false },  // 是否顯示，由父層決定
-  message: { type: String, default: "資料讀取中" }  // 顯示訊息
-});
+<script setup lang="ts">
+const props = withDefaults(
+  defineProps<{
+    open?: boolean;
+    message?: string;
+  }>(),
+  {
+    open: false,
+    message: "資料讀取中",
+  },
+);
 </script>
 
 <style scoped></style>
