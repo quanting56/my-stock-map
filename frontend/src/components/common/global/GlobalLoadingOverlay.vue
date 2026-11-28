@@ -1,8 +1,8 @@
 <template>
   <Teleport to="body">
-    <!-- Loading 覆蓋層 -->
+    <!-- 全域 Loading 覆蓋層 -->
     <div
-      v-if="props.open"
+      v-if="props.isOpen"
       role="status"
       aria-live="polite"
       aria-atomic="true"
@@ -23,12 +23,12 @@
 <script setup lang="ts">
 const props = withDefaults(
   defineProps<{
-    open?: boolean;
+    isOpen?: boolean;
     message?: string;
   }>(),
   {
-    open: false,
-    message: "資料讀取中",
+    isOpen: false,
+    message: "資料處理中",
   },
 );
 </script>

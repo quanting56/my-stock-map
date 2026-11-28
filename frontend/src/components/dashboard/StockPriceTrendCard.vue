@@ -1,9 +1,4 @@
 <template>
-  <LoadingModal
-    :open="isLoading"
-    message="股市資料載入中"
-  ></LoadingModal>
-
   <div class="rounded-2xl bg-surface p-4 text-foreground shadow lg:col-span-2">
     <div class="mb-3 flex items-center justify-between">
       <h3 class="font-medium text-foreground-muted">
@@ -34,11 +29,29 @@
       </div>
     </div>
 
-    <div class="relative h-56 w-full rounded-lg border border-border bg-surface p-3">
+    <div
+      :aria-busy="isLoading"
+      class="relative h-56 w-full rounded-lg border border-border bg-surface p-3"
+    >
       <StockPriceLineChart
         :data="filteredData"
         :chart-aria-label="`${displaySymbol} 近期股價趨勢圖`"
       ></StockPriceLineChart>
+
+      <!-- 局部 Loading：不阻擋其他 Dashboard 元件 -->
+      <div
+        v-if="isLoading"
+        role="status"
+        aria-live="polite"
+        class="absolute inset-0 z-10 flex items-center justify-center gap-3 rounded-lg bg-surface/90 text-sm text-foreground-muted"
+      >
+        <span
+          aria-hidden="true"
+          class="size-5 rounded-full border-2 border-border-strong border-t-brand motion-safe:animate-spin"
+        ></span>
+
+        股價資料載入中…
+      </div>
 
       <div
         v-if="loadErrorMessage"
@@ -87,7 +100,6 @@ import { fetchStockSeries, type StockBar, type StockRangeQuery } from "@/api/sto
 import { useQueryStockStore } from "@/stores/queryStock";
 
 import StockPriceLineChart from "@/components/charts/StockPriceLineChart.vue";
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
 
 const EARLIEST_YEAR = 1990;
 

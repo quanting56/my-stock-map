@@ -1,6 +1,20 @@
 <template>
-  <LoadingModal :open="isLoading" message="資料讀取中"></LoadingModal>
   <div class="p-6">
+    <!-- TODO: StockDetail 後續重構時，將標題資訊與基本面摘要改為獨立 Loading 狀態 -->
+    <div
+      v-if="isLoading"
+      role="status"
+      aria-live="polite"
+      class="mb-4 flex items-center gap-2 text-sm text-foreground-muted"
+    >
+      <span
+        aria-hidden="true"
+        class="size-4 rounded-full border-2 border-border-strong border-t-brand motion-safe:animate-spin"
+      ></span>
+
+      股票基本資訊載入中…
+    </div>
+
     <!-- 頁面標題：公司名與現價 -->
     <header class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
       <div>
@@ -100,7 +114,6 @@ import PriceChartCard from "@/components/stock-detail/PriceChartCard.vue";
 import InformationSummary from "@/components/stock-detail/InformationSummary.vue";
 import HoldingTimelineChart from "@/components/stock-detail/HoldingTimelineChart.vue";
 import RelevantNews from "@/components/stock-detail/RelevantNews.vue";
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
 
 type Timeframe = "7D" | "1M" | "3M" | "1Y" | "3Y";
 

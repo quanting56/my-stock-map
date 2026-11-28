@@ -1,5 +1,4 @@
 <template>
-  <LoadingModal :open="isGenerating" message="報表生成中"></LoadingModal>
   <div class="p-6">
     <!-- 頁面標題 + Controls -->
     <HeaderAndControls
@@ -53,14 +52,15 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/common/global/LoadingModal.vue"
 import HeaderAndControls from "@/components/reports/HeaderAndControls.vue";
 import SummaryCards from "@/components/reports/SummaryCards.vue";
 import ReportPreview from "@/components/reports/ReportPreview.vue";
 import ExportAndPresetLists from "@/components/reports/ExportAndPresetLists.vue";
 import ReportImport from "@/components/reports/ReportImport.vue";
 
-import { ref, reactive } from "vue";
+import { onBeforeUnmount, reactive, ref } from "vue";
+
+import { useGlobalLoadingStore } from "@/stores/global/loading";
 import { usePortfolioStore } from "@/stores/portfolio";
 
 import jsPDF from "jspdf";
@@ -105,7 +105,8 @@ async function ensureChineseFont(doc) {
   doc.addFont("TaipeiSansTCBeta-Bold.ttf", "TaipeiSansTCBeta", "bold");
 }
 
-
+const globalLoadingStore = useGlobalLoadingStore();
+const pendingLoadingTaskIds = new Set();
 
 const isGenerating = ref(false);
 
@@ -191,6 +192,10 @@ const latestGenerated = ref(null);
 /* 產生報表的函式 */
 async function generateReport() {
   isGenerating.value = true;
+
+  const loadingTaskId = globalLoadingStore.start("報表生成中");
+  pendingLoadingTaskIds.add(loadingTaskId);
+
   const startTime = (performance?.now ? performance.now() : Date.now());
 
   try {
@@ -278,6 +283,9 @@ async function generateReport() {
     alert("報表產生失敗，請稍後再試。");
   } finally {
     isGenerating.value = false;
+
+    globalLoadingStore.finish(loadingTaskId);
+    pendingLoadingTaskIds.delete(loadingTaskId);
   }
 }
 
@@ -819,6 +827,14 @@ async function onUpload(e) {
 function openTemplateEditor() {
   alert("開啟模板編輯器（demo）");
 }
+
+onBeforeUnmount(() => {
+  for (const taskId of pendingLoadingTaskIds) {
+    globalLoadingStore.finish(taskId);
+  }
+
+  pendingLoadingTaskIds.clear();
+});
 </script>
 
 <style scoped></style>

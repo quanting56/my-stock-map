@@ -21,17 +21,26 @@
     :is-open="isWelcomeOpen"
     @close="closeWelcomeModal"
   ></WelcomeModal>
+
+  <!-- 全域 Loading 遮罩 -->
+  <GlobalLoadingOverlay
+    :is-open="globalLoadingStore.isOpen"
+    :message="globalLoadingStore.message"
+  ></GlobalLoadingOverlay>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
 
+import { useGlobalLoadingStore } from "@/stores/global/loading";
 import { useUIStateStore } from "@/stores/uiState";
 
 import AppLayout from "@/layouts/AppLayout.vue";
+import GlobalLoadingOverlay from "@/components/common/global/GlobalLoadingOverlay.vue";
 import LogInPage from "@/components/common/LogInPage.vue";
 import WelcomeModal from "@/components/common/modals/WelcomeModal.vue";
 
+const globalLoadingStore = useGlobalLoadingStore();
 const uiStateStore = useUIStateStore();
 
 const isLogInModalOpen = ref(false);

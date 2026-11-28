@@ -1,5 +1,4 @@
 <template>
-  <LoadingModal :open="isLoading" message="資料載入運算中"></LoadingModal>
   <!-- 參數設定區 -->
   <div class="card-theme rounded-2xl shadow p-6 space-y-4">
     <h3 class="font-medium">⚙️ 回測參數設定</h3>
@@ -78,11 +77,14 @@
 </template>
 
 <script setup>
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import SingleAssetBacktestChart from "@/components/backtest/single-asset-backtest/SingleAssetBacktestChart.vue";
 
-import { reactive, ref } from "vue";
+import { onBeforeUnmount, reactive, ref } from "vue";
 import { fetchStockSeries } from "@/api/stocksApi";
+import { useGlobalLoadingStore } from "@/stores/global/loading";
+
+const globalLoadingStore = useGlobalLoadingStore();
+const pendingLoadingTaskIds = new Set();
 
 const form = reactive({
   symbol: "2330",
@@ -101,9 +103,6 @@ const kpis = ref({
   cagr: 0.063,
   winRate: 0.61
 });
-
-// UI 狀態（不改版面）
-const isLoading = ref(false);
 
 
 // ===========================
@@ -365,7 +364,8 @@ function toRangeParams(start, end){
 }
 
 async function runBacktest() {
-  isLoading.value = true;
+  const loadingTaskId = globalLoadingStore.start("資料載入運算中");
+  pendingLoadingTaskIds.add(loadingTaskId);
 
   try{
     const symbol = String(form.symbol || "").trim();  // 取出表單的股票代號
@@ -397,9 +397,18 @@ async function runBacktest() {
     console.error(e);
     alert(`錯誤原因：${e}`);
   } finally {
-    isLoading.value = false;
+    globalLoadingStore.finish(loadingTaskId);
+    pendingLoadingTaskIds.delete(loadingTaskId);
   }
 }
+
+onBeforeUnmount(() => {
+  for (const taskId of pendingLoadingTaskIds) {
+    globalLoadingStore.finish(taskId);
+  }
+
+  pendingLoadingTaskIds.clear();
+});
 </script>
 
 <style scoped></style>

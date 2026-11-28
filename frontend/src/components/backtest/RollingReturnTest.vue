@@ -1,5 +1,4 @@
 <template>
-  <LoadingModal :open="isLoading" message="股票資訊載入中"></LoadingModal>
   <div class="card-theme rounded-2xl shadow p-6">
     <div class="flex items-center justify-between mb-3">
       <h3 class="font-medium">📊 滾動報酬率比較</h3>
@@ -114,8 +113,26 @@
 
       <!-- 右：圖表區（目前只放占位） -->
       <section class="lg:col-span-8">
-        <div class="h-full min-h-72 rounded-lg border border-dashed border-[color:var(--color-border)] bg-[color:var(--color-card)] flex items-center justify-center flex-col">
+        <div
+          class="relative flex h-full min-h-72 flex-col items-center justify-center rounded-lg border border-dashed border-[color:var(--color-border)] bg-[color:var(--color-card)]"
+          :aria-busy="isLoading"
+        >
           <div ref="containerRef"></div>
+
+          <!-- TODO: 滾動報酬率元件重構時，區分股票代號驗證與歷史資料載入狀態 -->
+          <div
+            v-if="isLoading"
+            role="status"
+            aria-live="polite"
+            class="absolute inset-0 z-10 flex items-center justify-center gap-3 rounded-lg bg-surface/90 text-sm text-foreground-muted"
+          >
+            <span
+              aria-hidden="true"
+              class="size-5 rounded-full border-2 border-border-strong border-t-brand motion-safe:animate-spin"
+            ></span>
+
+            股票資訊載入中…
+          </div>
           <!-- <div class="text-[color:var(--color-secondary)] opacity-70 my-2">[Index Chart Demo：此圖未與專案資料綁定，僅用作示意]</div> -->
         </div>
       </section>
@@ -125,10 +142,11 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import * as d3 from "d3";
 import { fetchStockSeries, fetchSymbolProfile } from "@/api/stocksApi";
 
+// TODO: 後續重構時，將驗證代號與圖表資料讀取拆成獨立 Loading 狀態
+// addCustomSymbol() 與 refresh() 都直接操作同一個 Boolean，如果兩者非同步工作重疊，可能互相提前關閉 Loading
 const isLoading = ref(false);
 
 const isLogOptions = [

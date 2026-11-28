@@ -1,5 +1,4 @@
 <template>
-  <LoadingModal :open="isLoading" message="價格資料載入中..."></LoadingModal>
   <div class="lg:col-span-2 card-theme rounded-2xl shadow p-4">
     <div class="flex items-center justify-between mb-3">
       <div class="font-medium text-[color:var(--color-secondary)]">
@@ -23,6 +22,7 @@
 
     <div
       ref="chartContainerRef"
+      :aria-busy="isLoading"
       class="relative h-72 md:h-96 rounded-lg border border-[color:var(--color-border)] bg-[color:var(--color-card)] flex items-center justify-center text-[color:var(--color-secondary)] opacity-80"
     >
       <svg ref="svgRef" class="w-full h-full"></svg>
@@ -30,6 +30,21 @@
         ref="tooltipRef"
         class="absolute bg-[color:var(--color-card)] border border-[color:var(--color-border)] text-[color:var(--color-text)] text-xs px-2 py-1 rounded shadow opacity-0 transition-opacity duration-200 pointer-events-none"
       ></div>
+
+      <!-- TODO: PriceChartCard 重構時，改為正式的局部 Loading / Skeleton UI -->
+      <div
+        v-if="isLoading"
+        role="status"
+        aria-live="polite"
+        class="absolute inset-0 z-10 flex items-center justify-center gap-3 bg-surface/90 text-sm text-foreground-muted"
+      >
+        <span
+          aria-hidden="true"
+          class="size-5 rounded-full border-2 border-border-strong border-t-brand motion-safe:animate-spin"
+        ></span>
+
+        價格資料載入中…
+      </div>
     </div>
 
     <!-- 下方技術指標小卡 -->
@@ -40,7 +55,6 @@
 <script setup>
 import * as d3 from "d3";
 import { ref, watch, onMounted, onBeforeUnmount, nextTick, computed } from "vue";
-import LoadingModal from "@/components/common/global/LoadingModal.vue";
 import IndicatorSummaryCards from "@/components/Stock-detail/price-chart-card/IndicatorSummaryCards.vue";
 import { useQueryStockStore } from "@/stores/queryStock";
 
